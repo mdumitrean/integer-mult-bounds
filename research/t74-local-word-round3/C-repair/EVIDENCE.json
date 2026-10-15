@@ -1,0 +1,205 @@
+{
+ "words": {
+  "gauge44": {
+   "fusion_repair": {
+    "fusions": 2261,
+    "tAH_triples": 501,
+    "pricings": 2787,
+    "fusions_with_feasible_pricing": 963,
+    "statuses": {
+     "infeasible": 1487,
+     "ok": 963,
+     "inexact": 284,
+     "rule:non-target reads target": 53
+    },
+    "negative": [],
+    "feasible_delta_histogram": {
+     "0": 963
+    },
+    "largest_possible_true_gain_units_among_nongains": 2.8789606107680527e-11
+   },
+   "exchange_joint": {
+    "jobs": 596,
+    "families": {
+     "xs": {
+      "infeasible": 27
+     },
+     "xf": {
+      "infeasible": 13
+     },
+     "xp": {
+      "infeasible": 351
+     },
+     "xff": {
+      "infeasible": 78
+     },
+     "jt": {
+      "infeasible": 103,
+      "ok": 24
+     }
+    },
+    "negative": [],
+    "largest_possible_true_gain_units_among_nongains": 1.9694659089951245e-11
+   },
+   "fusion_position_classes": {
+    "candidates": 3243,
+    "triples": 494,
+    "statuses": {
+     "infeasible": 2909,
+     "ok": 279,
+     "rule:non-target reads target": 55
+    },
+    "ok_delta_histogram": {
+     "0": 279
+    },
+    "negative": [],
+    "largest_possible_true_gain_units_among_nongains": 2.8789606107680527e-11
+   }
+  },
+  "extra": {
+   "fusion_repair": {
+    "fusions": 2261,
+    "tAH_triples": 501,
+    "pricings": 2787,
+    "fusions_with_feasible_pricing": 963,
+    "statuses": {
+     "infeasible": 1487,
+     "ok": 963,
+     "inexact": 284,
+     "rule:non-target reads target": 53
+    },
+    "negative": [],
+    "feasible_delta_histogram": {
+     "0": 963
+    },
+    "largest_possible_true_gain_units_among_nongains": 2.637534635141492e-11
+   },
+   "exchange_joint": {
+    "jobs": 596,
+    "families": {
+     "xs": {
+      "infeasible": 27
+     },
+     "xf": {
+      "infeasible": 13
+     },
+     "xp": {
+      "infeasible": 351
+     },
+     "xff": {
+      "infeasible": 78
+     },
+     "jt": {
+      "infeasible": 103,
+      "ok": 24
+     }
+    },
+    "negative": [],
+    "largest_possible_true_gain_units_among_nongains": 2.0306518615364297e-11
+   },
+   "fusion_position_classes": {
+    "candidates": 3243,
+    "triples": 494,
+    "statuses": {
+     "infeasible": 2909,
+     "ok": 279,
+     "rule:non-target reads target": 55
+    },
+    "ok_delta_histogram": {
+     "0": 279
+    },
+    "negative": [],
+    "largest_possible_true_gain_units_among_nongains": 2.5151627300588814e-11
+   }
+  }
+ },
+ "b": "0.001679754956125544",
+ "inputs": {
+  "gauge44": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+  "extra": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+  "toolkit": "PR #1186 rev3 c37dfb07 (copied to toolkit/)",
+  "main": "0fdd7d82",
+  "b": "0.001679754956125544"
+ },
+ "base_frames": {
+  "gauge44": {
+   "B_gates": 1853,
+   "B_adds": 1797,
+   "early_cleanup": 121,
+   "cleanup": 6802,
+   "start_extra": 192,
+   "fusion_candidates": 2261,
+   "fusion_targets": 112,
+   "fusion_tAH": 501,
+   "copy_pairs": 82,
+   "pairs_with_movable": 13,
+   "movable_reads": 27,
+   "joint_default": 0,
+   "joint_default_s": 0.0,
+   "joint_partial_after": 125,
+   "joint_partial_after_s": 0.0,
+   "base_solve_s": 2.0,
+   "base_cost": 11683290250,
+   "base_profile": {
+    "1": 2348,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "base_certified": true,
+   "base_interval_width_units": 1.9694659089951245e-11
+  },
+  "extra": {
+   "B_gates": 1853,
+   "B_adds": 1797,
+   "early_cleanup": 121,
+   "cleanup": 6802,
+   "start_extra": 192,
+   "fusion_candidates": 2261,
+   "fusion_targets": 112,
+   "fusion_tAH": 501,
+   "copy_pairs": 82,
+   "pairs_with_movable": 13,
+   "movable_reads": 27,
+   "joint_default": 0,
+   "joint_default_s": 0.0,
+   "joint_partial_after": 125,
+   "joint_partial_after_s": 0.0,
+   "base_solve_s": 2.1,
+   "base_cost": 11691748602,
+   "base_profile": {
+    "1": 2340,
+    "2": 508,
+    "3": 420,
+    "4": 126,
+    "5": 82
+   },
+   "base_certified": true,
+   "base_interval_width_units": 2.0306518615364297e-11
+  }
+ },
+ "word_comparison": {
+  "fusion_repair": {
+   "same_candidates": true,
+   "records_with_identical_statuses": 2254,
+   "records": 2254
+  },
+  "pos": {
+   "same_candidates": true,
+   "records_with_identical_status": 3243,
+   "records": 3243
+  },
+  "xj": {
+   "same_candidates": true,
+   "records_with_identical_status": 584,
+   "records": 584
+  }
+ },
+ "shared_fusion": {
+  "candidates": 0,
+  "AHq_groups_with_two_targets": 10,
+  "why": "every two-target group has another reader/scale of H and a write of A between the two targets reads"
+ },
+ "pr1957_coverage_note": "#1957 ran deletion relaxation, single-gate commuting moves, compensation searches, A samples and owner ILPs; its tools import only exchange.coef_mod from the toolkit (no fusion, repair, exchange-move or joint sweep)."
+}

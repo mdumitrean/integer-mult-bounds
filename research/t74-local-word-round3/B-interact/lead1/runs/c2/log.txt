@@ -1,0 +1,28 @@
+base cost 11683290250 {1: 2348, 2: 500, 3: 416, 4: 130, 5: 82} 1.7s
+job [('B', 8)] ddel -4925 basis 10 cand 2407 cone-rejected 244580 shape True 127.1s
+  r1 terms 5 est 0 interacting 2 exact False [(448, 231, 5490, '-1'), (125, 448, 4900, '1/2'), (484, 448, 4799, '-1'), (448, 231, 4362, '1'), (484, 448, 4333, '1')]
+    r2 cand 2440 cone-rejected 249395 shape True T-rank 1
+    r2 stop INFEASIBLE
+  r1 terms 7 est 0 interacting 9 exact False [(231, 448, 5600, '1'), (231, 448, 5491, '-1'), (149, 231, 4912, '1/2'), (472, 231, 4807, '-1'), (231, 448, 4362, '1'), (231, 448, 4333, '-1'), (124, 448, 4108, '-1/2')]
+    r2 cand 2478 cone-rejected 251023 shape True T-rank 1
+    r2 stop INFEASIBLE
+    r1 stop INFEASIBLE
+job [('B', 39)] ddel -4925 basis 10 cand 2394 cone-rejected 150480 shape True 113.8s
+  r1 terms 5 est 0 interacting 2 exact False [(585, 434, 5483, '-1'), (123, 585, 4902, '1/2'), (383, 585, 4805, '1/2'), (585, 434, 4521, '1'), (555, 585, 4141, '1/2')]
+    r2 cand 2425 cone-rejected 154799 shape True T-rank 1
+    r2 stop INFEASIBLE
+  r1 terms 7 est 0 interacting 9 exact False [(434, 585, 5600, '1'), (434, 585, 5508, '-1'), (187, 434, 4974, '1/2'), (287, 434, 4853, '1/2'), (434, 585, 4521, '1'), (434, 585, 4520, '-1'), (127, 585, 4111, '-1/2')]
+    r2 cand 2455 cone-rejected 157508 shape True T-rank 1
+    r2 stop INFEASIBLE
+    r1 stop INFEASIBLE
+job [('B', 44)] ddel -4925 basis 11 cand 3017 cone-rejected 211994 shape True 123.0s
+  r1 terms 5 est 0 interacting 2 exact False [(586, 438, 5600, '-1'), (114, 586, 4956, '1/2'), (182, 586, 4820, '1/2'), (586, 438, 4548, '1'), (114, 586, 4097, '-1/2')]
+    r2 cand 3045 cone-rejected 218334 shape True T-rank 1
+    r2 stop INFEASIBLE
+  r1 terms 7 est 0 interacting 9 exact False [(438, 586, 5600, '1'), (438, 586, 5568, '-1'), (178, 438, 4932, '1/2'), (118, 438, 4819, '1/2'), (438, 586, 4548, '1'), (438, 586, 4523, '-1'), (114, 586, 4097, '-1/2')]
+    r2 cand 3071 cone-rejected 217615 shape True T-rank 1
+    r2 stop INFEASIBLE
+    r1 stop INFEASIBLE
+done 1048.7s
+
+[capped] exit 0 wall 1049.3s peak_rss_gib 0.79

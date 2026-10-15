@@ -1,0 +1,20 @@
+base cost 11683290250 {1: 2348, 2: 500, 3: 416, 4: 130, 5: 82} 1.7s
+job [('B', 1)] ddel -4925 basis 10 cand 2452 cone-rejected 167354 shape True 115.4s
+  r1 terms 3 est 0 interacting 1 exact False [(74, 554, 5562, '1'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2485 cone-rejected 170594 shape True T-rank 1
+    r2 stop INFEASIBLE
+  r1 terms 6 est 0 interacting 9 exact False [(74, 554, 5600, '1'), (554, 74, 5563, '1'), (482, 554, 4791, '-1'), (122, 554, 4679, '-1'), (554, 74, 4537, '1'), (74, 554, 4483, '1')]
+    r2 cand 2541 cone-rejected 170436 shape True T-rank 1
+    r2 stop INFEASIBLE
+    r1 stop INFEASIBLE
+job [('B', 3)] ddel -4925 basis 10 cand 2390 cone-rejected 163519 shape True 113.9s
+  r1 terms 3 est 0 interacting 2 exact False [(566, 98, 5600, '1'), (150, 98, 4911, '-1'), (98, 566, 4542, '1')]
+    r2 cand 2423 cone-rejected 167581 shape True T-rank 1
+    r2 stop INFEASIBLE
+  r1 terms 6 est 0 interacting 9 exact False [(98, 566, 5600, '-1'), (566, 98, 5566, '-1'), (494, 566, 4797, '-1'), (146, 566, 4685, '-1'), (566, 98, 4542, '1'), (98, 566, 4501, '1')]
+    r2 cand 2446 cone-rejected 166594 shape True T-rank 1
+    r2 stop INFEASIBLE
+    r1 stop INFEASIBLE
+done 660.0s
+
+[capped] exit 0 wall 660.5s peak_rss_gib 0.60

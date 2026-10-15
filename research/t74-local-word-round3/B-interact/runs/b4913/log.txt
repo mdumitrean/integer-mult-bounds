@@ -1,0 +1,28 @@
+base cost 11683290250 {1: 2348, 2: 500, 3: 416, 4: 130, 5: 82} comp 7208 2.2s
+job [('B', 1)] ddel -4925 famregs 2 basis 10 T-rank 1 cand 3761 shape True 137.4s
+  r1 #0 terms 3 est 0 interacting 2 exact False [(554, 74, 5600, '-1'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 3802 shape True T-rank 1 basis 10
+    r2 #1 terms 2 est 0 exact True {'status': 'infeasible'} [(74, 554, 5563, '1'), (74, 554, 4900, '-1')]
+    r2 #2 terms 2 est 0 exact True {'status': 'infeasible'} [(74, 554, 5564, '-1'), (74, 554, 4900, '-1')]
+  r1 #1 terms 6 est 0 interacting 9 exact False [(74, 554, 5600, '1'), (554, 74, 5561, '-1'), (482, 554, 4791, '-1'), (122, 554, 4679, '-1'), (554, 74, 4537, '1'), (74, 554, 4483, '1')]
+    r2 cand 4301 shape True T-rank 1 basis 10
+    r2 stop INFEASIBLE
+job [('B', 3)] ddel -4925 famregs 2 basis 10 T-rank 1 cand 3668 shape True 134.0s
+  r1 #0 terms 3 est 0 interacting 2 exact False [(566, 98, 5600, '1'), (150, 98, 4911, '-1'), (98, 566, 4542, '1')]
+    r2 cand 3709 shape True T-rank 1 basis 10
+    r2 #1 terms 2 est 0 exact True {'status': 'infeasible'} [(98, 566, 5567, '1'), (98, 566, 4912, '-1')]
+    r2 stop INFEASIBLE
+  r1 #1 terms 6 est 0 interacting 9 exact False [(98, 566, 5600, '-1'), (566, 98, 5566, '-1'), (494, 566, 4797, '-1'), (146, 566, 4685, '-1'), (566, 98, 4542, '1'), (98, 566, 4501, '1')]
+    r2 cand 4205 shape True T-rank 1 basis 10
+    r2 stop INFEASIBLE
+job [('B', 8)] ddel -4925 famregs 2 basis 10 T-rank 1 cand 4201 shape True 138.1s
+  r1 #0 terms 5 est 0 interacting 2 exact False [(448, 231, 5490, '-1'), (125, 448, 4900, '1/2'), (484, 448, 4799, '-1'), (448, 231, 4362, '1'), (484, 448, 4333, '1')]
+    r2 cand 4237 shape True T-rank 1 basis 10
+    r2 #1 terms 2 est 0 exact True {'status': 'infeasible'} [(448, 231, 4903, '-1'), (448, 231, 4333, '1')]
+    r2 #2 terms 4 est 0 exact True {'status': 'infeasible'} [(448, 231, 5495, '1'), (448, 231, 4903, '-1'), (484, 448, 4802, '1/2'), (484, 448, 4334, '-1/2')]
+  r1 #1 terms 7 est 0 interacting 9 exact False [(231, 448, 5600, '1'), (231, 448, 5491, '-1'), (149, 231, 4912, '1/2'), (472, 231, 4807, '-1'), (231, 448, 4362, '1'), (231, 448, 4333, '-1'), (124, 448, 4108, '-1/2')]
+    r2 cand 4756 shape True T-rank 1 basis 10
+    r2 #1 terms 4 est 0 exact True {'status': 'infeasible'} [(231, 448, 5497, '1'), (231, 448, 4916, '-1'), (472, 231, 4811, '1/2'), (472, 448, 4335, '1/2')]
+    r2 #2 terms 4 est 0 exact True {'status': 'infeasible'} [(231, 448, 5497, '1'), (231, 448, 4916, '-1'), (472, 231, 4811, '1'), (472, 231, 4364, '-1')]
+job [('B', 12)] ddel -4925 famregs 2 basis 10 T-rank 1 cand 4169 shape True 124.5s
+  r1 #0 terms 5 est 0 interacting 2 exact False [(450, 230, 5488, '-1'), (181, 450, 4924, '1/2'), (508, 450, 4815, '-1'), (450, 230, 4398, '1'), (508, 450, 4335, '1')]

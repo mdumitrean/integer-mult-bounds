@@ -1,0 +1,501 @@
+{
+ "agent": "r3/D-families",
+ "words": {
+  "base": "76c01583 (gauge44-word-566-554)",
+  "extra": "e86142b3 (extra-word-566-554)"
+ },
+ "b": "0.001679754956125544",
+ "base_cost": 11683290250,
+ "runs": {
+  "1a single-crossing compensated moves (BASE, all 4824)": {
+   "n": 4824,
+   "status": {
+    "infeasible": 3804,
+    "ok": 1019,
+    "uncertified": 1
+   },
+   "deltas": {
+    "0": 892,
+    "4925": 82,
+    "6781": 45,
+    "7984": 1
+   },
+   "gains": []
+  },
+  "1a base-feasible moves on EXTRA (1020)": {
+   "n": 1020,
+   "status": {
+    "ok": 1019,
+    "uncertified": 1
+   },
+   "deltas": {
+    "0": 892,
+    "4925": 82,
+    "6781": 45,
+    "7984": 1
+   },
+   "gains": []
+  },
+  "1b multi-crossing moves on target ports (BASE, 1736)": {
+   "n": 1736,
+   "status": {
+    "infeasible": 1632,
+    "ok": 104
+   },
+   "deltas": {
+    "0": 94,
+    "4925": 10
+   },
+   "gains": []
+  },
+  "1b two-stage PFS: no-pre + novel single-crossing pre-edits (BASE, 969)": {
+   "n": 969,
+   "status": {
+    "ok": 969
+   },
+   "deltas": {
+    "0": 969
+   },
+   "gains": []
+  },
+  "1b two-stage PFS: novel multi-crossing pre-edits (BASE, 39)": {
+   "n": 39,
+   "status": {
+    "ok": 39
+   },
+   "deltas": {
+    "0": 39
+   },
+   "gains": []
+  },
+  "EXTRA batch: 969 + 39 two-stage + 109 base-infeasible moves near 627/629/630/631": {
+   "n": 1117,
+   "status": {
+    "ok": 1008,
+    "infeasible": 109
+   },
+   "deltas": {
+    "0": 1008
+   },
+   "gains": []
+  }
+ },
+ "capscreen": {
+  "439": {
+   "ports": [
+    121,
+    122,
+    125,
+    126,
+    185,
+    186,
+    189,
+    190
+   ],
+   "dimK": 4,
+   "screen": -67933,
+   "capped": -57112,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "444": {
+   "ports": [
+    145,
+    146,
+    149,
+    150,
+    209,
+    210,
+    213,
+    214
+   ],
+   "dimK": 4,
+   "screen": -67933,
+   "capped": -57112,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "438": {
+   "ports": [
+    113,
+    114,
+    117,
+    118,
+    177,
+    178,
+    181,
+    182
+   ],
+   "dimK": 4,
+   "screen": -62305,
+   "capped": -51484,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "226": {
+   "ports": [
+    120,
+    121,
+    122,
+    123,
+    144,
+    145,
+    146,
+    147
+   ],
+   "dimK": 4,
+   "screen": -51636,
+   "capped": -40815,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "228": {
+   "ports": [
+    176,
+    177,
+    178,
+    179,
+    216,
+    217,
+    218,
+    219
+   ],
+   "dimK": 4,
+   "screen": -51636,
+   "capped": -40815,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "230": {
+   "ports": [
+    180,
+    181,
+    182,
+    183,
+    220,
+    221,
+    222,
+    223
+   ],
+   "dimK": 4,
+   "screen": -51636,
+   "capped": -40815,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "231": {
+   "ports": [
+    124,
+    125,
+    126,
+    127,
+    148,
+    149,
+    150,
+    151
+   ],
+   "dimK": 4,
+   "screen": -51636,
+   "capped": -40815,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "232": {
+   "ports": [
+    116,
+    117,
+    118,
+    119,
+    156,
+    157,
+    158,
+    159
+   ],
+   "dimK": 4,
+   "screen": -51636,
+   "capped": -40815,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "236": {
+   "ports": [
+    188,
+    189,
+    190,
+    191,
+    212,
+    213,
+    214,
+    215
+   ],
+   "dimK": 4,
+   "screen": -51636,
+   "capped": -40815,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "238": {
+   "ports": [
+    184,
+    185,
+    186,
+    187,
+    208,
+    209,
+    210,
+    211
+   ],
+   "dimK": 4,
+   "screen": -51636,
+   "capped": -40815,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "434": {
+   "ports": [
+    120,
+    123,
+    124,
+    127,
+    184,
+    187,
+    188,
+    191
+   ],
+   "dimK": 4,
+   "screen": -51636,
+   "capped": -40815,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "436": {
+   "ports": [
+    112,
+    115,
+    116,
+    119,
+    176,
+    179,
+    180,
+    183
+   ],
+   "dimK": 4,
+   "screen": -51636,
+   "capped": -40815,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "446": {
+   "ports": [
+    144,
+    147,
+    148,
+    151,
+    208,
+    211,
+    212,
+    215
+   ],
+   "dimK": 4,
+   "screen": -51636,
+   "capped": -40815,
+   "base_capped": 0,
+   "unrealizable": 10821
+  },
+  "235": {
+   "ports": [
+    132,
+    133,
+    134,
+    135,
+    140,
+    141,
+    142,
+    143,
+    172,
+    175
+   ],
+   "dimK": 3,
+   "screen": -44073,
+   "capped": -44073,
+   "base_capped": 0,
+   "unrealizable": 0
+  },
+  "237": {
+   "ports": [
+    169,
+    170,
+    196,
+    197,
+    198,
+    199,
+    204,
+    205,
+    206,
+    207
+   ],
+   "dimK": 3,
+   "screen": -44073,
+   "capped": -44073,
+   "base_capped": 0,
+   "unrealizable": 0
+  },
+  "251": {
+   "ports": [
+    132,
+    133,
+    134,
+    135,
+    140,
+    143,
+    172,
+    173,
+    174,
+    175
+   ],
+   "dimK": 3,
+   "screen": -44073,
+   "capped": -44073,
+   "base_capped": 0,
+   "unrealizable": 0
+  },
+  "253": {
+   "ports": [
+    137,
+    138,
+    164,
+    165,
+    166,
+    167,
+    201,
+    202,
+    205,
+    206
+   ],
+   "dimK": 3,
+   "screen": -44073,
+   "capped": -44073,
+   "base_capped": 0,
+   "unrealizable": 0
+  },
+  "267": {
+   "ports": [
+    132,
+    135,
+    140,
+    141,
+    142,
+    143,
+    172,
+    173,
+    174,
+    175
+   ],
+   "dimK": 3,
+   "screen": -44073,
+   "capped": -44073,
+   "base_capped": 0,
+   "unrealizable": 0
+  },
+  "269": {
+   "ports": [
+    129,
+    130,
+    161,
+    162,
+    165,
+    166,
+    193,
+    194,
+    197,
+    198
+   ],
+   "dimK": 3,
+   "screen": -44073,
+   "capped": -44073,
+   "base_capped": 0,
+   "unrealizable": 0
+  },
+  "411": {
+   "ports": [
+    169,
+    170,
+    173,
+    174,
+    196,
+    197,
+    198,
+    199,
+    204,
+    207
+   ],
+   "dimK": 3,
+   "screen": -44073,
+   "capped": -44073,
+   "base_capped": 0,
+   "unrealizable": 0
+  },
+  "413": {
+   "ports": [
+    137,
+    138,
+    141,
+    142,
+    164,
+    165,
+    166,
+    167,
+    201,
+    202
+   ],
+   "dimK": 3,
+   "screen": -44073,
+   "capped": -44073,
+   "base_capped": 0,
+   "unrealizable": 0
+  },
+  "427": {
+   "ports": [
+    169,
+    170,
+    173,
+    174,
+    196,
+    199,
+    204,
+    205,
+    206,
+    207
+   ],
+   "dimK": 3,
+   "screen": -44073,
+   "capped": -44073,
+   "base_capped": 0,
+   "unrealizable": 0
+  },
+  "429": {
+   "ports": [
+    129,
+    130,
+    133,
+    134,
+    161,
+    162,
+    165,
+    166,
+    193,
+    194
+   ],
+   "dimK": 3,
+   "screen": -44073,
+   "capped": -44073,
+   "base_capped": 0,
+   "unrealizable": 0
+  }
+ },
+ "relocation": {
+  "candidates": 0,
+  "mergeable_pairs": 0,
+  "repeated_ts_pairs": 165
+ }
+}

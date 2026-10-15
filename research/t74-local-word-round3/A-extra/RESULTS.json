@@ -1,0 +1,990 @@
+{
+ "agent": "A-extra",
+ "round": "r3",
+ "status": "NO_EXTRA_WORD_KERNEL_IN_SEARCHED_FAMILIES",
+ "words": {
+  "extra": {
+   "path": "inputs/extra-word-566-554.json.gz",
+   "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62"
+  },
+  "base": {
+   "path": "inputs/gauge44-word-566-554.json.gz",
+   "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219"
+  }
+ },
+ "word_diff": "identical gates in A, cut, B, early_cleanup and cleanup; 12 B gates (B397-B408) differ only in frames; start_extra of 627/629/630/631 lacks the 390 level in the extra word (rank 4 vs 5); local rank mass 5594 vs 5590",
+ "b_relaxation": {
+  "word": "inputs/extra-word-566-554.json.gz",
+  "b": "0.001679754956125544",
+  "add_gates": 1797,
+  "statuses": {
+   "ok": 1797
+  },
+  "with_gain": 1002,
+  "profile_change_identical_to_pr1957_base": 1797,
+  "pr1957_relaxation_sha256": "5083c5d90e0cd8e4e12996761247a3f6dfae81bd8559576f3ab81ed1b435d6d5",
+  "gain_classes_extra_vs_pr1957_base": [
+   [
+    -26461,
+    -26389,
+    14
+   ],
+   [
+    -25742,
+    -25677,
+    2
+   ],
+   [
+    -23876,
+    -23814,
+    8
+   ],
+   [
+    -23634,
+    -23570,
+    16
+   ],
+   [
+    -23402,
+    -23339,
+    2
+   ],
+   [
+    -22749,
+    -22689,
+    16
+   ],
+   [
+    -22096,
+    -22039,
+    24
+   ],
+   [
+    -21530,
+    -21474,
+    72
+   ],
+   [
+    -20893,
+    -20839,
+    16
+   ],
+   [
+    -20817,
+    -20764,
+    4
+   ],
+   [
+    -19922,
+    -19870,
+    6
+   ],
+   [
+    -19690,
+    -19639,
+    2
+   ],
+   [
+    -19037,
+    -18989,
+    24
+   ],
+   [
+    -19027,
+    -18976,
+    4
+   ],
+   [
+    -18719,
+    -18670,
+    50
+   ],
+   [
+    -18066,
+    -18020,
+    8
+   ],
+   [
+    -17834,
+    -17789,
+    2
+   ],
+   [
+    -17824,
+    -17776,
+    28
+   ],
+   [
+    -17171,
+    -17126,
+    4
+   ],
+   [
+    -16863,
+    -16820,
+    48
+   ],
+   [
+    -16621,
+    -16576,
+    64
+   ],
+   [
+    -16210,
+    -16170,
+    4
+   ],
+   [
+    -15968,
+    -15926,
+    112
+   ],
+   [
+    -14851,
+    -14812,
+    2
+   ],
+   [
+    -14765,
+    -14726,
+    12
+   ],
+   [
+    -14749,
+    -14711,
+    80
+   ],
+   [
+    -13804,
+    -13770,
+    24
+   ],
+   [
+    -13562,
+    -13526,
+    32
+   ],
+   [
+    -13546,
+    -13511,
+    6
+   ],
+   [
+    -12909,
+    -12876,
+    88
+   ],
+   [
+    -12256,
+    -12226,
+    48
+   ],
+   [
+    -11938,
+    -11907,
+    24
+   ],
+   [
+    -10503,
+    -10476,
+    24
+   ],
+   [
+    -9850,
+    -9826,
+    80
+   ],
+   [
+    -9592,
+    -9567,
+    24
+   ],
+   [
+    -8879,
+    -8857,
+    4
+   ],
+   [
+    -6781,
+    -6763,
+    2
+   ],
+   [
+    -6118,
+    -6100,
+    4
+   ],
+   [
+    -4925,
+    -4913,
+    16
+   ],
+   [
+    -3059,
+    -3050,
+    2
+   ]
+  ],
+  "note": "extra word at b=0.001679754956125544 (our rev3 toolkit) vs #1957 base-word relaxation at #1094 DEFAULT_B (its vendored toolkit); profile changes are compared, units differ by b only"
+ },
+ "pr2142_strict_models_on_extra": {
+  "jobs": 108,
+  "identical": 108,
+  "ddel_equal": 108,
+  "S_sets": [
+   [
+    624,
+    625,
+    626,
+    627,
+    628,
+    629,
+    630,
+    631
+   ]
+  ],
+  "s_candidate_costs_checked": 30456050,
+  "b": "#1094 DEFAULT_B (as #2142)",
+  "meaning": "same budget and same filtered candidate list (keys, positions, columns, oracle costs): the CP-SAT model is identical, so #2142's 104 infeasibility proofs and 4 shape-infeasibilities apply to the extra word"
+ },
+ "width_interface_reader_groups": {
+  "relaxation": {
+   "early-627": {
+    "extra": {
+     "dels": [
+      397,
+      398,
+      399
+     ],
+     "delta": 0,
+     "status": null,
+     "profile": {
+      "1": 2340,
+      "2": 508,
+      "3": 420,
+      "4": 126,
+      "5": 82
+     }
+    },
+    "gauge44": {
+     "dels": [
+      397,
+      398,
+      399
+     ],
+     "delta": 0,
+     "status": null,
+     "profile": {
+      "1": 2348,
+      "2": 500,
+      "3": 416,
+      "4": 130,
+      "5": 82
+     }
+    }
+   },
+   "early-629": {
+    "extra": {
+     "dels": [
+      400,
+      401,
+      402
+     ],
+     "delta": 0,
+     "status": null,
+     "profile": {
+      "1": 2340,
+      "2": 508,
+      "3": 420,
+      "4": 126,
+      "5": 82
+     }
+    },
+    "gauge44": {
+     "dels": [
+      400,
+      401,
+      402
+     ],
+     "delta": 0,
+     "status": null,
+     "profile": {
+      "1": 2348,
+      "2": 500,
+      "3": 416,
+      "4": 130,
+      "5": 82
+     }
+    }
+   },
+   "early-630": {
+    "extra": {
+     "dels": [
+      403,
+      404,
+      405
+     ],
+     "delta": 0,
+     "status": null,
+     "profile": {
+      "1": 2340,
+      "2": 508,
+      "3": 420,
+      "4": 126,
+      "5": 82
+     }
+    },
+    "gauge44": {
+     "dels": [
+      403,
+      404,
+      405
+     ],
+     "delta": 0,
+     "status": null,
+     "profile": {
+      "1": 2348,
+      "2": 500,
+      "3": 416,
+      "4": 130,
+      "5": 82
+     }
+    }
+   },
+   "early-631": {
+    "extra": {
+     "dels": [
+      406,
+      407,
+      408
+     ],
+     "delta": 0,
+     "status": null,
+     "profile": {
+      "1": 2340,
+      "2": 508,
+      "3": 420,
+      "4": 126,
+      "5": 82
+     }
+    },
+    "gauge44": {
+     "dels": [
+      406,
+      407,
+      408
+     ],
+     "delta": 0,
+     "status": null,
+     "profile": {
+      "1": 2348,
+      "2": 500,
+      "3": 416,
+      "4": 130,
+      "5": 82
+     }
+    }
+   },
+   "early-all4": {
+    "extra": {
+     "dels": [
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408
+     ],
+     "delta": -47752,
+     "status": null,
+     "profile": {
+      "1": 2340,
+      "2": 504,
+      "3": 416,
+      "4": 126,
+      "5": 86
+     }
+    },
+    "gauge44": {
+     "dels": [
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408
+     ],
+     "delta": -35516,
+     "status": null,
+     "profile": {
+      "1": 2344,
+      "2": 500,
+      "3": 416,
+      "4": 126,
+      "5": 86
+     }
+    }
+   },
+   "B397-408": {
+    "extra": {
+     "dels": [
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408
+     ],
+     "delta": -47752,
+     "status": null,
+     "profile": {
+      "1": 2340,
+      "2": 504,
+      "3": 416,
+      "4": 126,
+      "5": 86
+     }
+    },
+    "gauge44": {
+     "dels": [
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408
+     ],
+     "delta": -35516,
+     "status": null,
+     "profile": {
+      "1": 2344,
+      "2": 500,
+      "3": 416,
+      "4": 126,
+      "5": 86
+     }
+    }
+   },
+   "reader-624": {
+    "extra": {
+     "dels": [
+      397,
+      400,
+      403
+     ],
+     "delta": -11938,
+     "status": null,
+     "profile": {
+      "1": 2340,
+      "2": 507,
+      "3": 419,
+      "4": 126,
+      "5": 83
+     }
+    },
+    "gauge44": {
+     "dels": [
+      397,
+      400,
+      403
+     ],
+     "delta": -8879,
+     "status": null,
+     "profile": {
+      "1": 2347,
+      "2": 500,
+      "3": 416,
+      "4": 129,
+      "5": 83
+     }
+    }
+   },
+   "reader-625": {
+    "extra": {
+     "dels": [
+      398,
+      401,
+      406
+     ],
+     "delta": -11938,
+     "status": null,
+     "profile": {
+      "1": 2340,
+      "2": 507,
+      "3": 419,
+      "4": 126,
+      "5": 83
+     }
+    },
+    "gauge44": {
+     "dels": [
+      398,
+      401,
+      406
+     ],
+     "delta": -8879,
+     "status": null,
+     "profile": {
+      "1": 2347,
+      "2": 500,
+      "3": 416,
+      "4": 129,
+      "5": 83
+     }
+    }
+   },
+   "reader-626": {
+    "extra": {
+     "dels": [
+      399,
+      404,
+      407
+     ],
+     "delta": -11938,
+     "status": null,
+     "profile": {
+      "1": 2340,
+      "2": 507,
+      "3": 419,
+      "4": 126,
+      "5": 83
+     }
+    },
+    "gauge44": {
+     "dels": [
+      399,
+      404,
+      407
+     ],
+     "delta": -8879,
+     "status": null,
+     "profile": {
+      "1": 2347,
+      "2": 500,
+      "3": 416,
+      "4": 129,
+      "5": 83
+     }
+    }
+   },
+   "reader-628": {
+    "extra": {
+     "dels": [
+      402,
+      405,
+      408
+     ],
+     "delta": -11938,
+     "status": null,
+     "profile": {
+      "1": 2340,
+      "2": 507,
+      "3": 419,
+      "4": 126,
+      "5": 83
+     }
+    },
+    "gauge44": {
+     "dels": [
+      402,
+      405,
+      408
+     ],
+     "delta": -8879,
+     "status": null,
+     "profile": {
+      "1": 2347,
+      "2": 500,
+      "3": 416,
+      "4": 129,
+      "5": 83
+     }
+    }
+   }
+  },
+  "exact_relocations_extra": {
+   "jobs": 92,
+   "outcomes": {
+    "ok/0": 71,
+    "infeasible/0": 21
+   },
+   "gains": []
+  },
+  "multi_deletion_split_key_strict": {
+   "settings": "<=12 inserts, |lambda|<=4 in half steps, budget |gain|-1, per-insert cap = budget, CP-SAT 300 s, #1094 DEFAULT_B",
+   "runs": [
+    {
+     "name": "all-12",
+     "dels": [
+      [
+       "B",
+       397
+      ],
+      [
+       "B",
+       398
+      ],
+      [
+       "B",
+       399
+      ],
+      [
+       "B",
+       400
+      ],
+      [
+       "B",
+       401
+      ],
+      [
+       "B",
+       402
+      ],
+      [
+       "B",
+       403
+      ],
+      [
+       "B",
+       404
+      ],
+      [
+       "B",
+       405
+      ],
+      [
+       "B",
+       406
+      ],
+      [
+       "B",
+       407
+      ],
+      [
+       "B",
+       408
+      ]
+     ],
+     "ddel": -47628,
+     "keys": 36,
+     "candidates": 5606,
+     "shape": true,
+     "cp_status": "INFEASIBLE",
+     "solutions": 0,
+     "sec": 236.8
+    },
+    {
+     "name": "reader-624",
+     "dels": [
+      [
+       "B",
+       397
+      ],
+      [
+       "B",
+       400
+      ],
+      [
+       "B",
+       403
+      ]
+     ],
+     "ddel": -11907,
+     "keys": 20,
+     "candidates": 3380,
+     "shape": true,
+     "cp_status": "INFEASIBLE",
+     "solutions": 0,
+     "sec": 136.8
+    },
+    {
+     "name": "reader-625",
+     "dels": [
+      [
+       "B",
+       398
+      ],
+      [
+       "B",
+       401
+      ],
+      [
+       "B",
+       406
+      ]
+     ],
+     "ddel": -11907,
+     "keys": 20,
+     "candidates": 3380,
+     "shape": true,
+     "cp_status": "INFEASIBLE",
+     "solutions": 0,
+     "sec": 127.8
+    },
+    {
+     "name": "reader-626",
+     "dels": [
+      [
+       "B",
+       399
+      ],
+      [
+       "B",
+       404
+      ],
+      [
+       "B",
+       407
+      ]
+     ],
+     "ddel": -11907,
+     "keys": 20,
+     "candidates": 3381,
+     "shape": true,
+     "cp_status": "INFEASIBLE",
+     "solutions": 0,
+     "sec": 122.4
+    },
+    {
+     "name": "reader-628",
+     "dels": [
+      [
+       "B",
+       402
+      ],
+      [
+       "B",
+       405
+      ],
+      [
+       "B",
+       408
+      ]
+     ],
+     "ddel": -11907,
+     "keys": 24,
+     "candidates": 5023,
+     "shape": true,
+     "cp_status": "INFEASIBLE",
+     "solutions": 0,
+     "sec": 162.3
+    }
+   ]
+  },
+  "diagnostic_no_budget_cap3": [
+   {
+    "name": "all-12",
+    "candidates": 5606,
+    "cp_status_after_exclusions": "INFEASIBLE",
+    "solutions": [
+     {
+      "status": "ok",
+      "delta": 0,
+      "terms": [
+       [
+        628,
+        629,
+        4724,
+        "-1",
+        1
+       ],
+       [
+        628,
+        630,
+        4724,
+        "-1",
+        2
+       ],
+       [
+        628,
+        631,
+        4724,
+        "-1",
+        3
+       ],
+       [
+        626,
+        627,
+        4722,
+        "1",
+        0
+       ],
+       [
+        626,
+        630,
+        4722,
+        "2",
+        2
+       ],
+       [
+        626,
+        631,
+        4722,
+        "-2",
+        3
+       ],
+       [
+        625,
+        627,
+        4721,
+        "-1",
+        0
+       ],
+       [
+        625,
+        629,
+        4721,
+        "2",
+        1
+       ],
+       [
+        625,
+        631,
+        4721,
+        "2",
+        3
+       ],
+       [
+        624,
+        627,
+        4720,
+        "-1",
+        0
+       ],
+       [
+        624,
+        629,
+        4720,
+        "-2",
+        1
+       ],
+       [
+        624,
+        630,
+        4720,
+        "-2",
+        2
+       ]
+      ]
+     }
+    ],
+    "sec": 213.5
+   },
+   {
+    "name": "reader-624",
+    "candidates": 3399,
+    "cp_status_after_exclusions": "INFEASIBLE",
+    "solutions": [
+     {
+      "status": "ok",
+      "delta": 0,
+      "terms": [
+       [
+        624,
+        627,
+        4720,
+        "-1",
+        0
+       ],
+       [
+        624,
+        629,
+        4720,
+        "-2",
+        1
+       ],
+       [
+        624,
+        630,
+        4720,
+        "-2",
+        2
+       ]
+      ]
+     }
+    ],
+    "sec": 128.4
+   },
+   {
+    "name": "reader-628",
+    "candidates": 5042,
+    "cp_status_after_exclusions": "INFEASIBLE",
+    "solutions": [
+     {
+      "status": "ok",
+      "delta": 0,
+      "terms": [
+       [
+        628,
+        629,
+        4724,
+        "-1",
+        0
+       ],
+       [
+        628,
+        630,
+        4724,
+        "-1",
+        1
+       ],
+       [
+        628,
+        631,
+        4724,
+        "-1",
+        2
+       ]
+      ]
+     }
+    ],
+    "sec": 150.6
+   }
+  ]
+ },
+ "a_relaxation": {
+  "gates": 3451,
+  "statuses": {
+   "ok": 3451
+  },
+  "with_gain": 360,
+  "reference_base_gates": 3451,
+  "profile_change_identical_to_base_reference": 3451,
+  "gain_histogram": {
+   "-23644": 2,
+   "-20893": 62,
+   "-19700": 12,
+   "-19690": 16,
+   "-19037": 8,
+   "-16631": 8,
+   "-9850": 172,
+   "-8879": 48,
+   "-6781": 32
+  }
+ },
+ "kernel_found": false
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "canonical_main": "0fdd7d82de03e43c9e5a1000dfbcd380d1b687d2",
+  "priority_revision": 4,
+  "words": {
+    "gauge44-word-566-554.json.gz": {
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "source": "PR #1672 b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "calls": 249
+    },
+    "extra-word-566-554.json.gz": {
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "source": "PR #1672 b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "calls": 417
+    }
+  },
+  "same_blobs_in": ["PR #2044 322949a5 research/capped-fusion-t74-k554/new/", "PR #1957 e6a4d348 research/t74-k554-local-exhaustion/inputs/", "PR #2142 5f2f6084 research/t74-k554-local-exhaustion/inputs/"],
+  "toolkit": {"pr": 1186, "head": "c37dfb077ad77ef391cefa56c98db87a40b7e28c", "manifest_sha256": "658331a6f03d1ca4eb0ae7f186b0da2aa694d70619af3c83a77e051cca85fd8e"},
+  "reused_code": {
+    "PR #1957 (rohanarun)": "e6a4d34874bb1aeba192c62629ebb633a6b5c424 research/t74-k554-local-exhaustion/",
+    "PR #2142 (ianlibanio)": "5f2f6084 research/t74-split-key-kernel-search/"
+  },
+  "cost_weights_b": "0.001679754956125544",
+  "cost_weights_note": "CP-SAT model comparisons in A-extra use #1094's DEFAULT_B with #1957's vendored toolkit, exactly as #2142, so the models are comparable with #2142's proofs."
+}

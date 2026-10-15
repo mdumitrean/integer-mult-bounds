@@ -1,0 +1,30 @@
+base cost 11683290250 {1: 2348, 2: 500, 3: 416, 4: 130, 5: 82} comp 7208 2.1s
+job [('B', 857)] ddel -3059 famregs 2 basis 4 T-rank 1 cand 1429 shape True 49.0s
+  r1 stop INFEASIBLE
+job [('B', 875)] ddel -3059 famregs 2 basis 4 T-rank 1 cand 1353 shape True 49.5s
+  r1 stop INFEASIBLE
+job [('B', 32)] ddel -4925 famregs 2 basis 10 T-rank 1 cand 3556 shape True 126.5s
+  r1 stop INFEASIBLE
+job [('B', 36)] ddel -4925 famregs 2 basis 10 T-rank 1 cand 3569 shape True 122.5s
+  r1 stop INFEASIBLE
+job [('B', 39)] ddel -4925 famregs 2 basis 10 T-rank 1 cand 3678 shape True 134.3s
+  r1 #0 terms 5 est 0 interacting 2 exact False [(585, 434, 5483, '-1'), (123, 585, 4902, '1/2'), (383, 585, 4805, '1/2'), (585, 434, 4521, '1'), (555, 585, 4141, '1/2')]
+    r2 cand 3714 shape True T-rank 1 basis 10
+    r2 #1 terms 2 est 0 exact True {'status': 'infeasible'} [(585, 434, 4905, '-1'), (585, 434, 4141, '1')]
+    r2 #2 terms 4 est 0 exact True {'status': 'infeasible'} [(585, 434, 5488, '1'), (585, 434, 4905, '-1'), (383, 585, 4808, '-1/4'), (555, 585, 4142, '-1/4')]
+  r1 #1 terms 7 est 0 interacting 9 exact False [(434, 585, 5600, '1'), (434, 585, 5508, '-1'), (187, 434, 4974, '1/2'), (287, 434, 4853, '1/2'), (434, 585, 4521, '1'), (434, 585, 4520, '-1'), (127, 585, 4111, '-1/2')]
+    r2 cand 4224 shape True T-rank 1 basis 10
+    r2 #1 terms 4 est 0 exact True {'status': 'infeasible'} [(434, 585, 5514, '1'), (434, 585, 4978, '-1'), (287, 434, 4857, '-1/2'), (287, 434, 4523, '1/2')]
+    r2 stop INFEASIBLE
+job [('B', 44)] ddel -4925 famregs 2 basis 11 T-rank 1 cand 3902 shape True 121.0s
+  r1 #0 terms 5 est 0 interacting 2 exact False [(586, 438, 5600, '-1'), (114, 586, 4956, '1/2'), (182, 586, 4820, '1/2'), (586, 438, 4548, '1'), (114, 586, 4097, '-1/2')]
+    r2 cand 3938 shape True T-rank 1 basis 11
+    r2 #1 terms 4 est 0 exact True {'status': 'infeasible'} [(114, 586, 4960, '-1/4'), (182, 586, 4823, '-1/2'), (182, 586, 4549, '1/2'), (114, 586, 4098, '1/4')]
+    r2 #2 terms 4 est 0 exact True {'status': 'infeasible'} [(586, 438, 5605, '1'), (586, 438, 4959, '-1'), (182, 586, 4823, '-1/2'), (182, 586, 4549, '1/2')]
+  r1 #1 terms 7 est 0 interacting 9 exact False [(438, 586, 5600, '1'), (438, 586, 5568, '-1'), (178, 438, 4932, '1/2'), (118, 438, 4819, '1/2'), (438, 586, 4548, '1'), (438, 586, 4523, '-1'), (114, 586, 4097, '-1/2')]
+    r2 cand 4438 shape True T-rank 1 basis 11
+    r2 #1 terms 4 est 0 exact True {'status': 'infeasible'} [(178, 438, 4937, '-1/4'), (118, 438, 4823, '-1/2'), (118, 438, 4550, '1/2'), (178, 586, 4132, '-1/4')]
+    r2 #2 terms 4 est 0 exact True {'status': 'infeasible'} [(438, 586, 5574, '1'), (438, 586, 4936, '-1'), (118, 438, 4823, '-1/2'), (118, 438, 4550, '1/2')]
+done 1075.7s
+
+[capped] exit 0 wall 1076.3s peak_rss_gib 1.00
