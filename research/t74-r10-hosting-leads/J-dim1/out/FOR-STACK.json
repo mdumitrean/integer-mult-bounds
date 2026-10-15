@@ -1,0 +1,5 @@
+{"candidate": null,
+ "reason": "no positive net: every exact way found to host a width-8 (1,1) follower merges it with a width-4 cold host into a width-9 register; best certified local delta is -H3 per call, fill relaxation (upper bound) -1.96e-7 per hosting",
+ "new_exact_mechanism": "entering-hostee hosting: the hostee's anticipatory B reads (tgt += h at its entrance frame, dim 1) become dyadic initial corrections tgt += c*K_op(host) pulled back through the precondition; hostee renamed to a cold host (pure-input row at retirement) from its first write k1, warp U_host -> E <= hi(k1); host loses helper_final/buffer; pinned PR2679 auditor PASS on 152 built words (both words agree)",
+ "best_pair": {"hostee": 592, "host": 277, "E": "4-dim frame of 592's first write", "delta_local": {"3": -1}, "inventory": "4:-1, 8:-1, 9:+1", "relaxed_value": "-1.95957e-7"},
+ "restorable_variant_lead": "keeping the host cold (end frame 7, (4,8)->7) is +8.7e-7 in the relaxation with local -H3-H2, but needs an exact undo of the hostee's writes; each hostee's first-write source is rewritten twice before the final read"}
