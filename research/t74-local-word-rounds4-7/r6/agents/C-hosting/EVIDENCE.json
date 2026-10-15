@@ -1,0 +1,279 @@
+{
+ "agent": "C-hosting",
+ "round": "r6",
+ "b": "0.001679754956125544",
+ "inputs": {
+  "owners": "wt-566/research/global-mixed-t74-exact-fill/OWNERS.json.gz (content sha256 417903ae..., identical along #1319 -> #2220)",
+  "plan": "r3/vendor/pr1672/research/gmx-t74-k554-signed-001/new/PLAN.json (566+554 supplier)",
+  "checker": "wt-566/research/global-mixed-t74-exact-fill/independent_core.py (PR1319, unchanged)",
+  "context": "r2/full566b (retained fresh T74 replay: global8 parent, DATA-PHASES, canonical word, native-extra local)",
+  "engines": "wt-566/research/complex-k492-owner-repair/vendor/multicold/engines/moment.py"
+ },
+ "sanity_current": {
+  "status": "PASS_INDEPENDENT_VARIABLE_T_LITERAL_WINDOWS_CHARTS_PREFIX_ROW",
+  "idle": {
+   "48": 22748
+  },
+  "profile": {
+   "1": 1560432,
+   "2": 336336,
+   "3": 278724,
+   "4": 84912,
+   "5": 54612,
+   "8": 5328,
+   "48": 22748
+  },
+  "charts": 11142,
+  "prefix_bits": 1441,
+  "charged": 2048,
+  "row": 19545,
+  "rank_mass": 4816512,
+  "controls": 7,
+  "seconds": 1.3
+ },
+ "R1_final": {
+  "status": "PASS_INDEPENDENT_VARIABLE_T_LITERAL_WINDOWS_CHARTS_PREFIX_ROW",
+  "helper_register": 478,
+  "helper_index": 254,
+  "dispatch": {
+   "extra": 417,
+   "gauge44": 249
+  },
+  "inventories": {
+   "gauge44": {
+    "4": 44,
+    "5": 44,
+    "7": 38,
+    "8": 115,
+    "9": 239
+   },
+   "extra": {
+    "4": 40,
+    "5": 48,
+    "7": 38,
+    "8": 115,
+    "9": 239
+   }
+  },
+  "assumed_paid": {
+   "gauge44": {
+    "1": 2347,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82,
+    "8": 8
+   },
+   "extra": {
+    "1": 2339,
+    "2": 508,
+    "3": 420,
+    "4": 126,
+    "5": 82,
+    "8": 8
+   }
+  },
+  "idle": {
+   "1": 59,
+   "2": 41,
+   "3": 99,
+   "4": 57,
+   "48": 22748
+  },
+  "profile": {
+   "1": 1559825,
+   "2": 336377,
+   "3": 278823,
+   "4": 84969,
+   "5": 54612,
+   "8": 5328,
+   "48": 22748
+  },
+  "rank_mass": 4816512,
+  "charts": 11605,
+  "prefix_bits": 1441,
+  "charged_prefix_bits": 2048,
+  "physical_row_coefficient": 19545,
+  "controls_rejected": [
+   "private_namespace_collision",
+   "copy_replica_alias",
+   "missing_whole_helper",
+   "split_whole_helper",
+   "truncated_helper_width",
+   "cross_idle_boundary",
+   "cross_child_pending_axis_alias",
+   "wrong_provider_at_changed_call"
+  ],
+  "roles": 319680,
+  "roles_changed": 1698,
+  "roles_moved_between_bins": 1320,
+  "owners_content_sha256": "cd850982e1561441d8a76d54c95750773756c48619715968f88a1065792712fd",
+  "seconds": 3.5
+ },
+ "R1_final_pick": {
+  "trials": 400,
+  "idle_cost": 1407075215,
+  "rem_hist": {
+   "4": 57,
+   "3": 99,
+   "2": 41,
+   "1": 59
+  },
+  "gain_units": 2483149,
+  "kappa_est": 8.263055677298922e-08,
+  "seconds": 76.2
+ },
+ "R1_cp_sat_attempt": {
+  "status": "FEASIBLE (420 s limit)",
+  "idle_cost": 1407964415,
+  "bound": 1406717145,
+  "gain_units": 1593949
+ },
+ "endpoint": {
+  "current": {
+   "profile": {
+    "1": 1560432,
+    "2": 336336,
+    "3": 278724,
+    "4": 84912,
+    "5": 54612,
+    "8": 5328,
+    "48": 22748
+   },
+   "complex_lower": "335950991225108904267/200000000000000000000000",
+   "conservative_complex_lower": "209969369159929532961/125000000000000000000000",
+   "complex_lower_decimal": "0.001679754956125544521335",
+   "seconds": 0.1
+  },
+  "R1final": {
+   "profile": {
+    "1": 1559825,
+    "2": 336377,
+    "3": 278823,
+    "4": 84969,
+    "5": 54612,
+    "8": 5328,
+    "48": 22748
+   },
+   "complex_lower": "1679838535668063882073/1000000000000000000000000",
+   "conservative_complex_lower": "52494954150697219437/31250000000000000000000",
+   "complex_lower_decimal": "0.001679838535668063882073",
+   "seconds": 0.1,
+   "gain_over_current": {
+    "complex_lower": "8.3579542519360738E-8",
+    "conservative": "8.3579542874758296E-8"
+   }
+  }
+ },
+ "R1_same_pick_other_helpers": {
+  "479": "PASS",
+  "490": "PASS",
+  "491": "PASS",
+  "note": "identical idle/profile/charts; helpers 502/503/515 save only 2,109,673 per call, so R1 would net -2,032,997 units for them"
+ },
+ "tolerance": {
+  "total_gain_units": 2483149,
+  "per_call_units": 3728.5,
+  "meaning": "largest average extra local cost per call (zeroing the entrance response) that keeps R1-final a net gain"
+ },
+ "pattern_min_change": {
+  "11478864": {
+   "status": "OPTIMAL",
+   "changed_bins": 218,
+   "bound": 218.0,
+   "gain": 11478864,
+   "calls": {
+    "base-n1": 299,
+    "extra-n1": 367
+   },
+   "delta": {
+    "32:[4, 4, 4, 4, 8, 8]": 54,
+    "32:[4, 9, 9, 9]": 2,
+    "32:[5, 9, 9, 9]": -200,
+    "32:[8, 8, 8, 8]": 144,
+    "48:[]": 18,
+    "48:[4, 8, 9, 9, 9, 9]": -18
+   }
+  },
+  "8000000": {
+   "status": "OPTIMAL",
+   "changed_bins": 167,
+   "bound": 167.0,
+   "gain": 8027346,
+   "calls": {
+    "base-n1": 243,
+    "extra-n1": 423
+   },
+   "delta": {
+    "48:[4]": 9,
+    "48:[4, 4, 4, 4, 4, 4, 4, 4, 8, 8]": 14,
+    "48:[4, 4, 5, 5, 8]": 11,
+    "48:[4, 8, 9, 9, 9, 9]": -167,
+    "48:[5, 5, 8, 8, 9, 9]": 1,
+    "48:[8, 8, 8, 8, 8, 8]": 132
+   }
+  },
+  "5000000": {
+   "status": "OPTIMAL",
+   "changed_bins": 167,
+   "bound": 167.0,
+   "gain": 7795885,
+   "calls": {
+    "base-n1": 247,
+    "extra-n1": 419
+   },
+   "delta": {
+    "32:[4, 4, 4, 4, 5, 9]": 1,
+    "32:[5, 9, 9, 9]": -1,
+    "48:[4, 4, 4, 4, 4, 4, 4, 4, 4]": 14,
+    "48:[4, 4, 4, 4, 4, 4, 4, 5, 5, 8]": 4,
+    "48:[4, 8, 9, 9, 9, 9]": -166,
+    "48:[8]": 12,
+    "48:[8, 8, 8, 8, 8, 8]": 136
+   }
+  },
+  "3000000": {
+   "status": "OPTIMAL",
+   "changed_bins": 167,
+   "bound": 167.0,
+   "gain": 5218070,
+   "calls": {
+    "base-n1": 248,
+    "extra-n1": 418
+   },
+   "delta": {
+    "48:[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]": 13,
+    "48:[4, 4, 4, 5, 5]": 2,
+    "48:[4, 8, 9, 9, 9, 9]": -167,
+    "48:[4, 9, 9]": 1,
+    "48:[8, 8, 8, 8, 8]": 73,
+    "48:[8, 8, 8, 8, 8, 8]": 78
+   }
+  }
+ },
+ "R2_regional_consolidation": {
+  "moves_found": 0,
+  "reason": "each 48-bin region carries width-9 roles of only 4-15 distinct calls; one narrowing per call cannot free 48 units in a region"
+ },
+ "R3_dispatch_shift": {
+  "switches_found": 1,
+  "reason": "an extra call's 48 (5,9,9,9) bins share the same three width-9 calls; only 1 of 417 extra calls has 4 bins with disjoint width-9 calls"
+ },
+ "clustering": {
+  "regions_48_with_full_bins": 82,
+  "full_bins_per_region_max": 224,
+  "distinct_nine_calls_per_region": {
+   "min": 4,
+   "median": 6.0,
+   "max": 15
+  },
+  "extra_calls": 417,
+  "five_bins_per_extra_call": 48,
+  "disjoint_five_bins_per_extra_call": {
+   "min": 1,
+   "median": 1,
+   "max": 5,
+   "at_least_4": 1
+  }
+ }
+}

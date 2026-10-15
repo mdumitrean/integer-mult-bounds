@@ -1,0 +1,847 @@
+{
+ "agent": "B-zero502",
+ "round": "r6",
+ "b": "0.001679754956125544",
+ "words": {
+  "base": "r3/inputs/gauge44-word-566-554.json.gz",
+  "extra": "r3/inputs/extra-word-566-554.json.gz"
+ },
+ "leaks": {
+  "502": {
+   "raw_target_leak": {
+    "202": "1",
+    "203": "1",
+    "204": "-1",
+    "205": "-1"
+   },
+   "entrance_response": {
+    "203": "-1/2",
+    "205": "-1/2",
+    "206": "-1/2",
+    "200": "1/2"
+   },
+   "main_nonzero_rows": 8,
+   "reads_q": [
+    [
+     "B",
+     1153,
+     [
+      "add",
+      684,
+      502,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1765,
+     [
+      "add",
+      490,
+      502,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1768,
+     [
+      "add",
+      205,
+      502,
+      -2,
+      1
+     ]
+    ]
+   ],
+   "n_reads_q": 3,
+   "writes_q": [
+    [
+     "A",
+     40,
+     [
+      "add",
+      502,
+      572,
+      1,
+      1
+     ]
+    ],
+    [
+     "A",
+     1233,
+     [
+      "add",
+      502,
+      550,
+      -1,
+      1
+     ]
+    ],
+    [
+     "B",
+     779,
+     [
+      "add",
+      502,
+      312,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1041,
+     [
+      "add",
+      502,
+      550,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1766,
+     [
+      "add",
+      502,
+      490,
+      -1,
+      2
+     ]
+    ]
+   ],
+   "n_writes_q": 5,
+   "target_carrier_events": [
+    [
+     "B",
+     1767,
+     [
+      "add",
+      203,
+      490,
+      1,
+      1
+     ],
+     "0",
+     "1"
+    ],
+    [
+     "B",
+     1768,
+     [
+      "add",
+      205,
+      502,
+      -2,
+      1
+     ],
+     "0",
+     "-1"
+    ],
+    [
+     "B",
+     1787,
+     [
+      "add",
+      202,
+      683,
+      1,
+      1
+     ],
+     "0",
+     "1"
+    ],
+    [
+     "B",
+     1788,
+     [
+      "add",
+      204,
+      684,
+      -2,
+      1
+     ],
+     "0",
+     "-1"
+    ]
+   ],
+   "n_target_events": 4,
+   "start_extra": null,
+   "helper_final": null
+  },
+  "503": {
+   "raw_target_leak": {
+    "200": "1",
+    "201": "1",
+    "206": "-1",
+    "207": "-1"
+   },
+   "entrance_response": {
+    "200": "1/2",
+    "206": "1/2",
+    "205": "-1/2",
+    "203": "1/2"
+   },
+   "main_nonzero_rows": 8,
+   "reads_q": [
+    [
+     "B",
+     1154,
+     [
+      "add",
+      685,
+      503,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1769,
+     [
+      "add",
+      491,
+      503,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1772,
+     [
+      "add",
+      206,
+      503,
+      -2,
+      1
+     ]
+    ]
+   ],
+   "n_reads_q": 3,
+   "writes_q": [
+    [
+     "A",
+     60,
+     [
+      "add",
+      503,
+      573,
+      1,
+      1
+     ]
+    ],
+    [
+     "A",
+     1234,
+     [
+      "add",
+      503,
+      551,
+      -1,
+      1
+     ]
+    ],
+    [
+     "B",
+     780,
+     [
+      "add",
+      503,
+      70,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1042,
+     [
+      "add",
+      503,
+      551,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1770,
+     [
+      "add",
+      503,
+      491,
+      -1,
+      2
+     ]
+    ]
+   ],
+   "n_writes_q": 5,
+   "target_carrier_events": [
+    [
+     "B",
+     1771,
+     [
+      "add",
+      200,
+      491,
+      1,
+      1
+     ],
+     "0",
+     "1"
+    ],
+    [
+     "B",
+     1772,
+     [
+      "add",
+      206,
+      503,
+      -2,
+      1
+     ],
+     "0",
+     "-1"
+    ],
+    [
+     "B",
+     1783,
+     [
+      "add",
+      201,
+      682,
+      1,
+      1
+     ],
+     "0",
+     "1"
+    ],
+    [
+     "B",
+     1784,
+     [
+      "add",
+      207,
+      685,
+      -2,
+      1
+     ],
+     "0",
+     "-1"
+    ]
+   ],
+   "n_target_events": 4,
+   "start_extra": null,
+   "helper_final": null
+  },
+  "515": {
+   "raw_target_leak": {
+    "200": "1",
+    "202": "1",
+    "205": "-1",
+    "207": "-1"
+   },
+   "entrance_response": {
+    "200": "1/2",
+    "205": "-1/2",
+    "206": "-1/2",
+    "203": "1/2"
+   },
+   "main_nonzero_rows": 8,
+   "reads_q": [
+    [
+     "B",
+     1156,
+     [
+      "add",
+      687,
+      515,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1761,
+     [
+      "add",
+      479,
+      515,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1764,
+     [
+      "add",
+      205,
+      515,
+      -2,
+      1
+     ]
+    ]
+   ],
+   "n_reads_q": 3,
+   "writes_q": [
+    [
+     "A",
+     58,
+     [
+      "add",
+      515,
+      575,
+      1,
+      1
+     ]
+    ],
+    [
+     "A",
+     1222,
+     [
+      "add",
+      515,
+      563,
+      -1,
+      1
+     ]
+    ],
+    [
+     "B",
+     799,
+     [
+      "add",
+      515,
+      110,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1044,
+     [
+      "add",
+      515,
+      563,
+      1,
+      1
+     ]
+    ],
+    [
+     "B",
+     1762,
+     [
+      "add",
+      515,
+      479,
+      -1,
+      2
+     ]
+    ]
+   ],
+   "n_writes_q": 5,
+   "target_carrier_events": [
+    [
+     "B",
+     1763,
+     [
+      "add",
+      200,
+      479,
+      1,
+      1
+     ],
+     "0",
+     "1"
+    ],
+    [
+     "B",
+     1764,
+     [
+      "add",
+      205,
+      515,
+      -2,
+      1
+     ],
+     "0",
+     "-1"
+    ],
+    [
+     "B",
+     1775,
+     [
+      "add",
+      202,
+      680,
+      1,
+      1
+     ],
+     "0",
+     "1"
+    ],
+    [
+     "B",
+     1776,
+     [
+      "add",
+      207,
+      687,
+      -2,
+      1
+     ],
+     "0",
+     "-1"
+    ]
+   ],
+   "n_target_events": 4,
+   "start_extra": null,
+   "helper_final": null
+  }
+ },
+ "usage_idle_helpers_in_main": 0,
+ "construction": "in-B compensation: re-time every A-write (and B-write before slot t) of q to after t (sources not rewritten, q not read before t); insert at t the target deliveries y += d_y q solving M_t d = -L (M_t = B target-only mixing from t); the A+cut+B map then has a zero q column on targets and the re-derived compensation no longer reads q",
+ "control_not_narrowed": {
+  "results": {
+   "502": {
+    "certified": true,
+    "cost": 11683290250,
+    "delta": 0,
+    "comp": 7204,
+    "comp_reads_q": 0,
+    "deliveries": [
+     [
+      "add",
+      200,
+      502,
+      -1,
+      2
+     ],
+     [
+      "add",
+      203,
+      502,
+      1,
+      2
+     ],
+     [
+      "add",
+      205,
+      502,
+      1,
+      2
+     ],
+     [
+      "add",
+      206,
+      502,
+      1,
+      2
+     ]
+    ],
+    "moved_A": [
+     40,
+     1233
+    ]
+   },
+   "503": {
+    "certified": true,
+    "cost": 11683290250,
+    "delta": 0,
+    "comp": 7204,
+    "comp_reads_q": 0,
+    "deliveries": [
+     [
+      "add",
+      200,
+      503,
+      -1,
+      2
+     ],
+     [
+      "add",
+      203,
+      503,
+      -1,
+      2
+     ],
+     [
+      "add",
+      205,
+      503,
+      1,
+      2
+     ],
+     [
+      "add",
+      206,
+      503,
+      -1,
+      2
+     ]
+    ],
+    "moved_A": [
+     60,
+     1234
+    ]
+   },
+   "515": {
+    "certified": true,
+    "cost": 11683290250,
+    "delta": 0,
+    "comp": 7204,
+    "comp_reads_q": 0,
+    "deliveries": [
+     [
+      "add",
+      200,
+      515,
+      -1,
+      2
+     ],
+     [
+      "add",
+      203,
+      515,
+      -1,
+      2
+     ],
+     [
+      "add",
+      205,
+      515,
+      1,
+      2
+     ],
+     [
+      "add",
+      206,
+      515,
+      1,
+      2
+     ]
+    ],
+    "moved_A": [
+     58,
+     1222
+    ]
+   }
+  },
+  "audit": {
+   "502": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+   "503": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+   "515": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES"
+  },
+  "native": "base word and CONTROL-inB-502: PR635 native chain 5/5 PASS (out/NATIVE-base.log, out/NATIVE-control502.log)"
+ },
+ "narrowed": {
+  "usweep_502_all_u_B0": {
+   "infeasible": 511
+  },
+  "bulk_base_149pairs_3slots": {
+   "t=0:q read before t": 78,
+   "t=550:q read before t": 78,
+   "t=705:q read before t": 78,
+   "t=0:infeasible": 71,
+   "t=550:infeasible": 71,
+   "t=705:infeasible": 71
+  },
+  "bulk_extra_149pairs_3slots": {
+   "t=0:q read before t": 78,
+   "t=550:q read before t": 78,
+   "t=705:q read before t": 78,
+   "t=0:infeasible": 71,
+   "t=550:infeasible": 71,
+   "t=705:infeasible": 71
+  },
+  "tscan_502_503_515_step25": {
+   "infeasible": 105
+  },
+  "tscan_fullc1_22helpers_step50": {
+   "infeasible": 381,
+   "source rewritten": 105,
+   "q read before t": 350
+  },
+  "feasible": 0
+ },
+ "spread": {
+  "word": "r3/inputs/gauge44-word-566-554.json.gz",
+  "q": 502,
+  "u": 102,
+  "construction": {
+   "status": "built",
+   "moved_A": [
+    40,
+    1233
+   ],
+   "deliveries": [
+    [
+     "add",
+     200,
+     502,
+     -1,
+     2
+    ],
+    [
+     "add",
+     203,
+     502,
+     1,
+     2
+    ],
+    [
+     "add",
+     205,
+     502,
+     1,
+     2
+    ],
+    [
+     "add",
+     206,
+     502,
+     1,
+     2
+    ]
+   ],
+   "leak_before": {
+    "203": "1",
+    "205": "-1",
+    "202": "1",
+    "204": "-1"
+   },
+   "leak_after": {}
+  },
+  "conflict": [
+   "L not inside U at mutable vertex",
+   "6115",
+   "B",
+   "1842"
+  ],
+  "conflict_regs": [
+   166,
+   519
+  ],
+  "conflict_lower": [
+   256,
+   128,
+   64,
+   32,
+   16,
+   8,
+   4,
+   2,
+   1
+  ],
+  "conflict_upper": [
+   256,
+   129,
+   64,
+   33,
+   16,
+   8,
+   5,
+   3
+  ],
+  "targets_reached": 72,
+  "helpers_reached": 464,
+  "targets": [
+   128,
+   129,
+   130,
+   131,
+   132,
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   139,
+   140,
+   141,
+   142,
+   143,
+   144,
+   145,
+   146,
+   147,
+   148,
+   149,
+   150,
+   151,
+   152,
+   153,
+   154,
+   155,
+   156,
+   157,
+   158,
+   159,
+   160,
+   163,
+   165,
+   166,
+   168,
+   169,
+   170,
+   171,
+   172,
+   173,
+   174,
+   175,
+   176,
+   177,
+   178,
+   179,
+   180,
+   181,
+   182,
+   183,
+   184,
+   185,
+   186,
+   187,
+   188,
+   189,
+   190,
+   191,
+   192,
+   195,
+   197,
+   198,
+   200,
+   201,
+   202,
+   203,
+   204,
+   205,
+   206,
+   207
+  ],
+  "note": "registers whose L/U-propagated lower bound contains the narrowing vector 102 after B-start deliveries"
+ },
+ "cut_probe": {
+  "word": "r6/agents/B-zero502/words/PROBE-cut-502.json.gz",
+  "audit_local": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+  "compensation_gates": 7204,
+  "width_inventory": {
+   "4": 44,
+   "5": 44,
+   "7": 38,
+   "8": 115,
+   "9": 239
+  },
+  "native": "FAIL at step ledgers (hpe_emit_local: emitted column mismatch, register 153): out/NATIVE-PROBE.log",
+  "verdict": "audit_local gap, not a gain: cut gates are not frame-checked, so a non-centre cut add reading an entering helper passes the auditor; the native chain rejects it"
+ },
+ "retarget": "coordinator: only full-c1 narrowings (2,116,454) pay under C-hosting fill, edit budget ~3,728 units/call; 502/503/515 save 2,109,673 (dropped). Full-c1 pairs in my sweep: 100 (78 read in A: construction inapplicable; 22 applicable: all infeasible at every movable slot); A-zero478 SCREEN117: 0 of 104 full-c1 helpers pass on either word.",
+ "outcome": "scoped negative: no auditor- and native-valid narrowing; kappa unchanged"
+}

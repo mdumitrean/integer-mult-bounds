@@ -1,0 +1,178 @@
+{
+ "p1407": {
+  "system": {
+   "dels": [
+    [
+     "B",
+     1407
+    ],
+    [
+     "B",
+     1408
+    ]
+   ],
+   "a_window": null,
+   "ddel": -49210,
+   "ncand": 52682,
+   "rows": 7520,
+   "rhs_rows": 3,
+   "nterms": 354850,
+   "sentinel_kept": 42804
+  },
+  "rowgen_q": {
+   "iterations": 239,
+   "last_checks": "{'exact': 235, 'inexact': 0, 'frames_bad': 235, 'frames_ok': 0}",
+   "done": []
+  },
+  "rowgen_qa": {
+   "iterations": 51,
+   "last_checks": "{'exact': 48, 'inexact': 0, 'frames_bad': 48, 'frames_ok': 0, 'stars': 96, 'star_pairs': 2611167}",
+   "done": []
+  },
+  "coverproof": {
+   "rows": {
+    "59": 457,
+    "62": 629,
+    "614": 176
+   },
+   "stats": {
+    "singles": 0,
+    "pairs_ok": 211,
+    "triples_tested": 0
+   },
+   "found": 211,
+   "verdict": "not closed: frame-feasible covering sets exist"
+  }
+ },
+ "p1439": {
+  "system": {
+   "dels": [
+    [
+     "B",
+     1439
+    ],
+    [
+     "B",
+     1440
+    ]
+   ],
+   "a_window": null,
+   "ddel": -43642,
+   "ncand": 21741,
+   "rows": 8251,
+   "rhs_rows": 3,
+   "nterms": 99024,
+   "sentinel_kept": 11649
+  },
+  "rowgen_q": {
+   "iterations": 413,
+   "last_checks": "{'exact': 410, 'inexact': 0, 'frames_bad': 410, 'frames_ok': 0}",
+   "done": [
+    "done TIME 1600.2"
+   ]
+  },
+  "rowgen_qa": null,
+  "coverproof": {
+   "rows": {
+    "27": 425,
+    "30": 615,
+    "581": 196
+   },
+   "stats": {
+    "singles": 0,
+    "pairs_ok": 211,
+    "triples_tested": 0
+   },
+   "found": 211,
+   "verdict": "not closed: frame-feasible covering sets exist"
+  },
+  "paircover": {
+   "n1": 196,
+   "n2": 425,
+   "compatible_pairs": 5056,
+   "verdict": "not closed by the pair cover"
+  },
+  "rowgen_q_final": {
+   "status": "TIME",
+   "checks": {
+    "exact": 410,
+    "inexact": 0,
+    "frames_bad": 410,
+    "frames_ok": 0
+   },
+   "good": 0,
+   "conflicts": 410
+  }
+ },
+ "p1503": {
+  "system": {
+   "dels": [
+    [
+     "B",
+     1503
+    ],
+    [
+     "B",
+     1504
+    ]
+   ],
+   "a_window": null,
+   "ddel": -39930,
+   "ncand": 35306,
+   "rows": 8858,
+   "rhs_rows": 3,
+   "nterms": 118019,
+   "sentinel_kept": 25822
+  },
+  "rowgen_q": {
+   "iterations": 667,
+   "last_checks": "{'exact': 665, 'inexact': 0, 'frames_bad': 665, 'frames_ok': 0}",
+   "done": []
+  },
+  "rowgen_qa": null,
+  "coverproof": {
+   "rows": {
+    "11": 370,
+    "14": 600,
+    "563": 239
+   },
+   "stats": {
+    "singles": 0,
+    "pairs_ok": 202,
+    "triples_tested": 0
+   },
+   "found": 202,
+   "verdict": "not closed: frame-feasible covering sets exist"
+  }
+ },
+ "a1439": {
+  "system": {
+   "dels": [
+    [
+     "B",
+     1439
+    ],
+    [
+     "B",
+     1440
+    ]
+   ],
+   "a_window": [
+    2000,
+    3451
+   ],
+   "ddel": -43642,
+   "ncand": 23597,
+   "rows": 11080,
+   "rhs_rows": 3,
+   "nterms": 346457,
+   "sentinel_kept": 11672
+  },
+  "rowgen_q": {
+   "iterations": 29,
+   "last_checks": "{'exact': 24, 'inexact': 0, 'frames_bad': 24, 'frames_ok': 0}",
+   "done": []
+  },
+  "rowgen_qa": null
+ }
+}

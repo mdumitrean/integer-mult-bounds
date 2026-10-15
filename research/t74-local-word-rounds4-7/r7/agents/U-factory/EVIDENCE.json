@@ -1,0 +1,368 @@
+{
+ "agent": "U-factory",
+ "round": "r7",
+ "start": "10:51:10Z",
+ "calibration": {
+  "driver": "scripts/vleaver.py (reproduce_leaver.py steps 1-5 without pins)",
+  "cold44_sha256": "58e14a02f2c1d4dcfeb363ebd5fa2e713064b5c724d90f6721419a8cfa67729b",
+  "matches_pinned": true,
+  "pairing_ranks": [
+   0,
+   0,
+   0,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   0,
+   0,
+   0
+  ],
+  "read": 256,
+  "entering": 192,
+  "ended": 54,
+  "seconds": 2.4
+ },
+ "index_preservation": {
+  "k8_ancestor_vs_current_base": "identical read (240) / entering (192) / ended (78) sets",
+  "leaver_cell_vs_k8": "6 pivot-swapped entrances (482,483,494,495,507,519 <-> 531,543,554,555,566,567) and 24 new cold ends"
+ },
+ "full_c1_helpers": 104,
+ "full_c1_read_in_leaver_cell_word": 104,
+ "screens": {
+  "A1": {
+   "label": "exchange (change A) single changes, all 14 blocks + none/first-copy per block",
+   "variants": 252,
+   "stages": {
+    "OK": 108,
+    "FAIL:cold44": 144
+   },
+   "valid": 108,
+   "read_counts": {
+    "256": 108
+   },
+   "variants_with_new_zero_response": 0,
+   "variants_with_new_zero_response_full_c1": 0,
+   "entering_with_response": 0,
+   "trades": []
+  },
+  "A2": {
+   "label": "exchange pairs in the six free blocks 0,1,2,11,12,13",
+   "variants": 672,
+   "stages": {
+    "OK": 672
+   },
+   "valid": 672,
+   "read_counts": {
+    "256": 672
+   },
+   "variants_with_new_zero_response": 0,
+   "variants_with_new_zero_response_full_c1": 0,
+   "entering_with_response": 0,
+   "trades": []
+  },
+  "B": {
+   "label": "complement-basis priority (change B), 50 four-row completions per block",
+   "variants": 700,
+   "stages": {
+    "OK": 700
+   },
+   "valid": 700,
+   "read_counts": {
+    "256": 354,
+    "257": 162,
+    "258": 146,
+    "259": 37,
+    "260": 1
+   },
+   "variants_with_new_zero_response": 0,
+   "variants_with_new_zero_response_full_c1": 0,
+   "entering_with_response": 0,
+   "trades": []
+  },
+  "C": {
+   "label": "carrier order (change C), 40 random permutations per block",
+   "variants": 560,
+   "stages": {
+    "OK": 256,
+    "FAIL:cold44": 304
+   },
+   "valid": 256,
+   "read_counts": {
+    "256": 256
+   },
+   "variants_with_new_zero_response": 15,
+   "variants_with_new_zero_response_full_c1": 0,
+   "entering_with_response": 0,
+   "trades": [
+    {
+     "id": "C-b3-5",
+     "new_zero": [
+      272
+     ],
+     "new_read": [
+      282
+     ]
+    },
+    {
+     "id": "C-b3-33",
+     "new_zero": [
+      272
+     ],
+     "new_read": [
+      275
+     ]
+    },
+    {
+     "id": "C-b4-25",
+     "new_zero": [
+      288
+     ],
+     "new_read": [
+      293
+     ]
+    },
+    {
+     "id": "C-b4-27",
+     "new_zero": [
+      288
+     ],
+     "new_read": [
+      293
+     ]
+    },
+    {
+     "id": "C-b4-28",
+     "new_zero": [
+      288
+     ],
+     "new_read": [
+      293
+     ]
+    },
+    {
+     "id": "C-b5-7",
+     "new_zero": [
+      304
+     ],
+     "new_read": [
+      307
+     ]
+    },
+    {
+     "id": "C-b6-0",
+     "new_zero": [
+      320
+     ],
+     "new_read": [
+      323
+     ]
+    },
+    {
+     "id": "C-b6-1",
+     "new_zero": [
+      320
+     ],
+     "new_read": [
+      330
+     ]
+    },
+    {
+     "id": "C-b6-33",
+     "new_zero": [
+      320
+     ],
+     "new_read": [
+      330
+     ]
+    },
+    {
+     "id": "C-b7-0",
+     "new_zero": [
+      336
+     ],
+     "new_read": [
+      337
+     ]
+    },
+    {
+     "id": "C-b7-2",
+     "new_zero": [
+      336
+     ],
+     "new_read": [
+      339
+     ]
+    },
+    {
+     "id": "C-b7-8",
+     "new_zero": [
+      336
+     ],
+     "new_read": [
+      341
+     ]
+    },
+    {
+     "id": "C-b8-6",
+     "new_zero": [
+      352
+     ],
+     "new_read": [
+      355
+     ]
+    },
+    {
+     "id": "C-b10-0",
+     "new_zero": [
+      384
+     ],
+     "new_read": [
+      385
+     ]
+    },
+    {
+     "id": "C-b10-37",
+     "new_zero": [
+      384
+     ],
+     "new_read": [
+      394
+     ]
+    }
+   ]
+  },
+  "S": {
+   "label": "partition selection SELECT, all 8 alternatives",
+   "variants": 8,
+   "stages": {
+    "FAIL:gauge-forward": 8
+   },
+   "valid": 0,
+   "read_counts": {},
+   "variants_with_new_zero_response": 0,
+   "variants_with_new_zero_response_full_c1": 0,
+   "entering_with_response": 0,
+   "trades": []
+  }
+ },
+ "copy_pair_ranks": {
+  "0": 12,
+  "1": 12,
+  "2": 12,
+  "11": 12,
+  "12": 12,
+  "13": 12
+ },
+ "copy_pairs_rank2": "48/48 (6 free blocks x 8 sources); covers 78 full-c1 helpers",
+ "verdict": "blocked",
+ "downstream": {
+  "factory..cold44 (port0-3, regroup, HPE, cold44)": "code available, re-runnable, ~2.4 s per variant (this driver)",
+  "leaver chain (pivot swaps, HPE, cold44, NP/p6n layers, promotions, X4, U8 hybrids, frames, controls)": "builders + frozen recipes; ~260 s per pass; NP/p6n layer search (LeaverSAT) and U8 hybrid search not vendored; frames re-derivable with the #1186 toolkit; promo/make_recipe.py present",
+  "slots (RECIPE-SLOTS-k8)": "frozen PR987 slot-search output; only verify_slots.py vendored",
+  "PR1148 eight-ends / three-demotions / joint-entrances": "search code vendored in discovery/ (search_calls, search_columns, search_joint_frames, search_global_ipm, ...); logs show 180 s HiGHS time limits per solve",
+  "#1193 FOUR, #1297 kernels": "recipes + builders (reproduced byte-for-byte by r6 K); #1297 search_relations.py vendored",
+  "#1319 T74 owners": "reconstruct.py moves only width-4/5 roles; general exact-fill constructor not vendored (r6 C-hosting built a 1-helper min-change map)",
+  "#1625 / #1672 kernels": "ours (r2 tools) / EDITS only for #1672",
+  "strict T74 replay + outer (#2220 line)": "~13 min strict replay; outer recertification at 1e-60000 hours"
+ },
+ "next_stage": {
+  "task": "one copy fewer in a free block (copy stays allocated, never touched => zero response; no index shift)",
+  "modes": {
+   "twin": "route the copy's events to its twin copy",
+   "source": "route them to the source register",
+   "omit": "drop all events touching the copy"
+  },
+  "variants": 288,
+  "blocks": [
+   0,
+   1,
+   2,
+   11,
+   12,
+   13
+  ],
+  "copies_per_block": 16,
+  "first_failing_stage": "gauge-forward (the factory itself), all 288 variants",
+  "failures": {
+   "omit: clean map broken (side identity)": 36,
+   "omit: own row missing (own-row candidate search)": 24,
+   "omit: retired span lost (basis replacement has no pivot)": 36,
+   "source: frame violation (substitute register cannot take the second role)": 96,
+   "twin: frame violation (substitute register cannot take the second role)": 96
+  },
+  "per_copy_pattern_identical_in_all_six_blocks": {
+   "basis_copies_8_9_11_13_14_18": "retired span lost",
+   "leaver_source_copies_17_19_21_23": "own row missing",
+   "face_packet_copies_10_12_15_16_20_22": "clean map broken: 16 targets lose one 4-source face packet"
+  },
+  "repair_of_face_packet_omissions_block0": {
+   "226": {
+    "damaged_targets": 16,
+    "repairable": 0,
+    "candidates_per_target": [
+     9,
+     11,
+     12,
+     13
+    ]
+   },
+   "228": {
+    "damaged_targets": 16,
+    "repairable": 0,
+    "candidates_per_target": [
+     9,
+     11,
+     13
+    ]
+   },
+   "231": {
+    "damaged_targets": 16,
+    "repairable": 0,
+    "candidates_per_target": [
+     9,
+     11,
+     12,
+     13
+    ]
+   },
+   "232": {
+    "damaged_targets": 16,
+    "repairable": 0,
+    "candidates_per_target": [
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   "236": {
+    "damaged_targets": 16,
+    "repairable": 0,
+    "candidates_per_target": [
+     9,
+     11,
+     13,
+     14
+    ]
+   },
+   "238": {
+    "damaged_targets": 16,
+    "repairable": 0,
+    "candidates_per_target": [
+     8,
+     10,
+     11,
+     13,
+     14
+    ]
+   }
+  },
+  "repair_rule": "extra B reads of non-entering registers (never the dropped helper) whose frame union with the target stays inside its hyperplane; exact rational solve over all candidates jointly",
+  "downstream_reached": false
+ }
+}

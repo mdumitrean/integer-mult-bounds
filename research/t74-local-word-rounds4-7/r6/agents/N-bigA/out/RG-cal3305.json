@@ -1,0 +1,207 @@
+[
+ {
+  "dels": [
+   [
+    "A",
+    3305
+   ]
+  ],
+  "ddel": -23644,
+  "proposals": [
+   {
+    "terms": [
+     [
+      439,
+      437,
+      3301,
+      "1"
+     ]
+    ],
+    "est": 1,
+    "exact": true,
+    "frames_ok": true,
+    "why": null,
+    "edit_ab": {
+     "delete": [
+      [
+       "A",
+       3305
+      ]
+     ],
+     "insert": [
+      [
+       "A",
+       3301,
+       [
+        "add",
+        439,
+        437,
+        1,
+        1,
+        []
+       ]
+      ]
+     ],
+     "tail": []
+    }
+   },
+   {
+    "terms": [
+     [
+      439,
+      437,
+      3322,
+      "1"
+     ]
+    ],
+    "est": 1,
+    "exact": true,
+    "frames_ok": true,
+    "why": null,
+    "edit_ab": {
+     "delete": [
+      [
+       "A",
+       3305
+      ]
+     ],
+     "insert": [
+      [
+       "A",
+       3323,
+       [
+        "add",
+        439,
+        437,
+        1,
+        1,
+        []
+       ]
+      ]
+     ],
+     "tail": []
+    }
+   }
+  ],
+  "rowgen": {
+   "dels": [
+    [
+     "A",
+     3305
+    ]
+   ],
+   "ddel": -23644,
+   "ncand": 3456,
+   "rows": 3324,
+   "shape": true,
+   "log": [
+    {
+     "it": 1,
+     "rows": 10,
+     "cand": 65,
+     "status": "OPTIMAL",
+     "seconds": 0.0,
+     "support": 1,
+     "est": 1,
+     "violated": 0
+    },
+    {
+     "it": 2,
+     "rows": 10,
+     "cand": 65,
+     "status": "OPTIMAL",
+     "seconds": 0.0,
+     "support": 1,
+     "est": 1,
+     "violated": 0
+    },
+    {
+     "it": 3,
+     "rows": 10,
+     "cand": 65,
+     "status": "INFEASIBLE",
+     "seconds": 0.0
+    }
+   ],
+   "proposals": [
+    {
+     "terms": [
+      [
+       439,
+       437,
+       3301,
+       "1"
+      ]
+     ],
+     "est": 1,
+     "exact": true,
+     "frames_ok": true,
+     "why": null,
+     "edit_ab": {
+      "delete": [
+       [
+        "A",
+        3305
+       ]
+      ],
+      "insert": [
+       [
+        "A",
+        3301,
+        [
+         "add",
+         439,
+         437,
+         1,
+         1,
+         []
+        ]
+       ]
+      ],
+      "tail": []
+     }
+    },
+    {
+     "terms": [
+      [
+       439,
+       437,
+       3322,
+       "1"
+      ]
+     ],
+     "est": 1,
+     "exact": true,
+     "frames_ok": true,
+     "why": null,
+     "edit_ab": {
+      "delete": [
+       [
+        "A",
+        3305
+       ]
+      ],
+      "insert": [
+       [
+        "A",
+        3323,
+        [
+         "add",
+         439,
+         437,
+         1,
+         1,
+         []
+        ]
+       ]
+      ],
+      "tail": []
+     }
+    }
+   ],
+   "status": "INFEASIBLE",
+   "iterations": 3,
+   "seconds": 89.9
+  }
+ }
+]

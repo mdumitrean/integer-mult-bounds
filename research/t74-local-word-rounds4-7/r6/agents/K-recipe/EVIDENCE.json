@@ -1,0 +1,135 @@
+{
+ "agent": "K-recipe",
+ "round": "r6",
+ "b": "0.001679754956125544",
+ "lineage": {
+  "words": [
+   "E1297",
+   "E1672",
+   "FOUR1193",
+   "G1297",
+   "G1625",
+   "G1672",
+   "IN1286base",
+   "IN1286extra",
+   "JOINT1148"
+  ],
+  "entering_set_constant": true,
+  "A_ops_constant": true,
+  "cut_constant": true,
+  "precondition_constant": true,
+  "start_extra_value_changes": {
+   "FOUR1193": [
+    627,
+    629,
+    630,
+    631
+   ],
+   "IN1286base": [
+    627,
+    629,
+    630,
+    631
+   ],
+   "IN1286extra": [
+    627,
+    629,
+    630,
+    631
+   ]
+  }
+ },
+ "calibration": {
+  "a_FOUR": true,
+  "b_1297_base": true,
+  "b_1297_extra": true,
+  "c_566_equals_pr1672_step0": {
+   "gauge44": true,
+   "extra": true
+  },
+  "d_554_scalar_and_interfaces": {
+   "gauge44": true,
+   "extra": true
+  },
+  "frames_resolved_equal": {
+   "gauge44": true,
+   "extra": true,
+   "gauge44_cost": 11683290250,
+   "extra_cost": 11691748602
+  }
+ },
+ "pair_mechanism": {
+  "entering": 192,
+  "summary": {
+   "True|B": 141,
+   "True|A": 42,
+   "True|A,B": 1,
+   "False|": 8
+  },
+  "example": {
+   "526": [
+    [
+     "A",
+     1219,
+     478,
+     -1,
+     1
+    ]
+   ],
+   "538": [
+    [
+     "A",
+     1231,
+     490,
+     -1,
+     1
+    ]
+   ]
+  }
+ },
+ "mirror_screen": {
+  "base": {
+   "screened": 240,
+   "with_single_partner_mirror": 0
+  },
+  "extra": {
+   "screened": 240,
+   "with_single_partner_mirror": 0
+  },
+  "positive_control_drop_A1219": [
+   {
+    "r": 478,
+    "t_lo": 0,
+    "t_hi": 4444,
+    "c": "-1",
+    "r_kind": "ordinary"
+   }
+  ]
+ },
+ "recipe_narrowing_478": {
+  "q": 478,
+  "basis": [
+   96
+  ],
+  "certified": true,
+  "cost": 11681173796,
+  "profile": {
+   "1": 2347,
+   "2": 500,
+   "3": 416,
+   "4": 130,
+   "5": 82
+  },
+  "compensation_gates": 7208,
+  "compensation_reads_q": 4,
+  "width_inventory": {
+   "4": 44,
+   "5": 44,
+   "7": 38,
+   "8": 115,
+   "9": 239
+  },
+  "audit_local_main": "FAIL: nonzero entrance response"
+ },
+ "outcome": "no valid narrowed word from any recipe-level change; kappa unchanged"
+}

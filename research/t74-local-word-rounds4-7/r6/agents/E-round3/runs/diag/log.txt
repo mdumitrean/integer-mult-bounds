@@ -1,0 +1,16 @@
+base cost 11683290250 {1: 2348, 2: 500, 3: 416, 4: 130, 5: 82} 1.9s
+job [('B', 1)] ddel -4925 budget 4924
+  r1 cand 2452 cone-rejected 167354 shape True T-rank 1 budget 4924 segs None 143.0s
+  r1 terms 3 est 0 interacting 2 exact False [(554, 74, 5600, '-1'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2485 cone-rejected 171190 shape True T-rank 1 budget 4924 segs None 123.8s
+    r2 stop INFEASIBLE
+    r2 diagnosis {'no_summed_budget': 'INFEASIBLE', 'no_summed_budget_24_terms': 'INFEASIBLE', 'no_cap_candidates': 2577, 'no_cap_inf_dropped': 12, 'no_cap_shape': True, 'no_cap_no_budget_24_terms': 'FEASIBLE', 'no_cap_solution_cost': 4925, 'no_cap_solution_terms': [(126, 74, 4901, '1/2'), (126, 554, 4110, '1/2')]}
+job [('B', 783)] ddel -6781 budget 6780
+  r1 cand 4120 cone-rejected 130438 shape True T-rank 1 budget 6780 segs None 93.2s
+  r1 terms 6 est 0 interacting 2 exact False [(530, 66, 5600, '1'), (114, 506, 4681, '-1'), (530, 506, 4681, '-1'), (506, 66, 4557, '1'), (178, 506, 4132, '-1'), (114, 506, 4098, '1')]
+    r2 cand 4574 cone-rejected 132742 shape True T-rank 1 budget 6780 segs None 92.0s
+    r2 stop INFEASIBLE
+    r2 diagnosis {'no_summed_budget': 'INFEASIBLE', 'no_summed_budget_24_terms': 'INFEASIBLE', 'no_cap_candidates': 4818, 'no_cap_inf_dropped': 2, 'no_cap_shape': True, 'no_cap_no_budget_24_terms': 'FEASIBLE', 'no_cap_solution_cost': 6781, 'no_cap_solution_terms': [(530, 506, 4686, '1/2'), (114, 506, 4685, '1/2'), (178, 506, 4134, '1/2'), (114, 506, 4099, '-1/2'), (530, 506, 63, '1/4')]}
+done {'round1_models': 2, 'round1_proposals': 2, 'round2_models': 2} 734.8s
+
+[capped] exit 0 wall 735.3s peak_rss_gib 0.70

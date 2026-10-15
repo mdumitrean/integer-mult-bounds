@@ -1,0 +1,19 @@
+base cost 11683290250 {1: 2348, 2: 500, 3: 416, 4: 130, 5: 82} 1.8s
+job [('B', 1)] ddel -4925 budget 4924
+  r1 cand 2452 cone-rejected 167354 shape True T-rank 1 budget 4924 segs None 119.3s
+  r1 terms 3 est 0 interacting 1 exact False [(74, 554, 5562, '1'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2485 cone-rejected 170594 shape True T-rank 1 budget 4924 segs None 108.7s
+    r2 stop INFEASIBLE
+  r1 terms 6 est 0 interacting 9 exact False [(74, 554, 5600, '1'), (554, 74, 5563, '1'), (482, 554, 4791, '-1'), (122, 554, 4679, '-1'), (554, 74, 4537, '1'), (74, 554, 4483, '1')]
+    r2 cand 2541 cone-rejected 170436 shape True T-rank 1 budget 4924 segs None 110.7s
+    r2 stop INFEASIBLE
+    r1 stop INFEASIBLE
+job [('B', 783)] ddel -6781 budget 6780
+  r1 cand 4120 cone-rejected 130438 shape True T-rank 1 budget 6780 segs None 87.6s
+  r1 terms 6 est 0 interacting 2 exact False [(530, 66, 5600, '1'), (114, 506, 4681, '-1'), (530, 506, 4681, '-1'), (506, 66, 4557, '1'), (178, 506, 4132, '-1'), (114, 506, 4098, '1')]
+    r2 cand 4574 cone-rejected 132742 shape True T-rank 1 budget 6780 segs None 91.1s
+    r2 stop INFEASIBLE
+    r1 stop INFEASIBLE
+done {'round1_models': 2, 'round1_proposals': 3, 'round2_models': 3} 526.0s
+
+[capped] exit 0 wall 526.5s peak_rss_gib 0.63

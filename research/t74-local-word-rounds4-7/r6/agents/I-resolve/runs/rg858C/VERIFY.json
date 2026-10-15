@@ -1,0 +1,20 @@
+{
+ "system": "runs/nd858U",
+ "rowgen": "runs/rg858C/ROWGEN.json",
+ "rows": 78,
+ "cand": 917,
+ "checks": [
+  {
+   "solver": "SCIP",
+   "ban": true,
+   "status": "NOT_SOLVED",
+   "seconds": 240.0
+  },
+  {
+   "solver": "HIGHS",
+   "ban": true,
+   "status": "INFEASIBLE",
+   "seconds": 13.0
+  }
+ ]
+}

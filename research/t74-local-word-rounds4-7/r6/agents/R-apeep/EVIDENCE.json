@@ -1,0 +1,140 @@
+{
+ "agent": "R-apeep",
+ "round": "r6",
+ "b": "0.001679754956125544",
+ "word": "r3/inputs/gauge44-word-566-554.json.gz",
+ "enumeration": {
+  "k2": {
+   "windows": 3450,
+   "alternatives": 22010
+  },
+  "k3": {
+   "windows": 3449,
+   "alternatives": 13636
+  },
+  "k4": {
+   "windows": 3448,
+   "enumerated": 3216,
+   "skipped_over_6_registers": 232,
+   "alternatives": 59000
+  },
+  "unique_after_dedupe": 66805
+ },
+ "calibration": {
+  "base_cost": 11683290250,
+  "compensation_gates": 7208,
+  "runs": [
+   {
+    "kind": "identity",
+    "i": 1195,
+    "k": 2,
+    "status": "ok",
+    "delta": 0,
+    "comp_gates": 7208,
+    "comp_changed": false
+   },
+   {
+    "kind": "identity",
+    "i": 2316,
+    "k": 3,
+    "status": "ok",
+    "delta": 0,
+    "comp_gates": 7208,
+    "comp_changed": false
+   },
+   {
+    "kind": "identity",
+    "i": 3442,
+    "k": 4,
+    "status": "ok",
+    "delta": 0,
+    "comp_gates": 7208,
+    "comp_changed": false
+   },
+   {
+    "kind": "r4A-swap-1248-to-1247",
+    "i": 1247,
+    "k": 2,
+    "status": "ok",
+    "delta": 0,
+    "comp_gates": 7208,
+    "comp_changed": false
+   },
+   {
+    "kind": "inexact-control",
+    "i": 1195,
+    "k": 2,
+    "status": "inexact",
+    "delta": null,
+    "comp_gates": null,
+    "comp_changed": null
+   }
+  ]
+ },
+ "planned": 7955,
+ "priced": 7955,
+ "totals": {
+  "ok:0": 7852,
+  "infeasible": 103
+ },
+ "ok_delta_histogram": {
+  "0": 7852
+ },
+ "by_group": {
+  "longer/k2/big": {
+   "ok:0": 889,
+   "infeasible": 11
+  },
+  "perm/k2/big": {
+   "ok:0": 404
+  },
+  "perm/k2/nz": {
+   "ok:0": 400
+  },
+  "perm/k3/big": {
+   "ok:0": 890,
+   "infeasible": 10
+  },
+  "perm/k4/big": {
+   "ok:0": 588,
+   "infeasible": 12
+  },
+  "reduce/k2/nz": {
+   "ok:0": 42
+  },
+  "reduce/k3/nz": {
+   "ok:0": 84
+  },
+  "reduce/k4/nz": {
+   "ok:0": 378
+  },
+  "reduce/k4/zero": {
+   "ok:0": 32
+  },
+  "same/k2/nz": {
+   "ok:0": 338
+  },
+  "same/k2/zero": {
+   "ok:0": 175
+  },
+  "same/k3/big": {
+   "infeasible": 14
+  },
+  "same/k3/nz": {
+   "ok:0": 1689
+  },
+  "same/k3/zero": {
+   "ok:0": 743
+  },
+  "same/k4/big": {
+   "infeasible": 56
+  },
+  "same/k4/nz": {
+   "ok:0": 1200
+  }
+ },
+ "gains": [],
+ "max_rss_gib": 0.7027587890625,
+ "mean_seconds": 1.29,
+ "outcome": "no gain: every priced exact A-window equivalent is delta 0 or frame-infeasible; kappa unchanged"
+}

@@ -1,0 +1,109 @@
+{
+ "meta": {
+  "word": "gauge44-word-566-554.json.gz",
+  "bindex": 822,
+  "depth": 2,
+  "ddel": -6118,
+  "bud": 6117,
+  "ncand": 80890,
+  "basis": 35,
+  "residual_rank": 1,
+  "nterms": 18028752,
+  "Dco": 4,
+  "Dcol": 8,
+  "lam_den": 4,
+  "lamr": 16,
+  "maxterms": 12,
+  "gen_seconds": 100.8,
+  "max_abs_coef": 4096,
+  "rhs_rows": 18,
+  "rows": 22170,
+  "cone_rejected": 87436335,
+  "variant": "D (cap filter as D-depth2)",
+  "n_raw": 80890,
+  "n_unpriced_raw": 51,
+  "n_unpriced_dedup": 51
+ },
+ "ban": true,
+ "final_K": null,
+ "final_cand": null,
+ "excluded": [],
+ "status": "UNKNOWN",
+ "iterations": 6,
+ "final_rows": 83,
+ "proposals": [
+  {
+   "sol": {
+    "7908": 4
+   },
+   "est": 0
+  },
+  {
+   "sol": {
+    "7901": 4,
+    "7938": 4
+   },
+   "est": 0
+  }
+ ],
+ "log": [
+  {
+   "it": 1,
+   "rows": 18,
+   "cand": 162,
+   "status": "OPTIMAL",
+   "seconds": 0.0,
+   "support": 1,
+   "est": 0,
+   "violated": 18
+  },
+  {
+   "it": 2,
+   "rows": 36,
+   "cand": 339,
+   "status": "OPTIMAL",
+   "seconds": 0.1,
+   "support": 1,
+   "est": 0,
+   "violated": 0
+  },
+  {
+   "it": 3,
+   "rows": 36,
+   "cand": 339,
+   "status": "OPTIMAL",
+   "seconds": 0.1,
+   "support": 2,
+   "est": 0,
+   "violated": 36
+  },
+  {
+   "it": 4,
+   "rows": 72,
+   "cand": 14755,
+   "status": "OPTIMAL",
+   "seconds": 125.4,
+   "support": 2,
+   "est": 0,
+   "violated": 0
+  },
+  {
+   "it": 5,
+   "rows": 72,
+   "cand": 14755,
+   "status": "OPTIMAL",
+   "seconds": 194.7,
+   "support": 3,
+   "est": 0,
+   "violated": 11
+  },
+  {
+   "it": 6,
+   "rows": 83,
+   "cand": 14865,
+   "status": "UNKNOWN",
+   "seconds": 300.3
+  }
+ ],
+ "seconds": 622.4
+}

@@ -1,0 +1,91 @@
+{
+ "expected": {
+  "idle_remainder_profile": {
+   "1": 59,
+   "2": 41,
+   "3": 99,
+   "4": 57,
+   "48": 22748
+  },
+  "idle_remainders": 23004,
+  "global_profile": {
+   "1": 1559825,
+   "2": 336377,
+   "3": 278823,
+   "4": 84969,
+   "5": 54612,
+   "8": 5328,
+   "48": 22748
+  },
+  "actual_73column_sigmas": 11605,
+  "hosted_residuals": 319680,
+  "cross_replica_helper_roles": 296300,
+  "rank_mass": 4816512,
+  "provider_counts": {
+   "extra": 417,
+   "gauge44": 249
+  },
+  "assembly_controls_rejected": 114,
+  "mutations_rejected": 15,
+  "complex_lower": "recompute (assembly)",
+  "conservative_complex_lower": "recompute",
+  "kappa": "recompute"
+ },
+ "unchanged_from": {
+  "actual_73column_sigmas": 11142,
+  "idle_remainder_profile": {
+   "48": 22748
+  },
+  "global_profile": {
+   "1": 1560432,
+   "2": 336336,
+   "3": 278724,
+   "4": 84912,
+   "5": 54612,
+   "8": 5328,
+   "48": 22748
+  }
+ },
+ "providers": {
+  "gauge44": {
+   "inventory": {
+    "4": 44,
+    "5": 44,
+    "7": 38,
+    "8": 115,
+    "9": 239
+   },
+   "expected_profile": {
+    "1": 2347,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82,
+    "8": 8
+   },
+   "entering": 193,
+   "entrance": 373,
+   "note": "entering/entrance assume the narrowed helper enters with a rank-1 start frame; width_digest, program_hashes, artifacts, complete_contract, wrappers, native_negative_controls, phase_edges, semantic_phase_sha256, expected_local come from the new native admission (discover + freeze_spec.py)"
+  },
+  "extra": {
+   "inventory": {
+    "4": 40,
+    "5": 48,
+    "7": 38,
+    "8": 115,
+    "9": 239
+   },
+   "expected_profile": {
+    "1": 2339,
+    "2": 508,
+    "3": 420,
+    "4": 126,
+    "5": 82,
+    "8": 8
+   },
+   "entering": 193,
+   "entrance": 369,
+   "note": "entering/entrance assume the narrowed helper enters with a rank-1 start frame; width_digest, program_hashes, artifacts, complete_contract, wrappers, native_negative_controls, phase_edges, semantic_phase_sha256, expected_local come from the new native admission (discover + freeze_spec.py)"
+  }
+ }
+}

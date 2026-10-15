@@ -1,0 +1,1146 @@
+{
+ "agent": "A-zero478",
+ "round": "r6",
+ "b": "0.001679754956125544",
+ "words": {
+  "base": "r3/inputs/gauge44-word-566-554.json.gz",
+  "extra": "r3/inputs/extra-word-566-554.json.gz"
+ },
+ "entrance_rule": "audit_local.py: entering = start_extra keys; no compensation gate may read an entering helper (dirt[y][q] = helper column q of target row y of the A+cut+B map, after the precondition, must be 0 for all targets y); precondition and compensation may not touch entering or cold-end helpers; targets must be at their (empty) centre levels at the start of B.",
+ "leaks": {
+  "note": "coefficient of the helper initial value in target rows of the A+cut+B map (base word)",
+  "source": "out/LEAKS-cluster.json",
+  "clusters": {
+   "96": [
+    478,
+    479,
+    514,
+    515
+   ],
+   "102": [
+    490,
+    491,
+    502,
+    503
+   ]
+  },
+  "targets": "200-207",
+  "identity": "L478 + L479 = L490 + L491 = all-ones on 200..207; L514 + L515 = L502 + L503"
+ },
+ "same_cluster_rank": "-L_q is not in the span of its own cluster (q in {478,479,490,491}); every exact copy combination (|k|<=3) needs >= 1 holder from the other cluster",
+ "calibration": {
+  "name": "calib-narrow-only",
+  "q": 478,
+  "u": 96,
+  "narrow": true,
+  "holders": [],
+  "status": "ok",
+  "delta": -2116454,
+  "profile": {
+   "1": 2347,
+   "2": 500,
+   "3": 416,
+   "4": 130,
+   "5": 82
+  },
+  "compensation_gates": 7208,
+  "compensation_reads_q": true,
+  "audit": "RuntimeError: nonzero entrance response"
+ },
+ "unnarrowed_zero_entrance": {
+  "x478-copies-only": {
+   "name": "x478-copies-only",
+   "q": 478,
+   "u": 96,
+   "narrow": false,
+   "holders": [
+    [
+     479,
+     "1"
+    ],
+    [
+     490,
+     "-1"
+    ],
+    [
+     491,
+     "-1"
+    ]
+   ],
+   "status": "ok",
+   "delta": 0,
+   "profile": {
+    "1": 2348,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "compensation_gates": 7204,
+   "compensation_reads_q": false,
+   "audit": "PASS"
+  },
+  "a0-x479-copies-only": {
+   "name": "a0-x479-copies-only",
+   "q": 479,
+   "u": 96,
+   "narrow": false,
+   "holders": [
+    [
+     478,
+     "1"
+    ],
+    [
+     490,
+     "-1"
+    ],
+    [
+     491,
+     "-1"
+    ]
+   ],
+   "status": "ok",
+   "delta": 0,
+   "profile": {
+    "1": 2348,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "compensation_gates": 7204,
+   "compensation_reads_q": false,
+   "audit": "PASS"
+  },
+  "a0-x490-copies-only": {
+   "name": "a0-x490-copies-only",
+   "q": 490,
+   "u": 102,
+   "narrow": false,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     479,
+     "-1"
+    ],
+    [
+     491,
+     "1"
+    ]
+   ],
+   "status": "ok",
+   "delta": 0,
+   "profile": {
+    "1": 2348,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "compensation_gates": 7204,
+   "compensation_reads_q": false,
+   "audit": "PASS"
+  },
+  "a0-x491-copies-only": {
+   "name": "a0-x491-copies-only",
+   "q": 491,
+   "u": 102,
+   "narrow": false,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     479,
+     "-1"
+    ],
+    [
+     490,
+     "1"
+    ]
+   ],
+   "status": "ok",
+   "delta": 0,
+   "profile": {
+    "1": 2348,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "compensation_gates": 7204,
+   "compensation_reads_q": false,
+   "audit": "PASS"
+  },
+  "extra-a0-x490-copies-only": {
+   "name": "extra-a0-x490-copies-only",
+   "q": 490,
+   "u": 102,
+   "narrow": false,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     479,
+     "-1"
+    ],
+    [
+     491,
+     "1"
+    ]
+   ],
+   "status": "ok",
+   "delta": 0,
+   "compensation_gates": 7204,
+   "compensation_reads_q": false,
+   "audit": "PASS"
+  }
+ },
+ "narrowed_minimal_combinations": [
+  {
+   "name": "n478-s1",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     514,
+     "-1"
+    ],
+    [
+     491,
+     "-1"
+    ],
+    [
+     503,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5998, 'B', 1720)"
+  },
+  {
+   "name": "n478-s0",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     479,
+     "-1"
+    ],
+    [
+     502,
+     "-1"
+    ],
+    [
+     503,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6002, 'B', 1724)"
+  },
+  {
+   "name": "n478-s2",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     515,
+     "-1"
+    ],
+    [
+     490,
+     "-1"
+    ],
+    [
+     503,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5998, 'B', 1720)"
+  },
+  {
+   "name": "n478-s5",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     479,
+     "1"
+    ],
+    [
+     490,
+     "-1"
+    ],
+    [
+     491,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5970, 'B', 1692)"
+  },
+  {
+   "name": "n478-s3",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     515,
+     "1"
+    ],
+    [
+     491,
+     "-1"
+    ],
+    [
+     502,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6002, 'B', 1724)"
+  },
+  {
+   "name": "n478-s4",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     514,
+     "1"
+    ],
+    [
+     490,
+     "-1"
+    ],
+    [
+     502,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6002, 'B', 1724)"
+  },
+  {
+   "name": "n479-s1",
+   "q": 479,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     514,
+     "-1"
+    ],
+    [
+     491,
+     "-1"
+    ],
+    [
+     502,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6002, 'B', 1724)"
+  },
+  {
+   "name": "n479-s2",
+   "q": 479,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     515,
+     "-1"
+    ],
+    [
+     490,
+     "-1"
+    ],
+    [
+     502,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6002, 'B', 1724)"
+  },
+  {
+   "name": "n479-s0",
+   "q": 479,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     502,
+     "1"
+    ],
+    [
+     503,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6002, 'B', 1724)"
+  },
+  {
+   "name": "n479-s3",
+   "q": 479,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     515,
+     "1"
+    ],
+    [
+     491,
+     "-1"
+    ],
+    [
+     503,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5998, 'B', 1720)"
+  },
+  {
+   "name": "n479-s4",
+   "q": 479,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     514,
+     "1"
+    ],
+    [
+     490,
+     "-1"
+    ],
+    [
+     503,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5998, 'B', 1720)"
+  },
+  {
+   "name": "n479-s5",
+   "q": 479,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     478,
+     "1"
+    ],
+    [
+     490,
+     "-1"
+    ],
+    [
+     491,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5970, 'B', 1692)"
+  },
+  {
+   "name": "n490-s1",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     514,
+     "-1"
+    ],
+    [
+     502,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6034, 'B', 1756)"
+  },
+  {
+   "name": "n490-s2",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     515,
+     "1"
+    ],
+    [
+     503,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6030, 'B', 1752)"
+  },
+  {
+   "name": "n490-s0",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     479,
+     "-1"
+    ],
+    [
+     491,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5970, 'B', 1692)"
+  },
+  {
+   "name": "n490-s3",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     479,
+     "-1"
+    ],
+    [
+     514,
+     "-1"
+    ],
+    [
+     503,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6034, 'B', 1756)"
+  },
+  {
+   "name": "n490-s5",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     514,
+     "-1"
+    ],
+    [
+     515,
+     "1"
+    ],
+    [
+     491,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6034, 'B', 1756)"
+  },
+  {
+   "name": "n490-s4",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     479,
+     "-1"
+    ],
+    [
+     515,
+     "1"
+    ],
+    [
+     502,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6030, 'B', 1752)"
+  },
+  {
+   "name": "n491-s0",
+   "q": 491,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     479,
+     "-1"
+    ],
+    [
+     490,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5970, 'B', 1692)"
+  },
+  {
+   "name": "n491-s1",
+   "q": 491,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     515,
+     "-1"
+    ],
+    [
+     502,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6030, 'B', 1752)"
+  },
+  {
+   "name": "n491-s2",
+   "q": 491,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     514,
+     "1"
+    ],
+    [
+     503,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6034, 'B', 1756)"
+  },
+  {
+   "name": "n491-s3",
+   "q": 491,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     479,
+     "-1"
+    ],
+    [
+     515,
+     "-1"
+    ],
+    [
+     503,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6030, 'B', 1752)"
+  },
+  {
+   "name": "n491-s4",
+   "q": 491,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     479,
+     "-1"
+    ],
+    [
+     514,
+     "1"
+    ],
+    [
+     502,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6034, 'B', 1756)"
+  },
+  {
+   "name": "n491-s5",
+   "q": 491,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     514,
+     "1"
+    ],
+    [
+     515,
+     "-1"
+    ],
+    [
+     490,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6034, 'B', 1756)"
+  }
+ ],
+ "narrowed_single_cross_cluster": [
+  {
+   "name": "single478-491",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     491,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5964, 'B', 1688)"
+  },
+  {
+   "name": "single478-490",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     490,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5968, 'B', 1692)"
+  },
+  {
+   "name": "single478-502",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     502,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6000, 'B', 1724)"
+  },
+  {
+   "name": "single478-503",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     503,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5996, 'B', 1720)"
+  },
+  {
+   "name": "single478-514",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     514,
+     "1"
+    ]
+   ],
+   "status": "ok",
+   "delta": -2116454,
+   "profile": {
+    "1": 2347,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "compensation_gates": 7206,
+   "compensation_reads_q": true,
+   "audit": "RuntimeError: nonzero entrance response"
+  },
+  {
+   "name": "single478-479",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     479,
+     "1"
+    ]
+   ],
+   "status": "ok",
+   "delta": -2116454,
+   "profile": {
+    "1": 2347,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "compensation_gates": 7206,
+   "compensation_reads_q": true,
+   "audit": "RuntimeError: nonzero entrance response"
+  },
+  {
+   "name": "single490-478",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     478,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5968, 'B', 1692)"
+  },
+  {
+   "name": "single490-479",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     479,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5968, 'B', 1692)"
+  },
+  {
+   "name": "single478-515",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     515,
+     "1"
+    ]
+   ],
+   "status": "ok",
+   "delta": -2116454,
+   "profile": {
+    "1": 2347,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "compensation_gates": 7206,
+   "compensation_reads_q": true,
+   "audit": "RuntimeError: nonzero entrance response"
+  },
+  {
+   "name": "single490-514",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     514,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6032, 'B', 1756)"
+  },
+  {
+   "name": "single490-515",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     515,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 6028, 'B', 1752)"
+  },
+  {
+   "name": "single490-491",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     491,
+     "1"
+    ]
+   ],
+   "status": "ok",
+   "delta": -2116454,
+   "profile": {
+    "1": 2347,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "compensation_gates": 7206,
+   "compensation_reads_q": true,
+   "audit": "RuntimeError: nonzero entrance response"
+  },
+  {
+   "name": "single490-503",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     503,
+     "1"
+    ]
+   ],
+   "status": "ok",
+   "delta": -2116454,
+   "profile": {
+    "1": 2347,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "compensation_gates": 7206,
+   "compensation_reads_q": true,
+   "audit": "RuntimeError: nonzero entrance response"
+  },
+  {
+   "name": "single490-502",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     502,
+     "1"
+    ]
+   ],
+   "status": "ok",
+   "delta": -2116454,
+   "profile": {
+    "1": 2347,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "compensation_gates": 7206,
+   "compensation_reads_q": true,
+   "audit": "RuntimeError: nonzero entrance response"
+  }
+ ],
+ "extra_word": [
+  {
+   "name": "extra-n478-s5",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     479,
+     "1"
+    ],
+    [
+     490,
+     "-1"
+    ],
+    [
+     491,
+     "-1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5970, 'B', 1692)"
+  },
+  {
+   "name": "extra-single478-490",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [
+    [
+     490,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5968, 'B', 1692)"
+  },
+  {
+   "name": "extra-x490-copies-only",
+   "q": 490,
+   "u": 102,
+   "narrow": false,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     479,
+     "-1"
+    ],
+    [
+     491,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5970, 'B', 1692)"
+  },
+  {
+   "name": "extra-x478-copies-only",
+   "q": 478,
+   "u": 96,
+   "narrow": false,
+   "holders": [
+    [
+     479,
+     "1"
+    ],
+    [
+     490,
+     "-1"
+    ],
+    [
+     491,
+     "-1"
+    ]
+   ],
+   "status": "ok",
+   "delta": 0,
+   "profile": {
+    "1": 2340,
+    "2": 508,
+    "3": 420,
+    "4": 126,
+    "5": 82
+   },
+   "compensation_gates": 7204,
+   "compensation_reads_q": false,
+   "audit": "PASS"
+  },
+  {
+   "name": "extra-narrow-only-478",
+   "q": 478,
+   "u": 96,
+   "narrow": true,
+   "holders": [],
+   "status": "ok",
+   "delta": -2116454,
+   "profile": {
+    "1": 2339,
+    "2": 508,
+    "3": 420,
+    "4": 126,
+    "5": 82
+   },
+   "compensation_gates": 7208,
+   "compensation_reads_q": true,
+   "audit": "RuntimeError: nonzero entrance response"
+  },
+  {
+   "name": "extra-n490-s0",
+   "q": 490,
+   "u": 102,
+   "narrow": true,
+   "holders": [
+    [
+     478,
+     "-1"
+    ],
+    [
+     479,
+     "-1"
+    ],
+    [
+     491,
+     "1"
+    ]
+   ],
+   "status": "infeasible",
+   "why": "('L not inside U at mutable vertex', 5970, 'B', 1692)"
+  }
+ ],
+ "outcome": "blocked: zero entrance response is free while unnarrowed, but with q entering at its start vector every cancelling copy contaminates the other cluster's chains and fails cone-cap containment in late B (B1688-B1756); kappa unchanged",
+ "screen117": {
+  "files": [
+   "r6/agents/A-zero478/out/SCREEN117-base.json",
+   "r6/agents/A-zero478/out/SCREEN117-extra.json"
+  ],
+  "pairs": 153,
+  "helpers": 117,
+  "full_c1": {
+   "pairs": 104,
+   "passed": 0
+  },
+  "passed_free": 0,
+  "passed_compatible": 0,
+  "words": [
+   "base",
+   "extra"
+  ],
+  "control": "unnarrowed holders at A0 recover {479:+1, 490:-1, 491:-1} for 478"
+ }
+}

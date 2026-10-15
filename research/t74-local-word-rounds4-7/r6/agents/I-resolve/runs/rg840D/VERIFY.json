@@ -1,0 +1,20 @@
+{
+ "system": "runs/nd840U",
+ "rowgen": "runs/rg840D/ROWGEN.json",
+ "rows": 78,
+ "cand": 10794,
+ "checks": [
+  {
+   "solver": "SCIP",
+   "ban": true,
+   "status": "INFEASIBLE",
+   "seconds": 66.4
+  },
+  {
+   "solver": "HIGHS",
+   "ban": true,
+   "status": "INFEASIBLE",
+   "seconds": 5.3
+  }
+ ]
+}

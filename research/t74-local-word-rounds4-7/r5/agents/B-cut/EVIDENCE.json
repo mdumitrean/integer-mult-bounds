@@ -1,0 +1,147 @@
+{
+ "agent": "B-cut",
+ "round": "r5",
+ "b": "0.001679754956125544",
+ "words": {
+  "gauge44": "r3/inputs/gauge44-word-566-554.json.gz (sha256 eeb6a236...)",
+  "extra": "r3/inputs/extra-word-566-554.json.gz (sha256 cd417b90...)"
+ },
+ "gauge44": {
+  "cut": {
+   "gates": 176,
+   "centres": 8,
+   "centre_frame_dim": 8,
+   "targets_served": 88,
+   "served_by_two_centres": 88,
+   "centre_groups": [
+    [
+     60,
+     61,
+     63,
+     224
+    ],
+    [
+     31,
+     240,
+     23,
+     256
+    ]
+   ],
+   "centre_descent_rank_mass": 64,
+   "common_target_level_dim_per_centre": 0,
+   "b_reads_of_centres": 0,
+   "b_writes_of_centres": 0,
+   "b_deliveries_into_targets": 921,
+   "single_deliveries_in_centre_span": 0,
+   "nontarget_source_deliveries": 785,
+   "delivery_tensor_rank_mod_p": 785,
+   "replaceable_subsets": 0,
+   "selftest": "scaled duplicate and two-term combination injected: both detected"
+  },
+  "precondition": {
+   "gates": 192,
+   "registers": {
+    "target": 328
+   },
+   "inverse_of_B_target_mixing": true,
+   "b_target_mixing_gates": 192,
+   "a_frame0_gates": 1182,
+   "b_frame0_gates": 0
+  },
+  "mixing_back_to_B_start": {
+   "target_only_gates": 192,
+   "reach_B_start": 0,
+   "stops": {
+    "delivery": 77,
+    "mix": 115
+   }
+  },
+  "butterfly_conjugation": {
+   "groups": 34,
+   "simple_butterflies_priced": 32,
+   "status": {
+    "infeasible": 32
+   },
+   "negative": 0,
+   "crossed_deliveries_min": 5,
+   "crossed_deliveries_max": 17
+  },
+  "a_to_frame0_region": {
+   "register not zero-start": 1354,
+   "blocked": 915
+  },
+  "b_to_frame0_region": {
+   "register above frame 0 at B start": 1641,
+   "blocked": 212
+  }
+ },
+ "extra": {
+  "cut": {
+   "gates": 176,
+   "centres": 8,
+   "centre_frame_dim": 8,
+   "targets_served": 88,
+   "served_by_two_centres": 88,
+   "centre_groups": [
+    [
+     60,
+     61,
+     63,
+     224
+    ],
+    [
+     31,
+     240,
+     23,
+     256
+    ]
+   ],
+   "centre_descent_rank_mass": 64,
+   "common_target_level_dim_per_centre": 0,
+   "b_reads_of_centres": 0,
+   "b_writes_of_centres": 0,
+   "b_deliveries_into_targets": 921,
+   "single_deliveries_in_centre_span": 0,
+   "nontarget_source_deliveries": 785,
+   "delivery_tensor_rank_mod_p": 785,
+   "replaceable_subsets": 0,
+   "selftest": "scaled duplicate and two-term combination injected: both detected"
+  },
+  "precondition": {
+   "gates": 192,
+   "registers": {
+    "target": 328
+   },
+   "inverse_of_B_target_mixing": true,
+   "b_target_mixing_gates": 192,
+   "a_frame0_gates": 1182,
+   "b_frame0_gates": 0
+  },
+  "mixing_back_to_B_start": {
+   "target_only_gates": 192,
+   "reach_B_start": 0,
+   "stops": {
+    "delivery": 77,
+    "mix": 115
+   }
+  },
+  "butterfly_conjugation": {
+   "groups": 34,
+   "simple_butterflies_priced": 32,
+   "status": {
+    "infeasible": 32
+   },
+   "negative": 0,
+   "crossed_deliveries_min": 5,
+   "crossed_deliveries_max": 17
+  },
+  "a_to_frame0_region": {
+   "register not zero-start": 1354,
+   "blocked": 915
+  },
+  "b_to_frame0_region": {
+   "register above frame 0 at B start": 1641,
+   "blocked": 212
+  }
+ }
+}

@@ -1,0 +1,12 @@
+base cost 11683292106 {1: 2347, 2: 502, 3: 415, 4: 130, 5: 82} 1.8s
+  tables 0.4 s: frame pairs 3756 cols 5502 3368
+  candidates 5210 cone-rejected entries 278108 12.3 s
+job [('B', 342)] ddel -6781 depth 2 famregs 5 basis 12 cand 5210 shape True gen 12.3s
+  r1 terms 5 est 4925 interacting 1 exact True [(74, 554, 5596, '-1'), (74, 554, 4480, '-1'), (186, 554, 4137, '-1'), (126, 554, 4108, '1'), (122, 554, 4104, '1')]
+    price {'status': 'ok', 'delta': -1856, 'profile': {1: 2348, 2: 500, 3: 416, 4: 130, 5: 82}}
+  r1 terms 6 est 4925 interacting 1 exact True [(74, 554, 5596, '-1'), (186, 554, 4137, '-1'), (381, 554, 4480, '1'), (381, 554, 4466, '-1'), (126, 554, 4108, '1'), (122, 554, 4104, '1')]
+    price {'status': 'ok', 'delta': -1856, 'profile': {1: 2348, 2: 500, 3: 416, 4: 130, 5: 82}}
+    r1 stop INFEASIBLE
+done 26.7s
+
+[capped] exit 0 wall 27.1s peak_rss_gib 1.20

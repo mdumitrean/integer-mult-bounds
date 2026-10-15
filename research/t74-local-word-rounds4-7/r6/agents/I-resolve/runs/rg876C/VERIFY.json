@@ -1,0 +1,20 @@
+{
+ "system": "runs/nd876U",
+ "rowgen": "runs/rg876C/ROWGEN.json",
+ "rows": 418,
+ "cand": 29209,
+ "checks": [
+  {
+   "solver": "SCIP",
+   "ban": true,
+   "status": "NOT_SOLVED",
+   "seconds": 240.1
+  },
+  {
+   "solver": "HIGHS",
+   "ban": true,
+   "status": "INFEASIBLE",
+   "seconds": 103.0
+  }
+ ]
+}

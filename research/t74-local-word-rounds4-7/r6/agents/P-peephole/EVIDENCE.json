@@ -1,0 +1,99 @@
+{
+ "agent": "P-peephole",
+ "round": "r6",
+ "word": "r3/inputs/gauge44-word-566-554.json.gz",
+ "b": "0.001679754956125544",
+ "alternatives_enumerated": {
+  "k2L3": 10297,
+  "k2L2": 56,
+  "reduction": 592,
+  "k3L3": 334,
+  "k4L4": 2166
+ },
+ "alternatives_total": 13445,
+ "priced": 10265,
+ "by_group": {
+  "reduction": {
+   "ok:0": 592
+  },
+  "k4L4": {
+   "ok:0": 2166
+  },
+  "k3L3": {
+   "ok:0": 334
+  },
+  "k2L2": {
+   "ok:0": 56
+  },
+  "k2L3": {
+   "ok:0": 6153,
+   "ok:4925": 18,
+   "infeasible": 946
+  }
+ },
+ "windows_with_priced_alternatives": {
+  "reduction": 48,
+  "k4L4": 184,
+  "k3L3": 120,
+  "k2L2": 56,
+  "k2L3": 1181
+ },
+ "min_delta": 0,
+ "negative": 0,
+ "calibration": {
+  "identity_substitutions": [
+   {
+    "window": [
+     0,
+     2
+    ],
+    "status": "ok",
+    "delta": 0,
+    "gain_certified": false,
+    "seconds": 2.04
+   },
+   {
+    "window": [
+     100,
+     3
+    ],
+    "status": "ok",
+    "delta": 0,
+    "gain_certified": false,
+    "seconds": 2.04
+   },
+   {
+    "window": [
+     857,
+     2
+    ],
+    "status": "ok",
+    "delta": 0,
+    "gain_certified": false,
+    "seconds": 2.11
+   },
+   {
+    "window": [
+     1000,
+     4
+    ],
+    "status": "ok",
+    "delta": 0,
+    "gain_certified": false,
+    "seconds": 2.12
+   }
+  ],
+  "r3D_FW_42_past43_to44_rediscovered": true
+ },
+ "limits": {
+  "window_sizes": "k=2 (L<=3), k=3 (L<=3), k=4 (L<=4, <=6 registers), k=5 (L<=4, <=6 registers)",
+  "windows_skipped": {
+   "k4": 778,
+   "k5": 1066
+  },
+  "coefficients": "+-{1/4,1/2,1,2,4}; scales +-2, +-1/2, -1 when the window has a scale",
+  "excluded": "original, pure permutations (commuting reorders), consecutive same-(t,s) gates; no extra registers",
+  "unpriced": 3180,
+  "unpriced_note": "lowest priority: k=2 three-gate rewrites (single-crossing compensated re-timings, the r3 D family) on windows touching no large-deletion gate"
+ }
+}

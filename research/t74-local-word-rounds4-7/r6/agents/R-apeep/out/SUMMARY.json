@@ -1,0 +1,71 @@
+{
+ "agent": "R-apeep",
+ "round": "r6",
+ "b": "0.001679754956125544",
+ "word": "r3/inputs/gauge44-word-566-554.json.gz",
+ "planned": 7955,
+ "priced": 7955,
+ "totals": {
+  "ok:0": 7852,
+  "infeasible": 103
+ },
+ "ok_delta_histogram": {
+  "0": 7852
+ },
+ "by_group": {
+  "longer/k2/big": {
+   "ok:0": 889,
+   "infeasible": 11
+  },
+  "perm/k2/big": {
+   "ok:0": 404
+  },
+  "perm/k2/nz": {
+   "ok:0": 400
+  },
+  "perm/k3/big": {
+   "ok:0": 890,
+   "infeasible": 10
+  },
+  "perm/k4/big": {
+   "ok:0": 588,
+   "infeasible": 12
+  },
+  "reduce/k2/nz": {
+   "ok:0": 42
+  },
+  "reduce/k3/nz": {
+   "ok:0": 84
+  },
+  "reduce/k4/nz": {
+   "ok:0": 378
+  },
+  "reduce/k4/zero": {
+   "ok:0": 32
+  },
+  "same/k2/nz": {
+   "ok:0": 338
+  },
+  "same/k2/zero": {
+   "ok:0": 175
+  },
+  "same/k3/big": {
+   "infeasible": 14
+  },
+  "same/k3/nz": {
+   "ok:0": 1689
+  },
+  "same/k3/zero": {
+   "ok:0": 743
+  },
+  "same/k4/big": {
+   "infeasible": 56
+  },
+  "same/k4/nz": {
+   "ok:0": 1200
+  }
+ },
+ "negatives": [],
+ "mean_seconds": 1.29,
+ "max_rss_gib": 0.7027587890625
+}

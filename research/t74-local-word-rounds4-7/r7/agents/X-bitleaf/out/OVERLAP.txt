@@ -1,0 +1,114 @@
+POSSIBLE_OVERLAP_NOT_A_NOVELTY_CERTIFICATE
+Coverage: {"open_prs": {"fetched_at": "2026-10-15T11:41:01.786323+00:00", "complete_pagination": true, "records": 665}, "discussions": {"fetched_at": "2026-10-15T11:42:35.511663+00:00", "complete_pagination": true, "records": 1191}}
+Remote PR scope is open PRs including drafts. Closed work is searched through local READMEs, TASK metadata and ledger only. No code diffs or arbitrary package files are searched. Recheck relevant heads before submission.
+10 possible matches; showing 10
+
+[pr] Research: completed-callee substitution at PR #2234's BIT leaves and headers
+https://github.com/CrocSwap/integer-mult-bounds/pull/2399
+Head: 14458fda3cac4441c27980d584582ebbbb3e9233
+## Change and mathematical scope
+
+PR2234's weighted leaf and reversed header ADD implement each ordinary field exchange digit by digit. Replacing only the leaf would leave the header width toll unchanged. This package implements a temporary two-field radix-to-binary adapter and proves that substituting a previously completed binary callee at **both** sites gives their required `O(V w^(1-a))` charge, under the explicit earlier-callee and retained stream contracts.
+
+The adapter pads only the two e
+
+[local-readme] research/bit-orthogonal-pair-decoders/README.md
+research/bit-orthogonal-pair-decoders/README.md
+), so one pair on the shipped
+     puncture is worth roughly +0.6% c;
+   - κ is complex-bound, so a bit-only gain leaves it unchanged;
+   - PR968's P104 complex budget is capped by PR589 at κ = 0.001730427469823602. Lifted above that cap,
+     the same budget gives **κ = 0.001753391564497665** (+5.50%), which requires the bit c to rise by at
+     least **1.3294%**. One shipped pair falls short of that in this estimate.
+
+## Reproduce
+
+From the repository root, with Python 3.10+ and the standard l
+
+[local-readme] research/clifford-state-performance/README.md
+research/clifford-state-performance/README.md
+ matrix product.
+
+For a diagonal gate, let `f(x)` denote its phase modulo four.
+Removing the lowest bit leaves only larger indices in `y`.
+The original upper-triangular quadratic formula therefore gives:
+
+```text
+f(x) = f(y) + alpha[i] + 2 parity(Q[i] & y)  (mod 4).
+```
+
+The phase table evaluates this recurrence with exact integers.
+Equality with the original upper-triangular evaluator does not require symmetry.
+The existing gate constructors retain their own validity checks.
+
+Translations, glob
+
+[local-readme] research/format-limits-corrected/README.md
+research/format-limits-corrected/README.md
+er end is the certified value.
+
+- **κ ≤ 5.1594939·10⁻³ < 5.1595·10⁻³**; the complex side binds. The bit-only corollary is c/(1 + c) ≤ 5.964704·10⁻³.
+- **The supremum over s is at s = 5** on both units. For odd s = 7..401, the certified D_s/Cost_s stays below X(5);
+  the largest values are 5.2311·10⁻³ (bit) and 4.5292·10⁻³ (complex), both at s = 7. For s ≥ 403 a tail bound applies:
+  Cost_s/v ≥ 2Σ_{p<K} 2pa·ln(m/(2pa)) ≥ 4a·Σ_{p<K} p ln(K/p) (using m > 2Ka), and
+  Σ_{p=1}^{K−1} p ln(K/p) ≥ K²/4 −
+
+[local-readme] research/format-limits/README.md
+research/format-limits/README.md
+er end is the certified value.
+
+- **κ ≤ 5.1594938·10⁻³ < 5.1595·10⁻³**; the complex side binds. The bit-only corollary is c/(1 + c) ≤ 5.9647·10⁻³.
+- **The supremum over s is at s = 5** on both units. For odd s = 7..401, the certified D_s/Cost_s stays below X(5);
+  the largest values are 5.2311·10⁻³ (bit) and 4.5292·10⁻³ (complex), both at s = 7. For s ≥ 403 a tail bound applies:
+  Cost_s/v ≥ 2Σ_{p<K} 2pa·ln(m/(2pa)) ≥ 4a·Σ_{p<K} p ln(K/p) (using m > 2Ka), and
+  Σ_{p=1}^{K−1} p ln(K/p) ≥ K²/4 − K
+
+[local-readme] research/rational-residue-scope/README.md
+research/rational-residue-scope/README.md
+ginal rational descriptors 1,040:
+**13,360 model bits**, plus private work and the inherited 17,888-bit leaf-word
+encoding. Preparation uses 836 explicitly routed accesses, 24,452 bit actions,
+and 5,438,192 head-bit moves in the declared field layout. Including the kernel
+gives 949,124 bit actions and 81,869,808 head-bit moves. These counts price the
+declared external-field scans; private arithmetic and its routing are the
+primitive cost terms from PR1159.
+
+**Additional costs remain explicit:** 
+
+[local-readme] research/tensor-e8-copy-floor/README.md
+research/tensor-e8-copy-floor/README.md
+0000000000` and bit lower
+endpoint `413456747036699736067/250000000000000000000000`. A hypothetical
+bit-only copy improvement would still require checking that binding constraint;
+this result supplies no improvement on either side.
+
+## Finite evidence and negative controls
+
+The verifier covers:
+
+- All 120 base roots, all base binary pairings, rank nine, and all 511 nonzero
+  base-code supports, each with a committed exact determinant witness.
+- One depth-two factorization changed by 243 elementa
+
+[local-readme] research/xor-affine-agreement-audit/README.md
+research/xor-affine-agreement-audit/README.md
+1-a have valuation one, so their weights have distinct valuations i+1 < L. Fixing every other input bit leaves at most one assignment to these s coordinates for a given b. Agreement is at most 2^(L-s).
+
+If a=3 modulo 4, use instead the t unselected coordinates below the top bit. Their coefficients 1-a have valuation one. The same argument gives agreement at most 2^(L-t). These cases exhaust all possible slopes and give the global upper bound. For L=1, s=t=0 and the argument is still valid.
+
+For 
+
+[pr] Conditional κ=0.0011208649522582786: split centres with complete signed admission
+https://github.com/CrocSwap/integer-mult-bounds/pull/376
+Head: 5522b4edf9748ccda787df81f0a83eda83cdc4e8
+ta=10^-30` and counted common outer `log2` threshold `14 × 10³⁰`. The adjacent final grid point and complex leaf cap are rejected.
+
+### Scope and reproducibility
+
+All-size weighted compilation and compressed windows, arbitrary correlated-bank substitution, ordinary calls, common prime/chart/precision/tape interfaces, restored rows, setup/recovery, analytic transfer and a dominating stage-specific `C_full` remain conditional. The generalized mutable-source/common-frame proof is the upstream i
+
+[pr] Research: dirty echo, verifier repair, and priced bit-sharing boundaries
+https://github.com/CrocSwap/integer-mult-bounds/pull/673
+Head: 0b4f514c60d9bc7786415d7cbc24754f24d6dc3b
+al rank unit fails the target. Making all retained-total copies free still fails. The corresponding bit-only outer ceilings are below 0.002644610326897 and 0.007315906873875; neither is an achieved supplier.
+- With the original rank mass and boundary remainder, cap 55 fails and cap 56 is the first passing relaxation. A hypothetical integer rank-57 invoice allows 431 extra rank-1 repair calls globally and needs over 98.48% of local rank mass fused. The eight-stage interpretation applies only to o

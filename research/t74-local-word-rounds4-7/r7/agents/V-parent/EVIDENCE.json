@@ -1,0 +1,95 @@
+{
+ "agent": "V-parent",
+ "round": "r7",
+ "template": "r2/full566b/parent/layout/demotions1148-round43/baseline-replay/parent/t16/global8/base/split-centres/GLOBAL-TEMPLATE.json.gz",
+ "bridge": {
+  "events": [
+   9,
+   12
+  ],
+  "recipe": "bridge dst=1 src=2 c=+1 before local stage 4 (pair 1 forward), dst=1 src=2 c=-1 after",
+  "effect": "conjugates pair 1 forward call by pair 2; with global_k.py semantics X_1 += X_2, Y_2 -= Y_1 then reverse; isolates level 4 of pair 2 (idle child 5/7, rank 8) from levels 0-3 (child 4/6, rank 32)",
+  "why_needed": "global_k.py integer eight-bank identity: recipe (local F: Y_p += X_p, R: X_p -= Y_p; bridge X_d += c X_s, Y_s -= c Y_d; exchange) must compose to the identity with every one of the 18 bridge shears necessary; the hosted audit requires t[recipe] == parent[recipe]; PR1319 make_context requires 30 source events and 9T bridges per replica"
+ },
+ "model_check": {
+  "current_recipe_geometry": {
+   "{\"0\": [6], \"1\": [2, 1, 4], \"2\": [4, 1, 2], \"3\": [6, 1]}": 8
+  },
+  "matches_L_geometry": true
+ },
+ "searches": {
+  "conjugation_family_current_order": {
+   "identity_recipes": 8,
+   "geometries": {
+    "{\"0\": [6], \"1\": [2, 1, 4], \"2\": [4, 1, 2], \"3\": [6, 1]}": 8
+   }
+  },
+  "conjugation_family_all_orders": {
+   "orders": 1260,
+   "identity_recipes": 8,
+   "geometries": {
+    "{\"0\": [6], \"1\": [2, 1, 4], \"2\": [4, 1, 2], \"3\": [6, 1]}": 8
+   }
+  },
+  "single_interior_bridges_r_le_4": {
+   "tested": 1695140,
+   "zero_diagonal_candidates": 0
+  },
+  "single_interior_bridges_r_5_6": {
+   "tested": 45932544,
+   "zero_diagonal_candidates": 16,
+   "geometries": {
+    "{\"0\": [6], \"1\": [1, 2, 4], \"2\": [4, 1, 2], \"3\": [6, 1]}": 8,
+    "{\"0\": [6], \"1\": [2, 1, 4], \"2\": [4, 1, 2], \"3\": [6, 1]}": 8
+   }
+  },
+  "orientation_variants_all_orders": {
+   "orders": 18900,
+   "identity_recipes": 24,
+   "timeouts": 0,
+   "geometries": {
+    "{\"0\": [1, 6], \"1\": [2, 4], \"2\": [4, 1, 2], \"3\": [6, 1]}": 8,
+    "{\"0\": [1, 6], \"1\": [2, 1, 4], \"2\": [4, 2], \"3\": [6, 1]}": 8,
+    "{\"0\": [1, 6], \"1\": [2, 1, 4], \"2\": [4, 1, 2], \"3\": [6]}": 8
+   },
+   "run_multisets": {
+    "{\"0\": [1, 6], \"1\": [2, 4], \"2\": [4, 1, 2], \"3\": [6, 1]}": [
+     1,
+     1,
+     1,
+     2,
+     2,
+     4,
+     4,
+     6,
+     6
+    ],
+    "{\"0\": [1, 6], \"1\": [2, 1, 4], \"2\": [4, 2], \"3\": [6, 1]}": [
+     1,
+     1,
+     1,
+     2,
+     2,
+     4,
+     4,
+     6,
+     6
+    ],
+    "{\"0\": [1, 6], \"1\": [2, 1, 4], \"2\": [4, 1, 2], \"3\": [6]}": [
+     1,
+     1,
+     1,
+     2,
+     2,
+     4,
+     4,
+     6,
+     6
+    ]
+   },
+   "note": "each variant moves one isolated level between pairs; the run multiset {6,6,4,4,2,2,1,1,1} (capacities 48,48,32,32,16,16,8,8,8 per side) is identical to the current recipe; no run of 5 (40-child) exists"
+  }
+ },
+ "levi_lemma": "with all bridges at the beginning/end, the middle product must have zero X->X and Y->Y blocks; per-pair call products F R (2-call pairs) have a nonzero Y->Y entry, so interior bridges are required",
+ "verdict": "blocked: within all searched recipe families the run multiset is invariant and pair 2 never gets a 5-level run; the pair-2 merge needs a parent algorithm outside global_k identity recipes"
+}

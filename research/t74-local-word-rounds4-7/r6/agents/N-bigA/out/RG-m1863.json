@@ -1,0 +1,687 @@
+[
+ {
+  "dels": [
+   [
+    "A",
+    1863
+   ]
+  ],
+  "ddel": -19700,
+  "proposals": [
+   {
+    "terms": [
+     [
+      288,
+      32,
+      1513,
+      "1"
+     ]
+    ],
+    "est": 1,
+    "exact": true,
+    "frames_ok": true,
+    "why": null,
+    "edit_ab": {
+     "delete": [
+      [
+       "A",
+       1863
+      ]
+     ],
+     "insert": [
+      [
+       "A",
+       1513,
+       [
+        "add",
+        288,
+        32,
+        1,
+        1,
+        []
+       ]
+      ]
+     ],
+     "tail": []
+    }
+   },
+   {
+    "terms": [
+     [
+      288,
+      32,
+      1863,
+      "1"
+     ]
+    ],
+    "est": 1,
+    "exact": true,
+    "frames_ok": true,
+    "why": null,
+    "edit_ab": {
+     "delete": [
+      [
+       "A",
+       1863
+      ]
+     ],
+     "insert": [
+      [
+       "A",
+       1864,
+       [
+        "add",
+        288,
+        32,
+        1,
+        1,
+        []
+       ]
+      ]
+     ],
+     "tail": []
+    }
+   },
+   {
+    "terms": [
+     [
+      288,
+      32,
+      1864,
+      "1"
+     ],
+     [
+      289,
+      32,
+      1513,
+      "1"
+     ]
+    ],
+    "est": 2,
+    "exact": true,
+    "frames_ok": true,
+    "why": null,
+    "edit_ab": {
+     "delete": [
+      [
+       "A",
+       1863
+      ]
+     ],
+     "insert": [
+      [
+       "A",
+       1513,
+       [
+        "add",
+        289,
+        32,
+        1,
+        1,
+        []
+       ]
+      ],
+      [
+       "A",
+       1865,
+       [
+        "add",
+        288,
+        32,
+        1,
+        1,
+        []
+       ]
+      ]
+     ],
+     "tail": []
+    }
+   },
+   {
+    "terms": [
+     [
+      288,
+      32,
+      1894,
+      "1"
+     ],
+     [
+      289,
+      32,
+      1894,
+      "1"
+     ]
+    ],
+    "est": 2,
+    "exact": true,
+    "frames_ok": true,
+    "why": null,
+    "edit_ab": {
+     "delete": [
+      [
+       "A",
+       1863
+      ]
+     ],
+     "insert": [
+      [
+       "A",
+       1895,
+       [
+        "add",
+        288,
+        32,
+        1,
+        1,
+        []
+       ]
+      ],
+      [
+       "A",
+       1895,
+       [
+        "add",
+        289,
+        32,
+        1,
+        1,
+        []
+       ]
+      ]
+     ],
+     "tail": []
+    }
+   },
+   {
+    "terms": [
+     [
+      289,
+      32,
+      1894,
+      "1"
+     ],
+     [
+      288,
+      32,
+      1864,
+      "1"
+     ]
+    ],
+    "est": 2,
+    "exact": true,
+    "frames_ok": true,
+    "why": null,
+    "edit_ab": {
+     "delete": [
+      [
+       "A",
+       1863
+      ]
+     ],
+     "insert": [
+      [
+       "A",
+       1865,
+       [
+        "add",
+        288,
+        32,
+        1,
+        1,
+        []
+       ]
+      ],
+      [
+       "A",
+       1895,
+       [
+        "add",
+        289,
+        32,
+        1,
+        1,
+        []
+       ]
+      ]
+     ],
+     "tail": []
+    }
+   },
+   {
+    "terms": [
+     [
+      288,
+      32,
+      1894,
+      "1"
+     ],
+     [
+      289,
+      32,
+      1513,
+      "1"
+     ]
+    ],
+    "est": 2,
+    "exact": true,
+    "frames_ok": true,
+    "why": null,
+    "edit_ab": {
+     "delete": [
+      [
+       "A",
+       1863
+      ]
+     ],
+     "insert": [
+      [
+       "A",
+       1513,
+       [
+        "add",
+        289,
+        32,
+        1,
+        1,
+        []
+       ]
+      ],
+      [
+       "A",
+       1895,
+       [
+        "add",
+        288,
+        32,
+        1,
+        1,
+        []
+       ]
+      ]
+     ],
+     "tail": []
+    }
+   }
+  ],
+  "rowgen": {
+   "dels": [
+    [
+     "A",
+     1863
+    ]
+   ],
+   "ddel": -19700,
+   "ncand": 8187,
+   "rows": 8338,
+   "shape": true,
+   "log": [
+    {
+     "it": 1,
+     "rows": 65,
+     "cand": 63,
+     "status": "OPTIMAL",
+     "seconds": 0.0,
+     "support": 1,
+     "est": 1,
+     "violated": 0
+    },
+    {
+     "it": 2,
+     "rows": 65,
+     "cand": 63,
+     "status": "OPTIMAL",
+     "seconds": 0.0,
+     "support": 1,
+     "est": 1,
+     "violated": 0
+    },
+    {
+     "it": 3,
+     "rows": 65,
+     "cand": 63,
+     "status": "OPTIMAL",
+     "seconds": 0.0,
+     "support": 2,
+     "est": 2,
+     "violated": 0
+    },
+    {
+     "it": 4,
+     "rows": 65,
+     "cand": 63,
+     "status": "OPTIMAL",
+     "seconds": 0.0,
+     "support": 2,
+     "est": 2,
+     "violated": 0
+    },
+    {
+     "it": 5,
+     "rows": 65,
+     "cand": 63,
+     "status": "OPTIMAL",
+     "seconds": 0.0,
+     "support": 2,
+     "est": 2,
+     "violated": 0
+    },
+    {
+     "it": 6,
+     "rows": 65,
+     "cand": 63,
+     "status": "OPTIMAL",
+     "seconds": 0.0,
+     "support": 2,
+     "est": 2,
+     "violated": 0
+    },
+    {
+     "it": 7,
+     "rows": 65,
+     "cand": 63,
+     "status": "INFEASIBLE",
+     "seconds": 0.0
+    }
+   ],
+   "proposals": [
+    {
+     "terms": [
+      [
+       288,
+       32,
+       1513,
+       "1"
+      ]
+     ],
+     "est": 1,
+     "exact": true,
+     "frames_ok": true,
+     "why": null,
+     "edit_ab": {
+      "delete": [
+       [
+        "A",
+        1863
+       ]
+      ],
+      "insert": [
+       [
+        "A",
+        1513,
+        [
+         "add",
+         288,
+         32,
+         1,
+         1,
+         []
+        ]
+       ]
+      ],
+      "tail": []
+     }
+    },
+    {
+     "terms": [
+      [
+       288,
+       32,
+       1863,
+       "1"
+      ]
+     ],
+     "est": 1,
+     "exact": true,
+     "frames_ok": true,
+     "why": null,
+     "edit_ab": {
+      "delete": [
+       [
+        "A",
+        1863
+       ]
+      ],
+      "insert": [
+       [
+        "A",
+        1864,
+        [
+         "add",
+         288,
+         32,
+         1,
+         1,
+         []
+        ]
+       ]
+      ],
+      "tail": []
+     }
+    },
+    {
+     "terms": [
+      [
+       288,
+       32,
+       1864,
+       "1"
+      ],
+      [
+       289,
+       32,
+       1513,
+       "1"
+      ]
+     ],
+     "est": 2,
+     "exact": true,
+     "frames_ok": true,
+     "why": null,
+     "edit_ab": {
+      "delete": [
+       [
+        "A",
+        1863
+       ]
+      ],
+      "insert": [
+       [
+        "A",
+        1513,
+        [
+         "add",
+         289,
+         32,
+         1,
+         1,
+         []
+        ]
+       ],
+       [
+        "A",
+        1865,
+        [
+         "add",
+         288,
+         32,
+         1,
+         1,
+         []
+        ]
+       ]
+      ],
+      "tail": []
+     }
+    },
+    {
+     "terms": [
+      [
+       288,
+       32,
+       1894,
+       "1"
+      ],
+      [
+       289,
+       32,
+       1894,
+       "1"
+      ]
+     ],
+     "est": 2,
+     "exact": true,
+     "frames_ok": true,
+     "why": null,
+     "edit_ab": {
+      "delete": [
+       [
+        "A",
+        1863
+       ]
+      ],
+      "insert": [
+       [
+        "A",
+        1895,
+        [
+         "add",
+         288,
+         32,
+         1,
+         1,
+         []
+        ]
+       ],
+       [
+        "A",
+        1895,
+        [
+         "add",
+         289,
+         32,
+         1,
+         1,
+         []
+        ]
+       ]
+      ],
+      "tail": []
+     }
+    },
+    {
+     "terms": [
+      [
+       289,
+       32,
+       1894,
+       "1"
+      ],
+      [
+       288,
+       32,
+       1864,
+       "1"
+      ]
+     ],
+     "est": 2,
+     "exact": true,
+     "frames_ok": true,
+     "why": null,
+     "edit_ab": {
+      "delete": [
+       [
+        "A",
+        1863
+       ]
+      ],
+      "insert": [
+       [
+        "A",
+        1865,
+        [
+         "add",
+         288,
+         32,
+         1,
+         1,
+         []
+        ]
+       ],
+       [
+        "A",
+        1895,
+        [
+         "add",
+         289,
+         32,
+         1,
+         1,
+         []
+        ]
+       ]
+      ],
+      "tail": []
+     }
+    },
+    {
+     "terms": [
+      [
+       288,
+       32,
+       1894,
+       "1"
+      ],
+      [
+       289,
+       32,
+       1513,
+       "1"
+      ]
+     ],
+     "est": 2,
+     "exact": true,
+     "frames_ok": true,
+     "why": null,
+     "edit_ab": {
+      "delete": [
+       [
+        "A",
+        1863
+       ]
+      ],
+      "insert": [
+       [
+        "A",
+        1513,
+        [
+         "add",
+         289,
+         32,
+         1,
+         1,
+         []
+        ]
+       ],
+       [
+        "A",
+        1895,
+        [
+         "add",
+         288,
+         32,
+         1,
+         1,
+         []
+        ]
+       ]
+      ],
+      "tail": []
+     }
+    }
+   ],
+   "status": "INFEASIBLE",
+   "iterations": 7,
+   "seconds": 305.8
+  }
+ }
+]

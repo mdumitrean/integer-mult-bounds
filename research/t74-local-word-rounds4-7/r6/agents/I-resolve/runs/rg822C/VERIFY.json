@@ -1,0 +1,32 @@
+{
+ "system": "runs/nd822U",
+ "rowgen": "runs/rg822C/ROWGEN.json",
+ "rows": 418,
+ "cand": 1407,
+ "checks": [
+  {
+   "solver": "SCIP",
+   "ban": true,
+   "status": "INFEASIBLE",
+   "seconds": 0.8
+  },
+  {
+   "solver": "HIGHS",
+   "ban": true,
+   "status": "INFEASIBLE",
+   "seconds": 1.3
+  },
+  {
+   "solver": "SCIP",
+   "ban": false,
+   "status": "INFEASIBLE",
+   "seconds": 0.5
+  },
+  {
+   "solver": "HIGHS",
+   "ban": false,
+   "status": "INFEASIBLE",
+   "seconds": 0.3
+  }
+ ]
+}

@@ -1,0 +1,320 @@
+{
+ "base_routing_439": {
+  "reads": [
+   [
+    "B",
+    893,
+    584
+   ],
+   [
+    "B",
+    911,
+    126
+   ],
+   [
+    "B",
+    940,
+    10
+   ],
+   [
+    "B",
+    1222,
+    186
+   ]
+  ],
+  "note": "q=439 original B reads in deleted-word coordinates, re-inserted as real shared reads",
+  "delta": 0
+ },
+ "rfree_best_cover_439": {
+  "cover": [
+   [
+    "B",
+    41,
+    584
+   ],
+   [
+    "B",
+    485,
+    126
+   ],
+   [
+    "B",
+    748,
+    10
+   ],
+   [
+    "B",
+    867,
+    455
+   ],
+   [
+    "tail",
+    0,
+    584
+   ]
+  ],
+  "rfree_delta": -33468,
+  "qfree_delta": -67933,
+  "real_delta": 0
+ },
+ "real_singles_of_that_cover": {
+  "584@B41+tail0": -53158,
+  "126@B485": -48233,
+  "10@B748": -48233,
+  "455@B867": -48233
+ },
+ "position_sensitivity_439": {
+  "candidates": 786,
+  "feasible": 76,
+  "single_hist": [
+   [
+    -48233,
+    53
+   ],
+   [
+    -53158,
+    19
+   ],
+   [
+    -67933,
+    4
+   ]
+  ],
+  "nodes": 4012,
+  "limit_hit": true,
+  "best": {
+   "delta": 0,
+   "cover": null
+  },
+  "status": "budget hit, none found"
+ },
+ "extra_word_439": {
+  "feasible": 44,
+  "single_hist": [
+   [
+    -48233,
+    31
+   ],
+   [
+    -53158,
+    11
+   ],
+   [
+    -67933,
+    2
+   ]
+  ],
+  "nodes": 597,
+  "status": "no skeleton below base",
+  "deleted_delta": -67933
+ },
+ "zero_screen_calibration": {
+  "scanned": [
+   [
+    226,
+    "ok",
+    -51636
+   ],
+   [
+    228,
+    "ok",
+    -51636
+   ],
+   [
+    230,
+    "ok",
+    -51636
+   ],
+   [
+    231,
+    "ok",
+    -51636
+   ],
+   [
+    232,
+    "ok",
+    -51636
+   ],
+   [
+    235,
+    "ok",
+    -44073
+   ],
+   [
+    236,
+    "ok",
+    -51636
+   ],
+   [
+    237,
+    "ok",
+    -44073
+   ],
+   [
+    238,
+    "ok",
+    -51636
+   ],
+   [
+    251,
+    "ok",
+    -44073
+   ],
+   [
+    253,
+    "ok",
+    -44073
+   ],
+   [
+    267,
+    "ok",
+    -44073
+   ],
+   [
+    269,
+    "ok",
+    -44073
+   ],
+   [
+    281,
+    "ok",
+    -30733
+   ],
+   [
+    285,
+    "ok",
+    -32599
+   ],
+   [
+    297,
+    "ok",
+    -32589
+   ],
+   [
+    301,
+    "ok",
+    -32599
+   ],
+   [
+    306,
+    "ok",
+    -37508
+   ],
+   [
+    308,
+    "ok",
+    -37508
+   ],
+   [
+    310,
+    "ok",
+    -37508
+   ],
+   [
+    313,
+    "ok",
+    -30733
+   ],
+   [
+    317,
+    "ok",
+    -30425
+   ],
+   [
+    322,
+    "ok",
+    -37508
+   ],
+   [
+    324,
+    "ok",
+    -37508
+   ],
+   [
+    326,
+    "ok",
+    -37508
+   ],
+   [
+    329,
+    "ok",
+    -32589
+   ],
+   [
+    333,
+    "ok",
+    -30425
+   ],
+   [
+    345,
+    "ok",
+    -30733
+   ],
+   [
+    349,
+    "ok",
+    -30425
+   ],
+   [
+    361,
+    "ok",
+    -32589
+   ],
+   [
+    365,
+    "ok",
+    -30425
+   ],
+   [
+    370,
+    "ok",
+    -36795
+   ],
+   [
+    372,
+    "ok",
+    -36795
+   ],
+   [
+    374,
+    "ok",
+    -36795
+   ],
+   [
+    375,
+    "ok",
+    -36795
+   ],
+   [
+    377,
+    "ok",
+    -30733
+   ],
+   [
+    381,
+    "ok",
+    -31628
+   ],
+   [
+    386,
+    "ok",
+    -36795
+   ],
+   [
+    388,
+    "ok",
+    -36795
+   ],
+   [
+    390,
+    "ok",
+    -36795
+   ]
+  ],
+  "found": null,
+  "note": "no never-written-after-A helper with a zero deletion screen among those scanned; calibration instead by the base routing repricing at exactly base"
+ },
+ "cap_consistency": {
+  "note": "r3 capped screens: 439/444 -57,112; 438 -51,484; ten others -40,815. Every relaxation value here is >= the corresponding capped screen; the r-free single of 439's earliest 584 meet equals -57,112 exactly."
+ }
+}

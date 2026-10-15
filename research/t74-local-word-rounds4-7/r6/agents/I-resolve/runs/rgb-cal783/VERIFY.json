@@ -1,0 +1,32 @@
+{
+ "system": "runs/nd783D",
+ "rowgen": "runs/rgb-cal783/ROWGEN.json",
+ "rows": 71,
+ "cand": 105,
+ "checks": [
+  {
+   "solver": "SCIP",
+   "ban": true,
+   "status": "INFEASIBLE",
+   "seconds": 0.0
+  },
+  {
+   "solver": "HIGHS",
+   "ban": true,
+   "status": "INFEASIBLE",
+   "seconds": 0.0
+  },
+  {
+   "solver": "SCIP",
+   "ban": false,
+   "status": "FEASIBLE(optimal)",
+   "seconds": 0.0
+  },
+  {
+   "solver": "HIGHS",
+   "ban": false,
+   "status": "FEASIBLE(optimal)",
+   "seconds": 0.1
+  }
+ ]
+}

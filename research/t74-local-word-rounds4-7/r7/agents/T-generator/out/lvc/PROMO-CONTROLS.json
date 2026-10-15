@@ -1,0 +1,73 @@
+{
+ "recipe": "84d4da2e2ee227821c132a635c41415243d083935c0410ec4ded805d00d645a4",
+ "honest": "PASS",
+ "controls": [
+  {
+   "control": "entrance_outside_first_gate_frame",
+   "expected": "frame not monotone",
+   "got": "frame not monotone (603, (408, 80, 40, 4, 2), (408, 80, 40, 6, 1))",
+   "rejected_at_pinned_site": true
+  },
+  {
+   "control": "raised_gate_missing",
+   "expected": "frame not monotone",
+   "got": "frame not monotone (603, (408, 80, 40, 6, 1), (408, 80, 40, 6))",
+   "rejected_at_pinned_site": true
+  },
+  {
+   "control": "raised_gate_missing_group_611",
+   "expected": "frame not monotone",
+   "got": "frame not monotone (611, (272, 144, 96, 6, 1), (272, 144, 96, 6))",
+   "rejected_at_pinned_site": true
+  },
+  {
+   "control": "raised_gate_missing_group_627",
+   "expected": "frame not monotone",
+   "got": "frame not monotone (627, (390, 68, 34, 24, 1), (390, 68, 34, 24))",
+   "rejected_at_pinned_site": true
+  },
+  {
+   "control": "raised_gate_missing_group_635",
+   "expected": "frame not monotone",
+   "got": "frame not monotone (635, (298, 170, 102, 30, 1), (298, 170, 102, 30))",
+   "rejected_at_pinned_site": true
+  },
+  {
+   "control": "entrance_reverted_profile",
+   "expected": "paid profile mismatch",
+   "got": "paid profile mismatch",
+   "rejected_at_pinned_site": true
+  },
+  {
+   "control": "ungrouped_promotion",
+   "expected": "frame not monotone",
+   "got": "frame not monotone (595, (408, 80, 40, 6, 1), (320, 192, 24, 6))",
+   "rejected_at_pinned_site": true
+  },
+  {
+   "control": "recipe_gate_old_frame",
+   "expected": "('gate frame mismatch'",
+   "got": "('gate frame mismatch', 'B', 372)",
+   "rejected_at_pinned_site": true
+  },
+  {
+   "control": "recipe_not_a_promotion",
+   "expected": "('not a promotion'",
+   "got": "('not a promotion', '603')",
+   "rejected_at_pinned_site": true
+  },
+  {
+   "control": "recipe_input_pin",
+   "expected": "input word pin",
+   "got": "input word pin",
+   "rejected_at_pinned_site": true
+  },
+  {
+   "control": "raised_gate_scalar_tamper",
+   "expected": "",
+   "got": "nonzero entrance response",
+   "rejected_at_pinned_site": true
+  }
+ ],
+ "rejected": 11
+}

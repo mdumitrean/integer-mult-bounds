@@ -1,0 +1,67 @@
+base cost 11683290250 {1: 2348, 2: 500, 3: 416, 4: 130, 5: 82} 1.9s
+job [('B', 1)] ddel -4925 budget 4924
+  r1 cand 2452 cone-rejected 167354 shape True T-rank 1 budget 4924 segs 2 118.4s
+  r1 terms 3 est 0 interacting 1 exact False [(74, 554, 5562, '1'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2485 cone-rejected 170594 shape True T-rank 1 budget 4924 segs 2 111.9s
+    r2 stop INFEASIBLE
+    r2 diagnosis {'no_summed_budget': 'INFEASIBLE', 'no_summed_budget_24_terms': 'INFEASIBLE', 'no_cap_candidates': 2589, 'no_cap_shape': True, 'no_cap_no_budget_24_terms': 'MODEL_INVALID'}
+  r1 terms 3 est 0 interacting 2 exact False [(554, 74, 5600, '-1'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2485 cone-rejected 171190 shape True T-rank 1 budget 4924 segs 2 132.3s
+    r2 stop INFEASIBLE
+  r1 terms 3 est 0 interacting 1 exact False [(74, 554, 5561, '-1'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2485 cone-rejected 170594 shape True T-rank 1 budget 4924 segs 2 120.0s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 1 exact False [(74, 554, 5562, '-3'), (74, 554, 5561, '-4'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2517 cone-rejected 171270 shape True T-rank 1 budget 4924 segs 2 137.9s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 3 exact False [(554, 74, 5600, '-4'), (74, 554, 5562, '-3'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2517 cone-rejected 171866 shape True T-rank 1 budget 4924 segs 2 124.2s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 3 exact False [(554, 74, 5600, '3'), (74, 554, 5561, '-4'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2517 cone-rejected 171866 shape True T-rank 1 budget 4924 segs 2 131.2s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 2 exact False [(74, 554, 5561, '-1'), (126, 74, 4901, '-1'), (125, 74, 4900, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2487 cone-rejected 170690 shape True T-rank 1 budget 4924 segs 2 131.5s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 3 exact False [(554, 74, 5600, '-1'), (126, 74, 4901, '-1'), (125, 74, 4900, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2487 cone-rejected 171286 shape True T-rank 1 budget 4924 segs 2 130.7s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 2 exact False [(74, 554, 5562, '1'), (126, 74, 4901, '-1'), (125, 74, 4900, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2487 cone-rejected 170690 shape True T-rank 1 budget 4924 segs 2 129.5s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 2 exact False [(74, 554, 5561, '-1'), (125, 74, 5134, '-1'), (126, 74, 4901, '-1/2'), (74, 554, 4537, '1')]
+    r2 cand 2486 cone-rejected 178146 shape True T-rank 1 budget 4924 segs 2 136.1s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 2 exact False [(74, 554, 5561, '-1'), (125, 74, 5134, '-2'), (125, 74, 4900, '1'), (74, 554, 4537, '1')]
+    r2 cand 2486 cone-rejected 178146 shape True T-rank 1 budget 4924 segs 2 140.9s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 3 exact False [(554, 74, 5600, '-1'), (125, 74, 5134, '-1'), (126, 74, 4901, '-1/2'), (74, 554, 4537, '1')]
+    r2 cand 2486 cone-rejected 178742 shape True T-rank 1 budget 4924 segs 2 140.8s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 3 exact False [(554, 74, 5600, '-1'), (125, 74, 5134, '-2'), (125, 74, 4900, '1'), (74, 554, 4537, '1')]
+    r2 cand 2486 cone-rejected 178742 shape True T-rank 1 budget 4924 segs 2 142.0s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 2 exact False [(74, 554, 5562, '1'), (125, 74, 5134, '-1'), (126, 74, 4901, '-1/2'), (74, 554, 4537, '1')]
+    r2 cand 2486 cone-rejected 178146 shape True T-rank 1 budget 4924 segs 2 136.2s
+    r2 stop INFEASIBLE
+  r1 terms 4 est 0 interacting 2 exact False [(74, 554, 5562, '1'), (125, 74, 5134, '-2'), (125, 74, 4900, '1'), (74, 554, 4537, '1')]
+    r2 cand 2486 cone-rejected 178146 shape True T-rank 1 budget 4924 segs 2 134.1s
+    r2 stop INFEASIBLE
+  r1 terms 5 est 0 interacting 2 exact False [(554, 74, 5600, '-1'), (126, 74, 4899, '-1'), (74, 554, 4537, '1'), (672, 554, 3856, '4'), (672, 554, 68, '4')]
+    r2 cand 2485 cone-rejected 171215 shape True T-rank 1 budget 4924 segs 2 133.8s
+    r2 stop INFEASIBLE
+  r1 terms 5 est 0 interacting 4 exact False [(554, 74, 5600, '-4'), (74, 554, 5562, '-4'), (74, 554, 5561, '-1'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2549 cone-rejected 172542 shape True T-rank 1 budget 4924 segs 2 134.3s
+    r2 stop INFEASIBLE
+  r1 terms 5 est 0 interacting 4 exact False [(554, 74, 5600, '3'), (74, 554, 5561, '-4'), (125, 74, 5134, '-2'), (125, 74, 4900, '1'), (74, 554, 4537, '1')]
+    r2 cand 2518 cone-rejected 179418 shape True T-rank 1 budget 4924 segs 2 132.7s
+    r2 stop INFEASIBLE
+  r1 terms 5 est 0 interacting 3 exact False [(584, 74, 5600, '-4'), (74, 554, 5562, '1'), (584, 554, 5562, '-4'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2489 cone-rejected 172542 shape True T-rank 1 budget 4924 segs 2 124.4s
+    r2 stop INFEASIBLE
+  r1 terms 5 est 0 interacting 3 exact False [(584, 74, 5600, '-4'), (584, 554, 5562, '-4'), (74, 554, 5561, '-1'), (126, 74, 4899, '-1'), (74, 554, 4537, '1')]
+    r2 cand 2489 cone-rejected 172542 shape True T-rank 1 budget 4924 segs 2 125.1s
+    r2 stop INFEASIBLE
+done {'round1_models': 1, 'round1_proposals': 20, 'round2_models': 20} 2900.2s
+
+[capped] exit 0 wall 2900.6s peak_rss_gib 0.44

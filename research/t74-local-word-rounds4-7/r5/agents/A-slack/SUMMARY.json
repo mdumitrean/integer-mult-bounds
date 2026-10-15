@@ -1,0 +1,151 @@
+{
+ "agent": "A-slack",
+ "round": "r5",
+ "b": "0.001679754956125544",
+ "words": {
+  "base": "r3/inputs/gauge44-word-566-554.json.gz",
+  "extra": "r3/inputs/extra-word-566-554.json.gz"
+ },
+ "correspondence": {
+  "solver_only": [
+   "end-of-B cone cap also applied to every mutable early-cleanup (tail) vertex of a capped register (frames.Graph upper propagation); audit_local.py and the native hpe_audit_and_transport.py check cones on end-of-B frames only"
+  ],
+  "shared": [
+   "monotone frame chains per register, one common frame per gate",
+   "start frames (ports, start_extra) and end frames (FULL, perp(port), helper_final)",
+   "cut equality for centres and target rows (centre frames, target levels)",
+   "end-of-B row/column cone caps from the prefix maps (precondition + derived compensation + A + cut + B)",
+   "paid profile = rank of every chain jump; centre descents constant",
+   "tail (early cleanup) frames free and monotone; remaining cleanup only on FULL-end registers"
+  ],
+  "checker_only_not_frame_choice": [
+   "dyadic additions and signed binary scales; non-target reads target",
+   "exact forward and dual endpoint map with the derived compensation; compensation and precondition may not touch entering or cold-ended helpers",
+   "report.local_profile and width_inventory bookkeeping",
+   "parent centre/port interface (audit_local --main)",
+   "native: 192-bit local payload bound, wrapper order, residual adapters, Clifford phases"
+  ]
+ },
+ "tail_caps": {
+  "base": {
+   "word": "r3/inputs/gauge44-word-566-554.json.gz",
+   "b": "0.001679754956125544",
+   "caps": 100,
+   "compensation_gates": 7208,
+   "tail_caps": {
+    "cost": 11683290250,
+    "profile": {
+     "1": 2348,
+     "2": 500,
+     "3": 416,
+     "4": 130,
+     "5": 82
+    },
+    "certified": true,
+    "variables": 1749,
+    "tail_vertices_on_capped_registers": 103,
+    "interval_lower": "143236734477734411884724921412294009536945196747234922448863795625/13479973333575319897333507543509815336818572211270286240551805124608",
+    "interval_upper": "143236734477734411884966377230167802561263646308680226493086935375/13479973333575319897333507543509815336818572211270286240551805124608",
+    "seconds": 1.4
+   },
+   "endB_caps_only": {
+    "cost": 11683290250,
+    "profile": {
+     "1": 2348,
+     "2": 500,
+     "3": 416,
+     "4": 130,
+     "5": 82
+    },
+    "certified": true,
+    "variables": 1749,
+    "tail_vertices_on_capped_registers": 103,
+    "interval_lower": "143236734477734411884724921412294009536945196747234922448863795625/13479973333575319897333507543509815336818572211270286240551805124608",
+    "interval_upper": "143236734477734411884966377230167802561263646308680226493086935375/13479973333575319897333507543509815336818572211270286240551805124608",
+    "seconds": 1.4
+   },
+   "delta_units_per_call": 0
+  },
+  "extra": {
+   "word": "r3/inputs/extra-word-566-554.json.gz",
+   "b": "0.001679754956125544",
+   "caps": 100,
+   "compensation_gates": 7208,
+   "tail_caps": {
+    "cost": 11691748602,
+    "profile": {
+     "1": 2340,
+     "2": 508,
+     "3": 420,
+     "4": 126,
+     "5": 82
+    },
+    "certified": true,
+    "variables": 1761,
+    "tail_vertices_on_capped_registers": 103,
+    "interval_lower": "143340433556536764626416578391983558610085184212026152771290658789/13479973333575319897333507543509815336818572211270286240551805124608",
+    "interval_upper": "143340433556536764626665535585812006205308239372816532872061616925/13479973333575319897333507543509815336818572211270286240551805124608",
+    "seconds": 1.5
+   },
+   "endB_caps_only": {
+    "cost": 11691748602,
+    "profile": {
+     "1": 2340,
+     "2": 508,
+     "3": 420,
+     "4": 126,
+     "5": 82
+    },
+    "certified": true,
+    "variables": 1761,
+    "tail_vertices_on_capped_registers": 103,
+    "interval_lower": "143340433556536764626416578391983558610085184212026152771290658789/13479973333575319897333507543509815336818572211270286240551805124608",
+    "interval_upper": "143340433556536764626665535585812006205308239372816532872061616925/13479973333575319897333507543509815336818572211270286240551805124608",
+    "seconds": 1.4
+   },
+   "delta_units_per_call": 0
+  },
+  "vertices_whose_bounds_change": {
+   "base": 0,
+   "extra": 0
+  }
+ },
+ "r3_B_rejected_words": {
+  "count": 16,
+  "all_exact": true,
+  "compensation_unchanged": true,
+  "infeasible_with_tail_caps": 16,
+  "infeasible_without_tail_caps": 16,
+  "same_reason": 16
+ },
+ "r3_C_tail_located_candidates_base": {
+  "count": 755,
+  "still_infeasible": 755,
+  "same_reason": 755,
+  "negative": 0
+ },
+ "shadow_prices_diagnostic": {
+  "base": {
+   "checker_model": 0,
+   "no_cone_caps": 0,
+   "no_cut_equality": 0,
+   "neither": 0
+  },
+  "extra": {
+   "checker_model": 0,
+   "no_cone_caps": 0,
+   "no_cut_equality": 0,
+   "neither": 0
+  }
+ },
+ "not_retested": [
+  "r4 B-walk SHARED2.jsonl: 30 two-step shared-fusion composites failing at tail vertices (analogous r3 C candidates all unaffected)"
+ ],
+ "outcome": "scoped negative: no frame-level slack; kappa unchanged",
+ "r3_C_tail_located_candidates_extra": {
+  "count": 755,
+  "still_infeasible": 755,
+  "same_reason": 755,
+  "negative": 0
+ }
+}

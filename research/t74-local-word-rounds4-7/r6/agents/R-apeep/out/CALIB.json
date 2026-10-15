@@ -1,0 +1,199 @@
+{
+ "base_cost": 11683290250,
+ "base_profile": {
+  "1": 2348,
+  "2": 500,
+  "3": 416,
+  "4": 130,
+  "5": 82
+ },
+ "comp": 7208,
+ "runs": [
+  {
+   "i": 1195,
+   "k": 2,
+   "alt": [
+    [
+     "add",
+     546,
+     569,
+     "1"
+    ],
+    [
+     "add",
+     560,
+     578,
+     "-1"
+    ]
+   ],
+   "perm": false,
+   "nz": true,
+   "big": false,
+   "status": "ok",
+   "delta": 0,
+   "profile": {
+    "1": 2348,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "comp_gates": 7208,
+   "comp_changed": false,
+   "why": null,
+   "seconds": 1.3,
+   "rss": 0.16033935546875,
+   "kind": "identity"
+  },
+  {
+   "i": 2316,
+   "k": 3,
+   "alt": [
+    [
+     "add",
+     320,
+     109,
+     "1"
+    ],
+    [
+     "add",
+     109,
+     320,
+     "-1"
+    ],
+    [
+     "add",
+     320,
+     109,
+     "1"
+    ]
+   ],
+   "perm": false,
+   "nz": true,
+   "big": false,
+   "status": "ok",
+   "delta": 0,
+   "profile": {
+    "1": 2348,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "comp_gates": 7208,
+   "comp_changed": false,
+   "why": null,
+   "seconds": 1.21,
+   "rss": 0.1631317138671875,
+   "kind": "identity"
+  },
+  {
+   "i": 3442,
+   "k": 4,
+   "alt": [
+    [
+     "add",
+     23,
+     368,
+     "1"
+    ],
+    [
+     "add",
+     23,
+     87,
+     "1"
+    ],
+    [
+     "add",
+     23,
+     55,
+     "1"
+    ],
+    [
+     "add",
+     256,
+     288,
+     "1"
+    ]
+   ],
+   "perm": false,
+   "nz": true,
+   "big": false,
+   "status": "ok",
+   "delta": 0,
+   "profile": {
+    "1": 2348,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "comp_gates": 7208,
+   "comp_changed": false,
+   "why": null,
+   "seconds": 1.21,
+   "rss": 0.1644287109375,
+   "kind": "identity"
+  },
+  {
+   "i": 1247,
+   "k": 2,
+   "alt": [
+    [
+     "add",
+     225,
+     56,
+     "1"
+    ],
+    [
+     "add",
+     224,
+     56,
+     "1"
+    ]
+   ],
+   "perm": true,
+   "nz": true,
+   "big": false,
+   "status": "ok",
+   "delta": 0,
+   "profile": {
+    "1": 2348,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "comp_gates": 7208,
+   "comp_changed": false,
+   "why": null,
+   "seconds": 1.23,
+   "rss": 0.165557861328125,
+   "kind": "r4A-swap-1248-to-1247"
+  },
+  {
+   "i": 1195,
+   "k": 2,
+   "alt": [
+    [
+     "add",
+     560,
+     578,
+     "-1"
+    ]
+   ],
+   "perm": false,
+   "nz": true,
+   "big": false,
+   "status": "inexact",
+   "delta": null,
+   "profile": null,
+   "comp_gates": null,
+   "comp_changed": null,
+   "why": null,
+   "seconds": 0.09,
+   "rss": 0.165557861328125,
+   "kind": "inexact-control"
+  }
+ ]
+}

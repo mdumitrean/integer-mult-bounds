@@ -1,0 +1,284 @@
+{
+ "agent": "H-readA",
+ "round": "r6",
+ "b": "0.001679754956125544",
+ "words": {
+  "base": "r3/inputs/gauge44-word-566-554.json.gz",
+  "extra": "r3/inputs/extra-word-566-554.json.gz"
+ },
+ "scope": "78 full-c1 (8,1,9) narrowings (r5 C NARROW-base.jsonl, delta -2,116,454) whose helper q is read in A",
+ "structure": {
+  "pairs": 78,
+  "helpers": 78,
+  "first_write_in_A": 78,
+  "pure_reads_before_first_write": 0,
+  "A_reads_after_first_write": [
+   [
+    1,
+    30
+   ],
+   [
+    3,
+    22
+   ],
+   [
+    13,
+    16
+   ],
+   [
+    11,
+    7
+   ],
+   [
+    12,
+    2
+   ],
+   [
+    10,
+    1
+   ]
+  ],
+  "leak_targets": [
+   [
+    37,
+    20
+   ],
+   [
+    45,
+    20
+   ],
+   [
+    60,
+    18
+   ],
+   [
+    16,
+    16
+   ],
+   [
+    21,
+    4
+   ]
+  ]
+ },
+ "copy_screen": {
+  "CSCREEN-COLD-NOCAPS-base.json": {
+   "pairs": 78,
+   "pass_admissible": [],
+   "pass_all_copies": 78,
+   "errors": [],
+   "max_admissible_columns": 5,
+   "max_rank_admissible": 4
+  },
+  "CSCREEN-COLD-NOCAPS-extra.json": {
+   "pairs": 78,
+   "pass_admissible": [],
+   "pass_all_copies": 78,
+   "errors": [],
+   "max_admissible_columns": 5,
+   "max_rank_admissible": 4
+  },
+  "CSCREEN-NOCAPS-base.json": {
+   "pairs": 78,
+   "pass_admissible": [],
+   "pass_all_copies": 78,
+   "errors": [],
+   "max_admissible_columns": 3,
+   "max_rank_admissible": 2
+  },
+  "CSCREEN-NOCAPS-extra.json": {
+   "pairs": 78,
+   "pass_admissible": [],
+   "pass_all_copies": 78,
+   "errors": [],
+   "max_admissible_columns": 3,
+   "max_rank_admissible": 2
+  },
+  "CSCREEN-base.json": {
+   "pairs": 78,
+   "pass_admissible": [],
+   "pass_all_copies": 78,
+   "errors": [],
+   "max_admissible_columns": 3,
+   "max_rank_admissible": 2
+  },
+  "CSCREEN-extra.json": {
+   "pairs": 78,
+   "pass_admissible": [],
+   "pass_all_copies": 78,
+   "errors": [],
+   "max_admissible_columns": 3,
+   "max_rank_admissible": 2
+  }
+ },
+ "projected_B_tail_search": {
+  "PK-225-b3728.json": {
+   "q": 225,
+   "u": 32,
+   "budget": 3728,
+   "narrowed_cost": 11681173796,
+   "leak_ACB_rows": 45,
+   "readers": 8,
+   "target_rank": [
+    0,
+    1
+   ],
+   "ncand": 32674,
+   "cone_rejected": 388803,
+   "cost_rejected": 46522958,
+   "shape": false,
+   "stop": "shape-infeasible",
+   "seconds": 1027.8,
+   "proposals": 0,
+   "cuts": 0
+  },
+  "PK-228-b2000000.json": {
+   "q": 228,
+   "u": 454,
+   "budget": 2000000,
+   "narrowed_cost": 11681173796,
+   "leak_ACB_rows": 16,
+   "readers": 4,
+   "target_rank": [
+    0,
+    1
+   ],
+   "ncand": 7303,
+   "cone_rejected": 150936,
+   "cost_rejected": 9737900,
+   "shape": true,
+   "stop": "INFEASIBLE",
+   "seconds": 155.1,
+   "proposals": 0,
+   "cuts": 0
+  },
+  "PK-231-b3728.json": {
+   "q": 231,
+   "u": 38,
+   "budget": 3728,
+   "narrowed_cost": 11681173796,
+   "leak_ACB_rows": 16,
+   "readers": 4,
+   "target_rank": [
+    0,
+    1
+   ],
+   "ncand": 5736,
+   "cone_rejected": 155655,
+   "cost_rejected": 8937225,
+   "shape": true,
+   "stop": "INFEASIBLE",
+   "seconds": 153.5,
+   "proposals": 0,
+   "cuts": 0
+  },
+  "PK-232-b2000000.json": {
+   "q": 232,
+   "u": 472,
+   "budget": 2000000,
+   "narrowed_cost": 11681173796,
+   "leak_ACB_rows": 16,
+   "readers": 4,
+   "target_rank": [
+    0,
+    1
+   ],
+   "ncand": 5884,
+   "cone_rejected": 146041,
+   "cost_rejected": 8731421,
+   "shape": true,
+   "stop": "INFEASIBLE",
+   "seconds": 151.4,
+   "proposals": 0,
+   "cuts": 0
+  },
+  "PK-232.json": {
+   "q": 232,
+   "u": 472,
+   "budget": 3728,
+   "narrowed_cost": 11681173796,
+   "leak_ACB_rows": 16,
+   "readers": 4,
+   "target_rank": [
+    0,
+    1
+   ],
+   "ncand": 5677,
+   "cone_rejected": 143726,
+   "cost_rejected": 8820575,
+   "shape": true,
+   "stop": "INFEASIBLE",
+   "seconds": 148.7,
+   "proposals": 0,
+   "cuts": 0
+  },
+  "PK-236-b3728.json": {
+   "q": 236,
+   "u": 62,
+   "budget": 3728,
+   "narrowed_cost": 11681173796,
+   "leak_ACB_rows": 16,
+   "readers": 4,
+   "target_rank": [
+    0,
+    1
+   ],
+   "ncand": 5735,
+   "cone_rejected": 138681,
+   "cost_rejected": 8762564,
+   "shape": true,
+   "stop": "INFEASIBLE",
+   "seconds": 148.5,
+   "proposals": 0,
+   "cuts": 0
+  },
+  "PK-404-b3728.json": {
+   "q": 404,
+   "u": 143,
+   "budget": 3728,
+   "narrowed_cost": 11681173796,
+   "leak_ACB_rows": 16,
+   "readers": 3,
+   "target_rank": [
+    0,
+    1
+   ],
+   "ncand": 3589,
+   "cone_rejected": 29471,
+   "cost_rejected": 5244739,
+   "shape": true,
+   "stop": "INFEASIBLE",
+   "seconds": 67.6,
+   "proposals": 0,
+   "cuts": 0
+  },
+  "PK-407-b3728.json": {
+   "q": 407,
+   "u": 271,
+   "budget": 3728,
+   "narrowed_cost": 11681173796,
+   "leak_ACB_rows": 16,
+   "readers": 3,
+   "target_rank": [
+    0,
+    1
+   ],
+   "ncand": 3685,
+   "cone_rejected": 31898,
+   "cost_rejected": 7051793,
+   "shape": true,
+   "stop": "INFEASIBLE",
+   "seconds": 74.2,
+   "proposals": 0,
+   "cuts": 0
+  },
+  "PK-240-b3728": {
+   "q": 240,
+   "u": 208,
+   "budget": 3728,
+   "stop": "timeout at 1200 s (capped exit 124), no verdict"
+  }
+ },
+ "outcome": "blocked in every searched family; kappa unchanged; no word reached pricing",
+ "not_run": "projected search for the other 69 helpers (incl. all with 37 or 60 leak rows); A-section inserts reading non-pure q-derived values"
+}

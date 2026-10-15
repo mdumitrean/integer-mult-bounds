@@ -1,0 +1,458 @@
+{
+ "gauge44": {
+  "port_read_classes": {
+   "D:mixed": 124,
+   "H:mixed": 386,
+   "H:pure-residual": 275,
+   "P:mixed": 136
+  },
+  "pure_dirt_port_reads": 275,
+  "pure_dirt_port_reads_touching_residuals": 275,
+  "b_add_source_kinds": {
+   "pure-dirt": 477,
+   "data": 1320,
+   "scale": 56
+  },
+  "absorbed_retime_via_ordinary_writes": 0,
+  "cancelling_pairs": 0,
+  "family_S_counts": {
+   "commuting-retime": 407760,
+   "absorbed-retime": 3431,
+   "resource": 52981
+  }
+ },
+ "extra": {
+  "port_read_classes": {
+   "D:mixed": 124,
+   "H:mixed": 386,
+   "H:pure-residual": 275,
+   "P:mixed": 136
+  },
+  "pure_dirt_port_reads": 275,
+  "pure_dirt_port_reads_touching_residuals": 275,
+  "b_add_source_kinds": {
+   "pure-dirt": 477,
+   "data": 1320,
+   "scale": 56
+  },
+  "absorbed_retime_via_ordinary_writes": 0,
+  "cancelling_pairs": 0,
+  "family_S_counts": {
+   "commuting-retime": 407760,
+   "absorbed-retime": 3431,
+   "resource": 52981
+  }
+ },
+ "family_S_priced": {
+  "base_sample": {
+   "infeasible": 465
+  },
+  "base_top6_full": {
+   "infeasible": 968
+  },
+  "extra_sample": {
+   "infeasible": 465
+  }
+ },
+ "absorbed_retime_bound": "all 14 reads with absorbed re-timings have deletion price 0 -> no gain possible (caps unchanged)",
+ "census_span_without_source": {
+  "reads": 57,
+  "target_in_span": [
+   933,
+   938,
+   941,
+   943,
+   946,
+   948,
+   1,
+   3,
+   8,
+   39,
+   44
+  ]
+ },
+ "sparse_priced": {
+  "first": {
+   "('ok', 0, False)": 67,
+   "('infeasible', None, True)": 12
+  },
+  "nontrivial": {
+   "('infeasible', None, True)": 60,
+   "('ok', 0, False)": 50
+  }
+ },
+ "nonport_span": [
+  {
+   "B": 933,
+   "family": "nonport",
+   "inserts": 68,
+   "rank": 56,
+   "target_in_span": false
+  },
+  {
+   "B": 938,
+   "family": "nonport",
+   "inserts": 68,
+   "rank": 56,
+   "target_in_span": false
+  },
+  {
+   "B": 941,
+   "family": "nonport",
+   "inserts": 73,
+   "rank": 56,
+   "target_in_span": false
+  },
+  {
+   "B": 943,
+   "family": "nonport",
+   "inserts": 74,
+   "rank": 56,
+   "target_in_span": false
+  },
+  {
+   "B": 946,
+   "family": "nonport",
+   "inserts": 73,
+   "rank": 56,
+   "target_in_span": false
+  },
+  {
+   "B": 948,
+   "family": "nonport",
+   "inserts": 74,
+   "rank": 56,
+   "target_in_span": false
+  },
+  {
+   "B": 1,
+   "family": "nonport",
+   "inserts": 72,
+   "rank": 57,
+   "target_in_span": true
+  },
+  {
+   "B": 3,
+   "family": "nonport",
+   "inserts": 72,
+   "rank": 57,
+   "target_in_span": true
+  },
+  {
+   "B": 8,
+   "family": "nonport",
+   "inserts": 71,
+   "rank": 55,
+   "target_in_span": false
+  },
+  {
+   "B": 39,
+   "family": "nonport",
+   "inserts": 71,
+   "rank": 55,
+   "target_in_span": false
+  },
+  {
+   "B": 44,
+   "family": "nonport",
+   "inserts": 64,
+   "rank": 55,
+   "target_in_span": false
+  }
+ ],
+ "oneport_span": [
+  {
+   "B": 933,
+   "port_sources": 111,
+   "single_port_families_reaching_target": []
+  },
+  {
+   "B": 938,
+   "port_sources": 111,
+   "single_port_families_reaching_target": []
+  },
+  {
+   "B": 941,
+   "port_sources": 111,
+   "single_port_families_reaching_target": []
+  },
+  {
+   "B": 943,
+   "port_sources": 111,
+   "single_port_families_reaching_target": []
+  },
+  {
+   "B": 946,
+   "port_sources": 111,
+   "single_port_families_reaching_target": []
+  },
+  {
+   "B": 948,
+   "port_sources": 111,
+   "single_port_families_reaching_target": []
+  },
+  {
+   "B": 8,
+   "port_sources": 111,
+   "single_port_families_reaching_target": [
+    124
+   ]
+  },
+  {
+   "B": 39,
+   "port_sources": 111,
+   "single_port_families_reaching_target": [
+    127
+   ]
+  },
+  {
+   "B": 44,
+   "port_sources": 111,
+   "single_port_families_reaching_target": [
+    114
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "B": 933,
+   "t": 115,
+   "s": 507,
+   "port_inserts": 205,
+   "lu_fail": 0,
+   "pairs_tested": 20652,
+   "jointly_feasible_pairs": 20645,
+   "sec": 14.7
+  },
+  {
+   "B": 938,
+   "t": 155,
+   "s": 519,
+   "port_inserts": 205,
+   "lu_fail": 0,
+   "pairs_tested": 20655,
+   "jointly_feasible_pairs": 20647,
+   "sec": 14.7
+  },
+  {
+   "B": 941,
+   "t": 186,
+   "s": 482,
+   "port_inserts": 205,
+   "lu_fail": 0,
+   "pairs_tested": 20633,
+   "jointly_feasible_pairs": 20622,
+   "sec": 14.7
+  }
+ ],
+ "demo": {
+  "insert": {
+   "t": 112,
+   "h": 482,
+   "before_B": 0
+  },
+  "comp_gates_base": 7208,
+  "comp_gates_new": 7209,
+  "new_comp_gates": [
+   [
+    "add",
+    112,
+    482,
+    -1,
+    1
+   ]
+  ],
+  "caps_changed": false,
+  "delta": 0,
+  "certified": true,
+  "profile": {
+   "1": 2348,
+   "2": 500,
+   "3": 416,
+   "4": 130,
+   "5": 82
+  },
+  "audit_exit": 0,
+  "audit_tail": [
+   "  \"elapsed_seconds\": 0.551054373383522,",
+   "  \"scope\": \"Exact rational full scalar map in both orientations; all literal native frame chains, center levels, dyadic units, entrance-zero response, wrapper exclusion and final helper row/column cones. No global owner admission or exponent repricing.\"",
+   "}"
+  ],
+  "audit_status": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+  "audit_compensation_gates": 7209
+ },
+ "conflict_cut_loops": {
+  "933": {
+   "iterations": 2,
+   "outcomes": {
+    "(False, None, None, None)": 1,
+    "(None, None, None, 'INFEASIBLE')": 1
+   },
+   "inserts": 273,
+   "conflicts": [
+    [
+     [
+      179,
+      507,
+      "1"
+     ],
+     [
+      183,
+      511,
+      "1"
+     ]
+    ]
+   ]
+  },
+  "938": {
+   "iterations": 2,
+   "outcomes": {
+    "(False, None, None, None)": 1,
+    "(None, None, None, 'INFEASIBLE')": 1
+   },
+   "inserts": 273,
+   "conflicts": [
+    [
+     [
+      219,
+      535,
+      "1"
+     ],
+     [
+      223,
+      539,
+      "1"
+     ]
+    ]
+   ]
+  },
+  "941": {
+   "iterations": 2,
+   "outcomes": {
+    "(False, None, None, None)": 1,
+    "(None, None, None, 'INFEASIBLE')": 1
+   },
+   "inserts": 278,
+   "conflicts": [
+    [
+     [
+      122,
+      514,
+      "1"
+     ],
+     [
+      126,
+      913,
+      "1"
+     ]
+    ]
+   ]
+  },
+  "943": {
+   "iterations": 2,
+   "outcomes": {
+    "(False, None, None, None)": 1,
+    "(None, None, None, 'INFEASIBLE')": 1
+   },
+   "inserts": 284,
+   "conflicts": [
+    [
+     [
+      123,
+      515,
+      "1"
+     ],
+     [
+      127,
+      515,
+      "1"
+     ]
+    ]
+   ]
+  },
+  "946": {
+   "iterations": 2,
+   "outcomes": {
+    "(False, None, None, None)": 1,
+    "(None, None, None, 'INFEASIBLE')": 1
+   },
+   "inserts": 279,
+   "conflicts": [
+    [
+     [
+      146,
+      524,
+      "1"
+     ],
+     [
+      150,
+      918,
+      "1"
+     ]
+    ]
+   ]
+  },
+  "948": {
+   "iterations": 2,
+   "outcomes": {
+    "(False, None, None, None)": 1,
+    "(None, None, None, 'INFEASIBLE')": 1
+   },
+   "inserts": 284,
+   "conflicts": [
+    [
+     [
+      147,
+      525,
+      "1"
+     ],
+     [
+      151,
+      525,
+      "1"
+     ]
+    ]
+   ]
+  },
+  "1": {
+   "iterations": 25,
+   "outcomes": {
+    "(True, False, 0, None)": 25
+   },
+   "inserts": 277,
+   "conflicts": []
+  },
+  "3": {
+   "iterations": 25,
+   "outcomes": {
+    "(True, False, 0, None)": 25
+   },
+   "inserts": 277,
+   "conflicts": []
+  },
+  "8": {
+   "iterations": 25,
+   "outcomes": {
+    "(True, False, 0, None)": 25
+   },
+   "inserts": 277,
+   "conflicts": []
+  },
+  "39": {
+   "iterations": 25,
+   "outcomes": {
+    "(True, False, 0, None)": 25
+   },
+   "inserts": 277,
+   "conflicts": []
+  },
+  "44": {
+   "iterations": 25,
+   "outcomes": {
+    "(True, False, 0, None)": 25
+   },
+   "inserts": 267,
+   "conflicts": []
+  }
+ }
+}

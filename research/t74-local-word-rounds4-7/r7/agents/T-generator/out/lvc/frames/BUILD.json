@@ -1,0 +1,21 @@
+{
+  "status": "PASS_FRAME_REOPT_EXACT_CONSTRUCTION",
+  "input_sha256": "c836d8922fc9e50529e006488ca2ce4a542a93150de0e0e8f7d3955ad991968f",
+  "output_sha256": "db2c7cfb3f8eee2b76c2e0154fc530520fb4d90cd9511a002cab527b16033b83",
+  "scalar_program_unchanged": true,
+  "frames": 139,
+  "rejected_controls": [
+    {
+      "name": "input-pin",
+      "reason": "input word pin"
+    },
+    {
+      "name": "old-frame",
+      "reason": "gate frame mismatch"
+    },
+    {
+      "name": "output-pin",
+      "reason": "output word pin"
+    }
+  ]
+}

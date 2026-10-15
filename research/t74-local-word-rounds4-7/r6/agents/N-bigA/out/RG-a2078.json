@@ -1,0 +1,217 @@
+[
+ {
+  "dels": [
+   [
+    "A",
+    2078
+   ]
+  ],
+  "ddel": -19690,
+  "proposals": [
+   {
+    "terms": [
+     [
+      70,
+      71,
+      2088,
+      "1"
+     ]
+    ],
+    "est": 1,
+    "exact": true,
+    "frames_ok": true,
+    "why": null,
+    "edit_ab": {
+     "delete": [
+      [
+       "A",
+       2078
+      ]
+     ],
+     "insert": [
+      [
+       "A",
+       2089,
+       [
+        "add",
+        70,
+        71,
+        1,
+        1,
+        []
+       ]
+      ]
+     ],
+     "tail": []
+    }
+   },
+   {
+    "terms": [
+     [
+      70,
+      71,
+      2061,
+      "1"
+     ]
+    ],
+    "est": 1,
+    "exact": true,
+    "frames_ok": true,
+    "why": null,
+    "edit_ab": {
+     "delete": [
+      [
+       "A",
+       2078
+      ]
+     ],
+     "insert": [
+      [
+       "A",
+       2061,
+       [
+        "add",
+        70,
+        71,
+        1,
+        1,
+        []
+       ]
+      ]
+     ],
+     "tail": []
+    }
+   }
+  ],
+  "rowgen": {
+   "dels": [
+    [
+     "A",
+     2078
+    ]
+   ],
+   "ddel": -19690,
+   "ncand": 8927,
+   "rows": 7434,
+   "shape": true,
+   "log": [
+    {
+     "it": 1,
+     "rows": 16,
+     "cand": 279,
+     "status": "OPTIMAL",
+     "seconds": 0.0,
+     "support": 1,
+     "est": 1,
+     "violated": 0
+    },
+    {
+     "it": 2,
+     "rows": 16,
+     "cand": 279,
+     "status": "OPTIMAL",
+     "seconds": 0.0,
+     "support": 1,
+     "est": 1,
+     "violated": 0
+    },
+    {
+     "it": 3,
+     "rows": 16,
+     "cand": 279,
+     "status": "OPTIMAL",
+     "seconds": 0.0,
+     "support": 9,
+     "est": 0,
+     "violated": 302
+    },
+    {
+     "it": 4,
+     "rows": 318,
+     "cand": 2539,
+     "status": "INFEASIBLE",
+     "seconds": 0.4
+    }
+   ],
+   "proposals": [
+    {
+     "terms": [
+      [
+       70,
+       71,
+       2088,
+       "1"
+      ]
+     ],
+     "est": 1,
+     "exact": true,
+     "frames_ok": true,
+     "why": null,
+     "edit_ab": {
+      "delete": [
+       [
+        "A",
+        2078
+       ]
+      ],
+      "insert": [
+       [
+        "A",
+        2089,
+        [
+         "add",
+         70,
+         71,
+         1,
+         1,
+         []
+        ]
+       ]
+      ],
+      "tail": []
+     }
+    },
+    {
+     "terms": [
+      [
+       70,
+       71,
+       2061,
+       "1"
+      ]
+     ],
+     "est": 1,
+     "exact": true,
+     "frames_ok": true,
+     "why": null,
+     "edit_ab": {
+      "delete": [
+       [
+        "A",
+        2078
+       ]
+      ],
+      "insert": [
+       [
+        "A",
+        2061,
+        [
+         "add",
+         70,
+         71,
+         1,
+         1,
+         []
+        ]
+       ]
+      ],
+      "tail": []
+     }
+    }
+   ],
+   "status": "INFEASIBLE",
+   "iterations": 4,
+   "seconds": 278.1
+  }
+ }
+]

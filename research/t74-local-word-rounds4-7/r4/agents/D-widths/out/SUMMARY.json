@@ -1,0 +1,998 @@
+{
+ "audit": {
+  "calib-g2-390": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES",
+  "g1-alt": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES"
+ },
+ "best_same_inventory_swap": {
+  "narrow": "down:603..607",
+  "narrow_delta": -8458352,
+  "net_delta_per_call": 0,
+  "note": "additive estimate; a gain needs a joint re-price",
+  "widen": "start:619..623",
+  "widen_delta": 8458352
+ },
+ "cheapest_group_upgrade": {
+  "delta": 8458352,
+  "kappa_if_extra_replaced": 0.0,
+  "label": "start:619..623",
+  "vs_extra": 0
+ },
+ "costs_c1_to_c9": [
+  2116454,
+  4227983,
+  6337656,
+  8446126,
+  10553701,
+  12660563,
+  14766833,
+  16872596,
+  18977915
+ ],
+ "end_side_narrowing": {
+  "candidates_per_helper": 1,
+  "groups": {
+   "infeasible": 11
+  },
+  "prefinal_frame_dim": 8,
+  "reason": {
+   "595": {
+    "capped_registers": [
+     1,
+     65,
+     592,
+     593,
+     594,
+     596,
+     597,
+     598,
+     599
+    ],
+    "changed_caps": 9,
+    "hyperplane": [
+     1,
+     6,
+     8,
+     16,
+     32,
+     66,
+     130,
+     258
+    ],
+    "prefinal_dim": 8,
+    "reason": "('L not inside U at mutable vertex', 5711, 'B', 1436)"
+   },
+   "603": {
+    "capped_registers": [
+     290,
+     338,
+     600,
+     601,
+     602,
+     604,
+     605,
+     606,
+     607
+    ],
+    "changed_caps": 9,
+    "hyperplane": [
+     1,
+     6,
+     8,
+     18,
+     32,
+     66,
+     128,
+     258
+    ],
+    "prefinal_dim": 8,
+    "reason": "('L not inside U at mutable vertex', 5743, 'B', 1468)"
+   },
+   "635": {
+    "capped_registers": [
+     78,
+     467,
+     632,
+     633,
+     634,
+     636,
+     637,
+     638,
+     639
+    ],
+    "changed_caps": 9,
+    "hyperplane": [
+     1,
+     4,
+     10,
+     16,
+     32,
+     66,
+     128,
+     256
+    ],
+    "prefinal_dim": 8,
+    "reason": "('L not inside U at mutable vertex', 5871, 'B', 1596)"
+   }
+  },
+  "singles": {
+   "infeasible": 44
+  }
+ },
+ "extra_per_upgrade": 2114588.0,
+ "extra_word_4_upgrades": 8458352,
+ "inventories_reproduced": {
+  "extra": {
+   "4": 40,
+   "5": 48,
+   "7": 38,
+   "8": 114,
+   "9": 240
+  },
+  "gauge44": {
+   "4": 44,
+   "5": 44,
+   "7": 38,
+   "8": 114,
+   "9": 240
+  }
+ },
+ "joint": {
+  "down:595..599": {
+   "best_basis": [
+    1,
+    6,
+    24,
+    192,
+    320
+   ],
+   "best_profile": {
+    "1": 2348,
+    "2": 508,
+    "3": 404,
+    "4": 134,
+    "5": 82
+   },
+   "delta_counts": {
+    "-8443504": 1
+   },
+   "max_delta": -8443504,
+   "members": [
+    595,
+    597,
+    598,
+    599
+   ],
+   "min_delta": -8443504,
+   "n": 31,
+   "status": {
+    "infeasible": 30,
+    "ok": 1
+   }
+  },
+  "down:603..607": {
+   "best_basis": [
+    1,
+    6,
+    40,
+    80,
+    408
+   ],
+   "best_profile": {
+    "1": 2356,
+    "2": 492,
+    "3": 412,
+    "4": 134,
+    "5": 82
+   },
+   "delta_counts": {
+    "-8458352": 1
+   },
+   "max_delta": -8458352,
+   "members": [
+    603,
+    605,
+    606,
+    607
+   ],
+   "min_delta": -8458352,
+   "n": 31,
+   "status": {
+    "infeasible": 30,
+    "ok": 1
+   }
+  },
+  "down:611..615": {
+   "best_basis": [
+    1,
+    6,
+    96,
+    144,
+    272
+   ],
+   "best_profile": {
+    "1": 2356,
+    "2": 492,
+    "3": 412,
+    "4": 134,
+    "5": 82
+   },
+   "delta_counts": {
+    "-8458352": 1
+   },
+   "max_delta": -8458352,
+   "members": [
+    611,
+    613,
+    614,
+    615
+   ],
+   "min_delta": -8458352,
+   "n": 31,
+   "status": {
+    "infeasible": 30,
+    "ok": 1
+   }
+  },
+  "down:635..639": {
+   "best_basis": [
+    1,
+    30,
+    102,
+    170,
+    298
+   ],
+   "best_profile": {
+    "1": 2364,
+    "2": 488,
+    "3": 412,
+    "4": 134,
+    "5": 82
+   },
+   "delta_counts": {
+    "-8438652": 1
+   },
+   "max_delta": -8438652,
+   "members": [
+    635,
+    637,
+    638,
+    639
+   ],
+   "min_delta": -8438652,
+   "n": 31,
+   "status": {
+    "infeasible": 30,
+    "ok": 1
+   }
+  },
+  "down:643..647": {
+   "best_basis": [
+    1,
+    10,
+    20,
+    96,
+    390
+   ],
+   "best_profile": {
+    "1": 2364,
+    "2": 488,
+    "3": 412,
+    "4": 134,
+    "5": 82
+   },
+   "delta_counts": {
+    "-8438652": 1
+   },
+   "max_delta": -8438652,
+   "members": [
+    643,
+    645,
+    646,
+    647
+   ],
+   "min_delta": -8438652,
+   "n": 31,
+   "status": {
+    "infeasible": 30,
+    "ok": 1
+   }
+  },
+  "down:659..663": {
+   "best_basis": [
+    7,
+    30,
+    45,
+    75,
+    390
+   ],
+   "best_profile": {
+    "1": 2356,
+    "2": 492,
+    "3": 412,
+    "4": 134,
+    "5": 82
+   },
+   "delta_counts": {
+    "-8458352": 1
+   },
+   "max_delta": -8458352,
+   "members": [
+    659,
+    661,
+    662,
+    663
+   ],
+   "min_delta": -8458352,
+   "n": 31,
+   "status": {
+    "infeasible": 30,
+    "ok": 1
+   }
+  },
+  "down:667..671": {
+   "best_basis": [
+    7,
+    24,
+    102,
+    163,
+    291
+   ],
+   "best_profile": {
+    "1": 2364,
+    "2": 488,
+    "3": 412,
+    "4": 134,
+    "5": 82
+   },
+   "delta_counts": {
+    "-8438652": 1
+   },
+   "max_delta": -8438652,
+   "members": [
+    667,
+    669,
+    670,
+    671
+   ],
+   "min_delta": -8438652,
+   "n": 31,
+   "status": {
+    "infeasible": 30,
+    "ok": 1
+   }
+  },
+  "down:675..679": {
+   "best_basis": [
+    3,
+    4,
+    24,
+    96,
+    389
+   ],
+   "best_profile": {
+    "1": 2364,
+    "2": 488,
+    "3": 412,
+    "4": 134,
+    "5": 82
+   },
+   "delta_counts": {
+    "-8438652": 1
+   },
+   "max_delta": -8438652,
+   "members": [
+    675,
+    677,
+    678,
+    679
+   ],
+   "min_delta": -8438652,
+   "n": 31,
+   "status": {
+    "infeasible": 30,
+    "ok": 1
+   }
+  },
+  "down:683..687": {
+   "best_basis": [
+    6,
+    9,
+    16,
+    96,
+    401
+   ],
+   "best_profile": {
+    "1": 2356,
+    "2": 492,
+    "3": 412,
+    "4": 134,
+    "5": 82
+   },
+   "delta_counts": {
+    "-8458352": 1
+   },
+   "max_delta": -8458352,
+   "members": [
+    683,
+    685,
+    686,
+    687
+   ],
+   "min_delta": -8458352,
+   "n": 31,
+   "status": {
+    "infeasible": 30,
+    "ok": 1
+   }
+  },
+  "down:691..695": {
+   "best_basis": [
+    6,
+    25,
+    120,
+    169,
+    297
+   ],
+   "best_profile": {
+    "1": 2356,
+    "2": 492,
+    "3": 412,
+    "4": 134,
+    "5": 82
+   },
+   "delta_counts": {
+    "-8458352": 1
+   },
+   "max_delta": -8458352,
+   "members": [
+    691,
+    693,
+    694,
+    695
+   ],
+   "min_delta": -8458352,
+   "n": 31,
+   "status": {
+    "infeasible": 30,
+    "ok": 1
+   }
+  },
+  "down:699..703": {
+   "best_basis": [
+    6,
+    24,
+    33,
+    64,
+    449
+   ],
+   "best_profile": {
+    "1": 2348,
+    "2": 506,
+    "3": 408,
+    "4": 132,
+    "5": 82
+   },
+   "delta_counts": {
+    "-8441098": 1
+   },
+   "max_delta": -8441098,
+   "members": [
+    699,
+    701,
+    702,
+    703
+   ],
+   "min_delta": -8441098,
+   "n": 31,
+   "status": {
+    "infeasible": 30,
+    "ok": 1
+   }
+  },
+  "end:273..282": {
+   "best_basis": [
+    1,
+    2,
+    24,
+    96,
+    388
+   ],
+   "best_profile": {
+    "1": 2352,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "delta_counts": {
+    "8465816": 31
+   },
+   "max_delta": 8465816,
+   "members": [
+    273,
+    275,
+    277,
+    282
+   ],
+   "min_delta": 8465816,
+   "n": 31,
+   "status": {
+    "ok": 31
+   }
+  },
+  "end:289..298": {
+   "best_basis": [
+    1,
+    24,
+    102,
+    162,
+    290
+   ],
+   "best_profile": {
+    "1": 2352,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "delta_counts": {
+    "8465816": 31
+   },
+   "max_delta": 8465816,
+   "members": [
+    289,
+    291,
+    293,
+    298
+   ],
+   "min_delta": 8465816,
+   "n": 31,
+   "status": {
+    "ok": 31
+   }
+  },
+  "end:305..314": {
+   "best_basis": [
+    1,
+    30,
+    44,
+    74,
+    390
+   ],
+   "best_profile": {
+    "1": 2352,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "delta_counts": {
+    "8465816": 31
+   },
+   "max_delta": 8465816,
+   "members": [
+    305,
+    307,
+    309,
+    314
+   ],
+   "min_delta": 8465816,
+   "n": 31,
+   "status": {
+    "ok": 31
+   }
+  },
+  "end:321..330": {
+   "best_basis": [
+    1,
+    30,
+    96,
+    138,
+    266
+   ],
+   "best_profile": {
+    "1": 2352,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "delta_counts": {
+    "8465816": 31
+   },
+   "max_delta": 8465816,
+   "members": [
+    321,
+    323,
+    325,
+    330
+   ],
+   "min_delta": 8465816,
+   "n": 31,
+   "status": {
+    "ok": 31
+   }
+  },
+  "end:337..346": {
+   "best_basis": [
+    1,
+    13,
+    19,
+    96,
+    390
+   ],
+   "best_profile": {
+    "1": 2352,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "delta_counts": {
+    "8465816": 31
+   },
+   "max_delta": 8465816,
+   "members": [
+    337,
+    339,
+    341,
+    346
+   ],
+   "min_delta": 8465816,
+   "n": 31,
+   "status": {
+    "ok": 31
+   }
+  },
+  "end:353..362": {
+   "best_basis": [
+    1,
+    30,
+    102,
+    173,
+    301
+   ],
+   "best_profile": {
+    "1": 2352,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "delta_counts": {
+    "8465816": 31
+   },
+   "max_delta": 8465816,
+   "members": [
+    353,
+    355,
+    357,
+    362
+   ],
+   "min_delta": 8465816,
+   "n": 31,
+   "status": {
+    "ok": 31
+   }
+  },
+  "end:369..378": {
+   "best_basis": [
+    1,
+    24,
+    37,
+    67,
+    390
+   ],
+   "best_profile": {
+    "1": 2352,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "delta_counts": {
+    "8465816": 31
+   },
+   "max_delta": 8465816,
+   "members": [
+    369,
+    371,
+    373,
+    378
+   ],
+   "min_delta": 8465816,
+   "n": 31,
+   "status": {
+    "ok": 31
+   }
+  },
+  "end:385..394": {
+   "best_basis": [
+    1,
+    24,
+    96,
+    131,
+    259
+   ],
+   "best_profile": {
+    "1": 2352,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "delta_counts": {
+    "8465816": 31
+   },
+   "max_delta": 8465816,
+   "members": [
+    385,
+    387,
+    389,
+    394
+   ],
+   "min_delta": 8465816,
+   "n": 31,
+   "status": {
+    "ok": 31
+   }
+  },
+  "g2-subset2": {
+   "best_basis": [
+    1,
+    24,
+    34,
+    68
+   ],
+   "best_profile": {
+    "1": 2350,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "by_members": {
+    "[627, 629]": 4232908,
+    "[627, 630]": 4232908,
+    "[627, 631]": 4232908,
+    "[629, 630]": 4232908,
+    "[629, 631]": 4232908,
+    "[630, 631]": 4232908
+   },
+   "delta_counts": {
+    "4232908": 6
+   },
+   "max_delta": 4232908,
+   "members": null,
+   "min_delta": 4232908,
+   "n": 6,
+   "status": {
+    "ok": 6
+   }
+  },
+  "g2-subset3": {
+   "best_basis": [
+    1,
+    24,
+    34,
+    68
+   ],
+   "best_profile": {
+    "1": 2351,
+    "2": 500,
+    "3": 416,
+    "4": 130,
+    "5": 82
+   },
+   "by_members": {
+    "[627, 629, 630]": 6349362,
+    "[627, 629, 631]": 6349362,
+    "[627, 630, 631]": 6349362,
+    "[629, 630, 631]": 6349362
+   },
+   "delta_counts": {
+    "6349362": 4
+   },
+   "max_delta": 6349362,
+   "members": null,
+   "min_delta": 6349362,
+   "n": 4,
+   "status": {
+    "ok": 4
+   }
+  },
+  "start:619..623": {
+   "best_basis": [
+    24,
+    96,
+    132,
+    260
+   ],
+   "best_profile": {
+    "1": 2340,
+    "2": 508,
+    "3": 420,
+    "4": 126,
+    "5": 82
+   },
+   "delta_counts": {
+    "8458352": 15,
+    "8465816": 16
+   },
+   "max_delta": 8465816,
+   "members": [
+    619,
+    621,
+    622,
+    623
+   ],
+   "min_delta": 8458352,
+   "n": 31,
+   "status": {
+    "ok": 31
+   }
+  },
+  "start:627..631": {
+   "best_basis": [
+    24,
+    34,
+    68,
+    390
+   ],
+   "best_profile": {
+    "1": 2340,
+    "2": 508,
+    "3": 420,
+    "4": 126,
+    "5": 82
+   },
+   "delta_counts": {
+    "8458352": 15,
+    "8465816": 16
+   },
+   "max_delta": 8465816,
+   "members": [
+    627,
+    629,
+    630,
+    631
+   ],
+   "min_delta": 8458352,
+   "n": 31,
+   "status": {
+    "ok": 31
+   }
+  },
+  "start:651..655": {
+   "best_basis": [
+    30,
+    96,
+    139,
+    267
+   ],
+   "best_profile": {
+    "1": 2340,
+    "2": 508,
+    "3": 420,
+    "4": 126,
+    "5": 82
+   },
+   "delta_counts": {
+    "8458352": 15,
+    "8465816": 16
+   },
+   "max_delta": 8465816,
+   "members": [
+    651,
+    653,
+    654,
+    655
+   ],
+   "min_delta": 8458352,
+   "n": 31,
+   "status": {
+    "ok": 31
+   }
+  }
+ },
+ "marginal_floor_c9_minus_c8": 2105319,
+ "mixed_hyperplanes_within_group": {
+  "start:619..623:mixed ok 8465816": 40,
+  "start:627..631:mixed ok 8465816": 40
+ },
+ "single": {
+  "down-start": {
+   "delta_counts": {
+    "-2089290": 12,
+    "-2091736": 2,
+    "-2094142": 4,
+    "-2108990": 20
+   },
+   "helpers": 44,
+   "n": 1364,
+   "status": {
+    "infeasible": 1320,
+    "ok": 38,
+    "uncertified": 6
+   }
+  },
+  "up-end": {
+   "delta_counts": {
+    "2116454": 992
+   },
+   "helpers": 32,
+   "n": 992,
+   "status": {
+    "ok": 992
+   }
+  },
+  "up-start": {
+   "delta_counts": {
+    "2116454": 372
+   },
+   "helpers": 12,
+   "n": 372,
+   "status": {
+    "ok": 372
+   }
+  }
+ },
+ "variants": {
+  "calib-g2-390": {
+   "B_gates_differing_from_extra": [],
+   "certified": true,
+   "comp_gates": 7208,
+   "delta": 8458352,
+   "inventory": {
+    "4": 40,
+    "5": 48,
+    "7": 38,
+    "8": 114,
+    "9": 240
+   },
+   "n_B_diff": 0,
+   "profile": {
+    "1": 2340,
+    "2": 508,
+    "3": 420,
+    "4": 126,
+    "5": 82,
+    "8": 8
+   },
+   "sections_equal_to_extra_word": {
+    "A": true,
+    "B": true,
+    "center_frames": true,
+    "centers": true,
+    "cleanup": true,
+    "cut": true,
+    "early_cleanup": true,
+    "helper_final": true,
+    "ports": true,
+    "precondition": true,
+    "start_extra": false
+   }
+  },
+  "g1-alt": {
+   "certified": true,
+   "comp_gates": 7208,
+   "delta": 8458352,
+   "inventory": {
+    "4": 40,
+    "5": 48,
+    "7": 38,
+    "8": 114,
+    "9": 240
+   },
+   "profile": {
+    "1": 2340,
+    "2": 508,
+    "3": 420,
+    "4": 126,
+    "5": 82,
+    "8": 8
+   }
+  }
+ },
+ "width_definition": "width(q) = dim span(helper_final[q] or GF(2)^9) - dim span(start_extra[q] or {0}) for helpers q = 224..703 (toolkit word.recount); equals the helper's paid rank mass, so local rank mass = 896 data + 896 ports + sum(widths) + 64 centre = 5,590 (base) / 5,594 (extra)"
+}

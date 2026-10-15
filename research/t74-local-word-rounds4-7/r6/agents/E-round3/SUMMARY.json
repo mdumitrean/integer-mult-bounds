@@ -1,0 +1,647 @@
+{
+ "cal:B1": {
+  "source": "runs/cal/out.json",
+  "ddel": -4925,
+  "seconds": 340.7,
+  "opts": {
+   "rounds": 2,
+   "K": [
+    3,
+    3
+   ],
+   "r1_diverse": true,
+   "merge_cuts": false,
+   "exact_nogood": false
+  },
+  "rounds": {
+   "1": {
+    "models": 1,
+    "candidates": 2452,
+    "proposals": 2,
+    "stop:INFEASIBLE": 1,
+    "cone_cuts": 0
+   },
+   "2": {
+    "models": 2,
+    "candidates": 5026,
+    "proposals": 0,
+    "stop:INFEASIBLE": 2,
+    "cone_cuts": 0
+   }
+  },
+  "diagnoses": [],
+  "priced": [],
+  "gains": []
+ },
+ "cal:B783": {
+  "source": "runs/cal/out.json",
+  "ddel": -6781,
+  "seconds": 183.5,
+  "opts": {
+   "rounds": 2,
+   "K": [
+    3,
+    3
+   ],
+   "r1_diverse": true,
+   "merge_cuts": false,
+   "exact_nogood": false
+  },
+  "rounds": {
+   "1": {
+    "models": 1,
+    "candidates": 4120,
+    "proposals": 1,
+    "stop:INFEASIBLE": 1,
+    "cone_cuts": 0
+   },
+   "2": {
+    "models": 1,
+    "candidates": 4574,
+    "proposals": 0,
+    "stop:INFEASIBLE": 1,
+    "cone_cuts": 0
+   }
+  },
+  "diagnoses": [],
+  "priced": [],
+  "gains": []
+ },
+ "b78:B783": {
+  "source": "runs/b78/out.json",
+  "ddel": -6781,
+  "seconds": 305.4,
+  "opts": {
+   "rounds": 4,
+   "K": [
+    3,
+    2,
+    2,
+    1
+   ],
+   "r1_diverse": true,
+   "merge_cuts": true,
+   "exact_nogood": false
+  },
+  "rounds": {
+   "1": {
+    "models": 1,
+    "candidates": 4120,
+    "proposals": 1,
+    "stop:INFEASIBLE": 1,
+    "cone_cuts": 0
+   },
+   "2": {
+    "models": 1,
+    "candidates": 4574,
+    "proposals": 0,
+    "stop:INFEASIBLE": 1,
+    "cone_cuts": 0
+   }
+  },
+  "diagnoses": [
+   {
+    "round": 2,
+    "no_summed_budget": "INFEASIBLE",
+    "no_summed_budget_24_terms": "INFEASIBLE",
+    "no_cap_candidates": 4820,
+    "no_cap_shape": true,
+    "no_cap_no_budget_24_terms": "UNKNOWN"
+   }
+  ],
+  "priced": [],
+  "gains": []
+ },
+ "b78:B802": {
+  "source": "runs/b78/out.json",
+  "ddel": -6781,
+  "seconds": 283.0,
+  "opts": {
+   "rounds": 4,
+   "K": [
+    3,
+    2,
+    2,
+    1
+   ],
+   "r1_diverse": true,
+   "merge_cuts": true,
+   "exact_nogood": false
+  },
+  "rounds": {
+   "1": {
+    "models": 1,
+    "candidates": 4086,
+    "proposals": 1,
+    "stop:INFEASIBLE": 1,
+    "cone_cuts": 0
+   },
+   "2": {
+    "models": 1,
+    "candidates": 4540,
+    "proposals": 0,
+    "stop:INFEASIBLE": 1,
+    "cone_cuts": 0
+   }
+  },
+  "diagnoses": [
+   {
+    "round": 2,
+    "no_summed_budget": "INFEASIBLE",
+    "no_summed_budget_24_terms": "INFEASIBLE",
+    "no_cap_candidates": 4782,
+    "no_cap_shape": true,
+    "no_cap_no_budget_24_terms": "FEASIBLE",
+    "no_cap_solution_cost": 6781,
+    "no_cap_solution_terms": [
+     [
+      542,
+      518,
+      4688,
+      "1/2"
+     ],
+     [
+      154,
+      518,
+      4687,
+      "1/2"
+     ],
+     [
+      218,
+      518,
+      4162,
+      "1/2"
+     ],
+     [
+      542,
+      518,
+      4431,
+      "-1/2"
+     ],
+     [
+      154,
+      518,
+      4124,
+      "-1/2"
+     ]
+    ]
+   }
+  ],
+  "priced": [],
+  "gains": []
+ },
+ "diag:B1": {
+  "source": "runs/diag/out.json",
+  "ddel": -4925,
+  "seconds": 427.0,
+  "opts": {
+   "rounds": 2,
+   "K": [
+    1,
+    1
+   ],
+   "r1_diverse": true,
+   "merge_cuts": false,
+   "exact_nogood": false
+  },
+  "rounds": {
+   "1": {
+    "models": 1,
+    "candidates": 2452,
+    "proposals": 1,
+    "cone_cuts": 0
+   },
+   "2": {
+    "models": 1,
+    "candidates": 2485,
+    "proposals": 0,
+    "stop:INFEASIBLE": 1,
+    "cone_cuts": 0
+   }
+  },
+  "diagnoses": [
+   {
+    "round": 2,
+    "no_summed_budget": "INFEASIBLE",
+    "no_summed_budget_24_terms": "INFEASIBLE",
+    "no_cap_candidates": 2577,
+    "no_cap_inf_dropped": 12,
+    "no_cap_shape": true,
+    "no_cap_no_budget_24_terms": "FEASIBLE",
+    "no_cap_solution_cost": 4925,
+    "no_cap_solution_terms": [
+     [
+      126,
+      74,
+      4901,
+      "1/2"
+     ],
+     [
+      126,
+      554,
+      4110,
+      "1/2"
+     ]
+    ]
+   }
+  ],
+  "priced": [],
+  "gains": []
+ },
+ "diag:B783": {
+  "source": "runs/diag/out.json",
+  "ddel": -6781,
+  "seconds": 305.9,
+  "opts": {
+   "rounds": 2,
+   "K": [
+    1,
+    1
+   ],
+   "r1_diverse": true,
+   "merge_cuts": false,
+   "exact_nogood": false
+  },
+  "rounds": {
+   "1": {
+    "models": 1,
+    "candidates": 4120,
+    "proposals": 1,
+    "cone_cuts": 0
+   },
+   "2": {
+    "models": 1,
+    "candidates": 4574,
+    "proposals": 0,
+    "stop:INFEASIBLE": 1,
+    "cone_cuts": 0
+   }
+  },
+  "diagnoses": [
+   {
+    "round": 2,
+    "no_summed_budget": "INFEASIBLE",
+    "no_summed_budget_24_terms": "INFEASIBLE",
+    "no_cap_candidates": 4818,
+    "no_cap_inf_dropped": 2,
+    "no_cap_shape": true,
+    "no_cap_no_budget_24_terms": "FEASIBLE",
+    "no_cap_solution_cost": 6781,
+    "no_cap_solution_terms": [
+     [
+      530,
+      506,
+      4686,
+      "1/2"
+     ],
+     [
+      114,
+      506,
+      4685,
+      "1/2"
+     ],
+     [
+      178,
+      506,
+      4134,
+      "1/2"
+     ],
+     [
+      114,
+      506,
+      4099,
+      "-1/2"
+     ],
+     [
+      530,
+      506,
+      63,
+      "1/4"
+     ]
+    ]
+   }
+  ],
+  "priced": [],
+  "gains": []
+ },
+ "b1x:B1": {
+  "source": "runs/b1x/out.json",
+  "ddel": -4925,
+  "seconds": 2898.3,
+  "opts": {
+   "rounds": 4,
+   "K": [
+    20,
+    2,
+    2,
+    1
+   ],
+   "r1_diverse": false,
+   "merge_cuts": true,
+   "exact_nogood": true
+  },
+  "rounds": {
+   "1": {
+    "models": 1,
+    "candidates": 2452,
+    "proposals": 20,
+    "cone_cuts": 0
+   },
+   "2": {
+    "models": 20,
+    "candidates": 49913,
+    "proposals": 0,
+    "stop:INFEASIBLE": 20,
+    "cone_cuts": 0
+   }
+  },
+  "diagnoses": [
+   {
+    "round": 2,
+    "no_summed_budget": "INFEASIBLE",
+    "no_summed_budget_24_terms": "INFEASIBLE",
+    "no_cap_candidates": 2589,
+    "no_cap_shape": true,
+    "no_cap_no_budget_24_terms": "MODEL_INVALID"
+   }
+  ],
+  "priced": [],
+  "gains": []
+ },
+ "early:B3": {
+  "source": "runs/early/out.json",
+  "ddel": -4925,
+  "seconds": 557.2,
+  "opts": {
+   "rounds": 4,
+   "K": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "r1_diverse": true,
+   "merge_cuts": true,
+   "exact_nogood": false
+  },
+  "rounds": {
+   "1": {
+    "models": 1,
+    "candidates": 2390,
+    "proposals": 2,
+    "cone_cuts": 0
+   },
+   "2": {
+    "models": 2,
+    "candidates": 4869,
+    "proposals": 0,
+    "stop:INFEASIBLE": 2,
+    "cone_cuts": 0
+   }
+  },
+  "diagnoses": [
+   {
+    "round": 2,
+    "no_summed_budget": "INFEASIBLE",
+    "no_summed_budget_24_terms": "INFEASIBLE",
+    "no_cap_candidates": 2495,
+    "no_cap_inf_dropped": 10,
+    "no_cap_shape": true,
+    "no_cap_no_budget_24_terms": "FEASIBLE",
+    "no_cap_solution_cost": 4925,
+    "no_cap_solution_terms": [
+     [
+      150,
+      98,
+      4913,
+      "1/2"
+     ],
+     [
+      150,
+      566,
+      4118,
+      "1/2"
+     ]
+    ]
+   }
+  ],
+  "priced": [],
+  "gains": []
+ },
+ "early:B8": {
+  "source": "runs/early/out.json",
+  "ddel": -4925,
+  "seconds": 669.8,
+  "opts": {
+   "rounds": 4,
+   "K": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "r1_diverse": true,
+   "merge_cuts": true,
+   "exact_nogood": false
+  },
+  "rounds": {
+   "1": {
+    "models": 1,
+    "candidates": 2407,
+    "proposals": 2,
+    "cone_cuts": 0
+   },
+   "2": {
+    "models": 2,
+    "candidates": 4918,
+    "proposals": 0,
+    "stop:INFEASIBLE": 2,
+    "cone_cuts": 0
+   }
+  },
+  "diagnoses": [
+   {
+    "round": 2,
+    "no_summed_budget": "INFEASIBLE",
+    "no_summed_budget_24_terms": "INFEASIBLE",
+    "no_cap_candidates": 2508,
+    "no_cap_inf_dropped": 10,
+    "no_cap_shape": true,
+    "no_cap_no_budget_24_terms": "FEASIBLE",
+    "no_cap_solution_cost": 4925,
+    "no_cap_solution_terms": [
+     [
+      125,
+      448,
+      4904,
+      "-1/4"
+     ],
+     [
+      484,
+      448,
+      4802,
+      "1/2"
+     ],
+     [
+      484,
+      448,
+      4334,
+      "-1/2"
+     ],
+     [
+      125,
+      448,
+      4109,
+      "1/4"
+     ]
+    ]
+   }
+  ],
+  "priced": [],
+  "gains": []
+ },
+ "early2:B39": {
+  "source": "runs/early2/out.json",
+  "ddel": -4925,
+  "seconds": 561.7,
+  "opts": {
+   "rounds": 4,
+   "K": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "r1_diverse": true,
+   "merge_cuts": true,
+   "exact_nogood": false
+  },
+  "rounds": {
+   "1": {
+    "models": 1,
+    "candidates": 2394,
+    "proposals": 2,
+    "cone_cuts": 0
+   },
+   "2": {
+    "models": 2,
+    "candidates": 4880,
+    "proposals": 0,
+    "stop:INFEASIBLE": 2,
+    "cone_cuts": 0
+   }
+  },
+  "diagnoses": [
+   {
+    "round": 2,
+    "no_summed_budget": "INFEASIBLE",
+    "no_summed_budget_24_terms": "INFEASIBLE",
+    "no_cap_candidates": 2493,
+    "no_cap_inf_dropped": 10,
+    "no_cap_shape": true,
+    "no_cap_no_budget_24_terms": "FEASIBLE",
+    "no_cap_solution_cost": 4925,
+    "no_cap_solution_terms": [
+     [
+      123,
+      585,
+      4906,
+      "-1/4"
+     ],
+     [
+      383,
+      585,
+      4808,
+      "-1/4"
+     ],
+     [
+      555,
+      585,
+      4142,
+      "-1/4"
+     ],
+     [
+      123,
+      585,
+      4107,
+      "1/4"
+     ]
+    ]
+   }
+  ],
+  "priced": [],
+  "gains": []
+ },
+ "early2:B44": {
+  "source": "runs/early2/out.json",
+  "ddel": -4925,
+  "seconds": 647.6,
+  "opts": {
+   "rounds": 4,
+   "K": [
+    2,
+    2,
+    2,
+    1
+   ],
+   "r1_diverse": true,
+   "merge_cuts": true,
+   "exact_nogood": false
+  },
+  "rounds": {
+   "1": {
+    "models": 1,
+    "candidates": 3017,
+    "proposals": 2,
+    "cone_cuts": 0
+   },
+   "2": {
+    "models": 2,
+    "candidates": 6116,
+    "proposals": 0,
+    "stop:INFEASIBLE": 2,
+    "cone_cuts": 0
+   }
+  },
+  "diagnoses": [
+   {
+    "round": 2,
+    "no_summed_budget": "INFEASIBLE",
+    "no_summed_budget_24_terms": "INFEASIBLE",
+    "no_cap_candidates": 3174,
+    "no_cap_inf_dropped": 14,
+    "no_cap_shape": true,
+    "no_cap_no_budget_24_terms": "FEASIBLE",
+    "no_cap_solution_cost": 4925,
+    "no_cap_solution_terms": [
+     [
+      114,
+      586,
+      4960,
+      "-1/4"
+     ],
+     [
+      182,
+      586,
+      4823,
+      "-1/4"
+     ],
+     [
+      182,
+      586,
+      4136,
+      "1/4"
+     ],
+     [
+      114,
+      586,
+      4098,
+      "1/4"
+     ]
+    ]
+   }
+  ],
+  "priced": [],
+  "gains": []
+ }
+}

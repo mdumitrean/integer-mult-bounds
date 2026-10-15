@@ -1,0 +1,130 @@
+{
+ "premoves": {
+  "unique": 3397,
+  "by_source_delta": {
+   "D-cmove:0": 892,
+   "D-cmove:4925": 82,
+   "D-cmove:6781": 44,
+   "D-cmove:7984": 1,
+   "D-cmulti:0": 94,
+   "D-cmulti:4925": 10,
+   "D-twocol:0": 962,
+   "C-fusion:0": 962,
+   "C-fuspos:0": 279,
+   "A-reloc:None": 71
+  }
+ },
+ "shared_fusion_unblocking": {
+  "premoves_scanned": 3397,
+  "base_shared_candidates": 0,
+  "premoves_opening_shared": 6,
+  "composites_priced": 36,
+  "status": {
+   "infeasible:None": 30,
+   "ok:0": 6
+  }
+ },
+ "shared_fusion_two_premoves": {
+  "pairs_clearing_both_blockers": 118,
+  "pairs_opening_shared": 9,
+  "composites_priced": 46,
+  "status": {
+   "ok:0": 46
+  },
+  "delta1": [
+   "0"
+  ]
+ },
+ "cancelling_pairs": {
+  "mergeable": 43,
+  "status": {
+   "inexact:None": 42,
+   "ok:0": 1
+  }
+ },
+ "local_research_neutral": {
+  "premoves": 150,
+  "delta1": {
+   "0": 150
+  },
+  "second_moves_generated": 18128,
+  "second_moves_priced": 6000,
+  "second_status": {
+   "infeasible:None": 3007,
+   "ok:0": 2529,
+   "compensation-changed:None": 238,
+   "ok:4925": 102,
+   "rule:non-target reads target:None": 100,
+   "rule:full cleanup reads a low end:None": 12,
+   "ok:6781": 8,
+   "ok:7984": 2,
+   "uncertified:6781": 2
+  },
+  "relaxations": {
+   "same": 184,
+   "worse": 12
+  },
+  "relaxation_walk_totals": {
+   "walk-same": 184,
+   "walk-worse": 12
+  },
+  "gains": [],
+  "seconds": 4338.7
+ },
+ "local_research_positive": {
+  "premoves": 29,
+  "delta1": {
+   "4925": 26,
+   "6781": 2,
+   "7984": 1
+  },
+  "second_moves_generated": 3242,
+  "second_moves_priced": 1160,
+  "second_status": {
+   "infeasible:None": 739,
+   "ok:0": 385,
+   "ok:-4925": 12,
+   "compensation-changed:None": 8,
+   "ok:-6781": 4,
+   "rule:full cleanup reads a low end:None": 4,
+   "rule:non-target reads target:None": 4,
+   "ok:6781": 2,
+   "ok:-7984": 2
+  },
+  "relaxations": {
+   "better": 19,
+   "same": 24,
+   "worse": 1
+  },
+  "relaxation_walk_totals": {
+   "walk-same": 18,
+   "walk-worse": 26
+  },
+  "gains": [],
+  "seconds": 696.8
+ },
+ "local_research_neutral_batch2": {
+  "premoves": 150,
+  "delta1": {
+   "0": 150
+  },
+  "second_moves_generated": 23876,
+  "second_moves_priced": 6000,
+  "second_status": {
+   "ok:0": 2903,
+   "infeasible:None": 2826,
+   "compensation-changed:None": 128,
+   "rule:non-target reads target:None": 54,
+   "ok:4925": 49,
+   "rule:full cleanup reads a low end:None": 40
+  },
+  "relaxations": {
+   "same": 252
+  },
+  "relaxation_walk_totals": {
+   "walk-same": 252
+  },
+  "gains": [],
+  "seconds": 4171.8
+ }
+}

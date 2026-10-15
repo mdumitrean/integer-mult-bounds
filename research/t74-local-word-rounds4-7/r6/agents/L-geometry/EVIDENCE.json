@@ -1,0 +1,278 @@
+{
+ "agent": "L-geometry",
+ "round": "r6",
+ "b": "0.001679754956125544",
+ "geometry": {
+  "children_per_replica_port": 18,
+  "bins": 149184,
+  "capacities": {
+   "8": 6,
+   "16": 4,
+   "32": 4,
+   "48": 4
+  },
+  "families": {
+   "(0,s)": [
+    48
+   ],
+   "(1,s)": [
+    16,
+    8,
+    32
+   ],
+   "(2,s)": [
+    32,
+    8,
+    16
+   ],
+   "(3,s)": [
+    48,
+    8
+   ]
+  },
+  "octet_rule": "idle child axes = contiguous octet blocks (levels 0..8 = basis positions 1..72); rank = 8*(to_level-from_level); windows split by the pair's local stages and the bridges that read it",
+  "empty_48_bins": {
+   "child8": 6150,
+   "child10": 4860,
+   "child12": 6672,
+   "child13": 5066
+  }
+ },
+ "binding": {
+  "halving_reserve": "independent_core: M*M > 2*max(profile)**2 -> max jump <= 51 (M=73)",
+  "rank_deficit": "73*live - mass = 320*T",
+  "prefix": "1,441 < 2,048 charged (payload 2^11 while 233+18T < 2048, i.e. T <= 100)",
+  "row": "19,545 < 20,161 (payload doubling at T >= 101 breaks it)"
+ },
+ "engine_current": "0.001679754956125544521335",
+ "ceilings": {
+  "all49": {
+   "native": 2.6793458823950135e-06,
+   "conservative": 2.6793458784116962e-06
+  },
+  "all50": {
+   "native": 5.314003451442553e-06,
+   "conservative": 5.314003443530555e-06
+  },
+  "all51": {
+   "native": 7.90490650454798e-06,
+   "conservative": 7.904906492763847e-06
+  },
+  "all52": {
+   "native": 1.0451485292008473e-05,
+   "conservative": 1.0451485276407146e-05
+  }
+ },
+ "all52_halving_ok": false,
+ "relaxation_results": {
+  "current": {
+   "gain_units": 0,
+   "ne": 417,
+   "idle": {
+    "48": 22748
+   }
+  },
+  "D1_51_5": {
+   "gain_units": -9037496,
+   "ne": 666,
+   "idle": {
+    "1": 6396,
+    "48": 13788,
+    "51": 8288
+   }
+  },
+  "D2_51_5": {
+   "gain_units": -19933528,
+   "ne": 666,
+   "idle": {
+    "1": 13788,
+    "48": 4828,
+    "51": 16576
+   }
+  },
+  "D1_50_6": {
+   "gain_units": -116201120,
+   "ne": 193,
+   "idle": {
+    "2": 8288,
+    "48": 13788,
+    "50": 8288
+   }
+  },
+  "D2_50_6": {
+   "gain_units": -232781556,
+   "ne": 0,
+   "idle": {
+    "1": 124,
+    "2": 16452,
+    "48": 4828,
+    "50": 16576
+   }
+  },
+  "D1_49_7": {
+   "gain_units": 146080,
+   "ne": 659,
+   "idle": {
+    "48": 19404,
+    "49": 3256
+   }
+  },
+  "D2_49_7": {
+   "gain_units": -1216622,
+   "ne": 666,
+   "idle": {
+    "1": 797,
+    "48": 16554,
+    "49": 6031
+   }
+  },
+  "C2_51_5_0": {
+   "gain_units": 200741911,
+   "ne": 0,
+   "idle": {
+    "36": 1,
+    "48": 5170,
+    "51": 16576
+   }
+  },
+  "C2_51_0_5": {
+   "gain_units": 200741911,
+   "ne": 0,
+   "idle": {
+    "36": 1,
+    "48": 5170,
+    "51": 16576
+   }
+  },
+  "B2_5_0_51": {
+   "gain_units": 200741911,
+   "ne": 0,
+   "idle": {
+    "36": 1,
+    "48": 5170,
+    "51": 16576
+   }
+  },
+  "B2_0_5_51": {
+   "gain_units": 200741911,
+   "ne": 0,
+   "idle": {
+    "36": 1,
+    "48": 5170,
+    "51": 16576
+   }
+  },
+  "BCD_all51": {
+   "gain_units": -72803940,
+   "ne": 666,
+   "idle": {
+    "1": 17760,
+    "48": 4588,
+    "51": 16724
+   }
+  },
+  "D_56_0_both": {
+   "gain_units": 2062235,
+   "ne": 664,
+   "idle": {
+    "1": 2,
+    "47": 11599,
+    "48": 6082,
+    "49": 1,
+    "51": 4976
+   }
+  },
+  "D_56_0_one": {
+   "gain_units": 1162987,
+   "ne": 664,
+   "idle": {
+    "1": 2,
+    "47": 5383,
+    "48": 14370,
+    "49": 1,
+    "51": 2904
+   }
+  },
+  "C_40_0_16_both": {
+   "gain_units": 19731991,
+   "ne": 0,
+   "idle": {
+    "36": 1,
+    "48": 22782
+   }
+  },
+  "C_32_24_0_both": {
+   "gain_units": 0,
+   "ne": 417,
+   "idle": {
+    "48": 22748
+   }
+  },
+  "C_56_both": {
+   "gain_units": 200741911,
+   "ne": 0,
+   "idle": {
+    "36": 1,
+    "48": 5170,
+    "51": 16576
+   }
+  },
+  "B_24_0_32_both": {
+   "gain_units": 0,
+   "ne": 417,
+   "idle": {
+    "48": 22748
+   }
+  },
+  "B_56_both": {
+   "gain_units": 200741911,
+   "ne": 0,
+   "idle": {
+    "36": 1,
+    "48": 5170,
+    "51": 16576
+   }
+  },
+  "BCD_56": {
+   "gain_units": 253865398,
+   "ne": 0,
+   "idle": {
+    "30": 1,
+    "51": 21442
+   }
+  },
+  "B24_C40_D56": {
+   "gain_units": 200741911,
+   "ne": 0,
+   "idle": {
+    "36": 1,
+    "48": 5170,
+    "51": 16576
+   }
+  }
+ },
+ "engine_gains": {
+  "C2_51_5_0 (non-octet, not expressible)": {
+   "native": 6.783370446333557e-06,
+   "conservative": 6.783370436038345e-06
+  },
+  "D1_49_7 (non-octet)": {
+   "native": 4.951700630291933e-09,
+   "conservative": 4.951700730232746e-09
+  },
+  "D_56_0_both (needs removal of stage-6 bridge reads of pair 3)": {
+   "native": 6.953513852841271e-08,
+   "conservative": 6.953513851895618e-08
+  },
+  "BCD_56 (impossible: spans the pairs' own local stages)": {
+   "native": 8.58765493472207e-06,
+   "conservative": 8.587654921736901e-06
+  },
+  "C_40_0_16_both (needs removal of the bridges reading pair 2 around stage 4)": {
+   "native": 6.64336760475875e-07,
+   "conservative": 6.64336759303214e-07
+  }
+ },
+ "verdict": "No admissible geometry change under the current nine-stage recipe: child ranks and windows are forced, empty children are capped at 48 by octet granularity plus the halving reserve, and the current fill is optimal (r5 C). Octet-compatible gains need a different recipe (bridge structure), i.e. a new parent construction.",
+ "correction": "Eliminating the extra word is worth ~19.7M units (+6.6e-7 kappa), not ~1e-4: the freed local mass becomes idle mass (r5 C)."
+}

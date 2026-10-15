@@ -1,0 +1,188 @@
+{
+ "agent": "O-swap",
+ "round": "r6",
+ "b": "0.001679754956125544",
+ "words": {
+  "base": "r3/inputs/gauge44-word-566-554.json.gz",
+  "extra": "r3/inputs/extra-word-566-554.json.gz"
+ },
+ "group_swaps_base": {
+  "pairs": 3751,
+  "status": {
+   "ok": 3751
+  },
+  "joint_minus_additive": {
+   "0": 3751
+  },
+  "min_joint_delta": 0,
+  "zero_delta_pairs": 225,
+  "negative": 0
+ },
+ "group_swaps_extra": {
+  "pairs": 1860,
+  "status": {
+   "ok": 1860
+  },
+  "joint_minus_additive": {
+   "0": 1860
+  },
+  "min_joint_delta": 0,
+  "zero_delta_pairs": 180,
+  "negative": 0,
+  "filter": "additive estimate <= +7,464 (the within-group upgrade discount)"
+ },
+ "single_swaps_base": {
+  "overlap": {
+   "pairs": 824,
+   "status": {
+    "ok": 710,
+    "uncertified": 114
+   },
+   "joint_minus_additive": {
+    "0": 824
+   },
+   "min_joint_delta": 7464,
+   "zero_delta_pairs": 0,
+   "negative": 0
+  },
+  "control": {
+   "pairs": 200,
+   "status": {
+    "ok": 163,
+    "uncertified": 37
+   },
+   "joint_minus_additive": {
+    "0": 200
+   },
+   "min_joint_delta": 7464,
+   "zero_delta_pairs": 0,
+   "negative": 0
+  },
+  "overlap_pairs_of": 60016,
+  "region_rule": "influence regions (L/U changes + their frames-graph components + one chain hop) intersect"
+ },
+ "uncertified_narrowings": [
+  {
+   "q": 639,
+   "basis": [
+    1,
+    30,
+    102,
+    170,
+    298
+   ],
+   "primal_delta": -2089290,
+   "certified": false,
+   "max_gain_units": 2089285.548947072,
+   "max_gain_minus_c1": -27168.451052928,
+   "swap_can_gain": false
+  },
+  {
+   "q": 647,
+   "basis": [
+    1,
+    10,
+    20,
+    96,
+    390
+   ],
+   "primal_delta": -2089290,
+   "certified": false,
+   "max_gain_units": 2089285.548947072,
+   "max_gain_minus_c1": -27168.451052928005,
+   "swap_can_gain": false
+  },
+  {
+   "q": 671,
+   "basis": [
+    7,
+    24,
+    102,
+    163,
+    291
+   ],
+   "primal_delta": -2089290,
+   "certified": false,
+   "max_gain_units": 2089285.548947072,
+   "max_gain_minus_c1": -27168.451052928,
+   "swap_can_gain": false
+  },
+  {
+   "q": 679,
+   "basis": [
+    3,
+    4,
+    24,
+    96,
+    389
+   ],
+   "primal_delta": -2089290,
+   "certified": false,
+   "max_gain_units": 2089285.548947072,
+   "max_gain_minus_c1": -27168.451052927994,
+   "swap_can_gain": false
+  },
+  {
+   "q": 702,
+   "basis": [
+    6,
+    24,
+    33,
+    64,
+    449
+   ],
+   "primal_delta": -2091736,
+   "certified": false,
+   "max_gain_units": 2091739.063129681,
+   "max_gain_minus_c1": -24714.93687031899,
+   "swap_can_gain": false
+  },
+  {
+   "q": 703,
+   "basis": [
+    6,
+    24,
+    33,
+    64,
+    449
+   ],
+   "primal_delta": -2091736,
+   "certified": false,
+   "max_gain_units": 2091739.063129681,
+   "max_gain_minus_c1": -24714.93687031899,
+   "swap_can_gain": false
+  }
+ ],
+ "audited_swap": {
+  "name": "swap-603-619",
+  "delta": 0,
+  "certified": true,
+  "profile": {
+   "1": 2348,
+   "2": 500,
+   "3": 416,
+   "4": 130,
+   "5": 82
+  },
+  "comp_gates": 7208,
+  "inventory_in": {
+   "4": 44,
+   "5": 44,
+   "7": 38,
+   "8": 114,
+   "9": 240
+  },
+  "inventory_out": {
+   "4": 44,
+   "5": 44,
+   "7": 38,
+   "8": 114,
+   "9": 240
+  },
+  "inventory_unchanged": true,
+  "audit_exit": 0,
+  "audit_status": "PASS_INDEPENDENT_EXACT_FORWARD_AND_DUAL_ENDPOINT_FRAMES_ENTRANCES_CONES"
+ },
+ "outcome": "no same-inventory width swap gains; every jointly priced swap equals the sum of its parts; best joint delta 0",
+ "gains": []
+}
