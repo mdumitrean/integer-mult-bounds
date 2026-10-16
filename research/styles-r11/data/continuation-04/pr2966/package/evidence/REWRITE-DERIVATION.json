@@ -1,0 +1,59 @@
+{
+  "builder_sha256": "50037518d7bb7e74677a2591e510fdc828e55725b5ecad943da0a81d946284cb",
+  "changes": {
+    "new/BORROW-PROVIDERS.json": {
+      "after": "3e4b506b3779531be64c3d5a516e2c851ba54222c259d07a4a6d22594a596a03",
+      "before": "cad6a02068ca1bf09824242a68ac0ebc1beebf77bb01104644d2ee06eb48b5d0"
+    },
+    "new/borrow/declared_rewrites.py": {
+      "after": "5f927ec2ebb112d5f2258162897062782452458354985de6e3be84bc1d6d6822",
+      "before": null
+    },
+    "new/borrow/inputs/NORMAL45-WORD-base.json.gz": {
+      "after": "54ca34c749e3228d7e2df3d8dbf7aa1568c2872490166997c5962f12fd03da35",
+      "before": null
+    },
+    "new/borrow/inputs/NORMAL45-WORD-extra.json.gz": {
+      "after": "eded756dfe8f411c3d1f80a3ac16516f0ea5dd6f9866728b2179b157630fa7b6",
+      "before": null
+    },
+    "new/borrow/rewrites/REWRITES.json": {
+      "after": "9c37fc5f989c81a26de3b2e3c29b87c1c9e1caa2565b1b89d2bf2eb6aec800da",
+      "before": null
+    },
+    "new/borrow/rewrites_review.py": {
+      "after": "3080c1161834c7dedd855c2135ce9555589b3105f53f593941eba6048518780f",
+      "before": null
+    },
+    "new/borrow/words/BORROW-WORD-43base.json.gz": {
+      "after": "4e96cf33d2e0f85f6ff5ccc6165a6c8c0305ca0081ecaf40d72c5e1c4a13e9a5",
+      "before": "54ca34c749e3228d7e2df3d8dbf7aa1568c2872490166997c5962f12fd03da35"
+    },
+    "new/borrow/words/BORROW-WORD-43extra.json.gz": {
+      "after": "440398ee0d2bfd9448be77fa0652512cb79c6ecda9ae030afc79259056f5c6dc",
+      "before": "eded756dfe8f411c3d1f80a3ac16516f0ea5dd6f9866728b2179b157630fa7b6"
+    },
+    "new/rebuild_borrow.py": {
+      "after": "d4428dbf6dd3b9d8192fe93d2eac3f9a747cfb9bbe448f433cf5e9037948e6e9",
+      "before": "d95f5285dc6b711ff79ca46c43bac7a3928cff86da5fe2e1de54206a2b8d35b9"
+    },
+    "verify.py": {
+      "after": "eb696daecdb25ceedeb2f357a3947d70ba88d5c4aadbb2d034bccd37c3ae0705",
+      "before": "b0d5f4217b4699c37609dc7c3633d570acbccd205840777d38f891846b4b918c"
+    }
+  },
+  "manifest_sha256": "f18779d932cd2b42709e9ba6d4a5e72bb6619ee39a3256a1f13d49f195ec5e3a",
+  "parent_manifest_sha256": "79956f19c5c3d4d1ad3578e4b3d6844bc54c1f3680825fc87c80cc04f069dae8",
+  "source_file_count": 642,
+  "status": "PASS_SOURCE_BOUND_DECLARED_REWRITE_OVERLAY",
+  "words": {
+    "base": {
+      "parent_sha256": "54ca34c749e3228d7e2df3d8dbf7aa1568c2872490166997c5962f12fd03da35",
+      "word_sha256": "4e96cf33d2e0f85f6ff5ccc6165a6c8c0305ca0081ecaf40d72c5e1c4a13e9a5"
+    },
+    "extra": {
+      "parent_sha256": "eded756dfe8f411c3d1f80a3ac16516f0ea5dd6f9866728b2179b157630fa7b6",
+      "word_sha256": "440398ee0d2bfd9448be77fa0652512cb79c6ecda9ae030afc79259056f5c6dc"
+    }
+  }
+}

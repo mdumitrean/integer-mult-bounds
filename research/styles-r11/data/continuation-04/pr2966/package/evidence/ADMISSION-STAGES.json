@@ -1,0 +1,113 @@
+[
+  {
+    "command": [
+      "C:\\src\\mult\\scratch\\GridMax44\\venv312b\\Scripts\\python.exe",
+      "-B",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\package\\reconstruct.py",
+      "--out",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\owners"
+    ],
+    "exit_code": 0,
+    "log_sha256": "0f974a5c42fd4a4ff8d10a9de92b9f92d76f4d5b7778f31dd103f9b46c9d027a",
+    "name": "owners",
+    "script_sha256": "5472811c24aef3852dc7e189dff5060076a6c0b25bfde928da50dcfe9b5bdc15",
+    "seconds": 4.2039999999979045
+  },
+  {
+    "command": [
+      "C:\\src\\mult\\scratch\\GridMax44\\venv312b\\Scripts\\python.exe",
+      "-B",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\package\\lift_parent.py",
+      "--package",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\package",
+      "--owners",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\owners",
+      "--out",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\parent-data"
+    ],
+    "exit_code": 0,
+    "log_sha256": "2389e2ae8c710f1a6ee0b25cccf0b4fef3a87812dc1cbe83a41c14ae32087487",
+    "name": "parent-lift",
+    "script_sha256": "9a1edd7d4ab4a2f2ac8d15b42b7e40f93653d65026bac59e4c1ce80b486bd60e",
+    "seconds": 10.5
+  },
+  {
+    "command": [
+      "C:\\src\\mult\\scratch\\GridMax44\\venv312b\\Scripts\\python.exe",
+      "-B",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\package\\new\\rebind.py",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\package",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\native\\native-cache\\4e96cf33d2e0f85f6ff5ccc6165a6c8c0305ca0081ecaf40d72c5e1c4a13e9a5\\local",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\native\\native-cache\\440398ee0d2bfd9448be77fa0652512cb79c6ecda9ae030afc79259056f5c6dc\\local",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\rebound"
+    ],
+    "exit_code": 0,
+    "log_sha256": "09521f57c68f2ef86527e58ea8c7e23adb91631f1da49ffe9d943a63c5f32dc4",
+    "name": "rebind",
+    "script_sha256": "52f8b4cec2dab69cbe590e1fd0f7a68e1b35de5a540bd22fd2adfce07a92b46b",
+    "seconds": 0.875
+  },
+  {
+    "command": [
+      "C:\\src\\mult\\scratch\\GridMax44\\venv312b\\Scripts\\python.exe",
+      "-B",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\layout\\packing74\\replay.py",
+      "--data",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\layout\\packing74\\candidate",
+      "--work",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\discovery",
+      "--local",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\native\\native-cache\\4e96cf33d2e0f85f6ff5ccc6165a6c8c0305ca0081ecaf40d72c5e1c4a13e9a5\\local",
+      "--discover"
+    ],
+    "exit_code": 0,
+    "log_sha256": "9dabf18386f1101811ea4a58fffe9b2dfcea35bae02bd9950801362770c082ac",
+    "name": "discovery",
+    "script_sha256": "cda0f3a63c5c92c0ff45f7f3a200567d7931fd421836e72ea3b8534f6ee24dcc",
+    "seconds": 87.70300000000134
+  },
+  {
+    "command": [
+      "C:\\src\\mult\\scratch\\GridMax44\\venv312b\\Scripts\\python.exe",
+      "-B",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\package\\outer\\check_ledger.py"
+    ],
+    "exit_code": 0,
+    "log_sha256": "fe54d9efec829fe3744dc9c1a95bd69ca6831c8b7e8ffcf6320b6c221002dc12",
+    "name": "outer-check_ledger.py",
+    "script_sha256": "1dd56009986eb14dd6603c9193c7ad71dd45c7d005bf71c9cd3f916e66f54d98",
+    "seconds": 0.2819999999992433
+  },
+  {
+    "command": [
+      "C:\\src\\mult\\scratch\\GridMax44\\venv312b\\Scripts\\python.exe",
+      "-B",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\package\\outer\\independent_check.py"
+    ],
+    "exit_code": 0,
+    "log_sha256": "8260f6b9708183ad3ff543fe42ea2a6a9f83e766676c10917b076fed680f15d4",
+    "name": "outer-independent_check.py",
+    "script_sha256": "a5a0361539ec7cae9eb6c0371f857919335a1720040f22af291aa3e34fc864c7",
+    "seconds": 0.125
+  },
+  {
+    "command": [
+      "C:\\src\\mult\\scratch\\GridMax44\\venv312b\\Scripts\\python.exe",
+      "-B",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\package\\verify_release.py",
+      "--main",
+      "C:\\src\\mult\\scratch\\PkgX",
+      "--work",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\candidate\\release",
+      "--native-cache",
+      "C:\\src\\mult\\scratch\\PkgX\\wk1\\native\\native-cache",
+      "--jobs",
+      "2"
+    ],
+    "exit_code": 0,
+    "log_sha256": "3430fbbaf696450f333d18d2cd01a4bf7635a8e047eb592ce7b02c28ab266ae8",
+    "name": "release",
+    "script_sha256": "6cfefe80c02a6c0f243f50ca9e146e1ab1440b84a033d8a71d42be5a5fa27f6b",
+    "seconds": 377.125
+  }
+]

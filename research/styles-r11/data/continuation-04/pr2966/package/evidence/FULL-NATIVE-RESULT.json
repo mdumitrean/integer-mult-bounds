@@ -1,0 +1,41 @@
+{
+  "environment_sha256": "7d3ec720e565ce8461b95b28162f25ffe1b1dfbd7576eab70c0b6ff84fbf792d",
+  "native_receipt_sha256": "a33112ee7e03cc09bc91e618e7d0e3db98cbd8b9ead274ca58eb8ea3af1047bd",
+  "preparer_sha256": "fccbc7d7eacfe62bdbd4aaccb75355c8aca8ae421fa1c734ce1837fa7b2829f7",
+  "scope": "Fresh changed base/extra native chains; two unchanged retained native chains and16-stage parent admission explicitly reused by exact full-tree receipts. No owner/controller/outer admission yet.",
+  "seconds": 83.56199999999808,
+  "source_manifest_sha256": "f18779d932cd2b42709e9ba6d4a5e72bb6619ee39a3256a1f13d49f195ec5e3a",
+  "stages": [
+    {
+      "command": [
+        "C:\\src\\mult\\scratch\\GridMax44\\venv312b\\Scripts\\python.exe",
+        "-B",
+        "C:\\src\\mult\\scratch\\PkgX\\wk1\\source-rewrite\\new\\fastnative\\run_native.py",
+        "C:\\src\\mult\\scratch\\PkgX\\wk1\\source-rewrite\\new\\borrow\\words\\BORROW-WORD-43base.json.gz",
+        "C:\\src\\mult\\scratch\\PkgX\\wk1\\native\\fresh-base"
+      ],
+      "exit_code": 0,
+      "log_sha256": "09e4bff35ff61828222595c6f0ed5df9c4ee3929ff77f4a29bd790c670b22be5",
+      "name": "fresh-current-base",
+      "result_sha256": "669f00abbb75350fcd212a577c62115b4876876e6c07113dbcc1112c4b5dc036",
+      "script_sha256": "a7bfe110fe5098f6ef8bde3c43ecf15e8d1e06149abf7321a4c945383dcc2627",
+      "seconds": 83.25
+    },
+    {
+      "command": [
+        "C:\\src\\mult\\scratch\\GridMax44\\venv312b\\Scripts\\python.exe",
+        "-B",
+        "C:\\src\\mult\\scratch\\PkgX\\wk1\\source-rewrite\\new\\fastnative\\run_native.py",
+        "C:\\src\\mult\\scratch\\PkgX\\wk1\\source-rewrite\\new\\borrow\\words\\BORROW-WORD-43extra.json.gz",
+        "C:\\src\\mult\\scratch\\PkgX\\wk1\\native\\fresh-extra"
+      ],
+      "exit_code": 0,
+      "log_sha256": "83e3dfae3aea9799268841e7b2db902025f9c68bfd8a2d70b588e6a9a53883ab",
+      "name": "fresh-current-extra",
+      "result_sha256": "d4085b08069f166260a6f995b731a25e75d34ab55c0bdbb928e101bd88671491",
+      "script_sha256": "a7bfe110fe5098f6ef8bde3c43ecf15e8d1e06149abf7321a4c945383dcc2627",
+      "seconds": 83.25
+    }
+  ],
+  "status": "PASS_TWO_FRESH_SHARED_KERNEL_NATIVE_CHAINS_AUTHENTICATED_PARENT_REUSE"
+}
