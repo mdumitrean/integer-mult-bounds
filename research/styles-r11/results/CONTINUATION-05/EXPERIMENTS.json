@@ -1,10 +1,23 @@
 {
   "experiments": [
     {
-      "execution": "NOT_STARTED",
+      "confirmed": false,
+      "cpu_seconds": 0,
+      "execution": "NOT_RUN",
       "id": "R1-B-REPAIR",
       "preregistration": "results/CONTINUATION-05/R1/PREREGISTRATION.json",
       "preregistration_sha256": "887be7cb7034ff39220e29fea64362a3cfb2a06ed0601a786512d69bf78d6207",
+      "result_files": [],
+      "retired_utc": "2026-10-16T16:37:43.728523+00:00",
+      "retirement_reason": "Static concavity/projection obstruction before any scientific execution: uncancelled conjugation retains every original scalar contact and only refines the contact graph. No empirical NULL or source-specific optimum proof claimed. Original preregistration remains immutable; one separately registered pivot will include output-map cancellation.",
+      "status": "EXPLORATORY",
+      "wall_seconds": 0
+    },
+    {
+      "execution": "NOT_STARTED",
+      "id": "R2-B-RESTORE",
+      "preregistration": "results/CONTINUATION-05/R2/PREREGISTRATION.json",
+      "preregistration_sha256": "9909c361dd712d39ca3b59263902c75fa1110f2923f5308748889e9e8a60a691",
       "status": "planned"
     }
   ],
@@ -12,5 +25,5 @@
   "no_active_experiments": true,
   "round": "CONTINUATION-05",
   "schema_version": 1,
-  "status": "REGISTERED"
+  "status": "R2_REGISTERED"
 }
