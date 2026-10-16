@@ -1,0 +1,106 @@
+{
+  "administrative_cpu_seconds": 0.371817809,
+  "attempt": {
+    "attempt": "v1",
+    "completed_by_phase": {
+      "baseline": 4,
+      "census": 4,
+      "controls": 2,
+      "prices": 256
+    },
+    "controls": {
+      "49019": {
+        "exact_flag_fixtures": 8,
+        "families": 42,
+        "total_checks": 3212
+      },
+      "98009": {
+        "exact_flag_fixtures": 8,
+        "families": 42,
+        "total_checks": 3212
+      }
+    },
+    "cpu_seconds": 15.697287087,
+    "detailed_artifacts": 276,
+    "detailed_bytes": 393235,
+    "domain": {
+      "decision_from_saved_records": "EXPLORATORY",
+      "providers": {
+        "base": {
+          "candidates": 0,
+          "guard_predicate_counts": {},
+          "identical_profile_rows": 0,
+          "shards_per_seed": 64,
+          "status_counts": {},
+          "strictly_costlier_rows": 0,
+          "structural_exclusion_counts": {
+            "intervening_contact": 2878
+          }
+        },
+        "extra": {
+          "candidates": 0,
+          "guard_predicate_counts": {},
+          "identical_profile_rows": 0,
+          "shards_per_seed": 64,
+          "status_counts": {},
+          "strictly_costlier_rows": 0,
+          "structural_exclusion_counts": {
+            "intervening_contact": 2878
+          }
+        }
+      },
+      "selected_pairs": 0,
+      "unresolved_rows": 0,
+      "unvalidated_paired": 0
+    },
+    "max_task_seconds": 1.561482110992074,
+    "max_worker_rss_bytes": 138846208,
+    "memory_projections": [
+      {
+        "path": "data/continuation-09/j1-v1/BASELINE-MEMORY-PROJECTION.json",
+        "projected_peak_gib": 84.98031616210938,
+        "sha256": "b266ee13834b78aa2d42ea56069feebfcb982b47819e187c9bb513d470a8fee1"
+      },
+      {
+        "path": "data/continuation-09/j1-v1/CENSUS-MEMORY-PROJECTION.json",
+        "projected_peak_gib": 84.98031616210938,
+        "sha256": "b266ee13834b78aa2d42ea56069feebfcb982b47819e187c9bb513d470a8fee1"
+      },
+      {
+        "path": "data/continuation-09/j1-v1/CONTROLS-MEMORY-PROJECTION.json",
+        "projected_peak_gib": 84.98031616210938,
+        "sha256": "b266ee13834b78aa2d42ea56069feebfcb982b47819e187c9bb513d470a8fee1"
+      },
+      {
+        "path": "data/continuation-09/j1-v1/PREPARATION-MEMORY-PROJECTION.json",
+        "projected_peak_gib": 79.382568359375,
+        "sha256": "e607f329864d7bea6adfdb45b2ec31ddca58e3b7385437a67b762e82babbbf7e"
+      },
+      {
+        "path": "data/continuation-09/j1-v1/PRICES-MEMORY-PROJECTION.json",
+        "projected_peak_gib": 86.07015991210938,
+        "sha256": "b6202ae499286c1823581c556ca6875c592d86b79fac3bbe6f7711503d5cdec7"
+      }
+    ],
+    "pool_status_counts": {
+      "OK": 266
+    },
+    "pool_tasks": 266,
+    "source_archives": {
+      "historical_administrative_preimages": [],
+      "reused_earlier_archives": 116,
+      "unique_source_payloads": 119
+    },
+    "source_credits_per_result": {
+      "49019": 26,
+      "98009": 26
+    },
+    "status": "EXPLORATORY",
+    "wall_seconds": 8.077522050589323,
+    "worker_cpu_seconds": 7.2515131459999935
+  },
+  "auditor_sha256": "d7bba285019beda8d04e3f0e64a7fd124e79fcb079f29dd23a00d20a9dbd8aa9",
+  "kind": "Administrative saved-receipt precheck; no scientific imports or reruns",
+  "recorded_utc": "2026-10-16T19:32:30.689093+00:00",
+  "status": "PASS"
+}

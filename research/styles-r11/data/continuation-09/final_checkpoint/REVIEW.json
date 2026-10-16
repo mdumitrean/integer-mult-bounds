@@ -1,0 +1,255 @@
+{
+  "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+  "changed_guidance": [],
+  "checkpoint": {
+    "bytes": 23447,
+    "path": "data/continuation-09/final_checkpoint/RECEIPT.json",
+    "sha256": "dffc8936ae9362a6db338a59d3b33944fe0f0c5698c558fb138403d0b12670cd"
+  },
+  "coverage": {
+    "discussions": {
+      "1163": {
+        "changed_records": [],
+        "coverage": {
+          "comments": 73,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:31:44.657503+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 1,
+          "replies": 12,
+          "reported_comments": 73,
+          "started_utc": "2026-10-16T19:31:43.492575+00:00",
+          "unique_comments": 73
+        },
+        "file": {
+          "bytes": 54213,
+          "path": "data/continuation-09/final_checkpoint/threads/discussion-1163.json.gz",
+          "sha256": "88eeec632ebf662a2296ab77cd9145dfd33e33acb4c6f96f244daa4dfd195eb8"
+        }
+      },
+      "1166": {
+        "changed_records": [
+          {
+            "author": {
+              "login": "petalas"
+            },
+            "body_sha256": "93236d40f62b22cb7d4088c6bfae795080b88d31378dbce7c97dcb231baaada2",
+            "change": "ADDED",
+            "created_at": "2026-10-16T19:18:48Z",
+            "kind": "comment",
+            "updated_at": "2026-10-16T19:18:48Z",
+            "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18981304"
+          },
+          {
+            "author": {
+              "login": "navinor"
+            },
+            "body_sha256": "6572d9d2dad36ce2c888d9eaaef5683770e90dd45bc8e6b9a5165b6fc9b935f2",
+            "change": "ADDED",
+            "created_at": "2026-10-16T19:20:33Z",
+            "kind": "comment",
+            "updated_at": "2026-10-16T19:27:15Z",
+            "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18981329"
+          }
+        ],
+        "coverage": {
+          "comments": 325,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:31:51.141254+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 4,
+          "replies": 62,
+          "reported_comments": 325,
+          "started_utc": "2026-10-16T19:31:44.666978+00:00",
+          "unique_comments": 325
+        },
+        "file": {
+          "bytes": 253843,
+          "path": "data/continuation-09/final_checkpoint/threads/discussion-1166.json.gz",
+          "sha256": "c8e7edb6b3bc2b23d548b2863b9982e16c5f532cc5c0e51189e2b54c1f453ee4"
+        }
+      },
+      "1167": {
+        "changed_records": [],
+        "coverage": {
+          "comments": 123,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:31:53.312321+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 2,
+          "replies": 18,
+          "reported_comments": 123,
+          "started_utc": "2026-10-16T19:31:51.203134+00:00",
+          "unique_comments": 123
+        },
+        "file": {
+          "bytes": 98112,
+          "path": "data/continuation-09/final_checkpoint/threads/discussion-1167.json.gz",
+          "sha256": "8493b1fb830ef8a41f54362112005b42fba1f4e31d0af9d10a21997fd3d46c4c"
+        }
+      },
+      "2612": {
+        "changed_records": [
+          {
+            "author": {
+              "login": "petalas"
+            },
+            "body_sha256": "ee05b65ab209a63b6e0b660429442161bb115bfa2c1562e4526422ac45a2db67",
+            "change": "BODY_CHANGED",
+            "created_at": "2026-10-16T18:43:01Z",
+            "kind": "comment",
+            "updated_at": "2026-10-16T19:18:46Z",
+            "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18980805"
+          }
+        ],
+        "coverage": {
+          "comments": 34,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:31:43.477615+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 1,
+          "replies": 9,
+          "reported_comments": 34,
+          "started_utc": "2026-10-16T19:31:42.171808+00:00",
+          "unique_comments": 34
+        },
+        "file": {
+          "bytes": 51149,
+          "path": "data/continuation-09/final_checkpoint/threads/discussion-2612.json.gz",
+          "sha256": "23474153d79e8fe6e221bb238cf65cf3acbecb03792c3cbfef9c734d9543d07b"
+        }
+      }
+    },
+    "recent_pr_delta": {
+      "complete_all_prs": false,
+      "complete_recent_delta": true,
+      "new_since_cutoff": 5,
+      "pages": 1,
+      "reached_cutoff": true,
+      "rows": 100,
+      "unique_numbers": 100,
+      "updates_since_cutoff": 6
+    }
+  },
+  "cutoff_rule": "Initial checkpoint start rounded down to the second, intentionally overlapping its acquisition window.",
+  "cutoff_utc": "2026-10-16T19:09:25Z",
+  "effect_on_J1": "The registered empty-domain EXPLORATORY outcome and its pinned PR3028 endpoint are unchanged. PR3030 reports the same R1 words but a larger allocation; it updates a future comparator, not the completed protocol.",
+  "explicit_comparators": {
+    "3024": {
+      "author": "petalas",
+      "file": {
+        "bytes": 4306,
+        "path": "data/continuation-09/final_checkpoint/pr-3024.json.gz",
+        "sha256": "4a707813c67665aa46a56ca3bb40e24980083d653468d4521934781b8419229a"
+      },
+      "head": "315df10c07cf8b8ee9af9b2122750635bb2582ae",
+      "head_unchanged": true,
+      "state": "open"
+    },
+    "3028": {
+      "author": "petalas",
+      "file": {
+        "bytes": 4086,
+        "path": "data/continuation-09/final_checkpoint/pr-3028.json.gz",
+        "sha256": "8a4ca539b0307e0352138b2e5acf011bf180c3819ead023b383f7c241013e164"
+      },
+      "head": "9d10633660a3dff5469f4e7a0a009a6c9994c0d7",
+      "head_unchanged": true,
+      "state": "open"
+    }
+  },
+  "guidance_pin": {
+    "bytes": 3764,
+    "path": "data/continuation-09/final_checkpoint/guidance/PINS.json",
+    "sha256": "77611ee1682947daf51de853d73eae8b3c78c5bb6704d6c73b64b86f1963f1d3"
+  },
+  "initial_checkpoint": {
+    "bytes": 43404,
+    "path": "data/continuation-09/checkpoint/RECEIPT.json",
+    "sha256": "6aa4b431cdd8677ce59bb612247c392e63accda998878a2ad4190a43a34b5efc"
+  },
+  "kind": "Bounded final read-only source/overlap refresh; no scientific execution",
+  "latest_reported_complete": {
+    "allocation_source_pr": 3024,
+    "author": "Nick Petalas (petalas)",
+    "conditional_decimal": "0.001729152756004330934535 -10^-46 -10^-70",
+    "evidence_tier": "SOURCE_REPORTED_CONDITIONAL_COMPLETE_FINITE_RELEASE",
+    "file": {
+      "bytes": 3353,
+      "path": "data/continuation-09/final_checkpoint/PR3030.json",
+      "sha256": "9c72f21844937c3c083d5b0e00556fe7ab2d451bcba2e744acd4e7040acf527f"
+    },
+    "head": "78e77d820393c6b8648b47af219e991edfcc54e6",
+    "independent_scientific_replay_this_refresh": false,
+    "inherited_hypotheses": "All-size/compiler, native/dirty-state realization, physical backing/movement, precision/tape, caller, analytic and universal block-energy assumptions remain conditional.",
+    "package_files_acquired_this_refresh": false,
+    "pr": 3030,
+    "replicas": 740,
+    "reported_payload_bits": 2048,
+    "reported_physical_families": 663549,
+    "reported_private_buffers": 91,
+    "reported_reserve_bits": 1512,
+    "reported_roles": 2717280,
+    "same_word_source_pr_reported": 3015,
+    "source_metadata_parent": {
+      "bytes": 145427,
+      "path": "data/continuation-09/final_checkpoint/updated-prs.json.gz",
+      "sha256": "e9dc0503d1188c320a2b5ddd0f134818f4683348824c7a9743fdb984d6bc7d1f"
+    },
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3030"
+  },
+  "limits": [
+    "Recent PR metadata was sampled nonatomically in one update-descending page to the cutoff, not a full historical PR refresh.",
+    "Only discussions1163/1166/1167/2612 were fully refreshed. Arbitrary links, other discussions and source-package files were not acquired.",
+    "Reported complete releases, caps and relay-cut claims were read as inert data; no acquired code or scientific audit was executed.",
+    "No selected-frontier, intrinsic-Laplacian, general impossibility or new kappa claim follows from this refresh."
+  ],
+  "other_delta": [
+    {
+      "pr": 3029,
+      "scope": "Conditional two-sided deficiency-budget theorem; no supplier or kappa claim."
+    },
+    {
+      "pr": 3031,
+      "scope": "Reported v5 tau>=1 box-floor proof and bounded shareable-class findings; no kappa claim."
+    },
+    {
+      "pr": 3032,
+      "scope": "One frozen P104 matching rejected by a monotone relay-frame cut; not a statement about this shared-carrier domain or arbitrary matchings."
+    },
+    {
+      "pr": 3033,
+      "scope": "P104 lifting residue reduction and reference speed measurements; no completed fast recursive supplier or kappa claim."
+    },
+    {
+      "pr": 2832,
+      "scope": "Updated metadata for decoder-floor conjectural reductions; no kappa claim."
+    }
+  ],
+  "previous_pending_handoff": {
+    "active": false,
+    "source_body_says_no_active_claim_remains": true,
+    "status": "DONE_RELEASED_PR3030",
+    "updated_at": "2026-10-16T19:18:46Z",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18980805"
+  },
+  "priority_revision": 6,
+  "recorded_utc": "2026-10-16T19:33:50.493885+00:00",
+  "schema_version": 1,
+  "script": {
+    "bytes": 7101,
+    "path": "pipeline/continuation09/checkpoint_final.py",
+    "sha256": "679296ca35fe729ff3a5d4fd87cba1684c75327b846316d42d6d9618a47895c4"
+  },
+  "selected_result_changed": false,
+  "selected_result_maintained_kappa": "836330098538459/500000000000000000",
+  "shared_carrier_overlap": "No newly explicit common-ratio multi-target carrier search or claim appears in the acquired changed PR bodies and full-thread changes. Historical read-merge/split coverage and unpublished work remain uncertain; this is not novelty evidence."
+}

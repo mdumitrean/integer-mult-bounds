@@ -1,0 +1,168 @@
+{
+  "administrative_cpu_seconds": 1.340069138,
+  "recorded_utc": "2026-10-16T19:35:16.593040+00:00",
+  "stable": {
+    "acquisitions": [
+      {
+        "author": "Nick Petalas (petalas)",
+        "files": 22,
+        "path": "data/continuation-09/pr3028/ACQUISITION.json",
+        "payload_bytes": 132620,
+        "sha256": "dd20434c5b53fa7927b0b4090d985dd27dada6d165ebeae3873d93e52c821284"
+      },
+      {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "files": 112,
+        "path": "data/continuation-05/pr2979/ACQUISITION.json",
+        "payload_bytes": 3439921,
+        "sha256": "e5ad48ac05e897dcc2e073d29be451cfd1493ba3077e7e2de0f9460aa11a7d71"
+      },
+      {
+        "author": "jeremykothe2",
+        "files": 37,
+        "path": "data/continuation-07/holdout3015/ACQUISITION.json",
+        "payload_bytes": 1841940,
+        "sha256": "d0b48e18b559fc323cdd9e12a402d8f42b48ead8c8629f61e5d062f9adf1dde7"
+      }
+    ],
+    "base_work_commit": "0f13eb4b75964dd8cd050fbb15cad67956edfb60",
+    "experiments": {
+      "J1-SHARED-CARRIERS": [
+        {
+          "attempt": "v1",
+          "completed_by_phase": {
+            "baseline": 4,
+            "census": 4,
+            "controls": 2,
+            "prices": 256
+          },
+          "controls": {
+            "49019": {
+              "exact_flag_fixtures": 8,
+              "families": 42,
+              "total_checks": 3212
+            },
+            "98009": {
+              "exact_flag_fixtures": 8,
+              "families": 42,
+              "total_checks": 3212
+            }
+          },
+          "cpu_seconds": 15.697287087,
+          "detailed_artifacts": 276,
+          "detailed_bytes": 393235,
+          "domain": {
+            "decision_from_saved_records": "EXPLORATORY",
+            "providers": {
+              "base": {
+                "candidates": 0,
+                "guard_predicate_counts": {},
+                "identical_profile_rows": 0,
+                "shards_per_seed": 64,
+                "status_counts": {},
+                "strictly_costlier_rows": 0,
+                "structural_exclusion_counts": {
+                  "intervening_contact": 2878
+                }
+              },
+              "extra": {
+                "candidates": 0,
+                "guard_predicate_counts": {},
+                "identical_profile_rows": 0,
+                "shards_per_seed": 64,
+                "status_counts": {},
+                "strictly_costlier_rows": 0,
+                "structural_exclusion_counts": {
+                  "intervening_contact": 2878
+                }
+              }
+            },
+            "selected_pairs": 0,
+            "unresolved_rows": 0,
+            "unvalidated_paired": 0
+          },
+          "max_task_seconds": 1.561482110992074,
+          "max_worker_rss_bytes": 138846208,
+          "memory_projections": [
+            {
+              "path": "data/continuation-09/j1-v1/BASELINE-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 84.98031616210938,
+              "sha256": "b266ee13834b78aa2d42ea56069feebfcb982b47819e187c9bb513d470a8fee1"
+            },
+            {
+              "path": "data/continuation-09/j1-v1/CENSUS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 84.98031616210938,
+              "sha256": "b266ee13834b78aa2d42ea56069feebfcb982b47819e187c9bb513d470a8fee1"
+            },
+            {
+              "path": "data/continuation-09/j1-v1/CONTROLS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 84.98031616210938,
+              "sha256": "b266ee13834b78aa2d42ea56069feebfcb982b47819e187c9bb513d470a8fee1"
+            },
+            {
+              "path": "data/continuation-09/j1-v1/PREPARATION-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 79.382568359375,
+              "sha256": "e607f329864d7bea6adfdb45b2ec31ddca58e3b7385437a67b762e82babbbf7e"
+            },
+            {
+              "path": "data/continuation-09/j1-v1/PRICES-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 86.07015991210938,
+              "sha256": "b6202ae499286c1823581c556ca6875c592d86b79fac3bbe6f7711503d5cdec7"
+            }
+          ],
+          "pool_status_counts": {
+            "OK": 266
+          },
+          "pool_tasks": 266,
+          "source_archives": {
+            "historical_administrative_preimages": [],
+            "reused_earlier_archives": 116,
+            "unique_source_payloads": 119
+          },
+          "source_credits_per_result": {
+            "49019": 26,
+            "98009": 26
+          },
+          "status": "EXPLORATORY",
+          "wall_seconds": 8.077522050589323,
+          "worker_cpu_seconds": 7.2515131459999935
+        }
+      ]
+    },
+    "final_documents": {
+      "EXPERIMENTS.json": "d133c205b51fd64b527b018c7b954233eebdb9a2b0eaaab4cfa8e595699d419a",
+      "HANDBACK.md": "3259ea4c75aefc0a331b283344eb74a8d34af6dee164b56f751b81cdca3c4f42",
+      "PREDICTIONS.json": "d997f30e53b4965fbcea56c3b1204338d6f68165409a96554a209a93204c4b77",
+      "RESULTS.md": "dd53daa36e512ed896400539c6e248d3b92f9273ef4426a05398c4537678f96f",
+      "TASK.json": "8f3fe06cabbfae4a51d2a622ab21945d516865641b0662708b6c03e0e94ce9bf"
+    },
+    "kind": "Administrative saved-byte audit; no scientific reruns",
+    "local_artifact_references_checked": 575,
+    "preserved_pre_round_files": 24276,
+    "schema_version": 1,
+    "script_sha256": "d7bba285019beda8d04e3f0e64a7fd124e79fcb079f29dd23a00d20a9dbd8aa9",
+    "source_checkpoints": {
+      "checkpoint": {
+        "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+        "files": 25,
+        "priority_revision": 6,
+        "sha256": "6aa4b431cdd8677ce59bb612247c392e63accda998878a2ad4190a43a34b5efc"
+      },
+      "final_checkpoint": {
+        "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+        "files": 20,
+        "priority_revision": 6,
+        "sha256": "dffc8936ae9362a6db338a59d3b33944fe0f0c5698c558fb138403d0b12670cd"
+      }
+    },
+    "status": "PASS",
+    "storage_bytes_excluding_audit": {
+      "global_results": 197955770,
+      "new_data": 2089095,
+      "new_pipeline": 125758,
+      "round_results": 647171
+    },
+    "total_experimental_cpu_seconds": 15.697287087,
+    "total_pool_tasks": 266
+  }
+}
