@@ -1,0 +1,71 @@
+{
+  "cpu_seconds": 0.110908232,
+  "peak_rss_bytes": 123195392,
+  "result": {
+    "decision": "Batch computed; scientific decision requires all 100 prescribed orders.",
+    "index": 2,
+    "order_count": 1,
+    "orders": [
+      {
+        "accepted_lowerings": 165,
+        "assignment_sha256": "cb151b5cc0213c45579a2618fdfc559efa2c38b3a93aac622c7689eedc5d0c39",
+        "dimension_potential_final": 4692,
+        "dimension_potential_initial": 4858,
+        "dimension_potential_lower_bound": 3765,
+        "order": 79,
+        "order_seed": "80751654820718878687224183025205089296",
+        "profile": {
+          "1": 2610,
+          "2": 628,
+          "3": 249,
+          "4": 104,
+          "5": 26,
+          "8": 8
+        },
+        "sweeps": 4,
+        "terminal_maximality_verified": true,
+        "unresolved_examples": [],
+        "unresolved_legal_deltas": 0,
+        "unresolved_terminal_deltas": 0
+      }
+    ],
+    "seed": 29063,
+    "start_order": 79,
+    "status": "PASS",
+    "word": {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    }
+  },
+  "seconds": 0.11091985180974007,
+  "spec": {
+    "index": 2,
+    "order_count": 1,
+    "seed": 29063,
+    "start_order": 79
+  },
+  "status": "OK"
+}

@@ -91,6 +91,25 @@ class TaskTimeout(BaseException):
     pass
 
 
+class PoolCpuBudgetExceeded(TimeoutError):
+    pass
+
+
+def _live_worker_cpu(workers):
+    ticks = os.sysconf('SC_CLK_TCK')
+    total = 0.0
+    for worker in workers:
+        if worker.exitcode is not None:
+            continue
+        try:
+            # Fields after the process-name closing parenthesis start at field 3.
+            fields = Path('/proc/%d/stat' % worker.pid).read_text().rsplit(')', 1)[1].split()
+            total += (int(fields[11]) + int(fields[12])) / ticks
+        except (OSError, ValueError, IndexError):
+            pass
+    return total
+
+
 def _alarm(signum, frame):
     raise TaskTimeout()
 
@@ -119,13 +138,15 @@ def _call(fn, args, timeout):
 
 def run_pool(fn, args_list, workers=None, timeout=300, rss_gib=4.0,
              maxtasksperchild=50, *, working_set_gib=1.0,
-             projection_path=None, on_result=None):
+             projection_path=None, on_result=None, cpu_budget_seconds=None):
     """Return ordered results; on_result(index,result) checkpoints in parent.
 
     The old helper timed only the parent's wait. SIGALRM now bounds execution;
     a second get deadline detects lost workers. Neither case retries the task.
     """
     workers = worker_count() if workers is None else int(workers)
+    if cpu_budget_seconds is not None and cpu_budget_seconds <= 0:
+        raise ValueError('positive pool CPU budget required')
     if timeout <= 0:
         raise ValueError('positive task timeout required')
     report = project_memory(workers, rss_gib, working_set_gib)
@@ -140,6 +161,9 @@ def run_pool(fn, args_list, workers=None, timeout=300, rss_gib=4.0,
     lock_path.parent.mkdir(parents=True, exist_ok=True)
     with lock_path.open('a') as lock:
         fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        cpu_start = time.process_time()
+        child_start = resource.getrusage(resource.RUSAGE_CHILDREN)
+        reserve = min(cpu_budget_seconds or float('inf'), workers * 0.10)
         pool = mp.get_context('fork').Pool(
             processes=workers, maxtasksperchild=maxtasksperchild,
             initializer=_limits, initargs=(rss_gib,))
@@ -151,6 +175,12 @@ def run_pool(fn, args_list, workers=None, timeout=300, rss_gib=4.0,
             observed_workers = set(pool._pool)
             while completed < len(args_list):
                 observed_workers.update(pool._pool)
+                if cpu_budget_seconds is not None:
+                    child_now = resource.getrusage(resource.RUSAGE_CHILDREN)
+                    used = (time.process_time() - cpu_start + child_now.ru_utime + child_now.ru_stime
+                            - child_start.ru_utime - child_start.ru_stime + _live_worker_cpu(observed_workers))
+                    if used >= max(0.0, cpu_budget_seconds - reserve):
+                        raise PoolCpuBudgetExceeded('live pool CPU budget reached: %.6f of %.6f seconds; %.6f reserved for collection/termination; no retry' % (used, cpu_budget_seconds, reserve))
                 lost = [w for w in observed_workers if w.exitcode not in (None, 0)]
                 if lost:
                     detail = [(w.pid, w.exitcode) for w in lost]

@@ -499,7 +499,10 @@
       "updated_utc": "2026-10-16T04:49:02.570497+00:00"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 30,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
       "id": "S-2",
       "if_positive": "a monotone refit screen replacing the chain-dual LP for screening",
       "inputs": [
@@ -514,12 +517,19 @@
       "origin": "C-E2",
       "pass_bar": ">= 95/100 orders end at the certified profile",
       "question": "Do random maximal sequences of single-gate lowerings end at the certified optimum?",
+      "result_files": [
+        "results/S-2/v1/seed-11031/RESULT.json",
+        "results/S-2/v1/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/t74-r10-hosting-leads/deps/toolkit-rev3/frames.py",
-      "status": "planned",
-      "title": "Confluence of greedy frame lowering"
+      "status": "NULL",
+      "title": "Confluence of greedy frame lowering",
+      "updated_utc": "2026-10-16T05:04:30.767503+00:00"
     },
     {
       "budget_core_minutes": 10,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": false,
       "id": "S-4",
       "if_positive": "additive local energy justifies local pricing of width edits",
       "inputs": [
@@ -536,16 +546,31 @@
       "lane": "C",
       "method": "walk at 1k..300k moves; clumping index; predicted slope = mean split/merge moment delta",
       "milestone": "M2",
+      "not_run": true,
       "null_model": "the walk is its own null; 2 seeds",
       "origin": "C-E4",
       "pass_bar": "slope within 10% of prediction on every fill; clumping >= 0.75",
       "question": "Is the initial decay slope of the rule-preserving walk the first-order concavity prediction?",
+      "result_files": [
+        "results/S-4/stopped/seed-11031/RESULT.json",
+        "results/S-4/stopped/seed-29063/RESULT.json"
+      ],
+      "skip_reason": "Two consecutive confirmed scientific NULLs in Lane C: S-6 binding-interval prediction and S-2 greedy lowering. PLAN section 6 stops the lane.",
       "starting_script": "research/styles-r11/planning/C-sandpile/ground_fill_walk.py",
-      "status": "planned",
-      "title": "Fill energy (walk slope)"
+      "status": "EXPLORATORY",
+      "stop_trigger_results": [
+        "results/S-6/v1/seed-11031/RESULT.json",
+        "results/S-6/v1/seed-29063/RESULT.json",
+        "results/S-2/v1/seed-11031/RESULT.json",
+        "results/S-2/v1/seed-29063/RESULT.json"
+      ],
+      "title": "Fill energy (walk slope)",
+      "updated_utc": "2026-10-16T05:04:30.774223+00:00"
     },
     {
       "budget_core_minutes": 20,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": false,
       "id": "S-5",
       "if_positive": "a cheap hosting oracle for width edits",
       "inputs": [
@@ -560,13 +585,26 @@
       "lane": "C",
       "method": "overflow rule: over-capacity bin pushes one random role to a random eligible bin; 100 orders; compare with relaxation/MILP",
       "milestone": "M2",
+      "not_run": true,
       "null_model": "identical-terminal rate; exact re-solve as reference",
       "origin": "C-E5",
       "pass_bar": ">= 95% identical terminals = abelian (not expected); useful: within 1e-8 kappa of exact re-host on >= 90%",
       "question": "Is there an order-independent local repair of an overflowing fill, and how far from the exact re-host?",
+      "result_files": [
+        "results/S-5/stopped/seed-11031/RESULT.json",
+        "results/S-5/stopped/seed-29063/RESULT.json"
+      ],
+      "skip_reason": "Two consecutive confirmed scientific NULLs in Lane C: S-6 binding-interval prediction and S-2 greedy lowering. PLAN section 6 stops the lane.",
       "starting_script": "research/styles-r11/planning/C-sandpile/ground_fill_walk.py",
-      "status": "planned",
-      "title": "Order-independent repair"
+      "status": "EXPLORATORY",
+      "stop_trigger_results": [
+        "results/S-6/v1/seed-11031/RESULT.json",
+        "results/S-6/v1/seed-29063/RESULT.json",
+        "results/S-2/v1/seed-11031/RESULT.json",
+        "results/S-2/v1/seed-29063/RESULT.json"
+      ],
+      "title": "Order-independent repair",
+      "updated_utc": "2026-10-16T05:04:30.780278+00:00"
     },
     {
       "attempt": "v1",
@@ -618,6 +656,25 @@
       "starting_script": "-",
       "status": "planned",
       "title": "Predictions on held-out words"
+    },
+    {
+      "attempt": "v1",
+      "budget_core_minutes": 10,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
+      "id": "M2-AUDIT",
+      "lane": "D",
+      "method": "Independent literal audit plus time-ordered eligibility arcs; retained M0 canonical chain conservation.",
+      "milestone": "M2",
+      "null_model": "none (exact bookkeeping)",
+      "pass_bar": "Exact literal role/profile conservation and an explicit acyclic eligibility ordering on all three held fills.",
+      "result_files": [
+        "results/M2-AUDIT/v1/seed-11031/RESULT.json",
+        "results/M2-AUDIT/v1/seed-29063/RESULT.json"
+      ],
+      "status": "PASS",
+      "title": "Literal fill and sink-DAG exactness recheck",
+      "updated_utc": "2026-10-16T04:59:17.730101+00:00"
     }
   ],
   "null_models": "PLAN.md section 6: N0 unigram; N1 section-preserving shuffle (forward sections only); N1b commuting-window shuffle (toolkit frames.move_window); N1c register relabelling; N2 same-Parikh random frames; N2b certified-optimal frames; N3 max-flow random fills; N4 constructor-synthetic (conditional); N5 cross-family; N6 near-miss controls (J-dim1/out/eh, retired7_controls.py)",

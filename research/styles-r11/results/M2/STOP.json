@@ -1,0 +1,15 @@
+{
+  "lane": "C",
+  "not_run": [
+    "S-4",
+    "S-5"
+  ],
+  "reason": "Two consecutive confirmed scientific NULLs in Lane C: S-6 binding-interval prediction and S-2 greedy lowering. PLAN section 6 stops the lane.",
+  "skipped_items_are_not_nulls": true,
+  "trigger_results": [
+    "results/S-6/v1/seed-11031/RESULT.json",
+    "results/S-6/v1/seed-29063/RESULT.json",
+    "results/S-2/v1/seed-11031/RESULT.json",
+    "results/S-2/v1/seed-29063/RESULT.json"
+  ]
+}

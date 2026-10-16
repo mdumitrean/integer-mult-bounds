@@ -1,0 +1,589 @@
+{
+  "checkpoint_manifest_sha256": "0356f09c4a7d6071537572145ca74c858e4d4f5165ea244d3ed8763dc71b0044",
+  "checks": {
+    "exact_cost_interval_sums": true,
+    "fill_source_file_sha256": true,
+    "literal_fill_mass_and_profile_arithmetic": true,
+    "once_per_word_references": 3,
+    "per_order_maximality_accounting": true,
+    "profile_rank_mass": true,
+    "recorded_order_stream_seeds": true,
+    "seed_pair_decision": true,
+    "source_word_blob_and_sha256": true,
+    "stop_rule_receipts": true,
+    "true_cost_strict_inequalities": true,
+    "unique_order_checkpoints": 600
+  },
+  "cost_proof_sources": [
+    {
+      "path": "research/t74-r10-hosting-leads/deps/toolkit-rev3/frames.py",
+      "sha256": "59d5f5725c50c5d6c22178e82ee79a5d7646f0133b1aa267081ec1ad228ec437"
+    },
+    {
+      "path": "research/frame-domain-ceiling/engines/moment.py",
+      "sha256": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482"
+    },
+    {
+      "path": "research/frame-domain-ceiling/engines/base_two_moment.py",
+      "sha256": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098"
+    },
+    {
+      "path": "research/styles-r11/pipeline/sandpile.py",
+      "sha256": "b12489046e2248f7075a374a7e6bb54b804e7bedac5c8204a7e50594973ac736"
+    }
+  ],
+  "frozen_s2_receipts": [
+    {
+      "path": "results/S-2/v1/seed-11031/RESULT.json",
+      "sha256": "c74c16e64dee414ab9347c0cc725a4548fa5f2de160bcb0f9fd5bab9d607d885"
+    },
+    {
+      "path": "results/S-2/v1/seed-29063/RESULT.json",
+      "sha256": "6910b0fbf7e6b1395809e7f78f3f7dd343439acfc9a602a5fabcab20eebec39f"
+    }
+  ],
+  "limitations": [
+    "Terminal assignment feasibility and exhaustive final-sweep maximality are taken from the frozen audited worker execution; this review does not rerun the dynamics.",
+    "The NULL does not require a proof that the reference is the exact true-cost optimum: a certified feasible strictly better reference suffices.",
+    "Every sampled order reached the same terminal assignment for each word. The null is failure of greedy optimality, not observed order dependence.",
+    "Three BORROW word files cover two constructions; no positive cross-family or five-criterion pattern is claimed."
+  ],
+  "preregistration": {
+    "path": "results/M2/PREREGISTRATION.json",
+    "sha256": "612b1d6b7abdf3048d3ebf6977599da821dfc12db3b192de1f52ff0301cc7510"
+  },
+  "review_cpu_seconds": 5.393377093,
+  "reviewed_utc": "2026-10-16T05:08:58.974013+00:00",
+  "s2": [
+    {
+      "distinct_assignments": 1,
+      "distinct_profiles": 1,
+      "hits": 0,
+      "minimum_strict_cost_gap": "380250755948581704169864120757789584386305307735117559750257/421249166674228746791672110734681729275580381602196445017243910144",
+      "minimum_strict_cost_gap_decimal": 9.026742033715333e-07,
+      "orders": 100,
+      "rank_mass": 5188,
+      "reference_checkpoint": {
+        "path": "results/S-2/v1/primary-references/task-0000.json",
+        "sha256": "36f5e767d434bb5b9849db371a09051e866e8ab6f82e0b2e9c038afe8910d27e"
+      },
+      "reference_component_count": 190,
+      "reference_integer_surrogate_certified": true,
+      "reference_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "reference_true_optimum_profile_proved": false,
+      "rigorously_worse_maximal": 100,
+      "seed": 11031,
+      "terminal_profiles": [
+        {
+          "count": 100,
+          "profile": {
+            "1": 2610,
+            "2": 642,
+            "3": 228,
+            "4": 104,
+            "5": 26,
+            "8": 8
+          }
+        }
+      ],
+      "unresolved_deltas": 0,
+      "unresolved_terminal_deltas": 0,
+      "word": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+    },
+    {
+      "distinct_assignments": 1,
+      "distinct_profiles": 1,
+      "hits": 0,
+      "minimum_strict_cost_gap": "380250755948581704169864120757789584386305307735117559750257/421249166674228746791672110734681729275580381602196445017243910144",
+      "minimum_strict_cost_gap_decimal": 9.026742033715333e-07,
+      "orders": 100,
+      "rank_mass": 5188,
+      "reference_checkpoint": {
+        "path": "results/S-2/v1/primary-references/task-0001.json",
+        "sha256": "9429d5b3f40e0a861a0e4b89ee2dc0c6b4c6e0ef21c178af8aabb85ae7cec37c"
+      },
+      "reference_component_count": 190,
+      "reference_integer_surrogate_certified": true,
+      "reference_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "reference_true_optimum_profile_proved": false,
+      "rigorously_worse_maximal": 100,
+      "seed": 11031,
+      "terminal_profiles": [
+        {
+          "count": 100,
+          "profile": {
+            "1": 2610,
+            "2": 642,
+            "3": 228,
+            "4": 104,
+            "5": 26,
+            "8": 8
+          }
+        }
+      ],
+      "unresolved_deltas": 0,
+      "unresolved_terminal_deltas": 0,
+      "word": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+    },
+    {
+      "distinct_assignments": 1,
+      "distinct_profiles": 1,
+      "hits": 0,
+      "minimum_strict_cost_gap": "6084999362900506338454830549045922319335815065423875661215523/6739986666787659948666753771754907668409286105635143120275902562304",
+      "minimum_strict_cost_gap_decimal": 9.02820682551984e-07,
+      "orders": 100,
+      "rank_mass": 5223,
+      "reference_checkpoint": {
+        "path": "results/S-2/v1/replication-references/task-0000.json",
+        "sha256": "5ce0f3da1643479cf53e45ca1b21c8b779399e1c482c300b2cfbb8c30a1c9720"
+      },
+      "reference_component_count": 190,
+      "reference_integer_surrogate_certified": true,
+      "reference_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "reference_true_optimum_profile_proved": false,
+      "rigorously_worse_maximal": 100,
+      "seed": 11031,
+      "terminal_profiles": [
+        {
+          "count": 100,
+          "profile": {
+            "1": 2610,
+            "2": 628,
+            "3": 249,
+            "4": 104,
+            "5": 26,
+            "8": 8
+          }
+        }
+      ],
+      "unresolved_deltas": 0,
+      "unresolved_terminal_deltas": 0,
+      "word": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+    },
+    {
+      "distinct_assignments": 1,
+      "distinct_profiles": 1,
+      "hits": 0,
+      "minimum_strict_cost_gap": "380250755948581704169864120757789584386305307735117559750257/421249166674228746791672110734681729275580381602196445017243910144",
+      "minimum_strict_cost_gap_decimal": 9.026742033715333e-07,
+      "orders": 100,
+      "rank_mass": 5188,
+      "reference_checkpoint": {
+        "path": "results/S-2/v1/primary-references/task-0000.json",
+        "sha256": "36f5e767d434bb5b9849db371a09051e866e8ab6f82e0b2e9c038afe8910d27e"
+      },
+      "reference_component_count": 190,
+      "reference_integer_surrogate_certified": true,
+      "reference_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "reference_true_optimum_profile_proved": false,
+      "rigorously_worse_maximal": 100,
+      "seed": 29063,
+      "terminal_profiles": [
+        {
+          "count": 100,
+          "profile": {
+            "1": 2610,
+            "2": 642,
+            "3": 228,
+            "4": 104,
+            "5": 26,
+            "8": 8
+          }
+        }
+      ],
+      "unresolved_deltas": 0,
+      "unresolved_terminal_deltas": 0,
+      "word": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+    },
+    {
+      "distinct_assignments": 1,
+      "distinct_profiles": 1,
+      "hits": 0,
+      "minimum_strict_cost_gap": "380250755948581704169864120757789584386305307735117559750257/421249166674228746791672110734681729275580381602196445017243910144",
+      "minimum_strict_cost_gap_decimal": 9.026742033715333e-07,
+      "orders": 100,
+      "rank_mass": 5188,
+      "reference_checkpoint": {
+        "path": "results/S-2/v1/primary-references/task-0001.json",
+        "sha256": "9429d5b3f40e0a861a0e4b89ee2dc0c6b4c6e0ef21c178af8aabb85ae7cec37c"
+      },
+      "reference_component_count": 190,
+      "reference_integer_surrogate_certified": true,
+      "reference_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "reference_true_optimum_profile_proved": false,
+      "rigorously_worse_maximal": 100,
+      "seed": 29063,
+      "terminal_profiles": [
+        {
+          "count": 100,
+          "profile": {
+            "1": 2610,
+            "2": 642,
+            "3": 228,
+            "4": 104,
+            "5": 26,
+            "8": 8
+          }
+        }
+      ],
+      "unresolved_deltas": 0,
+      "unresolved_terminal_deltas": 0,
+      "word": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+    },
+    {
+      "distinct_assignments": 1,
+      "distinct_profiles": 1,
+      "hits": 0,
+      "minimum_strict_cost_gap": "6084999362900506338454830549045922319335815065423875661215523/6739986666787659948666753771754907668409286105635143120275902562304",
+      "minimum_strict_cost_gap_decimal": 9.02820682551984e-07,
+      "orders": 100,
+      "rank_mass": 5223,
+      "reference_checkpoint": {
+        "path": "results/S-2/v1/replication-references/task-0000.json",
+        "sha256": "5ce0f3da1643479cf53e45ca1b21c8b779399e1c482c300b2cfbb8c30a1c9720"
+      },
+      "reference_component_count": 190,
+      "reference_integer_surrogate_certified": true,
+      "reference_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "reference_true_optimum_profile_proved": false,
+      "rigorously_worse_maximal": 100,
+      "seed": 29063,
+      "terminal_profiles": [
+        {
+          "count": 100,
+          "profile": {
+            "1": 2610,
+            "2": 628,
+            "3": 249,
+            "4": 104,
+            "5": 26,
+            "8": 8
+          }
+        }
+      ],
+      "unresolved_deltas": 0,
+      "unresolved_terminal_deltas": 0,
+      "word": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+    }
+  ],
+  "s6": [
+    {
+      "intervals": {
+        "binding_intervals": 0,
+        "minimum_certificates": [
+          {
+            "demand": 3332,
+            "neighbourhood_capacity": 21504,
+            "slack": 18172,
+            "start": 665,
+            "stop": 665
+          }
+        ],
+        "minimum_slack": 18172,
+        "n_intervals": 222111,
+        "violating_intervals": 0
+      },
+      "jitter_control": {
+        "central_99_interval": [
+          2044,
+          32508
+        ],
+        "empirical_p": 0.5547226386806596,
+        "infeasible_flows": 1,
+        "mean": 18258.646,
+        "missing_cells_hist": {
+          "0": 1999,
+          "1540": 1
+        },
+        "n": 2000,
+        "planned": 2000,
+        "sd": 6373.3079761364115
+      },
+      "promotion_evidence_scope": "These are whole-call (4,8)->9 hosting relaxations, not a one-role width increase in a binding interval. Several lose kappa while the count of rank-1 idle children decreases. They do not verify the S-6 forced-rank-1 prediction.",
+      "real_flow": {
+        "capacity": 3580416,
+        "demand": 2219112,
+        "edges": 208200,
+        "feasible": true,
+        "flow_value": 2219112,
+        "mincut": {
+          "call_demand": 0,
+          "capacity": 2219112,
+          "source_side_calls": [],
+          "source_side_window_indices": [],
+          "verified": true,
+          "window_capacity": 0
+        },
+        "missing_cells": 0,
+        "nodes": 2000,
+        "scope": "divisible-cell capacity relaxation; family and indivisible-width constraints dropped"
+      },
+      "receipt": {
+        "path": "results/S-6/v1/seed-11031/RESULT.json",
+        "sha256": "6a09102b610b3c08783f8131607a0f4aeb05b42384b3a4f4ffac57568edeecde"
+      },
+      "seed": 11031,
+      "width_increase_rank1_prediction_supported": false
+    },
+    {
+      "intervals": {
+        "binding_intervals": 0,
+        "minimum_certificates": [
+          {
+            "demand": 3332,
+            "neighbourhood_capacity": 21504,
+            "slack": 18172,
+            "start": 665,
+            "stop": 665
+          }
+        ],
+        "minimum_slack": 18172,
+        "n_intervals": 222111,
+        "violating_intervals": 0
+      },
+      "jitter_control": {
+        "central_99_interval": [
+          2044,
+          34300
+        ],
+        "empirical_p": 0.5687156421789106,
+        "infeasible_flows": 4,
+        "mean": 18019.036,
+        "missing_cells_hist": {
+          "0": 1996,
+          "1540": 2,
+          "3332": 2
+        },
+        "n": 2000,
+        "planned": 2000,
+        "sd": 6378.774918015528
+      },
+      "promotion_evidence_scope": "These are whole-call (4,8)->9 hosting relaxations, not a one-role width increase in a binding interval. Several lose kappa while the count of rank-1 idle children decreases. They do not verify the S-6 forced-rank-1 prediction.",
+      "real_flow": {
+        "capacity": 3580416,
+        "demand": 2219112,
+        "edges": 208200,
+        "feasible": true,
+        "flow_value": 2219112,
+        "mincut": {
+          "call_demand": 0,
+          "capacity": 2219112,
+          "source_side_calls": [],
+          "source_side_window_indices": [],
+          "verified": true,
+          "window_capacity": 0
+        },
+        "missing_cells": 0,
+        "nodes": 2000,
+        "scope": "divisible-cell capacity relaxation; family and indivisible-width constraints dropped"
+      },
+      "receipt": {
+        "path": "results/S-6/v1/seed-29063/RESULT.json",
+        "sha256": "44f0f9f5876d01e9c483e882c503b55da8542430666e1a486fc531a93682a602"
+      },
+      "seed": 29063,
+      "width_increase_rank1_prediction_supported": false
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Independent receipt/checkpoint accounting and rational-cost recomputation with the approved pinned cost engines. No solver, frame dynamics, fill randomization, or new experiment was run.",
+  "source_attribution": {
+    "1672-extra-word-566-554.json.gz": {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "1672-gauge44-word-566-554.json.gz": {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz": {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz": {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    }
+  },
+  "source_pins": {
+    "path": "data/words/PINS.json",
+    "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+  },
+  "status": "VERIFIED"
+}

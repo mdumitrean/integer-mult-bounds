@@ -1,0 +1,211 @@
+{
+  "status": "DRAFT_FOR_COORDINATOR_PREREGISTRATION_NOT_AUTHORIZATION_TO_RUN",
+  "milestone": "M2",
+  "schema_version": 1,
+  "sources": [
+    "PLAN.md sections4.1,4.2,6,7,8",
+    "RUNBOOK.md sections3,4",
+    "EXPERIMENTS.json",
+    "planning/C-sandpile/REPORT.md"
+  ],
+  "seeds": [
+    11031,
+    29063
+  ],
+  "data_gate": {
+    "held_out_forbidden_until_M4": [
+      "#2833",
+      "#2853"
+    ],
+    "retain_attribution": "Every result retains data/words/PINS.json attribution and hashes of fill/plan/template sources.",
+    "approved_code_only": "Data are read with python -I -B; no fetched PR content is imported or executed."
+  },
+  "incoming_lane": {
+    "S1": "EXPLORATORY per coordinator",
+    "S6": "Confirmed NULL on both seeds per coordinator; no zero-slack binding intervals.",
+    "consecutive_scientific_nulls": 1,
+    "technical_failures_are_not_nulls": true
+  },
+  "order": [
+    {
+      "step": "M2-AUDIT",
+      "description": "Recheck P3 literal role/time/family/offset/prefix/profile parity on all three held fills; sink-DAG audit; retain P1 exact per-chain conservation receipts on at least three held words."
+    },
+    {
+      "step": "S-2",
+      "description": "Primary #2802 base and extra; optional predeclared family-local #2751 base replication only if primary work and registered CPU budget permit."
+    },
+    {
+      "step": "S-4",
+      "condition": "Run only if the sandpile lane remains open under PLAN section6.",
+      "description": "Independent pilot versus initial local-walk slope on each held fill."
+    },
+    {
+      "step": "S-5",
+      "condition": "Run only if the sandpile lane remains open and its registered budget permits.",
+      "description": "Exact assignment confluence on ten specified helper-width perturbations; valid-word utility remains unresolved without authentic changed local words."
+    }
+  ],
+  "audit": {
+    "fills": [
+      "2802",
+      "2751",
+      "1672"
+    ],
+    "exact_rules": [
+      "one role per (call,helper)",
+      "exact role-width inventory",
+      "eligibility start < call <= stop",
+      "per-call family uniqueness",
+      "valid offsets",
+      "no overlap",
+      "compact occupied prefix",
+      "rank-mass conservation",
+      "literal full-profile parity"
+    ],
+    "primary_2802_idle": {
+      "1": 17316,
+      "3": 6594,
+      "5": 9878,
+      "32": 1,
+      "48": 26558
+    },
+    "inherited_1672_metadata": "Audit the original provider-profile/fill parity separately from the held-word overlay. A documented provider-profile mismatch does not itself mean roles or literal fill rules are inexact.",
+    "dag": "call(time,0) -> window(stop,1), ordered lexicographically; all eligibility arcs increase this order.",
+    "group_burning_identity": "Remain dropped: no intrinsic Laplacian or toppling operator is supplied.",
+    "api": {
+      "parent": "fill.prepare(...); loaded once before fork",
+      "task": "sandpile.fill_task({'experiment':'M2-AUDIT','index':i})"
+    }
+  },
+  "S2": {
+    "primary_words": [
+      "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+    ],
+    "preregistered_replication_word": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+    "replication_scope": "BORROW-WORD family-local only; optional third word does not change the two primary-word criteria.",
+    "endpoint": "0.001717794984118634663827",
+    "orders_per_word_per_seed": 100,
+    "start": "Upper-bound labeling U of the exact FrameSampler graph.",
+    "order_protocol": "At each sweep shuffle mutable gates; at a gate choose uniformly among legal proper subspaces nested below its current frame whose exact rational cost-delta upper bound is negative. Finish after a full sweep makes no move.",
+    "randomness": "SHA256 of experiment, seed, immutable word identifiers, and order index. Batching and worker scheduling cannot change an order stream.",
+    "sign_certificate": "Evaluate a rational lower and upper bound for EVERY legal nonzero profile delta. An interval straddling zero is unresolved. Any unresolved sign blocks a positive verdict; unresolved signs at the terminal block maximality certification.",
+    "reference": "One exact toolkit integer-surrogate solve plus rational true-minimum interval per word, outside all random-order loops; add unchanged centre descents consistently.",
+    "original_bar": ">=95 of 100 terminal profiles equal the certified reference profile, separately for each primary word and each seed.",
+    "status_rules": {
+      "reference_agreement_subtest": "PASS iff at least95/100 profiles equal the certified integer-surrogate profile; otherwise NULL for this profile-agreement subtest only.",
+      "overall_PASS": "Requires original bar, resolved true-cost signs and maximality, and an independently established true-optimum reference profile. A nonzero true-minimum interval alone does not establish the last obligation.",
+      "overall_NULL": ">5/100 individually certified maximal terminals have true-cost lower bounds strictly greater than a feasible reference upper bound, falsifying the >=95/100 true-optimum bar. Unresolved signs in other orders remain reported and do not invalidate those individual counterexamples.",
+      "overall_EXPLORATORY": "Includes surrogate-reference agreement without a true-optimum-profile certificate, unresolved local signs, or unresolved terminal comparisons.",
+      "incomplete": "ERROR/TIMEOUT or EXPLORATORY with exact completed IDs; never reduce the denominator."
+    },
+    "potential": "Sum of mutable frame dimensions strictly decreases and is integer-bounded below. This proves termination only; it does not prove confluence or abelianity.",
+    "budgets": {
+      "total_cpu_seconds": 1800,
+      "solver_call_max_seconds": 600,
+      "order_task_wall_seconds": 600,
+      "replication": "Only after both primary words' two-seed work, from the same remaining registered budget; if unavailable, report skipped/TIMEOUT rather than claim three-word replication."
+    },
+    "api": {
+      "parent_load": "sandpile.prepare_s2(paths,endpoint)",
+      "one_reference_task": "sandpile.optimum_task({'index':i,'endpoint':endpoint,'timeout':600})",
+      "parent_install": "sandpile.install_optimum(i,reference_result)",
+      "order_task": "sandpile.confluence_batch_task({'index':i,'seed':s,'start_order':j,'order_count':1})",
+      "summary": "sandpile.summarize_confluence(pool_outputs,index=i,seed=s)",
+      "checkpoint": "Prefer one order per pool task; grouping is allowed only before launch and must not alter seeds. Exactly unique order IDs0..99 are required."
+    }
+  },
+  "S4": {
+    "fills": [
+      "2751",
+      "2802",
+      "1672"
+    ],
+    "attempts_per_seed_per_fill": 300000,
+    "pilot_attempts": 10000,
+    "pilot": "Independent random stream, proposals evaluated at the unchanged literal fill.",
+    "initial_checkpoint_attempts": 1000,
+    "later_checkpoints_attempts": [
+      3000,
+      10000,
+      30000,
+      100000,
+      300000
+    ],
+    "transition": "Choose a role uniformly, release it, try up to60 random eligible-window/port destinations; accept only capacity- and family-feasible destinations; otherwise restore. Track attempted and changed moves separately.",
+    "prediction": "Mean pilot split/merge moment delta at the literal root, divided by the negative full-profile moment derivative.",
+    "original_bars": [
+      "Initial observed root-decay slope within10% of the independent prediction on EVERY held fill.",
+      "Original clumping >=0.75 on EVERY held fill.",
+      "Both independent seeds reproduce the decision."
+    ],
+    "zero_prediction": "EXPLORATORY because relative error is undefined; serialize null rather than Infinity.",
+    "final_check": "Rebuild compact offsets and independently audit every literal fill rule.",
+    "inherited_1672_scope": "Use the explicitly identified held-word local-profile overlay at unchanged helper widths; keep inherited provider metadata visible.",
+    "budget_total_cpu_seconds": 360,
+    "api": "sandpile.fill_task({'experiment':'S-4','index':i,'seed':s,'moves':300000,'pilot':10000,'initial_checkpoint':1000})"
+  },
+  "S5": {
+    "original_scope": "#2802 helper-width perturbations, 8->9 or9->8 on one helper label in every call.",
+    "perturbation_selection": "Five lowest helper-role labels whose width is8 in every call, then five lowest labels whose width is9 in every call; selection is fixed before outcomes.",
+    "orders_per_perturbation_per_seed": 100,
+    "repair_rule": "Start from the original owner assignments with the changed width. Choose overflowing bins in random order and their roles in random order; push one chosen role into a uniformly sampled eligible destination satisfying capacity and per-call family uniqueness. Use64 rejection samples then exhaustive uniform-reservoir fallback. If all overflowing bins and roles lack a destination, record locally stuck; do not infer global infeasibility.",
+    "termination": "Every successful move strictly lowers total positive integer overflow; no move creates a newly overflowing destination.",
+    "primary_bar": ">=95/100 feasible terminals have the same exact canonical role assignment, separately for every perturbation and seed.",
+    "terminal_identity": "Canonical sorted (time,helper,owner,child,port,offset) records; offsets are rebuilt in (time,helper) order. Profile equality is secondary and cannot replace exact assignment equality.",
+    "original_utility_bar": "Repair within1e-8 kappa of the exact rehost on>=90% of perturbations, i.e.>=9/10.",
+    "sufficient_utility_certificate": "Prespecify>=90/100 rigorously close orders as a sufficient condition for a perturbation;>=9/10 such perturbations suffices. Failure of this stronger certificate is EXPLORATORY, never a false utility NULL.",
+    "reference": "One rationally certified bin-pattern LP ceiling per distinct width-inventory/local-profile relaxation, shared across the five identical inventory changes in each direction; no solver inside order loops. A feasible terminal root lower bound within1e-8 of a valid relaxation ceiling suffices without an exact primal rehost.",
+    "missing_valid_word_profile": "No authentic changed local word/profile is supplied for these width edits. Add/remove one rank-1 local child per affected call solely as an explicit counterfactual mass closure. Full-profile root brackets under this closure are diagnostic, and original width-edit utility remains EXPLORATORY.",
+    "ledger": "Signed width-mass change equals signed local paid-rank-mass change; idle mass changes oppositely; global rank mass is preserved. Retain source attribution and label the closure in every perturbation.",
+    "status_rules": {
+      "primary_failure": "A complete100-order perturbation with fewer than95 identical feasible assignments fails the primary. Main family NULL requires the registered complete family as implemented.",
+      "primary_pass_missing_utility": "EXPLORATORY with primary PASS; no invented valid-word or kappa claim.",
+      "unresolved_reference": "EXPLORATORY utility; never infer failure from a loose relaxation."
+    },
+    "optional_secondary_placement_control": "Implemented separately as prepare_placement_control; not included in the primary family and must be independently preregistered before running. It preserves widths/local profile and cannot answer width-edit utility.",
+    "budgets": {
+      "total_cpu_seconds": 1200,
+      "reference_solver_seconds": 60,
+      "order_task_wall_seconds": 600
+    },
+    "api": {
+      "parent": "sandpile.prepare_s5() -> ten starts and distinct reference indices; heavy fill loaded once.",
+      "reference": "sandpile.repair_reference_task({'index':i,'timeout':60})",
+      "install": "sandpile.install_repair_reference(reference_result,index=i)",
+      "order": "sandpile.repair_batch_task({'index':i,'seed':s,'start_order':j,'order_count':1})",
+      "summary": "sandpile.summarize_repair(pool_outputs,seed=s)"
+    }
+  },
+  "execution": {
+    "only_parallel_launcher": "research/styles-r11/pipeline/pool.py",
+    "workers": "min(120,floor(RAM_GiB/4));8 cores reserved",
+    "rss_cap_gib": {
+      "frame_tasks": 4,
+      "fill_tasks": 6
+    },
+    "parent_loading": "Load word graphs or large fill/plan/template objects once in the parent; run separate pool parents if simultaneous inherited objects exceed projection.",
+    "memory_projection": "Write projected peak and per-worker working set before every launch; abort unsafe projections.",
+    "checkpoint": "RESULT.json per run, pool receipt per task, exact sample IDs, reference receipt, script SHA256, source blobs, wall/CPU/RSS accounting.",
+    "solver_bound": "No solver call exceeds600s; all reference solvers are outside permutation/order loops.",
+    "budget": "Coordinator enforces CPU budgets from checkpointed task receipts; an incomplete prescribed family yields TIMEOUT with no denominator reduction or significance claim.",
+    "decisions": "A decision stands only when the second seed reproduces it; update EXPERIMENTS.json."
+  },
+  "stop_rules": {
+    "inexact_fill": "If actual role/rule conservation or literal idle parity fails, the sandpile mapping is heuristic and only one heuristic experiment is allowed; group/burning items remain dropped.",
+    "two_nulls": "Two consecutive preregistered scientific NULL experiments stop the sandpile lane. With incoming S6 NULL, confirmed S2 NULL stops S4 and S5. If S2 is non-null but S4 becomes a second consecutive NULL under the recorded sequence, stop before S5.",
+    "not_null": "ERROR, TIMEOUT, EXPLORATORY, metadata provenance caveats, and prerequisite bookkeeping are not scientific NULLs.",
+    "not_a_skip_reason": "Missing implementation is not a scientific stop rule; S5 source is supplied.",
+    "whole_plan": "Hard stop at the end of week2 from coordinator kick-off; deliver protocol-specific nulls and unresolved items."
+  },
+  "pattern_criteria": {
+    "all_five_required": true,
+    "replication": "At least3 words including both families, or explicitly family-local with at least3 words of that family.",
+    "matched_null": "Sandpile invariant outside the central99% of the matched null on each word.",
+    "prediction": "Falsifiable exact check within1 core-hour.",
+    "held_out": "Pass a word not used to find the pattern, opened only at M4.",
+    "noncircular": "Move under an N2 sample; functions only of local profile, rank mass, or width inventory are restatements.",
+    "finite_order_tests": "S2/S5 sample counts are protocol bars, not n>=2000 permutation significance tests. No p/q value or pattern claim is manufactured from100 orders."
+  }
+}

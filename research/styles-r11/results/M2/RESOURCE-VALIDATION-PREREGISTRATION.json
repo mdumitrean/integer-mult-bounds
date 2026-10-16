@@ -1,0 +1,19 @@
+{
+  "M2_preregistration_sha256": "612b1d6b7abdf3048d3ebf6977599da821dfc12db3b192de1f52ff0301cc7510",
+  "family": "Exact live CPU-budget enforcement",
+  "milestone": "M2",
+  "pass_bar": "Both seeds raise PoolCpuBudgetExceeded before any 30-CPU-second task completes; measured parent plus reaped child CPU stays <=15 seconds. All stopped tasks remain uncompleted; no retry.",
+  "pool_cpu_budget_seconds": 15,
+  "reason": "M2 family CPU cap must include unfinished tasks, not only checkpointed task totals. This enforces the existing preregistered budget and changes no test distribution or decision bar.",
+  "registered_utc": "2026-10-16T05:00:56.980482+00:00",
+  "rss_gib": 4,
+  "scientific_status": "Infrastructure verification only; no scientific NULL, hypothesis, p or q.",
+  "seeds": [
+    11031,
+    29063
+  ],
+  "task_target_cpu_seconds": 30,
+  "task_wall_timeout_seconds": 60,
+  "tasks": 8,
+  "workers": "pool.worker_count() = min(120,floor(RAM_GiB/4))"
+}

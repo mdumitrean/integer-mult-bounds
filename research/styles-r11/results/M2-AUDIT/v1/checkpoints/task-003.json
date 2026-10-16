@@ -1,0 +1,189 @@
+{
+  "cpu_seconds": 0.673750673,
+  "peak_rss_bytes": 465235968,
+  "result": {
+    "decision": "Literal conservation and sink DAG exact; intrinsic Laplacian absent.",
+    "n_permutations": 0,
+    "statistics": {
+      "dag": {
+        "acyclic": true,
+        "arcs": 206202,
+        "empty_eligibility_windows": 0,
+        "group_identity_burning": "DROPPED: no intrinsic Laplacian or toppling rule",
+        "intrinsic_laplacian": false,
+        "sink_windows": 1332,
+        "topological_order": "lexicographic (call-time,0), (window-stop,1)",
+        "vertices": 1998
+      },
+      "literal": {
+        "all_literal_rules_verified": true,
+        "attributions": [
+          {
+            "author": "Tekalign (tekuuu)",
+            "bytes": 72468,
+            "format": "BORROW-WORD",
+            "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+            "kappa": "0.001717141586348426338109",
+            "local_profile": {
+              "1": 2366,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "pr": 2751,
+            "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "Tekalign (tekuuu)",
+            "bytes": 72468,
+            "format": "BORROW-WORD",
+            "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+            "kappa": "0.001717141586348426338109",
+            "local_profile": {
+              "1": 2366,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "pr": 2751,
+            "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          }
+        ],
+        "bins": 149184,
+        "calls": 666,
+        "clumping": 0.804764586014586,
+        "fill": "2751",
+        "helpers_per_call": [
+          415
+        ],
+        "idle": {
+          "1": 17316,
+          "3": 6594,
+          "5": 5216,
+          "32": 1,
+          "48": 26558
+        },
+        "idle_cells": 1337994,
+        "kappa_diagnostic": 0.0017171415863484023,
+        "occupancy_by_capacity": {
+          "8": {
+            "8": 49728
+          },
+          "16": {
+            "16": 33152
+          },
+          "32": {
+            "0": 1,
+            "27": 5216,
+            "31": 17316,
+            "32": 10619
+          },
+          "48": {
+            "0": 26558,
+            "45": 6594
+          }
+        },
+        "profile": {
+          "1": 1593072,
+          "2": 430236,
+          "3": 204396,
+          "4": 79920,
+          "5": 22532,
+          "8": 5328,
+          "32": 1,
+          "48": 26558
+        },
+        "rank_mass": 4816512,
+        "roles": 276390,
+        "roles_per_occupied_bin": {
+          "1": 49728,
+          "2": 33152,
+          "3": 5216,
+          "4": 27935,
+          "5": 6594
+        },
+        "source_notes": {
+          "pinned_word_provider_profile_parity": {
+            "extra": true,
+            "gauge44": true
+          },
+          "pinned_word_provider_width_parity": true,
+          "provider_profile_source": "pinned package providers"
+        },
+        "sources": [
+          {
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PLAN.json.gz",
+            "sha256": "afb3c5c8134fc2cfce0b50a21758490c225574994b2c3c5161e53e2355acc6fa"
+          },
+          {
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz",
+            "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e"
+          },
+          {
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/ORDER.json",
+            "sha256": "129e791d5b45c279443ff9e1edef5ac33d5abc51717ecbae8265abea5c247ae7"
+          },
+          {
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/DISPATCH.json.gz",
+            "sha256": "14fe756dcac93a0f3b2b7f38ba7b998dec89d56d5171b691af4fae45e5d83d11"
+          },
+          {
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PROVIDERS2751.json",
+            "sha256": "ec4802a33c0e1d41369da77b19b9b783dc812b2d3246e096fee13d29f226dd66"
+          },
+          {
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/FILL2751.json.gz",
+            "sha256": "9ce94578640b4927cb9c73244692b1f79ac2999179d309f6bf0c015c06f7a2f1"
+          },
+          {
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/evidence/PR2751-CLAIM.json",
+            "sha256": "78e99222196fca8b74a895b9e2db40a0e4afd1d69cd4fb52f38bfb157bac2438"
+          },
+          {
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a"
+          },
+          {
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+            "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127"
+          }
+        ],
+        "total_cells": 3580416,
+        "used_cells": 2242422,
+        "window_sha256": "d301aa0d102381aecc3dd746c424d55ea6f4ade9f87b833c8db6d643e205c846",
+        "windows": 1332
+      }
+    },
+    "status": "PASS"
+  },
+  "seconds": 0.6737611647695303,
+  "spec": {
+    "experiment": "M2-AUDIT",
+    "index": 1,
+    "initial_checkpoint": 1000,
+    "moves": 300000,
+    "pilot": 10000,
+    "seed": 29063
+  },
+  "status": "OK"
+}

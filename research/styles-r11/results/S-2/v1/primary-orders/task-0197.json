@@ -1,0 +1,71 @@
+{
+  "cpu_seconds": 0.195709896,
+  "peak_rss_bytes": 120532992,
+  "result": {
+    "decision": "Batch computed; scientific decision requires all 100 prescribed orders.",
+    "index": 0,
+    "order_count": 1,
+    "orders": [
+      {
+        "accepted_lowerings": 165,
+        "assignment_sha256": "2471533930f1e2d5c476676f13420728d1b8129172270b44cdf1ccbcb8d39ea6",
+        "dimension_potential_final": 4506,
+        "dimension_potential_initial": 4672,
+        "dimension_potential_lower_bound": 3614,
+        "order": 49,
+        "order_seed": "120919550951730155043406510998104596738",
+        "profile": {
+          "1": 2610,
+          "2": 642,
+          "3": 228,
+          "4": 104,
+          "5": 26,
+          "8": 8
+        },
+        "sweeps": 6,
+        "terminal_maximality_verified": true,
+        "unresolved_examples": [],
+        "unresolved_legal_deltas": 0,
+        "unresolved_terminal_deltas": 0
+      }
+    ],
+    "seed": 29063,
+    "start_order": 49,
+    "status": "PASS",
+    "word": {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    }
+  },
+  "seconds": 0.19571100641041994,
+  "spec": {
+    "index": 0,
+    "order_count": 1,
+    "seed": 29063,
+    "start_order": 49
+  },
+  "status": "OK"
+}
