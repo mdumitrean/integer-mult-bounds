@@ -439,7 +439,7 @@ For the user:
 ## Appendix B. Prior art (from memory; verify before circulation)
 
 L-systems and growth: Rozenberg-Salomaa 1980 (The Mathematical Theory of L Systems; growth matrices, Perron-Frobenius); Salomaa-Soittola
-1978; Prusinkiewicz-Lindenmayer 1990 (parametric L-systems); Parikh 1966; Cobham 1972 (morphic => automatic); Akra-Bazzi 1998
+1978; Prusinkiewicz-Lindenmayer 1990 (parametric L-systems); Parikh 1966; Cobham 1972 (uniform morphic iff automatic; corrected during execution, see results/PRIOR-ART.md); Akra-Bazzi 1998
 (characteristic equation sum a_i b_i^p = 1); Crump-Mode-Jagers / Bellman-Harris branching (Malthusian parameter). Grammar-based
 compression: Nevill-Manning-Witten 1997 (Sequitur); Larsson-Moffat 2000 (Re-Pair); Lempel-Ziv 1976 and Kaspar-Schuster 1987 (LZ76);
 Kieffer-Yang 2000; Charikar et al. 2005 (smallest grammar NP-hard); Lohrey 2012 (SLP survey). Programs and instruction streams: Larus 1999
@@ -463,3 +463,24 @@ motif census, lags), `measures.py` (LZ76, LZ78, Re-Pair, block entropies, lag-ma
 `ground_fill.py`, `ground_fill_walk.py`, `ground_bipartite.py`, `ground_ceiling.py` (+ `.out.json`). Lane D: `REPORT.md`,
 `DATA-INVENTORY.md`, `CONTROLS.md`, `SKELETON.md`, `inventory_scan.py`, `fill_scan.py`, `fill_bins.py`, `string_cost.py`,
 `word_timing.py` (+ `.out`).
+
+## 11. Execution results — 2026-10-16
+
+This section records the completed finite evaluation; it does not change the binding controls or stop rules in section 6. The authoritative detailed report is [results/RESULTS.md](results/RESULTS.md), with immutable per-attempt receipts, preregistrations, amendments and source attributions. The delivered registry has 23 completed entries, including explicit not-run entries after stops, and 62 preserved RESULT receipts. No finding satisfies all five pattern criteria and no construction improvement is claimed here.
+
+| Milestone | Recorded outcome |
+|---|---|
+| M0 pipeline/bookkeeping | Smoke PASS; canonical parity for all 21 frozen PINS files; exact acceleration controls and completed null calibration. Literal fill identities pass, with unresolved #1672 provider/held-word binding. L6 accuracy/order audit passes; L7 and S1 retain early lineage obligations; L2 and S6 are protocol-specific NULLs. |
+| M1 strings | L1 fixed capped-RePair search is NULL on all 84 enrolled triples. L2 then L1 are consecutive confirmed Lane A NULLs, so the continuation screen and L3/L4/L5/N4 are not run. No compression-screen NULL is inferred from the stop. |
+| M2 exactness | Literal conservation and eligibility DAG pass. No intrinsic Laplacian was established. S2 strict greedy lowering misses the reference in all 600 orders, reaching one worse terminal per word. S6 then S2 stop Lane C; S4/S5 and its S3 continuation remain unrun. |
+| M3 growth | L8 rational class certificates pass after two preserved corrections; #2802 upper 0.001717795812 is tighter than the certified packing comparator. L9 broad constructive census remains exploratory. L10 composition conjunction is NULL; L11 identical local profiles and the optional conditional local-cost calibration pass. Proper named local guard-order replay passes; the two early compound derivations remain unresolved. |
+| M4 held-out | Three bookkeeping predictions frozen before either fetch pass both seeds. Fixed-lambda errors are 0.293338% for #2802→#2833 and 0.053990% for #2833→#2853. Both held-out packages retain one dispatched profile and change local profile/width inventory. M4 is EXPLORATORY as preregistered because no eligible non-circular pattern entered it. |
+| M5/M6 | Four language artifacts per original pinned word, detailed results, prediction outcomes, pipeline code, completed registry, source/compute inventory and hand-back prepared for coordinator review. |
+
+The held-out heads match the planning pins exactly: #2833 `e9307b48d7d1b690939935ecef0f8e524e6d92f4` (Jeremy Kothe / jeremykothe2) and #2853 `d01045dfb67428679618027dff552f1d032fa999` (Philippe Van Velzen / philippeVV). Their content was read as inert data under isolated Python. Current fill order/dispatch, provider words and geometry were bound explicitly; fetched admission/native/outer proof code was never executed. A first M4 adapter error concerning two rank-zero terminal children is preserved, followed by a frozen exact schema correction and the successful second attempt.
+
+Execution corrects several planning interpretations. The integral rank-48 ceiling uses one residual-rank child; the many-rank-1 remainder recipe is not a universal bound. Ascending helper width excludes fixed centre-descents; the L8 envelope and L10 composition control preserve those actual payments separately. The named local guard-order failures are inadmissible prefixes, not differing values for the same algebraic Parikh sum. S2 provides a greedy-optimality failure without sampled order dependence. Stage/profile bookkeeping does not by itself establish persistent recursive child types. The bibliography's general morphic-to-automatic parenthetical has been narrowed to uniform morphic sequences; [citation verification](results/PRIOR-ART.md) remains explicitly partial.
+
+The conditional local full-moment score has maximum relative error 0.024346% on 152 primary records, with cached dot medians 1.694/1.793 μs versus 37.385/37.327 ms for the registered uncached conditional-root evaluation. Coefficient and derivative setup costs are separate. Raw Φ fails the sign check for nonzero local mass. These observations motivate a complete-profile screening census, not global candidate pricing or an end-to-end performance claim.
+
+Measured experiment CPU is 8.429936397 core-hours; the L8 certificate review adds 7.273402129 seconds. Unmetered orchestration/review and missing aborted-worker CPU are excluded explicitly. Early failed runs and budget overshoot remain visible. All proposed levers and remaining proof/data obligations are in [results/HANDBACK.md](results/HANDBACK.md); outward posting waits for the coordinator.
