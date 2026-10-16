@@ -1,0 +1,95 @@
+{
+  "authority": "User 2026-10-16: so 48*1.5 < 256GB.......... we have cores. This revises fixed 4-GiB admission reservation to measured reservations; maximum120 workers/eight reserved cores and4/6-GiB per-worker caps remain.",
+  "base_commit": "cea924dca8ce1743801a9f5fab15480aa65c5898",
+  "decision": {
+    "pattern_criteria": "Not applicable to resource benchmark; no p/q, pattern or scientific null declared. Existing PLAN stopping rules unchanged.",
+    "performance": "Prefer120 for this coarse synthetic workload only when61/120 elapsed ratio >=1.15 for each seed; otherwise EXPLORATORY. No universal speedup claim.",
+    "resource_admission": "PASS only if all cells finish without resource errors and identical numerical outputs; confirmed with second seed"
+  },
+  "experiment": "RESOURCE-SCALING-13",
+  "families": [
+    {
+      "id": "policy-safety",
+      "seeds": "Not applicable: deterministic resource failure controls; independent benchmark seeds below.",
+      "tests": "17 prewritten mocked safety tests in pinned check_policy.py; all must pass before launch"
+    },
+    {
+      "id": "scaling",
+      "tests": "480 identical fixed-work tasks per seed at61 and120 workers, counterbalanced ordering. Each task10000 squared-loss gradient steps. Tiny independent scalar reference; exact numerical output equality across schedules. No duration adaptation."
+    }
+  ],
+  "implementation_pins": {
+    "bytes": 3036,
+    "path": "results/RESOURCE-SCALING-13/IMPLEMENTATION-PINS.json",
+    "sha256": "f18f41d69772213260bbd938caf745f79520cc187e8f558dc17d0f95c7850263"
+  },
+  "protocol": {
+    "cols": 32,
+    "cpu_budget_per_run": 12000,
+    "data_seed": 130073,
+    "estimate_rss": 1.5,
+    "iterations": 10000,
+    "maxtasksperchild": 50,
+    "minimum_speedup_each_seed": 1.15,
+    "ridge": 0.01,
+    "rows": 32768,
+    "rss_gib": 4,
+    "seeds": [
+      73001,
+      146003
+    ],
+    "step_size": 0.04,
+    "tasks": 480,
+    "timeout": 180,
+    "tiny_cols": 4,
+    "tiny_iterations": 7,
+    "tiny_rows": 16,
+    "tiny_tolerance": 1e-12,
+    "worker_orders": {
+      "146003": [
+        120,
+        61
+      ],
+      "73001": [
+        61,
+        120
+      ]
+    },
+    "workers": [
+      61,
+      120
+    ]
+  },
+  "registered_utc": "2026-10-16T23:55:25.667623+00:00",
+  "resource_policy": {
+    "estimate_evidence": {
+      "bytes": 6385,
+      "path": "results/CONTINUATION-12/planning/RESOURCE-INTERPRETATION.json",
+      "sha256": "838370770caeea3502dd27eb106b29e749978595c724478ebf7434be783b3d89"
+    },
+    "estimate_scope": "Conservative historical ML RSS envelope1.4847GiB; this fixed workload uses only8.65MB shared synthetic arrays and small private vectors. No large fill import. Live guards retained.",
+    "headroom_gib": 16,
+    "live_memory_poll_seconds": 0.5,
+    "max_results_growth_bytes": 150000,
+    "max_total_cpu_seconds": 48000,
+    "max_workers": 120,
+    "no_retry": true,
+    "original_pool_unchanged": true,
+    "parallel_entrypoint": "pipeline/pool.py via hash-pinned explicit resource policy adapter",
+    "per_task_timeout_seconds": 180,
+    "reservation_factor": 1.2,
+    "solver_calls": 0,
+    "worker_estimate_gib": 1.5
+  },
+  "schema_version": 1,
+  "scope": "Infrastructure-only allocation and fixed numerical workload throughput; no new kappa search, statistical pattern or reopening of stopped scientific lanes.",
+  "source_attribution": {
+    "original_pins": {
+      "bytes": 15544,
+      "path": "data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    "scope": "Synthetic features only; no lineage words processed; all21 source credits remain bound by PINS."
+  },
+  "state": "FROZEN"
+}
