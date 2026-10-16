@@ -1,0 +1,41 @@
+{
+  "environment_sha256": "7d3ec720e565ce8461b95b28162f25ffe1b1dfbd7576eab70c0b6ff84fbf792d",
+  "native_receipt_sha256": "b6b139824c9c848b0dbad1675242834d8f642c4448ad8b88bc6b9f8c06be578e",
+  "preparer_sha256": "5089d84d339397dc74c445581174d09d040405d64be02cfa004d4b25e2b867ef",
+  "scope": "Fresh changed base/extra native chains; two unchanged retained native chains and16-stage parent admission explicitly reused by exact full-tree receipts. No owner/controller/outer admission yet.",
+  "seconds": 97.31300000000192,
+  "source_manifest_sha256": "e10893e19f1fdb3fd5d66d4e1199f5cc957e7c006ea32fddeca4b95bffced9a0",
+  "stages": [
+    {
+      "command": [
+        "C:\\src\\mult\\scratch\\GridMax44\\venv312b\\Scripts\\python.exe",
+        "-B",
+        "C:\\src\\mult\\scratch\\GridMax44\\wkW3\\source\\new\\fastnative\\run_native.py",
+        "C:\\src\\mult\\scratch\\GridMax44\\wkW3\\source\\new\\borrow\\words\\BORROW-WORD-43base.json.gz",
+        "C:\\src\\mult\\scratch\\GridMax44\\wkW3\\native\\fresh-base"
+      ],
+      "exit_code": 0,
+      "log_sha256": "c8d7b29a34779e197469afe1bade5f17a6ccbe02dd5b2ed52897e69612a221b9",
+      "name": "fresh-current-base",
+      "result_sha256": "34d9e0924a6d368af2e94ea2758f59125f34f8dfd325284f923ef683f006f021",
+      "script_sha256": "a7bfe110fe5098f6ef8bde3c43ecf15e8d1e06149abf7321a4c945383dcc2627",
+      "seconds": 96.89100000000326
+    },
+    {
+      "command": [
+        "C:\\src\\mult\\scratch\\GridMax44\\venv312b\\Scripts\\python.exe",
+        "-B",
+        "C:\\src\\mult\\scratch\\GridMax44\\wkW3\\source\\new\\fastnative\\run_native.py",
+        "C:\\src\\mult\\scratch\\GridMax44\\wkW3\\source\\new\\borrow\\words\\BORROW-WORD-43extra.json.gz",
+        "C:\\src\\mult\\scratch\\GridMax44\\wkW3\\native\\fresh-extra"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3e55bdfc7b4b24d7294606e09a1ae3992e06f27cd1186be778622f150f14610",
+      "name": "fresh-current-extra",
+      "result_sha256": "32d4228bed574b75db9571180247d08274aa0a1c74aba05f662a8b05104e2968",
+      "script_sha256": "a7bfe110fe5098f6ef8bde3c43ecf15e8d1e06149abf7321a4c945383dcc2627",
+      "seconds": 96.90600000000268
+    }
+  ],
+  "status": "PASS_TWO_FRESH_SHARED_KERNEL_NATIVE_CHAINS_AUTHENTICATED_PARENT_REUSE"
+}

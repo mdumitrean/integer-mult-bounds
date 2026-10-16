@@ -1,0 +1,111 @@
+{
+  "domain": {
+    "messages": "Use annihilator constraints and emit every newly generated nonzero vector once, not onlybasisvectors. Compare actualstate+totalemittedmultiset.",
+    "negative_controls": [
+      "cap0 at first nonzerofloor rejects",
+      "equalrankdifferentorientation yields differentdimensionloss under samecap (rankprojection obstruction only)",
+      "DAG v\u2192w,v\u2192sink,w\u2192sink has reducedmatrix[[2,0],[-1,1]],det2; acyclicity does not imply trivialcriticalgroup"
+    ],
+    "real": "Both2957providers plus2802base. First64 mutable vertices in nodeorder with L<U; lexfirst domain of rank max(dimL,dimU-1); alternate C/D sets. FixedcurrentupperU.",
+    "schedules": [
+      "forward",
+      "reverse",
+      "seeded"
+    ],
+    "toy": "All16 F2^3 subspaces; all66 nested two-vertex floorpairs; all32 onevertex caps and1024 orderedpairs (67584cases). Startfull/full. Compare compositionbothorders and direct greatest feasible labeling includingfloorinfeasibility."
+  },
+  "execution": "Implementation hashes frozen separately before execution. Each attempt immutable; distinct secondseed mandatory; seed affects schedule only, not eligibility/tiebreaks. Fresh unused private pycache prefix, Python-I-B, assertionsenabled. Fetched programs inert only.",
+  "experiment": "T1-CAP-CLOSURE",
+  "hard_stop_utc": "2026-10-16T15:27:38+00:00",
+  "hypothesis": "On a fixed feasible frame-inclusion DAG, greatest feasible labels under fixed caps compose commutatively and idempotently. This is feasibility closure, not costoptimization.",
+  "inputs": {
+    "acquisition": {
+      "path": "data/continuation-03/checkpoint/pr2957/ACQUISITION.json",
+      "path_base": "package",
+      "sha256": "5391655aa7a0d0b43222302263add6a04568c7641379d3908d82561a2e5136ac"
+    },
+    "base": {
+      "path": "data/continuation-03/checkpoint/pr2957/package/rewrite/FINAL-WORD-base.json.gz",
+      "path_base": "package",
+      "sha256": "752d064500dbf42e791d5b4eaed13c37a567ffd1fd6a20bd2633a9cf7deba16f"
+    },
+    "claim": {
+      "path": "data/continuation-03/checkpoint/pr2957/package/CLAIM.json",
+      "path_base": "package",
+      "sha256": "a93e6c9e94bc9bf5664b5e23506dda9647fad1930e1eede66d5ba9f3718b598a"
+    },
+    "extra": {
+      "path": "data/continuation-03/checkpoint/pr2957/package/rewrite/FINAL-WORD-extra.json.gz",
+      "path_base": "package",
+      "sha256": "6aaf2843e35f577f003487593061b446b77a48b87b67bfd78da10301c5ec36d2"
+    },
+    "guidance": {
+      "path": "data/continuation-03/guidance/PINS.json",
+      "path_base": "package",
+      "sha256": "092475b354bfdbfd6a6ded4a1d15dee764df6994b458993abd3434cd76666b8b"
+    },
+    "manifest": {
+      "path": "data/continuation-03/checkpoint/pr2957/package/MANIFEST.json",
+      "path_base": "package",
+      "sha256": "9cd226a2bf7391e7fbf4a23741bb1934afafbd596aef06f2999a935cd6e44e28"
+    },
+    "original": {
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "path_base": "repository",
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66"
+    },
+    "original_pins": {
+      "path": "data/words/PINS.json",
+      "path_base": "package",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    "overlap": {
+      "path": "data/continuation-03/checkpoint/OVERLAP-REVIEW.json",
+      "path_base": "package",
+      "sha256": "17a18d76654f0999a76dedccb3bda2a24044ed70ffb0f88ba2518371b1eadb1d"
+    },
+    "rewrites": {
+      "path": "data/continuation-03/checkpoint/pr2957/package/rewrite/REWRITES.json",
+      "path_base": "package",
+      "sha256": "4606e169e5af85a2187d0aeeb8ffca01634cfadf4ed8a16b881d1394e09c55d4"
+    }
+  },
+  "milestone": "CONTINUATION-03/T1",
+  "null_bar": "A failed equation is falsification/error with witness, never evidence of \u03baimpossibility.",
+  "pass_bar": "All exact toy/real state equations and independent message receipts agree under both seeds; negativecontrolsreject. PASS scoped closure implementation, no \u03ba conclusion.",
+  "pattern_criteria": "Original five PLAN6 criteria remain mandatory for a pattern claim. Exact finite identity/implementation controls are not statistical patterns. No intrinsic physical Laplacian or kappa claim from these tests.",
+  "registered_utc": "2026-10-16T14:45:19.150407+00:00",
+  "resources": {
+    "concurrent_pools": false,
+    "cpu_budget_seconds_family": 3600,
+    "expected_workers": 61,
+    "fill_worker_rss_gib": 6,
+    "new_artifact_bytes_cap": 150000000,
+    "parent_load_once": true,
+    "per_task_timeout_seconds": 300,
+    "per_worker_rss_gib": 4,
+    "pool": "research/styles-r11/pipeline/pool.py",
+    "reserved_cores": 8,
+    "result_bytes_cap": 500000000,
+    "round_cpu_budget_seconds": 14400,
+    "workers": "min(120,floor(RAM_GiB/4))"
+  },
+  "round": "CONTINUATION-03",
+  "schema_version": 1,
+  "science_launch_cutoff_utc": "2026-10-16T15:12:38+00:00",
+  "seeds": [
+    14051,
+    33073
+  ],
+  "source_attribution": {
+    "baseline_status": "Reported conditional claim; stored native receipts are not fresh independent replay.",
+    "current_author": "Jeremy Kothe (jeremykothe2)",
+    "current_commit": "b74b25f3ccc84c16e1a801d73b2f47e5ea764c78",
+    "current_pr": 2957,
+    "identity_precedent": "Elementary Steinberg transvections; Dugongue PR548 guarded3-to2 prior use.",
+    "inherited": "Every result must retain every data/words/PINS.json credit, plus full2957 source manifest/notices.",
+    "metadata_caveat": "CLAIM.scope and inheritedREADME retain stale2930/2917 prose; exactFINAL-WORD bytes control."
+  },
+  "state": "FROZEN",
+  "stops": "Original PLAN section6 string/sandpile stops remain. This successor changes the scalar graph and tests a proved cap-closure law, not the old greedy optimality or generic string protocols. No automatic broader family pivot. Technicalfailure/timeout/unresolved exactsign is incomplete, neverNULL."
+}

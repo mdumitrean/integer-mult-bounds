@@ -1,0 +1,818 @@
+{
+  "author": "Jeremy Kothe (jeremykothe2)",
+  "author_login": "jeremykothe2",
+  "caveat": "The OUTER-CLAIM location in the PR body may refer to a reproduction output; acquisition records only exact committed files. Stored author claims/receipts are not a local admission replay.",
+  "credits": "Retain CREDITS.md, NOTICE, SOURCES.json and all predecessor credits; package acquisition does not endorse its scientific claims.",
+  "files": [
+    {
+      "bytes": 1739,
+      "git_blob": "cff1a70ed800d732e39f9b9b968f81662930d8e6",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/CLAIM.json",
+      "path": "CLAIM.json",
+      "sha256": "a93e6c9e94bc9bf5664b5e23506dda9647fad1930e1eede66d5ba9f3718b598a",
+      "source_path": "research/paired-extension-cap-fill-swaps/CLAIM.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 8517,
+      "git_blob": "5f1bb00f6ac8b193585e034ec7c6368cefcc88b2",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/MANIFEST.json",
+      "path": "MANIFEST.json",
+      "sha256": "9cd226a2bf7391e7fbf4a23741bb1934afafbd596aef06f2999a935cd6e44e28",
+      "source_path": "research/paired-extension-cap-fill-swaps/MANIFEST.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 11749,
+      "git_blob": "def225c35524f72e9f40938ac6d4ff892e093af1",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/README.md",
+      "path": "README.md",
+      "sha256": "82925d2b7de5d5f78e848ae4f61939fc2ee74ed44e88616b71badc35c7ccd6df",
+      "source_path": "research/paired-extension-cap-fill-swaps/README.md",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 109,
+      "git_blob": "e1d75a2b2de7631c953139dcaec6cecb7a1cb469",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/.gitattributes",
+      "path": ".gitattributes",
+      "sha256": "056f4f66161e333f3a8d4c20de323ca05599a7deac1aa02d47ba6f6b96335573",
+      "source_path": "research/paired-extension-cap-fill-swaps/.gitattributes",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 1238,
+      "git_blob": "7a293f717c36faca0c97cf0ec10740d802ce8c7c",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/ALLOCATION-PINS.json",
+      "path": "ALLOCATION-PINS.json",
+      "sha256": "060f23437a37b3f3d589b2ac2a82330a6029f5887edbb66b505630236a0ac9ad",
+      "source_path": "research/paired-extension-cap-fill-swaps/ALLOCATION-PINS.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 1884,
+      "git_blob": "3f9e8c8870039c41b74fc9ed09ddaec33acea077",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/CREDITS.md",
+      "path": "CREDITS.md",
+      "sha256": "935c0bbd28081e834bb8be51ea3cf07a50920d2563cb0f0619c663e76bd2f794",
+      "source_path": "research/paired-extension-cap-fill-swaps/CREDITS.md",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 1203,
+      "git_blob": "af55b97e91a6d1f5c5678c90eda57e5b88b4f5b5",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/NOTICE",
+      "path": "NOTICE",
+      "sha256": "efe81e972dedee779c7241d7ae2cead22725658aa3464b454ac2081c5c7293e3",
+      "source_path": "research/paired-extension-cap-fill-swaps/NOTICE",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 757,
+      "git_blob": "40287b822427055e250d88d145d6f070ae000c88",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/PINS.json",
+      "path": "PINS.json",
+      "sha256": "e8572a413719715c6537e20238955d2926d5a5659435baadd5d5eee13526f0c5",
+      "source_path": "research/paired-extension-cap-fill-swaps/PINS.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 2571,
+      "git_blob": "209593229c87b1be40bca5bf13318c6c660b3088",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/RELEASE.json",
+      "path": "RELEASE.json",
+      "sha256": "0c931757a070fb6a936d24438961b43ff9c1b9457db06013e4ca59a6128131d9",
+      "source_path": "research/paired-extension-cap-fill-swaps/RELEASE.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 99,
+      "git_blob": "7772d72d60d3ecb9f6d97b385f32ee0b0f4af46a",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/REWRITE-PINS.json",
+      "path": "REWRITE-PINS.json",
+      "sha256": "a21600cb42a976e5bb4d9e20b52ee0d9256dba937b1e0954803beb22d1f9944a",
+      "source_path": "research/paired-extension-cap-fill-swaps/REWRITE-PINS.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 8817,
+      "git_blob": "3bdc4f8aa2f3898b2b2bb699e3d89f49a4c491de",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/SOURCES.json",
+      "path": "SOURCES.json",
+      "sha256": "40decf367d6ff91bdfbac32545f0ff5536f1aa25c1ff5dea90cf0d9f65b2e5c7",
+      "source_path": "research/paired-extension-cap-fill-swaps/SOURCES.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 5784,
+      "git_blob": "afc75f7f70298ee2375a308a127ea2d1f6ec08d1",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/TASK.json",
+      "path": "TASK.json",
+      "sha256": "1b0c80c3f3255c2ed2336f3cfe5e8061bc08975bb195c100157a0e84a54da12b",
+      "source_path": "research/paired-extension-cap-fill-swaps/TASK.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 911,
+      "git_blob": "6bbc54fff90159a45ed4fde0193fd1ac25aa49e1",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/VERIFY.json",
+      "path": "VERIFY.json",
+      "sha256": "4fafdf99d05974d08bc20d9e5500f4742d8253ca2da6758d0563e55aa117b22b",
+      "source_path": "research/paired-extension-cap-fill-swaps/VERIFY.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 10401,
+      "git_blob": "9544fee4e6ee1f202cee22bfaeaf229ee3b2515e",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/DISPATCH.json",
+      "path": "allocation/DISPATCH.json",
+      "sha256": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/DISPATCH.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 1323836,
+      "git_blob": "7e19c68553cde11f43385bda726738084aaeedc8",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/FILL.json.gz",
+      "path": "allocation/FILL.json.gz",
+      "sha256": "e045aa613f8fba06d81313f5e1c2cbec9ee94552163b8d1eb9205bf2fa7f2285",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/FILL.json.gz",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed",
+      "uncompressed_sha256": "1fbe4f21276218671d65a14d3b1ed22cc1f6050deb2a5b26c35f897a03b122ba"
+    },
+    {
+      "bytes": 4573,
+      "git_blob": "7409c4df1092241729739596c7648bda504e6aad",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/ORDER.json",
+      "path": "allocation/ORDER.json",
+      "sha256": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/ORDER.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 75,
+      "git_blob": "e5cddebef19bbd57c7f6b71e7f7001a1ab1ca5cb",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/PROFILE.json",
+      "path": "allocation/PROFILE.json",
+      "sha256": "3022f1ddc7a4069b1d30884ea918e29b4fc5bc68388647ce456437de05225ec1",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/PROFILE.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 1817,
+      "git_blob": "7956907c615e65fa5f3ceec17b5c87a4850f54a7",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/PROVIDERS.json",
+      "path": "allocation/PROVIDERS.json",
+      "sha256": "0f75dfe362e4ca4b7ad3072621eb0c62205acf1073be83378386df2f21161779",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/PROVIDERS.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 3447,
+      "git_blob": "1e9e932dd184d9d2e5908285b860db2c15e0db6b",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/SEARCH.json",
+      "path": "allocation/SEARCH.json",
+      "sha256": "9ac59657d263ab7181503020aaae2dad4d73412eb62846b4c6992aebd8891987",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/SEARCH.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 1743,
+      "git_blob": "50cc0eeeba13e48f64127544fcb17fe16bd99c30",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/baseline/CLAIM.json",
+      "path": "allocation/baseline/CLAIM.json",
+      "sha256": "e6c836c0178661a53a69cd91f29d83585e876f2511ff40c6b6204cd270fbdeac",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/baseline/CLAIM.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 4573,
+      "git_blob": "7409c4df1092241729739596c7648bda504e6aad",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/baseline/ORDER.json",
+      "path": "allocation/baseline/ORDER.json",
+      "sha256": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/baseline/ORDER.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 151,
+      "git_blob": "a3c711f5c3c8b69b44324c1d3b4ec4454dae3570",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/baseline/PROFILE.json",
+      "path": "allocation/baseline/PROFILE.json",
+      "sha256": "07ee0cfe8d88073de9b75cd3262a98f4ac428b1bdd3922b5a077dbf3436be00c",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/baseline/PROFILE.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 29933,
+      "git_blob": "7a1db55a4d53ee99280be4f3ab7d29f7b2033adf",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/vendor/PLAN.json.gz",
+      "path": "allocation/vendor/PLAN.json.gz",
+      "sha256": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/vendor/PLAN.json.gz",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed",
+      "uncompressed_sha256": "163431bf8d3bc0d9b894994b1a3cfa7947367b2243b3c0b3a97d740195a1cb08"
+    },
+    {
+      "bytes": 1124331,
+      "git_blob": "114808c32b1799da53524bdc25cea67efb60009e",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/vendor/TEMPLATE.json.gz",
+      "path": "allocation/vendor/TEMPLATE.json.gz",
+      "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/vendor/TEMPLATE.json.gz",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed",
+      "uncompressed_sha256": "514e59314c8e2fa3c22d0a48083816f6686211090835e8f8775318c1c3e992d8"
+    },
+    {
+      "bytes": 10057,
+      "git_blob": "16013201b19054f7e45398ecf10af74c9c6a9114",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/allocation/vendor/independent_owners.py.txt",
+      "path": "allocation/vendor/independent_owners.py",
+      "sha256": "77a848729159e271ba64f403dfd59dddb13044b17b2950fa56700f442e2fe461",
+      "source_path": "research/paired-extension-cap-fill-swaps/allocation/vendor/independent_owners.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 1568,
+      "git_blob": "dbdba6c6d85c4dac48b376015c78bcc1c1441edc",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/certificates/RELAX-CAP.json",
+      "path": "certificates/RELAX-CAP.json",
+      "sha256": "518ba849ece61bf191d161aa3e61c0f1229c4fda6f8171f8eca5761bc0fc1644",
+      "source_path": "research/paired-extension-cap-fill-swaps/certificates/RELAX-CAP.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 6481,
+      "git_blob": "0fdf0b4908c209b30ed26c518f26e046c6976926",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/check_allocation.py.txt",
+      "path": "check_allocation.py",
+      "sha256": "6da84061b959badc621aafc38e3ec0cfdd46e3af0cd557199d79dbe94472654d",
+      "source_path": "research/paired-extension-cap-fill-swaps/check_allocation.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 4688,
+      "git_blob": "c1569e8ebce2274f7cf7689c907a06c15d64a3ac",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/check_cap.py.txt",
+      "path": "check_cap.py",
+      "sha256": "19e0502c8f7618f0dc88566f4eac425fa9772c9e75d6109375064685ab4f1ae0",
+      "source_path": "research/paired-extension-cap-fill-swaps/check_cap.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 12176,
+      "git_blob": "4f61d6da2fa6a0d12851dbde68b6930dad577a6a",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/construction/T37-FLOW.json.gz",
+      "path": "construction/T37-FLOW.json.gz",
+      "sha256": "3ff02610ba7bc1e9fc4e141bc9c9233bfa11c0887908529b6fd46d3cf8be956f",
+      "source_path": "research/paired-extension-cap-fill-swaps/construction/T37-FLOW.json.gz",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed",
+      "uncompressed_sha256": "323db7ee215a49477813593250b2519851b4c7d10545ad5bf760e12f0f9fda4c"
+    },
+    {
+      "bytes": 230,
+      "git_blob": "1f5dfa6783559da47076d559f3fece385cd5de7a",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/construction/T37-MODEL.json",
+      "path": "construction/T37-MODEL.json",
+      "sha256": "db012cdd24470ce5ce7f9ecde44cb849f55e017b58d93914ab2af2a55c0d7308",
+      "source_path": "research/paired-extension-cap-fill-swaps/construction/T37-MODEL.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 1355,
+      "git_blob": "cd4b0b3ecff8396b595ee16942424f35bfc28f63",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/construction/T37-PATTERNS.json",
+      "path": "construction/T37-PATTERNS.json",
+      "sha256": "d420d228a051974ee79b3e09e9a2294e085fd1b8c6683977f4675c163569d938",
+      "source_path": "research/paired-extension-cap-fill-swaps/construction/T37-PATTERNS.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 309,
+      "git_blob": "38938d4a67a97e72b1891fb2986ffe2bf24be8a0",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/construction/T37-SOLVER.json",
+      "path": "construction/T37-SOLVER.json",
+      "sha256": "e02af4643322b4b4e1dde4a0049fd8899a40e77d6c5bb17ea90d74c7086be119",
+      "source_path": "research/paired-extension-cap-fill-swaps/construction/T37-SOLVER.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 5635,
+      "git_blob": "08ee9f46532b7975d01cad467c5fd25405e493ff",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/construction/controls.py.txt",
+      "path": "construction/controls.py",
+      "sha256": "4f07c315bc66821695fdb3ea92a245a663f3026a9e2c596b7eccffbaed14ab2a",
+      "source_path": "research/paired-extension-cap-fill-swaps/construction/controls.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 4045,
+      "git_blob": "7bb063b3461dc8fed0a0361cda406f74623532d8",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/construction/double.py.txt",
+      "path": "construction/double.py",
+      "sha256": "426462c181333b3b56ddeab4b21d0523a2d52874033dbb2a3546ba9990fe15cd",
+      "source_path": "research/paired-extension-cap-fill-swaps/construction/double.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 30375,
+      "git_blob": "01775cdaff2e96374782b342689bc6afe9ca0444",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/construction/fill17.py.txt",
+      "path": "construction/fill17.py",
+      "sha256": "ecd49f72a6f42969c4157c5c51370f66cf09db3f82d74b2e852383eeff77b58c",
+      "source_path": "research/paired-extension-cap-fill-swaps/construction/fill17.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 69818,
+      "git_blob": "9be0aa5349dbc8c928a46089a7695e224d0e4d16",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/data/WORD-base.json.gz",
+      "path": "data/WORD-base.json.gz",
+      "sha256": "fec3c120db1a35022944628d34b56a36f2456248c274c2eaba1a325cdc690ce8",
+      "source_path": "research/paired-extension-cap-fill-swaps/data/WORD-base.json.gz",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed",
+      "uncompressed_sha256": "a602bc8494a336e8fbc9fac5e22d71e7394e86ca762f92083496c8ba448f5d94"
+    },
+    {
+      "bytes": 69814,
+      "git_blob": "40b38365ea4b841101405ebd2c4fdcadcb8b9808",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/data/WORD-extra.json.gz",
+      "path": "data/WORD-extra.json.gz",
+      "sha256": "e4d0c617df85bf8a824ff68310ca3373dc017c1ebf9ea733056a3ee4a784b36f",
+      "source_path": "research/paired-extension-cap-fill-swaps/data/WORD-extra.json.gz",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed",
+      "uncompressed_sha256": "a3aeb900e97822b1aaf39a0c274b2dc5ec840f5d1f0e5cf14aae19b9d32ad39b"
+    },
+    {
+      "bytes": 6131,
+      "git_blob": "cd3fd2d74c318a6ccf286e03e06a4458f3f0525e",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/ADAPTER-DERIVATION.json",
+      "path": "evidence/ADAPTER-DERIVATION.json",
+      "sha256": "0b62906dcdf07b90b9251d36d2dc0b8601dec4ea8e308d2b61653e571236f155",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/ADAPTER-DERIVATION.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 21856,
+      "git_blob": "60aafe68cdc558a582ee5e253890d526d1cc9d10",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/ADMISSION-RESULT.json",
+      "path": "evidence/ADMISSION-RESULT.json",
+      "sha256": "ade00dc0eadee7f7da3660fbe6e1c46310aefaa1d508d78fc3105aa39597043c",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/ADMISSION-RESULT.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 4663,
+      "git_blob": "9e92e6ba450097b23391f71a88a839e77911739f",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/ADMISSION-STAGES.json",
+      "path": "evidence/ADMISSION-STAGES.json",
+      "sha256": "edf54148670c3e4a11920766d9c67457e18cc36d977f53e706702ecd4c700e54",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/ADMISSION-STAGES.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 306,
+      "git_blob": "a30abb30271e3086c7c56c1905154525526493bf",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/ENVIRONMENT.json",
+      "path": "evidence/ENVIRONMENT.json",
+      "sha256": "7d3ec720e565ce8461b95b28162f25ffe1b1dfbd7576eab70c0b6ff84fbf792d",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/ENVIRONMENT.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 13784,
+      "git_blob": "433724820fbb7661b2fd43bd82917b4ce3c86e3d",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/FULL-NATIVE-RECEIPT.json",
+      "path": "evidence/FULL-NATIVE-RECEIPT.json",
+      "sha256": "b6b139824c9c848b0dbad1675242834d8f642c4448ad8b88bc6b9f8c06be578e",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/FULL-NATIVE-RECEIPT.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 2245,
+      "git_blob": "23bcd75a82a3ae4e8a299c3dcec4f11e39e660c1",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/FULL-NATIVE-RESULT.json",
+      "path": "evidence/FULL-NATIVE-RESULT.json",
+      "sha256": "7d7a6919b1e797e61a5144e9ee004cff40a178fc5719cae429c4fef186669557",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/FULL-NATIVE-RESULT.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 1872,
+      "git_blob": "0db249dd0ed4443c863f1c92aad8399518eea702",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/FULL-REPLAY-STAGES.json",
+      "path": "evidence/FULL-REPLAY-STAGES.json",
+      "sha256": "43efa3251e729f6507ec83c1f69482f13230797683644d031004ca1fa68f4547",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/FULL-REPLAY-STAGES.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 1154,
+      "git_blob": "070bae46ef4670971cd6c9b546eb72b623c14809",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/README.md",
+      "path": "evidence/README.md",
+      "sha256": "df1c82475b5222f35093ceaa9b76e7ca030b792b362e4e7855ff1f8b0e16f93e",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/README.md",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 2241,
+      "git_blob": "f1317563ac185c3334b74e7b3e1ac791493b2080",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/RELEASE-RECEIPT.json",
+      "path": "evidence/RELEASE-RECEIPT.json",
+      "sha256": "67cfa2eedab8db985dce07fe074c782599e4425fc8106ed1155bfe7aa789a53f",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/RELEASE-RECEIPT.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 3801,
+      "git_blob": "aa8ff68dd3b88c52ca50746080139c9ebcdb0237",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/REWRITE-REVIEW.json",
+      "path": "evidence/REWRITE-REVIEW.json",
+      "sha256": "c70dd6ac2b66b63a3380884c803e1fca2563545796c717f7095be7b592f17c7f",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/REWRITE-REVIEW.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 13158,
+      "git_blob": "61121806a2718e5c713c270d6681885ab97276e6",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/RUNTIME-PATCHES.json",
+      "path": "evidence/RUNTIME-PATCHES.json",
+      "sha256": "d5a2dfa12278b1e74f02af9534d13fca78310b9ae522589e02600d4e43f4aec9",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/RUNTIME-PATCHES.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 2651,
+      "git_blob": "e2494bfbd0bd5390cacbdb905424faf22d9c80ce",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/SOURCE-DERIVATION.json",
+      "path": "evidence/SOURCE-DERIVATION.json",
+      "sha256": "2e48e0564442c2a4a363402ea95fd47e9ad10caebe6e087cd0a35b4ade13edbb",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/SOURCE-DERIVATION.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 2705,
+      "git_blob": "b5d68cd21c30a495cdec2881ac1940b29ea58348",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/FULL-REPLAY-RESULT.json",
+      "path": "evidence/pr2930/FULL-REPLAY-RESULT.json",
+      "sha256": "8712530cf2240ab697af45eb28f91c1775894a6cf5ad16f53162091aba431b84",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/FULL-REPLAY-RESULT.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 13708,
+      "git_blob": "1e63b80567fd72d22ec88eded863e09ecdd92917",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/RETAINED-BOOTSTRAP-RECEIPT.json",
+      "path": "evidence/pr2930/RETAINED-BOOTSTRAP-RECEIPT.json",
+      "sha256": "eec93526dafc5d6fb8f6b4318efb57b15209b7a31bbd670d470b1a65de244720",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/RETAINED-BOOTSTRAP-RECEIPT.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 118,
+      "git_blob": "c634a1d121e554af26089bcd0305a8e192deff37",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/admission-discovery.log.txt",
+      "path": "evidence/pr2930/logs/admission-discovery.log.txt",
+      "sha256": "19dec04aaef58a5b7e349eef83a702575d0d747c8a4ab665456dabd9455d7e87",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/admission-discovery.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 263,
+      "git_blob": "7ec3104c8bbf19ec5317276c368d682ac18eeed7",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/admission-outer-check_ledger.py.log.txt",
+      "path": "evidence/pr2930/logs/admission-outer-check_ledger.py.log.txt",
+      "sha256": "4d04f73fa3b7dac96c30f5401ab6afe9e0fe83dc5dde59a9007bac53e67e8af5",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/admission-outer-check_ledger.py.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 3124,
+      "git_blob": "f1277acb7c8708db6ff45d2bef61aed536df122c",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/admission-outer-independent_check.py.log.txt",
+      "path": "evidence/pr2930/logs/admission-outer-independent_check.py.log.txt",
+      "sha256": "91a7ed8a166901a19690f2172ddb1066bd6cf4c692b217bcb620bd4a5a13d990",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/admission-outer-independent_check.py.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 133,
+      "git_blob": "bc065fcfd0aeaa0198505ee3b875d81ce464bf9b",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/admission-owners.log.txt",
+      "path": "evidence/pr2930/logs/admission-owners.log.txt",
+      "sha256": "3cd9ba8872ab07f8f92a91ffbd26832abb91c5e51f14715a95adf318ae5665da",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/admission-owners.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 224,
+      "git_blob": "19dae85e2e4e8355f28c35e4dab926566af41f37",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/admission-parent-lift.log.txt",
+      "path": "evidence/pr2930/logs/admission-parent-lift.log.txt",
+      "sha256": "7b6249a123ca39fae7b7a6339dd9e8ae8777b081f4336418f2cc101704b70644",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/admission-parent-lift.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 339,
+      "git_blob": "0c0067ef21bc6dd91338d0ea048d1c768de36384",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/admission-rebind.log.txt",
+      "path": "evidence/pr2930/logs/admission-rebind.log.txt",
+      "sha256": "4503a92b598c31af5d39cfafdc0e4bc97bc8a1194576d632a0690ff17d2479ad",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/admission-rebind.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 235,
+      "git_blob": "39ae74c55e56acda7d167304fd26eb8d9c4bfa22",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/admission-release.log.txt",
+      "path": "evidence/pr2930/logs/admission-release.log.txt",
+      "sha256": "e01086be77ae2169e978708e1f7417f1ea2195ed3fc21579102986f1b2115778",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/admission-release.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 253,
+      "git_blob": "141fd180b1e7ceb897e350a3ad15eb8847d517c1",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/complete-admission.log.txt",
+      "path": "evidence/pr2930/logs/complete-admission.log.txt",
+      "sha256": "9a738eed12d381021f68a5a4221485bbf00e4982d508e5d616631367d9d02672",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/complete-admission.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 255,
+      "git_blob": "771586dca2aa7e3fc38f2454e5bb618db21ba694",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/derive-closed-adapters.log.txt",
+      "path": "evidence/pr2930/logs/derive-closed-adapters.log.txt",
+      "sha256": "d39b2faff6f37fffdd06722fea4b58e065b19b886c0b148d5639ec64dbf18938",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/derive-closed-adapters.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 281,
+      "git_blob": "13902315585c7d38d46e7fa5b4d2d98d9b638735",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/export-pr2833.log.txt",
+      "path": "evidence/pr2930/logs/export-pr2833.log.txt",
+      "sha256": "6727020814b72c6d919999190845a46ffb33f2589ed65c501fcf66142d6f30de",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/export-pr2833.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 38,
+      "git_blob": "2bed900376db47d928ffe64835940c728d3e4094",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/export-pr2894.log.txt",
+      "path": "evidence/pr2930/logs/export-pr2894.log.txt",
+      "sha256": "6bd8df30779863897e48441608240db6a7e3fcbd0754511e44f854f3a5c462a6",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/export-pr2894.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 184,
+      "git_blob": "257be58c74eb0f54ee80f34af65e64e9f201935a",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/four-kernel-stage.log.txt",
+      "path": "evidence/pr2930/logs/four-kernel-stage.log.txt",
+      "sha256": "f2bbb6462b3f5bb8a6415bb33c0c35355353b13343ddb90961660f7473caa5a2",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/four-kernel-stage.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 119,
+      "git_blob": "820460ef57351ee8e921a122c460254594e0c05c",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/fresh-current-native.log.txt",
+      "path": "evidence/pr2930/logs/fresh-current-native.log.txt",
+      "sha256": "d7581123b0f3330f2598e7758ccbca466018d2599124fc6ceb1b678a9ee27dec",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/fresh-current-native.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 146,
+      "git_blob": "9308a84963a6bf0ebcf3e0343c2bc92655d8e3c0",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/fresh-retained-bootstrap.log.txt",
+      "path": "evidence/pr2930/logs/fresh-retained-bootstrap.log.txt",
+      "sha256": "4a1625fdd9a947187583e67492c492f309e28669082f2e6f2aa97b5da345ea29",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/fresh-retained-bootstrap.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 112,
+      "git_blob": "9ca3a425215401648870f3f65397a683c028abfb",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/paired-extension-stage.log.txt",
+      "path": "evidence/pr2930/logs/paired-extension-stage.log.txt",
+      "sha256": "61cc77beeae833d7473b5c5338b176b150f95f6652a888c0307f080674cfde35",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/paired-extension-stage.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 115,
+      "git_blob": "de80347a9094a0741e644d36c1f75487fa664424",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/parent-paired-stage.log.txt",
+      "path": "evidence/pr2930/logs/parent-paired-stage.log.txt",
+      "sha256": "d80d8494c48816e3acf662db00cc0077a888b82392d736826f73beb1c4248299",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/parent-paired-stage.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 185,
+      "git_blob": "4fa79b5e482d644cbe1d2c882dbc3296d367db9b",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/evidence/pr2930/logs/preload-stage.log.txt",
+      "path": "evidence/pr2930/logs/preload-stage.log.txt",
+      "sha256": "2eb7601c48840a39c58eb838886aed00a531349b259f0bbc3ea6421376b8ea3c",
+      "source_path": "research/paired-extension-cap-fill-swaps/evidence/pr2930/logs/preload-stage.log.txt",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 10809,
+      "git_blob": "a24082254c89c1494107fb9fc9ec0340cb831708",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/reproduce.py.txt",
+      "path": "reproduce.py",
+      "sha256": "9956069b1b08eaea7273a639a9cf949ca2c9b1cc042d610e72c526fb416d50d8",
+      "source_path": "research/paired-extension-cap-fill-swaps/reproduce.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 70103,
+      "git_blob": "e1db7b05b0991fad14513619eb20983a20b1a6ff",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/rewrite/FINAL-WORD-base.json.gz",
+      "path": "rewrite/FINAL-WORD-base.json.gz",
+      "sha256": "752d064500dbf42e791d5b4eaed13c37a567ffd1fd6a20bd2633a9cf7deba16f",
+      "source_path": "research/paired-extension-cap-fill-swaps/rewrite/FINAL-WORD-base.json.gz",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed",
+      "uncompressed_sha256": "1799ffd461b57531dad28cb6b5b8d7694d8ae28bf13318d61a2ec49f60a3abfe"
+    },
+    {
+      "bytes": 70100,
+      "git_blob": "aee65595644d378dd1b551c6142e3ea293c9174f",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/rewrite/FINAL-WORD-extra.json.gz",
+      "path": "rewrite/FINAL-WORD-extra.json.gz",
+      "sha256": "6aaf2843e35f577f003487593061b446b77a48b87b67bfd78da10301c5ec36d2",
+      "source_path": "research/paired-extension-cap-fill-swaps/rewrite/FINAL-WORD-extra.json.gz",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed",
+      "uncompressed_sha256": "cfc34719705950f5cb276dd052aa98b2a84d2cc470ea3d5669d2beaa41542624"
+    },
+    {
+      "bytes": 5295,
+      "git_blob": "5d4aa62ea0f4c2aaf22416bce0b8ffd7e03ae361",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/rewrite/REWRITES.json",
+      "path": "rewrite/REWRITES.json",
+      "sha256": "4606e169e5af85a2187d0aeeb8ffca01634cfadf4ed8a16b881d1394e09c55d4",
+      "source_path": "research/paired-extension-cap-fill-swaps/rewrite/REWRITES.json",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 4257,
+      "git_blob": "964fb2a9c773d60b2ac079f2a4b669d13cf56034",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/rewrite/declared_rewrites.py.txt",
+      "path": "rewrite/declared_rewrites.py",
+      "sha256": "2509f1335e47543f8814b42d6bf83032b30c5899b4f7cc62a6adc03f5138ae13",
+      "source_path": "research/paired-extension-cap-fill-swaps/rewrite/declared_rewrites.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 9445,
+      "git_blob": "9537591b64343d4f39f99885be7c66f3ed930b70",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/rewrite/rewrites_review.py.txt",
+      "path": "rewrite/rewrites_review.py",
+      "sha256": "0470939c3d056dc712d188901f47b313f6364e5d91d74b6cf524c64168676ad9",
+      "source_path": "research/paired-extension-cap-fill-swaps/rewrite/rewrites_review.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 4611,
+      "git_blob": "d8892c595c81b2cd7e8ce56afb93a23edccd363a",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/run_registered.py.txt",
+      "path": "run_registered.py",
+      "sha256": "ce9b4db95dd019c03f063943e523e65e981b7f8f0ff1f61c5b45ebff703068f2",
+      "source_path": "research/paired-extension-cap-fill-swaps/run_registered.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 5568,
+      "git_blob": "e6a01a5e3198f5af20f9491ca66ac7177dd39229",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/tools/audit_allocation_moment.py.txt",
+      "path": "tools/audit_allocation_moment.py",
+      "sha256": "1dd0072f377ed2cea986b0aafcdb4175a4ae397d456b2f0d07d704bff7ace7d4",
+      "source_path": "research/paired-extension-cap-fill-swaps/tools/audit_allocation_moment.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 5569,
+      "git_blob": "4ed79a957a72877e30fc213aa4a6066b14f33224",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/tools/build_rewrites.py.txt",
+      "path": "tools/build_rewrites.py",
+      "sha256": "8d38e0f983a1a76f4e8d695b9e008f1f9eff91287c900fab753857e378a57b7a",
+      "source_path": "research/paired-extension-cap-fill-swaps/tools/build_rewrites.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 9018,
+      "git_blob": "9e66ab81724bd5fb9a59044833e84794b9c418ef",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/tools/derive_adapters.py.txt",
+      "path": "tools/derive_adapters.py",
+      "sha256": "631895d159ca25fd11d3665b2ebecb43d46381355d596d87111b021c9a606800",
+      "source_path": "research/paired-extension-cap-fill-swaps/tools/derive_adapters.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 17680,
+      "git_blob": "97dfe35c434283ca6e83818e61aed65740522f50",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/tools/relax.py.txt",
+      "path": "tools/relax.py",
+      "sha256": "0fed1c56b50a2e6d44deeeb6db0f1c7e1f71b86d1747130e1a9202216249a728",
+      "source_path": "research/paired-extension-cap-fill-swaps/tools/relax.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 5397,
+      "git_blob": "0be97756bb9d8b072c962c147d4b4d3b3122f884",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/tools/relax_exact.py.txt",
+      "path": "tools/relax_exact.py",
+      "sha256": "baf1855d6095c951a90d19a0d8094bd33290519940b732e2b758c5647830f044",
+      "source_path": "research/paired-extension-cap-fill-swaps/tools/relax_exact.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 10888,
+      "git_blob": "bd6dc2eb4e5013625d17cc08461b67622bcfed69",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/tools/root.py.txt",
+      "path": "tools/root.py",
+      "sha256": "55f5aca39b5ee2fe4687ac8863e6c24569010f27a332883c069b8e14b8fe09e3",
+      "source_path": "research/paired-extension-cap-fill-swaps/tools/root.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 7243,
+      "git_blob": "55b435035bbc439a9d55e8abd125993208cef8d9",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/vendor/preload_move.py.txt",
+      "path": "vendor/preload_move.py",
+      "sha256": "c8fda4674644fcd5cbf39b6645ce148a21daa90a998b678cbe51f970b78b0044",
+      "source_path": "research/paired-extension-cap-fill-swaps/vendor/preload_move.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 815,
+      "git_blob": "8c2441d39202409ffe1c2cb42f197946f7bfa7c0",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/verify_manifest.py.txt",
+      "path": "verify_manifest.py",
+      "sha256": "723d726dbbe5b65a49caecae0f1aab664a1413fb639abfd3e826a5a538e14e5b",
+      "source_path": "research/paired-extension-cap-fill-swaps/verify_manifest.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    },
+    {
+      "bytes": 11865,
+      "git_blob": "97f585108fe9080ad8ea5092e01445acdae3edb8",
+      "local_path": "data/continuation-03/checkpoint/pr2957/package/verify_release.py.txt",
+      "path": "verify_release.py",
+      "sha256": "491818798923832c19739c61518ad9af4fb88d2ef669cfccbd9ef5f653e1baa0",
+      "source_path": "research/paired-extension-cap-fill-swaps/verify_release.py",
+      "treatment": "Inert bytes; Python sources renamed .py.txt and never imported or executed"
+    }
+  ],
+  "finished_utc": "2026-10-16T14:35:45.826759+00:00",
+  "head": "b74b25f3ccc84c16e1a801d73b2f47e5ea764c78",
+  "manifest_entries_checked": 83,
+  "package_file_count": 84,
+  "pr": 2957,
+  "repository": "CrocSwap/integer-mult-bounds",
+  "schema_version": 1,
+  "scope": "Entire bounded exact-head package as inert data. No fetched producer, checker, auditor, source or generated code was imported or executed. No scientific trial was run.",
+  "script_sha256": "30db4688a30fe3609859cd36289930d630675c5c07fc37e46f0168e8ed048697",
+  "source_package": "research/paired-extension-cap-fill-swaps",
+  "started_utc": "2026-10-16T14:34:58.367079+00:00",
+  "subtree_pins": [
+    {
+      "git_tree": "b0dc9da4a910448093736b92a394495f831b1ab4",
+      "path": "allocation"
+    },
+    {
+      "git_tree": "c3267131025123df38928c18e6fbeb42fca35ce0",
+      "path": "certificates"
+    },
+    {
+      "git_tree": "fde673a629f9db881ae081ceceec4f71b7ddc0aa",
+      "path": "construction"
+    },
+    {
+      "git_tree": "31dc68651d3655852832c8259faa9375764d2437",
+      "path": "data"
+    },
+    {
+      "git_tree": "70ba4cd948a625dd7e7919d77322e596d57b61b0",
+      "path": "evidence"
+    },
+    {
+      "git_tree": "ca90f0cfccc94e5d1f8d09face1f66dd21725d77",
+      "path": "rewrite"
+    },
+    {
+      "git_tree": "c923e8c1d7d910e311d7bcd9a43ef8eb76eee155",
+      "path": "tools"
+    },
+    {
+      "git_tree": "96a0fda9df9c81edda7c847d8102ba7636f646a3",
+      "path": "vendor"
+    }
+  ],
+  "total_bytes": 3111871
+}

@@ -1,0 +1,83 @@
+# Guarded triangle contractions and exact rewrite interactions
+
+Status: source-review proposal, not preregistration or experimental evidence. No candidate census, control, moment, or native replay was run while writing this document. The coordinator must pin the final baseline, procedures, source hashes, budgets and controls before execution.
+
+## Concrete next family
+
+Use Jeremy Kothe’s PR2957 word pair, at `b74b25f3ccc84c16e1a801d73b2f47e5ea764c78`, subject to the coordinator’s final source and overlap checkpoint. Its declared fourteen rewrites comprise retiming, a cut-start read, preload moves, carrier retiming and five commuting swaps with new frames. The proposed changed premise is an exact **noncommuting triangular cancellation**, followed by joint frame closure. It removes an existing correction gate; it is not another permutation census.
+
+For three distinct registers `i,j,k` and nonzero rational coefficients `a,b`, the following are identities in **execution order**, with arbitrary dirty inputs:
+
+```
+A: i += a*j;  j += b*k;  i += (a*b)*k
+   -> j += b*k;  i += a*j
+
+B: j += b*k;  i += a*j;  i += (-a*b)*k
+   -> i += a*j;  j += b*k
+```
+
+For A, both sides end at `j0+b*k0` and `i0+a*j0+a*b*k0`. For B, both sides end at `j0+b*k0` and `i0+a*j0`. Register k is unchanged. The chord `i += c*k` commutes with each of the other two gates when the three registers are distinct, so its placement among an exposed triple is immaterial. These are elementary transvection/Steinberg relations, not a newly claimed algebraic identity. The two orientations avoid confusing matrix-product order with execution order.
+
+The first finite family should enumerate every original three-gate choice in each eligible scalar section whose maximum and minimum original event positions differ by at most 15. Both providers are separate mandatory inputs. Every chosen gate must be a scalar `add`, have an exact nonzero coefficient, and match one of the two identities. Expose the triple only by adjacent swaps with intervening scalar adds that satisfy the exact sufficient commutation test. For `add(t,s)` and `add(u,v)`, this test is `s != u and v != t`. No unsupported operation is silently treated as commuting. Record a complete adjacent-swap witness and retain the other events’ relative order. A complete exposure algorithm for this restricted domain tries every split of the nonselected events inside the triple’s interval into a before-block prefix and an after-block suffix. A prefix event must commute with every selected gate originally before it; a suffix event must commute with every selected gate originally after it. These are exactly the inversion pairs of the stable permutation, so a bubble-swap witness exists when all tests pass. Choose the first legal split deterministically; at most14 splits occur in a16-event window.
+
+Freeze the entry prelude and every cut, section, centre and warp boundary. In particular, B’s separately indexed warp records are barriers even when the plain B array looks contiguous. Do not move an operation into or out of compensation, cleanup, the input prelude, or another section. Candidate identities use original source IDs and exact gate preimages, not mutable array offsets. Exclude zero/self additions and enforce the native coefficient vocabulary; a rational algebraic identity outside that vocabulary is not an admitted production.
+
+The proposed primary census is **single contractions only**. A separate, preregistered secondary construction may apply a canonical maximal set of contractions with disjoint original event intervals and disjoint register supports, then perform one collective frame solve. Such a set has a direct scalar independence proof, but its frame costs still require a joint ledger. Do not add this batch stage after seeing a weak primary result without registering the scope change. No unbounded 2-to-3 expansion or search over arbitrary equivalent circuits belongs to this first family.
+
+## What makes this a word construction
+
+An elementary scalar identity preserves its full enclosing free-operator word when applied inside a scalar interval. It does not establish that an inherited intermediate frame assignment remains legal. First construct the new scalar sequence and dependency graph. Then independently derive its attained forward floors, terminal and boundary requirements, and a feasible canonical frame assignment. Reusing floors from the old order is invalid.
+
+The useful toppling-like subroutine is a precisely scoped closure on this **one fixed new graph**. For finite frame labelings subject to inclusion edges and fixed lower/upper bounds, feasible labelings are closed under pointwise join and meet. Join closure supplies a greatest feasible labeling below specified caps. If `K_C` denotes that operation for caps C, feasible cap sets satisfy `K_C K_D = K_D K_C = K_(C union D)`. This is an order-independent closure result; it does not assert that the resulting labeling minimizes the paid moment. The identity cannot compare closure operators belonging to different scalar words. A violated floor or fixed warp/centre pin must produce an explicit rejected guard.
+
+A bounded implementation may restrict every surviving gate to its inherited upper frame, after exact event matching, and solve the resulting changed graph. Failure then means rejection within that restricted frame domain. It is not proof that every possible frame assignment fails. The source primitive’s fresh geometry must precede closure; calling the old `_refit` with the old geometry after a reorder would be incorrect.
+
+Derive the canonical full local paid profile, helper start/end widths, centre payments and inverse cleanup from the resulting literal word. Verify compensation against the complete word rather than assuming an unchanged target-only map is sufficient. Because the scalar relation is an exact identity, unchanged compensation may be a proved consequence, but the implementation must bind that consequence to the actual whole-word operator. Run the independent forward and inverse-transpose auditor on all 632 input columns of both providers. PR2960’s saved metadata specifically reports a cleanup omission that passed the forward clean-buffer map and failed inverse-transpose replay; both orientations are essential.
+
+## Rewrite interactions and the Laplacian boundary
+
+A useful state is the complete literal word, canonical frames, dirty-input contract, endpoint inventory and source pin. Its Parikh histogram is an observable, not its identity. An edge exists only when one named production’s current-state guards pass and its exact operation is applied. Whole-section preimage equality is a binding check, not a proof of a production’s mathematical guard.
+
+Two different comparisons must remain separate. For legal orders of two rewrites, the order defect is
+
+`D(R,S;W) = H(R(S(W))) - H(S(R(W)))`.
+
+If either order fails a guard, report that failed guard; do not manufacture a nonzero commutator. Equality of these histograms is weaker than equality of the two words. Separately, when all four independently constructed states exist, the cost-sharing difference is
+
+`J(R,S;W) = H(W_RS) - H(W_R) - H(W_S) + H(W)`.
+
+This mixed difference can be nonzero even when both orders lead to the same word, because a shared frame refit is paid once. It must be computed from actual words and complete invoices. The scalar interval identities above give constructive edges; they do not predict that J has a favorable sign.
+
+The exact finite legal-state graph has an incidence matrix B and combinatorial Laplacian `L = B B^T` if undirected unit-conductance edges are explicitly chosen. That operator is intrinsic to the declared finite rewrite graph. It is **not yet an intrinsic physical toppling Laplacian of the supplier**. Any scalar cost evaluated on vertices has edge differences that are an exact gradient, and hence zero circulation around closed cycles; observing that is tautological, not discovery of a conservation law. A signed matrix of mixed costs is not automatically a Laplacian or positive semidefinite.
+
+A classical abelian toppling interpretation would additionally need fixed state-independent firing columns, nonpositive off-diagonal entries in the chosen convention, a specified conservation/sink law, legality, termination and local confluence. Guarded contractions change the number of scalar gates and the frame graph, so those properties cannot be assumed. The justified connection here is a context-dependent rewrite system plus an abelian frame-closure subroutine. The graph and its critical pairs organize the search; a claimed sandpile law must survive those extra tests.
+
+## What the earlier evidence rules out
+
+The original M3 `GUARD-ORDER-REVIEW.json` records, per seed, fourteen admitted original stages and twelve adjacent swapped pairs. Six pairs were inadmissible before their first swapped commitment; six admitted both orders and produced the same payload; none exhibited two admitted orders with different final payload. Refits before aliases failed literal-frame or entrance guards when reversed. Host-move before alias released lenders401/403 from late B use; reversing this order failed the retired-before-entry guard. These facts support explicit dependency edges. They are not evidence of nonabelian evolution or a universal sandpile model.
+
+CONTINUATION-02 G2 produced48 matched rank-seven addresses,16 ledgers and six paid profiles. Its optimistic coverage caps all passed, but V3’s exact1,163-pattern fixed-inventory relaxation certified every profile’s cap below PR2930. The best upper endpoint was `0.00172202227397498220`, below PR2930’s pinned lower endpoint `0.001722499906443274564357`. This rejects that precise one-helper9-to7 family. It does not reject a mass-neutral scalar-word contraction with unchanged inventory. It also makes a loose coverage bound an unsuitable success gate for this continuation.
+
+PR2942’s saved source metadata gives the same-hyperplane identity `total(U,P) = Delta_end(U union P) + c1*|U\P|`; every complete normal45 rank-four composition touches the same12 registers. Its four extractions and their shared refits are credited to that source. Reordering those four steps is exhausted within its declared cost model. PR2952 separately reports an exhaustive negative single-terminal-shear retiming family, while leaving simultaneous shears and changed surrounding operations outside its boundary.
+
+The refreshed Discussion2612 includes active work composing PR2948 with PR2942, and active work applying PR2957’s retime/swap classes to PR2942’s new41 restore and122 input gates, together with codimension-two paired extraction. The present proposal does not target those added gates or that composition. PR2957 itself already supplies generic commuting swaps and retiming, so another undifferentiated fan-order search would duplicate its premise. The metadata reviewed here does not name the bounded Steinberg3-to2 family; that observation is limited to the saved metadata and is not a global priority guarantee. A final source and overlap checkpoint remains mandatory.
+
+## Full price and decisive tests
+
+A smaller scalar gate count is not a kappa claim. Include every canonical recursive child, centre descent, bridge, compensation operation, inverse cleanup operation, native transport, restored dirty helper and private buffer. The expected intended scope keeps408 helper roles,82 restored endpoints,666 calls and the PR2917/2930 width inventory, with physical stock66804; each quantity must be independently checked, not imposed as an output fact. Any changed width or endpoint leaves this protocol’s source-bound reuse argument.
+
+With fixed widths and unchanged outer order/dispatch, the actual literal owner profile can potentially be reused only after proving all role windows, family exclusions, offsets and physical bounds unchanged. Then the complete profile change is the exact dispatch-weighted sum of the two providers’ local changes, with the original idle profile retained. For a source endpoint k, use the directed rational full moment `sum_r H_r*(r/73)^(1-k)` and criterion66304. Never substitute an uncorrected first-order rank proxy or the obsolete transformation `k = a/(1+a)`.
+
+Use the source’s exact fixed-inventory packing certificate as a necessary ceiling, independently binding the new local profile and actual dispatch. With a source fill that attains this cap, the full literal moment is already decisive for a fixed-inventory candidate. A strict gain requires an exact separating endpoint above the freshest comparator, fresh native chains for both changed words, complete global-prefix/blocknorm/physical invoice, supplier strict gates and two independent modern outer checks. Unchanged endpoint counts alone do not let changed-word native receipts transfer. The inherited all-size/compiler/theorem hypotheses remain explicit.
+
+Preregister positive identities for both orientations with both coefficient signs, plus exact sequential matrix multiplication independent of the production recognizer. Reject wrong chord sign/magnitude, repeated-register cases, noncommuting interveners, a hidden B warp boundary, stale preimages, stale floors, stale cleanup and one omitted paid child. Include the unchanged word and an existing admitted commuting swap as controls where the available baseline supports them. These are semantic controls, not random histograms.
+
+The census must report all raw triples, coefficient matches, exposure successes, guard failures by cause, completed canonical invoices, independent-audit results and exact favorable moments. Fixed second-seed ordering must reproduce the same exhaustive candidate set and scientific decision; seeds change execution order, not eligibility or tie-breaking. A technical timeout or unavailable native adapter is incomplete/exploratory, never a scientific null.
+
+A scientific NULL is limited to the completely enumerated16-event single-contraction domain and registered frame rule if every valid candidate has no exact favorable moment (or its certified cap is below the comparator). Finding a legal contraction without a gain is a rewrite observation, not an improvement. Finding a favorable local/packing profile is a nominee requiring the remaining native and global admission. A broader L-system pattern requires independent guarded occurrences and the original plan’s controls; a repeated histogram alone does not qualify.
+
+## Sources and attribution
+
+Local evidence: `results/M3/GUARD-ORDER-REVIEW.json`, `results/M3/B-MOVES.json`, `results/M3/B-CONE.md`; both seeded G2 and V3 receipts under `results/CONTINUATION-02/`; `data/continuation-03/checkpoint/open-prs.json.gz` and `threads/discussion-2612.json.gz`; the earlier PR2942 body in `data/continuation-02/final-checkpoint/recent-prs.json.gz`. All fetched programs remain inert data. This document derives the displayed elementary identities directly and does not execute any fetched implementation.
+
+Retain Jeremy Kothe/PR2957 and PR2833/2894, Marius-Paul Dumitrean/PR2942/2930 and the retired-helper lineage, Mason Hale/PR2917, Jeremy Diviney/PR2908, Yiyang Lu, Dugongue, Tekalign, icekylinx and the complete source PINS/notices in every ensuing result. The authenticated PR2957 acquisition is `data/continuation-03/checkpoint/pr2957/ACQUISITION.json`, SHA256 `5391655aa7a0d0b43222302263add6a04568c7641379d3908d82561a2e5136ac`. Its exact rewrite specification has SHA256 `4606e169e5af85a2187d0aeeb8ffca01634cfadf4ed8a16b881d1394e09c55d4`; final word bytes are `752d064500dbf42e791d5b4eaed13c37a567ffd1fd6a20bd2633a9cf7deba16f` (base) and `6aaf2843e35f577f003487593061b446b77a48b87b67bfd78da10301c5ec36d2` (extra). The coordinator must bind the comparator claim and all remaining inputs before preregistration. The exact comparator `complex_lower` is `1723717415070738170971/10^24` in `package/CLAIM.json` (SHA256 `a93e6c9e94bc9bf5664b5e23506dda9647fad1930e1eede66d5ba9f3718b598a`). That source’s prose `scope` field still says unchanged PR2917 words, which conflicts with its literal final words and declared rewrite package; treat this as stale metadata, not as our reuse premise. No source author’s native or admission result is represented here as freshly replayed.

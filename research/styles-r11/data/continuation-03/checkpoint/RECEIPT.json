@@ -1,0 +1,3034 @@
+{
+  "canonical_main": "318ba71b8927f81141f41a89c1af74323586f253",
+  "distinct_prs": 2649,
+  "elapsed_seconds": 150.1002913787961,
+  "errors": [],
+  "files": {
+    "closed-prs.json.gz": {
+      "bytes": 3477868,
+      "sha256": "28c59163e023da340179deca875896ad9bec70f89799f26441793690732ac528",
+      "source": {
+        "endpoint": "repos/CrocSwap/integer-mult-bounds/pulls?state=closed&sort=updated&direction=desc",
+        "kind": "REST"
+      },
+      "uncompressed_sha256": "180b1d6c389cdd2f376c16ee9996b297312bd803e150431c2651db885ea3f606"
+    },
+    "discussions.json.gz": {
+      "bytes": 387169,
+      "sha256": "a6c1ef5943b07746bb516684aa1472fd4deba7987476d897ece88854bd5cd4f6",
+      "source": {
+        "kind": "GraphQL",
+        "query": "query($cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussions(first:100,after:$cursor,orderBy:{field:UPDATED_AT,direction:DESC}) {\n            totalCount pageInfo {hasNextPage endCursor}\n            nodes {id number title body url updatedAt createdAt author {login}}\n          }\n        }}"
+      },
+      "uncompressed_sha256": "2a97e7d0cfae5eb23c46a25b874706a2fdc9f3645adc1541800e7ef647ee3d87"
+    },
+    "open-prs.json.gz": {
+      "bytes": 399232,
+      "sha256": "d7b658eaf87476836f4f75ca4b41feebff853cdc6d2c4f0114453ca3859717cc",
+      "source": {
+        "endpoint": "repos/CrocSwap/integer-mult-bounds/pulls?state=open&sort=updated&direction=desc",
+        "kind": "REST"
+      },
+      "uncompressed_sha256": "bcf3cd76d07b23f359da47fe7ac750c03a7115de31c184380abd9d168c2cc083"
+    },
+    "pr-overlap-index.json.gz": {
+      "bytes": 63176,
+      "sha256": "72ade3da2dbc31b90070dca44ca30b7fb1abb9d7cc2e64598f62e15d4dc44bf7",
+      "source": {
+        "kind": "local-inert-text-index",
+        "terms": [
+          "sandpile",
+          "toppling",
+          "laplacian",
+          "l-system",
+          "l system",
+          "lindenmayer",
+          "parikh",
+          "smith normal",
+          "critical group",
+          "odometer",
+          "abelian network",
+          "paired",
+          "packing",
+          "shared-kernel",
+          "shared kernel",
+          "normal45",
+          "normal 45",
+          "joint kernel",
+          "2930",
+          "2942",
+          "2917"
+        ]
+      },
+      "uncompressed_sha256": "10779796a4e50ac1255f19ba87138c6bb9ff68a173d468a7253c69dda36ce2f9"
+    },
+    "selected-discussion-threads.json.gz": {
+      "bytes": 392,
+      "sha256": "758ef32ba916dec714fa1ef0e66e8b689077282825ba2e219ad032ea36c90f65",
+      "source": {
+        "kind": "deterministic-inert-metadata-selection",
+        "required": [
+          1163,
+          1166,
+          1167,
+          2612
+        ],
+        "terms": [
+          "sandpile",
+          "toppling",
+          "laplacian",
+          "l-system",
+          "l system",
+          "lindenmayer",
+          "parikh",
+          "smith normal",
+          "critical group",
+          "odometer",
+          "abelian network",
+          "paired",
+          "packing",
+          "shared-kernel",
+          "shared kernel",
+          "normal45",
+          "normal 45",
+          "joint kernel",
+          "2930",
+          "2942",
+          "2917"
+        ]
+      },
+      "uncompressed_sha256": "28ae2cc7aefa5701a1229d2246b3c2d3b5b0608d47239990d65329081dec1a3f"
+    },
+    "threads/discussion-1163.json.gz": {
+      "bytes": 54214,
+      "sha256": "94473d34c48b05c884caa19673d27c565ed7c0cc6f3ad04453b7e0c1407beaab",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1163,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "ce3d735da1c6fe22410dada71aba382e861d2fafa2e2fe73ea5f6e6a3762b2fa"
+    },
+    "threads/discussion-1166.json.gz": {
+      "bytes": 231589,
+      "sha256": "3225355e4f18d3f92b24f5687a217d1fee0e38e8bb937c0c12a19ec10b44c472",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1166,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "a7062f47de25ede148b36a9d97b8386db0955624f725934c1b58002550795ba2"
+    },
+    "threads/discussion-1167.json.gz": {
+      "bytes": 98114,
+      "sha256": "70e28b73fefa3206c33e7e2a46b0ff75cb69b9a2862682a9c10b60459fbc5c02",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1167,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "3e088fec9d6689b155f9a0e3f94cf498ae271d33296c3b5abf7a8b0b27d6aab4"
+    },
+    "threads/discussion-1265.json.gz": {
+      "bytes": 2044,
+      "sha256": "6a7bdcf76be775a6059248be5352891d3f551187e8b0b168abcdc48e14355bf1",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1265,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "5e6dd9e3982493a1c244284b7bb6d617ac2e2758700ea4108ce82bd8eba48cd8"
+    },
+    "threads/discussion-1269.json.gz": {
+      "bytes": 1659,
+      "sha256": "91375cb2df123aae980ecb54c5b60e679ae06ba97c2de8fe2c83d3f0ea63fa7a",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1269,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "2188ad0a742b7f26d23739d7daf372a05ae232a6165e2ece81b015f85cb5cecf"
+    },
+    "threads/discussion-1328.json.gz": {
+      "bytes": 2432,
+      "sha256": "71797adcd953edc53dab99c7c7f223868d81c64783863e26ab0593ac36cef070",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1328,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "0b22efa578d011d9d7f364ee113dd309dd6f25a9d0bd679ecde3aca5f3f8f6fb"
+    },
+    "threads/discussion-1332.json.gz": {
+      "bytes": 6972,
+      "sha256": "eb4c7156e1b38bf81f310b1d535f4fc6fcfda968ad6be672e86c0827109247ed",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1332,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "61843ed6dcb8bc7ca899c663a4e0d650c6a0377e9150abd12a805258a1210f23"
+    },
+    "threads/discussion-1339.json.gz": {
+      "bytes": 1946,
+      "sha256": "ec1c1a92062b30d33597b1ec5d049a7617138333337d22ab466a95e495e1a292",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1339,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "a44263548eaf7138ed2c8707e5d5a850abbb57449d06c3164d8e02b0d40ca1fb"
+    },
+    "threads/discussion-1360.json.gz": {
+      "bytes": 2397,
+      "sha256": "14ccf7ee5c21c0fc160ff0490f39f60bc9f0be6aa73d588ec199c0d30a011652",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1360,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "29b618d028a01e71464d6339efbd00e15a15aa6008dd0f4a4c58b65566089619"
+    },
+    "threads/discussion-1396.json.gz": {
+      "bytes": 4265,
+      "sha256": "1ad3371a1f20cbd5b19a94e70e4dccf91f0e9afb5ec3e4df3bbff6f1aed2eb8c",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1396,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "28673f202f07b09f43c3842c95d43b5ca7ae720052e15ad7f236fef02ff8dd60"
+    },
+    "threads/discussion-1409.json.gz": {
+      "bytes": 2160,
+      "sha256": "e30c0e2e74359e56c2d382010e48ade5adba937291945bf170c11c2b6b7d5ae7",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1409,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "a55cda074d0d1ad5d7cbfb5a8a66c0bfb927a1610e3d70280439912165d15303"
+    },
+    "threads/discussion-1427.json.gz": {
+      "bytes": 2414,
+      "sha256": "e90304a71299edeea5a5505bd5fab66ab2651d670e8aaa83ef00c753c62e6e23",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1427,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "64e6a7c801293f0a97744c8269dc3d73985afab9011666cddab7786b7084ef0b"
+    },
+    "threads/discussion-1476.json.gz": {
+      "bytes": 3597,
+      "sha256": "0d6759cff63e3dc344d299e7a2ab7e674c10f5d3bbd264214136d77c8ef05e0e",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1476,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "3acdde6487dcfdb28a997dffaee6c18d926b51a46eedc5ecf4d77155e98dcb0a"
+    },
+    "threads/discussion-1492.json.gz": {
+      "bytes": 2286,
+      "sha256": "76c44cac21e63321c232754d2a2347d312ac31b252509c01a17a6065d483343d",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1492,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "2e0e85bdb2bc4af8f3c46a5e0b32f1e8a55c5c87d69d566cb7b937c61fdd3f38"
+    },
+    "threads/discussion-1504.json.gz": {
+      "bytes": 1884,
+      "sha256": "264063b799f8f67dfd80e00477a8089fa39440000e9573d20af6ab043c336cfa",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1504,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "3a2806c1f480363bc798786d3819558e65186c52d4cf33f266eb6445df3cebd2"
+    },
+    "threads/discussion-1516.json.gz": {
+      "bytes": 17668,
+      "sha256": "325e789c0507c04548ded56bd746ddcd592b57a7762223180149c62101cccd62",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1516,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "cb223bbd0752fcfa514a7258cb5328266506467db42b1fc6ab268109585b5f9f"
+    },
+    "threads/discussion-1545.json.gz": {
+      "bytes": 2585,
+      "sha256": "495e1402515de75ec46309f0f167b5f68afd4cc18ccbd6a585be5ce26804b55f",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1545,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "e370ad654b6853263945abc9b6beb8192bb91d9455e6b980ab923d4663fe1adb"
+    },
+    "threads/discussion-1570.json.gz": {
+      "bytes": 3975,
+      "sha256": "48011db5b216db4cf587afd93537254bb66de0baa1144d431c6e6ddd5b7a2413",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1570,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "e029afcb76e833f936da3da59d2d50b7be35fa3f64238ccd2cba62b428a9e743"
+    },
+    "threads/discussion-1593.json.gz": {
+      "bytes": 2401,
+      "sha256": "89ab4faef195a95c52e3e20a62870c83f098685f75ad6464734c87d14d2df0e4",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1593,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "bae72c056c5edebfdba27ba66ac1a0a2e440ee08900f8b0c05e155ef08fad5e3"
+    },
+    "threads/discussion-1596.json.gz": {
+      "bytes": 8973,
+      "sha256": "da7af2e4570fe1dec03d79f504746fd1771def6b023e31e17b69f3d1e03f5104",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1596,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "1f6635af7d906f169cbe5d9c890e1e9e3c0d70f87bf4bd9bf4839eb61699133e"
+    },
+    "threads/discussion-1606.json.gz": {
+      "bytes": 2109,
+      "sha256": "f9dba2990a842c57dfa322fe43a126158b08c7ec36d829b817b695e26ad95e08",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1606,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "bb597a06b8c6c0956f1ac18b05f89f0973e645e16b8ed270c66b17f02e2372b6"
+    },
+    "threads/discussion-1618.json.gz": {
+      "bytes": 2349,
+      "sha256": "c42f129f126aa93da35dc7d6064262568bb6b591cfd850663be790a233fa036c",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1618,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "c71d5a47765ff01f486ebb5eb2d7cd731ca35a2b72b3cf84c3fcb9d8e0acc0b5"
+    },
+    "threads/discussion-1620.json.gz": {
+      "bytes": 2052,
+      "sha256": "7973bed7ef4ea397aeaa36220bbcd701c3ed66a142fd3aec017b7493878644fa",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1620,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "2f6d83c4762518e318a90215d55bf8cf7d0b42e837edcb19f00f7ad23baef4a1"
+    },
+    "threads/discussion-1636.json.gz": {
+      "bytes": 3583,
+      "sha256": "291f31c898665ba6b9a140f230afa406c047f482d45646d4573c63e14851d6c0",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1636,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "8b2d702ba2b175f5cb089b784f6fa54884f3296781518b76553c4b3418afc38b"
+    },
+    "threads/discussion-1645.json.gz": {
+      "bytes": 5345,
+      "sha256": "55f4bb2de64818c22a1f72edf7df9775841b01e82cb8ecaae22ceeb80071627c",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1645,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "0454e332b01e299579850a57ffb8eb35b09e4c37991e0d24168efe9d5a73da53"
+    },
+    "threads/discussion-1653.json.gz": {
+      "bytes": 1776,
+      "sha256": "9ffffe52bfb417dc6cbca4b33a5f5d7f9511dd840040ae5a9983d7e95aa4aadc",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1653,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "a5be9aa9cf83c39d5860d36a0c83c473060aca4f641edf348fdee450feb93559"
+    },
+    "threads/discussion-1659.json.gz": {
+      "bytes": 6987,
+      "sha256": "b69a4cc30d6638e695af62d25a15e5586560e39f0c1e6a23dfd9aa549d17b2a6",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1659,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "25f48d3ff519079392f3e3226418ba549a61ff733cd5261931522227fd8c9d0c"
+    },
+    "threads/discussion-1667.json.gz": {
+      "bytes": 5975,
+      "sha256": "7d63de043f03e0ab21b51e012277f01dc9a420df55fb94d3825e72db94c292b6",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1667,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "9088e5f8c1e5503a63da37c920c43fff1dcbf62dba3d74620f128bd646cc5999"
+    },
+    "threads/discussion-1674.json.gz": {
+      "bytes": 3273,
+      "sha256": "34701f0bbb7c5c94592c246b2cf426808002e3b4c5a182a896fc4e788ee94f6a",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1674,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "bf315e03409c2a719cf9a7c5c9ae9fa704af87962e2b7113133f7a59ebab3b50"
+    },
+    "threads/discussion-1723.json.gz": {
+      "bytes": 2741,
+      "sha256": "308c9db5d0296866b97023bda11b4cafcb4102de7de10ec560e284685219e175",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1723,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "34f591c19c062620ac378a8a35f3d7157acb32712a4d565a87041501ad8ec49c"
+    },
+    "threads/discussion-1728.json.gz": {
+      "bytes": 1718,
+      "sha256": "b2457720de253527261ea08da5ab22c46d42739ab9f2fcba4731c1aafffd40ac",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1728,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "385b0d9af4ace50d574da076d3d3521b415b58b238f9af456d0058d6bdc98cdc"
+    },
+    "threads/discussion-1765.json.gz": {
+      "bytes": 1864,
+      "sha256": "b0f8b86ee41306c957ffabc32678246b8edd988d696dca1d0c58cba0b6f53b6a",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1765,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "55fc8b03c35dd99c156425b33af8476d49cd3b877a7ffcc0dee784fb6acca441"
+    },
+    "threads/discussion-1771.json.gz": {
+      "bytes": 2430,
+      "sha256": "76f17ed0e67e66444af8ecc65f73dcf8ba198c26462bbcbd4cb60bfa97ae5349",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1771,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "1852200a05871058c44c54d7a4f66d1021a539563b9f3a67fceb3bf8c498b10d"
+    },
+    "threads/discussion-1785.json.gz": {
+      "bytes": 3312,
+      "sha256": "726304f2e8252cd322202363f5b7ad27d40a630d6ec96598b37c262448816e7b",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1785,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "b36db13777362c33ccb7a8f34a86310128d02be032763aac0b2278b620233872"
+    },
+    "threads/discussion-1884.json.gz": {
+      "bytes": 12711,
+      "sha256": "9e56e2a58848f1fda8fcab1c3ca98960328b81eb614a2ea363094f6b9aa95e26",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1884,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "cc75e31f93c6aeac53dc4e3b0e305b20f5151d2c7a97d654315ccd3919ec8f2a"
+    },
+    "threads/discussion-1885.json.gz": {
+      "bytes": 2478,
+      "sha256": "45afde63f312af76fe35696abd26c048a410c8123c422b6e4a8055f92417eb3f",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1885,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "537f9b96097fe781ccdd9665cc5c202c3430d2ac7b6669258f490285407a54cb"
+    },
+    "threads/discussion-1896.json.gz": {
+      "bytes": 4255,
+      "sha256": "b9fa299bb97694e42b519682e2a0088439420cd9384e093a4cfd8101fe99f531",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1896,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "4f3e83416cb4a9e19bd82bd10461f98574d7b85ac4ba990404567141cc2181dc"
+    },
+    "threads/discussion-1952.json.gz": {
+      "bytes": 2964,
+      "sha256": "a0253957b98991a9c29be4817ab1de9a0f1fd6007567d2bde2d203a1af1cd402",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1952,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "6ccb3b2bf1ed369e8ba7aa9123ce8ba0f782eb73ef6b24f689d6b78a56ec203c"
+    },
+    "threads/discussion-1980.json.gz": {
+      "bytes": 5088,
+      "sha256": "64f90edaedcd39fadb7394dffbda4372718daf5452446be5ea2e7ac772d6981d",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 1980,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "14ae60ea0b6abed11fd53f5d61391945d94e589e815200247883df0a511f0fc0"
+    },
+    "threads/discussion-2000.json.gz": {
+      "bytes": 3681,
+      "sha256": "b4c16ff65b59eb1178e151386a738418c73261cac58000817dd8cefdec983e18",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2000,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "6f17c195765c6ea9c679b082134d3e83beb5bbe4dc0a8e046d26bf8a94922e6f"
+    },
+    "threads/discussion-2003.json.gz": {
+      "bytes": 2997,
+      "sha256": "a7361b319c3905152a649e9e68ef1bf3014f4a8a1e34d1457590d93cbfc35c5f",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2003,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "d64763f6d309d9e2bf9523ea6b37a3dd3163889f27f56569e5756e352fbf8d89"
+    },
+    "threads/discussion-2024.json.gz": {
+      "bytes": 3288,
+      "sha256": "866e0a601b16794a7b45399bfac4cb17bbeeb9365c26f75c6f7f06122b4650a4",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2024,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "51ed6c38b7b29a00066580cbb2bc34551909f9634e12cf04768641b635a0d55a"
+    },
+    "threads/discussion-2028.json.gz": {
+      "bytes": 2662,
+      "sha256": "f6f730cd1b217f2e31d24123dd460b7bbab006d4c3fe3e45e6408040e8c237ca",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2028,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "3624085fc3ad339de9dd5694018ed373b9374cf2e76971784932a1ed8aa5220c"
+    },
+    "threads/discussion-2058.json.gz": {
+      "bytes": 2508,
+      "sha256": "5a770eedb33ca23d3b73925c0c5491143fae690e9b58720a155be9c7a6306cdd",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2058,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "4549ab880287bdc5d33691bf3586f88bc7feb45726343bc70d259dc61bd8e304"
+    },
+    "threads/discussion-2102.json.gz": {
+      "bytes": 2328,
+      "sha256": "d8bba35a83b864372062d167e7822c3bcf58f70b8f9570af504a2b2c92c01ff4",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2102,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "28748f9563513d6f5ec2d2529b666af6313a17c44b4871938968add2312014bf"
+    },
+    "threads/discussion-2106.json.gz": {
+      "bytes": 3111,
+      "sha256": "6fdb4534b572cdbf457fd82f6276f9d48f97a4237b7411a8a595ed73676295b7",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2106,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "f3dc355f6b1b8cb982fc7c7371989439e1ae431cb1161c012fc4110cb5a5f957"
+    },
+    "threads/discussion-2107.json.gz": {
+      "bytes": 2696,
+      "sha256": "5036e5efe38021c86240ae063d3b049e80ff3b393cc3babcf960c94c63cf6f2a",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2107,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "0132bdb9a4e3a6f88657e8bcd459b44ef5c1083411aaffc2a9e156659445f60b"
+    },
+    "threads/discussion-2121.json.gz": {
+      "bytes": 4164,
+      "sha256": "f215cecb77809a5a22856295ed2b25e3a44f815ef18802f66f47e162c93755cd",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2121,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "e7423c776652d7091a1f47b507a37259a40ca79b69bc9742cd8f4292440d502a"
+    },
+    "threads/discussion-2218.json.gz": {
+      "bytes": 6470,
+      "sha256": "3975c7e766df6dbd4cb3fc55af2966571cb99d61311a1a79edf2e576ffbb606e",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2218,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "4ba98dea6583b75e49d9cb9d4ec10044674f115b7f5d2126f07f24b7302b52bb"
+    },
+    "threads/discussion-2221.json.gz": {
+      "bytes": 6896,
+      "sha256": "a4b6c602c5799f58b2bdfedede92f90f0fcf00184fa524dce3b7a011c1da3dae",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2221,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "494ef3d9b3657ef6ff398887998578d227ace20e036eda658e758ef09a90a2c3"
+    },
+    "threads/discussion-2253.json.gz": {
+      "bytes": 9814,
+      "sha256": "24b9b65cc4d30f5a89f78635e785979311a3028cc9d217e955b7136c49aa6d7a",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2253,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "cc22ed409367fa46595e84ecc837815831ee9c734721c759d9e2218bd84b5cc9"
+    },
+    "threads/discussion-2264.json.gz": {
+      "bytes": 2899,
+      "sha256": "5be2938e28c18ff9f28ddcd6989a9fe2f694310b1c47a9d948cb491ccbe484db",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2264,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "7275ad3d8a7f213d69d62a6da1fde175b643c8e8c153a0d24dfb8cc5944045f7"
+    },
+    "threads/discussion-2275.json.gz": {
+      "bytes": 1773,
+      "sha256": "906435b9b4e38914462f982c266c7ec3cd8c6510ab0302408592e7fcbc0c1c9c",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2275,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "0dc53312ef7445abfa54791c10ff491bb71a8db9d6a9ba29e5a564c4c6d22c08"
+    },
+    "threads/discussion-2278.json.gz": {
+      "bytes": 24411,
+      "sha256": "052cbd21d412c35195101c47c43e1ac559d2c5ca039b19ac2153100927aa8e52",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2278,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "07f8bc58cec78cebcc5218edb707c5b02b3ef197d653b4963ce46ffbbe5f7516"
+    },
+    "threads/discussion-2291.json.gz": {
+      "bytes": 7149,
+      "sha256": "e5c9136acb6afa7a8dc1c8e5bfcb6aa9cf16ee73c06205832e7533fae532ed39",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2291,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "492820dad216d0eae1fc61ad0fe728f67772b36f65658da25a4be8154352b6f0"
+    },
+    "threads/discussion-2292.json.gz": {
+      "bytes": 2614,
+      "sha256": "4d1eac9aca14880d7dedd11980502be5bb6cf38d63f0c29f3284cf1b751a9f04",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2292,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "f4af6fcafd27124f3603354aa40c346b8e3ff10aca35cff506a1684f8c1e2780"
+    },
+    "threads/discussion-2299.json.gz": {
+      "bytes": 1669,
+      "sha256": "b09b56c0bce705b6302e89f7923597866cf270bfcacd4975a8108ce3f7943ad0",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2299,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "a1712628e91c2c4a3a072a751ca2c7eb0cbac74e6202114d480f77927a5ef619"
+    },
+    "threads/discussion-2325.json.gz": {
+      "bytes": 4471,
+      "sha256": "417e742981d462eeb90790661e590feaea3c0fc073523cdb9fc7c6a5737fa5ac",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2325,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "fdd8691b4f005e5e4af1c48d2a1f0343ee69b020bc3c709b253531603de84d6b"
+    },
+    "threads/discussion-2352.json.gz": {
+      "bytes": 3209,
+      "sha256": "dc76a88474118491e2e8db78563c27433753a129fd27695f57513da8287f62b2",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2352,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "b362e38756f748c28c531185f694c467706389b9763fc697d78d97b2f098730c"
+    },
+    "threads/discussion-2366.json.gz": {
+      "bytes": 2691,
+      "sha256": "8c9cc242b7ec241fcb618c264a132c98a17235fa20b9a4d8d8332314d1af9345",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2366,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "786f833e781f62fcedc106f25cc2bdf2b49aebc56bdf50ecb03b5995bf6ba933"
+    },
+    "threads/discussion-2380.json.gz": {
+      "bytes": 2355,
+      "sha256": "42ac51171c55be440168f6d7786cbf854819d6eec2957a557a84c89591d8fdee",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2380,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "a375a99914e0e6c391e5a1637fb8bf664adf2d6f2ace5e9709bb77816b264936"
+    },
+    "threads/discussion-2606.json.gz": {
+      "bytes": 4128,
+      "sha256": "277ace0af5cb585db527b7833e136c6a6d4a2c3e1a66d3dd24bcfee83bb972e4",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2606,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "20bea7bbe2f0fb4d278483a39c0003e98df9dfa8faa51a04d963c7a328b9bfa9"
+    },
+    "threads/discussion-2608.json.gz": {
+      "bytes": 3299,
+      "sha256": "bfdb5c98aa72caa8aa8bd7c4f3ee701d63741cfc92bd0a04b676cc205c1ea4ca",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2608,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "e29d84f844f6cee98a3dc8a9c90fb88151e4934110b08b2f75e9ff7f5d364233"
+    },
+    "threads/discussion-2612.json.gz": {
+      "bytes": 31459,
+      "sha256": "362f1593c58035b813c682ce6028c8d2bac28085c7de431e2b174adfc442d35d",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2612,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "f19fb2521340bbd0209a5eafb99993e6b048d0d1f29cc29029a6b2400324ea48"
+    },
+    "threads/discussion-2616.json.gz": {
+      "bytes": 3154,
+      "sha256": "1a496442a55d6c08bc06a8872588f54af3ff0722412dbe522b6ba5d66cbc3b18",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2616,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "6703e8ba9093438b0771b7c3fe1e92321e6e4a0516c48d23fe5bd4087368c4b4"
+    },
+    "threads/discussion-2785.json.gz": {
+      "bytes": 2389,
+      "sha256": "bd28dba8db0b889d95ad4ef4a087a6808eaa624beedef5963d73ca5dc75ac9c1",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2785,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "2aa42f4bf077f38751d2fd251c567d18d3a0142c02244b87da84c1e085ae919b"
+    },
+    "threads/discussion-2791.json.gz": {
+      "bytes": 2734,
+      "sha256": "5c4d14399d86711f5720b28659fa5a767cf2b0efa3eb8ffeb0ba4c70320cb139",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2791,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "6d03deab55dc444a85be812e2f9dc5c776d4b088c2bb7097def962fbd0099bac"
+    },
+    "threads/discussion-2800.json.gz": {
+      "bytes": 1247,
+      "sha256": "c3ed1a7c662f2dd3738ad4925598ef1057747d8ce88ff12b27c81ca03c3a48cb",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2800,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "d508e4b7af0f25f1f4f89743001d564566ad2534f9a2a1886394f74648a579bf"
+    },
+    "threads/discussion-2937.json.gz": {
+      "bytes": 2160,
+      "sha256": "f41bde267258912e85f7bce4b78bd0316b73c11db2ad34c3965f6e283951a190",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2937,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "4d7f64fc0f0fdd5e8ea48ec208f887277dde42d6b0e93aefd5720f7354114a27"
+    },
+    "threads/pr-1107.json.gz": {
+      "bytes": 1262,
+      "sha256": "d4f6d3f7a8d3f1e909ab2a2475e452e3ecc045582af02e784bda2f95fcb0c59f",
+      "source": {
+        "kind": "REST",
+        "number": 1107
+      },
+      "uncompressed_sha256": "3a79f6f594fbd19ef31775eb935c8d379c544138dad3473cc4a4e4d9101400c6"
+    },
+    "threads/pr-1117.json.gz": {
+      "bytes": 1261,
+      "sha256": "dc83def135f1859eb6634b9f5e8b8fe5425c1a7d02fa5c127c9988dd46bc2f8e",
+      "source": {
+        "kind": "REST",
+        "number": 1117
+      },
+      "uncompressed_sha256": "0dbed2950008e483ea24aeda77269620421e4312ad769402eaa69a066db6fda7"
+    },
+    "threads/pr-1121.json.gz": {
+      "bytes": 1264,
+      "sha256": "24f9c5d541269eced708d5dcfba57ce61f0b4abaaf8fe60fc0e767a321264e8a",
+      "source": {
+        "kind": "REST",
+        "number": 1121
+      },
+      "uncompressed_sha256": "37e27f99f35413fa0f6552f1bba6085a37dc3d0d45f5246f3e8910249f34363d"
+    },
+    "threads/pr-1124.json.gz": {
+      "bytes": 1265,
+      "sha256": "ebadeaaaed02a36c78e5c8ca59717ea2f2459cacf96cca5b8ff656b9ea335ae9",
+      "source": {
+        "kind": "REST",
+        "number": 1124
+      },
+      "uncompressed_sha256": "3dad7886169ac15e4630cd609123a06d49a0f530dc96974691f9d2fc4d5a1a94"
+    },
+    "threads/pr-1130.json.gz": {
+      "bytes": 1260,
+      "sha256": "396e6ea3f1abb8fb5764edf36ac1f06e333b342e605ba7498ef8ce77165bad26",
+      "source": {
+        "kind": "REST",
+        "number": 1130
+      },
+      "uncompressed_sha256": "89a66ec4b26643b29e4234103afa54ed484405400c436ad59cf652d72ee39e89"
+    },
+    "threads/pr-1148.json.gz": {
+      "bytes": 4087,
+      "sha256": "c2870a71f8ec6ae4906a2f9b7cd3611f8538c37cc72aba6e586e1da389023677",
+      "source": {
+        "kind": "REST",
+        "number": 1148
+      },
+      "uncompressed_sha256": "90b26fdd019859b1cb7825747dbe90daccaa8c1fe5685c3dfd05cbed59b4523e"
+    },
+    "threads/pr-1549.json.gz": {
+      "bytes": 1228,
+      "sha256": "d955a04ff623863f9b2168043041e741eec0bfcd65e6915fb781381df9f95fb2",
+      "source": {
+        "kind": "REST",
+        "number": 1549
+      },
+      "uncompressed_sha256": "0fc01c2a1abf8b15e9fa2fc2cb203069ef355d4ae3bcea15e1c9cde7c0c4e3f2"
+    },
+    "threads/pr-1582.json.gz": {
+      "bytes": 1228,
+      "sha256": "394fd8b1f1d5dabe5d797cac4e13db3af92fc9ddc5d8bb1034a1645b727eca14",
+      "source": {
+        "kind": "REST",
+        "number": 1582
+      },
+      "uncompressed_sha256": "0aa0386d59f6af4aca84d3c1c4633d72d6da2929a0ba2f5011f9a0aff435e8ca"
+    },
+    "threads/pr-1661.json.gz": {
+      "bytes": 1244,
+      "sha256": "9b8a4a0963e73d15c351d154ac2538584de92a42e18012c2aad692ac22d76ae3",
+      "source": {
+        "kind": "REST",
+        "number": 1661
+      },
+      "uncompressed_sha256": "d1e8c403f897c884aec35af04cc2feac87aab9713e9fca41a6732dc86a113a28"
+    },
+    "threads/pr-1677.json.gz": {
+      "bytes": 1251,
+      "sha256": "9e6ace05eb6f2af8528e6c2e23a18f47fb33fe50e92af27b5c0cb47b4c9f23fb",
+      "source": {
+        "kind": "REST",
+        "number": 1677
+      },
+      "uncompressed_sha256": "e050a5c2179ad11c09a124ab21dbbd8776edcea8199f62cfdf0d0786992cc8a5"
+    },
+    "threads/pr-2220.json.gz": {
+      "bytes": 258,
+      "sha256": "3d4b4a820311f06cf9d2eb8b0ec18c241e27a5995e1d1e2fd8ffd9d94cbc7f10",
+      "source": {
+        "kind": "REST",
+        "number": 2220
+      },
+      "uncompressed_sha256": "91005fb3ef74457903c087ebe5f806d9e05583d4aea437165778959abff6bb40"
+    },
+    "threads/pr-2265.json.gz": {
+      "bytes": 4282,
+      "sha256": "9c08123abcd3a78b4c7cdc37821303e7ca0c1273154fa3c6f2834b69373a7c26",
+      "source": {
+        "kind": "REST",
+        "number": 2265
+      },
+      "uncompressed_sha256": "cdc627d3d59a97cac0bac43d8a5c3732b22921e58b5e820a0815ef8e8a64ba6c"
+    },
+    "threads/pr-2272.json.gz": {
+      "bytes": 1831,
+      "sha256": "7bbc8e4e73544c66c69821c322bd1196621e2db7a1e3f805541abaa29c21ba7b",
+      "source": {
+        "kind": "REST",
+        "number": 2272
+      },
+      "uncompressed_sha256": "1c146ed54b53d05e01240381aa353bdd53a54eac6582c1698b808677d2d80302"
+    },
+    "threads/pr-2312.json.gz": {
+      "bytes": 256,
+      "sha256": "f6dd4b6634cbf5f573051c0f91e5289f8f21a6ff45df9403747d4ff41a87ed7a",
+      "source": {
+        "kind": "REST",
+        "number": 2312
+      },
+      "uncompressed_sha256": "b43543362836b52a555b1e56490ce9e218c96a55e948741f3475f85e18506d4c"
+    },
+    "threads/pr-2518.json.gz": {
+      "bytes": 1765,
+      "sha256": "474f9f126c21259e82847199dc066d12990dc7246c6401c685970b69a9ffd574",
+      "source": {
+        "kind": "REST",
+        "number": 2518
+      },
+      "uncompressed_sha256": "8a709398537b20962b1b6605d0c1fe1d5af536694d0d5e6c090ac16c5eea51e3"
+    },
+    "threads/pr-2571.json.gz": {
+      "bytes": 255,
+      "sha256": "228c49e240eb3d0294df864d0b234b62763bf10c8d4560c3a2a81799151e5a6b",
+      "source": {
+        "kind": "REST",
+        "number": 2571
+      },
+      "uncompressed_sha256": "f2b3b8395c08f2125b82c2420608f1df7462223cab92293b80a76b34959898ef"
+    },
+    "threads/pr-2621.json.gz": {
+      "bytes": 8970,
+      "sha256": "0367b832f539bb7bbe15fff34bd12679282ee023d0697a4a1603da8235e627a4",
+      "source": {
+        "kind": "REST",
+        "number": 2621
+      },
+      "uncompressed_sha256": "914ba533d4eea5ec0391e72cc9b5042d0048ad1ef0eaba1b061e33f035f58853"
+    },
+    "threads/pr-2666.json.gz": {
+      "bytes": 253,
+      "sha256": "d4e87a79323b8e3fd3647fe00749e35917f44b523d961ec716b85a0cc13edcfb",
+      "source": {
+        "kind": "REST",
+        "number": 2666
+      },
+      "uncompressed_sha256": "c93ab4821d4625578ed5a26c6dd400935d7f12b4b37f044004d311cb1ddc716e"
+    },
+    "threads/pr-2833.json.gz": {
+      "bytes": 258,
+      "sha256": "b659da14eb571712858439acb7839a2b60b736afd5a80ce2553b35933b924a1f",
+      "source": {
+        "kind": "REST",
+        "number": 2833
+      },
+      "uncompressed_sha256": "f524523126b85e6a9211a1862500997086342a28993435c9186174d6350e3ba7"
+    },
+    "threads/pr-2917.json.gz": {
+      "bytes": 258,
+      "sha256": "039e9769a3e8cea9be70e3e83742e7c52d7ae35369e32cc7bfdf4a620f9d19f6",
+      "source": {
+        "kind": "REST",
+        "number": 2917
+      },
+      "uncompressed_sha256": "6de900915c8914145edc8830b696e1f0b8cd7656879e89fc44ce7f382ed4cf7b"
+    },
+    "threads/pr-2918.json.gz": {
+      "bytes": 259,
+      "sha256": "be40abdf35a8697b211d055d922b120b7dcd4d557a4ebb1be0c4695837663dfa",
+      "source": {
+        "kind": "REST",
+        "number": 2918
+      },
+      "uncompressed_sha256": "f93e717efc7c63584f60842c0334b1e26911fdcce8ecc46bd543e044c9a1e1f8"
+    },
+    "threads/pr-2930.json.gz": {
+      "bytes": 257,
+      "sha256": "257a82b6eaf62532b9c3212e6c59e6923b444c0d1a7a367f72cc615dfd1a9bbc",
+      "source": {
+        "kind": "REST",
+        "number": 2930
+      },
+      "uncompressed_sha256": "059f1240724253e022ea8161fca0091e30211dae91bc7b6659b6d803e75a6b1f"
+    },
+    "threads/pr-2932.json.gz": {
+      "bytes": 1474,
+      "sha256": "f0004b8099bc8bda5c3800c45ffa5bfe6f1930c1e37f9563aeaf7f35f3d2fa76",
+      "source": {
+        "kind": "REST",
+        "number": 2932
+      },
+      "uncompressed_sha256": "107324bd652b57cdc20fcee4875dc6c0699788166f648b26081ac3135d1285d1"
+    },
+    "threads/pr-2942.json.gz": {
+      "bytes": 256,
+      "sha256": "fcec811d8ad02ab8a6ce573b3344ce3c7160ea9336cbc1bdf5d07f5565a87f6d",
+      "source": {
+        "kind": "REST",
+        "number": 2942
+      },
+      "uncompressed_sha256": "bb20107c9c70b11488739c80ce56167b82d415744d5bcf1e5e29624d728d623a"
+    },
+    "threads/pr-2943.json.gz": {
+      "bytes": 255,
+      "sha256": "52f6cc8a1b376827b9261b2c7e1e9e07049f41c882c9d80773f97b7c4c289094",
+      "source": {
+        "kind": "REST",
+        "number": 2943
+      },
+      "uncompressed_sha256": "bca365ddfd6ba8dabcde6ac5e3ef65a7e7f2b788160cc7ed4ce71314c0893c2b"
+    },
+    "threads/pr-2948.json.gz": {
+      "bytes": 258,
+      "sha256": "b8b1534007bbd58acbbf1e4836f8d6ed10b0217036fd0f24c3bc22f39ad21d8b",
+      "source": {
+        "kind": "REST",
+        "number": 2948
+      },
+      "uncompressed_sha256": "5cad8928a19a9862eefcd2ef646dd791aefde68c58041897a77326af2ac94034"
+    },
+    "threads/pr-2952.json.gz": {
+      "bytes": 254,
+      "sha256": "919139b4bdde47e586ff9697d31a9e5ef07e59715ac38ef12caa580afc8c68d9",
+      "source": {
+        "kind": "REST",
+        "number": 2952
+      },
+      "uncompressed_sha256": "12d99f16d35afe49cdc16c46715220770ee1c2ddeaf4b17883bf2e49672f9b91"
+    },
+    "threads/pr-2957.json.gz": {
+      "bytes": 258,
+      "sha256": "06eb83f08e87485cc625b2e7a3313f163f196576c8aabf4d277a7780a31f6e47",
+      "source": {
+        "kind": "REST",
+        "number": 2957
+      },
+      "uncompressed_sha256": "d2de54505b7ae9d20cb4682bf81c23bb3dfcf30c1c901b21ce94f8611a2eedcb"
+    },
+    "threads/pr-2960.json.gz": {
+      "bytes": 259,
+      "sha256": "22bc0b1f95ac15dcda429b3adcac23f114b6ccb5a33bc90186485fcc3e7fe456",
+      "source": {
+        "kind": "REST",
+        "number": 2960
+      },
+      "uncompressed_sha256": "c82c9429e89d4a0952571172b33227ed31167194c9af3ed2573fc39be1af5653"
+    },
+    "threads/pr-486.json.gz": {
+      "bytes": 1420,
+      "sha256": "500d45acde588fc6b83a640fcd785457e396391729c9511f6fe64cc16b5027bd",
+      "source": {
+        "kind": "REST",
+        "number": 486
+      },
+      "uncompressed_sha256": "13aa6cfcd0f3fd763834a0a7067595237f19aed47dae87e7d760f3f68bee0908"
+    },
+    "threads/pr-620.json.gz": {
+      "bytes": 5068,
+      "sha256": "efa433442d0c560704c597f3b4dc0542a9f1b64a0ffc36fcd33bd50fba9adfbc",
+      "source": {
+        "kind": "REST",
+        "number": 620
+      },
+      "uncompressed_sha256": "d5b0aeb254fb0a1aca71c31d82803a9c7058bae944125db9900574d43acf107d"
+    },
+    "threads/pr-721.json.gz": {
+      "bytes": 252,
+      "sha256": "d7240104b3a2161d0c6243dc47f19c183d4ec95166f814ceeefc301d44fce2d4",
+      "source": {
+        "kind": "REST",
+        "number": 721
+      },
+      "uncompressed_sha256": "e4b00ce184a40fe1e0e00f0f76f247ddd0e81cc73595fc4a93c7cdbd88b16cf5"
+    }
+  },
+  "finished_utc": "2026-10-16T14:33:45.061019+00:00",
+  "guidance": {
+    "path": "data/continuation-03/guidance/PINS.json",
+    "sha256": "092475b354bfdbfd6a6ded4a1d15dee764df6994b458993abd3434cd76666b8b"
+  },
+  "limits": [
+    "Each paginated connection is sampled over time, not atomically. Updated-order pagination can move records during acquisition; page and unique counts are retained.",
+    "All open and closed PR title/body pages and all discussion body pages are requested until exhausted, subject to100pages/connection and1200seconds overall. Completeness is explicit.",
+    "Selected structural, paired and packing discussions receive all available comments and replies; nonselected discussion comments are not searched.",
+    "Selected PRs receive all available issue comments, review summaries and inline review comments. File patches, arbitrary linked repositories and unpublished local work are not acquired.",
+    "Metadata claims and archival merges are not independent mathematical validation. A keyword miss is not a novelty or nonoverlap proof."
+  ],
+  "remote": {
+    "closed_prs": {
+      "complete": true,
+      "error": null,
+      "finished_utc": "2026-10-16T14:31:52.101815+00:00",
+      "pages": 25,
+      "rows": 2413,
+      "started_utc": "2026-10-16T14:31:18.839260+00:00",
+      "unique_numbers": 2385
+    },
+    "discussion_1163": {
+      "comments": 73,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:09.420370+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 12,
+      "reported_comments": 73,
+      "started_utc": "2026-10-16T14:32:08.116197+00:00",
+      "unique_comments": 73
+    },
+    "discussion_1166": {
+      "comments": 291,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:08.063252+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 3,
+      "replies": 60,
+      "reported_comments": 291,
+      "started_utc": "2026-10-16T14:32:01.960453+00:00",
+      "unique_comments": 291
+    },
+    "discussion_1167": {
+      "comments": 123,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:01.933028+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 2,
+      "replies": 18,
+      "reported_comments": 123,
+      "started_utc": "2026-10-16T14:31:58.810715+00:00",
+      "unique_comments": 123
+    },
+    "discussion_1265": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:53.234134+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:52.686889+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1269": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:52.686357+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:52.193943+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1328": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:52.193150+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:51.555834+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1332": {
+      "comments": 4,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:51.554260+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 4,
+      "started_utc": "2026-10-16T14:32:50.881142+00:00",
+      "unique_comments": 4
+    },
+    "discussion_1339": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:50.880771+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:50.297932+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1360": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:50.297188+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:49.755142+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1396": {
+      "comments": 3,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:49.754360+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 1,
+      "reported_comments": 3,
+      "started_utc": "2026-10-16T14:32:49.148215+00:00",
+      "unique_comments": 3
+    },
+    "discussion_1409": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:49.147725+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:48.594073+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1427": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:48.593404+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:48.071648+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1476": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:48.070957+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:47.564061+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1492": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:47.563439+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:46.981574+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1504": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:46.981141+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:46.457791+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1516": {
+      "comments": 11,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:46.453018+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 1,
+      "reported_comments": 11,
+      "started_utc": "2026-10-16T14:32:45.183274+00:00",
+      "unique_comments": 11
+    },
+    "discussion_1545": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:45.182384+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:44.682788+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1570": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:44.682213+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 1,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:44.125305+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1593": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:44.124480+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:43.505016+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1596": {
+      "comments": 4,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:43.502916+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 2,
+      "reported_comments": 4,
+      "started_utc": "2026-10-16T14:32:42.664074+00:00",
+      "unique_comments": 4
+    },
+    "discussion_1606": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:42.663501+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:42.131736+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1618": {
+      "comments": 2,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:42.130857+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 2,
+      "started_utc": "2026-10-16T14:32:41.582100+00:00",
+      "unique_comments": 2
+    },
+    "discussion_1620": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:41.581378+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:41.057663+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1636": {
+      "comments": 2,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:41.056675+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 1,
+      "reported_comments": 2,
+      "started_utc": "2026-10-16T14:32:40.302768+00:00",
+      "unique_comments": 2
+    },
+    "discussion_1645": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:40.301613+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:39.745169+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1653": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:39.744687+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:39.144146+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1659": {
+      "comments": 2,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:39.143172+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 2,
+      "started_utc": "2026-10-16T14:32:38.555594+00:00",
+      "unique_comments": 2
+    },
+    "discussion_1667": {
+      "comments": 4,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:38.554706+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 4,
+      "started_utc": "2026-10-16T14:32:37.953408+00:00",
+      "unique_comments": 4
+    },
+    "discussion_1674": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:37.952762+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:37.451706+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1723": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:37.450828+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:36.771029+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1728": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:36.770315+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:36.104526+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1765": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:36.103949+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:35.480472+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1771": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:35.480020+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:34.919073+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1785": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:34.918089+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:34.409522+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1884": {
+      "comments": 6,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:34.407707+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 1,
+      "reported_comments": 6,
+      "started_utc": "2026-10-16T14:32:33.776835+00:00",
+      "unique_comments": 6
+    },
+    "discussion_1885": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:33.776355+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:31.185628+00:00",
+      "unique_comments": 0
+    },
+    "discussion_1896": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:31.184875+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:30.557328+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1952": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:30.556763+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:29.946834+00:00",
+      "unique_comments": 1
+    },
+    "discussion_1980": {
+      "comments": 2,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:29.946086+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 2,
+      "started_utc": "2026-10-16T14:32:29.356997+00:00",
+      "unique_comments": 2
+    },
+    "discussion_2000": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:29.356027+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:28.809378+00:00",
+      "unique_comments": 0
+    },
+    "discussion_2003": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:28.808660+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:28.259355+00:00",
+      "unique_comments": 1
+    },
+    "discussion_2024": {
+      "comments": 3,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:28.258863+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 3,
+      "started_utc": "2026-10-16T14:32:27.657322+00:00",
+      "unique_comments": 3
+    },
+    "discussion_2028": {
+      "comments": 2,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:27.656727+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 2,
+      "started_utc": "2026-10-16T14:32:27.098979+00:00",
+      "unique_comments": 2
+    },
+    "discussion_2058": {
+      "comments": 2,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:27.098422+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 2,
+      "started_utc": "2026-10-16T14:32:26.514028+00:00",
+      "unique_comments": 2
+    },
+    "discussion_2102": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:26.513322+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:25.999397+00:00",
+      "unique_comments": 0
+    },
+    "discussion_2106": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:25.998740+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:25.404955+00:00",
+      "unique_comments": 0
+    },
+    "discussion_2107": {
+      "comments": 2,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:10.101131+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 2,
+      "started_utc": "2026-10-16T14:32:09.427849+00:00",
+      "unique_comments": 2
+    },
+    "discussion_2121": {
+      "comments": 2,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:25.404084+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 1,
+      "reported_comments": 2,
+      "started_utc": "2026-10-16T14:32:24.849630+00:00",
+      "unique_comments": 2
+    },
+    "discussion_2218": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:24.848191+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:24.064628+00:00",
+      "unique_comments": 1
+    },
+    "discussion_2221": {
+      "comments": 4,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:24.062986+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 1,
+      "reported_comments": 4,
+      "started_utc": "2026-10-16T14:32:22.887647+00:00",
+      "unique_comments": 4
+    },
+    "discussion_2253": {
+      "comments": 7,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:22.885998+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 1,
+      "reported_comments": 7,
+      "started_utc": "2026-10-16T14:32:22.085654+00:00",
+      "unique_comments": 7
+    },
+    "discussion_2264": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:22.084701+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:21.460070+00:00",
+      "unique_comments": 1
+    },
+    "discussion_2275": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:21.459315+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:20.867085+00:00",
+      "unique_comments": 0
+    },
+    "discussion_2278": {
+      "comments": 17,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:20.860062+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 3,
+      "reported_comments": 17,
+      "started_utc": "2026-10-16T14:32:20.083368+00:00",
+      "unique_comments": 17
+    },
+    "discussion_2291": {
+      "comments": 4,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:20.082360+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 4,
+      "started_utc": "2026-10-16T14:32:19.297795+00:00",
+      "unique_comments": 4
+    },
+    "discussion_2292": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:19.297070+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:18.724925+00:00",
+      "unique_comments": 1
+    },
+    "discussion_2299": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:18.724285+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:18.153834+00:00",
+      "unique_comments": 0
+    },
+    "discussion_2325": {
+      "comments": 4,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:18.153141+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 4,
+      "started_utc": "2026-10-16T14:32:17.406455+00:00",
+      "unique_comments": 4
+    },
+    "discussion_2352": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:17.405637+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:16.822437+00:00",
+      "unique_comments": 0
+    },
+    "discussion_2366": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:16.821862+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:16.244557+00:00",
+      "unique_comments": 1
+    },
+    "discussion_2380": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:16.244018+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:15.511252+00:00",
+      "unique_comments": 0
+    },
+    "discussion_2606": {
+      "comments": 2,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:15.510692+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 2,
+      "started_utc": "2026-10-16T14:32:14.813337+00:00",
+      "unique_comments": 2
+    },
+    "discussion_2608": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:14.812349+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:14.110498+00:00",
+      "unique_comments": 1
+    },
+    "discussion_2612": {
+      "comments": 20,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:31:58.806166+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 2,
+      "reported_comments": 20,
+      "started_utc": "2026-10-16T14:31:57.942732+00:00",
+      "unique_comments": 20
+    },
+    "discussion_2616": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:14.109855+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:13.025608+00:00",
+      "unique_comments": 1
+    },
+    "discussion_2785": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:13.024759+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:12.250208+00:00",
+      "unique_comments": 0
+    },
+    "discussion_2791": {
+      "comments": 1,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:12.249573+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 1,
+      "started_utc": "2026-10-16T14:32:11.343993+00:00",
+      "unique_comments": 1
+    },
+    "discussion_2800": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:11.343461+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:10.730463+00:00",
+      "unique_comments": 0
+    },
+    "discussion_2937": {
+      "comments": 0,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T14:32:10.729864+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 0,
+      "reported_comments": 0,
+      "started_utc": "2026-10-16T14:32:10.101897+00:00",
+      "unique_comments": 0
+    },
+    "discussion_bodies": {
+      "complete": true,
+      "error": null,
+      "finished_utc": "2026-10-16T14:31:57.925180+00:00",
+      "pages": 4,
+      "reported_total": 310,
+      "rows": 310,
+      "started_utc": "2026-10-16T14:31:52.798403+00:00",
+      "unique_numbers": 310
+    },
+    "open_prs": {
+      "complete": true,
+      "error": null,
+      "finished_utc": "2026-10-16T14:31:18.770017+00:00",
+      "pages": 3,
+      "rows": 264,
+      "started_utc": "2026-10-16T14:31:14.960894+00:00",
+      "unique_numbers": 264
+    },
+    "pr_1107": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:39.425906+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:38.949513+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:40.429446+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:39.991593+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:39.991566+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:39.425932+00:00"
+      }
+    },
+    "pr_1117": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:37.818302+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:37.331997+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:38.948710+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:38.414258+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:38.414213+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:37.818328+00:00"
+      }
+    },
+    "pr_1121": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:36.252335+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:35.703078+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:37.331404+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:36.846936+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:36.846903+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:36.252362+00:00"
+      }
+    },
+    "pr_1124": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:34.655675+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:34.142216+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:35.702292+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:35.221124+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:35.221087+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:34.655698+00:00"
+      }
+    },
+    "pr_1130": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:33.117783+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:32.604085+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:34.141641+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:33.668515+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:33.668473+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:33.117817+00:00"
+      }
+    },
+    "pr_1148": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:31.556488+00:00",
+        "pages": 1,
+        "rows": 3,
+        "started_utc": "2026-10-16T14:33:31.044205+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:32.603226+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:32.115608+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:32.115547+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:31.556503+00:00"
+      }
+    },
+    "pr_1549": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:29.862196+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:29.335734+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:31.043505+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:30.511885+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:30.511850+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:29.862227+00:00"
+      }
+    },
+    "pr_1582": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:28.207880+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:27.671257+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:29.335300+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:28.859812+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:28.859788+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:28.207899+00:00"
+      }
+    },
+    "pr_1661": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:26.683139+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:26.174715+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:27.670642+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:27.200969+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:27.200937+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:26.683158+00:00"
+      }
+    },
+    "pr_1677": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:25.076091+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:24.542827+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:26.174134+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:25.657209+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:25.657193+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:25.076110+00:00"
+      }
+    },
+    "pr_2220": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:23.487159+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:23.010306+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:24.542359+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:24.056798+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:24.056756+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:23.487195+00:00"
+      }
+    },
+    "pr_2265": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:21.937984+00:00",
+        "pages": 1,
+        "rows": 2,
+        "started_utc": "2026-10-16T14:33:21.458104+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:23.009493+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:22.555103+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:22.555075+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:21.938006+00:00"
+      }
+    },
+    "pr_2272": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:20.482068+00:00",
+        "pages": 1,
+        "rows": 2,
+        "started_utc": "2026-10-16T14:33:19.970238+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:21.457489+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:21.007428+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:21.007404+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:20.482095+00:00"
+      }
+    },
+    "pr_2312": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:18.975558+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:18.470582+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:19.969712+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:19.515325+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:19.515300+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:18.975595+00:00"
+      }
+    },
+    "pr_2518": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:17.456337+00:00",
+        "pages": 1,
+        "rows": 2,
+        "started_utc": "2026-10-16T14:33:16.888520+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:18.470023+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:18.003037+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:18.003020+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:17.456373+00:00"
+      }
+    },
+    "pr_2571": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:15.912684+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:15.382641+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:16.887910+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:16.447796+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:16.447767+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:15.912721+00:00"
+      }
+    },
+    "pr_2621": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:14.306492+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:13.785011+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:15.381514+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:14.863480+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:14.863447+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:14.306530+00:00"
+      }
+    },
+    "pr_2666": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:12.753861+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:12.277550+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:13.784561+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:13.322735+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:13.322703+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:12.753887+00:00"
+      }
+    },
+    "pr_2833": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:10.720771+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:10.205627+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:12.277017+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:11.825368+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:11.825345+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:10.720796+00:00"
+      }
+    },
+    "pr_2917": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:09.129946+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:08.673670+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:10.204994+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:09.738164+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:09.738131+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:09.129972+00:00"
+      }
+    },
+    "pr_2918": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:07.653238+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:07.182475+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:08.673210+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:08.227513+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:08.227492+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:07.653285+00:00"
+      }
+    },
+    "pr_2930": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:06.194996+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:05.470913+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:07.181809+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:06.691410+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:06.691381+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:06.195029+00:00"
+      }
+    },
+    "pr_2932": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:03.790723+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:03.236573+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:05.470349+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:04.915409+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:04.915374+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:03.790744+00:00"
+      }
+    },
+    "pr_2942": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:02.146901+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:01.663169+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:03.236110+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:02.762881+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:02.762851+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:02.146930+00:00"
+      }
+    },
+    "pr_2943": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:00.217004+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:59.681724+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:01.662527+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:00.990672+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:00.990649+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:00.217030+00:00"
+      }
+    },
+    "pr_2948": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:58.518846+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:58.057429+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:59.681213+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:59.138202+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:59.138160+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:58.518875+00:00"
+      }
+    },
+    "pr_2952": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:57.008873+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:56.527133+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:58.056995+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:57.607300+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:57.607263+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:57.008909+00:00"
+      }
+    },
+    "pr_2957": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:55.493059+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:55.006073+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:56.526720+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:56.091113+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:56.091075+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:55.493086+00:00"
+      }
+    },
+    "pr_2960": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:53.878750+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:53.413116+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:55.005482+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:54.498092+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:32:54.498053+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:32:53.878781+00:00"
+      }
+    },
+    "pr_486": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:44.086357+00:00",
+        "pages": 1,
+        "rows": 1,
+        "started_utc": "2026-10-16T14:33:43.610439+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:45.060171+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:44.625679+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:44.625646+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:44.086383+00:00"
+      }
+    },
+    "pr_620": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:42.544535+00:00",
+        "pages": 1,
+        "rows": 13,
+        "started_utc": "2026-10-16T14:33:42.032570+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:43.609241+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:43.132519+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:43.132487+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:42.544566+00:00"
+      }
+    },
+    "pr_721": {
+      "issue_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:40.921139+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:40.430049+00:00"
+      },
+      "review_comments": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:42.032152+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:41.553527+00:00"
+      },
+      "reviews": {
+        "complete": true,
+        "error": null,
+        "finished_utc": "2026-10-16T14:33:41.553498+00:00",
+        "pages": 1,
+        "rows": 0,
+        "started_utc": "2026-10-16T14:33:40.921176+00:00"
+      }
+    }
+  },
+  "repository": "CrocSwap/integer-mult-bounds",
+  "schema_version": 1,
+  "scope": "Read-only source and overlap acquisition. No scientific experiment or fetched-code execution.",
+  "script_sha256": "5b16a7b2b4a23d7367a10f3909836b959336a8eef8e80360f7b714da4ec84ed5",
+  "selected_discussion_threads": [
+    2612,
+    1167,
+    1166,
+    1163,
+    2107,
+    2937,
+    2800,
+    2791,
+    2785,
+    2616,
+    2608,
+    2606,
+    2380,
+    2366,
+    2352,
+    2325,
+    2299,
+    2292,
+    2291,
+    2278,
+    2275,
+    2264,
+    2253,
+    2221,
+    2218,
+    2121,
+    2106,
+    2102,
+    2058,
+    2028,
+    2024,
+    2003,
+    2000,
+    1980,
+    1952,
+    1896,
+    1885,
+    1884,
+    1785,
+    1771,
+    1765,
+    1728,
+    1723,
+    1674,
+    1667,
+    1659,
+    1653,
+    1645,
+    1636,
+    1620,
+    1618,
+    1606,
+    1596,
+    1593,
+    1570,
+    1545,
+    1516,
+    1504,
+    1492,
+    1476,
+    1427,
+    1409,
+    1396,
+    1360,
+    1339,
+    1332,
+    1328,
+    1269,
+    1265
+  ],
+  "selected_pr_threads": {
+    "numbers": [
+      2960,
+      2957,
+      2952,
+      2948,
+      2943,
+      2942,
+      2932,
+      2930,
+      2918,
+      2917,
+      2833,
+      2666,
+      2621,
+      2571,
+      2518,
+      2312,
+      2272,
+      2265,
+      2220,
+      1677,
+      1661,
+      1582,
+      1549,
+      1148,
+      1130,
+      1124,
+      1121,
+      1117,
+      1107,
+      721,
+      620,
+      486
+    ],
+    "rule": "All PR body/title matches for structural terms, twenty most recently updated supporting matches, and six named source/obstruction PRs."
+  },
+  "started_utc": "2026-10-16T14:31:14.960747+00:00"
+}

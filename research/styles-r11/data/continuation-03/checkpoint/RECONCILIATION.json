@@ -1,0 +1,46 @@
+{
+  "added_numbers": [
+    2962,
+    2963
+  ],
+  "complete": true,
+  "files": [
+    {
+      "bytes": 3921539,
+      "path": "data/continuation-03/checkpoint/all-prs-created-order.json.gz",
+      "sha256": "f2bfe84addff933a00d6bfe67828516ef1362d0efdff679a7d11e16eb0c2ad1c",
+      "uncompressed_sha256": "96cad328a38dfe88fa6394bef33396e5b18f6019690efef87e7e6ef297989566"
+    },
+    {
+      "bytes": 3921534,
+      "path": "data/continuation-03/checkpoint/all-prs-reconciled.json.gz",
+      "sha256": "613739c343b07322f3e351fe8674784a88fa066fd3cb47ade7d27528a338b562",
+      "uncompressed_sha256": "d8510433cd2bf0912f8c62759d548fe8ad2c752cac2b33ad09d1742e362ca6cf"
+    }
+  ],
+  "finished_utc": "2026-10-16T14:36:51.218971+00:00",
+  "limits": "Created order is stable for existing PRs, but this is still a temporal metadata snapshot, not an atomic server transaction or a diff/unpublished-work census.",
+  "original_snapshots": [
+    {
+      "path": "data/continuation-03/checkpoint/open-prs.json.gz",
+      "sha256": "d7b658eaf87476836f4f75ca4b41feebff853cdc6d2c4f0114453ca3859717cc"
+    },
+    {
+      "path": "data/continuation-03/checkpoint/closed-prs.json.gz",
+      "sha256": "28c59163e023da340179deca875896ad9bec70f89799f26441793690732ac528"
+    }
+  ],
+  "pages": 27,
+  "reason": "Updated-order closed pagination moved during archival activity and repeated28rows. All-state created-order pagination removes that ordering instability; original snapshots preserved.",
+  "rows": 2651,
+  "schema_version": 1,
+  "script_sha256": "05017ab8ed280a20696b0b1eda103a6c829c91306927f121adfd5e51b32cd8d1",
+  "source_endpoint": "repos/CrocSwap/integer-mult-bounds/pulls?state=all&sort=created&direction=asc&per_page=100",
+  "started_utc": "2026-10-16T14:36:17.296280+00:00",
+  "states": {
+    "closed": 2413,
+    "open": 238
+  },
+  "union_count": 2651,
+  "unique_numbers": 2651
+}
