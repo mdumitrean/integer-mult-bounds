@@ -1,0 +1,26 @@
+{
+  "branch": "styles-r11",
+  "checkout": "/home/marius/kappa/styles-r11",
+  "environment_note": "python3 -m venv lacked ensurepip; uv venv --seed --allow-existing completed requested .venv-styles, then pip install -r.",
+  "held_out": "Not fetched or read in this execution; #2833/#2853 reserved for M4.",
+  "packages": [
+    "mpmath==1.4.1",
+    "networkx==3.7",
+    "numpy==2.5.4",
+    "scipy==1.18.1"
+  ],
+  "python": "3.14.4",
+  "scope_exception": "The explicitly requested checkout and .venv-styles are setup artifacts; research modifications remain within research/styles-r11.",
+  "smoke": {
+    "borrow_words": 14,
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv-styles/bin/python -I -B research/styles-r11/env/smoke_test.py",
+    "dependencies": 39,
+    "full_words": 7,
+    "output": "PASS_STYLES_R11_SMOKE 4.4 s",
+    "pins": 21,
+    "root_prefix": "0.00171779498411863466382722991842",
+    "status": "PASS"
+  },
+  "source_commit": "4be9149e6f7a2b84bd3740deb4a15b9865552db6",
+  "started_utc": "2026-10-16T04:08:31.792839+00:00"
+}
