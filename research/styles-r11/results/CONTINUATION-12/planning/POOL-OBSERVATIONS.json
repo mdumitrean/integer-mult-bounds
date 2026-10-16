@@ -1,0 +1,267 @@
+{
+  "all_task_resource_receipts_hash_matched": true,
+  "artifact_references": [
+    {
+      "path": "results/CONTINUATION-11/J2-COMMUTING-EXPOSURE/v1/RUN.json",
+      "sha256": "6dc90878f08d54909766fcbac979116f85b6b691d1f791fdcd4e66fa90093666"
+    },
+    {
+      "path": "data/continuation-11/j2-v1/BASELINE-MEMORY-PROJECTION.json",
+      "sha256": "a5f5d267fac4b3a450ebaf73578b9ce4319499db38cc73397cf3413939ab1f91"
+    },
+    {
+      "path": "data/continuation-11/j2-v1/CENSUS-MEMORY-PROJECTION.json",
+      "sha256": "a5f5d267fac4b3a450ebaf73578b9ce4319499db38cc73397cf3413939ab1f91"
+    },
+    {
+      "path": "data/continuation-11/j2-v1/CONTROLS-MEMORY-PROJECTION.json",
+      "sha256": "a5f5d267fac4b3a450ebaf73578b9ce4319499db38cc73397cf3413939ab1f91"
+    },
+    {
+      "path": "data/continuation-11/j2-v1/PRICES-MEMORY-PROJECTION.json",
+      "sha256": "c469f6d1eff7755e0edd356d9463d84cc6ec870b0be0b743fe977f7ffd51414e"
+    }
+  ],
+  "measurement_limits": [
+    "Configured61 workers does not itself establish61 simultaneously executing tasks; no per-phase wall span or maximum-inflight trace was saved.",
+    "The2 control tasks and4 baseline/census tasks can use at most2/4 workers respectively, regardless of the configured pool size.",
+    "Each receipt seconds value covers that task call only; summing overlapping task times is not elapsed phase wall time. Whole-run wall time includes preparation, pool startup, checkpoint serialization, parent collection and validation.",
+    "peak_rss_bytes is getrusage(RUSAGE_SELF).ru_maxrss for the worker lifetime, not private memory newly allocated by that task. It includes inherited/shared pages and previous work; sums of such peaks do not measure concurrent physical RAM.",
+    "The projection deliberately counts inherited parent pages in every worker. It is a conservative allocation check, not an observed resident-memory total.",
+    "The mutable in-run BUDGET-CHECKPOINT records parent plus reaped child CPU. Its last pre-reap114.025278539 value is not the final run CPU; final RUN records1216.10677938 after pool termination/join.",
+    "No current machine load, cgroup throttling or free-memory conclusion is inferred; root is collecting those live measurements separately."
+  ],
+  "method": "Read authenticated resource fields from completed CONTINUATION-11 J2 receipts and inspect the unchanged pool/runner source as text. Summaries are administrative timing/RSS arithmetic; no scientific imports, benchmarks, candidate executions, tests or live proc/cgroup probes.",
+  "new_scientific_execution": false,
+  "old_files_modified": false,
+  "phase_observations": {
+    "baseline": {
+      "completed_tasks": 4,
+      "configured_workers": 61,
+      "independent_phase_wall_seconds_recorded": false,
+      "maximum_task_parallelism_possible_from_count": 4,
+      "memory_projection": {
+        "allocated_cores": 128,
+        "formula": "parent + workers*(parent + word + fill + working set)",
+        "parent_peak_rss_gib": 0.13768768310546875,
+        "projected_peak_gib": 101.46632385253906,
+        "projected_per_worker_gib": 1.6611251831054688,
+        "ram_gib": 247.1584243774414,
+        "reserved_cores": 8,
+        "worker_rss_cap_gib": 4,
+        "workers": 61,
+        "working_set_gib": 1.25
+      },
+      "recorded_worker_lifetime_peak_rss_gib": {
+        "max": 0.14404678344726562,
+        "median": 0.14404678344726562,
+        "min": 0.14205169677734375,
+        "p90_nearest_rank": 0.14404678344726562,
+        "sum": 0.5741920471191406
+      },
+      "task_cpu_over_sum_task_wall": 0.9999180673407345,
+      "task_cpu_seconds": {
+        "max": 1.45438858,
+        "median": 1.4517691285,
+        "min": 1.4419589240000001,
+        "p90_nearest_rank": 1.45438858,
+        "sum": 5.7998857610000005
+      },
+      "task_wall_seconds": {
+        "max": 1.4544133441522717,
+        "median": 1.451945814769715,
+        "min": 1.4420560263097286,
+        "p90_nearest_rank": 1.4544133441522717,
+        "sum": 5.8003610000014305
+      },
+      "worker_statuses": {
+        "OK": 4
+      }
+    },
+    "census": {
+      "completed_tasks": 4,
+      "configured_workers": 61,
+      "independent_phase_wall_seconds_recorded": false,
+      "maximum_task_parallelism_possible_from_count": 4,
+      "memory_projection": {
+        "allocated_cores": 128,
+        "formula": "parent + workers*(parent + word + fill + working set)",
+        "parent_peak_rss_gib": 0.13768768310546875,
+        "projected_peak_gib": 101.46632385253906,
+        "projected_per_worker_gib": 1.6611251831054688,
+        "ram_gib": 247.1584243774414,
+        "reserved_cores": 8,
+        "worker_rss_cap_gib": 4,
+        "workers": 61,
+        "working_set_gib": 1.25
+      },
+      "recorded_worker_lifetime_peak_rss_gib": {
+        "max": 0.6220169067382812,
+        "median": 0.6215476989746094,
+        "min": 0.6191024780273438,
+        "p90_nearest_rank": 0.6220169067382812,
+        "sum": 2.4842147827148438
+      },
+      "task_cpu_over_sum_task_wall": 0.9998622043466403,
+      "task_cpu_seconds": {
+        "max": 14.415099041,
+        "median": 14.3152713215,
+        "min": 14.280319163,
+        "p90_nearest_rank": 14.415099041,
+        "sum": 57.325960847
+      },
+      "task_wall_seconds": {
+        "max": 14.418612944893539,
+        "median": 14.315391161013395,
+        "min": 14.284465936943889,
+        "p90_nearest_rank": 14.418612944893539,
+        "sum": 57.33386120386422
+      },
+      "worker_statuses": {
+        "OK": 4
+      }
+    },
+    "controls": {
+      "completed_tasks": 2,
+      "configured_workers": 61,
+      "independent_phase_wall_seconds_recorded": false,
+      "maximum_task_parallelism_possible_from_count": 2,
+      "memory_projection": {
+        "allocated_cores": 128,
+        "formula": "parent + workers*(parent + word + fill + working set)",
+        "parent_peak_rss_gib": 0.13768768310546875,
+        "projected_peak_gib": 101.46632385253906,
+        "projected_per_worker_gib": 1.6611251831054688,
+        "ram_gib": 247.1584243774414,
+        "reserved_cores": 8,
+        "worker_rss_cap_gib": 4,
+        "workers": 61,
+        "working_set_gib": 1.25
+      },
+      "recorded_worker_lifetime_peak_rss_gib": {
+        "max": 0.11658859252929688,
+        "median": 0.11561012268066406,
+        "min": 0.11463165283203125,
+        "p90_nearest_rank": 0.11658859252929688,
+        "sum": 0.23122024536132812
+      },
+      "task_cpu_over_sum_task_wall": 0.9998335723598698,
+      "task_cpu_seconds": {
+        "max": 0.541062653,
+        "median": 0.5402566310000001,
+        "min": 0.5394506090000001,
+        "p90_nearest_rank": 0.541062653,
+        "sum": 1.0805132620000002
+      },
+      "task_wall_seconds": {
+        "max": 0.5410781046375632,
+        "median": 0.5403465596027672,
+        "min": 0.5396150145679712,
+        "p90_nearest_rank": 0.5410781046375632,
+        "sum": 1.0806931192055345
+      },
+      "worker_statuses": {
+        "OK": 2
+      }
+    },
+    "prices": {
+      "completed_tasks": 256,
+      "configured_workers": 61,
+      "independent_phase_wall_seconds_recorded": false,
+      "maximum_task_parallelism_possible_from_count": 61,
+      "memory_projection": {
+        "allocated_cores": 128,
+        "formula": "parent + workers*(parent + word + fill + working set)",
+        "parent_peak_rss_gib": 1.8563156127929688,
+        "projected_peak_gib": 208.02125549316406,
+        "projected_per_worker_gib": 3.3797531127929688,
+        "ram_gib": 247.1584243774414,
+        "reserved_cores": 8,
+        "worker_rss_cap_gib": 4,
+        "workers": 61,
+        "working_set_gib": 1.25
+      },
+      "recorded_worker_lifetime_peak_rss_gib": {
+        "max": 1.6625289916992188,
+        "median": 1.6571388244628906,
+        "min": 1.6507492065429688,
+        "p90_nearest_rank": 1.6598892211914062,
+        "sum": 424.23450088500977
+      },
+      "task_cpu_over_sum_task_wall": 1.0001707349819222,
+      "task_cpu_seconds": {
+        "max": 6.4640745939999995,
+        "median": 3.5827708639999996,
+        "min": 2.591650377,
+        "p90_nearest_rank": 5.895594031,
+        "sum": 1024.311047354
+      },
+      "task_wall_seconds": {
+        "max": 6.463744348846376,
+        "median": 3.5858552646823227,
+        "min": 2.5909967441111803,
+        "p90_nearest_rank": 5.884759400971234,
+        "sum": 1024.1361914798617
+      },
+      "worker_statuses": {
+        "OK": 256
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "action": "Keep61 workers for future independent queues with at least61 useful registered tasks, retaining the existing RAM formula, RSS caps, one-pool lock and per-task deadlines.",
+      "evidence": "The completed price phase had256 independent task receipts and all wereOK; the small prerequisite phases had only2 or4 tasks."
+    },
+    {
+      "action": "If a future registered workload has a long4-task enumeration stage, consider a deterministic disjoint address partition with exact coverage and canonical reduction, rather than duplicating controls or starting concurrent pools.",
+      "evidence": "The census task count itself limits that stage to4 active workers. This is a future scheduling proposal, not authorization to rerun the closed J2 family."
+    },
+    {
+      "action": "Continue parent loading and prelaunch memory projection using the actual prepared parent size, and carry the existing task RSS limits forward.",
+      "evidence": "The price projection recorded parent1.8563156127929688GiB, per-worker3.3797531127929688GiB and total208.02125549316406GiB against247.1584243774414GiB RAM. Observed worker-lifetime peaks are separately reported, not substituted for a full concurrent-memory measurement."
+    },
+    {
+      "action": "Add explicit phase elapsed time and inflight/high-water measurements to a future new runner before freeze when throughput attribution matters; report parent serialization time separately if measured.",
+      "evidence": "The saved run provides whole-run wall time and per-task call intervals but no authenticated phase wall spans. Those records cannot identify a unique bottleneck or prove sustained61-core use."
+    },
+    {
+      "action": "Use each future batch's recorded task-duration spread to choose deterministic shard sizes and avoid a few monolithic long tasks. Preserve the scientific finite domain and canonical candidate identity.",
+      "evidence": "Phase-specific min/median/p90/max task durations are included in this receipt. This is scheduling guidance from observed metadata, not a measured speedup promise."
+    }
+  ],
+  "recorded_utc": "2026-10-16T22:49:17.009368+00:00",
+  "schema_version": 1,
+  "source_run": {
+    "accounted_cpu_outside_task_intervals": 127.58937215600008,
+    "average_accounted_cpu_core_equivalents": 13.205479217596384,
+    "configured_workers": 61,
+    "cpu_seconds": 1216.10677938,
+    "maximum_recorded_worker_lifetime_rss_gib": 1.6625289916992188,
+    "phase_task_counts": {
+      "baseline": 4,
+      "census": 4,
+      "controls": 2,
+      "prices": 256
+    },
+    "status": "NULL",
+    "sum_measured_task_cpu_seconds": 1088.517407224,
+    "sum_task_wall_seconds_not_elapsed_wall": 1088.351106802933,
+    "wall_seconds": 92.09107517730445
+  },
+  "source_scheduler_facts": {
+    "blas_thread_limit": 1,
+    "concurrent_pool_prohibition": "exclusive flock across pool lifetime; one scientific pool",
+    "maxtasksperchild_default": 50,
+    "module": {
+      "path": "pipeline/pool.py",
+      "sha256": "59714d0b8501a4d2a0b041bbf18be089fa6a4881943a8c4db7c7605e6c5d86d8"
+    },
+    "per_task_timeout_seconds": 300,
+    "process_start": "fork; heavy data loaded once in parent",
+    "queued_active_handle_limit": "at most configured workers; replenish after completed callbacks",
+    "worker_formula": "max(1,min(120,floor(memory_gib()/4)))",
+    "worker_rss_cap_gib": 4
+  },
+  "status": "ADMINISTRATIVE_SAVED_POOL_OBSERVATIONS"
+}
