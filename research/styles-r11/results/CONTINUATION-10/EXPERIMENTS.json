@@ -1,16 +1,22 @@
 {
+  "closed_utc": "2026-10-16T21:40:09.404512+00:00",
   "experiments": [
     {
-      "execution": "NOT_STARTED",
+      "confirmed": false,
+      "cpu_seconds": 0,
+      "execution": "NOT_STARTED_INTERRUPTED",
       "id": "J2-COMMUTING-EXPOSURE",
       "preregistration": "results/CONTINUATION-10/J2/PREREGISTRATION.json",
       "preregistration_sha256": "2931ff3dafb5bc2f2c5ba3ab3055785b8b87e6f5008e901fe9829a7d8f76188d",
-      "status": "planned"
+      "reason": "Automatic approval review hit a usage limit before the source-freeze command executed. User resumed at21:38UTC, after the20:22:09 science cutoff and20:37:09 checkpoint. No scientific source import, preparation, control, census or pricing task occurred.",
+      "result_files": [],
+      "status": "UNRUN",
+      "wall_seconds": 0
     }
   ],
   "goal_status": "ACTIVE_NOT_ACHIEVED",
   "no_active_experiments": true,
   "round": "CONTINUATION-10",
   "schema_version": 1,
-  "status": "REGISTERED_AWAITING_FROZEN_IMPLEMENTATION"
+  "status": "CLOSED_UNRUN"
 }

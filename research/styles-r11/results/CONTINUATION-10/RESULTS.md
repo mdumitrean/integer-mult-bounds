@@ -1,0 +1,5 @@
+The registered J2 experiment was **unrun**. Automatic approval review hit a usage limit before the source-freeze command executed. The user resumed after the registered launch window had expired. No scientific import, preparation, control, census or pricing task occurred; scientific compute was zero. This is neither a scientific null nor a failed control.
+
+The original preregistration and three reviewed implementation sources are preserved unchanged. Static reviewers found no blocking issue, but their controls have not run. The administrative auditor is a retained draft and was not executed. The protocol carries forward into a separately timed CONTINUATION-11 registration with an upstream refresh.
+
+No κ improvement, qualified pattern or empirical finding is claimed for this round. Prior findings and stop decisions remain unchanged. Source attribution remains in the original word PINS and PR3015/PR3030 bindings. This implementation and proof review received substantial OpenAI Codex assistance. The [closure audit](AUDIT-UNRUN.json) authenticates the unrun artifacts and checks all pre-round files.

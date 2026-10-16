@@ -1,6 +1,7 @@
 {
   "ai_assistance": "Substantial OpenAI Codex assistance in implementation, proof review and analysis, disclosed in reports.",
   "base_work_commit": "bf3c12018d6988d611895d60c3afb40691e18096",
+  "closed_utc": "2026-10-16T21:40:09.404512+00:00",
   "constraints": {
     "author": "Marius-Paul Dumitrean <mdumitrean@gmail.com>",
     "commit_attribution_trailers": false,
@@ -16,6 +17,8 @@
     "write_scope": "Only new research/styles-r11 continuation10 paths; every pre-round file byte-immutable"
   },
   "goal_status": "ACTIVE_NOT_ACHIEVED",
+  "interruption": "Automatic approval review hit a usage limit before the source-freeze command executed. User resumed at21:38UTC, after the20:22:09 science cutoff and20:37:09 checkpoint. No scientific source import, preparation, control, census or pricing task occurred.",
+  "next_action": "New CONTINUATION-11 timing registration for the unchanged scientific question after a fresh upstream review. No stopped scientific lane is reopened by an observed result.",
   "previous_goal_turn": {
     "audit_path": "results/CONTINUATION-09/AUDIT.json",
     "audit_sha256": "3af77f211d3d8698fdd1a7418b2b176e660f965b83a5cb31b1f3a95b8919489d",
@@ -41,7 +44,8 @@
   "round_cpu_budget_seconds": 14400,
   "schema_version": 1,
   "science_launch_cutoff_utc": "2026-10-16T20:22:09+00:00",
-  "scope_status": "PLANNING_PENDING_FROZEN_DOMAIN_AND_COST_PROOF",
+  "scientific_cpu_seconds": 0,
+  "scope_status": "CLOSED_UNRUN_INTERRUPTED_BEFORE_FREEZE",
   "started_utc": "2026-10-16T19:37:09+00:00",
   "user_objective": "Push further with L-system and sandpile research toward improving kappa, seeking exact useful transformations or an intrinsic Laplacian if the evidence supports one."
 }
