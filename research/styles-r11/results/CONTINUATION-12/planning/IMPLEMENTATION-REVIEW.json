@@ -1,0 +1,84 @@
+{
+  "administrative_authentication": {
+    "all_byte_hashes_matched": true,
+    "registered_data_protocol_equals_saved_protocol": true,
+    "registered_input_files_checked": 10,
+    "registered_model_protocol_equals_saved_protocol": true,
+    "runner_requires_both_implementation_protocols_to_equal_registration": true,
+    "source_archives_checked": 215,
+    "source_files_checked": 218,
+    "trusted_import_closure": "Manifest includes the three historical adapters, fill/wordio, source2979, joint-twelve owner/vendor code, and toolkit-rev3/J-dim1 dependencies. All 218 source bytes and 215 decompressed archives matched their frozen hashes."
+  },
+  "blocking_issues": [],
+  "dataset_review": [
+    "The domain is every unordered cross-call role pair for 666 calls and 408 helpers, represented canonically once. Uniform call-pair unranking is bijective and samples 2^20 distinct pairs per source.",
+    "S contains all distinct-bin, unequal-width, positive-spread pairs satisfying both new capacities, before window/family selection. Enumeration assigns a pair to its larger-width endpoint, so no symmetric duplicate is counted. For d>0, the destination upper-capacity inequality follows from the source feasible residual; the other inequalities are explicit.",
+    "The union has inclusion probability 1 on S and n/D outside S, with overlap deduplicated and complete membership counts. Exceeding the 2,000,000-row per-fill cap fails instead of silently truncating.",
+    "Exact legality is evaluated before gain sign. Reciprocal windows are start<t<=stop. Both outgoing physical families are removed simultaneously before incoming-family exclusion. Same-family replacements remain legal when otherwise feasible.",
+    "Same-bin swaps are forced profile ties; equal-width legal swaps are ties. For two distinct bins, d*(ra-rb+d) is half the squared-residual increase and gives the strict concave-moment direction at fixed residual sum. Illegal pairs have no claimed gain.",
+    "PR2979 uses only the historical T74 base_model. The adapter also materializes an unused T370 lift, explicitly reported as parent memory overhead and excluded from corpus roles.",
+    "Registered controls include unchanged complete literal fill/profile/mass checks for all sources, independent set predicates and full literal audits for fixed pairs, the known admitted PR2917 witness, and capacity/window/family/offset/tie/sign mutants. These controls have not been executed by this reviewer.",
+    "Generation shards cover every canonical union row once. Two execution seeds differ only in traversal, then restore canonical order and compare exact array digests/counts. Repeated execution is not an additional sample.",
+    "Deterministic NPZ creation forbids pickle, fixes ZIP metadata, records byte and semantic digests, and guards immutable collisions. Model preparation authenticates saved generation receipts and NPZ bytes, enforces schemas, checks complete 84-shard coverage, and rejects duplicate pair keys."
+  ],
+  "frozen_inputs": {
+    "pipeline/continuation12/exchange_ml.py": "0a63bd885db5a5b6b5168bf7f2ce9c175393584e4be8646ab0850184908814a4",
+    "pipeline/continuation12/historical_exchange.py": "a83216945068281fc50c1319118012807a5c44ca98cb580e2c7bb17ab364fc2f",
+    "pipeline/continuation12/run_ml4.py": "e30204b7dcc83410ac9e1fdeba4c0124c7af838d6c1dc7fa0fa392a1f92dd038",
+    "pipeline/continuation12/telemetry.py": "e8f8cf9fc678acda031fb82debcef33bb12d1c069d7f3dee6fceb872b6baf891",
+    "results/CONTINUATION-12/ML4/IMPLEMENTATION-PINS-v1.json": "71e081aac75a384be81d0cea415a63550c39b79cf7c0d5ba960df806823209d7",
+    "results/CONTINUATION-12/ML4/PREREGISTRATION.json": "41822b332e5e7f7d27294b4c21defceffd6db517ebaf01ba70f1c00681bfdecb",
+    "results/CONTINUATION-12/planning/DATA-PROTOCOL.json": "742cf96e6481895af05c5a82b22a598c8568424d6c50d5bb875ffe7792780da3",
+    "results/CONTINUATION-12/planning/ML-PROTOCOL.json": "8bcdce8a619b4dae7d48b0a0ae493ce33cdbbf58974d7d2d6d43445abcbc75c3"
+  },
+  "limitations": [
+    "No scientific control or model was run during this review; runtime correctness still depends on the registered controls and preserved task outcomes.",
+    "Three historical fills share ancestry and template structure; source holdout is not independent-lineage evidence.",
+    "A literal chronological-index purge does not establish physical-role disjointness after order/provider changes.",
+    "Rank-free describes the explicit covariate whitelist; temporal/degree descriptors can still correlate with rank or packing state.",
+    "This corpus studies exact historical two-role owner exchanges. It neither establishes an intrinsic sandpile Laplacian/abelian toppling law nor constructs/adopts a new kappa improvement.",
+    "Absolute pair coordinates and helper indices remain source-bound; transferring any old witness to a later construction needs a new exact compatibility/admission check."
+  ],
+  "model_review": [
+    "Core features are separated from width/residual/capacity comparator features. Labels, physical IDs, and complete exact guard decisions are not fitted covariates.",
+    "The fixed label-blind panels use recorded retention factors; model/evaluation weights combine these with corpus inverse-inclusion weights. Preprocessing uses training-only weighted moments. Class-balanced logistic fitting and declared prior-odds correction are explicit.",
+    "Whole-fill holdout and stable stage*74+replica/physical-family endpoint splitting are coherent with the declared sensitivity analyses. Pair purging uses chronological role coordinates and is explicitly scoped that way in the registration.",
+    "Weighted AUROC and average precision group tied scores; one-class and empty cases remain unavailable rather than fabricating a score. Top-k precision is explicitly the selected sample, not population top-k.",
+    "Model families, caps, optimizer limits, and 2000 within-fill/S shuffles per execution seed are fixed. All outputs remain descriptive. The exact complete guard oracle is the target definition; the stratum baseline prevents credit solely for necessary-gain geometry.",
+    "Deterministic observed fits, learning curves, and unshuffled benchmarks are compared across execution seeds. Differently seeded shuffle sequences are not falsely required to be identical."
+  ],
+  "recorded_utc": "2026-10-16T23:09:08.069858+00:00",
+  "resolved_prefreeze_findings": [
+    "Required implementation-module pins and archive checks added.",
+    "Telemetry start/stop guarded so measurement errors do not mask science failures.",
+    "PSS reads separated from CPU/RSS reads; reaping races bracketed.",
+    "Replacement workers discovered across parent threads.",
+    "Historical provenance alias fixed and stored compactly by authenticated reference.",
+    "Stable physical call IDs used for endpoint splitting.",
+    "Chronological pair-purge scope stated explicitly.",
+    "Empty numeric arrays handled safely in semantic hashing."
+  ],
+  "review_type": "INDEPENDENT_STATIC_IMPLEMENTATION_REVIEW",
+  "reviewer": "fill_matching",
+  "runner_and_resources_review": [
+    "The runner authenticates registration, required sources, all supplied source/archive hashes, and registered inputs before scientific imports. It enforces one active pool and immutable attempt directories.",
+    "Every parallel scientific phase uses pipeline/pool.py. The configured count follows min(120,floor(RAM_GiB/4)); 61 is the expected count on this machine, not a claim of observed occupancy. BLAS thread settings are one.",
+    "Phase queues retain all independent tasks. Per-task receipts are saved before phase reduction. Controls gate dependent phases; failed tasks, CPU/time limits, and memory/storage checks produce incomplete/error receipts rather than scientific nulls.",
+    "Pool peak projections precede launches. Model preparation separately estimates retained/transient numeric arrays from authenticated metadata and adds current parent RSS. The inherited high-water RSS may remain after cache release; projection failures are preserved.",
+    "Telemetry failures are nonfatal to scientific finalization. PSS failures retain available process CPU/RSS. Child discovery unions every parent-thread children file, including recycled pool workers. RUSAGE_CHILDREN brackets the process scan and race-affected intervals are excluded from busy-core estimates.",
+    "Summed RSS is identified as double-counting shared pages, sampled PSS includes coverage, and full-run CPU/wall is authoritative for average core equivalents. No hardware bottleneck or achieved 61-worker utilization is inferred from configuration.",
+    "Each result retains the 21 original word credits inline and a hash-bound complete historical provenance artifact. Partial preparation can leave that artifact unavailable explicitly without masking the original error."
+  ],
+  "schema_version": 1,
+  "scientific_imports_or_experiments_performed": false,
+  "scope": "Independent static mathematical/source review and administrative byte-hash authentication of frozen sources. Earlier H/M static reviews preceded launch; the final manifest check and this record were completed concurrently with once-parent preparation/data controls. This is not a retroactive preregistration, claimed prelaunch gate, scientific control result, model validation, performance benchmark, or admission certificate.",
+  "status": "PASS_STATIC",
+  "timing": {
+    "administrative_correction": "Clarifies timing of this independent review; no scientific source, input, outcome, or registration changed.",
+    "coordinator_scientific_process_started_utc": "2026-10-16T23:08:23+00:00",
+    "earlier_dataset_and_model_static_reviews": "Preceded launch and were sent to the coordinator.",
+    "final_manifest_authentication_and_record": "Concurrent with the coordinator-owned once-parent preparation/data controls.",
+    "reviewer_scientific_imports_or_runs": false,
+    "scientific_source_changes_after_freeze": false
+  }
+}

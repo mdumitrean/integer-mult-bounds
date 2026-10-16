@@ -1,0 +1,131 @@
+{
+  "artifacts": [
+    {
+      "bytes": 533431,
+      "path": "data/continuation-12/ml4-v1/RUN.json",
+      "sha256": "95d853cdce080a8dd40c2a84a60f17c87b0128e7f8821c3d5a0f89b2c7a62824"
+    },
+    {
+      "bytes": 38435,
+      "path": "data/continuation-12/ml4-v1/RESOURCE-TRACE.jsonl",
+      "sha256": "e896959d0a32acdca38d3f67bbba11f0be299cccf90a781ff01648aa213b2163"
+    },
+    {
+      "bytes": 2662976,
+      "path": "data/continuation-12/ml4-v1/ALL-TASKS.json.gz",
+      "sha256": "7cfb077a1da820c69702ebd9b766240ee723bc82c1b4c949c3a219f9df2f74c5"
+    },
+    {
+      "bytes": 810,
+      "path": "data/continuation-12/ml4-v1/ENVIRONMENT.json",
+      "sha256": "85a6607e6e725ac41cd2fd263762ebbc55365fb575b8b3658498f947ada44399"
+    }
+  ],
+  "authoritative_accounting": {
+    "all_reported_phase_ratios_reconciled": true,
+    "all_task_statuses": "OK",
+    "completed_tasks": 4702,
+    "method": "Parent time.process_time plus RUSAGE_CHILDREN, measured before launch and after pool join; includes worker lifecycle, parent, monitoring, serialization and useful computation.",
+    "outside_task_interval_cpu_seconds": 193.17412250300004,
+    "phase_metrics": {
+      "benchmark": {
+        "average_core_equivalents": 3.4053496725283563,
+        "cpu_seconds": 4.858855127999959,
+        "tasks": 2,
+        "wall_seconds": 1.4268300160765648
+      },
+      "data_controls": {
+        "average_core_equivalents": 2.6124618236633594,
+        "cpu_seconds": 24.066030456,
+        "tasks": 2,
+        "wall_seconds": 9.212012301199138
+      },
+      "generation": {
+        "average_core_equivalents": 23.19820703483149,
+        "cpu_seconds": 87.44918374200003,
+        "tasks": 504,
+        "wall_seconds": 3.76965269818902
+      },
+      "learning_curves": {
+        "average_core_equivalents": 39.1449976338096,
+        "cpu_seconds": 218.41670018899998,
+        "tasks": 120,
+        "wall_seconds": 5.579683571122587
+      },
+      "model_controls": {
+        "average_core_equivalents": 3.2551143658708113,
+        "cpu_seconds": 4.134686418000001,
+        "tasks": 2,
+        "wall_seconds": 1.2702123345807195
+      },
+      "observed": {
+        "average_core_equivalents": 41.30330251401686,
+        "cpu_seconds": 278.17142556,
+        "tasks": 72,
+        "wall_seconds": 6.7348470613360405
+      },
+      "permutations": {
+        "average_core_equivalents": 47.542775770469525,
+        "cpu_seconds": 1081.5148551490001,
+        "tasks": 4000,
+        "wall_seconds": 22.7482480276376
+      }
+    },
+    "task_interval_cpu_seconds": 1566.340065247,
+    "total_cpu_seconds": 1759.51418775,
+    "total_wall_seconds": 111.45043665636331,
+    "whole_run_average_core_equivalents": 15.787414033873503
+  },
+  "future_measurement_note": "If another separately registered run is needed, acquire all process CPU values in one short timestamped pass and collect PSS separately; retain read-window durations and reject intervals whose temporal uncertainty is material. No new run or telemetry source change was performed here.",
+  "invalid_instantaneous_peak": {
+    "both_raw_reaping_flags": [
+      false,
+      false
+    ],
+    "current_interval_timestamp_seconds": 2.0133367124944925,
+    "current_pss_sampled": false,
+    "current_utc": "2026-10-16T23:10:00.448834+00:00",
+    "evidence_strength": "The source mechanism and slow-PSS/fast-next-sample sequence explain the anomalous number; this is a measurement interpretation, not a rerun or reconstructed exact instantaneous utilization.",
+    "interpretation": "INVALID_AS_OBSERVED_SIMULTANEOUS_CORE_USE",
+    "previous_interval_wall_seconds": 4.64898866135627,
+    "previous_pss_sampled": true,
+    "previous_utc": "2026-10-16T23:09:58.435498+00:00",
+    "raw_data_modified": false,
+    "raw_field": "telemetry.maximum_observed_busy_cores",
+    "raw_value": 91.84252526786712,
+    "recorded_accounted_cpu_increment_seconds": 184.90992788999995,
+    "report_instead": "Permutation phase: 1081.514855149 CPU seconds /22.7482480276376 wall seconds =47.542775770469525 average core-equivalents; maximum sampled live/running worker counts 61/61.",
+    "source_explanation": "telemetry._process reads each process CPU then its potentially slow smaps_rollup. Monitor.sample timestamps only after all sequential process/PSS scans. The slow previous sample therefore aggregates CPU at unequal, earlier effective times than its end timestamp; the next short non-PSS sample can divide a longer effective CPU interval by about two wall seconds. Bracketing RUSAGE_CHILDREN detects reaping races but not this skew. The saved trace does not contain individual CPU-read timestamps, so an exact corrected instantaneous peak cannot be recovered.",
+    "trace_zero_based_sample_indices": [
+      40,
+      41
+    ]
+  },
+  "recorded_utc": "2026-10-16T23:15:07.455177+00:00",
+  "sampled_resource_summary": {
+    "allocated_cores": 128,
+    "caveats": [
+      "Sampled live/running counts are successive per-process observations, not a simultaneous timestamp for every state.",
+      "Worker ru_maxrss includes inherited/shared pages and prior work in that worker; summing it is not physical memory consumption.",
+      "PSS sums are sequentially sampled approximations; 62-process coverage at the largest observed sum is parent plus 61 children.",
+      "Host available memory includes unrelated host state and is not a proof of the unique limiting resource."
+    ],
+    "configured_workers": 61,
+    "max_sampled_live_children": 61,
+    "max_sampled_running_children": 61,
+    "max_sequential_sample_sum_pss_GiB": 18.25145435333252,
+    "max_sequential_sample_sum_pss_bytes": 19597349888,
+    "min_sampled_host_available_memory_GiB": 217.78393173217773,
+    "min_sampled_host_available_memory_bytes": 233843716096,
+    "pss_peak_coverage_processes": 62,
+    "samples": 50,
+    "task_receipt_max_worker_lifetime_rss_GiB": 1.4847068786621094,
+    "task_receipt_max_worker_lifetime_rss_bytes": 1594191872,
+    "trace_max_process_rss_bytes": 1569275904,
+    "visible_affinity_is_not_additional_authorization": true,
+    "visible_affinity_logical_cpus": 256
+  },
+  "schema_version": 1,
+  "scope": "Saved metadata arithmetic and source-level explanation only. No scientific modules imported, labels regenerated, predictions recomputed, or experiments rerun. Frozen raw trace and results remain unchanged.",
+  "status": "ADMINISTRATIVE_INTERPRETATION"
+}

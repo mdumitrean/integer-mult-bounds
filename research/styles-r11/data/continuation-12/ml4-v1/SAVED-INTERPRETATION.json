@@ -1,0 +1,463 @@
+{
+  "complete_necessary_strata": {
+    "2853": {
+      "S": 34727,
+      "legal_positive": 11067
+    },
+    "2917": {
+      "S": 69847,
+      "legal_positive": 14101
+    },
+    "2979": {
+      "S": 0,
+      "legal_positive": 0
+    }
+  },
+  "counts_by_seed": {
+    "122011": {
+      "deterministic_results_sha256": "cc1469375711b0da8e9051343bda2c549c86dc81338e9be61e0d5fe4bcf22d1a",
+      "fit_nonconvergence": 0,
+      "learning_curves": 60,
+      "learning_curves_beats_cheap_Brier": 0,
+      "observed": 36,
+      "observed_beats_cheap_Brier": 0,
+      "observed_beats_stratum_Brier": 0,
+      "permutation_fit_nonconvergence": 0
+    },
+    "61001": {
+      "deterministic_results_sha256": "cc1469375711b0da8e9051343bda2c549c86dc81338e9be61e0d5fe4bcf22d1a",
+      "fit_nonconvergence": 0,
+      "learning_curves": 60,
+      "learning_curves_beats_cheap_Brier": 0,
+      "observed": 36,
+      "observed_beats_cheap_Brier": 0,
+      "observed_beats_stratum_Brier": 0,
+      "permutation_fit_nonconvergence": 0
+    }
+  },
+  "created_utc": "2026-10-16T23:15:28.198718+00:00",
+  "degenerate_source": {
+    "AUROC": null,
+    "S": 0,
+    "positive": 0,
+    "pr": 2979,
+    "reason": "No eligible positive class; conditionalS evaluation empty."
+  },
+  "inference": "Fixed learned models rank historical positives but did not improve Brier over cheap exact screen or stratum mean in any36observed configurations. No learning-curve setting beats cheap screen on Brier.",
+  "kappa_claim": false,
+  "limits": [
+    "Only linear and per-feature-square logistic expansions, fixedL2=.1 and clipped standardization; not all ML model classes.",
+    "Inverse-inclusion weighting and class balancing with prior correction do not guarantee heldout calibration; saved Brier is often close to zero-prediction loss.",
+    "Related allocations and pair dependencies; execution-seed agreement is repeated computation, not new independent data.",
+    "Small training caps contain few positives; no adaptive cap or hyperparameter selection.",
+    "Sampling-weighted metrics and unweighted sample topK describe different estimands; sample topK is not population topK.",
+    "No construction, simultaneous composition, native admission or kappa improvement follows from classifying historical exchanges."
+  ],
+  "permutation_results": {
+    "122011": {
+      "core_linear": {
+        "identified": 2000,
+        "mean": 5.06307169038243e-15,
+        "observed_matched_panel_statistic": -3.307153261266761e-13,
+        "quantiles_0_025_50_975_100": [
+          -7.199153682568071e-14,
+          -4.069994252906346e-14,
+          3.9382348336131904e-15,
+          5.570481904708251e-14,
+          1.0507094738190895e-13
+        ],
+        "secondary_stratum_mean": {
+          "identified": 2000,
+          "mean": -4.9435611121841625e-08,
+          "observed_matched_panel_statistic": -4.943594690023962e-08,
+          "quantiles_0_025_50_975_100": [
+            -4.943568817645011e-08,
+            -4.943565688485614e-08,
+            -4.9435612246678284e-08,
+            -4.943556048009387e-08,
+            -4.9435511113966364e-08
+          ],
+          "unidentified": 0
+        },
+        "unidentified": 0
+      },
+      "core_quadratic": {
+        "identified": 2000,
+        "mean": -1.9785086931434537e-12,
+        "observed_matched_panel_statistic": -4.8024007041119044e-11,
+        "quantiles_0_025_50_975_100": [
+          -1.7561515393513403e-11,
+          -5.147221267121866e-12,
+          -1.6794099008917713e-12,
+          -6.379560606312949e-13,
+          -2.6740601199087673e-13
+        ],
+        "secondary_stratum_mean": {
+          "identified": 2000,
+          "mean": -4.943759469360647e-08,
+          "observed_matched_panel_statistic": -4.948364019195462e-08,
+          "quantiles_0_025_50_975_100": [
+            -4.9453177700306816e-08,
+            -4.944076340618052e-08,
+            -4.943729559481411e-08,
+            -4.9436254140974084e-08,
+            -4.943588359092519e-08
+          ],
+          "unidentified": 0
+        },
+        "unidentified": 0
+      }
+    },
+    "61001": {
+      "core_linear": {
+        "identified": 2000,
+        "mean": 4.459273498925066e-15,
+        "observed_matched_panel_statistic": -3.307153261266761e-13,
+        "quantiles_0_025_50_975_100": [
+          -5.96908163981603e-14,
+          -3.820688394895939e-14,
+          3.100281841905663e-15,
+          5.456219735127225e-14,
+          1.025234408082701e-13
+        ],
+        "secondary_stratum_mean": {
+          "identified": 2000,
+          "mean": -4.943561172563983e-08,
+          "observed_matched_panel_statistic": -4.943594690023962e-08,
+          "quantiles_0_025_50_975_100": [
+            -4.94356758757296e-08,
+            -4.9435654391797296e-08,
+            -4.9435613084631687e-08,
+            -4.943556162271573e-08,
+            -4.943551366147283e-08
+          ],
+          "unidentified": 0
+        },
+        "unidentified": 0
+      },
+      "core_quadratic": {
+        "identified": 2000,
+        "mean": -1.978330378689931e-12,
+        "observed_matched_panel_statistic": -4.8024007041119044e-11,
+        "quantiles_0_025_50_975_100": [
+          -1.2019956402834368e-11,
+          -5.095328451015993e-12,
+          -1.6698430993433023e-12,
+          -6.650645163550967e-13,
+          -3.031482789856203e-13
+        ],
+        "secondary_stratum_mean": {
+          "identified": 2000,
+          "mean": -4.943759451529202e-08,
+          "observed_matched_panel_statistic": -4.948364019195462e-08,
+          "quantiles_0_025_50_975_100": [
+            -4.944763614131608e-08,
+            -4.944071151336441e-08,
+            -4.943728602801245e-08,
+            -4.943628124942983e-08,
+            -4.943591933319232e-08
+          ],
+          "unidentified": 0
+        },
+        "unidentified": 0
+      }
+    }
+  },
+  "permutation_scope": "2000indexed shuffles/seed on fixed8192perfill panel, within(fill,S) only;2movable and4fixed blocks; no p/q or independent-lineage inference.",
+  "repeated_computation_rows": 6500590,
+  "resource_summary": {
+    "average_core_equivalents": 15.787414033873503,
+    "completed_by_phase": {
+      "benchmark": 2,
+      "data_controls": 2,
+      "generation": 504,
+      "learning_curves": 120,
+      "model_controls": 2,
+      "observed": 72,
+      "permutations": 4000
+    },
+    "configured_workers": 61,
+    "phases": {
+      "benchmark": {
+        "average_core_equivalents": 3.4053496725283563,
+        "cpu_seconds": 4.858855127999959,
+        "tasks": 2,
+        "wall_seconds": 1.4268300160765648
+      },
+      "data_controls": {
+        "average_core_equivalents": 2.6124618236633594,
+        "cpu_seconds": 24.066030456,
+        "tasks": 2,
+        "wall_seconds": 9.212012301199138
+      },
+      "generation": {
+        "average_core_equivalents": 23.19820703483149,
+        "cpu_seconds": 87.44918374200003,
+        "tasks": 504,
+        "wall_seconds": 3.76965269818902
+      },
+      "learning_curves": {
+        "average_core_equivalents": 39.1449976338096,
+        "cpu_seconds": 218.41670018899998,
+        "tasks": 120,
+        "wall_seconds": 5.579683571122587
+      },
+      "model_controls": {
+        "average_core_equivalents": 3.2551143658708113,
+        "cpu_seconds": 4.134686418000001,
+        "tasks": 2,
+        "wall_seconds": 1.2702123345807195
+      },
+      "observed": {
+        "average_core_equivalents": 41.30330251401686,
+        "cpu_seconds": 278.17142556,
+        "tasks": 72,
+        "wall_seconds": 6.7348470613360405
+      },
+      "permutations": {
+        "average_core_equivalents": 47.542775770469525,
+        "cpu_seconds": 1081.5148551490001,
+        "tasks": 4000,
+        "wall_seconds": 22.7482480276376
+      }
+    },
+    "total_cpu_seconds": 1759.51418775,
+    "total_wall_seconds": 111.45043665636331
+  },
+  "schema": "styles-r11-continuation12-saved-ml-review/v1",
+  "scope": "Interpretation and arithmetic aggregation of saved receipts only; no scientific imports, fitting, feature extraction or fresh experiment.",
+  "source_receipts": [
+    {
+      "bytes": 422865,
+      "path": "data/continuation-12/ml4-v1/ANALYSIS.json",
+      "sha256": "4aecc4cc348483b601b3f894b266b2d60d75a30a805b34048bfde008084e886e"
+    },
+    {
+      "bytes": 533431,
+      "path": "data/continuation-12/ml4-v1/RUN.json",
+      "sha256": "95d853cdce080a8dd40c2a84a60f17c87b0128e7f8821c3d5a0f89b2c7a62824"
+    },
+    {
+      "bytes": 3248,
+      "path": "data/continuation-12/ml4-v1/GENERATION-SUMMARY.json",
+      "sha256": "d0d8fd0e00eff6837ac51ba805a17f4470b3bff5c9f52448063085d90c108aa1"
+    },
+    {
+      "bytes": 5118,
+      "path": "data/continuation-12/ml4-v1/MODEL-PREPARATION.json",
+      "sha256": "31b44b649b19f18a4f48687f19c15a347a7a8a93a0d9052b98fd82779740a67a"
+    }
+  ],
+  "status": "EXPLORATORY",
+  "unique_rows": 3250295,
+  "whole_fill_metrics": [
+    {
+      "conditional_S": {
+        "AUROC": 0.8647143059922443,
+        "Brier": 0.33467242516550255,
+        "average_precision": 0.7691334030153292,
+        "logloss": 4.647208879384315,
+        "positive_rows": 1415,
+        "rows": 4228,
+        "status": "MEASURED",
+        "weighted_prevalence": 0.3346736045411542
+      },
+      "gain_over_mean": 7.369038558577409e-13,
+      "gain_over_stratum": -8.95615703397402e-08,
+      "model": "core_linear",
+      "population": {
+        "AUROC": 0.9503630530190104,
+        "Brier": 3.173209035522859e-07,
+        "average_precision": 8.160919969744124e-06,
+        "logloss": 4.548366731121656e-06,
+        "positive_rows": 1415,
+        "rows": 131072,
+        "status": "MEASURED",
+        "weighted_prevalence": 3.1732172566789283e-07
+      },
+      "source": "2853"
+    },
+    {
+      "conditional_S": {
+        "AUROC": 0.9476178871694894,
+        "Brier": 0.33467315513304874,
+        "average_precision": 0.8563131221291695,
+        "logloss": 4.797671273540084,
+        "positive_rows": 1415,
+        "rows": 4228,
+        "status": "MEASURED",
+        "weighted_prevalence": 0.3346736045411542
+      },
+      "gain_over_mean": 2.830418464129388e-13,
+      "gain_over_stratum": -8.956202420174964e-08,
+      "model": "core_quadratic",
+      "population": {
+        "AUROC": 0.9741313249307446,
+        "Brier": 3.1732135741429534e-07,
+        "average_precision": 6.0966358518031295e-06,
+        "logloss": 4.620604411815987e-06,
+        "positive_rows": 1415,
+        "rows": 131072,
+        "status": "MEASURED",
+        "weighted_prevalence": 3.1732172566789283e-07
+      },
+      "source": "2853"
+    },
+    {
+      "conditional_S": {
+        "AUROC": 0.6804828415270343,
+        "Brier": 0.3346729201318913,
+        "average_precision": 0.45374538753857896,
+        "logloss": 4.697896081767284,
+        "positive_rows": 1415,
+        "rows": 4228,
+        "status": "MEASURED",
+        "weighted_prevalence": 0.3346736045411542
+      },
+      "gain_over_mean": 5.576149078649743e-13,
+      "gain_over_stratum": -8.956174962868819e-08,
+      "model": "mechanism_linear",
+      "population": {
+        "AUROC": 0.9965961873662327,
+        "Brier": 3.173210828412339e-07,
+        "average_precision": 0.02822780866091068,
+        "logloss": 4.476159086231452e-06,
+        "positive_rows": 1415,
+        "rows": 131072,
+        "status": "MEASURED",
+        "weighted_prevalence": 3.1732172566789283e-07
+      },
+      "source": "2853"
+    },
+    {
+      "conditional_S": {
+        "AUROC": 0.5060720104411748,
+        "Brier": 0.33467267863844324,
+        "average_precision": 0.33910417044089247,
+        "logloss": 5.203934299389544,
+        "positive_rows": 1415,
+        "rows": 4228,
+        "status": "MEASURED",
+        "weighted_prevalence": 0.3346736045411542
+      },
+      "gain_over_mean": 7.912070509676997e-13,
+      "gain_over_stratum": -8.956151603654509e-08,
+      "model": "mechanism_quadratic",
+      "population": {
+        "AUROC": 0.9910698302258535,
+        "Brier": 3.173208492490908e-07,
+        "average_precision": 0.02611453276691322,
+        "logloss": 4.939052944015008e-06,
+        "positive_rows": 1415,
+        "rows": 131072,
+        "status": "MEASURED",
+        "weighted_prevalence": 3.1732172566789283e-07
+      },
+      "source": "2853"
+    },
+    {
+      "conditional_S": {
+        "AUROC": 0.8825638408286851,
+        "Brier": 0.19804658860997454,
+        "average_precision": 0.6013903469540003,
+        "logloss": 3.178680673718245,
+        "positive_rows": 1602,
+        "rows": 8089,
+        "status": "MEASURED",
+        "weighted_prevalence": 0.19804673012733343
+      },
+      "gain_over_mean": 6.163976690625581e-14,
+      "gain_over_stratum": -4.761893485032446e-08,
+      "model": "core_linear",
+      "population": {
+        "AUROC": 0.8787496878713519,
+        "Brier": 3.7053577837221467e-07,
+        "average_precision": 0.0006262995667586706,
+        "logloss": 5.998394861207884e-06,
+        "positive_rows": 1602,
+        "rows": 131072,
+        "status": "MEASURED",
+        "weighted_prevalence": 3.7053592809643495e-07
+      },
+      "source": "2917"
+    },
+    {
+      "conditional_S": {
+        "AUROC": 0.8977019630348759,
+        "Brier": 0.1980395479571154,
+        "average_precision": 0.6081925321767571,
+        "logloss": 3.319564782355401,
+        "positive_rows": 1602,
+        "rows": 8089,
+        "status": "MEASURED",
+        "weighted_prevalence": 0.19804673012733343
+      },
+      "gain_over_mean": -1.7012723819759435e-11,
+      "gain_over_stratum": -4.7636009213911127e-08,
+      "model": "core_quadratic",
+      "population": {
+        "AUROC": 0.9121549097883918,
+        "Brier": 3.7055285273580134e-07,
+        "average_precision": 0.0006268670963019933,
+        "logloss": 6.316542983794371e-06,
+        "positive_rows": 1602,
+        "rows": 131072,
+        "status": "MEASURED",
+        "weighted_prevalence": 3.7053592809643495e-07
+      },
+      "source": "2917"
+    },
+    {
+      "conditional_S": {
+        "AUROC": 0.8487680729749136,
+        "Brier": 0.19804581487877312,
+        "average_precision": 0.5454501088338694,
+        "logloss": 2.6815727478079223,
+        "positive_rows": 1602,
+        "rows": 8089,
+        "status": "MEASURED",
+        "weighted_prevalence": 0.19804673012733343
+      },
+      "gain_over_mean": 1.6100828168633862e-12,
+      "gain_over_stratum": -4.7617386407274504e-08,
+      "model": "mechanism_linear",
+      "population": {
+        "AUROC": 0.9982150472999872,
+        "Brier": 3.705342299291647e-07,
+        "average_precision": 0.00602702515609355,
+        "logloss": 5.0360879444365585e-06,
+        "positive_rows": 1602,
+        "rows": 131072,
+        "status": "MEASURED",
+        "weighted_prevalence": 3.7053592809643495e-07
+      },
+      "source": "2917"
+    },
+    {
+      "conditional_S": {
+        "AUROC": 0.7200854700854702,
+        "Brier": 0.19790322643318234,
+        "average_precision": 0.3347830031261788,
+        "logloss": 2.351365462514273,
+        "positive_rows": 1602,
+        "rows": 8089,
+        "status": "MEASURED",
+        "weighted_prevalence": 0.19804673012733343
+      },
+      "gain_over_mean": 2.560337703397649e-10,
+      "gain_over_stratum": -4.73629627197516e-08,
+      "model": "mechanism_quadratic",
+      "population": {
+        "AUROC": 0.9993993588997934,
+        "Brier": 3.702798062416418e-07,
+        "average_precision": 0.011183844464282151,
+        "logloss": 4.4298802024136796e-06,
+        "positive_rows": 1602,
+        "rows": 131072,
+        "status": "MEASURED",
+        "weighted_prevalence": 3.7053592809643495e-07
+      },
+      "source": "2917"
+    }
+  ]
+}

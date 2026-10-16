@@ -1,0 +1,168 @@
+{
+  "all_saved_task_hashes_and_embedded_summaries_match": true,
+  "artifacts": [
+    {
+      "bytes": 3248,
+      "path": "data/continuation-12/ml4-v1/GENERATION-SUMMARY.json",
+      "sha256": "d0d8fd0e00eff6837ac51ba805a17f4470b3bff5c9f52448063085d90c108aa1"
+    },
+    {
+      "bytes": 355794,
+      "path": "data/continuation-12/ml4-v1/GENERATION-MANIFEST.json.gz",
+      "sha256": "21b265a13dd6420ce976c32078ff57704ecd2b9ad75c8f5e671d32d587810b57"
+    },
+    {
+      "bytes": 92249,
+      "path": "data/continuation-12/ml4-v1/SOURCE-ATTRIBUTION.json",
+      "sha256": "d4e1f79e420c1bad7764af0082cee96a3c479fca5f3229dfcdb4899e27680998"
+    },
+    {
+      "bytes": 533431,
+      "path": "data/continuation-12/ml4-v1/RUN.json",
+      "sha256": "95d853cdce080a8dd40c2a84a60f17c87b0128e7f8821c3d5a0f89b2c7a62824"
+    },
+    {
+      "bytes": 227242,
+      "path": "results/CONTINUATION-12/ML4-HISTORICAL-EXCHANGE/v1/seed-61001/RESULT.json",
+      "sha256": "4a1cc8ed02ddf13ec568d17cb0855f42ddb95e0860990026715245779036601e"
+    },
+    {
+      "bytes": 227251,
+      "path": "results/CONTINUATION-12/ML4-HISTORICAL-EXCHANGE/v1/seed-122011/RESULT.json",
+      "sha256": "1b42edcb646e99413111d7bed807fb39f3a92da814aa5e5269f2b61b1fae30b7"
+    }
+  ],
+  "authenticated_generation_task_receipts": 504,
+  "complete_coverage": "84 shards x3 source fills x2 execution seeds, with no duplicate source/seed/shard keys.",
+  "confirmation_does_not_double_sample_size": true,
+  "independent_control_receipt_status": {
+    "all_data_controls_PASS": true,
+    "known_pr2917_witness": [
+      {
+        "gain_sign": 1,
+        "legal": true,
+        "pair": [
+          56,
+          25480
+        ],
+        "pr": 2917
+      },
+      {
+        "gain_sign": 1,
+        "legal": true,
+        "pair": [
+          56,
+          25480
+        ],
+        "pr": 2917
+      }
+    ],
+    "scope": "Controls were executed by the registered coordinator pool; this review reads their saved outcomes only.",
+    "seeds": [
+      61001,
+      122011
+    ]
+  },
+  "interpretation": [
+    "PR2853 has 34,727 pairs in exhaustive S and 11,067 legal positive exchanges; PR2917 has 69,847 S pairs and 14,101 legal positives. These positives are historical alternatives, not newly admitted improvements above current sources.",
+    "PR2979 has S=0. Under the registered fixed-word, fixed-inventory, two-role cross-call exchange model, every possible strict positive would lie in S; thus this family has no positive exchange on that exact historical fill. This does not rule out multi-role cycles, different packing patterns, changed words, or later fills.",
+    "Legal tie/harm and illegal-predicate counts combine S with a uniform sample of its complement. They must not be presented as exhaustive counts for all 36,862,620,480 pairs. In particular sampled zero legal harms on PR2979 is not a global harm impossibility statement.",
+    "All source/seed class partitions sum to the union row count, and |S union U|=|S|+|U|-|S intersection U| holds. The two execution seeds have identical shard semantic hashes and counts.",
+    "All scientific RESULT files remain EXPLORATORY with pattern_claim=false and kappa_claim=false. The exact oracle defines the target and does not establish a learned pattern, intrinsic Laplacian, abelian dynamics, causal effect, independent-lineage replication, or new kappa certificate."
+  ],
+  "new_kappa_claim": false,
+  "pattern_claim": false,
+  "recorded_utc": "2026-10-16T23:15:07.459139+00:00",
+  "repeated_computation_rows": 6500590,
+  "schema_version": 1,
+  "scientific_reexecution": false,
+  "scope": "Administrative read-only reconciliation of saved exact-label receipts. No label predicate, source fill audit, candidate search, or model rerun was performed.",
+  "sources": {
+    "2853": {
+      "both_seed_receipts_match": true,
+      "counts": {
+        "S": 34727,
+        "equal_width": 417505,
+        "illegal_capacity": 630144,
+        "illegal_family": 2255,
+        "illegal_window": 394550,
+        "legal_harm": 15,
+        "legal_positive": 11067,
+        "legal_tie": 45272,
+        "rows": 1083303,
+        "same_bin": 11,
+        "uniform_intersection_S": 0,
+        "uniform_selected": 1048576
+      },
+      "other_counts_scope": "Counts in the enriched S-union-uniform corpus, not exhaustive domain totals.",
+      "positive_counts_scope": "Exhaustive registered cross-call two-role domain, because every possible positive belongs to fully enumerated S.",
+      "sampling": {
+        "D": 36862620480,
+        "S": 34727,
+        "n": 1048576,
+        "pi_S": "1",
+        "pi_outside_S": "1048576/36862620480"
+      },
+      "shards_per_seed": 84,
+      "source_arrays_sha256": "e52e0aedced3ac013d9441741385fa8832ba61ff764ab54c4ca0cbbcc2d9b43b"
+    },
+    "2917": {
+      "both_seed_receipts_match": true,
+      "counts": {
+        "S": 69847,
+        "equal_width": 397021,
+        "illegal_capacity": 649781,
+        "illegal_family": 2923,
+        "illegal_window": 381284,
+        "legal_harm": 217,
+        "legal_positive": 14101,
+        "legal_tie": 70110,
+        "rows": 1118416,
+        "same_bin": 7,
+        "uniform_intersection_S": 7,
+        "uniform_selected": 1048576
+      },
+      "other_counts_scope": "Counts in the enriched S-union-uniform corpus, not exhaustive domain totals.",
+      "positive_counts_scope": "Exhaustive registered cross-call two-role domain, because every possible positive belongs to fully enumerated S.",
+      "sampling": {
+        "D": 36862620480,
+        "S": 69847,
+        "n": 1048576,
+        "pi_S": "1",
+        "pi_outside_S": "1048576/36862620480"
+      },
+      "shards_per_seed": 84,
+      "source_arrays_sha256": "2031dfb5069d5f44a2d1e5776189e34ac56212f003c95c7ade169939174f6aab"
+    },
+    "2979": {
+      "both_seed_receipts_match": true,
+      "counts": {
+        "S": 0,
+        "equal_width": 370636,
+        "illegal_capacity": 677274,
+        "illegal_family": 1582,
+        "illegal_window": 308192,
+        "legal_harm": 0,
+        "legal_positive": 0,
+        "legal_tie": 61528,
+        "rows": 1048576,
+        "same_bin": 10,
+        "uniform_intersection_S": 0,
+        "uniform_selected": 1048576
+      },
+      "other_counts_scope": "Counts in the enriched S-union-uniform corpus, not exhaustive domain totals.",
+      "positive_counts_scope": "Exhaustive registered cross-call two-role domain, because every possible positive belongs to fully enumerated S.",
+      "sampling": {
+        "D": 36862620480,
+        "S": 0,
+        "n": 1048576,
+        "pi_S": "1",
+        "pi_outside_S": "1048576/36862620480"
+      },
+      "shards_per_seed": 84,
+      "source_arrays_sha256": "7536e6d3a90356b2dfd85ec4f547661d4f06d5c0fd196d99cb0ac048e7fc33e5"
+    }
+  },
+  "status": "PASS_SAVED_RECEIPT_RECONCILIATION",
+  "unique_corpus_pairs": 3250295
+}
