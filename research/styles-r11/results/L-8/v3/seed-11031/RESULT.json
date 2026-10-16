@@ -1,0 +1,4137 @@
+{
+  "confirmation_required": true,
+  "cpu_allocation": "Measured family CPU through pool collection is divided equally between the two seed receipts; individual task CPU is retained. Earlier-attempt CPU remains in its original receipts and is subtracted from this attempt's budget. Final receipt serialization is outside that timing window.",
+  "cpu_seconds": 11.302173354499999,
+  "decision": {
+    "pass_bar": "PASS only when all requested dual/bracket/envelope certificates validate and held fills are dominated. Otherwise EXPLORATORY or explicit ERROR/TIMEOUT. Tighter-than-packing is a separate exact Boolean, not assumed by PASS.",
+    "pattern_claim": false,
+    "scope": "Class certificates derived from fixed profiles and inventories; fails the non-circular pattern criterion and is never labeled a new structural pattern.",
+    "task_decision": "all stated relaxations have independently checked dual bounds",
+    "verdict": "PASS"
+  },
+  "experiment": "L-8",
+  "milestone": "M3",
+  "n_permutations": 0,
+  "null_summary": {
+    "detail": "Per-word/control summaries and registered q-values are retained inside tasks.",
+    "empirical_p": null,
+    "mean": null,
+    "model": "none: exact fixed-input audit or numerical calibration",
+    "q": null,
+    "sd": null
+  },
+  "peak_rss_bytes": 587247616,
+  "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+  "protocol_amendment": {
+    "earlier_applicable_amendments": [],
+    "path": "results/M3/AMENDMENT-2.json",
+    "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+  },
+  "recorded_utc": "2026-10-16T05:31:16.741010+00:00",
+  "schema_version": 1,
+  "scope": "Finite scoped evaluation; potential kappa levers are census targets only.",
+  "script_manifest_sha256": "0473448bf903496b5d067d11a886cd349301830b161bd928c45a9a167d313510",
+  "script_sha256": {
+    "research/styles-r11/pipeline/export_language.py": "9a05ef1aa405aabb5b70f9d7cbff2f4cd9d7f18ae21d6524a3527509730ca3ad",
+    "research/styles-r11/pipeline/fill.py": "9ca05b47016ddbbb4a6713c981932d63a6eaecdd27f3604fcfb66877f239fc4a",
+    "research/styles-r11/pipeline/growth.py": "4f29eba652ea1c7ca889f784c612a6ab11d8aefe96637d18bd32391532b8f167",
+    "research/styles-r11/pipeline/growth_cost.py": "da8443a2abc7e01da4985e04bb1cf1bb65371a2c8b16dc9d9f0247ba91692c73",
+    "research/styles-r11/pipeline/growth_m3.py": "86b19cb8e6ebb7a33e1d01226d645f76132759c233f7be2a49647962f7b48048",
+    "research/styles-r11/pipeline/growth_order.py": "bd143d57f7df7cec9fe475f9f4aa173d9e516d93099f57b16c2e609551beea99",
+    "research/styles-r11/pipeline/growth_replay.py": "c14f7807b6d4d8ad0365b6e811ddf8928745598686be0441333635069b0966d3",
+    "research/styles-r11/pipeline/matching.py": "678ce7afc686717d0f7f99a7f3f739bc074aebcfa2392ee3f97a5ae99cd64819",
+    "research/styles-r11/pipeline/measures.py": "ec7fd2264129b922f8988098d41ebc9200f742aad92a060b7b54af191fa7bf3a",
+    "research/styles-r11/pipeline/nulls.py": "a6c6b3ce9c3db775f43058c3dda3640b5fcdbb46a94eca00c012c5302f165e86",
+    "research/styles-r11/pipeline/pool.py": "59714d0b8501a4d2a0b041bbf18be089fa6a4881943a8c4db7c7605e6c5d86d8",
+    "research/styles-r11/pipeline/records.py": "e9c46e4d0de79800bf573b4de9d6baa8fa50e47821944e043f285a536e0e2feb",
+    "research/styles-r11/pipeline/resource_check.py": "f6bfce18b87ac35b837b18df17fc5c807688654f456e7173cea77f895d136297",
+    "research/styles-r11/pipeline/root.py": "b2eef8a2236e5ceb4ef92c9563b7a1e270b0719d345017cf38a9ee0784ceccd1",
+    "research/styles-r11/pipeline/run_acceleration.py": "6eb38a6cebc166c0cfedd04ea2f10d24357ad2c2d041f15a1305eae9c5a04d08",
+    "research/styles-r11/pipeline/run_m0.py": "f7a036bba54d47f52919b8c4aa9a02865df1524d9e0c0db3b81354c2a72506b9",
+    "research/styles-r11/pipeline/run_m1.py": "e6e3fefafd18aeb2d83a78a4784b4f87033fb4ecbbd8640cf2ef51effbbea58b",
+    "research/styles-r11/pipeline/run_m2.py": "b40834fbecb5cafd8ffc3342abe90208c2e973c5fa4d18144b491f48e62882f4",
+    "research/styles-r11/pipeline/run_m3.py": "effbab02a651b86bba30f76b8195d17f2053f78682070b138f65c115837a35c5",
+    "research/styles-r11/pipeline/sandpile.py": "b12489046e2248f7075a374a7e6bb54b804e7bedac5c8204a7e50594973ac736",
+    "research/styles-r11/pipeline/string_screen.py": "781a228af57cc3e728e670356b88dfaa48a4202a2a76c0b62caec86fd8ab3901",
+    "research/styles-r11/pipeline/verify_results.py": "a5ff59664f51348edfe137e0e6a8b7e14f2e7b924593cb5a40a888af25af478a",
+    "research/styles-r11/pipeline/word_alias_score.py": "b7766328ea4a58b65145786a1b38c0d6b074a24cb63d0be4ae658f35df807ad7",
+    "research/styles-r11/pipeline/word_commute_fast.py": "3a9e58e6e66642f566778304b6c765b262dc8407645724112db081e4e6cc6a1d",
+    "research/styles-r11/pipeline/word_frame_fast.py": "1985602b6390a9e468ff656e135f6c79b208f159567e72b0eeb41e604e7275c1",
+    "research/styles-r11/pipeline/word_periods.py": "c39ae26d9e4eb82b61294734c5f4acecd29c5b08333eeb39189709f680b2548d",
+    "research/styles-r11/pipeline/word_tasks.py": "5f14c4f3f389751baeeede856369db83a3b9ab93bd8e58dc520584abd940adf4",
+    "research/styles-r11/pipeline/wordio.py": "a9c254acdc04c3302ed0a31d9e0da39a8e3348aa20d189798e86539464fd81d4"
+  },
+  "seed": 11031,
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43extra.json.gz",
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    }
+  ],
+  "statistics": {
+    "completed_seed_tasks": 2,
+    "cumulative_family_cpu_seconds": 92.823319781,
+    "family_cpu_budget_seconds": 1129.781026928,
+    "launched": true,
+    "live_pool_cpu_budget_seconds": 1127.084110539,
+    "memory_projection": {
+      "allocated_cores": 128,
+      "formula": "parent + workers*(parent + word + fill + working set)",
+      "parent_peak_rss_gib": 0.5469169616699219,
+      "projected_peak_gib": 111.58853912353516,
+      "projected_per_worker_gib": 1.8203544616699219,
+      "ram_gib": 247.1584243774414,
+      "reserved_cores": 8,
+      "worker_rss_cap_gib": 6,
+      "workers": 61,
+      "working_set_gib": 1.0
+    },
+    "original_family_cpu_budget_seconds": 1200.0,
+    "prelaunch_stop_check": {
+      "binding": false,
+      "ceiling_comparisons": [
+        {
+          "all_requested_certificates_valid": false,
+          "any_certified_tighter": true,
+          "certified_comparisons": [
+            {
+              "certified_upper": "0.001717795812",
+              "class_name": "fixed #2802 inventory",
+              "tighter_than_packing_lower": true
+            },
+            {
+              "certified_upper": "0.001747404387",
+              "class_name": "fixed #2802 local profile, integral rank48",
+              "tighter_than_packing_lower": true
+            },
+            {
+              "certified_upper": "0.001758085936",
+              "class_name": "helper removal k=0",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001761170075",
+              "class_name": "helper removal k=1",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001764265063",
+              "class_name": "helper removal k=2",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001770487816",
+              "class_name": "helper removal k=4",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001783066061",
+              "class_name": "helper removal k=8",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001807743133",
+              "class_name": "helper removal k=16",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001859206446",
+              "class_name": "helper removal k=32",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001971462656",
+              "class_name": "helper removal k=64",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.002234864757",
+              "class_name": "helper removal k=128",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.002940700529",
+              "class_name": "helper removal k=256",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.004097539104",
+              "class_name": "helper removal k=408",
+              "tighter_than_packing_lower": false
+            }
+          ],
+          "seed": 11031
+        },
+        {
+          "all_requested_certificates_valid": false,
+          "any_certified_tighter": true,
+          "certified_comparisons": [
+            {
+              "certified_upper": "0.001717795812",
+              "class_name": "fixed #2802 inventory",
+              "tighter_than_packing_lower": true
+            },
+            {
+              "certified_upper": "0.001747404387",
+              "class_name": "fixed #2802 local profile, integral rank48",
+              "tighter_than_packing_lower": true
+            },
+            {
+              "certified_upper": "0.001758085936",
+              "class_name": "helper removal k=0",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001761170075",
+              "class_name": "helper removal k=1",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001764265063",
+              "class_name": "helper removal k=2",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001770487816",
+              "class_name": "helper removal k=4",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001783066061",
+              "class_name": "helper removal k=8",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001807743133",
+              "class_name": "helper removal k=16",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001859206446",
+              "class_name": "helper removal k=32",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001971462656",
+              "class_name": "helper removal k=64",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.002234864757",
+              "class_name": "helper removal k=128",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.002940700529",
+              "class_name": "helper removal k=256",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.004097539104",
+              "class_name": "helper removal k=408",
+              "tighter_than_packing_lower": false
+            }
+          ],
+          "seed": 29063
+        }
+      ],
+      "deadline": {
+        "hard_stop_utc": "2026-10-30T04:08:31.792839+00:00",
+        "origin": "M0 preregistration timestamp plus fourteen days (conservative fallback)",
+        "reached": false
+      },
+      "kind": "no_binding_growth_stop",
+      "lane": "B",
+      "lineage": {
+        "all_lineage_guards_proven": false,
+        "correction_scope": "L7-GUARD-ORDER does not discharge the two early compound-decomposition obligations.",
+        "results": [
+          {
+            "path": "results/L-7/v1/seed-11031/RESULT.json",
+            "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+          },
+          {
+            "path": "results/L-7/v1/seed-29063/RESULT.json",
+            "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+          }
+        ],
+        "seeds": [
+          {
+            "all_lineage_guards_proven": false,
+            "seed": 11031,
+            "unresolved": [
+              "2679 -> 2745: held source pins identify changed alias8/prelife/refit563/alias1 stages and fill, but source-partner reassignment has not been decomposed into the registered move alphabet",
+              "2745 -> 2751: source joint_engine explains twelve-source recovery, but no validated decomposition into the registered move alphabet"
+            ]
+          },
+          {
+            "all_lineage_guards_proven": false,
+            "seed": 29063,
+            "unresolved": [
+              "2679 -> 2745: held source pins identify changed alias8/prelife/refit563/alias1 stages and fill, but source-partner reassignment has not been decomposed into the registered move alphabet",
+              "2745 -> 2751: source joint_engine explains twelve-source recovery, but no validated decomposition into the registered move alphabet"
+            ]
+          }
+        ]
+      },
+      "reason": "The registered growth-stop conjunction is not established by the retained evidence.",
+      "trigger_results": []
+    },
+    "preparation": {
+      "cpu_seconds": 2.6961328090000003,
+      "metadata": {
+        "model_sources": {
+          "1672": {
+            "attribution": [
+              {
+                "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+                "bytes": 57438,
+                "format": "FULL-WORD",
+                "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+                "kappa": "0.001676938111022438",
+                "local_profile": {
+                  "1": 2348,
+                  "2": 500,
+                  "3": 416,
+                  "4": 130,
+                  "5": 82,
+                  "8": 8
+                },
+                "pr": 1672,
+                "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+                "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+                "width_inventory": {
+                  "4": 44,
+                  "5": 44,
+                  "7": 38,
+                  "8": 114,
+                  "9": 240
+                }
+              },
+              {
+                "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+                "bytes": 57440,
+                "format": "FULL-WORD",
+                "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+                "kappa": "0.001676938111022438",
+                "local_profile": {
+                  "1": 2340,
+                  "2": 508,
+                  "3": 420,
+                  "4": 126,
+                  "5": 82,
+                  "8": 8
+                },
+                "pr": 1672,
+                "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+                "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+                "width_inventory": {
+                  "4": 40,
+                  "5": 48,
+                  "7": 38,
+                  "8": 114,
+                  "9": 240
+                }
+              }
+            ],
+            "source_files": [
+              {
+                "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-PLAN.json",
+                "sha256": "e9ca855b0ccba243868aa7bd24b42f9e59f2f554bfe10521143591073e72ea18"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-GLOBAL-TEMPLATE.json.gz",
+                "sha256": "1d31424c4e27e26a35a9932ca778e43f1f3577589275422cc642aa68b31112db"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-OWNERS.json.gz",
+                "sha256": "cdfdcdec09592b4fd296ec49efe38573c1a61ecb8385b538ce801ee29355695b"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-PROFILE.json",
+                "sha256": "932453b2b045f73c81aa2b6f169a05ae2426c573965bbf4f5d3998b63b78a38f"
+              }
+            ]
+          },
+          "2751": {
+            "attribution": [
+              {
+                "author": "Tekalign (tekuuu)",
+                "bytes": 72468,
+                "format": "BORROW-WORD",
+                "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+                "kappa": "0.001717141586348426338109",
+                "local_profile": {
+                  "1": 2366,
+                  "2": 646,
+                  "3": 297,
+                  "4": 120,
+                  "5": 26,
+                  "8": 8
+                },
+                "pr": 2751,
+                "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+                "source": "in tree (package of PR #2802)",
+                "width_inventory": {
+                  "4": 26,
+                  "5": 9,
+                  "7": 62,
+                  "8": 78,
+                  "9": 240
+                }
+              },
+              {
+                "author": "Tekalign (tekuuu)",
+                "bytes": 72468,
+                "format": "BORROW-WORD",
+                "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+                "kappa": "0.001717141586348426338109",
+                "local_profile": {
+                  "1": 2366,
+                  "2": 646,
+                  "3": 297,
+                  "4": 120,
+                  "5": 26,
+                  "8": 8
+                },
+                "pr": 2751,
+                "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+                "source": "in tree (package of PR #2802)",
+                "width_inventory": {
+                  "4": 26,
+                  "5": 9,
+                  "7": 62,
+                  "8": 78,
+                  "9": 240
+                }
+              }
+            ],
+            "source_files": [
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PLAN.json.gz",
+                "sha256": "afb3c5c8134fc2cfce0b50a21758490c225574994b2c3c5161e53e2355acc6fa"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz",
+                "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/ORDER.json",
+                "sha256": "129e791d5b45c279443ff9e1edef5ac33d5abc51717ecbae8265abea5c247ae7"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/DISPATCH.json.gz",
+                "sha256": "14fe756dcac93a0f3b2b7f38ba7b998dec89d56d5171b691af4fae45e5d83d11"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PROVIDERS2751.json",
+                "sha256": "ec4802a33c0e1d41369da77b19b9b783dc812b2d3246e096fee13d29f226dd66"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/FILL2751.json.gz",
+                "sha256": "9ce94578640b4927cb9c73244692b1f79ac2999179d309f6bf0c015c06f7a2f1"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/evidence/PR2751-CLAIM.json",
+                "sha256": "78e99222196fca8b74a895b9e2db40a0e4afd1d69cd4fb52f38bfb157bac2438"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+                "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+                "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127"
+              }
+            ]
+          },
+          "2802": {
+            "attribution": [
+              {
+                "author": "Marius-Paul Dumitrean",
+                "bytes": 72444,
+                "format": "BORROW-WORD",
+                "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+                "kappa": "0.001717794984118634663827",
+                "local_profile": {
+                  "1": 2382,
+                  "2": 648,
+                  "3": 268,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                },
+                "pr": 2802,
+                "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+                "source": "in tree (package of PR #2802)",
+                "width_inventory": {
+                  "4": 26,
+                  "5": 2,
+                  "7": 62,
+                  "8": 78,
+                  "9": 240
+                }
+              },
+              {
+                "author": "Marius-Paul Dumitrean",
+                "bytes": 72443,
+                "format": "BORROW-WORD",
+                "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+                "kappa": "0.001717794984118634663827",
+                "local_profile": {
+                  "1": 2382,
+                  "2": 648,
+                  "3": 268,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                },
+                "pr": 2802,
+                "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+                "source": "in tree (package of PR #2802)",
+                "width_inventory": {
+                  "4": 26,
+                  "5": 2,
+                  "7": 62,
+                  "8": 78,
+                  "9": 240
+                }
+              }
+            ],
+            "source_files": [
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PLAN.json.gz",
+                "sha256": "afb3c5c8134fc2cfce0b50a21758490c225574994b2c3c5161e53e2355acc6fa"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz",
+                "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/ORDER.json",
+                "sha256": "129e791d5b45c279443ff9e1edef5ac33d5abc51717ecbae8265abea5c247ae7"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/DISPATCH.json.gz",
+                "sha256": "14fe756dcac93a0f3b2b7f38ba7b998dec89d56d5171b691af4fae45e5d83d11"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PROVIDERS.json",
+                "sha256": "391075b1411a3976850c633f92f58c35ed3f046f09d55bd435d7545124543fd4"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/FILL.json.gz",
+                "sha256": "2f2a25a8d82b424b1e643a8a5167361fcc5ab33cfbc6f186f4cb7ddcaf9df7d9"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/PROFILE.json",
+                "sha256": "9d71407ded0b17496b0f94ca896355933a850dc6fc8456e39b0a1f72995b1406"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+                "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66"
+              },
+              {
+                "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+                "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7"
+              }
+            ]
+          }
+        },
+        "models": {
+          "fills": [
+            "2802",
+            "2751",
+            "1672"
+          ],
+          "optima": [],
+          "template_loaded": true
+        },
+        "newly_loaded_models": [
+          "2802",
+          "2751",
+          "1672"
+        ],
+        "prior_p3_controls": {
+          "controls": [
+            {
+              "exact_same_module_sha": false,
+              "model": "2802",
+              "reason": "The frozen M3 source differs from P3. Each seed independently reruns the registered LP and rational dual verification; the original control is retained and no repetition is hidden.",
+              "result_file": {
+                "path": "results/P-3/v2/controls/task-00000.json",
+                "sha256": "a46246417db1eadaa450bedca1b4031c90afc51820d88f3f09a080a40b2a4f85"
+              },
+              "reused": false,
+              "saved_certificate_kind": "certified LP dual ceiling; floating primal is a proposal, not an exact optimum certificate",
+              "saved_local_profile_source": "literal pinned provider metadata",
+              "saved_source_files": [
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PLAN.json.gz",
+                  "sha256": "afb3c5c8134fc2cfce0b50a21758490c225574994b2c3c5161e53e2355acc6fa"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz",
+                  "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/ORDER.json",
+                  "sha256": "129e791d5b45c279443ff9e1edef5ac33d5abc51717ecbae8265abea5c247ae7"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/DISPATCH.json.gz",
+                  "sha256": "14fe756dcac93a0f3b2b7f38ba7b998dec89d56d5171b691af4fae45e5d83d11"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PROVIDERS.json",
+                  "sha256": "391075b1411a3976850c633f92f58c35ed3f046f09d55bd435d7545124543fd4"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/FILL.json.gz",
+                  "sha256": "2f2a25a8d82b424b1e643a8a5167361fcc5ab33cfbc6f186f4cb7ddcaf9df7d9"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/PROFILE.json",
+                  "sha256": "9d71407ded0b17496b0f94ca896355933a850dc6fc8456e39b0a1f72995b1406"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+                  "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+                  "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7"
+                }
+              ],
+              "saved_status": "OK"
+            },
+            {
+              "exact_same_module_sha": false,
+              "model": "2751",
+              "reason": "The frozen M3 source differs from P3. Each seed independently reruns the registered LP and rational dual verification; the original control is retained and no repetition is hidden.",
+              "result_file": {
+                "path": "results/P-3/v2/controls/task-00001.json",
+                "sha256": "89bc0c364a3a0653a504ab65e6b57c84ac0cd7759368e2e6f1f1b3504299cf3c"
+              },
+              "reused": false,
+              "saved_certificate_kind": "certified LP dual ceiling; floating primal is a proposal, not an exact optimum certificate",
+              "saved_local_profile_source": "literal pinned provider metadata",
+              "saved_source_files": [
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PLAN.json.gz",
+                  "sha256": "afb3c5c8134fc2cfce0b50a21758490c225574994b2c3c5161e53e2355acc6fa"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz",
+                  "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/ORDER.json",
+                  "sha256": "129e791d5b45c279443ff9e1edef5ac33d5abc51717ecbae8265abea5c247ae7"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/DISPATCH.json.gz",
+                  "sha256": "14fe756dcac93a0f3b2b7f38ba7b998dec89d56d5171b691af4fae45e5d83d11"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PROVIDERS2751.json",
+                  "sha256": "ec4802a33c0e1d41369da77b19b9b783dc812b2d3246e096fee13d29f226dd66"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/FILL2751.json.gz",
+                  "sha256": "9ce94578640b4927cb9c73244692b1f79ac2999179d309f6bf0c015c06f7a2f1"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/evidence/PR2751-CLAIM.json",
+                  "sha256": "78e99222196fca8b74a895b9e2db40a0e4afd1d69cd4fb52f38bfb157bac2438"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+                  "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+                  "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127"
+                }
+              ],
+              "saved_status": "OK"
+            },
+            {
+              "exact_same_module_sha": false,
+              "model": "1672",
+              "reason": "#1672 uses the explicitly registered held-word overlay in M3; P3 used inherited provider metadata.",
+              "result_file": {
+                "path": "results/P-3/v2/controls/task-00002.json",
+                "sha256": "52cc96c4e9815bb12c406acb6a9b36d056df0ebb136db06f50e5574c17269d95"
+              },
+              "reused": false,
+              "saved_certificate_kind": "certified LP dual ceiling; floating primal is a proposal, not an exact optimum certificate",
+              "saved_local_profile_source": "literal pinned provider metadata",
+              "saved_source_files": [
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-PLAN.json",
+                  "sha256": "e9ca855b0ccba243868aa7bd24b42f9e59f2f554bfe10521143591073e72ea18"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-GLOBAL-TEMPLATE.json.gz",
+                  "sha256": "1d31424c4e27e26a35a9932ca778e43f1f3577589275422cc642aa68b31112db"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-OWNERS.json.gz",
+                  "sha256": "cdfdcdec09592b4fd296ec49efe38573c1a61ecb8385b538ce801ee29355695b"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-PROFILE.json",
+                  "sha256": "932453b2b045f73c81aa2b6f169a05ae2426c573965bbf4f5d3998b63b78a38f"
+                }
+              ],
+              "saved_status": "OK"
+            }
+          ],
+          "current_module_sha256": "86b19cb8e6ebb7a33e1d01226d645f76132759c233f7be2a49647962f7b48048",
+          "prior_module_sha256": "090e08afe17c923fe87487c0cba5d95dc8f641cd0a7ead126a4cfa5b74398f04",
+          "prior_result": {
+            "path": "results/P-3/v2/seed-11031/RESULT.json",
+            "sha256": "92a6d34735b8fd34c5a988b9561244864e16aaf60f79b1b38fb2bdc0f7a2b8a2"
+          },
+          "registered_new_solver_calls_per_seed": 3,
+          "registered_new_solver_calls_total": 6,
+          "repeated_deterministic_controls_explicit": true
+        }
+      },
+      "parent_objects_loaded_once": true,
+      "peak_rss_bytes": 587247616,
+      "protocol_amendment": {
+        "earlier_applicable_amendments": [],
+        "path": "results/M3/AMENDMENT-2.json",
+        "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+      }
+    },
+    "prior_attempt_cpu_seconds": 70.218973072,
+    "protocol_amendment": {
+      "earlier_applicable_amendments": [],
+      "path": "results/M3/AMENDMENT-2.json",
+      "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+    },
+    "solver_accounting": {
+      "all_repeats_logged": true,
+      "completed_result_calls": 3,
+      "expected_calls_this_seed": 3,
+      "interrupted_task_call_count_unknown": false
+    },
+    "stopped": null,
+    "tasks": [
+      {
+        "cpu_seconds": 8.157656833,
+        "peak_rss_bytes": 511823872,
+        "result": {
+          "attribution": [
+            {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 57109,
+              "format": "FULL-WORD",
+              "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+              "kappa": null,
+              "local_profile": {
+                "1": 2412,
+                "2": 418,
+                "3": 418,
+                "4": 170,
+                "5": 68,
+                "8": 8
+              },
+              "path": "1094-K8PRE-FULL-WORD.json.gz",
+              "pr": 1094,
+              "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+              "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+              "width_inventory": {
+                "4": 56,
+                "5": 32,
+                "7": 30,
+                "8": 122,
+                "9": 240
+              }
+            },
+            {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 57222,
+              "format": "FULL-WORD",
+              "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+              "kappa": "0.001672660197076918",
+              "local_profile": {
+                "1": 2412,
+                "2": 418,
+                "3": 432,
+                "4": 142,
+                "5": 82,
+                "8": 8
+              },
+              "path": "1094-K8S7-FULL-WORD.json.gz",
+              "pr": 1094,
+              "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+              "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+              "width_inventory": {
+                "4": 56,
+                "5": 32,
+                "7": 30,
+                "8": 122,
+                "9": 240
+              }
+            },
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean)",
+              "bytes": 57307,
+              "format": "FULL-WORD",
+              "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+              "kappa": "0.001675658002271934",
+              "local_profile": {
+                "1": 2358,
+                "2": 504,
+                "3": 408,
+                "4": 134,
+                "5": 80,
+                "8": 8
+              },
+              "path": "1195-FULL-WORD.json.gz",
+              "pr": 1195,
+              "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+              "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+              "width_inventory": {
+                "4": 44,
+                "5": 44,
+                "7": 38,
+                "8": 114,
+                "9": 240
+              }
+            },
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean)",
+              "bytes": 57412,
+              "format": "FULL-WORD",
+              "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+              "kappa": "0.001676896669021299",
+              "local_profile": {
+                "1": 2339,
+                "2": 510,
+                "3": 419,
+                "4": 126,
+                "5": 82,
+                "8": 8
+              },
+              "path": "1625-extra-word-566.json.gz",
+              "pr": 1625,
+              "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+              "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+              "width_inventory": {
+                "4": 40,
+                "5": 48,
+                "7": 38,
+                "8": 114,
+                "9": 240
+              }
+            },
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean)",
+              "bytes": 57411,
+              "format": "FULL-WORD",
+              "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+              "kappa": "0.001676896669021299",
+              "local_profile": {
+                "1": 2347,
+                "2": 502,
+                "3": 415,
+                "4": 130,
+                "5": 82,
+                "8": 8
+              },
+              "path": "1625-gauge44-word-566.json.gz",
+              "pr": 1625,
+              "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+              "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+              "width_inventory": {
+                "4": 44,
+                "5": 44,
+                "7": 38,
+                "8": 114,
+                "9": 240
+              }
+            },
+            {
+              "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+              "bytes": 57440,
+              "format": "FULL-WORD",
+              "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+              "kappa": "0.001676938111022438",
+              "local_profile": {
+                "1": 2340,
+                "2": 508,
+                "3": 420,
+                "4": 126,
+                "5": 82,
+                "8": 8
+              },
+              "path": "1672-extra-word-566-554.json.gz",
+              "pr": 1672,
+              "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+              "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+              "width_inventory": {
+                "4": 40,
+                "5": 48,
+                "7": 38,
+                "8": 114,
+                "9": 240
+              }
+            },
+            {
+              "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+              "bytes": 57438,
+              "format": "FULL-WORD",
+              "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+              "kappa": "0.001676938111022438",
+              "local_profile": {
+                "1": 2348,
+                "2": 500,
+                "3": 416,
+                "4": 130,
+                "5": 82,
+                "8": 8
+              },
+              "path": "1672-gauge44-word-566-554.json.gz",
+              "pr": 1672,
+              "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+              "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+              "width_inventory": {
+                "4": 44,
+                "5": 44,
+                "7": 38,
+                "8": 114,
+                "9": 240
+              }
+            },
+            {
+              "author": "Philippe Van Velzen (philippeVV)",
+              "bytes": 71364,
+              "format": "BORROW-WORD",
+              "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+              "kappa": null,
+              "local_profile": {
+                "1": 2374,
+                "2": 646,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "7": 8
+              },
+              "path": "2679-BORROW-WORD-43base.json.gz",
+              "pr": 2679,
+              "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+              "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "Philippe Van Velzen (philippeVV)",
+              "bytes": 71365,
+              "format": "BORROW-WORD",
+              "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+              "kappa": null,
+              "local_profile": {
+                "1": 2374,
+                "2": 646,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "7": 8
+              },
+              "path": "2679-BORROW-WORD-43extra.json.gz",
+              "pr": 2679,
+              "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+              "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 71241,
+              "format": "BORROW-WORD",
+              "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+              "kappa": "0.0017161404259974415",
+              "local_profile": {
+                "1": 2370,
+                "2": 646,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "7": 4,
+                "8": 4
+              },
+              "path": "2745-BORROW-WORD-43base.json.gz",
+              "pr": 2745,
+              "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+              "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 71242,
+              "format": "BORROW-WORD",
+              "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+              "kappa": "0.0017161404259974415",
+              "local_profile": {
+                "1": 2370,
+                "2": 646,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "7": 4,
+                "8": 4
+              },
+              "path": "2745-BORROW-WORD-43extra.json.gz",
+              "pr": 2745,
+              "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+              "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "DavidAriasC",
+              "bytes": 72192,
+              "format": "BORROW-WORD",
+              "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+              "kappa": "0.001717256973467002308270",
+              "local_profile": {
+                "1": 2364,
+                "2": 647,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "8": 8
+              },
+              "path": "2766-WORD-base.json.gz",
+              "pr": 2766,
+              "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+              "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "DavidAriasC",
+              "bytes": 72192,
+              "format": "BORROW-WORD",
+              "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+              "kappa": "0.001717256973467002308270",
+              "local_profile": {
+                "1": 2364,
+                "2": 647,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "8": 8
+              },
+              "path": "2766-WORD-extra.json.gz",
+              "pr": 2766,
+              "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+              "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+              "bytes": 72354,
+              "format": "BORROW-WORD",
+              "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+              "kappa": "0.001717409316335491643448",
+              "local_profile": {
+                "1": 2386,
+                "2": 642,
+                "3": 274,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              },
+              "path": "retired5-WORD-base.json.gz",
+              "pr": null,
+              "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+              "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+              "width_inventory": {
+                "4": 26,
+                "5": 4,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+              "bytes": 72353,
+              "format": "BORROW-WORD",
+              "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+              "kappa": "0.001717409316335491643448",
+              "local_profile": {
+                "1": 2386,
+                "2": 642,
+                "3": 274,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              },
+              "path": "retired5-WORD-extra.json.gz",
+              "pr": null,
+              "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+              "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+              "width_inventory": {
+                "4": 26,
+                "5": 4,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "Marius-Paul Dumitrean",
+              "bytes": 72444,
+              "format": "BORROW-WORD",
+              "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+              "kappa": "0.001717794984118634663827",
+              "local_profile": {
+                "1": 2382,
+                "2": 648,
+                "3": 268,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              },
+              "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+              "pr": 2802,
+              "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+              "source": "in tree (package of PR #2802)",
+              "width_inventory": {
+                "4": 26,
+                "5": 2,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "Marius-Paul Dumitrean",
+              "bytes": 72443,
+              "format": "BORROW-WORD",
+              "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+              "kappa": "0.001717794984118634663827",
+              "local_profile": {
+                "1": 2382,
+                "2": 648,
+                "3": 268,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              },
+              "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+              "pr": 2802,
+              "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+              "source": "in tree (package of PR #2802)",
+              "width_inventory": {
+                "4": 26,
+                "5": 2,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "Tekalign (tekuuu)",
+              "bytes": 72468,
+              "format": "BORROW-WORD",
+              "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+              "kappa": "0.001717141586348426338109",
+              "local_profile": {
+                "1": 2366,
+                "2": 646,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "8": 8
+              },
+              "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+              "pr": 2751,
+              "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+              "source": "in tree (package of PR #2802)",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "Tekalign (tekuuu)",
+              "bytes": 72468,
+              "format": "BORROW-WORD",
+              "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+              "kappa": "0.001717141586348426338109",
+              "local_profile": {
+                "1": 2366,
+                "2": 646,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "8": 8
+              },
+              "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+              "pr": 2751,
+              "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+              "source": "in tree (package of PR #2802)",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 70505,
+              "format": "BORROW-WORD",
+              "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+              "kappa": "0.001703552312979594",
+              "local_profile": {
+                "1": 2363,
+                "2": 632,
+                "3": 326,
+                "4": 120,
+                "5": 34,
+                "7": 4,
+                "8": 4
+              },
+              "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+              "pr": 2462,
+              "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+              "source": "in tree (package of PR #2802)",
+              "width_inventory": {
+                "4": 33,
+                "5": 9,
+                "7": 62,
+                "8": 86,
+                "9": 240
+              }
+            },
+            {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 70509,
+              "format": "BORROW-WORD",
+              "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+              "kappa": "0.001703552312979594",
+              "local_profile": {
+                "1": 2363,
+                "2": 632,
+                "3": 326,
+                "4": 120,
+                "5": 34,
+                "7": 4,
+                "8": 4
+              },
+              "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+              "pr": 2462,
+              "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+              "source": "in tree (package of PR #2802)",
+              "width_inventory": {
+                "4": 33,
+                "5": 9,
+                "7": 62,
+                "8": 86,
+                "9": 240
+              }
+            }
+          ],
+          "ceiling_comparison_protocol": "certified LP upper < independently rational-certified packing lower; no numerical-overlap assertion",
+          "ceiling_falsification_classes": {
+            "helper_removal": "a violation removes additional ascending helper strings or changes remaining climbs, fixed centre descents, other local paid children, or the coverage law",
+            "rank48_integral": "a violation changes the local word/coverage law or introduces idle children of rank >48",
+            "rank51_fractional": "a violation changes the local word/coverage law or the maximum idle rank"
+          },
+          "decision": "all stated relaxations have independently checked dual bounds",
+          "experiment": "L-8",
+          "fixed_inventory": [
+            {
+              "active_patterns": [
+                {
+                  "capacity": 8,
+                  "count": "49728.0",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 1,
+                    "9": 0
+                  }
+                },
+                {
+                  "capacity": 16,
+                  "count": "33152.0",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 1,
+                    "8": 0,
+                    "9": 1
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "9879.000000000044",
+                  "remainder": 5,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 0,
+                    "9": 3
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "554.9999999999987",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 4,
+                    "9": 0
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "4069.999999999987",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 2,
+                    "8": 0,
+                    "9": 2
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "1331.999999999995",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 1,
+                    "7": 0,
+                    "8": 0,
+                    "9": 3
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "17315.999999999975",
+                  "remainder": 1,
+                  "widths": {
+                    "4": 1,
+                    "5": 0,
+                    "7": 0,
+                    "8": 0,
+                    "9": 3
+                  }
+                },
+                {
+                  "capacity": 48,
+                  "count": "26558.6",
+                  "remainder": 48,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 0,
+                    "9": 0
+                  }
+                },
+                {
+                  "capacity": 48,
+                  "count": "6593.399999999983",
+                  "remainder": 3,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 0,
+                    "9": 5
+                  }
+                }
+              ],
+              "attribution": [
+                {
+                  "author": "Marius-Paul Dumitrean",
+                  "bytes": 72444,
+                  "format": "BORROW-WORD",
+                  "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+                  "kappa": "0.001717794984118634663827",
+                  "local_profile": {
+                    "1": 2382,
+                    "2": 648,
+                    "3": 268,
+                    "4": 128,
+                    "5": 26,
+                    "8": 8
+                  },
+                  "pr": 2802,
+                  "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+                  "source": "in tree (package of PR #2802)",
+                  "width_inventory": {
+                    "4": 26,
+                    "5": 2,
+                    "7": 62,
+                    "8": 78,
+                    "9": 240
+                  }
+                },
+                {
+                  "author": "Marius-Paul Dumitrean",
+                  "bytes": 72443,
+                  "format": "BORROW-WORD",
+                  "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+                  "kappa": "0.001717794984118634663827",
+                  "local_profile": {
+                    "1": 2382,
+                    "2": 648,
+                    "3": 268,
+                    "4": 128,
+                    "5": 26,
+                    "8": 8
+                  },
+                  "pr": 2802,
+                  "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+                  "source": "in tree (package of PR #2802)",
+                  "width_inventory": {
+                    "4": 26,
+                    "5": 2,
+                    "7": 62,
+                    "8": 78,
+                    "9": 240
+                  }
+                }
+              ],
+              "capacity_counts": {
+                "8": 49728,
+                "16": 33152,
+                "32": 33152,
+                "48": 33152
+              },
+              "ceiling_dominates_literal": true,
+              "certificate_kind": "certified LP dual ceiling; floating primal is a proposal, not an exact optimum certificate",
+              "certified_ceiling": "0.001717795812",
+              "dual": {
+                "all_column_inequalities": 1163,
+                "capacity_multipliers": {
+                  "16": "10970525063510259/50000000000000000",
+                  "32": "10970525063510259/25000000000000000",
+                  "48": "658007973555402414353852768287/1000000000000000000000000000000",
+                  "8": "10970525063510259/100000000000000000"
+                },
+                "cost_rounding_grid": "1e-30",
+                "dual_idle_moment_lower": "145835542198649614861835366986333/7812500000000000000000000000",
+                "exact_rational_verification": true,
+                "exponent": "0.001717795812",
+                "inequality_violations": [],
+                "local_moment_lower": "595463132484737054568504583050159/12500000000000000000000000000",
+                "proposal_source": "active_positive_columns_lstsq_at_target",
+                "rejection_margin": "2.06115067795293618263344E-7",
+                "root_rejected": true,
+                "total_moment_lower": "4144000000012882191737205851141459/62500000000000000000000000000",
+                "total_moment_lower_decimal": "66304.00000020611506779529362",
+                "width_multipliers": {
+                  "4": "-3438084747513199/62500000000000000",
+                  "5": "-3440465989474731/50000000000000000",
+                  "7": "-4803663684328331/50000000000000000",
+                  "8": "-10970525063510259/100000000000000000",
+                  "9": "-6166861379181937/50000000000000000"
+                }
+              },
+              "dual_candidate_history": [
+                {
+                  "active_system": {
+                    "equality_multipliers": 9,
+                    "lstsq_rank": 9,
+                    "positive_columns": 9,
+                    "singular_values": [
+                      "7.778977444186832",
+                      "4.249475822454489",
+                      "2.260349638752261",
+                      "1.614144003109678",
+                      "1.0250772905068544",
+                      "0.9999999999999999",
+                      "0.935798086027579",
+                      "0.7638370722556695",
+                      "0.45263144250808657"
+                    ]
+                  },
+                  "candidates": [
+                    {
+                      "all_column_inequalities": 1163,
+                      "capacity_multipliers": {
+                        "16": "10970525063510259/50000000000000000",
+                        "32": "10970525063510259/25000000000000000",
+                        "48": "658007973555402414353852768287/1000000000000000000000000000000",
+                        "8": "10970525063510259/100000000000000000"
+                      },
+                      "cost_rounding_grid": "1e-30",
+                      "dual_idle_moment_lower": "145835542198649614861835366986333/7812500000000000000000000000",
+                      "exact_rational_verification": true,
+                      "exponent": "0.001717795812",
+                      "inequality_violations": [],
+                      "local_moment_lower": "595463132484737054568504583050159/12500000000000000000000000000",
+                      "proposal_source": "active_positive_columns_lstsq_at_target",
+                      "rejection_margin": "2.06115067795293618263344E-7",
+                      "root_rejected": true,
+                      "total_moment_lower": "4144000000012882191737205851141459/62500000000000000000000000000",
+                      "total_moment_lower_decimal": "66304.00000020611506779529362",
+                      "width_multipliers": {
+                        "4": "-3438084747513199/62500000000000000",
+                        "5": "-3440465989474731/50000000000000000",
+                        "7": "-4803663684328331/50000000000000000",
+                        "8": "-10970525063510259/100000000000000000",
+                        "9": "-6166861379181937/50000000000000000"
+                      }
+                    },
+                    {
+                      "all_column_inequalities": 1163,
+                      "capacity_multipliers": {
+                        "16": "5485262528952049/25000000000000000",
+                        "32": "5485262528952049/12500000000000000",
+                        "48": "329003986718101086364633324369/500000000000000000000000000000",
+                        "8": "109705250579041/1000000000000000"
+                      },
+                      "cost_rounding_grid": "1e-30",
+                      "dual_idle_moment_lower": "72917771077749258028908781011571/3906250000000000000000000000",
+                      "exact_rational_verification": true,
+                      "exponent": "0.001717795812",
+                      "inequality_violations": [],
+                      "local_moment_lower": "595463132484737054568504583050159/12500000000000000000000000000",
+                      "proposal_source": "original_lp_equality_marginals",
+                      "rejection_margin": "-0.000005317225579118985417025104",
+                      "root_rejected": false,
+                      "total_moment_lower": "4143999999667673401305063411435931/62500000000000000000000000000",
+                      "total_moment_lower_decimal": "66303.99999468277442088101458",
+                      "width_multipliers": {
+                        "4": "-1100187117130037/20000000000000000",
+                        "5": "-3440465981838397/50000000000000000",
+                        "7": "-960732735982833/10000000000000000",
+                        "8": "-109705250579041/1000000000000000",
+                        "9": "-6166861377989933/50000000000000000"
+                      }
+                    }
+                  ],
+                  "exponent": "0.001717795812",
+                  "selected_source": "active_positive_columns_lstsq_at_target",
+                  "selection": "maximum exact rational total_moment_lower among all-column feasible candidates"
+                }
+              ],
+              "dual_recovery_protocol": "Exactly two proposals at each of at most seven unchanged target exponents; one LP total; every proposal repaired and checked against every column with exact rational costs.",
+              "inherited_literal_root": null,
+              "inherited_local_profile": null,
+              "inherited_provider_notes": {
+                "pinned_word_provider_profile_parity": {
+                  "extra": true,
+                  "gauge44": true
+                },
+                "pinned_word_provider_width_parity": true,
+                "provider_profile_source": "pinned package providers"
+              },
+              "literal_control_scope": "literal pinned provider metadata and recorded fill",
+              "literal_profile": {
+                "1": 1603728,
+                "2": 431568,
+                "3": 185082,
+                "4": 85248,
+                "5": 27194,
+                "8": 5328,
+                "32": 1,
+                "48": 26558
+              },
+              "literal_root": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289589682978",
+              "local_profile": {
+                "1": 1586412,
+                "2": 431568,
+                "3": 178488,
+                "4": 85248,
+                "5": 17316,
+                "8": 5328
+              },
+              "local_profile_source": "literal pinned provider metadata",
+              "lp_equality_marginals": {
+                "capacity": {
+                  "16": "0.21941050115808197",
+                  "32": "0.43882100231616394",
+                  "48": "0.6580079733270104",
+                  "8": "0.10970525057904101"
+                },
+                "convention": "SciPy eqlin.marginals = derivative of the minimized objective with respect to b_eq; dual uses the same sign",
+                "proposal_exponent": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289589682978",
+                "width": {
+                  "4": "-0.05500935585650185",
+                  "5": "-0.06880931963676794",
+                  "7": "-0.0960732735982833",
+                  "8": "-0.109705250579041",
+                  "9": "-0.12333722755979866"
+                }
+              },
+              "model": "2802",
+              "pattern_count": 1163,
+              "primal_idle_profile": {
+                "1": "17315.999999999975",
+                "3": "6593.399999999983",
+                "5": "9879.000000000044",
+                "48": "26558.6"
+              },
+              "primal_profile_root": "0.00171779581091181044199266188918719766997440290833978350315027710219562253097557298345769973",
+              "primal_residual_max": 5.820766091346741e-11,
+              "role_width_counts": {
+                "4": 17316,
+                "5": 1332,
+                "7": 41292,
+                "8": 51948,
+                "9": 159840
+              },
+              "scope": "fixed role-width inventory and physical capacity multiplicities; arbitrary fractional bin patterns; eligibility/family constraints relaxed",
+              "solver_calls": 1,
+              "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+              "solver_options": {
+                "parallel": false,
+                "threads": 1,
+                "time_limit": 300.0
+              },
+              "solver_resource_policy": "one HiGHS thread; SciPy boolean parallel=False",
+              "source_files": [
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PLAN.json.gz",
+                  "sha256": "afb3c5c8134fc2cfce0b50a21758490c225574994b2c3c5161e53e2355acc6fa"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz",
+                  "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/ORDER.json",
+                  "sha256": "129e791d5b45c279443ff9e1edef5ac33d5abc51717ecbae8265abea5c247ae7"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/DISPATCH.json.gz",
+                  "sha256": "14fe756dcac93a0f3b2b7f38ba7b998dec89d56d5171b691af4fae45e5d83d11"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PROVIDERS.json",
+                  "sha256": "391075b1411a3976850c633f92f58c35ed3f046f09d55bd435d7545124543fd4"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/FILL.json.gz",
+                  "sha256": "2f2a25a8d82b424b1e643a8a5167361fcc5ab33cfbc6f186f4cb7ddcaf9df7d9"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/PROFILE.json",
+                  "sha256": "9d71407ded0b17496b0f94ca896355933a850dc6fc8456e39b0a1f72995b1406"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+                  "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+                  "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7"
+                }
+              ],
+              "status": "PASS",
+              "violating_construction_must_change": "local paid profile, role-width inventory, bin capacities/counts, or coverage geometry"
+            },
+            {
+              "active_patterns": [
+                {
+                  "capacity": 8,
+                  "count": "49728.0",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 1,
+                    "9": 0
+                  }
+                },
+                {
+                  "capacity": 16,
+                  "count": "33152.0",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 1,
+                    "8": 0,
+                    "9": 1
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "5217.000000000029",
+                  "remainder": 5,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 0,
+                    "9": 3
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "554.999999999998",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 4,
+                    "9": 0
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "4070.0",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 2,
+                    "8": 0,
+                    "9": 2
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "5993.999999999989",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 1,
+                    "7": 0,
+                    "8": 0,
+                    "9": 3
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "17315.999999999985",
+                  "remainder": 1,
+                  "widths": {
+                    "4": 1,
+                    "5": 0,
+                    "7": 0,
+                    "8": 0,
+                    "9": 3
+                  }
+                },
+                {
+                  "capacity": 48,
+                  "count": "26558.600000000002",
+                  "remainder": 48,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 0,
+                    "9": 0
+                  }
+                },
+                {
+                  "capacity": 48,
+                  "count": "6593.3999999999905",
+                  "remainder": 3,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 0,
+                    "9": 5
+                  }
+                }
+              ],
+              "attribution": [
+                {
+                  "author": "Tekalign (tekuuu)",
+                  "bytes": 72468,
+                  "format": "BORROW-WORD",
+                  "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+                  "kappa": "0.001717141586348426338109",
+                  "local_profile": {
+                    "1": 2366,
+                    "2": 646,
+                    "3": 297,
+                    "4": 120,
+                    "5": 26,
+                    "8": 8
+                  },
+                  "pr": 2751,
+                  "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+                  "source": "in tree (package of PR #2802)",
+                  "width_inventory": {
+                    "4": 26,
+                    "5": 9,
+                    "7": 62,
+                    "8": 78,
+                    "9": 240
+                  }
+                },
+                {
+                  "author": "Tekalign (tekuuu)",
+                  "bytes": 72468,
+                  "format": "BORROW-WORD",
+                  "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+                  "kappa": "0.001717141586348426338109",
+                  "local_profile": {
+                    "1": 2366,
+                    "2": 646,
+                    "3": 297,
+                    "4": 120,
+                    "5": 26,
+                    "8": 8
+                  },
+                  "pr": 2751,
+                  "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+                  "source": "in tree (package of PR #2802)",
+                  "width_inventory": {
+                    "4": 26,
+                    "5": 9,
+                    "7": 62,
+                    "8": 78,
+                    "9": 240
+                  }
+                }
+              ],
+              "capacity_counts": {
+                "8": 49728,
+                "16": 33152,
+                "32": 33152,
+                "48": 33152
+              },
+              "ceiling_dominates_literal": true,
+              "certificate_kind": "certified LP dual ceiling; floating primal is a proposal, not an exact optimum certificate",
+              "certified_ceiling": "0.001717142414",
+              "dual": {
+                "all_column_inequalities": 1163,
+                "capacity_multipliers": {
+                  "16": "10970520638885049/50000000000000000",
+                  "32": "10970520638885049/25000000000000000",
+                  "48": "65800779329899871075508211293/100000000000000000000000000000",
+                  "8": "10970520638885049/100000000000000000"
+                },
+                "cost_rounding_grid": "1e-30",
+                "dual_idle_moment_lower": "14332932576764423915356626724887/781250000000000000000000000",
+                "exact_rational_verification": true,
+                "exponent": "0.001717142414",
+                "inequality_violations": [],
+                "local_moment_lower": "1498682696938221091925375475861231/31250000000000000000000000000",
+                "proposal_source": "active_positive_columns_lstsq_at_target",
+                "rejection_margin": "2.81537553268497435414752E-7",
+                "root_rejected": true,
+                "total_moment_lower": "2072000000008798048539640544856711/31250000000000000000000000000",
+                "total_moment_lower_decimal": "66304.00000028153755326849744",
+                "width_multipliers": {
+                  "4": "-27504637054193863/500000000000000000",
+                  "5": "-688091992512157/10000000000000000",
+                  "7": "-9607320400963903/100000000000000000",
+                  "8": "-10970520638885049/100000000000000000",
+                  "9": "-12333720876806231/100000000000000000"
+                }
+              },
+              "dual_candidate_history": [
+                {
+                  "active_system": {
+                    "equality_multipliers": 9,
+                    "lstsq_rank": 9,
+                    "positive_columns": 9,
+                    "singular_values": [
+                      "7.778977444186832",
+                      "4.249475822454489",
+                      "2.260349638752261",
+                      "1.614144003109678",
+                      "1.0250772905068544",
+                      "0.9999999999999999",
+                      "0.935798086027579",
+                      "0.7638370722556695",
+                      "0.45263144250808657"
+                    ]
+                  },
+                  "candidates": [
+                    {
+                      "all_column_inequalities": 1163,
+                      "capacity_multipliers": {
+                        "16": "10970520638885049/50000000000000000",
+                        "32": "10970520638885049/25000000000000000",
+                        "48": "65800779329899871075508211293/100000000000000000000000000000",
+                        "8": "10970520638885049/100000000000000000"
+                      },
+                      "cost_rounding_grid": "1e-30",
+                      "dual_idle_moment_lower": "14332932576764423915356626724887/781250000000000000000000000",
+                      "exact_rational_verification": true,
+                      "exponent": "0.001717142414",
+                      "inequality_violations": [],
+                      "local_moment_lower": "1498682696938221091925375475861231/31250000000000000000000000000",
+                      "proposal_source": "active_positive_columns_lstsq_at_target",
+                      "rejection_margin": "2.81537553268497435414752E-7",
+                      "root_rejected": true,
+                      "total_moment_lower": "2072000000008798048539640544856711/31250000000000000000000000000",
+                      "total_moment_lower_decimal": "66304.00000028153755326849744",
+                      "width_multipliers": {
+                        "4": "-27504637054193863/500000000000000000",
+                        "5": "-688091992512157/10000000000000000",
+                        "7": "-9607320400963903/100000000000000000",
+                        "8": "-10970520638885049/100000000000000000",
+                        "9": "-12333720876806231/100000000000000000"
+                      }
+                    },
+                    {
+                      "all_column_inequalities": 1163,
+                      "capacity_multipliers": {
+                        "16": "21941041266560901/100000000000000000",
+                        "32": "21941041266560901/50000000000000000",
+                        "48": "65800779317983126075508211293/100000000000000000000000000000",
+                        "8": "2742630158320113/25000000000000000"
+                      },
+                      "cost_rounding_grid": "1e-30",
+                      "dual_idle_moment_lower": "14332932573006621422931626724887/781250000000000000000000000",
+                      "exact_rational_verification": true,
+                      "exponent": "0.001717142414",
+                      "inequality_violations": [],
+                      "local_moment_lower": "1498682696938221091925375475861231/31250000000000000000000000000",
+                      "proposal_source": "original_lp_equality_marginals",
+                      "rejection_margin": "-0.000004528449637035502564585248",
+                      "root_rejected": false,
+                      "total_moment_lower": "2071999999858485948842640544856711/31250000000000000000000000000",
+                      "total_moment_lower_decimal": "66303.99999547155036296449744",
+                      "width_multipliers": {
+                        "4": "-5500927400470723/100000000000000000",
+                        "5": "-172022997746329/2500000000000000",
+                        "7": "-9607320392138019/100000000000000000",
+                        "8": "-2742630158320113/25000000000000000",
+                        "9": "-6166860437211441/50000000000000000"
+                      }
+                    }
+                  ],
+                  "exponent": "0.001717142414",
+                  "selected_source": "active_positive_columns_lstsq_at_target",
+                  "selection": "maximum exact rational total_moment_lower among all-column feasible candidates"
+                }
+              ],
+              "dual_recovery_protocol": "Exactly two proposals at each of at most seven unchanged target exponents; one LP total; every proposal repaired and checked against every column with exact rational costs.",
+              "inherited_literal_root": null,
+              "inherited_local_profile": null,
+              "inherited_provider_notes": {
+                "pinned_word_provider_profile_parity": {
+                  "extra": true,
+                  "gauge44": true
+                },
+                "pinned_word_provider_width_parity": true,
+                "provider_profile_source": "pinned package providers"
+              },
+              "literal_control_scope": "literal pinned provider metadata and recorded fill",
+              "literal_profile": {
+                "1": 1593072,
+                "2": 430236,
+                "3": 204396,
+                "4": 79920,
+                "5": 22532,
+                "8": 5328,
+                "32": 1,
+                "48": 26558
+              },
+              "literal_root": "0.00171714158634842633810968567593350542471545138395319864596621414788615403442195003668792657",
+              "local_profile": {
+                "1": 1575756,
+                "2": 430236,
+                "3": 197802,
+                "4": 79920,
+                "5": 17316,
+                "8": 5328
+              },
+              "local_profile_source": "literal pinned provider metadata",
+              "lp_equality_marginals": {
+                "capacity": {
+                  "16": "0.219410412665609",
+                  "32": "0.438820825331218",
+                  "48": "0.65800779307067",
+                  "8": "0.10970520633280456"
+                },
+                "convention": "SciPy eqlin.marginals = derivative of the minimized objective with respect to b_eq; dual uses the same sign",
+                "proposal_exponent": "0.00171714158634842633810968567593350542471545138395319864596621414788615403442195003668792657",
+                "width": {
+                  "4": "-0.05500927400470723",
+                  "5": "-0.0688091990985316",
+                  "7": "-0.09607320392138019",
+                  "8": "-0.10970520633280452",
+                  "9": "-0.12333720874422882"
+                }
+              },
+              "model": "2751",
+              "pattern_count": 1163,
+              "primal_idle_profile": {
+                "1": "17315.999999999985",
+                "3": "6593.3999999999905",
+                "5": "5217.000000000029",
+                "48": "26558.600000000002"
+              },
+              "primal_profile_root": "0.00171714241251413823725405251816332171277147122643160466935428155845694334799135580106540926",
+              "primal_residual_max": 2.9103830456733704e-11,
+              "role_width_counts": {
+                "4": 17316,
+                "5": 5994,
+                "7": 41292,
+                "8": 51948,
+                "9": 159840
+              },
+              "scope": "fixed role-width inventory and physical capacity multiplicities; arbitrary fractional bin patterns; eligibility/family constraints relaxed",
+              "solver_calls": 1,
+              "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+              "solver_options": {
+                "parallel": false,
+                "threads": 1,
+                "time_limit": 300.0
+              },
+              "solver_resource_policy": "one HiGHS thread; SciPy boolean parallel=False",
+              "source_files": [
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PLAN.json.gz",
+                  "sha256": "afb3c5c8134fc2cfce0b50a21758490c225574994b2c3c5161e53e2355acc6fa"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz",
+                  "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/ORDER.json",
+                  "sha256": "129e791d5b45c279443ff9e1edef5ac33d5abc51717ecbae8265abea5c247ae7"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/DISPATCH.json.gz",
+                  "sha256": "14fe756dcac93a0f3b2b7f38ba7b998dec89d56d5171b691af4fae45e5d83d11"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PROVIDERS2751.json",
+                  "sha256": "ec4802a33c0e1d41369da77b19b9b783dc812b2d3246e096fee13d29f226dd66"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/FILL2751.json.gz",
+                  "sha256": "9ce94578640b4927cb9c73244692b1f79ac2999179d309f6bf0c015c06f7a2f1"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/evidence/PR2751-CLAIM.json",
+                  "sha256": "78e99222196fca8b74a895b9e2db40a0e4afd1d69cd4fb52f38bfb157bac2438"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+                  "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+                  "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127"
+                }
+              ],
+              "status": "PASS",
+              "violating_construction_must_change": "local paid profile, role-width inventory, bin capacities/counts, or coverage geometry"
+            },
+            {
+              "active_patterns": [
+                {
+                  "capacity": 8,
+                  "count": "41111.999999999985",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 1,
+                    "9": 0
+                  }
+                },
+                {
+                  "capacity": 8,
+                  "count": "8616.000000000016",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 2,
+                    "5": 0,
+                    "7": 0,
+                    "8": 0,
+                    "9": 0
+                  }
+                },
+                {
+                  "capacity": 16,
+                  "count": "7843.999999999996",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 2,
+                    "9": 0
+                  }
+                },
+                {
+                  "capacity": 16,
+                  "count": "25308.000000000004",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 1,
+                    "8": 0,
+                    "9": 1
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "2180.000000000007",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 4,
+                    "9": 0
+                  }
+                },
+                {
+                  "capacity": 32,
+                  "count": "30972.000000000025",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 0,
+                    "5": 1,
+                    "7": 0,
+                    "8": 0,
+                    "9": 3
+                  }
+                },
+                {
+                  "capacity": 48,
+                  "count": "22748.000000000004",
+                  "remainder": 48,
+                  "widths": {
+                    "4": 0,
+                    "5": 0,
+                    "7": 0,
+                    "8": 0,
+                    "9": 0
+                  }
+                },
+                {
+                  "capacity": 48,
+                  "count": "10403.999999999993",
+                  "remainder": 0,
+                  "widths": {
+                    "4": 1,
+                    "5": 0,
+                    "7": 0,
+                    "8": 1,
+                    "9": 4
+                  }
+                }
+              ],
+              "attribution": [
+                {
+                  "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+                  "bytes": 57438,
+                  "format": "FULL-WORD",
+                  "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+                  "kappa": "0.001676938111022438",
+                  "local_profile": {
+                    "1": 2348,
+                    "2": 500,
+                    "3": 416,
+                    "4": 130,
+                    "5": 82,
+                    "8": 8
+                  },
+                  "pr": 1672,
+                  "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+                  "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+                  "width_inventory": {
+                    "4": 44,
+                    "5": 44,
+                    "7": 38,
+                    "8": 114,
+                    "9": 240
+                  }
+                },
+                {
+                  "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+                  "bytes": 57440,
+                  "format": "FULL-WORD",
+                  "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+                  "kappa": "0.001676938111022438",
+                  "local_profile": {
+                    "1": 2340,
+                    "2": 508,
+                    "3": 420,
+                    "4": 126,
+                    "5": 82,
+                    "8": 8
+                  },
+                  "pr": 1672,
+                  "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+                  "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+                  "width_inventory": {
+                    "4": 40,
+                    "5": 48,
+                    "7": 38,
+                    "8": 114,
+                    "9": 240
+                  }
+                }
+              ],
+              "capacity_counts": {
+                "8": 49728,
+                "16": 33152,
+                "32": 33152,
+                "48": 33152
+              },
+              "ceiling_dominates_literal": true,
+              "certificate_kind": "certified LP dual ceiling; floating primal is a proposal, not an exact optimum certificate",
+              "certified_ceiling": "0.001679754958",
+              "dual": {
+                "all_column_inequalities": 1163,
+                "capacity_multipliers": {
+                  "16": "2741656162929737/12500000000000000",
+                  "32": "2741656162929737/6250000000000000",
+                  "48": "8224968488789211/12500000000000000",
+                  "8": "2741656162929737/25000000000000000"
+                },
+                "cost_rounding_grid": "1e-30",
+                "dual_idle_moment_lower": "11693848948936051557/781250000000000",
+                "exact_rational_verification": true,
+                "exponent": "0.001679754958",
+                "inequality_violations": [],
+                "local_moment_lower": "3208492084107072844322887493228913/62500000000000000000000000000",
+                "proposal_source": "original_lp_equality_marginals",
+                "rejection_margin": "3.51311502126199891662608E-7",
+                "root_rejected": true,
+                "total_moment_lower": "4144000000021956968882887493228913/62500000000000000000000000000",
+                "total_moment_lower_decimal": "66304.00000035131150212619989",
+                "width_multipliers": {
+                  "4": "-2741656162929737/50000000000000000",
+                  "5": "-856767550915543/12500000000000000",
+                  "7": "-2398949142563521/25000000000000000",
+                  "8": "-5483312325859477/50000000000000000",
+                  "9": "-616872636659191/5000000000000000"
+                }
+              },
+              "dual_candidate_history": [
+                {
+                  "active_system": {
+                    "equality_multipliers": 9,
+                    "lstsq_rank": 8,
+                    "positive_columns": 8,
+                    "singular_values": [
+                      "5.552189443718103",
+                      "4.48733215457796",
+                      "2.359692161845023",
+                      "1.6160688400195984",
+                      "1.4366593686542688",
+                      "0.8882980637444194",
+                      "0.7920957965740587",
+                      "0.613789523091132"
+                    ]
+                  },
+                  "candidates": [
+                    {
+                      "all_column_inequalities": 1163,
+                      "capacity_multipliers": {
+                        "16": "-622424311277503131047827214653/1000000000000000000000000000000",
+                        "32": "-622440366844775647775592787889/500000000000000000000000000000",
+                        "48": "-933674625130947155666993246161/500000000000000000000000000000",
+                        "8": "-85378594516739035666993246161/500000000000000000000000000000"
+                      },
+                      "cost_rounding_grid": "1e-30",
+                      "dual_idle_moment_lower": "-298441021634798809599842329125031/1953125000000000000000000000",
+                      "exact_rational_verification": true,
+                      "exponent": "0.001679754958",
+                      "inequality_violations": [],
+                      "local_moment_lower": "3208492084107072844322887493228913/62500000000000000000000000000",
+                      "proposal_source": "active_positive_columns_lstsq_at_target",
+                      "rejection_margin": "-167769.9297313038250059530726",
+                      "root_rejected": false,
+                      "total_moment_lower": "-6341620608206489062872067038772079/62500000000000000000000000000",
+                      "total_moment_lower_decimal": "-101465.9297313038250059530726",
+                      "width_multipliers": {
+                        "4": "-27456009919432933/1000000000000000000",
+                        "5": "21207400765355203/100000000000000000",
+                        "7": "3408332265860613/100000000000000000",
+                        "8": "-5491201983886607/100000000000000000",
+                        "9": "-115125889869071/800000000000000"
+                      }
+                    },
+                    {
+                      "all_column_inequalities": 1163,
+                      "capacity_multipliers": {
+                        "16": "2741656162929737/12500000000000000",
+                        "32": "2741656162929737/6250000000000000",
+                        "48": "8224968488789211/12500000000000000",
+                        "8": "2741656162929737/25000000000000000"
+                      },
+                      "cost_rounding_grid": "1e-30",
+                      "dual_idle_moment_lower": "11693848948936051557/781250000000000",
+                      "exact_rational_verification": true,
+                      "exponent": "0.001679754958",
+                      "inequality_violations": [],
+                      "local_moment_lower": "3208492084107072844322887493228913/62500000000000000000000000000",
+                      "proposal_source": "original_lp_equality_marginals",
+                      "rejection_margin": "3.51311502126199891662608E-7",
+                      "root_rejected": true,
+                      "total_moment_lower": "4144000000021956968882887493228913/62500000000000000000000000000",
+                      "total_moment_lower_decimal": "66304.00000035131150212619989",
+                      "width_multipliers": {
+                        "4": "-2741656162929737/50000000000000000",
+                        "5": "-856767550915543/12500000000000000",
+                        "7": "-2398949142563521/25000000000000000",
+                        "8": "-5483312325859477/50000000000000000",
+                        "9": "-616872636659191/5000000000000000"
+                      }
+                    }
+                  ],
+                  "exponent": "0.001679754958",
+                  "selected_source": "original_lp_equality_marginals",
+                  "selection": "maximum exact rational total_moment_lower among all-column feasible candidates"
+                }
+              ],
+              "dual_recovery_protocol": "Exactly two proposals at each of at most seven unchanged target exponents; one LP total; every proposal repaired and checked against every column with exact rational costs.",
+              "inherited_literal_root": "0.00167967179550473762154207580896485385256569402634755251260919550730894524191433236773636407",
+              "inherited_local_profile": {
+                "1": 1559100,
+                "2": 339000,
+                "3": 277392,
+                "4": 84912,
+                "5": 54612,
+                "8": 5328
+              },
+              "inherited_provider_notes": {
+                "held_word_profile_differs": true,
+                "overlay_policy": "Literal inherited fill is checked against supplied PROFILE; held #1672 word local profiles are separately substituted at identical exact helper widths.",
+                "provider_profile_source": "inherited PLAN.provider_registry"
+              },
+              "literal_control_scope": "same recorded owner fill with exact held-word local-profile overlay",
+              "literal_profile": {
+                "1": 1560432,
+                "2": 336336,
+                "3": 278724,
+                "4": 84912,
+                "5": 54612,
+                "8": 5328,
+                "48": 22748
+              },
+              "literal_root": "0.00167975495612554452133567099392070257699831143850258029546032752016286454826032563880125360",
+              "local_profile": {
+                "1": 1560432,
+                "2": 336336,
+                "3": 278724,
+                "4": 84912,
+                "5": 54612,
+                "8": 5328
+              },
+              "local_profile_source": "explicit held-word overlay at unchanged helper widths",
+              "lp_equality_marginals": {
+                "capacity": {
+                  "16": "0.21933249303437896",
+                  "32": "0.43866498606875803",
+                  "48": "0.657997479103137",
+                  "8": "0.10966624651718948"
+                },
+                "convention": "SciPy eqlin.marginals = derivative of the minimized objective with respect to b_eq; dual uses the same sign",
+                "proposal_exponent": "0.00167975495612554452133567099392070257699831143850258029546032752016286454826032563880125360",
+                "width": {
+                  "4": "-0.05483312325859474",
+                  "5": "-0.06854140407324344",
+                  "7": "-0.09595796570254084",
+                  "8": "-0.10966624651718954",
+                  "9": "-0.1233745273318382"
+                }
+              },
+              "model": "1672",
+              "pattern_count": 1163,
+              "primal_idle_profile": {
+                "48": "22748.000000000004"
+              },
+              "primal_profile_root": "0.00167975495612553093371134207382243300585939631526864348506838967971125031387163937790847700",
+              "primal_residual_max": 4.001776687800884e-11,
+              "role_width_counts": {
+                "4": 27636,
+                "5": 30972,
+                "7": 25308,
+                "8": 75924,
+                "9": 159840
+              },
+              "scope": "fixed role-width inventory and physical capacity multiplicities; arbitrary fractional bin patterns; eligibility/family constraints relaxed",
+              "solver_calls": 1,
+              "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+              "solver_options": {
+                "parallel": false,
+                "threads": 1,
+                "time_limit": 300.0
+              },
+              "solver_resource_policy": "one HiGHS thread; SciPy boolean parallel=False",
+              "source_files": [
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-PLAN.json",
+                  "sha256": "e9ca855b0ccba243868aa7bd24b42f9e59f2f554bfe10521143591073e72ea18"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-GLOBAL-TEMPLATE.json.gz",
+                  "sha256": "1d31424c4e27e26a35a9932ca778e43f1f3577589275422cc642aa68b31112db"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-OWNERS.json.gz",
+                  "sha256": "cdfdcdec09592b4fd296ec49efe38573c1a61ecb8385b538ce801ee29355695b"
+                },
+                {
+                  "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-PROFILE.json",
+                  "sha256": "932453b2b045f73c81aa2b6f169a05ae2426c573965bbf4f5d3998b63b78a38f"
+                }
+              ],
+              "status": "PASS",
+              "violating_construction_must_change": "local paid profile, role-width inventory, bin capacities/counts, or coverage geometry"
+            }
+          ],
+          "helper_removal_envelope": [
+            {
+              "ceiling": "0.001758085936",
+              "k_removed": 0,
+              "maximizing_relaxed_helper_ids": [],
+              "proof": "original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed",
+              "rejected": true,
+              "total_moment_lower": "140896000000539149627955836694823557/2125000000000000000000000000000",
+              "total_moment_lower_decimal": "66304.00000025371747197921727"
+            },
+            {
+              "ceiling": "0.001761170075",
+              "k_removed": 1,
+              "maximizing_relaxed_helper_ids": [
+                442
+              ],
+              "proof": "original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed",
+              "rejected": true,
+              "total_moment_lower": "281792000000943837789488375012047209/4250000000000000000000000000000",
+              "total_moment_lower_decimal": "66304.00000022207947987961765"
+            },
+            {
+              "ceiling": "0.001764265063",
+              "k_removed": 2,
+              "maximizing_relaxed_helper_ids": [
+                442,
+                405
+              ],
+              "proof": "original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed",
+              "rejected": true,
+              "total_moment_lower": "281792000000895189678743592124634067/4250000000000000000000000000000",
+              "total_moment_lower_decimal": "66304.00000021063286558672756"
+            },
+            {
+              "ceiling": "0.001770487816",
+              "k_removed": 4,
+              "maximizing_relaxed_helper_ids": [
+                442,
+                405,
+                321,
+                305
+              ],
+              "proof": "original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed",
+              "rejected": true,
+              "total_moment_lower": "281792000001071086872953417545904073/4250000000000000000000000000000",
+              "total_moment_lower_decimal": "66304.00000025202044069492178"
+            },
+            {
+              "ceiling": "0.001783066061",
+              "k_removed": 8,
+              "maximizing_relaxed_helper_ids": [
+                442,
+                405,
+                321,
+                305,
+                291,
+                289,
+                275,
+                273
+              ],
+              "proof": "original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed",
+              "rejected": true,
+              "total_moment_lower": "281792000001125438012088385678311219/4250000000000000000000000000000",
+              "total_moment_lower_decimal": "66304.00000026480894402079663"
+            },
+            {
+              "ceiling": "0.001807743133",
+              "k_removed": 16,
+              "maximizing_relaxed_helper_ids": [
+                442,
+                405,
+                321,
+                305,
+                291,
+                289,
+                275,
+                273,
+                444,
+                439,
+                437,
+                435,
+                433,
+                426,
+                421,
+                419
+              ],
+              "proof": "original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed",
+              "rejected": true,
+              "total_moment_lower": "11271680000034894866298625414505841/170000000000000000000000000000",
+              "total_moment_lower_decimal": "66304.00000020526391940367891"
+            },
+            {
+              "ceiling": "0.001859206446",
+              "k_removed": 32,
+              "maximizing_relaxed_helper_ids": [
+                442,
+                405,
+                321,
+                305,
+                291,
+                289,
+                275,
+                273,
+                444,
+                439,
+                437,
+                435,
+                433,
+                426,
+                421,
+                419,
+                417,
+                410,
+                403,
+                401,
+                398,
+                397,
+                396,
+                393,
+                381,
+                379,
+                377,
+                376,
+                366,
+                365,
+                364,
+                361
+              ],
+              "proof": "original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed",
+              "rejected": true,
+              "total_moment_lower": "140896000000394804277878559262115559/2125000000000000000000000000000",
+              "total_moment_lower_decimal": "66304.00000018579024841343965"
+            },
+            {
+              "ceiling": "0.001971462656",
+              "k_removed": 64,
+              "maximizing_relaxed_helper_ids": [
+                442,
+                405,
+                321,
+                305,
+                291,
+                289,
+                275,
+                273,
+                444,
+                439,
+                437,
+                435,
+                433,
+                426,
+                421,
+                419,
+                417,
+                410,
+                403,
+                401,
+                398,
+                397,
+                396,
+                393,
+                381,
+                379,
+                377,
+                376,
+                366,
+                365,
+                364,
+                361,
+                360,
+                359,
+                358,
+                356,
+                354,
+                350,
+                349,
+                348,
+                347,
+                345,
+                344,
+                343,
+                342,
+                340,
+                338,
+                333,
+                329,
+                317,
+                315,
+                313,
+                302,
+                301,
+                300,
+                297,
+                296,
+                295,
+                294,
+                292,
+                290,
+                286,
+                285,
+                284
+              ],
+              "proof": "original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed",
+              "rejected": true,
+              "total_moment_lower": "14089600000040458522341845133395337/212500000000000000000000000000",
+              "total_moment_lower_decimal": "66304.00000019039304631456533"
+            },
+            {
+              "ceiling": "0.002234864757",
+              "k_removed": 128,
+              "maximizing_relaxed_helper_ids": [
+                442,
+                405,
+                321,
+                305,
+                291,
+                289,
+                275,
+                273,
+                444,
+                439,
+                437,
+                435,
+                433,
+                426,
+                421,
+                419,
+                417,
+                410,
+                403,
+                401,
+                398,
+                397,
+                396,
+                393,
+                381,
+                379,
+                377,
+                376,
+                366,
+                365,
+                364,
+                361,
+                360,
+                359,
+                358,
+                356,
+                354,
+                350,
+                349,
+                348,
+                347,
+                345,
+                344,
+                343,
+                342,
+                340,
+                338,
+                333,
+                329,
+                317,
+                315,
+                313,
+                302,
+                301,
+                300,
+                297,
+                296,
+                295,
+                294,
+                292,
+                290,
+                286,
+                285,
+                284,
+                283,
+                281,
+                280,
+                279,
+                278,
+                276,
+                274,
+                270,
+                268,
+                266,
+                264,
+                263,
+                262,
+                261,
+                260,
+                259,
+                258,
+                257,
+                254,
+                252,
+                250,
+                248,
+                247,
+                246,
+                245,
+                244,
+                243,
+                242,
+                241,
+                234,
+                229,
+                227,
+                225,
+                392,
+                382,
+                380,
+                335,
+                334,
+                332,
+                328,
+                319,
+                318,
+                316,
+                312,
+                303,
+                287,
+                542,
+                530,
+                446,
+                440,
+                438,
+                436,
+                434,
+                399,
+                395,
+                383,
+                367,
+                363,
+                351,
+                331,
+                299,
+                238,
+                236,
+                232
+              ],
+              "proof": "original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed",
+              "rejected": true,
+              "total_moment_lower": "33152000000090760180003224478765201/500000000000000000000000000000",
+              "total_moment_lower_decimal": "66304.00000018152036000644896"
+            },
+            {
+              "ceiling": "0.002940700529",
+              "k_removed": 256,
+              "maximizing_relaxed_helper_ids": [
+                442,
+                405,
+                321,
+                305,
+                291,
+                289,
+                275,
+                273,
+                444,
+                439,
+                437,
+                435,
+                433,
+                426,
+                421,
+                419,
+                417,
+                410,
+                403,
+                401,
+                398,
+                397,
+                396,
+                393,
+                381,
+                379,
+                377,
+                376,
+                366,
+                365,
+                364,
+                361,
+                360,
+                359,
+                358,
+                356,
+                354,
+                350,
+                349,
+                348,
+                347,
+                345,
+                344,
+                343,
+                342,
+                340,
+                338,
+                333,
+                329,
+                317,
+                315,
+                313,
+                302,
+                301,
+                300,
+                297,
+                296,
+                295,
+                294,
+                292,
+                290,
+                286,
+                285,
+                284,
+                283,
+                281,
+                280,
+                279,
+                278,
+                276,
+                274,
+                270,
+                268,
+                266,
+                264,
+                263,
+                262,
+                261,
+                260,
+                259,
+                258,
+                257,
+                254,
+                252,
+                250,
+                248,
+                247,
+                246,
+                245,
+                244,
+                243,
+                242,
+                241,
+                234,
+                229,
+                227,
+                225,
+                392,
+                382,
+                380,
+                335,
+                334,
+                332,
+                328,
+                319,
+                318,
+                316,
+                312,
+                303,
+                287,
+                542,
+                530,
+                446,
+                440,
+                438,
+                436,
+                434,
+                399,
+                395,
+                383,
+                367,
+                363,
+                351,
+                331,
+                299,
+                238,
+                236,
+                232,
+                231,
+                230,
+                228,
+                226,
+                517,
+                516,
+                515,
+                514,
+                505,
+                504,
+                503,
+                502,
+                493,
+                492,
+                491,
+                490,
+                481,
+                480,
+                479,
+                478,
+                471,
+                470,
+                469,
+                468,
+                467,
+                466,
+                465,
+                464,
+                463,
+                462,
+                461,
+                460,
+                459,
+                458,
+                457,
+                456,
+                447,
+                441,
+                431,
+                430,
+                428,
+                424,
+                415,
+                414,
+                412,
+                409,
+                408,
+                271,
+                265,
+                255,
+                249,
+                239,
+                233,
+                425,
+                326,
+                324,
+                322,
+                310,
+                308,
+                306,
+                432,
+                416,
+                400,
+                384,
+                368,
+                352,
+                336,
+                320,
+                304,
+                288,
+                272,
+                256,
+                240,
+                224,
+                423,
+                422,
+                420,
+                418,
+                407,
+                406,
+                404,
+                402,
+                391,
+                390,
+                388,
+                386,
+                375,
+                374,
+                372,
+                370,
+                565,
+                564,
+                563,
+                562,
+                553,
+                552,
+                551,
+                550,
+                518,
+                506,
+                445,
+                443,
+                429,
+                427,
+                413,
+                411,
+                269,
+                267,
+                253,
+                251,
+                237,
+                235,
+                570,
+                568,
+                560,
+                558,
+                549,
+                548,
+                547,
+                546,
+                511,
+                499,
+                676,
+                674,
+                673,
+                672,
+                668,
+                666
+              ],
+              "proof": "original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed",
+              "rejected": true,
+              "total_moment_lower": "563584000001874855399255417654405321/8500000000000000000000000000000",
+              "total_moment_lower_decimal": "66304.00000022057122344181384"
+            },
+            {
+              "ceiling": "0.004097539104",
+              "k_removed": 408,
+              "maximizing_relaxed_helper_ids": [
+                442,
+                405,
+                321,
+                305,
+                291,
+                289,
+                275,
+                273,
+                444,
+                439,
+                437,
+                435,
+                433,
+                426,
+                421,
+                419,
+                417,
+                410,
+                403,
+                401,
+                398,
+                397,
+                396,
+                393,
+                381,
+                379,
+                377,
+                376,
+                366,
+                365,
+                364,
+                361,
+                360,
+                359,
+                358,
+                356,
+                354,
+                350,
+                349,
+                348,
+                347,
+                345,
+                344,
+                343,
+                342,
+                340,
+                338,
+                333,
+                329,
+                317,
+                315,
+                313,
+                302,
+                301,
+                300,
+                297,
+                296,
+                295,
+                294,
+                292,
+                290,
+                286,
+                285,
+                284,
+                283,
+                281,
+                280,
+                279,
+                278,
+                276,
+                274,
+                270,
+                268,
+                266,
+                264,
+                263,
+                262,
+                261,
+                260,
+                259,
+                258,
+                257,
+                254,
+                252,
+                250,
+                248,
+                247,
+                246,
+                245,
+                244,
+                243,
+                242,
+                241,
+                234,
+                229,
+                227,
+                225,
+                392,
+                382,
+                380,
+                335,
+                334,
+                332,
+                328,
+                319,
+                318,
+                316,
+                312,
+                303,
+                287,
+                542,
+                530,
+                446,
+                440,
+                438,
+                436,
+                434,
+                399,
+                395,
+                383,
+                367,
+                363,
+                351,
+                331,
+                299,
+                238,
+                236,
+                232,
+                231,
+                230,
+                228,
+                226,
+                517,
+                516,
+                515,
+                514,
+                505,
+                504,
+                503,
+                502,
+                493,
+                492,
+                491,
+                490,
+                481,
+                480,
+                479,
+                478,
+                471,
+                470,
+                469,
+                468,
+                467,
+                466,
+                465,
+                464,
+                463,
+                462,
+                461,
+                460,
+                459,
+                458,
+                457,
+                456,
+                447,
+                441,
+                431,
+                430,
+                428,
+                424,
+                415,
+                414,
+                412,
+                409,
+                408,
+                271,
+                265,
+                255,
+                249,
+                239,
+                233,
+                425,
+                326,
+                324,
+                322,
+                310,
+                308,
+                306,
+                432,
+                416,
+                400,
+                384,
+                368,
+                352,
+                336,
+                320,
+                304,
+                288,
+                272,
+                256,
+                240,
+                224,
+                423,
+                422,
+                420,
+                418,
+                407,
+                406,
+                404,
+                402,
+                391,
+                390,
+                388,
+                386,
+                375,
+                374,
+                372,
+                370,
+                565,
+                564,
+                563,
+                562,
+                553,
+                552,
+                551,
+                550,
+                518,
+                506,
+                445,
+                443,
+                429,
+                427,
+                413,
+                411,
+                269,
+                267,
+                253,
+                251,
+                237,
+                235,
+                570,
+                568,
+                560,
+                558,
+                549,
+                548,
+                547,
+                546,
+                511,
+                499,
+                676,
+                674,
+                673,
+                672,
+                668,
+                666,
+                665,
+                664,
+                660,
+                658,
+                657,
+                656,
+                644,
+                642,
+                641,
+                640,
+                628,
+                626,
+                625,
+                624,
+                620,
+                618,
+                617,
+                616,
+                612,
+                610,
+                609,
+                608,
+                596,
+                594,
+                593,
+                592,
+                327,
+                311,
+                652,
+                650,
+                649,
+                648,
+                636,
+                634,
+                633,
+                632,
+                604,
+                602,
+                601,
+                600,
+                545,
+                544,
+                521,
+                520,
+                497,
+                496,
+                473,
+                472,
+                579,
+                578,
+                577,
+                576,
+                571,
+                569,
+                561,
+                559,
+                513,
+                512,
+                510,
+                501,
+                500,
+                498,
+                567,
+                566,
+                555,
+                554,
+                543,
+                531,
+                591,
+                589,
+                588,
+                587,
+                586,
+                585,
+                557,
+                556,
+                533,
+                532,
+                509,
+                508,
+                485,
+                484,
+                455,
+                454,
+                453,
+                452,
+                451,
+                450,
+                449,
+                448,
+                583,
+                582,
+                581,
+                580,
+                575,
+                574,
+                573,
+                572,
+                541,
+                540,
+                539,
+                538,
+                537,
+                536,
+                535,
+                534,
+                529,
+                528,
+                527,
+                526,
+                525,
+                524,
+                523,
+                522,
+                489,
+                488,
+                487,
+                486,
+                477,
+                476,
+                475,
+                474,
+                590,
+                584,
+                671,
+                670,
+                394,
+                389,
+                387,
+                385,
+                378,
+                373,
+                371,
+                369,
+                362,
+                357,
+                355,
+                353,
+                346,
+                341,
+                339,
+                337,
+                330,
+                325,
+                323,
+                314,
+                309,
+                307,
+                298,
+                293,
+                282,
+                277
+              ],
+              "proof": "original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed",
+              "rejected": true,
+              "total_moment_lower": "112716800000147066024725332874978221/1700000000000000000000000000000",
+              "total_moment_lower_decimal": "66304.00000008650942630901934"
+            }
+          ],
+          "helper_removal_fixed_payments": {
+            "per_register": [
+              {
+                "kind": "centre_descent",
+                "mass": 8,
+                "paid_parts": [
+                  8
+                ],
+                "register": 224
+              },
+              {
+                "kind": "centre_descent",
+                "mass": 8,
+                "paid_parts": [
+                  8
+                ],
+                "register": 240
+              },
+              {
+                "kind": "centre_descent",
+                "mass": 8,
+                "paid_parts": [
+                  8
+                ],
+                "register": 256
+              }
+            ],
+            "profile": {
+              "8": 3
+            },
+            "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+            "total_mass": 24
+          },
+          "helper_removal_scope": "up to k whole ascending helper climb strings removed, freed physical width joins fractional idle rank51; centre descents and all other local paid children stay fixed; no feasibility of deleting these strings or registers asserted",
+          "integral_rank48_cap": "0.00174740438507721142030751334868040563445824883554082039754048256830210093276283047809725430",
+          "integral_rank48_certified_bracket": {
+            "hi": "0.001747404387",
+            "lo": "0.001747404384",
+            "lower_certified": true,
+            "moment_lower_at_hi": "16576000000089523014580207285129569/250000000000000000000000000000",
+            "moment_upper_at_lo": "33151999999899692337780532179961259/500000000000000000000000000000",
+            "proof": "exact rational cost intervals; positive-profile moment strictly increases with kappa",
+            "upper_certified": true
+          },
+          "integral_rank48_profile": {
+            "1": 1586412,
+            "2": 431568,
+            "3": 178488,
+            "4": 85248,
+            "5": 17316,
+            "8": 5328,
+            "24": 1,
+            "48": 28360
+          },
+          "n_permutations": 0,
+          "packing_cap": "0.00175808593462937527406556884846336644030029348706902029803187842599690269738303394002314157",
+          "packing_cap_certified_bracket": {
+            "hi": "0.001758085936",
+            "lo": "0.001758085933",
+            "lower_certified": true,
+            "moment_lower_at_hi": "140896000000539149627955836694823557/2125000000000000000000000000000",
+            "moment_upper_at_lo": "281791999998718136253949302502910931/4250000000000000000000000000000",
+            "proof": "exact rational cost intervals; positive-profile moment strictly increases with kappa",
+            "upper_certified": true
+          },
+          "packing_comparator_source": {
+            "class_identity": "same fixed #2802 local paid profile and coverage law; remaining idle mass becomes fractional rank51 children",
+            "handling": "read as source only, never imported",
+            "path": "research/t74-joint-twelve-retired7/packing_cap.py",
+            "sha256": "b292694b0862db3393ce02e1e07a922ded6f746b18ab8faca69eb93ed7a2e522"
+          },
+          "pattern_criteria": {
+            "non_circular": false,
+            "reason": "class ceilings condition on profiles and inventories; certificates, not five-criterion patterns"
+          },
+          "planning_rounding_note": {
+            "planning_recipe": "remainder many rank-1 children",
+            "planning_recipe_root": "0.00174739453526189126946902342869597843901099082527199914272136610893352803088251373850062241",
+            "proper_integral_remainder": "one rank-remainder child",
+            "reason": "concavity places the integral remainder in one child; splitting it into ones is not a universal ceiling",
+            "remainder": 24
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "tighter_than_packing_cap": true
+        },
+        "seconds": 8.159486747346818,
+        "spec": {
+          "experiment": "L-8",
+          "n_permutations": 0,
+          "seed": 11031
+        },
+        "status": "OK"
+      }
+    ],
+    "total_family_cpu_seconds": 22.604346708999998
+  },
+  "status": "PASS",
+  "wall_seconds": 11.520672777667642,
+  "word_blob_ids": {
+    "1094-K8PRE-FULL-WORD.json.gz": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+    "1094-K8S7-FULL-WORD.json.gz": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+    "1195-FULL-WORD.json.gz": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+    "1625-extra-word-566.json.gz": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+    "1625-gauge44-word-566.json.gz": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+    "1672-extra-word-566-554.json.gz": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+    "1672-gauge44-word-566-554.json.gz": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+    "2679-BORROW-WORD-43base.json.gz": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+    "2679-BORROW-WORD-43extra.json.gz": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+    "2745-BORROW-WORD-43base.json.gz": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+    "2745-BORROW-WORD-43extra.json.gz": "583a98c65438b96529e49897c2594aac4134333c",
+    "2766-WORD-base.json.gz": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+    "2766-WORD-extra.json.gz": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz": "0bc4e8c167de63931e5cc208527ad684573a373c",
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+    "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz": "91bd9c68f209ac29e27cac566ff7a78339788553",
+    "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+    "retired5-WORD-base.json.gz": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+    "retired5-WORD-extra.json.gz": "64f2535299938848d62e1a0ab4f5948b28b029a2"
+  }
+}

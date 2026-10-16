@@ -1,0 +1,12 @@
+{
+  "cpu_seconds": 12.87400577,
+  "error": "Traceback (most recent call last):\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/pool.py\", line 123, in _call\n    out = {'status': 'OK', 'result': fn(*args)}\n                                     ~~^^^^^^^\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/growth_m3.py\", line 527, in task\n    return ceilings(seed,tuple(spec.get(\"removal_counts\",(0,1,2,4,8,16,32,64,128,256,408))))\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/growth_m3.py\", line 339, in ceilings\n    envelope = _helper_envelope(word, local, idle_mass, removal_counts)\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/growth_m3.py\", line 274, in _helper_envelope\n    raise ValueError(\"helper climb mass differs from width\")\nValueError: helper climb mass differs from width\n",
+  "peak_rss_bytes": 514719744,
+  "seconds": 12.875518638640642,
+  "spec": {
+    "experiment": "L-8",
+    "n_permutations": 0,
+    "seed": 11031
+  },
+  "status": "ERROR"
+}

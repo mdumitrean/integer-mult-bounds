@@ -1,0 +1,34 @@
+{
+  "family_cpu_budget_seconds": 1200.0,
+  "live_pool_cpu_budget_seconds": 1197.308711873,
+  "memory_projection": {
+    "allocated_cores": 128,
+    "formula": "parent + workers*(parent + word + fill + working set)",
+    "parent_peak_rss_gib": 0.5483551025390625,
+    "projected_peak_gib": 111.67770385742188,
+    "projected_per_worker_gib": 1.8217926025390625,
+    "ram_gib": 247.1584243774414,
+    "reserved_cores": 8,
+    "worker_rss_cap_gib": 6,
+    "workers": 61,
+    "working_set_gib": 1.0
+  },
+  "no_internal_pools": true,
+  "no_retries": true,
+  "rss_cap_gib": 6,
+  "solver_policy": "L8: three sequential LP calls per seed, each at most 300 seconds; no solver inside a permutation loop.",
+  "specs": [
+    {
+      "experiment": "L-8",
+      "n_permutations": 0,
+      "seed": 11031
+    },
+    {
+      "experiment": "L-8",
+      "n_permutations": 0,
+      "seed": 29063
+    }
+  ],
+  "timeout_seconds": 600.0,
+  "worker_count": 61
+}

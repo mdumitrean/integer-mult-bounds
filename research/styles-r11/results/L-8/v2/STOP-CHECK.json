@@ -1,0 +1,190 @@
+{
+  "binding": false,
+  "ceiling_comparisons": [
+    {
+      "all_requested_certificates_valid": false,
+      "any_certified_tighter": true,
+      "certified_comparisons": [
+        {
+          "certified_upper": "0.001717795812",
+          "class_name": "fixed #2802 inventory",
+          "tighter_than_packing_lower": true
+        },
+        {
+          "certified_upper": "0.001747404387",
+          "class_name": "fixed #2802 local profile, integral rank48",
+          "tighter_than_packing_lower": true
+        },
+        {
+          "certified_upper": "0.001758085936",
+          "class_name": "helper removal k=0",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001761170075",
+          "class_name": "helper removal k=1",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001764265063",
+          "class_name": "helper removal k=2",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001770487816",
+          "class_name": "helper removal k=4",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001783066061",
+          "class_name": "helper removal k=8",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001807743133",
+          "class_name": "helper removal k=16",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001859206446",
+          "class_name": "helper removal k=32",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001971462656",
+          "class_name": "helper removal k=64",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.002234864757",
+          "class_name": "helper removal k=128",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.002940700529",
+          "class_name": "helper removal k=256",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.004097539104",
+          "class_name": "helper removal k=408",
+          "tighter_than_packing_lower": false
+        }
+      ],
+      "seed": 11031
+    },
+    {
+      "all_requested_certificates_valid": false,
+      "any_certified_tighter": true,
+      "certified_comparisons": [
+        {
+          "certified_upper": "0.001717795812",
+          "class_name": "fixed #2802 inventory",
+          "tighter_than_packing_lower": true
+        },
+        {
+          "certified_upper": "0.001747404387",
+          "class_name": "fixed #2802 local profile, integral rank48",
+          "tighter_than_packing_lower": true
+        },
+        {
+          "certified_upper": "0.001758085936",
+          "class_name": "helper removal k=0",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001761170075",
+          "class_name": "helper removal k=1",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001764265063",
+          "class_name": "helper removal k=2",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001770487816",
+          "class_name": "helper removal k=4",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001783066061",
+          "class_name": "helper removal k=8",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001807743133",
+          "class_name": "helper removal k=16",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001859206446",
+          "class_name": "helper removal k=32",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.001971462656",
+          "class_name": "helper removal k=64",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.002234864757",
+          "class_name": "helper removal k=128",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.002940700529",
+          "class_name": "helper removal k=256",
+          "tighter_than_packing_lower": false
+        },
+        {
+          "certified_upper": "0.004097539104",
+          "class_name": "helper removal k=408",
+          "tighter_than_packing_lower": false
+        }
+      ],
+      "seed": 29063
+    }
+  ],
+  "deadline": {
+    "hard_stop_utc": "2026-10-30T04:08:31.792839+00:00",
+    "origin": "M0 preregistration timestamp plus fourteen days (conservative fallback)",
+    "reached": false
+  },
+  "kind": "no_binding_growth_stop",
+  "lane": "B",
+  "lineage": {
+    "all_lineage_guards_proven": false,
+    "correction_scope": "L7-GUARD-ORDER does not discharge the two early compound-decomposition obligations.",
+    "results": [
+      {
+        "path": "results/L-7/v1/seed-11031/RESULT.json",
+        "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+      },
+      {
+        "path": "results/L-7/v1/seed-29063/RESULT.json",
+        "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+      }
+    ],
+    "seeds": [
+      {
+        "all_lineage_guards_proven": false,
+        "seed": 11031,
+        "unresolved": [
+          "2679 -> 2745: held source pins identify changed alias8/prelife/refit563/alias1 stages and fill, but source-partner reassignment has not been decomposed into the registered move alphabet",
+          "2745 -> 2751: source joint_engine explains twelve-source recovery, but no validated decomposition into the registered move alphabet"
+        ]
+      },
+      {
+        "all_lineage_guards_proven": false,
+        "seed": 29063,
+        "unresolved": [
+          "2679 -> 2745: held source pins identify changed alias8/prelife/refit563/alias1 stages and fill, but source-partner reassignment has not been decomposed into the registered move alphabet",
+          "2745 -> 2751: source joint_engine explains twelve-source recovery, but no validated decomposition into the registered move alphabet"
+        ]
+      }
+    ]
+  },
+  "reason": "The registered growth-stop conjunction is not established by the retained evidence.",
+  "trigger_results": []
+}

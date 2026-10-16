@@ -1,0 +1,1124 @@
+{
+  "adjacent_pairs": [
+    {
+      "classification": "inadmissible_swapped_named_sequence",
+      "confirmed_seeds": [
+        11031,
+        29063
+      ],
+      "failed_guards": [
+        "606<-550:literal_U",
+        "606<-550:entrance_containment",
+        "635<-551:literal_U",
+        "635<-551:entrance_containment",
+        "637<-552:literal_U",
+        "637<-552:entrance_containment",
+        "638<-553:literal_U",
+        "638<-553:entrance_containment",
+        "639<-562:literal_U",
+        "639<-562:entrance_containment"
+      ],
+      "first_rejected_prefix": 0,
+      "guard_details": [
+        {
+          "actual_lender_frame_dim": 6,
+          "declared_entry_B": 947,
+          "first_follower_B": 947,
+          "last_lender_B": 901,
+          "production": "606<-550",
+          "required_E_dim": 5,
+          "required_U_dim": 5,
+          "transport_error": null
+        },
+        {
+          "actual_lender_frame_dim": 6,
+          "declared_entry_B": 1024,
+          "first_follower_B": 1024,
+          "last_lender_B": 902,
+          "production": "635<-551",
+          "required_E_dim": 5,
+          "required_U_dim": 5,
+          "transport_error": null
+        },
+        {
+          "actual_lender_frame_dim": 6,
+          "declared_entry_B": 1027,
+          "first_follower_B": 1027,
+          "last_lender_B": 909,
+          "production": "637<-552",
+          "required_E_dim": 5,
+          "required_U_dim": 5,
+          "transport_error": null
+        },
+        {
+          "actual_lender_frame_dim": 6,
+          "declared_entry_B": 1030,
+          "first_follower_B": 1030,
+          "last_lender_B": 910,
+          "production": "638<-553",
+          "required_E_dim": 5,
+          "required_U_dim": 5,
+          "transport_error": null
+        },
+        {
+          "actual_lender_frame_dim": 6,
+          "declared_entry_B": 1033,
+          "first_follower_B": 1033,
+          "last_lender_B": 903,
+          "production": "639<-562",
+          "required_E_dim": 5,
+          "required_U_dim": 5,
+          "transport_error": null
+        }
+      ],
+      "original": [
+        "refit5",
+        "alias5"
+      ],
+      "same_payload_after_two": null,
+      "swapped": [
+        "alias5",
+        "refit5"
+      ],
+      "unexecuted_suffix": [
+        "refit5"
+      ],
+      "variants": [
+        "base",
+        "extra"
+      ]
+    },
+    {
+      "classification": "both_orders_admissible_and_same_payload",
+      "confirmed_seeds": [
+        11031,
+        29063
+      ],
+      "first_rejected_prefix": null,
+      "original": [
+        "alias5",
+        "refit5c"
+      ],
+      "same_payload_after_two": true,
+      "swapped": [
+        "refit5c",
+        "alias5"
+      ],
+      "unexecuted_suffix": [],
+      "variants": [
+        "base",
+        "extra"
+      ]
+    },
+    {
+      "classification": "both_orders_admissible_and_same_payload",
+      "confirmed_seeds": [
+        11031,
+        29063
+      ],
+      "first_rejected_prefix": null,
+      "original": [
+        "refit5c",
+        "refit7"
+      ],
+      "same_payload_after_two": true,
+      "swapped": [
+        "refit7",
+        "refit5c"
+      ],
+      "unexecuted_suffix": [],
+      "variants": [
+        "base",
+        "extra"
+      ]
+    },
+    {
+      "classification": "inadmissible_swapped_named_sequence",
+      "confirmed_seeds": [
+        11031,
+        29063
+      ],
+      "failed_guards": [
+        "401->564:literal_U",
+        "403->565:literal_U"
+      ],
+      "first_rejected_prefix": 0,
+      "guard_details": [
+        {
+          "actual_lender_frame_dim": 6,
+          "declared_entry_B": 941,
+          "last_new_lender_B": 911,
+          "operator_id": 30,
+          "production": "401->564",
+          "required_E_dim": 5,
+          "required_U_dim": 5,
+          "transport_error": null
+        },
+        {
+          "actual_lender_frame_dim": 6,
+          "declared_entry_B": 944,
+          "last_new_lender_B": 912,
+          "operator_id": 31,
+          "production": "403->565",
+          "required_E_dim": 5,
+          "required_U_dim": 5,
+          "transport_error": null
+        }
+      ],
+      "original": [
+        "refit7",
+        "hostmove2"
+      ],
+      "same_payload_after_two": null,
+      "swapped": [
+        "hostmove2",
+        "refit7"
+      ],
+      "unexecuted_suffix": [
+        "refit7"
+      ],
+      "variants": [
+        "base",
+        "extra"
+      ]
+    },
+    {
+      "classification": "inadmissible_swapped_named_sequence",
+      "confirmed_seeds": [
+        11031,
+        29063
+      ],
+      "failed_guards": [
+        "667<-401:retired_before_entry",
+        "669<-403:retired_before_entry"
+      ],
+      "first_rejected_prefix": 0,
+      "guard_details": [
+        {
+          "actual_lender_frame_dim": 4,
+          "declared_entry_B": 259,
+          "first_follower_B": 259,
+          "last_lender_B": 1486,
+          "production": "667<-401",
+          "required_E_dim": 4,
+          "required_U_dim": 4,
+          "transport_error": null
+        },
+        {
+          "actual_lender_frame_dim": 4,
+          "declared_entry_B": 262,
+          "first_follower_B": 262,
+          "last_lender_B": 1483,
+          "production": "669<-403",
+          "required_E_dim": 4,
+          "required_U_dim": 4,
+          "transport_error": null
+        }
+      ],
+      "original": [
+        "hostmove2",
+        "alias7"
+      ],
+      "same_payload_after_two": null,
+      "swapped": [
+        "alias7",
+        "hostmove2"
+      ],
+      "unexecuted_suffix": [
+        "hostmove2"
+      ],
+      "variants": [
+        "base",
+        "extra"
+      ]
+    },
+    {
+      "classification": "both_orders_admissible_and_same_payload",
+      "confirmed_seeds": [
+        11031,
+        29063
+      ],
+      "first_rejected_prefix": null,
+      "original": [
+        "alias7",
+        "refit7c"
+      ],
+      "same_payload_after_two": true,
+      "swapped": [
+        "refit7c",
+        "alias7"
+      ],
+      "unexecuted_suffix": [],
+      "variants": [
+        "base",
+        "extra"
+      ]
+    }
+  ],
+  "census_targets": [
+    {
+      "guard_change": "The named alias5 records require literal U of dimension 5 and entrance containment. Before refit5 the actual lender frames have dimension 6 and both predicates fail for each pair. Original-order refit5 then alias5 passes.",
+      "register_pairs": [
+        [
+          606,
+          550
+        ],
+        [
+          635,
+          551
+        ],
+        [
+          637,
+          552
+        ],
+        [
+          638,
+          553
+        ],
+        [
+          639,
+          562
+        ]
+      ],
+      "scope": "Enumerate those current-state predicates and candidate refits; no additional alias gain is claimed.",
+      "target": "Refit-dependent alias admission"
+    },
+    {
+      "guard_change": "Before refit7 the current new-lender frames have dimension 6 while the named moves require literal U of dimension 5. The literal_U predicates fail; original-order refit7 then hostmove2 passes.",
+      "hosted_entry_B": [
+        941,
+        944
+      ],
+      "last_new_lender_B": [
+        911,
+        912
+      ],
+      "old_to_new_lenders": [
+        [
+          401,
+          564
+        ],
+        [
+          403,
+          565
+        ]
+      ],
+      "operator_ids": [
+        30,
+        31
+      ],
+      "scope": "Future census may track exact floor-reaching refits and consumed warp identities. No gain or universal feasibility claim.",
+      "target": "Refit-dependent hostee move admission"
+    },
+    {
+      "follower_first_B": [
+        259,
+        262
+      ],
+      "guard_change": "alias7 before hostmove2 fails retired_before_entry for both pairs. Moving the named hosted lives removes those late B uses, after which the two named aliases pass.",
+      "old_lender_last_B_after_hostmove": [
+        -1,
+        -1
+      ],
+      "old_lender_last_B_before_hostmove": [
+        1486,
+        1483
+      ],
+      "register_pairs": [
+        [
+          667,
+          401
+        ],
+        [
+          669,
+          403
+        ]
+      ],
+      "scope": "Census target for current-state lifetime release; dimensions alone do not prove alias feasibility.",
+      "target": "Lender availability created by moving hosted lives"
+    }
+  ],
+  "checks": {
+    "all_rejected_pairs_stop_before_first_commit": true,
+    "classification_counts_per_seed": {
+      "both_orders_admissible_and_same_payload": 6,
+      "both_orders_admissible_but_different_payload": 0,
+      "inadmissible_swapped_named_sequence": 6
+    },
+    "exact_cross_seed_semantic_equality_excluding_timing_and_seed_fields": true,
+    "original_plus_swapped_admitted_auditor_checks_per_seed": 26,
+    "original_stages_pass_per_seed": 14,
+    "original_stages_per_seed": 14,
+    "scientific_families_counted": 1,
+    "second_seed_changes_only_evaluation_order": true,
+    "swapped_pairs_per_seed": 12,
+    "swapped_prefixes_admitted_per_seed": 12,
+    "swapped_prefixes_examined_per_seed": 18,
+    "swapped_prefixes_guard_rejected_per_seed": 6,
+    "unexplained_auditor_rejections": 0
+  },
+  "compute": {
+    "experiment_total_family_cpu_seconds": 82.382446067,
+    "review_only": true,
+    "seed_receipt_cpu_seconds_sum": 82.382446067
+  },
+  "experiment": "L7-GUARD-ORDER",
+  "kind": "read_only_review_of_preserved_results",
+  "no_experiment_rerun": true,
+  "no_frozen_source_changed": true,
+  "original_stages": [
+    {
+      "both_seeds_confirmed": true,
+      "both_variants_reconstructed": true,
+      "guard_count": 53,
+      "local_delta": {
+        "1": 35,
+        "2": -7,
+        "3": -19,
+        "4": 9
+      },
+      "local_frame_target_count": 26,
+      "register_count": 27,
+      "stage": "refit5"
+    },
+    {
+      "both_seeds_confirmed": true,
+      "both_variants_reconstructed": true,
+      "guard_count": 47,
+      "local_delta": {
+        "1": -5,
+        "4": -5
+      },
+      "local_frame_target_count": 0,
+      "register_count": 10,
+      "stage": "alias5"
+    },
+    {
+      "both_seeds_confirmed": true,
+      "both_variants_reconstructed": true,
+      "guard_count": 65,
+      "local_delta": {
+        "1": -10,
+        "2": 3,
+        "3": -4,
+        "4": 4
+      },
+      "local_frame_target_count": 32,
+      "register_count": 30,
+      "stage": "refit5c"
+    },
+    {
+      "both_seeds_confirmed": true,
+      "both_variants_reconstructed": true,
+      "guard_count": 5,
+      "local_delta": {
+        "1": 2,
+        "2": 4,
+        "3": -6,
+        "4": 2
+      },
+      "local_frame_target_count": 2,
+      "register_count": 4,
+      "stage": "refit7"
+    },
+    {
+      "both_seeds_confirmed": true,
+      "both_variants_reconstructed": true,
+      "guard_count": 20,
+      "local_delta": {
+        "1": -2,
+        "4": -2,
+        "5": 2
+      },
+      "local_frame_target_count": 0,
+      "register_count": 4,
+      "stage": "hostmove2"
+    },
+    {
+      "both_seeds_confirmed": true,
+      "both_variants_reconstructed": true,
+      "guard_count": 20,
+      "local_delta": {
+        "5": -2
+      },
+      "local_frame_target_count": 0,
+      "register_count": 4,
+      "stage": "alias7"
+    },
+    {
+      "both_seeds_confirmed": true,
+      "both_variants_reconstructed": true,
+      "guard_count": 5,
+      "local_delta": {
+        "1": -4,
+        "2": 2
+      },
+      "local_frame_target_count": 2,
+      "register_count": 4,
+      "stage": "refit7c"
+    }
+  ],
+  "pins_file": {
+    "path": "data/words/PINS.json",
+    "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+  },
+  "preregistration": {
+    "path": "results/M3/PREREGISTRATION.json",
+    "sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938"
+  },
+  "result_files": [
+    {
+      "path": "results/L7-GUARD-ORDER/v1/seed-11031/RESULT.json",
+      "sha256": "57728fc7927addf1da924e52cb7a8ab21b03ee7149b3621cb54675c3ef175b4c"
+    },
+    {
+      "path": "results/L7-GUARD-ORDER/v1/seed-29063/RESULT.json",
+      "sha256": "9aab100d984d2b5242100549c5f1f01c882156a7c7b1c8da81af6fa361270771"
+    }
+  ],
+  "review_verdict": "PASS",
+  "schema_version": 1,
+  "scope_limits": [
+    "Six finite adjacent pairs at their pinned prefixes, repeated on base and extra, were tested. This is not a claim about arbitrary prefixes or all productions in a class.",
+    "Six swapped named sequences are outside their guards. That establishes order-dependent admissibility, not two valid orders yielding different words.",
+    "All six admitted swapped pairs produce the same payload. This run contains no witness of two admissible orders with different payloads.",
+    "The earlier M0 whole-section patch inequalities remain preserved as data but are not primitive noncommutation evidence.",
+    "No order-dependent value of a fixed algebraic sum of Parikh deltas, global kappa comparison, candidate pricing, or structural-pattern claim is made.",
+    "The two early lineage compound-decomposition obligations (#2679 to #2745 and #2745 to #2751) remain unresolved; L7 overall remains EXPLORATORY."
+  ],
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43extra.json.gz",
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    }
+  ],
+  "source_script_sha256": {
+    "research/styles-r11/pipeline/growth.py": "4f29eba652ea1c7ca889f784c612a6ab11d8aefe96637d18bd32391532b8f167",
+    "research/styles-r11/pipeline/growth_order.py": "bd143d57f7df7cec9fe475f9f4aa173d9e516d93099f57b16c2e609551beea99",
+    "research/styles-r11/pipeline/growth_replay.py": "c14f7807b6d4d8ad0365b6e811ddf8928745598686be0441333635069b0966d3",
+    "research/styles-r11/pipeline/run_m3.py": "e0dc7733dc93b72bb561a7890eb7cbc815defaf5587de69ea400c192f6762f13",
+    "research/styles-r11/pipeline/wordio.py": "a9c254acdc04c3302ed0a31d9e0da39a8e3348aa20d189798e86539464fd81d4"
+  },
+  "stage_sources": [
+    {
+      "credit": "exact minimal-change frame refit for the five retired-lender aliases (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): new/borrow/refit/search lowers each lender's last gate (550, 551, 552, 553, 562: dim 6 -> 5, the exact propagated floor) and raises each follower's first gate (606, 635, 637, 638, 639: dim 4 -> 5, the exact ceiling), with their meet/join closures; gates unchanged",
+      "path": "research/t74-joint-twelve-retired7/inputs/refit5_43base.json",
+      "sha256": "ff434b1820339f0f7c2c8ba7982edc4c236e522ea30aaa56890206c0fa96f642"
+    },
+    {
+      "credit": "five retired-lender aliases 606<-550, 635<-551, 637<-552, 638<-553, 639<-562 on the refit5 state (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): new/borrow/alias_build.alias, one B warp each with an explicit invertible G, G(U)=E, dim 5; the helpers are removed",
+      "path": "research/t74-joint-twelve-retired7/inputs/alias5_43base.json",
+      "sha256": "a9ef916e6afcba33345bce3fd0e33606f09f340e0378cf017e2994a9206b969d"
+    },
+    {
+      "credit": "certified optimal frames of the aliased program (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): our #1186 toolkit optimal_frames on the borrow-word model of new/borrow/audit_local.py; gates, warps, start/final frames, compensation and widths unchanged",
+      "path": "research/t74-joint-twelve-retired7/inputs/refit5c_43base.json",
+      "sha256": "cd8e6b7f8b8dacf21875f465e3df05bf827f12dd063fe1be7557c7281bff16f1"
+    },
+    {
+      "credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): new/borrow/refit/search lowers the last gates of the free retired lenders 564 (B911) and 565 (B912) from dim 6 to their exact propagated floor dim 5 (meet closure: no other gate changes); gates unchanged",
+      "path": "research/t74-joint-twelve-retired7/inputs/refit7_43base.json",
+      "sha256": "c1ca4637c3b88828d2628c87a20f93088769dbceb9f487cb75ce90ec1a0ff5f7"
+    },
+    {
+      "credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): the hostees of B-warps 30 and 31 (lenders 401 and 403, whose own lives end in A) move onto the free retired lenders 564 and 565 (last B use B911/B912 before the hostees enter); each gate of the hostee is relabelled and its warp record is replaced in place (op ids 30/31 kept), U = the lender frame after its refitted last gate, E = the hostee entrance frame, explicit invertible G with G(U) = E",
+      "path": "research/t74-joint-twelve-retired7/inputs/hostmove2_43base.json",
+      "sha256": "ee0f0de1ebe2f84e37e439f783a76f5d210fa1c34b3497a8d3c490296ee88e3b"
+    },
+    {
+      "credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): new/borrow/alias_build.alias 667 <- 401 and 669 <- 403 (the PR2679 retired-lender alias), one B warp each with an explicit invertible G, G(U) = E, dim 4; the helpers are removed",
+      "path": "research/t74-joint-twelve-retired7/inputs/alias7_43base.json",
+      "sha256": "100558d0f0ffbb2df38668b3d2bc4e4e11d5f328f629f5b4d931b0f619d49700"
+    },
+    {
+      "credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): certified optimal frames of the aliased program (our #1186 toolkit optimal_frames on the borrow-word model, certified=True); gates, warps, start/final frames, compensation and widths unchanged",
+      "path": "research/t74-joint-twelve-retired7/inputs/refit7c_43base.json",
+      "sha256": "086dc27f17448ab9bddb2e890752cf13d5965a63cd79fcf25aa7f1c9402503df"
+    },
+    {
+      "credit": "exact minimal-change frame refit for the five retired-lender aliases (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): new/borrow/refit/search lowers each lender's last gate (550, 551, 552, 553, 562: dim 6 -> 5, the exact propagated floor) and raises each follower's first gate (606, 635, 637, 638, 639: dim 4 -> 5, the exact ceiling), with their meet/join closures; gates unchanged",
+      "path": "research/t74-joint-twelve-retired7/inputs/refit5_43extra.json",
+      "sha256": "ff434b1820339f0f7c2c8ba7982edc4c236e522ea30aaa56890206c0fa96f642"
+    },
+    {
+      "credit": "five retired-lender aliases 606<-550, 635<-551, 637<-552, 638<-553, 639<-562 on the refit5 state (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): new/borrow/alias_build.alias, one B warp each with an explicit invertible G, G(U)=E, dim 5; the helpers are removed",
+      "path": "research/t74-joint-twelve-retired7/inputs/alias5_43extra.json",
+      "sha256": "aeff3d1ffa74e4bffa892293f88a968e2c2b0330ad61128696a6bce7bc383b46"
+    },
+    {
+      "credit": "certified optimal frames of the aliased program (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): our #1186 toolkit optimal_frames on the borrow-word model of new/borrow/audit_local.py; gates, warps, start/final frames, compensation and widths unchanged",
+      "path": "research/t74-joint-twelve-retired7/inputs/refit5c_43extra.json",
+      "sha256": "cd8e6b7f8b8dacf21875f465e3df05bf827f12dd063fe1be7557c7281bff16f1"
+    },
+    {
+      "credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): new/borrow/refit/search lowers the last gates of the free retired lenders 564 (B911) and 565 (B912) from dim 6 to their exact propagated floor dim 5 (meet closure: no other gate changes); gates unchanged",
+      "path": "research/t74-joint-twelve-retired7/inputs/refit7_43extra.json",
+      "sha256": "c1ca4637c3b88828d2628c87a20f93088769dbceb9f487cb75ce90ec1a0ff5f7"
+    },
+    {
+      "credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): the hostees of B-warps 30 and 31 (lenders 401 and 403, whose own lives end in A) move onto the free retired lenders 564 and 565 (last B use B911/B912 before the hostees enter); each gate of the hostee is relabelled and its warp record is replaced in place (op ids 30/31 kept), U = the lender frame after its refitted last gate, E = the hostee entrance frame, explicit invertible G with G(U) = E",
+      "path": "research/t74-joint-twelve-retired7/inputs/hostmove2_43extra.json",
+      "sha256": "d06b7a56b457c16ea138e8265fc6f2d1b32711f0515a76137e86325a6f77a024"
+    },
+    {
+      "credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): new/borrow/alias_build.alias 667 <- 401 and 669 <- 403 (the PR2679 retired-lender alias), one B warp each with an explicit invertible G, G(U) = E, dim 4; the helpers are removed",
+      "path": "research/t74-joint-twelve-retired7/inputs/alias7_43extra.json",
+      "sha256": "783ed700791b1dcd4bb35422f5fb8114a0c5d82773394b87a613e5f32da51250"
+    },
+    {
+      "credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): certified optimal frames of the aliased program (our #1186 toolkit optimal_frames on the borrow-word model, certified=True); gates, warps, start/final frames, compensation and widths unchanged",
+      "path": "research/t74-joint-twelve-retired7/inputs/refit7c_43extra.json",
+      "sha256": "086dc27f17448ab9bddb2e890752cf13d5965a63cd79fcf25aa7f1c9402503df"
+    }
+  ],
+  "superseded_scope_review": {
+    "path": "results/L-7/v1/REVIEW.json",
+    "sha256": "dd9180f2adc72abeff814c7557ea9229ac562094014dfa592c4aa64757891fb0"
+  }
+}

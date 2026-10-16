@@ -376,7 +376,10 @@
       "updated_utc": "2026-10-16T04:48:31.859497+00:00"
     },
     {
+      "attempt": "v3",
       "budget_core_minutes": 20,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
       "id": "L-8",
       "if_positive": "ceiling ladder with each claim; PR triage",
       "inputs": [
@@ -388,16 +391,31 @@
       "lane": "B",
       "method": "parametric LP with dual: fixed-inventory pattern LP (408 helpers), idle <= 48 integral, helper-removal envelope kappa_max(k)",
       "milestone": "M3",
+      "not_run": false,
       "null_model": "relaxations must dominate every held fill",
       "origin": "B-B4",
       "pass_bar": "each ceiling names what a violating PR must have changed",
+      "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+      "protocol_amendment": {
+        "earlier_applicable_amendments": [],
+        "path": "results/M3/AMENDMENT-2.json",
+        "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+      },
       "question": "Tighter falsifiable ceilings per class",
+      "result_files": [
+        "results/L-8/v3/seed-11031/RESULT.json",
+        "results/L-8/v3/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/t74-joint-twelve-retired7/packing_cap.py",
-      "status": "planned",
-      "title": "Class ceilings with dual certificates"
+      "status": "PASS",
+      "title": "Class ceilings with dual certificates",
+      "updated_utc": "2026-10-16T05:31:16.748141+00:00"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 10,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": false,
       "id": "L-9",
       "if_positive": "frontier map: which class must be exited next",
       "inputs": [
@@ -408,16 +426,36 @@
       "lane": "B",
       "method": "enumerate feasible productions per class (alias pairs by lo/hi, refittable gates with slack, hostee paths, cuts) with Phi",
       "milestone": "M3",
+      "not_run": false,
       "null_model": "random lender/follower pairings (expected 0 feasible)",
       "origin": "B-B5",
       "pass_bar": "a predicted empty class a later PR could violate",
+      "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+      "protocol_amendment": {
+        "earlier_applicable_amendments": [
+          {
+            "path": "results/M3/AMENDMENT-1.json",
+            "sha256": "e14ddf9eb24bb4f4d9605b88ea377414e1dc0f7135e8cb649f41d22b8b4aa734"
+          }
+        ],
+        "path": "results/M3/AMENDMENT-2.json",
+        "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+      },
       "question": "Which production classes are empty on the current word?",
+      "result_files": [
+        "results/L-9/v1/seed-11031/RESULT.json",
+        "results/L-9/v1/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/t74-r10-hosting-leads/J-dim1/code/borrow_price.py",
-      "status": "planned",
-      "title": "Saturation census"
+      "status": "EXPLORATORY",
+      "title": "Saturation census",
+      "updated_utc": "2026-10-16T05:35:08.379694+00:00"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 5,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
       "id": "L-10",
       "if_positive": "quantifies partition vs order in the headroom",
       "inputs": [
@@ -434,16 +472,36 @@
       "lane": "B/C",
       "method": "compare Phi/moment with random compositions (same widths, same part counts); merge prices as in ground_ceiling.py",
       "milestone": "M3",
+      "not_run": false,
       "null_model": "random compositions",
       "origin": "B-B6/C-E3",
       "pass_bar": "real below 99% of null on every word; prices within 1% of realised margins",
+      "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+      "protocol_amendment": {
+        "earlier_applicable_amendments": [
+          {
+            "path": "results/M3/AMENDMENT-1.json",
+            "sha256": "e14ddf9eb24bb4f4d9605b88ea377414e1dc0f7135e8cb649f41d22b8b4aa734"
+          }
+        ],
+        "path": "results/M3/AMENDMENT-2.json",
+        "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+      },
       "question": "Is the real Phi extremal among re-partitions of each helper width; do merge prices predict realised margins?",
+      "result_files": [
+        "results/L-10/v1/seed-11031/RESULT.json",
+        "results/L-10/v1/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/styles-r11/planning/C-sandpile/ground_ceiling.py",
-      "status": "planned",
-      "title": "Partition extremality and merge prices"
+      "status": "NULL",
+      "title": "Partition extremality and merge prices",
+      "updated_utc": "2026-10-16T05:35:44.995793+00:00"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 2,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
       "id": "L-11",
       "if_positive": "if falsified, kappa is a matrix Perron root",
       "inputs": [
@@ -452,13 +510,30 @@
       "lane": "B",
       "method": "child profile per orientation / stage",
       "milestone": "M3",
+      "not_run": false,
       "null_model": "-",
       "origin": "B-B7",
       "pass_bar": "prediction: all identical (1x1 growth matrix)",
+      "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+      "protocol_amendment": {
+        "earlier_applicable_amendments": [
+          {
+            "path": "results/M3/AMENDMENT-1.json",
+            "sha256": "e14ddf9eb24bb4f4d9605b88ea377414e1dc0f7135e8cb649f41d22b8b4aa734"
+          }
+        ],
+        "path": "results/M3/AMENDMENT-2.json",
+        "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+      },
       "question": "Any orientation/stage with a different child profile?",
+      "result_files": [
+        "results/L-11/v1/seed-11031/RESULT.json",
+        "results/L-11/v1/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/styles-r11/planning/B-lsys-growth/parikh_kappa.py",
-      "status": "planned",
-      "title": "Multi-type check"
+      "status": "PASS",
+      "title": "Multi-type check",
+      "updated_utc": "2026-10-16T05:36:24.976716+00:00"
     },
     {
       "attempt": "v1",
@@ -677,24 +752,45 @@
       "updated_utc": "2026-10-16T04:59:17.730101+00:00"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 5,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
       "id": "L7-GUARD-ORDER",
       "lane": "B",
       "milestone": "M3",
+      "not_run": false,
       "pass_bar": "PASS only if both variants rebuild all original successors exactly and all swapped sequences receive a classification from the local predicates/frame guards without an unexplained auditor rejection. Otherwise EXPLORATORY with the missing local guard or reconstruction obligation. Both seeds must agree.",
+      "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+      "result_files": [
+        "results/L7-GUARD-ORDER/v1/seed-11031/RESULT.json",
+        "results/L7-GUARD-ORDER/v1/seed-29063/RESULT.json"
+      ],
       "scope": "Only these named local operations at the pinned prefixes. Invalid named orders are guard-domain failures, not a claim that no alternate derivation exists. Different admitted words are not an order-dependent value for a fixed algebraic sum of Parikh deltas. No global kappa root/price is computed. Two early lineage decomposition obligations remain unchanged.",
-      "status": "planned",
-      "title": "Guarded local-order follow-up to L7 scope review"
+      "status": "PASS",
+      "title": "Guarded local-order follow-up to L7 scope review",
+      "updated_utc": "2026-10-16T05:17:44.608277+00:00"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 10,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
       "id": "L6-COST-N6",
       "lane": "B",
       "milestone": "M3",
+      "not_run": false,
       "pass_bar": "All 152 primary full-moment estimates have matching signs and <=2 percent relative error for every nonzero conditional local-root change; repeat with second seed. Pairwise ranking, other scores and 33 companions are descriptive controls.",
+      "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+      "protocol_amendment": null,
+      "result_files": [
+        "results/L6-COST-N6/v1/seed-11031/RESULT.json",
+        "results/L6-COST-N6/v1/seed-29063/RESULT.json"
+      ],
       "scope": "No complete global/idle near-miss profiles are held. Hyperplane word files were overwritten by the source producer. Preserve these limitations and full source/PINS attribution in the result; do not execute fetched source.",
-      "status": "planned",
-      "title": "Conditional local cheap-score calibration"
+      "status": "PASS",
+      "title": "Conditional local cheap-score calibration",
+      "updated_utc": "2026-10-16T05:36:48.500511+00:00"
     }
   ],
   "null_models": "PLAN.md section 6: N0 unigram; N1 section-preserving shuffle (forward sections only); N1b commuting-window shuffle (toolkit frames.move_window); N1c register relabelling; N2 same-Parikh random frames; N2b certified-optimal frames; N3 max-flow random fills; N4 constructor-synthetic (conditional); N5 cross-family; N6 near-miss controls (J-dim1/out/eh, retired7_controls.py)",

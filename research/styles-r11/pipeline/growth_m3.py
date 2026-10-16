@@ -210,13 +210,19 @@ def pattern_ceiling(model, word=None, use_overlay=False, time_limit=300):
     primal_root = G.root(primal_profile)
     target = _round_upper(primal_root) + D("1e-12")
     certificates = None
-    # No solver inside this loop.  Refit dual multipliers to the known active
-    # columns, then lower each capacity multiplier until ALL columns satisfy
-    # exact rational dual inequalities.  The numeric basis is only a proposal.
-    for attempt in range(7):
-        target_string = str(target)
-        target_cost = np.asarray([_float_cost(c[2], target) for c in columns])
-        proposed, *_ = np.linalg.lstsq(A[:, active].T, target_cost[active], rcond=None)
+    marginals = np.asarray(solved.eqlin.marginals, dtype=float)
+    if marginals.shape != (len(caps)+len(widths),) or not np.all(np.isfinite(marginals)):
+        raise ValueError("successful LP did not return finite equality marginals")
+    marginal_record = dict(
+        capacity={str(c):str(float(marginals[i])) for i,c in enumerate(caps)},
+        width={str(w):str(float(marginals[len(caps)+i])) for i,w in enumerate(widths)},
+        convention="SciPy eqlin.marginals = derivative of the minimized objective with respect to b_eq; dual uses the same sign",
+        proposal_exponent=str(reference))
+    candidate_history = []
+
+    def certify(proposed, target_string, source):
+        # The proposal need not itself be feasible. Repair capacity multipliers
+        # against every exact rational lower cost before treating it as a bound.
         width_dual = {w: F(str(float(proposed[len(caps)+i]))) for i, w in enumerate(widths)}
         cap_dual = {}
         for cap in caps:
@@ -232,7 +238,7 @@ def pattern_ceiling(model, word=None, use_overlay=False, time_limit=300):
         dual_idle = sum(bins[c]*cap_dual[c] for c in caps) + sum(demand[w]*width_dual[w] for w in widths)
         local_lower = sum(F(count)*rational_cost(r, target_string)[0] for r, count in local.items())
         lower_moment = local_lower + dual_idle
-        certificates = dict(exponent=target_string,
+        certificate = dict(exponent=target_string, proposal_source=source,
             capacity_multipliers={str(c): str(q) for c, q in cap_dual.items()},
             width_multipliers={str(w): str(q) for w, q in width_dual.items()},
             dual_idle_moment_lower=str(dual_idle), local_moment_lower=str(local_lower),
@@ -241,7 +247,27 @@ def pattern_ceiling(model, word=None, use_overlay=False, time_limit=300):
             all_column_inequalities=len(columns), inequality_violations=violations,
             exact_rational_verification=True, cost_rounding_grid="1e-30",
             root_rejected=lower_moment > G.REFERENCE_WIRES)
-        if not violations and lower_moment > G.REFERENCE_WIRES:
+        return lower_moment, certificate
+
+    # No solver inside this loop. Positive-column equalities may leave a
+    # degenerate dual face undetermined. Check both the active-column fit and
+    # the original LP's equality marginals, then select the larger exact lower
+    # bound. All capacities are repaired against ALL columns for each proposal.
+    for attempt in range(7):
+        target_string = str(target)
+        target_cost = np.asarray([_float_cost(c[2], target) for c in columns])
+        proposed, _, rank, singular = np.linalg.lstsq(A[:, active].T, target_cost[active], rcond=None)
+        candidates = [certify(proposed,target_string,"active_positive_columns_lstsq_at_target"),
+                      certify(marginals,target_string,"original_lp_equality_marginals")]
+        feasible = [item for item in candidates if not item[1]["inequality_violations"]]
+        lower_moment, certificates = max(feasible or candidates, key=lambda item:item[0])
+        candidate_history.append(dict(exponent=target_string,
+            active_system=dict(positive_columns=len(active), equality_multipliers=A.shape[0],
+                               lstsq_rank=int(rank), singular_values=[str(float(x)) for x in singular]),
+            candidates=[certificate for _,certificate in candidates],
+            selected_source=certificates["proposal_source"],
+            selection="maximum exact rational total_moment_lower among all-column feasible candidates"))
+        if not certificates["inequality_violations"] and lower_moment > G.REFERENCE_WIRES:
             break
         target += D("1e-12") * (10**(attempt+1))
     return dict(status="PASS" if certificates["root_rejected"] and not certificates["inequality_violations"] else "EXPLORATORY",
@@ -251,6 +277,8 @@ def pattern_ceiling(model, word=None, use_overlay=False, time_limit=300):
         primal_residual_max=float(np.max(np.abs(A @ solved.x - b))),
         primal_idle_profile={r: str(c) for r, c in idle.items()}, active_patterns=active_patterns,
         primal_profile_root=str(primal_root), certified_ceiling=certificates["exponent"], dual=certificates,
+        lp_equality_marginals=marginal_record, dual_candidate_history=candidate_history,
+        dual_recovery_protocol="Exactly two proposals at each of at most seven unchanged target exponents; one LP total; every proposal repaired and checked against every column with exact rational costs.",
         certificate_kind="certified LP dual ceiling; floating primal is a proposal, not an exact optimum certificate",
         literal_root=str(reference), literal_profile=reference_profile,
         inherited_literal_root=str(G.root(model.expected_profile)) if overlay_active else None,
@@ -266,13 +294,32 @@ def pattern_ceiling(model, word=None, use_overlay=False, time_limit=300):
         attribution=model.attributions, source_files=model.sources)
 
 
-def _helper_envelope(word, local, idle_mass, ks):
-    helpers = []
+def _helper_payment_partition(word):
+    """Physical helper width partitions ascending climbs, not centre descents.
+
+    Keep each nonascending helper payment fixed, with its actual partition.
+    Calling this helper does not remove a register or assert deletion feasibility.
+    """
+    helpers, fixed = [], []
     for reg in word.helpers:
-        seq = tuple(j["rank"] for j in word.climbs[reg]["jumps"])
+        jumps = word.climbs[reg]["jumps"]
+        if any(j["kind"] not in ("climb", "centre_descent") for j in jumps):
+            raise ValueError("unregistered helper payment kind")
+        seq = tuple(j["rank"] for j in jumps if j["kind"] == "climb")
         if sum(seq) != word.climbs[reg]["width"]:
-            raise ValueError("helper climb mass differs from width")
+            raise ValueError("ascending helper climb mass differs from physical width")
         helpers.append((reg, seq, sum(seq)))
+        other = [j["rank"] for j in jumps if j["kind"] != "climb"]
+        if other:
+            fixed.append(dict(register=reg, kind="centre_descent", paid_parts=other,
+                              mass=sum(other)))
+    return helpers, dict(per_register=fixed, total_mass=sum(x["mass"] for x in fixed),
+        profile=dict(Counter(r for x in fixed for r in x["paid_parts"])),
+        scope="Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.")
+
+
+def _helper_envelope(word, local, idle_mass, ks):
+    helpers, fixed = _helper_payment_partition(word)
     out = []
     for count in ks:
         if not 0 <= count <= len(helpers):
@@ -304,12 +351,12 @@ def _helper_envelope(word, local, idle_mass, ks):
             certified = dict(k_removed=count, ceiling=str(target), total_moment_lower=str(lower),
                 total_moment_lower_decimal=str(_decimal_fraction(lower)),
                 rejected=lower > G.REFERENCE_WIRES, maximizing_relaxed_helper_ids=[r for _,r in benefits[:count]],
-                proof="original global local+rank51-idle lower moment minus 666 times largest k rigorous upper removal benefits")
+                proof="original global local+rank51-idle lower moment minus 666 times largest k rigorous upper ascending-chain removal benefits; all centre descents stay fixed")
             if lower > G.REFERENCE_WIRES:
                 break
             target += D("1e-12") * 10**(attempt+1)
         out.append(certified)
-    return out
+    return out, fixed
 
 
 def ceilings(seed, removal_counts=(0,1,2,4,8,16,32,64,128,256,408)):
@@ -336,7 +383,7 @@ def ceilings(seed, removal_counts=(0,1,2,4,8,16,32,64,128,256,408)):
     packing_bracket = _rational_root_bracket(exact_fractional,packing)
     integral_root = G.root(integral)
     integral_bracket = _rational_root_bracket(integral,integral_root)
-    envelope = _helper_envelope(word, local, idle_mass, removal_counts)
+    envelope, fixed_helper_payments = _helper_envelope(word, local, idle_mass, removal_counts)
     valid = (all(r["status"] == "PASS" and r["ceiling_dominates_literal"] for r in rows)
              and all(r["rejected"] for r in envelope)
              and all(r["lower_certified"] and r["upper_certified"] for r in (packing_bracket,integral_bracket)))
@@ -358,11 +405,12 @@ def ceilings(seed, removal_counts=(0,1,2,4,8,16,32,64,128,256,408)):
         tighter_than_packing_cap=comparison,
         ceiling_comparison_protocol="certified LP upper < independently rational-certified packing lower; no numerical-overlap assertion",
         helper_removal_envelope=envelope,
-        helper_removal_scope="up to k whole helper climb strings removed, freed width joins fractional idle rank51; no feasibility of those deletions asserted",
+        helper_removal_fixed_payments=fixed_helper_payments,
+        helper_removal_scope="up to k whole ascending helper climb strings removed, freed physical width joins fractional idle rank51; centre descents and all other local paid children stay fixed; no feasibility of deleting these strings or registers asserted",
         ceiling_falsification_classes={
             "rank48_integral":"a violation changes the local word/coverage law or introduces idle children of rank >48",
             "rank51_fractional":"a violation changes the local word/coverage law or the maximum idle rank",
-            "helper_removal":"a violation removes additional helpers or changes remaining helper climbs, other local paid children, or the coverage law"},
+            "helper_removal":"a violation removes additional ascending helper strings or changes remaining climbs, fixed centre descents, other local paid children, or the coverage law"},
         attribution=G.sources(all_words=True),
         pattern_criteria={"non_circular":False,"reason":"class ceilings condition on profiles and inventories; certificates, not five-criterion patterns"})
 
@@ -393,16 +441,17 @@ def partitions(seed, n_permutations=2000, keys=L10_KEYS):
         word=wordio.load(path)
         configs=Counter()
         observed_moment=observed_phi=0.0
-        for reg in word.helpers:
-            seq=[j["rank"] for j in word.climbs[reg]["jumps"]]
-            width=word.climbs[reg]["width"]
-            if sum(seq)!=width:
-                raise ValueError("helper partition conservation failure")
+        helpers, fixed_helper_payments = _helper_payment_partition(word)
+        fixed_moment=sum(c*_float_cost(r,reference) for r,c in fixed_helper_payments["profile"].items())
+        fixed_phi=sum(c*r*math.log(r) for r,c in fixed_helper_payments["profile"].items())
+        for reg,seq,width in helpers:
             configs[width,len(seq)]+=1
             observed_moment+=sum(_float_cost(r,reference) for r in seq)
             observed_phi+=sum(r*math.log(r) for r in seq)
-        null_moment=np.zeros(n_permutations)
-        null_phi=np.zeros(n_permutations)
+        observed_moment+=fixed_moment
+        observed_phi+=fixed_phi
+        null_moment=np.full(n_permutations,fixed_moment)
+        null_phi=np.full(n_permutations,fixed_phi)
         mutable_registers=0
         for (width,parts),count in configs.items():
             if parts == 0:
@@ -429,7 +478,9 @@ def partitions(seed, n_permutations=2000, keys=L10_KEYS):
         rows.append(dict(word=key,family=word.family,attribution=dict(path=key,**pins[key]),
             statistic="sum of helper paid moment at fixed #2802 kappa; lower is better",
             moment=observed_moment,phi=observed_phi,mutable_helpers=mutable_registers,
-            null={"protocol":"independent uniform ordered positive compositions of each helper width with unchanged part count",
+            fixed_nonascending_helper_payments=dict(fixed_helper_payments,moment=fixed_moment,phi=fixed_phi),
+            ascending_partition_scope="Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+            null={"protocol":"independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed",
                   "moment":{**G._summary(null_moment.tolist(),observed_moment,tail="le"),"empirical_p":p},
                   "phi":G._summary(null_phi.tolist(),observed_phi),"permutation_p":p,
                   "moment_tie_tolerance":tie_tolerance},

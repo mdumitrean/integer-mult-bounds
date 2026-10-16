@@ -1,0 +1,2410 @@
+{
+  "confirmation_required": true,
+  "cpu_allocation": "Measured family CPU through pool collection is divided equally between the two seed receipts; individual task CPU is retained. Earlier-attempt CPU remains in its original receipts and is subtracted from this attempt's budget. Final receipt serialization is outside that timing window.",
+  "cpu_seconds": 2.9556437995,
+  "decision": {
+    "pass_bar": "Every one of the nine words must have at least 99 percent of null samples strictly above the real moment, p<=0.01, BH q<=0.05, and the held merge calibration must be within 1 percent. The second seed must reproduce the conjunction; otherwise protocol-specific NULL.",
+    "pattern_claim": false,
+    "scope": "The statistic is a function of the paid profile, so N2 profile-preserving samples leave it unchanged. Even PASS fails the non-circular pattern criterion.",
+    "task_decision": "registered every-word partition/margin conjunction fails",
+    "verdict": "NULL"
+  },
+  "experiment": "L-10",
+  "milestone": "M3",
+  "n_permutations": 2000,
+  "null_summary": {
+    "detail": "Per-word/control summaries and registered q-values are retained inside tasks.",
+    "empirical_p": null,
+    "mean": null,
+    "model": "uniform ordered positive helper compositions at fixed width/part count; nine-word BH family",
+    "q": null,
+    "sd": null
+  },
+  "peak_rss_bytes": 546148352,
+  "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+  "protocol_amendment": {
+    "earlier_applicable_amendments": [
+      {
+        "path": "results/M3/AMENDMENT-1.json",
+        "sha256": "e14ddf9eb24bb4f4d9605b88ea377414e1dc0f7135e8cb649f41d22b8b4aa734"
+      }
+    ],
+    "path": "results/M3/AMENDMENT-2.json",
+    "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+  },
+  "recorded_utc": "2026-10-16T05:35:44.987186+00:00",
+  "schema_version": 1,
+  "scope": "Finite scoped evaluation; potential kappa levers are census targets only.",
+  "script_manifest_sha256": "0473448bf903496b5d067d11a886cd349301830b161bd928c45a9a167d313510",
+  "script_sha256": {
+    "research/styles-r11/pipeline/export_language.py": "9a05ef1aa405aabb5b70f9d7cbff2f4cd9d7f18ae21d6524a3527509730ca3ad",
+    "research/styles-r11/pipeline/fill.py": "9ca05b47016ddbbb4a6713c981932d63a6eaecdd27f3604fcfb66877f239fc4a",
+    "research/styles-r11/pipeline/growth.py": "4f29eba652ea1c7ca889f784c612a6ab11d8aefe96637d18bd32391532b8f167",
+    "research/styles-r11/pipeline/growth_cost.py": "da8443a2abc7e01da4985e04bb1cf1bb65371a2c8b16dc9d9f0247ba91692c73",
+    "research/styles-r11/pipeline/growth_m3.py": "86b19cb8e6ebb7a33e1d01226d645f76132759c233f7be2a49647962f7b48048",
+    "research/styles-r11/pipeline/growth_order.py": "bd143d57f7df7cec9fe475f9f4aa173d9e516d93099f57b16c2e609551beea99",
+    "research/styles-r11/pipeline/growth_replay.py": "c14f7807b6d4d8ad0365b6e811ddf8928745598686be0441333635069b0966d3",
+    "research/styles-r11/pipeline/matching.py": "678ce7afc686717d0f7f99a7f3f739bc074aebcfa2392ee3f97a5ae99cd64819",
+    "research/styles-r11/pipeline/measures.py": "ec7fd2264129b922f8988098d41ebc9200f742aad92a060b7b54af191fa7bf3a",
+    "research/styles-r11/pipeline/nulls.py": "a6c6b3ce9c3db775f43058c3dda3640b5fcdbb46a94eca00c012c5302f165e86",
+    "research/styles-r11/pipeline/pool.py": "59714d0b8501a4d2a0b041bbf18be089fa6a4881943a8c4db7c7605e6c5d86d8",
+    "research/styles-r11/pipeline/records.py": "e9c46e4d0de79800bf573b4de9d6baa8fa50e47821944e043f285a536e0e2feb",
+    "research/styles-r11/pipeline/resource_check.py": "f6bfce18b87ac35b837b18df17fc5c807688654f456e7173cea77f895d136297",
+    "research/styles-r11/pipeline/root.py": "b2eef8a2236e5ceb4ef92c9563b7a1e270b0719d345017cf38a9ee0784ceccd1",
+    "research/styles-r11/pipeline/run_acceleration.py": "6eb38a6cebc166c0cfedd04ea2f10d24357ad2c2d041f15a1305eae9c5a04d08",
+    "research/styles-r11/pipeline/run_m0.py": "f7a036bba54d47f52919b8c4aa9a02865df1524d9e0c0db3b81354c2a72506b9",
+    "research/styles-r11/pipeline/run_m1.py": "e6e3fefafd18aeb2d83a78a4784b4f87033fb4ecbbd8640cf2ef51effbbea58b",
+    "research/styles-r11/pipeline/run_m2.py": "b40834fbecb5cafd8ffc3342abe90208c2e973c5fa4d18144b491f48e62882f4",
+    "research/styles-r11/pipeline/run_m3.py": "effbab02a651b86bba30f76b8195d17f2053f78682070b138f65c115837a35c5",
+    "research/styles-r11/pipeline/sandpile.py": "b12489046e2248f7075a374a7e6bb54b804e7bedac5c8204a7e50594973ac736",
+    "research/styles-r11/pipeline/string_screen.py": "781a228af57cc3e728e670356b88dfaa48a4202a2a76c0b62caec86fd8ab3901",
+    "research/styles-r11/pipeline/verify_results.py": "a5ff59664f51348edfe137e0e6a8b7e14f2e7b924593cb5a40a888af25af478a",
+    "research/styles-r11/pipeline/word_alias_score.py": "b7766328ea4a58b65145786a1b38c0d6b074a24cb63d0be4ae658f35df807ad7",
+    "research/styles-r11/pipeline/word_commute_fast.py": "3a9e58e6e66642f566778304b6c765b262dc8407645724112db081e4e6cc6a1d",
+    "research/styles-r11/pipeline/word_frame_fast.py": "1985602b6390a9e468ff656e135f6c79b208f159567e72b0eeb41e604e7275c1",
+    "research/styles-r11/pipeline/word_periods.py": "c39ae26d9e4eb82b61294734c5f4acecd29c5b08333eeb39189709f680b2548d",
+    "research/styles-r11/pipeline/word_tasks.py": "5f14c4f3f389751baeeede856369db83a3b9ab93bd8e58dc520584abd940adf4",
+    "research/styles-r11/pipeline/wordio.py": "a9c254acdc04c3302ed0a31d9e0da39a8e3348aa20d189798e86539464fd81d4"
+  },
+  "seed": 11031,
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43extra.json.gz",
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    }
+  ],
+  "statistics": {
+    "completed_seed_tasks": 2,
+    "cumulative_family_cpu_seconds": 5.911287599,
+    "family_cpu_budget_seconds": 300.0,
+    "launched": true,
+    "live_pool_cpu_budget_seconds": 299.733815524,
+    "memory_projection": {
+      "allocated_cores": 128,
+      "formula": "parent + workers*(parent + word + fill + working set)",
+      "parent_peak_rss_gib": 0.5086402893066406,
+      "projected_peak_gib": 109.21538543701172,
+      "projected_per_worker_gib": 1.7820777893066406,
+      "ram_gib": 247.1584243774414,
+      "reserved_cores": 8,
+      "worker_rss_cap_gib": 4,
+      "workers": 61,
+      "working_set_gib": 1.0
+    },
+    "original_family_cpu_budget_seconds": 300.0,
+    "prelaunch_stop_check": {
+      "binding": false,
+      "ceiling_comparisons": [
+        {
+          "all_requested_certificates_valid": true,
+          "any_certified_tighter": true,
+          "certified_comparisons": [
+            {
+              "certified_upper": "0.001717795812",
+              "class_name": "fixed #2802 inventory",
+              "tighter_than_packing_lower": true
+            },
+            {
+              "certified_upper": "0.001747404387",
+              "class_name": "fixed #2802 local profile, integral rank48",
+              "tighter_than_packing_lower": true
+            },
+            {
+              "certified_upper": "0.001758085936",
+              "class_name": "helper removal k=0",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001761170075",
+              "class_name": "helper removal k=1",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001764265063",
+              "class_name": "helper removal k=2",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001770487816",
+              "class_name": "helper removal k=4",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001783066061",
+              "class_name": "helper removal k=8",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001807743133",
+              "class_name": "helper removal k=16",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001859206446",
+              "class_name": "helper removal k=32",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001971462656",
+              "class_name": "helper removal k=64",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.002234864757",
+              "class_name": "helper removal k=128",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.002940700529",
+              "class_name": "helper removal k=256",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.004097539104",
+              "class_name": "helper removal k=408",
+              "tighter_than_packing_lower": false
+            }
+          ],
+          "seed": 11031
+        },
+        {
+          "all_requested_certificates_valid": true,
+          "any_certified_tighter": true,
+          "certified_comparisons": [
+            {
+              "certified_upper": "0.001717795812",
+              "class_name": "fixed #2802 inventory",
+              "tighter_than_packing_lower": true
+            },
+            {
+              "certified_upper": "0.001747404387",
+              "class_name": "fixed #2802 local profile, integral rank48",
+              "tighter_than_packing_lower": true
+            },
+            {
+              "certified_upper": "0.001758085936",
+              "class_name": "helper removal k=0",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001761170075",
+              "class_name": "helper removal k=1",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001764265063",
+              "class_name": "helper removal k=2",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001770487816",
+              "class_name": "helper removal k=4",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001783066061",
+              "class_name": "helper removal k=8",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001807743133",
+              "class_name": "helper removal k=16",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001859206446",
+              "class_name": "helper removal k=32",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.001971462656",
+              "class_name": "helper removal k=64",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.002234864757",
+              "class_name": "helper removal k=128",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.002940700529",
+              "class_name": "helper removal k=256",
+              "tighter_than_packing_lower": false
+            },
+            {
+              "certified_upper": "0.004097539104",
+              "class_name": "helper removal k=408",
+              "tighter_than_packing_lower": false
+            }
+          ],
+          "seed": 29063
+        }
+      ],
+      "deadline": {
+        "hard_stop_utc": "2026-10-30T04:08:31.792839+00:00",
+        "origin": "M0 preregistration timestamp plus fourteen days (conservative fallback)",
+        "reached": false
+      },
+      "kind": "no_binding_growth_stop",
+      "lane": "B",
+      "lineage": {
+        "all_lineage_guards_proven": false,
+        "correction_scope": "L7-GUARD-ORDER does not discharge the two early compound-decomposition obligations.",
+        "results": [
+          {
+            "path": "results/L-7/v1/seed-11031/RESULT.json",
+            "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+          },
+          {
+            "path": "results/L-7/v1/seed-29063/RESULT.json",
+            "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+          }
+        ],
+        "seeds": [
+          {
+            "all_lineage_guards_proven": false,
+            "seed": 11031,
+            "unresolved": [
+              "2679 -> 2745: held source pins identify changed alias8/prelife/refit563/alias1 stages and fill, but source-partner reassignment has not been decomposed into the registered move alphabet",
+              "2745 -> 2751: source joint_engine explains twelve-source recovery, but no validated decomposition into the registered move alphabet"
+            ]
+          },
+          {
+            "all_lineage_guards_proven": false,
+            "seed": 29063,
+            "unresolved": [
+              "2679 -> 2745: held source pins identify changed alias8/prelife/refit563/alias1 stages and fill, but source-partner reassignment has not been decomposed into the registered move alphabet",
+              "2745 -> 2751: source joint_engine explains twelve-source recovery, but no validated decomposition into the registered move alphabet"
+            ]
+          }
+        ]
+      },
+      "reason": "The registered growth-stop conjunction is not established by the retained evidence.",
+      "trigger_results": []
+    },
+    "preparation": {
+      "cpu_seconds": 0.243203387,
+      "metadata": {
+        "lane_scope": "Lane B only; the stopped Lane C S3 family is not relaunched or counted again.",
+        "models": {
+          "fills": [],
+          "optima": [],
+          "template_loaded": true
+        }
+      },
+      "parent_objects_loaded_once": true,
+      "peak_rss_bytes": 546148352,
+      "protocol_amendment": {
+        "earlier_applicable_amendments": [
+          {
+            "path": "results/M3/AMENDMENT-1.json",
+            "sha256": "e14ddf9eb24bb4f4d9605b88ea377414e1dc0f7135e8cb649f41d22b8b4aa734"
+          }
+        ],
+        "path": "results/M3/AMENDMENT-2.json",
+        "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+      },
+      "sandpile_shared_family": {
+        "counted_as_new_family": false,
+        "counted_as_null": false,
+        "item": "S-3",
+        "lane": "C",
+        "not_run": true,
+        "permitted_execution": "L-10 in Lane B only",
+        "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+        "reason": "Two consecutive confirmed scientific NULLs in Lane C: S-6 binding-interval prediction and S-2 greedy lowering. PLAN section 6 stops the lane.",
+        "reuse_scope": "The Lane B output may be referenced descriptively in the hand-back. It is not another Lane C experiment or a second confirmation.",
+        "shared_family": "L-10/S-3",
+        "source_attribution": [
+          {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 57109,
+            "format": "FULL-WORD",
+            "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+            "kappa": null,
+            "local_profile": {
+              "1": 2412,
+              "2": 418,
+              "3": 418,
+              "4": 170,
+              "5": 68,
+              "8": 8
+            },
+            "path": "1094-K8PRE-FULL-WORD.json.gz",
+            "pr": 1094,
+            "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+            "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+            "width_inventory": {
+              "4": 56,
+              "5": 32,
+              "7": 30,
+              "8": 122,
+              "9": 240
+            }
+          },
+          {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 57222,
+            "format": "FULL-WORD",
+            "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+            "kappa": "0.001672660197076918",
+            "local_profile": {
+              "1": 2412,
+              "2": 418,
+              "3": 432,
+              "4": 142,
+              "5": 82,
+              "8": 8
+            },
+            "path": "1094-K8S7-FULL-WORD.json.gz",
+            "pr": 1094,
+            "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+            "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+            "width_inventory": {
+              "4": 56,
+              "5": 32,
+              "7": 30,
+              "8": 122,
+              "9": 240
+            }
+          },
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 57307,
+            "format": "FULL-WORD",
+            "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+            "kappa": "0.001675658002271934",
+            "local_profile": {
+              "1": 2358,
+              "2": 504,
+              "3": 408,
+              "4": 134,
+              "5": 80,
+              "8": 8
+            },
+            "path": "1195-FULL-WORD.json.gz",
+            "pr": 1195,
+            "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+            "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+            "width_inventory": {
+              "4": 44,
+              "5": 44,
+              "7": 38,
+              "8": 114,
+              "9": 240
+            }
+          },
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 57412,
+            "format": "FULL-WORD",
+            "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+            "kappa": "0.001676896669021299",
+            "local_profile": {
+              "1": 2339,
+              "2": 510,
+              "3": 419,
+              "4": 126,
+              "5": 82,
+              "8": 8
+            },
+            "path": "1625-extra-word-566.json.gz",
+            "pr": 1625,
+            "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+            "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+            "width_inventory": {
+              "4": 40,
+              "5": 48,
+              "7": 38,
+              "8": 114,
+              "9": 240
+            }
+          },
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 57411,
+            "format": "FULL-WORD",
+            "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+            "kappa": "0.001676896669021299",
+            "local_profile": {
+              "1": 2347,
+              "2": 502,
+              "3": 415,
+              "4": 130,
+              "5": 82,
+              "8": 8
+            },
+            "path": "1625-gauge44-word-566.json.gz",
+            "pr": 1625,
+            "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+            "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+            "width_inventory": {
+              "4": 44,
+              "5": 44,
+              "7": 38,
+              "8": 114,
+              "9": 240
+            }
+          },
+          {
+            "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+            "bytes": 57440,
+            "format": "FULL-WORD",
+            "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+            "kappa": "0.001676938111022438",
+            "local_profile": {
+              "1": 2340,
+              "2": 508,
+              "3": 420,
+              "4": 126,
+              "5": 82,
+              "8": 8
+            },
+            "path": "1672-extra-word-566-554.json.gz",
+            "pr": 1672,
+            "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+            "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+            "width_inventory": {
+              "4": 40,
+              "5": 48,
+              "7": 38,
+              "8": 114,
+              "9": 240
+            }
+          },
+          {
+            "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+            "bytes": 57438,
+            "format": "FULL-WORD",
+            "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+            "kappa": "0.001676938111022438",
+            "local_profile": {
+              "1": 2348,
+              "2": 500,
+              "3": 416,
+              "4": 130,
+              "5": 82,
+              "8": 8
+            },
+            "path": "1672-gauge44-word-566-554.json.gz",
+            "pr": 1672,
+            "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+            "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+            "width_inventory": {
+              "4": 44,
+              "5": 44,
+              "7": 38,
+              "8": 114,
+              "9": 240
+            }
+          },
+          {
+            "author": "Philippe Van Velzen (philippeVV)",
+            "bytes": 71364,
+            "format": "BORROW-WORD",
+            "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+            "kappa": null,
+            "local_profile": {
+              "1": 2374,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 8
+            },
+            "path": "2679-BORROW-WORD-43base.json.gz",
+            "pr": 2679,
+            "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+            "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "Philippe Van Velzen (philippeVV)",
+            "bytes": 71365,
+            "format": "BORROW-WORD",
+            "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+            "kappa": null,
+            "local_profile": {
+              "1": 2374,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 8
+            },
+            "path": "2679-BORROW-WORD-43extra.json.gz",
+            "pr": 2679,
+            "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+            "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 71241,
+            "format": "BORROW-WORD",
+            "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+            "kappa": "0.0017161404259974415",
+            "local_profile": {
+              "1": 2370,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 4,
+              "8": 4
+            },
+            "path": "2745-BORROW-WORD-43base.json.gz",
+            "pr": 2745,
+            "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+            "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 71242,
+            "format": "BORROW-WORD",
+            "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+            "kappa": "0.0017161404259974415",
+            "local_profile": {
+              "1": 2370,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 4,
+              "8": 4
+            },
+            "path": "2745-BORROW-WORD-43extra.json.gz",
+            "pr": 2745,
+            "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+            "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "DavidAriasC",
+            "bytes": 72192,
+            "format": "BORROW-WORD",
+            "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+            "kappa": "0.001717256973467002308270",
+            "local_profile": {
+              "1": 2364,
+              "2": 647,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "path": "2766-WORD-base.json.gz",
+            "pr": 2766,
+            "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+            "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "DavidAriasC",
+            "bytes": 72192,
+            "format": "BORROW-WORD",
+            "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+            "kappa": "0.001717256973467002308270",
+            "local_profile": {
+              "1": 2364,
+              "2": 647,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "path": "2766-WORD-extra.json.gz",
+            "pr": 2766,
+            "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+            "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+            "bytes": 72354,
+            "format": "BORROW-WORD",
+            "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+            "kappa": "0.001717409316335491643448",
+            "local_profile": {
+              "1": 2386,
+              "2": 642,
+              "3": 274,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "path": "retired5-WORD-base.json.gz",
+            "pr": null,
+            "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+            "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 4,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+            "bytes": 72353,
+            "format": "BORROW-WORD",
+            "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+            "kappa": "0.001717409316335491643448",
+            "local_profile": {
+              "1": 2386,
+              "2": 642,
+              "3": 274,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "path": "retired5-WORD-extra.json.gz",
+            "pr": null,
+            "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+            "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 4,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "Marius-Paul Dumitrean",
+            "bytes": 72444,
+            "format": "BORROW-WORD",
+            "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+            "kappa": "0.001717794984118634663827",
+            "local_profile": {
+              "1": 2382,
+              "2": 648,
+              "3": 268,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+            "pr": 2802,
+            "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 26,
+              "5": 2,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "Marius-Paul Dumitrean",
+            "bytes": 72443,
+            "format": "BORROW-WORD",
+            "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+            "kappa": "0.001717794984118634663827",
+            "local_profile": {
+              "1": 2382,
+              "2": 648,
+              "3": 268,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+            "pr": 2802,
+            "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 26,
+              "5": 2,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "Tekalign (tekuuu)",
+            "bytes": 72468,
+            "format": "BORROW-WORD",
+            "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+            "kappa": "0.001717141586348426338109",
+            "local_profile": {
+              "1": 2366,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "pr": 2751,
+            "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "Tekalign (tekuuu)",
+            "bytes": 72468,
+            "format": "BORROW-WORD",
+            "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+            "kappa": "0.001717141586348426338109",
+            "local_profile": {
+              "1": 2366,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+            "pr": 2751,
+            "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 70505,
+            "format": "BORROW-WORD",
+            "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+            "kappa": "0.001703552312979594",
+            "local_profile": {
+              "1": 2363,
+              "2": 632,
+              "3": 326,
+              "4": 120,
+              "5": 34,
+              "7": 4,
+              "8": 4
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+            "pr": 2462,
+            "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 33,
+              "5": 9,
+              "7": 62,
+              "8": 86,
+              "9": 240
+            }
+          },
+          {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 70509,
+            "format": "BORROW-WORD",
+            "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+            "kappa": "0.001703552312979594",
+            "local_profile": {
+              "1": 2363,
+              "2": 632,
+              "3": 326,
+              "4": 120,
+              "5": 34,
+              "7": 4,
+              "8": 4
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+            "pr": 2462,
+            "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 33,
+              "5": 9,
+              "7": 62,
+              "8": 86,
+              "9": 240
+            }
+          }
+        ],
+        "stop_source": {
+          "path": "results/M2/STOP.json",
+          "sha256": "569a66bc933263314f07d7bb2158b0823cc2885a32a7db047d45cb73af4cb024"
+        }
+      }
+    },
+    "prior_attempt_cpu_seconds": 0.0,
+    "protocol_amendment": {
+      "earlier_applicable_amendments": [
+        {
+          "path": "results/M3/AMENDMENT-1.json",
+          "sha256": "e14ddf9eb24bb4f4d9605b88ea377414e1dc0f7135e8cb649f41d22b8b4aa734"
+        }
+      ],
+      "path": "results/M3/AMENDMENT-2.json",
+      "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+    },
+    "solver_accounting": {
+      "all_repeats_logged": true,
+      "completed_result_calls": 0,
+      "expected_calls_this_seed": 0,
+      "interrupted_task_call_count_unknown": false
+    },
+    "stopped": null,
+    "tasks": [
+      {
+        "cpu_seconds": 2.1441311020000002,
+        "peak_rss_bytes": 303439872,
+        "result": {
+          "decision": "registered every-word partition/margin conjunction fails",
+          "experiment": "L-10",
+          "merge_calibration": {
+            "delta": {
+              "1": -1332,
+              "2": 666
+            },
+            "label": "2751->2766 (1,1)->2 once per call",
+            "observed": "1.153871185759701612591209734E-7",
+            "predicted": "1.153871185759701612591209734E-7",
+            "profile_identity": true,
+            "relative_error": "0",
+            "scope": "one supported realised refit step; no invented calibration margin",
+            "within_one_percent": true
+          },
+          "multiple_testing": "BH-FDR 5% across the fixed per-word moment family; Phi is descriptive",
+          "n_permutations": 2000,
+          "pattern_criteria": {
+            "non_circular": false,
+            "reason": "total Phi/moment is invariant under profile-preserving N2; headroom bookkeeping, not a non-circular pattern"
+          },
+          "seed": 11031,
+          "status": "NULL",
+          "words": [
+            {
+              "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+              "attribution": {
+                "author": "Jeremy Kothe (jeremykothe2)",
+                "bytes": 57222,
+                "format": "FULL-WORD",
+                "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+                "kappa": "0.001672660197076918",
+                "local_profile": {
+                  "1": 2412,
+                  "2": 418,
+                  "3": 432,
+                  "4": 142,
+                  "5": 82,
+                  "8": 8
+                },
+                "path": "1094-K8S7-FULL-WORD.json.gz",
+                "pr": 1094,
+                "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+                "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+                "width_inventory": {
+                  "4": 56,
+                  "5": 32,
+                  "7": 30,
+                  "8": 122,
+                  "9": 240
+                }
+              },
+              "family": "FULL-WORD",
+              "fixed_nonascending_helper_payments": {
+                "moment": 0.3300181799297149,
+                "per_register": [
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 224
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 240
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 256
+                  }
+                ],
+                "phi": 49.906597000316054,
+                "profile": {
+                  "8": 3
+                },
+                "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+                "total_mass": 24
+              },
+              "fraction_of_null_above_real": 1.0,
+              "moment": 51.75174945008454,
+              "mutable_helpers": 424,
+              "null": {
+                "bh_q": 0.0014992503748125937,
+                "moment": {
+                  "empirical_p": 0.0004997501249375312,
+                  "max": 51.75408161104116,
+                  "mean": 51.75331508592456,
+                  "min": 51.75246587643036,
+                  "n": 2000,
+                  "q005": 51.752676165372506,
+                  "q995": 51.75391822416851,
+                  "sd": 0.0002528635674779957
+                },
+                "moment_tie_tolerance": 1e-10,
+                "permutation_p": 0.0004997501249375312,
+                "phi": {
+                  "empirical_p": 0.0004997501249375312,
+                  "max": 2220.99987066377,
+                  "mean": 2185.062292587685,
+                  "min": 2152.622706816268,
+                  "n": 2000,
+                  "q005": 2159.1272540139016,
+                  "q995": 2211.7319317453203,
+                  "sd": 10.700871926547247
+                },
+                "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+              },
+              "passes_99_percent": true,
+              "phi": 2251.2862838052197,
+              "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+              "word": "1094-K8S7-FULL-WORD.json.gz"
+            },
+            {
+              "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+              "attribution": {
+                "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+                "bytes": 57438,
+                "format": "FULL-WORD",
+                "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+                "kappa": "0.001676938111022438",
+                "local_profile": {
+                  "1": 2348,
+                  "2": 500,
+                  "3": 416,
+                  "4": 130,
+                  "5": 82,
+                  "8": 8
+                },
+                "path": "1672-gauge44-word-566-554.json.gz",
+                "pr": 1672,
+                "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+                "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+                "width_inventory": {
+                  "4": 44,
+                  "5": 44,
+                  "7": 38,
+                  "8": 114,
+                  "9": 240
+                }
+              },
+              "family": "FULL-WORD",
+              "fixed_nonascending_helper_payments": {
+                "moment": 0.3300181799297149,
+                "per_register": [
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 224
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 240
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 256
+                  }
+                ],
+                "phi": 49.906597000316054,
+                "profile": {
+                  "8": 3
+                },
+                "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+                "total_mass": 24
+              },
+              "fraction_of_null_above_real": 1.0,
+              "moment": 51.807290018358636,
+              "mutable_helpers": 436,
+              "null": {
+                "bh_q": 0.0014992503748125937,
+                "moment": {
+                  "empirical_p": 0.0004997501249375312,
+                  "max": 51.80907403043853,
+                  "mean": 51.80835449056089,
+                  "min": 51.8073917976425,
+                  "n": 2000,
+                  "q005": 51.80775333873047,
+                  "q995": 51.80896871807773,
+                  "sd": 0.00024604007388544404
+                },
+                "moment_tie_tolerance": 1e-10,
+                "permutation_p": 0.0004997501249375312,
+                "phi": {
+                  "empirical_p": 0.0004997501249375312,
+                  "max": 2232.5626462302994,
+                  "mean": 2191.8230790098933,
+                  "min": 2161.376594592377,
+                  "n": 2000,
+                  "q005": 2165.50837560898,
+                  "q995": 2216.742265252321,
+                  "sd": 10.412170962056269
+                },
+                "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+              },
+              "passes_99_percent": true,
+              "phi": 2236.845887916741,
+              "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+              "word": "1672-gauge44-word-566-554.json.gz"
+            },
+            {
+              "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+              "attribution": {
+                "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+                "bytes": 57440,
+                "format": "FULL-WORD",
+                "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+                "kappa": "0.001676938111022438",
+                "local_profile": {
+                  "1": 2340,
+                  "2": 508,
+                  "3": 420,
+                  "4": 126,
+                  "5": 82,
+                  "8": 8
+                },
+                "path": "1672-extra-word-566-554.json.gz",
+                "pr": 1672,
+                "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+                "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+                "width_inventory": {
+                  "4": 40,
+                  "5": 48,
+                  "7": 38,
+                  "8": 114,
+                  "9": 240
+                }
+              },
+              "family": "FULL-WORD",
+              "fixed_nonascending_helper_payments": {
+                "moment": 0.3300181799297149,
+                "per_register": [
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 224
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 240
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 256
+                  }
+                ],
+                "phi": 49.906597000316054,
+                "profile": {
+                  "8": 3
+                },
+                "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+                "total_mass": 24
+              },
+              "fraction_of_null_above_real": 1.0,
+              "moment": 51.862440083614906,
+              "mutable_helpers": 440,
+              "null": {
+                "bh_q": 0.0014992503748125937,
+                "moment": {
+                  "empirical_p": 0.0004997501249375312,
+                  "max": 51.86456370675964,
+                  "mean": 51.86341769603746,
+                  "min": 51.86260928216897,
+                  "n": 2000,
+                  "q005": 51.86277847272422,
+                  "q995": 51.86401465494125,
+                  "sd": 0.00023626244164358048
+                },
+                "moment_tie_tolerance": 1e-10,
+                "permutation_p": 0.0004997501249375312,
+                "phi": {
+                  "empirical_p": 0.0004997501249375312,
+                  "max": 2231.801743882847,
+                  "mean": 2197.591597140394,
+                  "min": 2149.1013004778047,
+                  "n": 2000,
+                  "q005": 2172.027940142142,
+                  "q995": 2223.985410315231,
+                  "sd": 9.998230880370198
+                },
+                "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+              },
+              "passes_99_percent": true,
+              "phi": 2238.938880491799,
+              "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+              "word": "1672-extra-word-566-554.json.gz"
+            },
+            {
+              "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+              "attribution": {
+                "author": "Jeremy Kothe (jeremykothe2)",
+                "bytes": 71241,
+                "format": "BORROW-WORD",
+                "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+                "kappa": "0.0017161404259974415",
+                "local_profile": {
+                  "1": 2370,
+                  "2": 646,
+                  "3": 297,
+                  "4": 120,
+                  "5": 26,
+                  "7": 4,
+                  "8": 4
+                },
+                "path": "2745-BORROW-WORD-43base.json.gz",
+                "pr": 2745,
+                "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+                "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "width_inventory": {
+                  "4": 26,
+                  "5": 9,
+                  "7": 62,
+                  "8": 78,
+                  "9": 240
+                }
+              },
+              "family": "BORROW-WORD",
+              "fixed_nonascending_helper_payments": {
+                "moment": 0.3301607555581441,
+                "per_register": [
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      7,
+                      1
+                    ],
+                    "register": 224
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      7,
+                      1
+                    ],
+                    "register": 240
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 256
+                  }
+                ],
+                "phi": 43.878274420213074,
+                "profile": {
+                  "1": 2,
+                  "7": 2,
+                  "8": 1
+                },
+                "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+                "total_mass": 24
+              },
+              "fraction_of_null_above_real": 0.0,
+              "moment": 46.75640754517632,
+              "mutable_helpers": 382,
+              "null": {
+                "bh_q": 1.0,
+                "moment": {
+                  "empirical_p": 1.0,
+                  "max": 46.75588448351852,
+                  "mean": 46.75516289605479,
+                  "min": 46.754364044485094,
+                  "n": 2000,
+                  "q005": 46.7546155527588,
+                  "q995": 46.75567147431292,
+                  "sd": 0.00021049787476699913
+                },
+                "moment_tie_tolerance": 1e-10,
+                "permutation_p": 1.0,
+                "phi": {
+                  "empirical_p": 1.0,
+                  "max": 1744.4577235145648,
+                  "mean": 1710.6505540087467,
+                  "min": 1680.116017147867,
+                  "n": 2000,
+                  "q005": 1689.107559127663,
+                  "q995": 1733.4337023648432,
+                  "sd": 8.907901804223465
+                },
+                "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+              },
+              "passes_99_percent": false,
+              "phi": 1657.97107262612,
+              "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+              "word": "2745-BORROW-WORD-43base.json.gz"
+            },
+            {
+              "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+              "attribution": {
+                "author": "Jeremy Kothe (jeremykothe2)",
+                "bytes": 71242,
+                "format": "BORROW-WORD",
+                "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+                "kappa": "0.0017161404259974415",
+                "local_profile": {
+                  "1": 2370,
+                  "2": 646,
+                  "3": 297,
+                  "4": 120,
+                  "5": 26,
+                  "7": 4,
+                  "8": 4
+                },
+                "path": "2745-BORROW-WORD-43extra.json.gz",
+                "pr": 2745,
+                "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+                "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "width_inventory": {
+                  "4": 26,
+                  "5": 9,
+                  "7": 62,
+                  "8": 78,
+                  "9": 240
+                }
+              },
+              "family": "BORROW-WORD",
+              "fixed_nonascending_helper_payments": {
+                "moment": 0.3301607555581441,
+                "per_register": [
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      7,
+                      1
+                    ],
+                    "register": 224
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      7,
+                      1
+                    ],
+                    "register": 240
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 256
+                  }
+                ],
+                "phi": 43.878274420213074,
+                "profile": {
+                  "1": 2,
+                  "7": 2,
+                  "8": 1
+                },
+                "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+                "total_mass": 24
+              },
+              "fraction_of_null_above_real": 0.0,
+              "moment": 46.75640754517632,
+              "mutable_helpers": 382,
+              "null": {
+                "bh_q": 1.0,
+                "moment": {
+                  "empirical_p": 1.0,
+                  "max": 46.75578502082659,
+                  "mean": 46.755156727005534,
+                  "min": 46.75440606601897,
+                  "n": 2000,
+                  "q005": 46.75461094706388,
+                  "q995": 46.75568001480688,
+                  "sd": 0.0002050721707826846
+                },
+                "moment_tie_tolerance": 1e-10,
+                "permutation_p": 1.0,
+                "phi": {
+                  "empirical_p": 1.0,
+                  "max": 1742.6774269463408,
+                  "mean": 1710.9115784881642,
+                  "min": 1684.3233289051311,
+                  "n": 2000,
+                  "q005": 1688.1031822424195,
+                  "q995": 1733.8156198407194,
+                  "sd": 8.678289738240144
+                },
+                "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+              },
+              "passes_99_percent": false,
+              "phi": 1657.97107262612,
+              "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+              "word": "2745-BORROW-WORD-43extra.json.gz"
+            },
+            {
+              "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+              "attribution": {
+                "author": "DavidAriasC",
+                "bytes": 72192,
+                "format": "BORROW-WORD",
+                "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+                "kappa": "0.001717256973467002308270",
+                "local_profile": {
+                  "1": 2364,
+                  "2": 647,
+                  "3": 297,
+                  "4": 120,
+                  "5": 26,
+                  "8": 8
+                },
+                "path": "2766-WORD-base.json.gz",
+                "pr": 2766,
+                "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+                "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+                "width_inventory": {
+                  "4": 26,
+                  "5": 9,
+                  "7": 62,
+                  "8": 78,
+                  "9": 240
+                }
+              },
+              "family": "BORROW-WORD",
+              "fixed_nonascending_helper_payments": {
+                "moment": 0.3300181799297149,
+                "per_register": [
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 224
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 240
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 256
+                  }
+                ],
+                "phi": 49.906597000316054,
+                "profile": {
+                  "8": 3
+                },
+                "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+                "total_mass": 24
+              },
+              "fraction_of_null_above_real": 0.0,
+              "moment": 46.756232126291906,
+              "mutable_helpers": 382,
+              "null": {
+                "bh_q": 1.0,
+                "moment": {
+                  "empirical_p": 1.0,
+                  "max": 46.75567125733025,
+                  "mean": 46.754980656158594,
+                  "min": 46.75430398325045,
+                  "n": 2000,
+                  "q005": 46.75441747088741,
+                  "q995": 46.7554857224084,
+                  "sd": 0.00020109402213862253
+                },
+                "moment_tie_tolerance": 1e-10,
+                "permutation_p": 1.0,
+                "phi": {
+                  "empirical_p": 1.0,
+                  "max": 1746.9888540931568,
+                  "mean": 1718.353758009464,
+                  "min": 1689.130902128955,
+                  "n": 2000,
+                  "q005": 1696.7777802124021,
+                  "q995": 1742.0240615302557,
+                  "sd": 8.509890355121032
+                },
+                "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+              },
+              "passes_99_percent": false,
+              "phi": 1665.385689567343,
+              "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+              "word": "2766-WORD-base.json.gz"
+            },
+            {
+              "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+              "attribution": {
+                "author": "Tekalign (tekuuu)",
+                "bytes": 72468,
+                "format": "BORROW-WORD",
+                "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+                "kappa": "0.001717141586348426338109",
+                "local_profile": {
+                  "1": 2366,
+                  "2": 646,
+                  "3": 297,
+                  "4": 120,
+                  "5": 26,
+                  "8": 8
+                },
+                "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+                "pr": 2751,
+                "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+                "source": "in tree (package of PR #2802)",
+                "width_inventory": {
+                  "4": 26,
+                  "5": 9,
+                  "7": 62,
+                  "8": 78,
+                  "9": 240
+                }
+              },
+              "family": "BORROW-WORD",
+              "fixed_nonascending_helper_payments": {
+                "moment": 0.3300181799297149,
+                "per_register": [
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 224
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 240
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 256
+                  }
+                ],
+                "phi": 49.906597000316054,
+                "profile": {
+                  "8": 3
+                },
+                "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+                "total_mass": 24
+              },
+              "fraction_of_null_above_real": 0.0,
+              "moment": 46.75626496954789,
+              "mutable_helpers": 382,
+              "null": {
+                "bh_q": 1.0,
+                "moment": {
+                  "empirical_p": 1.0,
+                  "max": 46.755823787028184,
+                  "mean": 46.75502052435911,
+                  "min": 46.75434707786382,
+                  "n": 2000,
+                  "q005": 46.75445477470861,
+                  "q995": 46.7555100773948,
+                  "sd": 0.00020826154392903623
+                },
+                "moment_tie_tolerance": 1e-10,
+                "permutation_p": 1.0,
+                "phi": {
+                  "empirical_p": 1.0,
+                  "max": 1745.1727473942663,
+                  "mean": 1716.6702145106653,
+                  "min": 1682.6800701273205,
+                  "n": 2000,
+                  "q005": 1695.7675829930536,
+                  "q995": 1740.4659128926762,
+                  "sd": 8.813268104160526
+                },
+                "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+              },
+              "passes_99_percent": false,
+              "phi": 1663.999395206223,
+              "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+              "word": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+            },
+            {
+              "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+              "attribution": {
+                "author": "Marius-Paul Dumitrean",
+                "bytes": 72444,
+                "format": "BORROW-WORD",
+                "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+                "kappa": "0.001717794984118634663827",
+                "local_profile": {
+                  "1": 2382,
+                  "2": 648,
+                  "3": 268,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                },
+                "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+                "pr": 2802,
+                "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+                "source": "in tree (package of PR #2802)",
+                "width_inventory": {
+                  "4": 26,
+                  "5": 2,
+                  "7": 62,
+                  "8": 78,
+                  "9": 240
+                }
+              },
+              "family": "BORROW-WORD",
+              "fixed_nonascending_helper_payments": {
+                "moment": 0.3300181799297149,
+                "per_register": [
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 224
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 240
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 256
+                  }
+                ],
+                "phi": 49.906597000316054,
+                "profile": {
+                  "8": 3
+                },
+                "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+                "total_mass": 24
+              },
+              "fraction_of_null_above_real": 0.0,
+              "moment": 46.27438096717279,
+              "mutable_helpers": 374,
+              "null": {
+                "bh_q": 1.0,
+                "moment": {
+                  "empirical_p": 1.0,
+                  "max": 46.27409391049216,
+                  "mean": 46.27337001596736,
+                  "min": 46.27269976697687,
+                  "n": 2000,
+                  "q005": 46.27285275736244,
+                  "q995": 46.27385337158721,
+                  "sd": 0.0001981332710389862
+                },
+                "moment_tie_tolerance": 1e-10,
+                "permutation_p": 1.0,
+                "phi": {
+                  "empirical_p": 1.0,
+                  "max": 1688.0907151130448,
+                  "mean": 1659.727788667837,
+                  "min": 1629.0957187851245,
+                  "n": 2000,
+                  "q005": 1638.3278475729078,
+                  "q995": 1681.5711505798827,
+                  "sd": 8.384395789503762
+                },
+                "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+              },
+              "passes_99_percent": false,
+              "phi": 1616.9404287312939,
+              "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+              "word": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+            },
+            {
+              "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+              "attribution": {
+                "author": "Marius-Paul Dumitrean",
+                "bytes": 72443,
+                "format": "BORROW-WORD",
+                "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+                "kappa": "0.001717794984118634663827",
+                "local_profile": {
+                  "1": 2382,
+                  "2": 648,
+                  "3": 268,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                },
+                "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+                "pr": 2802,
+                "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+                "source": "in tree (package of PR #2802)",
+                "width_inventory": {
+                  "4": 26,
+                  "5": 2,
+                  "7": 62,
+                  "8": 78,
+                  "9": 240
+                }
+              },
+              "family": "BORROW-WORD",
+              "fixed_nonascending_helper_payments": {
+                "moment": 0.3300181799297149,
+                "per_register": [
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 224
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 240
+                  },
+                  {
+                    "kind": "centre_descent",
+                    "mass": 8,
+                    "paid_parts": [
+                      8
+                    ],
+                    "register": 256
+                  }
+                ],
+                "phi": 49.906597000316054,
+                "profile": {
+                  "8": 3
+                },
+                "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+                "total_mass": 24
+              },
+              "fraction_of_null_above_real": 0.0,
+              "moment": 46.27438096717279,
+              "mutable_helpers": 374,
+              "null": {
+                "bh_q": 1.0,
+                "moment": {
+                  "empirical_p": 1.0,
+                  "max": 46.27408709740957,
+                  "mean": 46.2733738375028,
+                  "min": 46.27267042155111,
+                  "n": 2000,
+                  "q005": 46.27283696520553,
+                  "q995": 46.27387807868845,
+                  "sd": 0.00020096221241710347
+                },
+                "moment_tie_tolerance": 1e-10,
+                "permutation_p": 1.0,
+                "phi": {
+                  "empirical_p": 1.0,
+                  "max": 1689.3322572644615,
+                  "mean": 1659.5660451020804,
+                  "min": 1629.3842004550065,
+                  "n": 2000,
+                  "q005": 1638.0751760336923,
+                  "q995": 1682.1365181259328,
+                  "sd": 8.504200177523012
+                },
+                "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+              },
+              "passes_99_percent": false,
+              "phi": 1616.9404287312939,
+              "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+              "word": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+            }
+          ]
+        },
+        "seconds": 2.1456235628575087,
+        "spec": {
+          "experiment": "L-10",
+          "n_permutations": 2000,
+          "seed": 11031,
+          "word_keys": [
+            "1094-K8S7-FULL-WORD.json.gz",
+            "1672-gauge44-word-566-554.json.gz",
+            "1672-extra-word-566-554.json.gz",
+            "2745-BORROW-WORD-43base.json.gz",
+            "2745-BORROW-WORD-43extra.json.gz",
+            "2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ]
+        },
+        "status": "OK"
+      }
+    ],
+    "total_family_cpu_seconds": 5.911287599
+  },
+  "status": "NULL",
+  "wall_seconds": 2.6946799345314503,
+  "word_blob_ids": {
+    "1094-K8PRE-FULL-WORD.json.gz": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+    "1094-K8S7-FULL-WORD.json.gz": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+    "1195-FULL-WORD.json.gz": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+    "1625-extra-word-566.json.gz": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+    "1625-gauge44-word-566.json.gz": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+    "1672-extra-word-566-554.json.gz": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+    "1672-gauge44-word-566-554.json.gz": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+    "2679-BORROW-WORD-43base.json.gz": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+    "2679-BORROW-WORD-43extra.json.gz": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+    "2745-BORROW-WORD-43base.json.gz": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+    "2745-BORROW-WORD-43extra.json.gz": "583a98c65438b96529e49897c2594aac4134333c",
+    "2766-WORD-base.json.gz": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+    "2766-WORD-extra.json.gz": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz": "0bc4e8c167de63931e5cc208527ad684573a373c",
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+    "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz": "91bd9c68f209ac29e27cac566ff7a78339788553",
+    "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+    "retired5-WORD-base.json.gz": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+    "retired5-WORD-extra.json.gz": "64f2535299938848d62e1a0ab4f5948b28b029a2"
+  }
+}

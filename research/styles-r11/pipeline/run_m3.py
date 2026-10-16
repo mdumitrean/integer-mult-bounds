@@ -107,7 +107,26 @@ def family_protocol(prereg, experiment):
     return definition, budget, timeout, rss
 
 
-def validate_sources(prereg, experiment):
+def applicable_amendment(experiment, attempt, prereg_sha):
+    applicable = []
+    for path in (R.RESULTS / "M3").glob("AMENDMENT-*.json"):
+        match = re.fullmatch(r"AMENDMENT-(\d+)\.json", path.name)
+        if not match:
+            continue
+        data = read(path)
+        if attempt in data.get("applies_to", {}).get(experiment, []):
+            if data.get("state") != "FROZEN" or data.get("amends_preregistration_sha256") != prereg_sha:
+                raise ValueError("applicable M3 amendment is not frozen against this preregistration")
+            applicable.append((int(match.group(1)), path, data))
+    if not applicable:
+        return None
+    applicable.sort(key=lambda item:item[0])
+    _, path, data = applicable[-1]
+    return dict(reference=dict(reference(path), earlier_applicable_amendments=[reference(p) for _,p,_ in applicable[:-1]]),
+                protocol=data)
+
+
+def validate_sources(prereg, experiment, amendment=None):
     """Reject source drift before data preparation or worker launch."""
     # The coordinator froze scientific sources before this orchestration file
     # was finished. Its exact bytes are archived in every run's source manifest.
@@ -122,7 +141,12 @@ def validate_sources(prereg, experiment):
             names.add("fill.py")
         if experiment == "L-9":
             names.add("matching.py")
-    frozen = prereg.get("pre_registered_script_sha256", prereg.get("script_sha256", {}))
+    frozen = dict(prereg.get("pre_registered_script_sha256", prereg.get("script_sha256", {})))
+    if amendment:
+        overrides = amendment["protocol"]["script_sha256"]
+        if any(path not in frozen for path in overrides):
+            raise ValueError("amendment cannot silently add an unrelated scientific source")
+        frozen.update(overrides)
     for name in sorted(names):
         path = R.PKG / "pipeline" / name
         key = str(path.relative_to(R.ROOT))
@@ -349,7 +373,7 @@ def s3_bookkeeping(prereg_sha, directory):
     return record
 
 
-def stopped_run(experiment, attempt, prereg, stop):
+def stopped_run(experiment, attempt, prereg, stop, amendment=None):
     scripts = R.source_manifest()
     paths = []
     for seed in SEEDS:
@@ -357,7 +381,8 @@ def stopped_run(experiment, attempt, prereg, stop):
             dict(not_run=True, skip_reason=stop["reason"], binding_stop=stop), n=0,
             null=dict(model="not run: binding registered stop", mean=None, sd=None, empirical_p=None, q=None),
             run_id=attempt + "/seed-" + str(seed), scripts=scripts,
-            decision=dict(verdict="EXPLORATORY", not_run=True, skip_reason=stop["reason"])))
+            decision=dict(verdict="EXPLORATORY", not_run=True, skip_reason=stop["reason"]),
+            additional=dict(protocol_amendment=amendment["reference"] if amendment else None)))
     R.confirm(experiment, paths)
     R.registry_update(experiment, "EXPLORATORY", not_run=True, skip_reason=stop["reason"],
                       stop_trigger_results=stop.get("trigger_results", []))
@@ -379,7 +404,13 @@ def run_family(experiment, attempt):
     if prereg.get("state") != "FROZEN":
         raise ValueError("M3 preregistration must be frozen before any preparation")
     definition, budget, timeout, rss = family_protocol(prereg, experiment)
-    validate_sources(prereg, experiment)
+    amendment = applicable_amendment(experiment, attempt, preg_sha)
+    original_budget = budget
+    prior_cpu = float(amendment["protocol"].get("family_cpu_already_used", {}).get(experiment, 0)) if amendment else 0.0
+    if prior_cpu < 0 or prior_cpu >= original_budget:
+        raise ValueError("amendment prior-attempt CPU must leave a positive original family budget")
+    budget -= prior_cpu
+    validate_sources(prereg, experiment, amendment)
     ensure_order(experiment, preg_sha)
     directory = R.RESULTS / experiment / attempt
     if directory.exists():
@@ -387,11 +418,12 @@ def run_family(experiment, attempt):
     stop = growth_stop_check(prereg, preg_sha)
     if stop["binding"]:
         save_binding_stop(stop, preg_sha)
-        return stopped_run(experiment, attempt, prereg, stop)
+        return stopped_run(experiment, attempt, prereg, stop, amendment)
     started, c0 = time.monotonic(), cpu_now()
     scripts = R.source_manifest()
     R.registry_update(experiment, "running", attempt=attempt, not_run=False,
-                      preregistration_sha256=preg_sha)
+                      preregistration_sha256=preg_sha,
+                      protocol_amendment=amendment["reference"] if amendment else None)
     done, failure, prep = {}, None, {}
     specs = [dict(experiment=experiment, seed=seed, n_permutations=definition["n_permutations"])
              for seed in SEEDS]
@@ -417,7 +449,8 @@ def run_family(experiment, attempt):
     try:
         target, metadata = prepare(experiment, definition)
         prep = dict(metadata=metadata, cpu_seconds=cpu_now() - c0, peak_rss_bytes=peak(),
-                    parent_objects_loaded_once=True)
+                    parent_objects_loaded_once=True,
+                    protocol_amendment=amendment["reference"] if amendment else None)
         if experiment == "L-10":
             prep["sandpile_shared_family"] = s3_bookkeeping(preg_sha, directory)
         R.write_json(directory / "PREPARATION.json", prep, immutable=True)
@@ -432,6 +465,8 @@ def run_family(experiment, attempt):
         R.write_json(directory / "LAUNCH.json",
             dict(specs=specs, worker_count=workers, timeout_seconds=timeout, rss_cap_gib=rss,
                  family_cpu_budget_seconds=budget, live_pool_cpu_budget_seconds=pool_limit,
+                 original_family_cpu_budget_seconds=original_budget, prior_attempt_cpu_seconds=prior_cpu,
+                 protocol_amendment=amendment["reference"] if amendment else None,
                  no_internal_pools=True, no_retries=True, memory_projection=projection,
                  solver_policy="L8: three sequential LP calls per seed, each at most 300 seconds; no solver inside a permutation loop."),
             immutable=True)
@@ -462,6 +497,9 @@ def run_family(experiment, attempt):
                       else "none: exact fixed-input audit or numerical calibration")
         stats = dict(tasks=selected, preparation=prep, stopped=failure, launched=launched,
                      total_family_cpu_seconds=total_cpu, family_cpu_budget_seconds=budget,
+                     original_family_cpu_budget_seconds=original_budget,
+                     prior_attempt_cpu_seconds=prior_cpu, cumulative_family_cpu_seconds=prior_cpu+total_cpu,
+                     protocol_amendment=amendment["reference"] if amendment else None,
                      live_pool_cpu_budget_seconds=pool_limit, memory_projection=projection,
                      completed_seed_tasks=len(done), prelaunch_stop_check=stop,
                      solver_accounting=dict(completed_result_calls=solver_calls,
@@ -477,7 +515,8 @@ def run_family(experiment, attempt):
             decision=dict(verdict=status, pass_bar=experiment_definition.get("pass_bar", definition.get("pass_bar")),
                           task_decision=result.get("decision"), pattern_claim=False,
                           scope=definition.get("scope")),
-            additional=dict(cpu_allocation="Measured family CPU through pool collection is divided equally between the two seed receipts; individual task CPU is retained. Final receipt serialization is outside that timing window.")))
+            additional=dict(protocol_amendment=amendment["reference"] if amendment else None,
+                            cpu_allocation="Measured family CPU through pool collection is divided equally between the two seed receipts; individual task CPU is retained. Earlier-attempt CPU remains in its original receipts and is subtracted from this attempt's budget. Final receipt serialization is outside that timing window.")))
     status = R.confirm(experiment, receipts)
     check = growth_stop_check(prereg, preg_sha)
     R.write_json(directory / "STOP-CHECK.json", check, immutable=True)

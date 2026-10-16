@@ -1,0 +1,68 @@
+{
+  "family_cpu_budget_seconds": 300.0,
+  "live_pool_cpu_budget_seconds": 299.733815524,
+  "memory_projection": {
+    "allocated_cores": 128,
+    "formula": "parent + workers*(parent + word + fill + working set)",
+    "parent_peak_rss_gib": 0.5086402893066406,
+    "projected_peak_gib": 109.21538543701172,
+    "projected_per_worker_gib": 1.7820777893066406,
+    "ram_gib": 247.1584243774414,
+    "reserved_cores": 8,
+    "worker_rss_cap_gib": 4,
+    "workers": 61,
+    "working_set_gib": 1.0
+  },
+  "no_internal_pools": true,
+  "no_retries": true,
+  "original_family_cpu_budget_seconds": 300.0,
+  "prior_attempt_cpu_seconds": 0.0,
+  "protocol_amendment": {
+    "earlier_applicable_amendments": [
+      {
+        "path": "results/M3/AMENDMENT-1.json",
+        "sha256": "e14ddf9eb24bb4f4d9605b88ea377414e1dc0f7135e8cb649f41d22b8b4aa734"
+      }
+    ],
+    "path": "results/M3/AMENDMENT-2.json",
+    "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+  },
+  "rss_cap_gib": 4,
+  "solver_policy": "L8: three sequential LP calls per seed, each at most 300 seconds; no solver inside a permutation loop.",
+  "specs": [
+    {
+      "experiment": "L-10",
+      "n_permutations": 2000,
+      "seed": 11031,
+      "word_keys": [
+        "1094-K8S7-FULL-WORD.json.gz",
+        "1672-gauge44-word-566-554.json.gz",
+        "1672-extra-word-566-554.json.gz",
+        "2745-BORROW-WORD-43base.json.gz",
+        "2745-BORROW-WORD-43extra.json.gz",
+        "2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+      ]
+    },
+    {
+      "experiment": "L-10",
+      "n_permutations": 2000,
+      "seed": 29063,
+      "word_keys": [
+        "1094-K8S7-FULL-WORD.json.gz",
+        "1672-gauge44-word-566-554.json.gz",
+        "1672-extra-word-566-554.json.gz",
+        "2745-BORROW-WORD-43base.json.gz",
+        "2745-BORROW-WORD-43extra.json.gz",
+        "2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+      ]
+    }
+  ],
+  "timeout_seconds": 150.0,
+  "worker_count": 61
+}

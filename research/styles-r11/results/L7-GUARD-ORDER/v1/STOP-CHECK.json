@@ -1,0 +1,45 @@
+{
+  "binding": false,
+  "ceiling_comparisons": [],
+  "deadline": {
+    "hard_stop_utc": "2026-10-30T04:08:31.792839+00:00",
+    "origin": "M0 preregistration timestamp plus fourteen days (conservative fallback)",
+    "reached": false
+  },
+  "kind": "no_binding_growth_stop",
+  "lane": "B",
+  "lineage": {
+    "all_lineage_guards_proven": false,
+    "correction_scope": "L7-GUARD-ORDER does not discharge the two early compound-decomposition obligations.",
+    "results": [
+      {
+        "path": "results/L-7/v1/seed-11031/RESULT.json",
+        "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+      },
+      {
+        "path": "results/L-7/v1/seed-29063/RESULT.json",
+        "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+      }
+    ],
+    "seeds": [
+      {
+        "all_lineage_guards_proven": false,
+        "seed": 11031,
+        "unresolved": [
+          "2679 -> 2745: held source pins identify changed alias8/prelife/refit563/alias1 stages and fill, but source-partner reassignment has not been decomposed into the registered move alphabet",
+          "2745 -> 2751: source joint_engine explains twelve-source recovery, but no validated decomposition into the registered move alphabet"
+        ]
+      },
+      {
+        "all_lineage_guards_proven": false,
+        "seed": 29063,
+        "unresolved": [
+          "2679 -> 2745: held source pins identify changed alias8/prelife/refit563/alias1 stages and fill, but source-partner reassignment has not been decomposed into the registered move alphabet",
+          "2745 -> 2751: source joint_engine explains twelve-source recovery, but no validated decomposition into the registered move alphabet"
+        ]
+      }
+    ]
+  },
+  "reason": "The registered growth-stop conjunction is not established by the retained evidence.",
+  "trigger_results": []
+}

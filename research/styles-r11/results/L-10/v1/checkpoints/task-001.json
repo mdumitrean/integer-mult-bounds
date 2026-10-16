@@ -1,0 +1,941 @@
+{
+  "cpu_seconds": 2.1308786069999996,
+  "peak_rss_bytes": 304832512,
+  "result": {
+    "decision": "registered every-word partition/margin conjunction fails",
+    "experiment": "L-10",
+    "merge_calibration": {
+      "delta": {
+        "1": -1332,
+        "2": 666
+      },
+      "label": "2751->2766 (1,1)->2 once per call",
+      "observed": "1.153871185759701612591209734E-7",
+      "predicted": "1.153871185759701612591209734E-7",
+      "profile_identity": true,
+      "relative_error": "0",
+      "scope": "one supported realised refit step; no invented calibration margin",
+      "within_one_percent": true
+    },
+    "multiple_testing": "BH-FDR 5% across the fixed per-word moment family; Phi is descriptive",
+    "n_permutations": 2000,
+    "pattern_criteria": {
+      "non_circular": false,
+      "reason": "total Phi/moment is invariant under profile-preserving N2; headroom bookkeeping, not a non-circular pattern"
+    },
+    "seed": 29063,
+    "status": "NULL",
+    "words": [
+      {
+        "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+        "attribution": {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 57222,
+          "format": "FULL-WORD",
+          "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+          "kappa": "0.001672660197076918",
+          "local_profile": {
+            "1": 2412,
+            "2": 418,
+            "3": 432,
+            "4": 142,
+            "5": 82,
+            "8": 8
+          },
+          "path": "1094-K8S7-FULL-WORD.json.gz",
+          "pr": 1094,
+          "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+          "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+          "width_inventory": {
+            "4": 56,
+            "5": 32,
+            "7": 30,
+            "8": 122,
+            "9": 240
+          }
+        },
+        "family": "FULL-WORD",
+        "fixed_nonascending_helper_payments": {
+          "moment": 0.3300181799297149,
+          "per_register": [
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 224
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 240
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 256
+            }
+          ],
+          "phi": 49.906597000316054,
+          "profile": {
+            "8": 3
+          },
+          "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+          "total_mass": 24
+        },
+        "fraction_of_null_above_real": 1.0,
+        "moment": 51.75174945008454,
+        "mutable_helpers": 424,
+        "null": {
+          "bh_q": 0.0014992503748125937,
+          "moment": {
+            "empirical_p": 0.0004997501249375312,
+            "max": 51.754183517093765,
+            "mean": 51.753315617588854,
+            "min": 51.7524834491558,
+            "n": 2000,
+            "q005": 51.75264438230559,
+            "q995": 51.753996344204836,
+            "sd": 0.0002466311182767926
+          },
+          "moment_tie_tolerance": 1e-10,
+          "permutation_p": 0.0004997501249375312,
+          "phi": {
+            "empirical_p": 0.0004997501249375312,
+            "max": 2220.26025004897,
+            "mean": 2185.039888131902,
+            "min": 2148.309874521782,
+            "n": 2000,
+            "q005": 2156.2070253521542,
+            "q995": 2213.439630177184,
+            "sd": 10.437237940207343
+          },
+          "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+        },
+        "passes_99_percent": true,
+        "phi": 2251.2862838052197,
+        "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+        "word": "1094-K8S7-FULL-WORD.json.gz"
+      },
+      {
+        "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+        "attribution": {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "bytes": 57438,
+          "format": "FULL-WORD",
+          "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+          "kappa": "0.001676938111022438",
+          "local_profile": {
+            "1": 2348,
+            "2": 500,
+            "3": 416,
+            "4": 130,
+            "5": 82,
+            "8": 8
+          },
+          "path": "1672-gauge44-word-566-554.json.gz",
+          "pr": 1672,
+          "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+          "width_inventory": {
+            "4": 44,
+            "5": 44,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        "family": "FULL-WORD",
+        "fixed_nonascending_helper_payments": {
+          "moment": 0.3300181799297149,
+          "per_register": [
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 224
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 240
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 256
+            }
+          ],
+          "phi": 49.906597000316054,
+          "profile": {
+            "8": 3
+          },
+          "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+          "total_mass": 24
+        },
+        "fraction_of_null_above_real": 1.0,
+        "moment": 51.807290018358636,
+        "mutable_helpers": 436,
+        "null": {
+          "bh_q": 0.0014992503748125937,
+          "moment": {
+            "empirical_p": 0.0004997501249375312,
+            "max": 51.80934020165374,
+            "mean": 51.808343395739044,
+            "min": 51.807448015031994,
+            "n": 2000,
+            "q005": 51.807670867582175,
+            "q995": 51.808956112140926,
+            "sd": 0.00023706140251188992
+          },
+          "moment_tie_tolerance": 1e-10,
+          "permutation_p": 0.0004997501249375312,
+          "phi": {
+            "empirical_p": 0.0004997501249375312,
+            "max": 2230.1835707776495,
+            "mean": 2192.292650524693,
+            "min": 2150.109098904863,
+            "n": 2000,
+            "q005": 2166.3085096289124,
+            "q995": 2220.4587174546728,
+            "sd": 10.032170801536429
+          },
+          "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+        },
+        "passes_99_percent": true,
+        "phi": 2236.845887916741,
+        "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+        "word": "1672-gauge44-word-566-554.json.gz"
+      },
+      {
+        "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+        "attribution": {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "bytes": 57440,
+          "format": "FULL-WORD",
+          "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+          "kappa": "0.001676938111022438",
+          "local_profile": {
+            "1": 2340,
+            "2": 508,
+            "3": 420,
+            "4": 126,
+            "5": 82,
+            "8": 8
+          },
+          "path": "1672-extra-word-566-554.json.gz",
+          "pr": 1672,
+          "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+          "width_inventory": {
+            "4": 40,
+            "5": 48,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        "family": "FULL-WORD",
+        "fixed_nonascending_helper_payments": {
+          "moment": 0.3300181799297149,
+          "per_register": [
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 224
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 240
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 256
+            }
+          ],
+          "phi": 49.906597000316054,
+          "profile": {
+            "8": 3
+          },
+          "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+          "total_mass": 24
+        },
+        "fraction_of_null_above_real": 1.0,
+        "moment": 51.862440083614906,
+        "mutable_helpers": 440,
+        "null": {
+          "bh_q": 0.0014992503748125937,
+          "moment": {
+            "empirical_p": 0.0004997501249375312,
+            "max": 51.86424317574353,
+            "mean": 51.863414215294725,
+            "min": 51.86257116486655,
+            "n": 2000,
+            "q005": 51.86278209546266,
+            "q995": 51.86405237346384,
+            "sd": 0.0002461054900139421
+          },
+          "moment_tie_tolerance": 1e-10,
+          "permutation_p": 0.0004997501249375312,
+          "phi": {
+            "empirical_p": 0.0004997501249375312,
+            "max": 2233.416495446231,
+            "mean": 2197.738900729846,
+            "min": 2162.660256146079,
+            "n": 2000,
+            "q005": 2170.6779448492025,
+            "q995": 2224.3499116632875,
+            "sd": 10.414913227659834
+          },
+          "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+        },
+        "passes_99_percent": true,
+        "phi": 2238.938880491799,
+        "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+        "word": "1672-extra-word-566-554.json.gz"
+      },
+      {
+        "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+        "attribution": {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 71241,
+          "format": "BORROW-WORD",
+          "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+          "kappa": "0.0017161404259974415",
+          "local_profile": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "path": "2745-BORROW-WORD-43base.json.gz",
+          "pr": 2745,
+          "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+          "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": {
+          "moment": 0.3301607555581441,
+          "per_register": [
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                7,
+                1
+              ],
+              "register": 224
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                7,
+                1
+              ],
+              "register": 240
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 256
+            }
+          ],
+          "phi": 43.878274420213074,
+          "profile": {
+            "1": 2,
+            "7": 2,
+            "8": 1
+          },
+          "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+          "total_mass": 24
+        },
+        "fraction_of_null_above_real": 0.0,
+        "moment": 46.75640754517632,
+        "mutable_helpers": 382,
+        "null": {
+          "bh_q": 1.0,
+          "moment": {
+            "empirical_p": 1.0,
+            "max": 46.755876893547864,
+            "mean": 46.755162544916374,
+            "min": 46.75443207690368,
+            "n": 2000,
+            "q005": 46.754623636062455,
+            "q995": 46.755736786468084,
+            "sd": 0.00021389959062341493
+          },
+          "moment_tie_tolerance": 1e-10,
+          "permutation_p": 1.0,
+          "phi": {
+            "empirical_p": 1.0,
+            "max": 1741.5796142551028,
+            "mean": 1710.6654789167676,
+            "min": 1680.4316008845058,
+            "n": 2000,
+            "q005": 1685.258484321333,
+            "q995": 1733.0517848889674,
+            "sd": 9.051831216958366
+          },
+          "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+        },
+        "passes_99_percent": false,
+        "phi": 1657.97107262612,
+        "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+        "word": "2745-BORROW-WORD-43base.json.gz"
+      },
+      {
+        "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+        "attribution": {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 71242,
+          "format": "BORROW-WORD",
+          "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+          "kappa": "0.0017161404259974415",
+          "local_profile": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "path": "2745-BORROW-WORD-43extra.json.gz",
+          "pr": 2745,
+          "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+          "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": {
+          "moment": 0.3301607555581441,
+          "per_register": [
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                7,
+                1
+              ],
+              "register": 224
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                7,
+                1
+              ],
+              "register": 240
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 256
+            }
+          ],
+          "phi": 43.878274420213074,
+          "profile": {
+            "1": 2,
+            "7": 2,
+            "8": 1
+          },
+          "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+          "total_mass": 24
+        },
+        "fraction_of_null_above_real": 0.0,
+        "moment": 46.75640754517632,
+        "mutable_helpers": 382,
+        "null": {
+          "bh_q": 1.0,
+          "moment": {
+            "empirical_p": 1.0,
+            "max": 46.75583246633941,
+            "mean": 46.75516492889144,
+            "min": 46.75453654267132,
+            "n": 2000,
+            "q005": 46.754639676149985,
+            "q995": 46.75570839362766,
+            "sd": 0.00020843684709307857
+          },
+          "moment_tie_tolerance": 1e-10,
+          "permutation_p": 1.0,
+          "phi": {
+            "empirical_p": 1.0,
+            "max": 1737.1564638388134,
+            "mean": 1710.5644897084444,
+            "min": 1682.3174628644483,
+            "n": 2000,
+            "q005": 1686.8282287526267,
+            "q995": 1732.5372448091123,
+            "sd": 8.820659791307746
+          },
+          "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+        },
+        "passes_99_percent": false,
+        "phi": 1657.97107262612,
+        "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+        "word": "2745-BORROW-WORD-43extra.json.gz"
+      },
+      {
+        "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+        "attribution": {
+          "author": "DavidAriasC",
+          "bytes": 72192,
+          "format": "BORROW-WORD",
+          "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+          "kappa": "0.001717256973467002308270",
+          "local_profile": {
+            "1": 2364,
+            "2": 647,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "path": "2766-WORD-base.json.gz",
+          "pr": 2766,
+          "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+          "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": {
+          "moment": 0.3300181799297149,
+          "per_register": [
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 224
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 240
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 256
+            }
+          ],
+          "phi": 49.906597000316054,
+          "profile": {
+            "8": 3
+          },
+          "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+          "total_mass": 24
+        },
+        "fraction_of_null_above_real": 0.0,
+        "moment": 46.756232126291906,
+        "mutable_helpers": 382,
+        "null": {
+          "bh_q": 1.0,
+          "moment": {
+            "empirical_p": 1.0,
+            "max": 46.75568231088999,
+            "mean": 46.75498292815712,
+            "min": 46.754227695488424,
+            "n": 2000,
+            "q005": 46.75445017916335,
+            "q995": 46.755522607694495,
+            "sd": 0.00020565111128622852
+          },
+          "moment_tie_tolerance": 1e-10,
+          "permutation_p": 1.0,
+          "phi": {
+            "empirical_p": 1.0,
+            "max": 1750.2188910319335,
+            "mean": 1718.2576146776628,
+            "min": 1688.6613691811897,
+            "n": 2000,
+            "q005": 1695.3314613836637,
+            "q995": 1740.2916598239262,
+            "sd": 8.702853876811504
+          },
+          "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+        },
+        "passes_99_percent": false,
+        "phi": 1665.385689567343,
+        "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+        "word": "2766-WORD-base.json.gz"
+      },
+      {
+        "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+        "attribution": {
+          "author": "Tekalign (tekuuu)",
+          "bytes": 72468,
+          "format": "BORROW-WORD",
+          "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+          "kappa": "0.001717141586348426338109",
+          "local_profile": {
+            "1": 2366,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+          "pr": 2751,
+          "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": {
+          "moment": 0.3300181799297149,
+          "per_register": [
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 224
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 240
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 256
+            }
+          ],
+          "phi": 49.906597000316054,
+          "profile": {
+            "8": 3
+          },
+          "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+          "total_mass": 24
+        },
+        "fraction_of_null_above_real": 0.0,
+        "moment": 46.75626496954789,
+        "mutable_helpers": 382,
+        "null": {
+          "bh_q": 1.0,
+          "moment": {
+            "empirical_p": 1.0,
+            "max": 46.7556457197333,
+            "mean": 46.75500998121981,
+            "min": 46.7543405421502,
+            "n": 2000,
+            "q005": 46.75442966723171,
+            "q995": 46.755526558124735,
+            "sd": 0.0002078410837561993
+          },
+          "moment_tie_tolerance": 1e-10,
+          "permutation_p": 1.0,
+          "phi": {
+            "empirical_p": 1.0,
+            "max": 1745.4457227911057,
+            "mean": 1717.1164676264195,
+            "min": 1690.21320854715,
+            "n": 2000,
+            "q005": 1695.1030041814006,
+            "q995": 1741.6329470529556,
+            "sd": 8.795519478364177
+          },
+          "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+        },
+        "passes_99_percent": false,
+        "phi": 1663.999395206223,
+        "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+        "word": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+      },
+      {
+        "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+        "attribution": {
+          "author": "Marius-Paul Dumitrean",
+          "bytes": 72444,
+          "format": "BORROW-WORD",
+          "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+          "kappa": "0.001717794984118634663827",
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "pr": 2802,
+          "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": {
+          "moment": 0.3300181799297149,
+          "per_register": [
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 224
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 240
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 256
+            }
+          ],
+          "phi": 49.906597000316054,
+          "profile": {
+            "8": 3
+          },
+          "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+          "total_mass": 24
+        },
+        "fraction_of_null_above_real": 0.0,
+        "moment": 46.27438096717279,
+        "mutable_helpers": 374,
+        "null": {
+          "bh_q": 1.0,
+          "moment": {
+            "empirical_p": 1.0,
+            "max": 46.274040090477094,
+            "mean": 46.27336852016346,
+            "min": 46.272661649674454,
+            "n": 2000,
+            "q005": 46.27287373892431,
+            "q995": 46.273870299663855,
+            "sd": 0.00020321188470568592
+          },
+          "moment_tie_tolerance": 1e-10,
+          "permutation_p": 1.0,
+          "phi": {
+            "empirical_p": 1.0,
+            "max": 1689.7054666764282,
+            "mean": 1659.7910600153416,
+            "min": 1631.372161430356,
+            "n": 2000,
+            "q005": 1638.3215383012887,
+            "q995": 1680.2719827531378,
+            "sd": 8.599390396910938
+          },
+          "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+        },
+        "passes_99_percent": false,
+        "phi": 1616.9404287312939,
+        "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+        "word": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+      },
+      {
+        "ascending_partition_scope": "Each physical helper width and ascending part count is preserved; actual nonascending helper payments are fixed and included exactly once in both real and null statistics.",
+        "attribution": {
+          "author": "Marius-Paul Dumitrean",
+          "bytes": 72443,
+          "format": "BORROW-WORD",
+          "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+          "kappa": "0.001717794984118634663827",
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+          "pr": 2802,
+          "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": {
+          "moment": 0.3300181799297149,
+          "per_register": [
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 224
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 240
+            },
+            {
+              "kind": "centre_descent",
+              "mass": 8,
+              "paid_parts": [
+                8
+              ],
+              "register": 256
+            }
+          ],
+          "phi": 49.906597000316054,
+          "profile": {
+            "8": 3
+          },
+          "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+          "total_mass": 24
+        },
+        "fraction_of_null_above_real": 0.0,
+        "moment": 46.27438096717279,
+        "mutable_helpers": 374,
+        "null": {
+          "bh_q": 1.0,
+          "moment": {
+            "empirical_p": 1.0,
+            "max": 46.274002533165906,
+            "mean": 46.27337318486804,
+            "min": 46.27275788381751,
+            "n": 2000,
+            "q005": 46.27285929560433,
+            "q995": 46.27388770034952,
+            "sd": 0.0002017020773478632
+          },
+          "moment_tie_tolerance": 1e-10,
+          "permutation_p": 1.0,
+          "phi": {
+            "empirical_p": 1.0,
+            "max": 1685.6337101274437,
+            "mean": 1659.5936566232265,
+            "min": 1632.9632324687975,
+            "n": 2000,
+            "q005": 1637.7866943638103,
+            "q995": 1681.2913769739102,
+            "sd": 8.535488562325781
+          },
+          "protocol": "independent uniform ordered positive compositions of each physical helper width with unchanged ascending part count; actual nonascending helper payments fixed"
+        },
+        "passes_99_percent": false,
+        "phi": 1616.9404287312939,
+        "statistic": "sum of helper paid moment at fixed #2802 kappa; lower is better",
+        "word": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+      }
+    ]
+  },
+  "seconds": 2.1310402750968933,
+  "spec": {
+    "experiment": "L-10",
+    "n_permutations": 2000,
+    "seed": 29063,
+    "word_keys": [
+      "1094-K8S7-FULL-WORD.json.gz",
+      "1672-gauge44-word-566-554.json.gz",
+      "1672-extra-word-566-554.json.gz",
+      "2745-BORROW-WORD-43base.json.gz",
+      "2745-BORROW-WORD-43extra.json.gz",
+      "2766-WORD-base.json.gz",
+      "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+    ]
+  },
+  "status": "OK"
+}
