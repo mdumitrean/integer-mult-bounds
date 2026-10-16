@@ -715,6 +715,8 @@
     },
     {
       "budget_core_minutes": 360,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": false,
       "id": "M4-PRED",
       "if_positive": "census targets for the next kappa round",
       "inputs": [
@@ -728,9 +730,14 @@
       "origin": "PLAN.md M4",
       "pass_bar": "record pass/fail per prediction",
       "question": "Each surviving pattern -> one falsifiable prediction tested on #2833/#2853 (fetched as data only)",
+      "result_files": [
+        "results/M4-PRED/v2/seed-11031/RESULT.json",
+        "results/M4-PRED/v2/seed-29063/RESULT.json"
+      ],
       "starting_script": "-",
-      "status": "planned",
-      "title": "Predictions on held-out words"
+      "status": "EXPLORATORY",
+      "title": "Predictions on held-out words",
+      "updated_utc": "2026-10-16T05:56:04.533277+00:00"
     },
     {
       "attempt": "v1",

@@ -1,6 +1,35 @@
 {
+  "completed_utc": "2026-10-16T05:56:04.534827+00:00",
+  "confirmation": {
+    "D1-fixed-lambda": {
+      "confirmed": true,
+      "outcomes": [
+        "PASS",
+        "PASS"
+      ]
+    },
+    "D2-scalar-profile": {
+      "confirmed": true,
+      "outcomes": [
+        "PASS",
+        "PASS"
+      ]
+    },
+    "D3-fixed-class-exit": {
+      "confirmed": true,
+      "outcomes": [
+        "PASS",
+        "PASS"
+      ]
+    }
+  },
   "decisions": "Per prediction PASS/FAIL/UNRESOLVED, second seed required. Overall M4-PRED is EXPLORATORY because there are zero eligible patterns, even if all bookkeeping predictions pass. Errors/timeouts retain their statuses. No p/q values for these exact diagnostics.",
+  "eligible_pattern_count": 0,
   "exact_validation": "Canonical word extraction and trusted wordmodel/profile parity; ordered helper-width/provider binding; complete dispatch coverage; literal fill-role uniqueness, capacity, disjointness, family and (start,stop] eligibility; exact reconstruction of local+idle profile and geometry before root diagnostics. No fetched auditor executes.",
+  "frozen_prediction_snapshot": {
+    "path": "results/M4/PREDICTIONS-FROZEN.json",
+    "sha256": "c7a934ee355758fdc8135f07096708dd427bace6f9dc5f22f11f0e764d70d7f6"
+  },
   "hard_stop_utc": "2026-10-30T04:08:31.792839+00:00",
   "heldout": [
     {
@@ -12,10 +41,1487 @@
       "pr": 2853
     }
   ],
+  "implementation": {
+    "path": "results/M4/IMPLEMENTATION-v2.json",
+    "sha256": "e39b40f1ae6065c3280efb08b97cf0c323fde1663e04504f9e64a8ec2b2cfb92"
+  },
   "implementation_policy": "Freeze source hashes in an immutable IMPLEMENTATION.json before executing any held-out numerical check; schema adapters may be written after reading inert files but cannot change predictions or thresholds. Unsupported schema or unavailable binding yields EXPLORATORY, never a fitted substitute.",
   "milestone": "M4",
   "n_permutations": 0,
-  "outcomes": null,
+  "outcomes": [
+    {
+      "outcomes": [
+        {
+          "cpu_seconds": 0.1592991960000001,
+          "edges": [
+            {
+              "after": "2833",
+              "before": "2802",
+              "exact_margin": "8.6245304822129186622769589610150587639030747609354386511580511805667318778982687451207E-7",
+              "matching_sign": true,
+              "outcome": "PASS",
+              "predicted_margin": "8.59923143212305890325757451286843497430245499567594373469168205715705422394844039408819879E-7",
+              "relative_error": "0.00293338288293328882688783602339950782544674230142878954544926667063201286395201462686930714"
+            },
+            {
+              "after": "2853",
+              "before": "2833",
+              "exact_margin": "7.2022153073070335388080293649177143592095220409519827520294387030258874693966778960813E-7",
+              "matching_sign": true,
+              "outcome": "PASS",
+              "predicted_margin": "7.20610376273001277940105989056634457350063675141772648929141091555352501801999479275876201E-7",
+              "relative_error": "0.000539897136792646855055864351400788285064516657298660932233950303574378123896871195195863848"
+            }
+          ],
+          "id": "D1-fixed-lambda",
+          "lambda_value": "1.24218685702418672590449254029948903974383788480912680252229382046092519763595157343089719E-10",
+          "outcome": "PASS",
+          "pairwise_order_disagreements": [],
+          "phi": {
+            "2802": "6923521.05272491630610111397682984612248123581559860086822493718532236350371936108006548327",
+            "2833": "6930443.70802713354936158711841610351624423207000818022382986828956511793277782711613052887",
+            "2853": "6936244.85116593082462560180012091455034975640612147847754895028051887515715005563776719436"
+          },
+          "root_brackets": {
+            "2802": {
+              "hi": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289599978094",
+              "iterations": 280,
+              "lo": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289589682978",
+              "precision_digits": 90,
+              "scope": "Decimal bisection bracket; not an interval-arithmetic transcendental certificate"
+            },
+            "2833": {
+              "hi": "0.00171865743716685595569345761432428040996497469293840574476604306188003781835710272287429300",
+              "iterations": 280,
+              "lo": "0.00171865743716685595569345761432428040996497469293840574476604306188003781835710272277134185",
+              "precision_digits": 90,
+              "scope": "Decimal bisection bracket; not an interval-arithmetic transcendental certificate"
+            },
+            "2853": {
+              "hi": "0.00171937765869758665904733841726077218140089564514250094304124600575034040710404239066390114",
+              "iterations": 280,
+              "lo": "0.00171937765869758665904733841726077218140089564514250094304124600575034040710404239056094998",
+              "precision_digits": 90,
+              "scope": "Decimal bisection bracket; not an interval-arithmetic transcendental certificate"
+            }
+          },
+          "roots": {
+            "2802": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289589682978",
+            "2833": "0.00171865743716685595569345761432428040996497469293840574476604306188003781835710272277134185",
+            "2853": "0.00171937765869758665904733841726077218140089564514250094304124600575034040710404239056094998"
+          }
+        },
+        {
+          "cpu_seconds": 1.6691000000124134e-05,
+          "id": "D2-scalar-profile",
+          "outcome": "PASS",
+          "packages": [
+            {
+              "calls": 666,
+              "distinct_local_profiles": [
+                {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              ],
+              "outcome": "PASS",
+              "pr": "2833",
+              "stage_orientation_profiles": [
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 74,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 0
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 74,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 1
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 66,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 2
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 8,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 2
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 57,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 3
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 17,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 3
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 48,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 4
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 26,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 4
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 38,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 5
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 36,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 5
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 30,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 6
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 44,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 6
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 20,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 7
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 54,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 7
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 10,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 8
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 64,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 8
+                }
+              ]
+            },
+            {
+              "calls": 666,
+              "distinct_local_profiles": [
+                {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              ],
+              "outcome": "PASS",
+              "pr": "2853",
+              "stage_orientation_profiles": [
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 74,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 0
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 74,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 1
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 66,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 2
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 8,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 2
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 57,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 3
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 17,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 3
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 48,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 4
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 26,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 4
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 38,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 5
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 36,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 5
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 30,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 6
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 44,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 6
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 20,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 7
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 54,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 7
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 10,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 8
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 64,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 8
+                }
+              ]
+            }
+          ],
+          "scope": "Dispatched local paid profiles only; no recursive child-type inheritance claim."
+        },
+        {
+          "cpu_seconds": 0.336600397,
+          "id": "D3-fixed-class-exit",
+          "outcome": "PASS",
+          "packages": [
+            {
+              "changed_fixed_inputs": {
+                "aggregate_local_profile": true,
+                "calls": false,
+                "capacity_counts": false,
+                "coverage_rank_mass": false,
+                "dimension": false,
+                "role_width_counts": true,
+                "wires": false
+              },
+              "class_implication_holds": true,
+              "comparison_resolved": true,
+              "frozen_ceiling": "429448953/250000000000",
+              "moment_lower_at_ceiling": "16575959214847279313814210293262847/250000000000000000000000000000",
+              "moment_upper_at_ceiling": "66303836859389117255256841175415763/1000000000000000000000000000000",
+              "outcome": "PASS",
+              "pr": "2833",
+              "proof": "Exact rational rank-cost enclosure; positive-profile moment increases in exponent.",
+              "root_strictly_above_ceiling_certified": true,
+              "wires": 66304
+            },
+            {
+              "changed_fixed_inputs": {
+                "aggregate_local_profile": true,
+                "calls": false,
+                "capacity_counts": false,
+                "coverage_rank_mass": false,
+                "dimension": false,
+                "role_width_counts": true,
+                "wires": false
+              },
+              "class_implication_holds": true,
+              "comparison_resolved": true,
+              "frozen_ceiling": "429448953/250000000000",
+              "moment_lower_at_ceiling": "13260740123407790931080494167178763/200000000000000000000000000000",
+              "moment_upper_at_ceiling": "517997661070616833245331803423927/7812500000000000000000000000",
+              "outcome": "PASS",
+              "pr": "2853",
+              "proof": "Exact rational rank-cost enclosure; positive-profile moment increases in exponent.",
+              "root_strictly_above_ceiling_certified": true,
+              "wires": 66304
+            }
+          ]
+        }
+      ],
+      "result": {
+        "path": "results/M4-PRED/v2/seed-11031/RESULT.json",
+        "sha256": "5a620e300d450fbf9ea34196ad38da70e7866eec4b67bdd3a3a649b99c1deec6"
+      },
+      "seed": 11031
+    },
+    {
+      "outcomes": [
+        {
+          "cpu_seconds": 0.15965296000000007,
+          "edges": [
+            {
+              "after": "2833",
+              "before": "2802",
+              "exact_margin": "8.6245304822129186622769589610150587639030747609354386511580511805667318778982687451207E-7",
+              "matching_sign": true,
+              "outcome": "PASS",
+              "predicted_margin": "8.59923143212305890325757451286843497430245499567594373469168205715705422394844039408819879E-7",
+              "relative_error": "0.00293338288293328882688783602339950782544674230142878954544926667063201286395201462686930714"
+            },
+            {
+              "after": "2853",
+              "before": "2833",
+              "exact_margin": "7.2022153073070335388080293649177143592095220409519827520294387030258874693966778960813E-7",
+              "matching_sign": true,
+              "outcome": "PASS",
+              "predicted_margin": "7.20610376273001277940105989056634457350063675141772648929141091555352501801999479275876201E-7",
+              "relative_error": "0.000539897136792646855055864351400788285064516657298660932233950303574378123896871195195863848"
+            }
+          ],
+          "id": "D1-fixed-lambda",
+          "lambda_value": "1.24218685702418672590449254029948903974383788480912680252229382046092519763595157343089719E-10",
+          "outcome": "PASS",
+          "pairwise_order_disagreements": [],
+          "phi": {
+            "2802": "6923521.05272491630610111397682984612248123581559860086822493718532236350371936108006548327",
+            "2833": "6930443.70802713354936158711841610351624423207000818022382986828956511793277782711613052887",
+            "2853": "6936244.85116593082462560180012091455034975640612147847754895028051887515715005563776719436"
+          },
+          "root_brackets": {
+            "2802": {
+              "hi": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289599978094",
+              "iterations": 280,
+              "lo": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289589682978",
+              "precision_digits": 90,
+              "scope": "Decimal bisection bracket; not an interval-arithmetic transcendental certificate"
+            },
+            "2833": {
+              "hi": "0.00171865743716685595569345761432428040996497469293840574476604306188003781835710272287429300",
+              "iterations": 280,
+              "lo": "0.00171865743716685595569345761432428040996497469293840574476604306188003781835710272277134185",
+              "precision_digits": 90,
+              "scope": "Decimal bisection bracket; not an interval-arithmetic transcendental certificate"
+            },
+            "2853": {
+              "hi": "0.00171937765869758665904733841726077218140089564514250094304124600575034040710404239066390114",
+              "iterations": 280,
+              "lo": "0.00171937765869758665904733841726077218140089564514250094304124600575034040710404239056094998",
+              "precision_digits": 90,
+              "scope": "Decimal bisection bracket; not an interval-arithmetic transcendental certificate"
+            }
+          },
+          "roots": {
+            "2802": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289589682978",
+            "2833": "0.00171865743716685595569345761432428040996497469293840574476604306188003781835710272277134185",
+            "2853": "0.00171937765869758665904733841726077218140089564514250094304124600575034040710404239056094998"
+          }
+        },
+        {
+          "cpu_seconds": 1.6020000000116497e-05,
+          "id": "D2-scalar-profile",
+          "outcome": "PASS",
+          "packages": [
+            {
+              "calls": 666,
+              "distinct_local_profiles": [
+                {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              ],
+              "outcome": "PASS",
+              "pr": "2833",
+              "stage_orientation_profiles": [
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 74,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 0
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 74,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 1
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 66,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 2
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 8,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 2
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 57,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 3
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 17,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 3
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 48,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 4
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 26,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 4
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 38,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 5
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 36,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 5
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 30,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 6
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 44,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 6
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 20,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 7
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 54,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 7
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 10,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 8
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 64,
+                      "profile": {
+                        "1": 2382,
+                        "2": 650,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 8
+                }
+              ]
+            },
+            {
+              "calls": 666,
+              "distinct_local_profiles": [
+                {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              ],
+              "outcome": "PASS",
+              "pr": "2853",
+              "stage_orientation_profiles": [
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 74,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 0
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 74,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 1
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 66,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 2
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 8,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 2
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 57,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 3
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 17,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 3
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 48,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 4
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 26,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 4
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 38,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 5
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 36,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 5
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 30,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 6
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 44,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 6
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 20,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 7
+                },
+                {
+                  "orientation": "backward",
+                  "profiles": [
+                    {
+                      "calls": 54,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 7
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 10,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "extra",
+                  "stage": 8
+                },
+                {
+                  "orientation": "forward",
+                  "profiles": [
+                    {
+                      "calls": 64,
+                      "profile": {
+                        "1": 2402,
+                        "2": 638,
+                        "3": 266,
+                        "4": 128,
+                        "5": 26,
+                        "8": 8
+                      }
+                    }
+                  ],
+                  "provider": "gauge44",
+                  "stage": 8
+                }
+              ]
+            }
+          ],
+          "scope": "Dispatched local paid profiles only; no recursive child-type inheritance claim."
+        },
+        {
+          "cpu_seconds": 0.3382777520000002,
+          "id": "D3-fixed-class-exit",
+          "outcome": "PASS",
+          "packages": [
+            {
+              "changed_fixed_inputs": {
+                "aggregate_local_profile": true,
+                "calls": false,
+                "capacity_counts": false,
+                "coverage_rank_mass": false,
+                "dimension": false,
+                "role_width_counts": true,
+                "wires": false
+              },
+              "class_implication_holds": true,
+              "comparison_resolved": true,
+              "frozen_ceiling": "429448953/250000000000",
+              "moment_lower_at_ceiling": "16575959214847279313814210293262847/250000000000000000000000000000",
+              "moment_upper_at_ceiling": "66303836859389117255256841175415763/1000000000000000000000000000000",
+              "outcome": "PASS",
+              "pr": "2833",
+              "proof": "Exact rational rank-cost enclosure; positive-profile moment increases in exponent.",
+              "root_strictly_above_ceiling_certified": true,
+              "wires": 66304
+            },
+            {
+              "changed_fixed_inputs": {
+                "aggregate_local_profile": true,
+                "calls": false,
+                "capacity_counts": false,
+                "coverage_rank_mass": false,
+                "dimension": false,
+                "role_width_counts": true,
+                "wires": false
+              },
+              "class_implication_holds": true,
+              "comparison_resolved": true,
+              "frozen_ceiling": "429448953/250000000000",
+              "moment_lower_at_ceiling": "13260740123407790931080494167178763/200000000000000000000000000000",
+              "moment_upper_at_ceiling": "517997661070616833245331803423927/7812500000000000000000000000",
+              "outcome": "PASS",
+              "pr": "2853",
+              "proof": "Exact rational rank-cost enclosure; positive-profile moment increases in exponent.",
+              "root_strictly_above_ceiling_certified": true,
+              "wires": 66304
+            }
+          ]
+        }
+      ],
+      "result": {
+        "path": "results/M4-PRED/v2/seed-29063/RESULT.json",
+        "sha256": "3a34de5101861320dedf442e1b4a28374d089ec2e6b7a89efc4654f21063478d"
+      },
+      "seed": 29063
+    }
+  ],
   "pattern_criteria": {
     "assessments": [
       {
@@ -152,6 +1658,24 @@
       "type": "bookkeeping_diagnostic"
     }
   ],
+  "preregistration": {
+    "path": "results/M4/PREREGISTRATION.json",
+    "sha256": "fc6dbe6cde5f43c5b332a07c6b545b7b719863a0979aa8a362b880fc87b955ae"
+  },
+  "preserved_prior_attempts": [
+    {
+      "path": "results/M4-PRED/v1/seed-11031/RESULT.json",
+      "sha256": "17771f6f87fa8a027a9d343499ad75a320c34d7a5a0662ce3ab853e27b6c0549"
+    },
+    {
+      "path": "results/M4-PRED/v1/seed-29063/RESULT.json",
+      "sha256": "2a1f0cc903206b4263810e42d68696079716d2a01a4646823e6e5aef6e4abbf6"
+    }
+  ],
+  "protocol_amendment": {
+    "path": "results/M4/AMENDMENT-1.json",
+    "sha256": "5e4ec87301eb8eb1af4acf06d9ad28182fefcd260ab4c1d2aae4ab793a6d4272"
+  },
   "read_policy": "Fetch after both prediction snapshot and preregistration exist. Read Git/API/JSON/gzip content with python -I only. Never execute/import fetched code. Preserve PR author, commit, git blob and SHA256. Prefer the planned pinned commit if the live head differs; record both.",
   "registered_utc": "2026-10-16T05:39:00.626009+00:00",
   "resource_policy": {
@@ -720,7 +2244,76 @@
         "8": 86,
         "9": 240
       }
+    },
+    {
+      "author": "jeremykothe2",
+      "author_login": "jeremykothe2",
+      "bytes": 70117,
+      "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+      "format": "BORROW-WORD",
+      "git_blob": "d3878e3be59c50ef60ef1d758215547554134c39",
+      "lineage_attribution": "Retains all data/words/PINS.json source credits; see package README.md for this PR's additional credits.",
+      "local_path": "data/heldout/2833/package/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "package_relative_path": "new/borrow/words/BORROW-WORD-43base.json.gz",
+      "path": "heldout/2833/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "pin_key": "heldout/2833/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "pr": 2833,
+      "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "sha256": "dda9878455b3a3bec64ca16b1ac7789bbf5ffb603d5713b8df8644485e85b1b7",
+      "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+    },
+    {
+      "author": "jeremykothe2",
+      "author_login": "jeremykothe2",
+      "bytes": 70117,
+      "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+      "format": "BORROW-WORD",
+      "git_blob": "0638b6ad9d29eec2be61bdb46140c0c5b7b0d21b",
+      "lineage_attribution": "Retains all data/words/PINS.json source credits; see package README.md for this PR's additional credits.",
+      "local_path": "data/heldout/2833/package/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "package_relative_path": "new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "path": "heldout/2833/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "pin_key": "heldout/2833/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "pr": 2833,
+      "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "sha256": "bbe6bcba59e45e827a8e932ee4b23650d56ed4a0b8e0875c14f23c36b9e47eac",
+      "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+    },
+    {
+      "author": "philippeVV",
+      "author_login": "philippeVV",
+      "bytes": 70155,
+      "commit": "d01045dfb67428679618027dff552f1d032fa999",
+      "format": "BORROW-WORD",
+      "git_blob": "b2f6cef3ed87663ff98e5db5371ece263ad0a735",
+      "lineage_attribution": "Retains all data/words/PINS.json source credits; see package README.md for this PR's additional credits.",
+      "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "package_relative_path": "new/borrow/words/BORROW-WORD-43base.json.gz",
+      "path": "heldout/2853/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "pin_key": "heldout/2853/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "pr": 2853,
+      "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "sha256": "7f0a0715aa962f24c112ca32d1b57fc275eff0f15eac6eccd684ba702af82f8b",
+      "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+    },
+    {
+      "author": "philippeVV",
+      "author_login": "philippeVV",
+      "bytes": 70156,
+      "commit": "d01045dfb67428679618027dff552f1d032fa999",
+      "format": "BORROW-WORD",
+      "git_blob": "8e1e87364f03de5638b15292058ed60c96d219d1",
+      "lineage_attribution": "Retains all data/words/PINS.json source credits; see package README.md for this PR's additional credits.",
+      "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "package_relative_path": "new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "path": "heldout/2853/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "pin_key": "heldout/2853/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "pr": 2853,
+      "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "sha256": "c94a0ac238ca72951e4580895334d39f66ea950fa7af62ca2667251a2f796d6e",
+      "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
     }
   ],
-  "state": "FROZEN"
+  "state": "COMPLETED",
+  "status": "EXPLORATORY"
 }

@@ -1,0 +1,12 @@
+{
+  "workers": 61,
+  "allocated_cores": 128,
+  "reserved_cores": 8,
+  "ram_gib": 247.1584243774414,
+  "parent_peak_rss_gib": 0.7546501159667969,
+  "worker_rss_cap_gib": 6,
+  "projected_per_worker_gib": 2.028087615966797,
+  "projected_peak_gib": 124.4679946899414,
+  "working_set_gib": 1,
+  "formula": "parent + workers*(parent + word + fill + working set)"
+}

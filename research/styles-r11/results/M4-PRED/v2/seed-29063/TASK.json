@@ -1,0 +1,3115 @@
+{
+  "cpu_seconds": 1.959693216,
+  "peak_rss_bytes": 831959040,
+  "result": {
+    "eligible_patterns": 0,
+    "outcomes": [
+      {
+        "cpu_seconds": 0.15965296000000007,
+        "edges": [
+          {
+            "after": "2833",
+            "before": "2802",
+            "exact_margin": "8.6245304822129186622769589610150587639030747609354386511580511805667318778982687451207E-7",
+            "matching_sign": true,
+            "outcome": "PASS",
+            "predicted_margin": "8.59923143212305890325757451286843497430245499567594373469168205715705422394844039408819879E-7",
+            "relative_error": "0.00293338288293328882688783602339950782544674230142878954544926667063201286395201462686930714"
+          },
+          {
+            "after": "2853",
+            "before": "2833",
+            "exact_margin": "7.2022153073070335388080293649177143592095220409519827520294387030258874693966778960813E-7",
+            "matching_sign": true,
+            "outcome": "PASS",
+            "predicted_margin": "7.20610376273001277940105989056634457350063675141772648929141091555352501801999479275876201E-7",
+            "relative_error": "0.000539897136792646855055864351400788285064516657298660932233950303574378123896871195195863848"
+          }
+        ],
+        "id": "D1-fixed-lambda",
+        "lambda_value": "1.24218685702418672590449254029948903974383788480912680252229382046092519763595157343089719E-10",
+        "outcome": "PASS",
+        "pairwise_order_disagreements": [],
+        "phi": {
+          "2802": "6923521.05272491630610111397682984612248123581559860086822493718532236350371936108006548327",
+          "2833": "6930443.70802713354936158711841610351624423207000818022382986828956511793277782711613052887",
+          "2853": "6936244.85116593082462560180012091455034975640612147847754895028051887515715005563776719436"
+        },
+        "root_brackets": {
+          "2802": {
+            "hi": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289599978094",
+            "iterations": 280,
+            "lo": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289589682978",
+            "precision_digits": 90,
+            "scope": "Decimal bisection bracket; not an interval-arithmetic transcendental certificate"
+          },
+          "2833": {
+            "hi": "0.00171865743716685595569345761432428040996497469293840574476604306188003781835710272287429300",
+            "iterations": 280,
+            "lo": "0.00171865743716685595569345761432428040996497469293840574476604306188003781835710272277134185",
+            "precision_digits": 90,
+            "scope": "Decimal bisection bracket; not an interval-arithmetic transcendental certificate"
+          },
+          "2853": {
+            "hi": "0.00171937765869758665904733841726077218140089564514250094304124600575034040710404239066390114",
+            "iterations": 280,
+            "lo": "0.00171937765869758665904733841726077218140089564514250094304124600575034040710404239056094998",
+            "precision_digits": 90,
+            "scope": "Decimal bisection bracket; not an interval-arithmetic transcendental certificate"
+          }
+        },
+        "roots": {
+          "2802": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289589682978",
+          "2833": "0.00171865743716685595569345761432428040996497469293840574476604306188003781835710272277134185",
+          "2853": "0.00171937765869758665904733841726077218140089564514250094304124600575034040710404239056094998"
+        }
+      },
+      {
+        "cpu_seconds": 1.6020000000116497e-05,
+        "id": "D2-scalar-profile",
+        "outcome": "PASS",
+        "packages": [
+          {
+            "calls": 666,
+            "distinct_local_profiles": [
+              {
+                "1": 2382,
+                "2": 650,
+                "3": 266,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              }
+            ],
+            "outcome": "PASS",
+            "pr": "2833",
+            "stage_orientation_profiles": [
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 74,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 0
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 74,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 1
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 66,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 2
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 8,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 2
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 57,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 3
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 17,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 3
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 48,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 4
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 26,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 4
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 38,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 5
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 36,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 5
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 30,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 6
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 44,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 6
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 20,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 7
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 54,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 7
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 10,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 8
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 64,
+                    "profile": {
+                      "1": 2382,
+                      "2": 650,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 8
+              }
+            ]
+          },
+          {
+            "calls": 666,
+            "distinct_local_profiles": [
+              {
+                "1": 2402,
+                "2": 638,
+                "3": 266,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              }
+            ],
+            "outcome": "PASS",
+            "pr": "2853",
+            "stage_orientation_profiles": [
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 74,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 0
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 74,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 1
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 66,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 2
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 8,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 2
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 57,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 3
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 17,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 3
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 48,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 4
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 26,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 4
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 38,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 5
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 36,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 5
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 30,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 6
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 44,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 6
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 20,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 7
+              },
+              {
+                "orientation": "backward",
+                "profiles": [
+                  {
+                    "calls": 54,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 7
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 10,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "extra",
+                "stage": 8
+              },
+              {
+                "orientation": "forward",
+                "profiles": [
+                  {
+                    "calls": 64,
+                    "profile": {
+                      "1": 2402,
+                      "2": 638,
+                      "3": 266,
+                      "4": 128,
+                      "5": 26,
+                      "8": 8
+                    }
+                  }
+                ],
+                "provider": "gauge44",
+                "stage": 8
+              }
+            ]
+          }
+        ],
+        "scope": "Dispatched local paid profiles only; no recursive child-type inheritance claim."
+      },
+      {
+        "cpu_seconds": 0.3382777520000002,
+        "id": "D3-fixed-class-exit",
+        "outcome": "PASS",
+        "packages": [
+          {
+            "changed_fixed_inputs": {
+              "aggregate_local_profile": true,
+              "calls": false,
+              "capacity_counts": false,
+              "coverage_rank_mass": false,
+              "dimension": false,
+              "role_width_counts": true,
+              "wires": false
+            },
+            "class_implication_holds": true,
+            "comparison_resolved": true,
+            "frozen_ceiling": "429448953/250000000000",
+            "moment_lower_at_ceiling": "16575959214847279313814210293262847/250000000000000000000000000000",
+            "moment_upper_at_ceiling": "66303836859389117255256841175415763/1000000000000000000000000000000",
+            "outcome": "PASS",
+            "pr": "2833",
+            "proof": "Exact rational rank-cost enclosure; positive-profile moment increases in exponent.",
+            "root_strictly_above_ceiling_certified": true,
+            "wires": 66304
+          },
+          {
+            "changed_fixed_inputs": {
+              "aggregate_local_profile": true,
+              "calls": false,
+              "capacity_counts": false,
+              "coverage_rank_mass": false,
+              "dimension": false,
+              "role_width_counts": true,
+              "wires": false
+            },
+            "class_implication_holds": true,
+            "comparison_resolved": true,
+            "frozen_ceiling": "429448953/250000000000",
+            "moment_lower_at_ceiling": "13260740123407790931080494167178763/200000000000000000000000000000",
+            "moment_upper_at_ceiling": "517997661070616833245331803423927/7812500000000000000000000000",
+            "outcome": "PASS",
+            "pr": "2853",
+            "proof": "Exact rational rank-cost enclosure; positive-profile moment increases in exponent.",
+            "root_strictly_above_ceiling_certified": true,
+            "wires": 66304
+          }
+        ]
+      }
+    ],
+    "packages": {
+      "2833": {
+        "aggregate_local_profile": {
+          "1": 1586412,
+          "2": 432900,
+          "3": 177156,
+          "4": 85248,
+          "5": 17316,
+          "8": 5328
+        },
+        "calls": 666,
+        "capacity_counts": {
+          "8": 49728,
+          "16": 33152,
+          "32": 33152,
+          "48": 33152
+        },
+        "complete_profile": {
+          "1": 1603728,
+          "2": 432900,
+          "3": 183683,
+          "4": 85248,
+          "5": 26862,
+          "8": 5328,
+          "9": 1,
+          "48": 26625
+        },
+        "coverage_rank_mass": 4816512,
+        "dimension": 73,
+        "distinct_local_profiles": [
+          {
+            "1": 2382,
+            "2": 650,
+            "3": 266,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          }
+        ],
+        "inherited_pins": {
+          "path": "data/words/PINS.json",
+          "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+        },
+        "manifests": [
+          {
+            "author": "jeremykothe2",
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "fetch_sha256": "0d82fe2e08d1d21811eb7dc2af609bb00793ea8d685e4af5312459c8eb897779",
+            "path": "data/heldout/2833/DATA-MANIFEST.json",
+            "pr": 2833,
+            "prediction_snapshot_sha256": "c7a934ee355758fdc8135f07096708dd427bace6f9dc5f22f11f0e764d70d7f6",
+            "preregistration_sha256": "fc6dbe6cde5f43c5b332a07c6b545b7b719863a0979aa8a362b880fc87b955ae",
+            "sha256": "1aab1654db55e23ac376442bcf523b120b4fe1a8a364a04a4d29c75f502dc899"
+          }
+        ],
+        "pr": 2833,
+        "role_width_counts": {
+          "4": 17316,
+          "5": 1332,
+          "7": 41292,
+          "8": 53280,
+          "9": 158508
+        },
+        "scope": "Literal owner fill, canonical paid profiles and widths, fixed-gate Bounds; no fetched code, native admission or outer theorem replay.",
+        "seed": 29063,
+        "source_attribution": [
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 70117,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "format": "BORROW-WORD",
+            "git_blob": "d3878e3be59c50ef60ef1d758215547554134c39",
+            "lineage_attribution": "Retains all data/words/PINS.json source credits; see package README.md for this PR's additional credits.",
+            "local_path": "data/heldout/2833/package/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "package_relative_path": "new/borrow/words/BORROW-WORD-43base.json.gz",
+            "path": "heldout/2833/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "pin_key": "heldout/2833/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "sha256": "dda9878455b3a3bec64ca16b1ac7789bbf5ffb603d5713b8df8644485e85b1b7",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 70117,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "format": "BORROW-WORD",
+            "git_blob": "0638b6ad9d29eec2be61bdb46140c0c5b7b0d21b",
+            "lineage_attribution": "Retains all data/words/PINS.json source credits; see package README.md for this PR's additional credits.",
+            "local_path": "data/heldout/2833/package/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "package_relative_path": "new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "path": "heldout/2833/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "pin_key": "heldout/2833/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "sha256": "bbe6bcba59e45e827a8e932ee4b23650d56ed4a0b8e0875c14f23c36b9e47eac",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          }
+        ],
+        "source_claims": {
+          "claim_validation": "Claims retained as data; exact profile reconstructed independently.",
+          "outer_headline_kappa": "0.0017186574371668559556934576143242804099649746929384057447660430618800378183571027227751435674735644266502436538360977054951338532026077864564717970089316298262848001430619258579764267387679157253589230092297705246349924829477438272038534458128153579339233372551498580288934448391286648133385250001561883571557568481670678572755364992180519866126424512015508246826379600171345871649273891524610346875481702323641480841819494871599970352648413519175382027670378809839339557435870343275462077109682392465994931422828896006323493721749224086433406739122826556506660291923774958911248379708488867136219017969687783639794423745846431998354000629604713009674880531419850590551533681267248441148929714873056671707368310142645201721225845565753260767164900976306634132256585854696146891742640259102164345060552688098920233899572100225273052195218406195238281244911985459541305205282130031980866953374248977265695927525028574437780772292075551831096337254028899004835738122070667605392595534393072713118820139164833259376147262674160887126565148708574029649559412631953495018944348666596351342587558250773425928871189683115965705267436438387096822518784488785605009977874176809482832315601610220722735020042386282420720158513381285320539086669152331709491278000050802176994425417958472436945929684360433686296997630684626369242924755608569264402668844097561164649905467697484340453084843585467761162546799061505405446580358260961731723054334158068636694082665619605335713967625024490137782213958409799751014897238799035118748013152307776924495573527075215850298288126703779286830770058166674737595998051122269776960603212714220740015911235385994016571957520587790540380255574642451287415998438639670044721750996910679896118442072989637960021846179774929532634810979781526825202091064143447550401037956168429417428802874510565760725145793697778307963968590690836429758883286583035942120869880952321072838123211658022276315749989430800252428797824728736070783864006154794733718886396821184579352497014737552396648994078257337943242770753659688122937729736682229465509261927273192935662942689564521538213644862363852534960597903679364594760521718874174626608251365696917889343226910244886154550750711332471571160543048297369802106821207628537498383445387653560175336944546900103503996186884872543920778861407556714858517377003152542148063849643242384266037395070179753584611716153981557966416588880000135368000934558193397419070058244094361673855236996548006841516303762762739068412193411453317885381706585037441816716917580084757698540817545585741734921464591697312277206031362217694937366866726508039946820688080121613764285796176603358606739555163139962246885121765417719079958311921807809984279867360387017833742410588472566634435012483055421625420751795895550846196066364773728404870142361572041365285243291914658877100790354765681937955587126925781207741462926235768842317325705488924282871722130257637788067000085120230853259311008603415633392994325933468175810242707293885996635190124321153385416698106339999999999999999999998999999999999999999999999",
+          "supplier_only_kappa": "0.0017157087216124446887789003618932350021705594534384973879727116838026674817513865509615772110800333102112363960321909784054842461245800855853119624078820258894123396387065107915928472563121062457460061424518405889939092937634815956419258676303980383341341589804550460713042041578422646257503721117245066662007736373873763673103486369157068513936907743632383587126621439660702760490160985605355941824692183534244869722145784762680882724346351772358533461117254531229050200009088330088145180053746420001281065408759544455658727031230729637546532586890533104836987380141192218076033759395918365753565286302617135981872711569326006909807511484873782967775383068379440043097462883040356484957878528429279145133184589230716321590900918821071083476801888129917488226896023277742422536908632157018289480283556807659213337705571235867724749289549568899949105155302267226585382964138630511868873231985988090346056812864699363573108037221450886376752556172066666751759364041150049247827089845327645445519603321691701934370635487097146221959805592934024563109749503057049168397174810639323460131392958330164316368356869039716955012581542615590726686230648143864217796119497901024416389908058694930807846546713809270982889851204353666635385134486542273401200339702456758526753507226834497399202842343802211272125608153876754444016344601893708719855654874461836789892299422583781837222839512575234764761657094692608279534369631316689259853457659250991870501007203109588421023892161080856831417301427303082884678042519879736179469036333819984100378258982645370217426176651063518074254731547119911555902344571079394430547531763479691256486235735521703928265216853409058736159871362075389307494928468142983433604352068847646915225396939742790838043220863604667055060714835789967546115779626088193147920323272993773683005347254142364509511200331400364835668523512789401831074575246067672294250133951161991015299992111106499963089845348256366531907320458121005918575520998018780737006418901166984879646469240687147051778897108197870170491818245691622315405143153631174713481261720406057367074341960670337363876427926517565106957492165969034431288000666137171014866065263165504612685373737595207235477972052984569932560854840996860584105865329123834775156924009811210353440360242180279024649883207395623515690232193018760026684216063526998054991499408552770099088876718782289457233985757076349621794314313070263355977299087117222244664239866905136167323097774771685104642795636002320112845354617036244237389192602417250026666552248966152661828745658024397402632981776503134192933921117083352895996075531552104598967786814962654391664335774661631306656969281892750715261859323414224111569761703056728424808053384145937838962311094423845286678095543424035965319282063436936641587926487233521956970341481650607802160610291967060499842092371614185420708952938297453847279795733224001217557658208331529925438856757947290745223291735031136594329505333844406552386600999494284665444487022929122511839954006690299011001504"
+        },
+        "source_files": [
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 11183,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "efb3da2b763b1a91289cb7b020f21882123e4fa5",
+            "local_path": "data/heldout/2833/package/CLAIM.json",
+            "package_relative_path": "CLAIM.json",
+            "path": "heldout/2833/CLAIM.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/CLAIM.json",
+            "sha256": "94fced945b1171e97c3ac7c71f819a5ba6c5230c10ef0b15556482990b46b368",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 426,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "dba20d7169f71e95fefe0876fc0fbd46bbc19d4e",
+            "local_path": "data/heldout/2833/package/CONSTRUCTION.json",
+            "package_relative_path": "CONSTRUCTION.json",
+            "path": "heldout/2833/CONSTRUCTION.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/CONSTRUCTION.json",
+            "sha256": "07c8c640de821978b6d2945100e2492ea7a6c006baa6b7b7585bbcb3b7f3eba9",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 10399,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "ae7b0d48c0d9c4182e0edea9a36a5f5aaa8ff0a3",
+            "local_path": "data/heldout/2833/package/DISPATCH.json",
+            "package_relative_path": "DISPATCH.json",
+            "path": "heldout/2833/DISPATCH.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/DISPATCH.json",
+            "sha256": "2d178ebfbf3147d1f844897c779d151e04a0b9f480cbf57b76add4a24b8858ee",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 2055625,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "5327fc2f4e8ea82ed356c94ff040d23fc73c731f",
+            "local_path": "data/heldout/2833/package/GLOBAL-TEMPLATE.json.gz",
+            "package_relative_path": "GLOBAL-TEMPLATE.json.gz",
+            "path": "heldout/2833/GLOBAL-TEMPLATE.json.gz",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/GLOBAL-TEMPLATE.json.gz",
+            "sha256": "1d31424c4e27e26a35a9932ca778e43f1f3577589275422cc642aa68b31112db",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 4573,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "9ee137518b942e6d8602487f87578bfb536711c7",
+            "local_path": "data/heldout/2833/package/ORDER.json",
+            "package_relative_path": "ORDER.json",
+            "path": "heldout/2833/ORDER.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/ORDER.json",
+            "sha256": "30856f042860e5b5c613357b236ff643f107d7d70e2c64eb5fcaaa09bf81a90d",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 1494097,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "3ccc3686f7349f7520c2926e8bcccd55dec09b16",
+            "local_path": "data/heldout/2833/package/PLAN.json",
+            "package_relative_path": "PLAN.json",
+            "path": "heldout/2833/PLAN.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/PLAN.json",
+            "sha256": "5345bbb91255a3229000ef154daab7d6dcb31c98aadeac9d5dac748a58cc5c44",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 81,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "df003b0d5df6026174fba830844a21569734dfd6",
+            "local_path": "data/heldout/2833/package/PROFILE.json",
+            "package_relative_path": "PROFILE.json",
+            "path": "heldout/2833/PROFILE.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/PROFILE.json",
+            "sha256": "dafbfc76552e3b0c5d6f29bbf5bbafe5602149d3a3f8e35d5c316741e7eff64a",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 32937,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "5c865c390338ccb1ba327cfa61abbe3a8e791944",
+            "local_path": "data/heldout/2833/package/README.md",
+            "package_relative_path": "README.md",
+            "path": "heldout/2833/README.md",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/README.md",
+            "sha256": "b794473b965406360e7732f0e86b66fbcf8e91bc16632330ada8e1150f2ddb62",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 15670,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "1469990731c62b8f9d717e58d4786f56f551cc09",
+            "local_path": "data/heldout/2833/package/SPEC.json",
+            "package_relative_path": "SPEC.json",
+            "path": "heldout/2833/SPEC.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/SPEC.json",
+            "sha256": "81676590c26018aa95082e3252f394ac99c61c0c4e5578f59501401700e38033",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 1817,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "bf7c87b4d1b0fc72b8048751782f9ea6d6657096",
+            "local_path": "data/heldout/2833/package/new/BORROW-PROVIDERS.json",
+            "package_relative_path": "new/BORROW-PROVIDERS.json",
+            "path": "heldout/2833/new/BORROW-PROVIDERS.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/BORROW-PROVIDERS.json",
+            "sha256": "3666edf67d61b01336e58166ec9edebd72902cc37a2da693b05691ab2a387cda",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 5935956,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "c1febd636d453b6087464b4893a9e2c580003783",
+            "local_path": "data/heldout/2833/package/new/PLAN.json",
+            "package_relative_path": "new/PLAN.json",
+            "path": "heldout/2833/new/PLAN.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/PLAN.json",
+            "sha256": "fe48f2a29535cfae3b0889170b87ebc1384eeeef9ab635a901929f9a40a2c95b",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 82,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "1b04fafbf1c50ad3e588efbc19a32d5339550788",
+            "local_path": "data/heldout/2833/package/new/PROFILE.json",
+            "package_relative_path": "new/PROFILE.json",
+            "path": "heldout/2833/new/PROFILE.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/PROFILE.json",
+            "sha256": "69a5c98958d196e61d158c856392c9587363ee47d2c8665081e4688795c1f2b0",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 99851,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "340252a11b13c24f36604c3cc26cb13a33804af5",
+            "local_path": "data/heldout/2833/package/new/SPEC.json",
+            "package_relative_path": "new/SPEC.json",
+            "path": "heldout/2833/new/SPEC.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/SPEC.json",
+            "sha256": "85635e7f1ceff706fe43c9eda5bb8847e6273b4d7509b119114e39684b0ddbdf",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 10399,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "693ed0d022791c43d59000718521fded1ef8def7",
+            "local_path": "data/heldout/2833/package/new/borrow-fill/DISPATCH.json",
+            "package_relative_path": "new/borrow-fill/DISPATCH.json",
+            "path": "heldout/2833/new/borrow-fill/DISPATCH.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/DISPATCH.json",
+            "sha256": "fd8132ec8957b908ee6d871216848f18bafc6bd9304acd6185519ee26d97b1ca",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 1214941,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "d5325db5b7ceab41aa4c0805d45438829c69527b",
+            "local_path": "data/heldout/2833/package/new/borrow-fill/FILL.json.gz",
+            "package_relative_path": "new/borrow-fill/FILL.json.gz",
+            "path": "heldout/2833/new/borrow-fill/FILL.json.gz",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/FILL.json.gz",
+            "sha256": "0cb7522e071ff064ada2efec169e23a2fe7d3daf928eec6ba752b166cffb3468",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 5904,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "7141bd58cc465e28f0189345713ddd366c814ca4",
+            "local_path": "data/heldout/2833/package/new/borrow-fill/ORDER.json",
+            "package_relative_path": "new/borrow-fill/ORDER.json",
+            "path": "heldout/2833/new/borrow-fill/ORDER.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/ORDER.json",
+            "sha256": "aa7c53c188c90fd74421a804f4c6fb13aa1187c06dbac51fa147830a40e00667",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 70117,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "d3878e3be59c50ef60ef1d758215547554134c39",
+            "local_path": "data/heldout/2833/package/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "package_relative_path": "new/borrow/words/BORROW-WORD-43base.json.gz",
+            "path": "heldout/2833/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "sha256": "dda9878455b3a3bec64ca16b1ac7789bbf5ffb603d5713b8df8644485e85b1b7",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 70117,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "0638b6ad9d29eec2be61bdb46140c0c5b7b0d21b",
+            "local_path": "data/heldout/2833/package/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "package_relative_path": "new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "path": "heldout/2833/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "sha256": "bbe6bcba59e45e827a8e932ee4b23650d56ed4a0b8e0875c14f23c36b9e47eac",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 915052,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "054e3d9affb1ff2dbbaeb79edb15297724330b51",
+            "local_path": "data/heldout/2833/package/outer/LEDGER.json",
+            "package_relative_path": "outer/LEDGER.json",
+            "path": "heldout/2833/outer/LEDGER.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/outer/LEDGER.json",
+            "sha256": "bfd5abdc0c933f7391d1a43ea01a22a304e0b4f66cd038cfeb5973dbb319017e",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          },
+          {
+            "author": "jeremykothe2",
+            "author_login": "jeremykothe2",
+            "bytes": 11126,
+            "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "git_blob": "88477d495e2a95c5442444d1bf09b01c407bd070",
+            "local_path": "data/heldout/2833/package/outer/OUTER-CLAIM.json",
+            "package_relative_path": "outer/OUTER-CLAIM.json",
+            "path": "heldout/2833/outer/OUTER-CLAIM.json",
+            "pr": 2833,
+            "repository_path": "research/gmx-t74-borrow43-handoff/outer/OUTER-CLAIM.json",
+            "sha256": "6f2c4195f0226c5a7f9ba604bc038cfd4100ba3caeeac8ed2defb6fb00632b70",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+          }
+        ],
+        "stage_orientation_profiles": [
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 74,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 0
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 74,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 1
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 66,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 2
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 8,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 2
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 57,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 3
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 17,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 3
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 48,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 4
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 26,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 4
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 38,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 5
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 36,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 5
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 30,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 6
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 44,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 6
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 20,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 7
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 54,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 7
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 10,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 8
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 64,
+                "profile": {
+                  "1": 2382,
+                  "2": 650,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 8
+          }
+        ],
+        "status": "PASS",
+        "validation": {
+          "executable_program_hashes": "Retained as source metadata; fetched executable/native programs are never executed by this adapter.",
+          "geometry_binding": "M=73; W=PLAN.live=template.replica_lift.data_stock=outer ledger W; template.live also contains inherited bank stock",
+          "inherited_root_dispatch_matches_active": false,
+          "inherited_root_order_matches_active": true,
+          "literal_fill": {
+            "all_literal_rules_verified": true,
+            "attributions": [
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 70117,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "d3878e3be59c50ef60ef1d758215547554134c39",
+                "local_path": "data/heldout/2833/package/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "package_relative_path": "new/borrow/words/BORROW-WORD-43base.json.gz",
+                "path": "heldout/2833/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "sha256": "dda9878455b3a3bec64ca16b1ac7789bbf5ffb603d5713b8df8644485e85b1b7",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 70117,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "0638b6ad9d29eec2be61bdb46140c0c5b7b0d21b",
+                "local_path": "data/heldout/2833/package/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "package_relative_path": "new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "path": "heldout/2833/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "sha256": "bbe6bcba59e45e827a8e932ee4b23650d56ed4a0b8e0875c14f23c36b9e47eac",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              }
+            ],
+            "bins": 149184,
+            "calls": 666,
+            "clumping": 0.7761824324324325,
+            "fill": "heldout-2833",
+            "helpers_per_call": [
+              408
+            ],
+            "idle": {
+              "1": 17316,
+              "3": 6527,
+              "5": 9546,
+              "9": 1,
+              "48": 26625
+            },
+            "idle_cells": 1362636,
+            "kappa_diagnostic": 0.0017186574371668207,
+            "occupancy_by_capacity": {
+              "8": {
+                "8": 49728
+              },
+              "16": {
+                "7": 1,
+                "16": 33151
+              },
+              "32": {
+                "27": 9546,
+                "31": 17316,
+                "32": 6290
+              },
+              "48": {
+                "0": 26625,
+                "45": 6527
+              }
+            },
+            "profile": {
+              "1": 1603728,
+              "2": 432900,
+              "3": 183683,
+              "4": 85248,
+              "5": 26862,
+              "8": 5328,
+              "9": 1,
+              "48": 26625
+            },
+            "rank_mass": 4816512,
+            "roles": 271728,
+            "roles_per_occupied_bin": {
+              "1": 49729,
+              "2": 33151,
+              "3": 9546,
+              "4": 23606,
+              "5": 6527
+            },
+            "source_notes": {
+              "dispatch_source": "new/borrow-fill/DISPATCH.json plus FILL.dispatch_overrides",
+              "order_source": "new/borrow-fill/ORDER.json",
+              "parent_load_once": true,
+              "plan_source": "new/PLAN.json",
+              "profile_source": "Canonical held-out word paid children plus literal fill idle remainders"
+            },
+            "sources": [
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 11183,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "efb3da2b763b1a91289cb7b020f21882123e4fa5",
+                "local_path": "data/heldout/2833/package/CLAIM.json",
+                "package_relative_path": "CLAIM.json",
+                "path": "heldout/2833/CLAIM.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/CLAIM.json",
+                "sha256": "94fced945b1171e97c3ac7c71f819a5ba6c5230c10ef0b15556482990b46b368",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 426,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "dba20d7169f71e95fefe0876fc0fbd46bbc19d4e",
+                "local_path": "data/heldout/2833/package/CONSTRUCTION.json",
+                "package_relative_path": "CONSTRUCTION.json",
+                "path": "heldout/2833/CONSTRUCTION.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/CONSTRUCTION.json",
+                "sha256": "07c8c640de821978b6d2945100e2492ea7a6c006baa6b7b7585bbcb3b7f3eba9",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 10399,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "ae7b0d48c0d9c4182e0edea9a36a5f5aaa8ff0a3",
+                "local_path": "data/heldout/2833/package/DISPATCH.json",
+                "package_relative_path": "DISPATCH.json",
+                "path": "heldout/2833/DISPATCH.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/DISPATCH.json",
+                "sha256": "2d178ebfbf3147d1f844897c779d151e04a0b9f480cbf57b76add4a24b8858ee",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 2055625,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "5327fc2f4e8ea82ed356c94ff040d23fc73c731f",
+                "local_path": "data/heldout/2833/package/GLOBAL-TEMPLATE.json.gz",
+                "package_relative_path": "GLOBAL-TEMPLATE.json.gz",
+                "path": "heldout/2833/GLOBAL-TEMPLATE.json.gz",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/GLOBAL-TEMPLATE.json.gz",
+                "sha256": "1d31424c4e27e26a35a9932ca778e43f1f3577589275422cc642aa68b31112db",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 4573,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "9ee137518b942e6d8602487f87578bfb536711c7",
+                "local_path": "data/heldout/2833/package/ORDER.json",
+                "package_relative_path": "ORDER.json",
+                "path": "heldout/2833/ORDER.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/ORDER.json",
+                "sha256": "30856f042860e5b5c613357b236ff643f107d7d70e2c64eb5fcaaa09bf81a90d",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 1494097,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "3ccc3686f7349f7520c2926e8bcccd55dec09b16",
+                "local_path": "data/heldout/2833/package/PLAN.json",
+                "package_relative_path": "PLAN.json",
+                "path": "heldout/2833/PLAN.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/PLAN.json",
+                "sha256": "5345bbb91255a3229000ef154daab7d6dcb31c98aadeac9d5dac748a58cc5c44",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 81,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "df003b0d5df6026174fba830844a21569734dfd6",
+                "local_path": "data/heldout/2833/package/PROFILE.json",
+                "package_relative_path": "PROFILE.json",
+                "path": "heldout/2833/PROFILE.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/PROFILE.json",
+                "sha256": "dafbfc76552e3b0c5d6f29bbf5bbafe5602149d3a3f8e35d5c316741e7eff64a",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 32937,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "5c865c390338ccb1ba327cfa61abbe3a8e791944",
+                "local_path": "data/heldout/2833/package/README.md",
+                "package_relative_path": "README.md",
+                "path": "heldout/2833/README.md",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/README.md",
+                "sha256": "b794473b965406360e7732f0e86b66fbcf8e91bc16632330ada8e1150f2ddb62",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 15670,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "1469990731c62b8f9d717e58d4786f56f551cc09",
+                "local_path": "data/heldout/2833/package/SPEC.json",
+                "package_relative_path": "SPEC.json",
+                "path": "heldout/2833/SPEC.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/SPEC.json",
+                "sha256": "81676590c26018aa95082e3252f394ac99c61c0c4e5578f59501401700e38033",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 1817,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "bf7c87b4d1b0fc72b8048751782f9ea6d6657096",
+                "local_path": "data/heldout/2833/package/new/BORROW-PROVIDERS.json",
+                "package_relative_path": "new/BORROW-PROVIDERS.json",
+                "path": "heldout/2833/new/BORROW-PROVIDERS.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/BORROW-PROVIDERS.json",
+                "sha256": "3666edf67d61b01336e58166ec9edebd72902cc37a2da693b05691ab2a387cda",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 5935956,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "c1febd636d453b6087464b4893a9e2c580003783",
+                "local_path": "data/heldout/2833/package/new/PLAN.json",
+                "package_relative_path": "new/PLAN.json",
+                "path": "heldout/2833/new/PLAN.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/PLAN.json",
+                "sha256": "fe48f2a29535cfae3b0889170b87ebc1384eeeef9ab635a901929f9a40a2c95b",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 82,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "1b04fafbf1c50ad3e588efbc19a32d5339550788",
+                "local_path": "data/heldout/2833/package/new/PROFILE.json",
+                "package_relative_path": "new/PROFILE.json",
+                "path": "heldout/2833/new/PROFILE.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/PROFILE.json",
+                "sha256": "69a5c98958d196e61d158c856392c9587363ee47d2c8665081e4688795c1f2b0",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 99851,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "340252a11b13c24f36604c3cc26cb13a33804af5",
+                "local_path": "data/heldout/2833/package/new/SPEC.json",
+                "package_relative_path": "new/SPEC.json",
+                "path": "heldout/2833/new/SPEC.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/SPEC.json",
+                "sha256": "85635e7f1ceff706fe43c9eda5bb8847e6273b4d7509b119114e39684b0ddbdf",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 10399,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "693ed0d022791c43d59000718521fded1ef8def7",
+                "local_path": "data/heldout/2833/package/new/borrow-fill/DISPATCH.json",
+                "package_relative_path": "new/borrow-fill/DISPATCH.json",
+                "path": "heldout/2833/new/borrow-fill/DISPATCH.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/DISPATCH.json",
+                "sha256": "fd8132ec8957b908ee6d871216848f18bafc6bd9304acd6185519ee26d97b1ca",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 1214941,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "d5325db5b7ceab41aa4c0805d45438829c69527b",
+                "local_path": "data/heldout/2833/package/new/borrow-fill/FILL.json.gz",
+                "package_relative_path": "new/borrow-fill/FILL.json.gz",
+                "path": "heldout/2833/new/borrow-fill/FILL.json.gz",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/FILL.json.gz",
+                "sha256": "0cb7522e071ff064ada2efec169e23a2fe7d3daf928eec6ba752b166cffb3468",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 5904,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "7141bd58cc465e28f0189345713ddd366c814ca4",
+                "local_path": "data/heldout/2833/package/new/borrow-fill/ORDER.json",
+                "package_relative_path": "new/borrow-fill/ORDER.json",
+                "path": "heldout/2833/new/borrow-fill/ORDER.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/ORDER.json",
+                "sha256": "aa7c53c188c90fd74421a804f4c6fb13aa1187c06dbac51fa147830a40e00667",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 70117,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "d3878e3be59c50ef60ef1d758215547554134c39",
+                "local_path": "data/heldout/2833/package/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "package_relative_path": "new/borrow/words/BORROW-WORD-43base.json.gz",
+                "path": "heldout/2833/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "sha256": "dda9878455b3a3bec64ca16b1ac7789bbf5ffb603d5713b8df8644485e85b1b7",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 70117,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "0638b6ad9d29eec2be61bdb46140c0c5b7b0d21b",
+                "local_path": "data/heldout/2833/package/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "package_relative_path": "new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "path": "heldout/2833/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "sha256": "bbe6bcba59e45e827a8e932ee4b23650d56ed4a0b8e0875c14f23c36b9e47eac",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 915052,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "054e3d9affb1ff2dbbaeb79edb15297724330b51",
+                "local_path": "data/heldout/2833/package/outer/LEDGER.json",
+                "package_relative_path": "outer/LEDGER.json",
+                "path": "heldout/2833/outer/LEDGER.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/outer/LEDGER.json",
+                "sha256": "bfd5abdc0c933f7391d1a43ea01a22a304e0b4f66cd038cfeb5973dbb319017e",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              },
+              {
+                "author": "jeremykothe2",
+                "author_login": "jeremykothe2",
+                "bytes": 11126,
+                "commit": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+                "git_blob": "88477d495e2a95c5442444d1bf09b01c407bd070",
+                "local_path": "data/heldout/2833/package/outer/OUTER-CLAIM.json",
+                "package_relative_path": "outer/OUTER-CLAIM.json",
+                "path": "heldout/2833/outer/OUTER-CLAIM.json",
+                "pr": 2833,
+                "repository_path": "research/gmx-t74-borrow43-handoff/outer/OUTER-CLAIM.json",
+                "sha256": "6f2c4195f0226c5a7f9ba604bc038cfd4100ba3caeeac8ed2defb6fb00632b70",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2833"
+              }
+            ],
+            "total_cells": 3580416,
+            "used_cells": 2217780,
+            "window_sha256": "d301aa0d102381aecc3dd746c424d55ea6f4ade9f87b833c8db6d643e205c846",
+            "windows": 1332
+          },
+          "numerical_root": "fill.audit includes a diagnostic float only; registered M4 predictions independently recompute the prescribed high-precision roots.",
+          "schema_binding_verified": true,
+          "template_family_binding": {
+            "excluded_only_exact_zero_increments": true,
+            "level_dimension_formula": "8*(level+1) + int(side == 0)",
+            "positive_child_ranks": {
+              "0": 16,
+              "1": 8,
+              "2": 16,
+              "3": 8,
+              "4": 32,
+              "5": 8,
+              "6": 32,
+              "7": 8,
+              "8": 48,
+              "9": 8,
+              "10": 48,
+              "11": 8,
+              "12": 48,
+              "13": 48,
+              "14": 32,
+              "15": 32,
+              "16": 16,
+              "17": 16
+            },
+            "positive_children": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "rank_per_level": 8,
+            "zero_children_absent_from_bins_windows_and_roles": true,
+            "zero_increment_sweeps": [
+              {
+                "children": [
+                  18,
+                  19
+                ],
+                "from_level": 8,
+                "pair": 3,
+                "rank_increment": 0,
+                "to_level": 8
+              }
+            ]
+          },
+          "words": [
+            {
+              "canonical_profile": {
+                "1": 2382,
+                "2": 650,
+                "3": 266,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              },
+              "centre_paid": {
+                "8": 8
+              },
+              "exact_bounds_verified": true,
+              "framed_gates": 5474,
+              "helpers": 408,
+              "profile_replays": 2,
+              "provider": "gauge44",
+              "width_inventory": {
+                "4": 26,
+                "5": 2,
+                "7": 62,
+                "8": 80,
+                "9": 238
+              },
+              "word": "new/borrow/words/BORROW-WORD-43base.json.gz"
+            },
+            {
+              "canonical_profile": {
+                "1": 2382,
+                "2": 650,
+                "3": 266,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              },
+              "centre_paid": {
+                "8": 8
+              },
+              "exact_bounds_verified": true,
+              "framed_gates": 5474,
+              "helpers": 408,
+              "profile_replays": 2,
+              "provider": "extra",
+              "width_inventory": {
+                "4": 26,
+                "5": 2,
+                "7": 62,
+                "8": 80,
+                "9": 238
+              },
+              "word": "new/borrow/words/BORROW-WORD-43extra.json.gz"
+            }
+          ]
+        },
+        "wires": 66304
+      },
+      "2853": {
+        "aggregate_local_profile": {
+          "1": 1599732,
+          "2": 424908,
+          "3": 177156,
+          "4": 85248,
+          "5": 17316,
+          "8": 5328
+        },
+        "calls": 666,
+        "capacity_counts": {
+          "8": 49728,
+          "16": 33152,
+          "32": 33152,
+          "48": 33152
+        },
+        "complete_profile": {
+          "1": 1616713,
+          "2": 424908,
+          "3": 183207,
+          "4": 85249,
+          "5": 26625,
+          "6": 58,
+          "7": 3,
+          "8": 5328,
+          "32": 47,
+          "48": 26703
+        },
+        "coverage_rank_mass": 4816512,
+        "dimension": 73,
+        "distinct_local_profiles": [
+          {
+            "1": 2402,
+            "2": 638,
+            "3": 266,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          }
+        ],
+        "inherited_pins": {
+          "path": "data/words/PINS.json",
+          "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+        },
+        "manifests": [
+          {
+            "author": "philippeVV",
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "fetch_sha256": "102c2fb4f891e8aacbc27f5a588300ddb3665ec90b5fdfdcd3d75e4268dc136e",
+            "path": "data/heldout/2853/DATA-MANIFEST.json",
+            "pr": 2853,
+            "prediction_snapshot_sha256": "c7a934ee355758fdc8135f07096708dd427bace6f9dc5f22f11f0e764d70d7f6",
+            "preregistration_sha256": "fc6dbe6cde5f43c5b332a07c6b545b7b719863a0979aa8a362b880fc87b955ae",
+            "sha256": "9f515fdcead2753a0fdc176417e26468e6e77eb537fdcd20f53496e00a599567"
+          }
+        ],
+        "pr": 2853,
+        "role_width_counts": {
+          "4": 17316,
+          "5": 1332,
+          "7": 41292,
+          "8": 55944,
+          "9": 155844
+        },
+        "scope": "Literal owner fill, canonical paid profiles and widths, fixed-gate Bounds; no fetched code, native admission or outer theorem replay.",
+        "seed": 29063,
+        "source_attribution": [
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 70155,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "format": "BORROW-WORD",
+            "git_blob": "b2f6cef3ed87663ff98e5db5371ece263ad0a735",
+            "lineage_attribution": "Retains all data/words/PINS.json source credits; see package README.md for this PR's additional credits.",
+            "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "package_relative_path": "new/borrow/words/BORROW-WORD-43base.json.gz",
+            "path": "heldout/2853/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "pin_key": "heldout/2853/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "sha256": "7f0a0715aa962f24c112ca32d1b57fc275eff0f15eac6eccd684ba702af82f8b",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 70156,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "format": "BORROW-WORD",
+            "git_blob": "8e1e87364f03de5638b15292058ed60c96d219d1",
+            "lineage_attribution": "Retains all data/words/PINS.json source credits; see package README.md for this PR's additional credits.",
+            "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "package_relative_path": "new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "path": "heldout/2853/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "pin_key": "heldout/2853/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "sha256": "c94a0ac238ca72951e4580895334d39f66ea950fa7af62ca2667251a2f796d6e",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          }
+        ],
+        "source_claims": {
+          "claim_validation": "Claims retained as data; exact profile reconstructed independently.",
+          "outer_headline_kappa": "0.0017193776586975866590473384172607721814008956451425009430412460057503404071040423905924370921614016936349599996575798051733752076399828661071424528133116204108665576478204661464919617598343585484524702974017289809640608310940007596504547313171417642290767559750850327036443763958949276701315614084182582550782294614926854166678633518165095574636737913611722939423541165512669948579876694862940820794322681604047035649250603372674813493877135736770522694109132099158577487850859689383618416103013619426863008011594203958829773923918309467835785404794536680317802530438714723754082219296741326678063354545691266197656204485046940007194603764227886842657612702577257578902524058571682295826925682659917730305714815492526014996524819730258810160527078502095826534892562388431748401788169450709875893003253797487136842479124101169429105650760396697579174626680372202297456465619874841336521809586652402780111990386170172268373381842093293788010598379355684853890605248212741574284011514597757649218351744131074209720903563888742546518188979893906923159239618928523556755972597200527787486209886115453356488096913360689147838372739437326267972125792191920918825536672424513817139955549084830633129444135653843199862948309240531966991187940149380228286528014102762776155575447803552367005005534517354452699818957501259721372120542828957754277842675408852526958902205491479144856936386554518686702861962651880585424919584495474934784892039256289208222943383941527092570568397219339705279712429705426951822294004077902292782618818113902694452450291459939846428719161657151417208049935288685647694598005341935498511152918946247839959268670317549572412477693151973835249041678167828816827686753069808718673844160892815836102376757675036671018117066778433539739956663244138849798929700922384646175178750362230036206095408201215314251989510461803596671705632898242900785593975006517640755013867661549498301431681610793069670853314385776720226983596686726441370877445087824720595253572015639265264941101671404840359960081380843733908048006019122154575405156576095586845977194320757564357586250358409962743428564662035542609645007957479195198614633133624526616981357915749249122668331971690422289899472621447353255713838757067555955951769384517017145131540398127612264007701902090486661652880678411039240152421254959123182586150102956220415049232456104551435853722705332378116189133196894624473164964161901278464988044812290830287125207271322696356586817309654257541649542793451050763742999612659361815742594876874365619721197108394736060040665311340944580538964981258346873524367079294647209815778430967907073900857586430360872971473933612881754758496436326352000702257338896725815583758704393752256248604713672679221076879476083069636687621530504181022342124580618983319715908394692370795173629167220944795079202047435677777747836298580119166304268329679299693147333849102451075930795429135156954198334432354022675041138889869128019798693289176932374813976966998045997730255650851999384815082333308542575305739689999999999999999999998999999999999999999999999",
+          "supplier_only_kappa": "0.0017164264733664832395102369225955516133624730117160432399405584382707889373292040076930118257233087613496526104795203081886003421857335290548158328272333170354965657837144548841997947743600599549759892309744349025870369701891847953174985135340477979605601870522034328206524803534737859051196093905652756682278932783550809503913385126924664963935801851525576552556971327666835209542488710465993060577958012952898713217311766980079446546894336316431086832851514127978482218349517272067331834021717509527218053617099096538268384953018892858538554972972891161672391771862852851902831849773485038559049160537926112802706884073477427318690543185520330206582455638497492204151145588549295798430572491490581376940288363526814400223684900424402658039870477174347755248027753454417706279386302717618135605466169482341305125302635154494731653112821033119209225248197642611958230490625094638192326488500878940426189012220507363748375684941402413246204663151642626704996534384975673236153414127016341449384879726818093597698871824197363681549398119857198598556296770811324436690702797538381396949035599112932229362924323190764130651842553827337686771840414433083448762478531059086882303987303523511252088954906931919779050893453064015252879640179422747166035301346375305348859134131144362773705175217062531816099685474426950734462212487819316159585018671675317445946871781130931486145294829295991826273422976817518749254343967722798641809736228237068669015671330951619589484717835272363995582374725233274549446658230877209013294691532984446875075542566551055902372178228287545960478174441691445880721133364413710930241019539804804425488489458282213243210799065795395430700086994550147073528522049617230568134723574507418663762272967012976833758454081324168115970244888960400404528487444709471914360392665674065247176001834840572566050386589872732004440655846830350581529437165109510265638501678872662843737389423863151120541728916054839084706338751117232379107508184456394810682441713102549687287773512677261991831926285312167442098378346191562622752336167876571373003112609857719098338462243786727040024062344420409219749209219020071330288379960408540034463558306436152330810594328490300382948434426723716431069214494603636663742925549580294882242816145109109180030267673784548867713830387477844343953348478714234192885497216916116224928248472297851678767658154468957779101062551453752734380597876368863109005903315203731729954261648752925245463687533564782017431115357765936883679607464901366475535307880552589710765893632721253047248803112338641435941055710378181169237771118152996239612867563912675917447464657214154458894649722148184725637710441445027676983986109819612807566294782039933055654883264650139411940744933887175998679710896346381450947247038311168782186932736323609186483514278507131266328281837094791686034894262531585261556865523273821486948389255451882732071803108158755448958040463970618072487385112063150483999356958682623937749066384359443340040391549825308608500931482910550184333102"
+        },
+        "source_files": [
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 14984,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "ffe975e9265dcc1f8edddc054c1798a34c9095a6",
+            "local_path": "data/heldout/2853/package/CLAIM.json",
+            "package_relative_path": "CLAIM.json",
+            "path": "heldout/2853/CLAIM.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/CLAIM.json",
+            "sha256": "c3710307b5c12f14a9be1938aab4b4696223416b184802b6ab88663c19330c3d",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 447,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "ef4bae7b257349fb0b14c572ddd74f73d32e37f4",
+            "local_path": "data/heldout/2853/package/CONSTRUCTION.json",
+            "package_relative_path": "CONSTRUCTION.json",
+            "path": "heldout/2853/CONSTRUCTION.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/CONSTRUCTION.json",
+            "sha256": "897c5f3b087516ccc4683e9d0cdd36fd47ed4c2d8330b1ecc35021443894298b",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 10399,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "ae7b0d48c0d9c4182e0edea9a36a5f5aaa8ff0a3",
+            "local_path": "data/heldout/2853/package/DISPATCH.json",
+            "package_relative_path": "DISPATCH.json",
+            "path": "heldout/2853/DISPATCH.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/DISPATCH.json",
+            "sha256": "2d178ebfbf3147d1f844897c779d151e04a0b9f480cbf57b76add4a24b8858ee",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 2055625,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "5327fc2f4e8ea82ed356c94ff040d23fc73c731f",
+            "local_path": "data/heldout/2853/package/GLOBAL-TEMPLATE.json.gz",
+            "package_relative_path": "GLOBAL-TEMPLATE.json.gz",
+            "path": "heldout/2853/GLOBAL-TEMPLATE.json.gz",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/GLOBAL-TEMPLATE.json.gz",
+            "sha256": "1d31424c4e27e26a35a9932ca778e43f1f3577589275422cc642aa68b31112db",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 4573,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "9ee137518b942e6d8602487f87578bfb536711c7",
+            "local_path": "data/heldout/2853/package/ORDER.json",
+            "package_relative_path": "ORDER.json",
+            "path": "heldout/2853/ORDER.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/ORDER.json",
+            "sha256": "30856f042860e5b5c613357b236ff643f107d7d70e2c64eb5fcaaa09bf81a90d",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 1494112,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "bc35d72ea62d97a93e863e4fc38c1b1710eef9ad",
+            "local_path": "data/heldout/2853/package/PLAN.json",
+            "package_relative_path": "PLAN.json",
+            "path": "heldout/2853/PLAN.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/PLAN.json",
+            "sha256": "fafce692c9aee7fbabf1e194dcffeeb14a0a67eda22583057718831c63f35ef2",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 96,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "8ba0e2046196e56b6ef8a9347645bee45f603e1f",
+            "local_path": "data/heldout/2853/package/PROFILE.json",
+            "package_relative_path": "PROFILE.json",
+            "path": "heldout/2853/PROFILE.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/PROFILE.json",
+            "sha256": "5ee33d3f641a9d3f0b643001ca506ae26defdfed3e823897abb7bd6f3b4011ea",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 42060,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "99653b62a5974f9221b6de2ebd14156c5e906d43",
+            "local_path": "data/heldout/2853/package/README.md",
+            "package_relative_path": "README.md",
+            "path": "heldout/2853/README.md",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/README.md",
+            "sha256": "063fc0243ad9d43a31d19a906971062a80a265d4fa2db78b7221533ca8af3aab",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 15670,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "1469990731c62b8f9d717e58d4786f56f551cc09",
+            "local_path": "data/heldout/2853/package/SPEC.json",
+            "package_relative_path": "SPEC.json",
+            "path": "heldout/2853/SPEC.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/SPEC.json",
+            "sha256": "81676590c26018aa95082e3252f394ac99c61c0c4e5578f59501401700e38033",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 1817,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "04e8a99e510469c756432229c9e033e58b18f4ba",
+            "local_path": "data/heldout/2853/package/new/BORROW-PROVIDERS.json",
+            "package_relative_path": "new/BORROW-PROVIDERS.json",
+            "path": "heldout/2853/new/BORROW-PROVIDERS.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/BORROW-PROVIDERS.json",
+            "sha256": "d4b8c2ecd493a35b99c6c97cd2dfc4131859cce21e98527f45d9fd183c650f7b",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 5935983,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "e91bc498997eda211c6a3c18c6844a4ee09f49fa",
+            "local_path": "data/heldout/2853/package/new/PLAN.json",
+            "package_relative_path": "new/PLAN.json",
+            "path": "heldout/2853/new/PLAN.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/PLAN.json",
+            "sha256": "5132aa4aba25c98f5b78936c4281c89dad6912696f93e390cb296f94811f28b1",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 97,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "d8f8b5699f3228685bb1f907c889f6623e0cfb00",
+            "local_path": "data/heldout/2853/package/new/PROFILE.json",
+            "package_relative_path": "new/PROFILE.json",
+            "path": "heldout/2853/new/PROFILE.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/PROFILE.json",
+            "sha256": "d034034b6cb5dd82ae4fa69467a58b2b39f2987e8d109e1001b094e56a688bd8",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 99931,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "af1bd3941dca202b7b1124280272ec2a215226d8",
+            "local_path": "data/heldout/2853/package/new/SPEC.json",
+            "package_relative_path": "new/SPEC.json",
+            "path": "heldout/2853/new/SPEC.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/SPEC.json",
+            "sha256": "ff3587431804a54a5d549ad0646a384a97a4c9bce38043f60a690a9b61fcc50f",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 10399,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "693ed0d022791c43d59000718521fded1ef8def7",
+            "local_path": "data/heldout/2853/package/new/borrow-fill/DISPATCH.json",
+            "package_relative_path": "new/borrow-fill/DISPATCH.json",
+            "path": "heldout/2853/new/borrow-fill/DISPATCH.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/DISPATCH.json",
+            "sha256": "fd8132ec8957b908ee6d871216848f18bafc6bd9304acd6185519ee26d97b1ca",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 1149809,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "ed7016fd9a0eeb8dfeb1cf0f4f576e0287634054",
+            "local_path": "data/heldout/2853/package/new/borrow-fill/FILL.json.gz",
+            "package_relative_path": "new/borrow-fill/FILL.json.gz",
+            "path": "heldout/2853/new/borrow-fill/FILL.json.gz",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/FILL.json.gz",
+            "sha256": "36ab8173de9cc5558eb6f6407c97aa015e92b949d30de6b042db4d8427d6600b",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 5904,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "7141bd58cc465e28f0189345713ddd366c814ca4",
+            "local_path": "data/heldout/2853/package/new/borrow-fill/ORDER.json",
+            "package_relative_path": "new/borrow-fill/ORDER.json",
+            "path": "heldout/2853/new/borrow-fill/ORDER.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/ORDER.json",
+            "sha256": "aa7c53c188c90fd74421a804f4c6fb13aa1187c06dbac51fa147830a40e00667",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 70155,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "b2f6cef3ed87663ff98e5db5371ece263ad0a735",
+            "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "package_relative_path": "new/borrow/words/BORROW-WORD-43base.json.gz",
+            "path": "heldout/2853/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "sha256": "7f0a0715aa962f24c112ca32d1b57fc275eff0f15eac6eccd684ba702af82f8b",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 70156,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "8e1e87364f03de5638b15292058ed60c96d219d1",
+            "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "package_relative_path": "new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "path": "heldout/2853/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "sha256": "c94a0ac238ca72951e4580895334d39f66ea950fa7af62ca2667251a2f796d6e",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 915083,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "f860b9f83c87431918658eab565a6d0ac3a58200",
+            "local_path": "data/heldout/2853/package/outer/LEDGER.json",
+            "package_relative_path": "outer/LEDGER.json",
+            "path": "heldout/2853/outer/LEDGER.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/outer/LEDGER.json",
+            "sha256": "d1d08159ae00a4b0f000688d87fd9e10eda0c08a9d8e894bfe16202e926adfc0",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          },
+          {
+            "author": "philippeVV",
+            "author_login": "philippeVV",
+            "bytes": 11273,
+            "commit": "d01045dfb67428679618027dff552f1d032fa999",
+            "git_blob": "afaeb2cc19277e465b03489f8e0790333c58d540",
+            "local_path": "data/heldout/2853/package/outer/OUTER-CLAIM.json",
+            "package_relative_path": "outer/OUTER-CLAIM.json",
+            "path": "heldout/2853/outer/OUTER-CLAIM.json",
+            "pr": 2853,
+            "repository_path": "research/gmx-t74-borrow43-handoff/outer/OUTER-CLAIM.json",
+            "sha256": "eb3260be191774b931cff6e562978a2af27bbc6ff666ca8c1d387a2b18dc86fa",
+            "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+          }
+        ],
+        "stage_orientation_profiles": [
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 74,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 0
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 74,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 1
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 66,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 2
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 8,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 2
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 57,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 3
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 17,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 3
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 48,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 4
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 26,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 4
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 38,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 5
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 36,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 5
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 30,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 6
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 44,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 6
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 20,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 7
+          },
+          {
+            "orientation": "backward",
+            "profiles": [
+              {
+                "calls": 54,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 7
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 10,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "extra",
+            "stage": 8
+          },
+          {
+            "orientation": "forward",
+            "profiles": [
+              {
+                "calls": 64,
+                "profile": {
+                  "1": 2402,
+                  "2": 638,
+                  "3": 266,
+                  "4": 128,
+                  "5": 26,
+                  "8": 8
+                }
+              }
+            ],
+            "provider": "gauge44",
+            "stage": 8
+          }
+        ],
+        "status": "PASS",
+        "validation": {
+          "executable_program_hashes": "Retained as source metadata; fetched executable/native programs are never executed by this adapter.",
+          "geometry_binding": "M=73; W=PLAN.live=template.replica_lift.data_stock=outer ledger W; template.live also contains inherited bank stock",
+          "inherited_root_dispatch_matches_active": false,
+          "inherited_root_order_matches_active": true,
+          "literal_fill": {
+            "all_literal_rules_verified": true,
+            "attributions": [
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 70155,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "b2f6cef3ed87663ff98e5db5371ece263ad0a735",
+                "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "package_relative_path": "new/borrow/words/BORROW-WORD-43base.json.gz",
+                "path": "heldout/2853/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "sha256": "7f0a0715aa962f24c112ca32d1b57fc275eff0f15eac6eccd684ba702af82f8b",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 70156,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "8e1e87364f03de5638b15292058ed60c96d219d1",
+                "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "package_relative_path": "new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "path": "heldout/2853/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "sha256": "c94a0ac238ca72951e4580895334d39f66ea950fa7af62ca2667251a2f796d6e",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              }
+            ],
+            "bins": 149184,
+            "calls": 666,
+            "clumping": 0.7827984234234234,
+            "fill": "heldout-2853",
+            "helpers_per_call": [
+              408
+            ],
+            "idle": {
+              "1": 16981,
+              "3": 6051,
+              "4": 1,
+              "5": 9309,
+              "6": 58,
+              "7": 3,
+              "32": 47,
+              "48": 26703
+            },
+            "idle_cells": 1365300,
+            "kappa_diagnostic": 0.0017193776586975455,
+            "occupancy_by_capacity": {
+              "8": {
+                "8": 49728
+              },
+              "16": {
+                "9": 3,
+                "16": 33149
+              },
+              "32": {
+                "0": 47,
+                "26": 58,
+                "27": 9309,
+                "31": 16981,
+                "32": 6757
+              },
+              "48": {
+                "0": 26703,
+                "44": 1,
+                "45": 6051,
+                "48": 397
+              }
+            },
+            "profile": {
+              "1": 1616713,
+              "2": 424908,
+              "3": 183207,
+              "4": 85249,
+              "5": 26625,
+              "6": 58,
+              "7": 3,
+              "8": 5328,
+              "32": 47,
+              "48": 26703
+            },
+            "rank_mass": 4816512,
+            "roles": 271728,
+            "roles_per_occupied_bin": {
+              "1": 49731,
+              "2": 33149,
+              "3": 9367,
+              "4": 23734,
+              "5": 6056,
+              "6": 397
+            },
+            "source_notes": {
+              "dispatch_source": "new/borrow-fill/DISPATCH.json plus FILL.dispatch_overrides",
+              "order_source": "new/borrow-fill/ORDER.json",
+              "parent_load_once": true,
+              "plan_source": "new/PLAN.json",
+              "profile_source": "Canonical held-out word paid children plus literal fill idle remainders"
+            },
+            "sources": [
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 14984,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "ffe975e9265dcc1f8edddc054c1798a34c9095a6",
+                "local_path": "data/heldout/2853/package/CLAIM.json",
+                "package_relative_path": "CLAIM.json",
+                "path": "heldout/2853/CLAIM.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/CLAIM.json",
+                "sha256": "c3710307b5c12f14a9be1938aab4b4696223416b184802b6ab88663c19330c3d",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 447,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "ef4bae7b257349fb0b14c572ddd74f73d32e37f4",
+                "local_path": "data/heldout/2853/package/CONSTRUCTION.json",
+                "package_relative_path": "CONSTRUCTION.json",
+                "path": "heldout/2853/CONSTRUCTION.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/CONSTRUCTION.json",
+                "sha256": "897c5f3b087516ccc4683e9d0cdd36fd47ed4c2d8330b1ecc35021443894298b",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 10399,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "ae7b0d48c0d9c4182e0edea9a36a5f5aaa8ff0a3",
+                "local_path": "data/heldout/2853/package/DISPATCH.json",
+                "package_relative_path": "DISPATCH.json",
+                "path": "heldout/2853/DISPATCH.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/DISPATCH.json",
+                "sha256": "2d178ebfbf3147d1f844897c779d151e04a0b9f480cbf57b76add4a24b8858ee",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 2055625,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "5327fc2f4e8ea82ed356c94ff040d23fc73c731f",
+                "local_path": "data/heldout/2853/package/GLOBAL-TEMPLATE.json.gz",
+                "package_relative_path": "GLOBAL-TEMPLATE.json.gz",
+                "path": "heldout/2853/GLOBAL-TEMPLATE.json.gz",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/GLOBAL-TEMPLATE.json.gz",
+                "sha256": "1d31424c4e27e26a35a9932ca778e43f1f3577589275422cc642aa68b31112db",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 4573,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "9ee137518b942e6d8602487f87578bfb536711c7",
+                "local_path": "data/heldout/2853/package/ORDER.json",
+                "package_relative_path": "ORDER.json",
+                "path": "heldout/2853/ORDER.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/ORDER.json",
+                "sha256": "30856f042860e5b5c613357b236ff643f107d7d70e2c64eb5fcaaa09bf81a90d",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 1494112,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "bc35d72ea62d97a93e863e4fc38c1b1710eef9ad",
+                "local_path": "data/heldout/2853/package/PLAN.json",
+                "package_relative_path": "PLAN.json",
+                "path": "heldout/2853/PLAN.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/PLAN.json",
+                "sha256": "fafce692c9aee7fbabf1e194dcffeeb14a0a67eda22583057718831c63f35ef2",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 96,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "8ba0e2046196e56b6ef8a9347645bee45f603e1f",
+                "local_path": "data/heldout/2853/package/PROFILE.json",
+                "package_relative_path": "PROFILE.json",
+                "path": "heldout/2853/PROFILE.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/PROFILE.json",
+                "sha256": "5ee33d3f641a9d3f0b643001ca506ae26defdfed3e823897abb7bd6f3b4011ea",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 42060,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "99653b62a5974f9221b6de2ebd14156c5e906d43",
+                "local_path": "data/heldout/2853/package/README.md",
+                "package_relative_path": "README.md",
+                "path": "heldout/2853/README.md",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/README.md",
+                "sha256": "063fc0243ad9d43a31d19a906971062a80a265d4fa2db78b7221533ca8af3aab",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 15670,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "1469990731c62b8f9d717e58d4786f56f551cc09",
+                "local_path": "data/heldout/2853/package/SPEC.json",
+                "package_relative_path": "SPEC.json",
+                "path": "heldout/2853/SPEC.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/SPEC.json",
+                "sha256": "81676590c26018aa95082e3252f394ac99c61c0c4e5578f59501401700e38033",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 1817,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "04e8a99e510469c756432229c9e033e58b18f4ba",
+                "local_path": "data/heldout/2853/package/new/BORROW-PROVIDERS.json",
+                "package_relative_path": "new/BORROW-PROVIDERS.json",
+                "path": "heldout/2853/new/BORROW-PROVIDERS.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/BORROW-PROVIDERS.json",
+                "sha256": "d4b8c2ecd493a35b99c6c97cd2dfc4131859cce21e98527f45d9fd183c650f7b",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 5935983,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "e91bc498997eda211c6a3c18c6844a4ee09f49fa",
+                "local_path": "data/heldout/2853/package/new/PLAN.json",
+                "package_relative_path": "new/PLAN.json",
+                "path": "heldout/2853/new/PLAN.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/PLAN.json",
+                "sha256": "5132aa4aba25c98f5b78936c4281c89dad6912696f93e390cb296f94811f28b1",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 97,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "d8f8b5699f3228685bb1f907c889f6623e0cfb00",
+                "local_path": "data/heldout/2853/package/new/PROFILE.json",
+                "package_relative_path": "new/PROFILE.json",
+                "path": "heldout/2853/new/PROFILE.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/PROFILE.json",
+                "sha256": "d034034b6cb5dd82ae4fa69467a58b2b39f2987e8d109e1001b094e56a688bd8",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 99931,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "af1bd3941dca202b7b1124280272ec2a215226d8",
+                "local_path": "data/heldout/2853/package/new/SPEC.json",
+                "package_relative_path": "new/SPEC.json",
+                "path": "heldout/2853/new/SPEC.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/SPEC.json",
+                "sha256": "ff3587431804a54a5d549ad0646a384a97a4c9bce38043f60a690a9b61fcc50f",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 10399,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "693ed0d022791c43d59000718521fded1ef8def7",
+                "local_path": "data/heldout/2853/package/new/borrow-fill/DISPATCH.json",
+                "package_relative_path": "new/borrow-fill/DISPATCH.json",
+                "path": "heldout/2853/new/borrow-fill/DISPATCH.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/DISPATCH.json",
+                "sha256": "fd8132ec8957b908ee6d871216848f18bafc6bd9304acd6185519ee26d97b1ca",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 1149809,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "ed7016fd9a0eeb8dfeb1cf0f4f576e0287634054",
+                "local_path": "data/heldout/2853/package/new/borrow-fill/FILL.json.gz",
+                "package_relative_path": "new/borrow-fill/FILL.json.gz",
+                "path": "heldout/2853/new/borrow-fill/FILL.json.gz",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/FILL.json.gz",
+                "sha256": "36ab8173de9cc5558eb6f6407c97aa015e92b949d30de6b042db4d8427d6600b",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 5904,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "7141bd58cc465e28f0189345713ddd366c814ca4",
+                "local_path": "data/heldout/2853/package/new/borrow-fill/ORDER.json",
+                "package_relative_path": "new/borrow-fill/ORDER.json",
+                "path": "heldout/2853/new/borrow-fill/ORDER.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow-fill/ORDER.json",
+                "sha256": "aa7c53c188c90fd74421a804f4c6fb13aa1187c06dbac51fa147830a40e00667",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 70155,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "b2f6cef3ed87663ff98e5db5371ece263ad0a735",
+                "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "package_relative_path": "new/borrow/words/BORROW-WORD-43base.json.gz",
+                "path": "heldout/2853/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+                "sha256": "7f0a0715aa962f24c112ca32d1b57fc275eff0f15eac6eccd684ba702af82f8b",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 70156,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "8e1e87364f03de5638b15292058ed60c96d219d1",
+                "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "package_relative_path": "new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "path": "heldout/2853/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+                "sha256": "c94a0ac238ca72951e4580895334d39f66ea950fa7af62ca2667251a2f796d6e",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 915083,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "f860b9f83c87431918658eab565a6d0ac3a58200",
+                "local_path": "data/heldout/2853/package/outer/LEDGER.json",
+                "package_relative_path": "outer/LEDGER.json",
+                "path": "heldout/2853/outer/LEDGER.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/outer/LEDGER.json",
+                "sha256": "d1d08159ae00a4b0f000688d87fd9e10eda0c08a9d8e894bfe16202e926adfc0",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              },
+              {
+                "author": "philippeVV",
+                "author_login": "philippeVV",
+                "bytes": 11273,
+                "commit": "d01045dfb67428679618027dff552f1d032fa999",
+                "git_blob": "afaeb2cc19277e465b03489f8e0790333c58d540",
+                "local_path": "data/heldout/2853/package/outer/OUTER-CLAIM.json",
+                "package_relative_path": "outer/OUTER-CLAIM.json",
+                "path": "heldout/2853/outer/OUTER-CLAIM.json",
+                "pr": 2853,
+                "repository_path": "research/gmx-t74-borrow43-handoff/outer/OUTER-CLAIM.json",
+                "sha256": "eb3260be191774b931cff6e562978a2af27bbc6ff666ca8c1d387a2b18dc86fa",
+                "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+              }
+            ],
+            "total_cells": 3580416,
+            "used_cells": 2215116,
+            "window_sha256": "d301aa0d102381aecc3dd746c424d55ea6f4ade9f87b833c8db6d643e205c846",
+            "windows": 1332
+          },
+          "numerical_root": "fill.audit includes a diagnostic float only; registered M4 predictions independently recompute the prescribed high-precision roots.",
+          "schema_binding_verified": true,
+          "template_family_binding": {
+            "excluded_only_exact_zero_increments": true,
+            "level_dimension_formula": "8*(level+1) + int(side == 0)",
+            "positive_child_ranks": {
+              "0": 16,
+              "1": 8,
+              "2": 16,
+              "3": 8,
+              "4": 32,
+              "5": 8,
+              "6": 32,
+              "7": 8,
+              "8": 48,
+              "9": 8,
+              "10": 48,
+              "11": 8,
+              "12": 48,
+              "13": 48,
+              "14": 32,
+              "15": 32,
+              "16": 16,
+              "17": 16
+            },
+            "positive_children": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "rank_per_level": 8,
+            "zero_children_absent_from_bins_windows_and_roles": true,
+            "zero_increment_sweeps": [
+              {
+                "children": [
+                  18,
+                  19
+                ],
+                "from_level": 8,
+                "pair": 3,
+                "rank_increment": 0,
+                "to_level": 8
+              }
+            ]
+          },
+          "words": [
+            {
+              "canonical_profile": {
+                "1": 2402,
+                "2": 638,
+                "3": 266,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              },
+              "centre_paid": {
+                "8": 8
+              },
+              "exact_bounds_verified": true,
+              "framed_gates": 5486,
+              "helpers": 408,
+              "profile_replays": 2,
+              "provider": "gauge44",
+              "width_inventory": {
+                "4": 26,
+                "5": 2,
+                "7": 62,
+                "8": 84,
+                "9": 234
+              },
+              "word": "new/borrow/words/BORROW-WORD-43base.json.gz"
+            },
+            {
+              "canonical_profile": {
+                "1": 2402,
+                "2": 638,
+                "3": 266,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              },
+              "centre_paid": {
+                "8": 8
+              },
+              "exact_bounds_verified": true,
+              "framed_gates": 5486,
+              "helpers": 408,
+              "profile_replays": 2,
+              "provider": "extra",
+              "width_inventory": {
+                "4": 26,
+                "5": 2,
+                "7": 62,
+                "8": 84,
+                "9": 234
+              },
+              "word": "new/borrow/words/BORROW-WORD-43extra.json.gz"
+            }
+          ]
+        },
+        "wires": 66304
+      }
+    },
+    "scope": "Predeclared bookkeeping transfer; no five-criterion structural pattern or new candidate price.",
+    "seed": 29063,
+    "solver_calls": 0,
+    "status": "EXPLORATORY",
+    "validation_cpu_seconds": 1.4609212870000001
+  },
+  "seconds": 1.9602020308375359,
+  "status": "OK"
+}
