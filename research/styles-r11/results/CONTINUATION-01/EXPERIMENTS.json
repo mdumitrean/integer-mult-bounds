@@ -17,15 +17,37 @@
       "updated_utc": "2026-10-16T11:37:50.222665+00:00"
     },
     {
+      "candidate_identity_agreement": false,
+      "confirmation_note": "Different traversal seeds; selected candidate identity must also agree before a positive decision stands.",
+      "confirmed": true,
+      "cpu_seconds": 43.001652786,
       "id": "C2-LATEST-SAME-CALL",
       "lane": "constructive-fill",
       "preregistration": "results/CONTINUATION-01/C2/PREREGISTRATION.json",
-      "status": "planned"
+      "result_files": [
+        "results/CONTINUATION-01/C2-LATEST-SAME-CALL/v1/seed-11031/RESULT.json",
+        "results/CONTINUATION-01/C2-LATEST-SAME-CALL/v1/seed-29063/RESULT.json"
+      ],
+      "started_utc": "2026-10-16T11:50:45.419449+00:00",
+      "status": "NULL",
+      "updated_utc": "2026-10-16T11:51:06.759685+00:00"
     },
     {
       "id": "G1-PAIRED-GRAMMAR",
       "lane": "constructive-word",
       "preregistration": "results/CONTINUATION-01/G1/PREREGISTRATION.json",
+      "status": "planned"
+    },
+    {
+      "id": "V1-FILL-ADMISSION",
+      "lane": "validation",
+      "preregistration": "results/CONTINUATION-01/V1/PREREGISTRATION.json",
+      "status": "planned"
+    },
+    {
+      "id": "C3-CROSS-CALL-EXCHANGE",
+      "lane": "constructive-fill",
+      "preregistration": "results/CONTINUATION-01/C3/PREREGISTRATION.json",
       "status": "planned"
     }
   ],

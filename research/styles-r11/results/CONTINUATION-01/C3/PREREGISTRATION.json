@@ -1,0 +1,60 @@
+{
+  "baseline_commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+  "baseline_pr": 2917,
+  "created_utc": "2026-10-16T11:57:06.310679+00:00",
+  "experiments": {
+    "C3-CROSS-CALL-EXCHANGE": {
+      "controls": [
+        "Unchanged complete literal baseline accepted.",
+        "Self/equal-width exchange does not improve.",
+        "Overcapacity, duplicated family and invalid window mutations rejected.",
+        "Indexed acceptance compared with direct literal predicates on deterministic registered bounded role samples.",
+        "Any selected witness receives fresh complete fill/profile reconstruction, exact mass conservation, nonincreasing positive idle-child count and maxrank48."
+      ],
+      "counts": "Per-shard disjoint source coverage. Complete reduction requires84unique shards,666calls,271728source roles perseed and exact disjoint categories summing to36862620480: equal-width, same-bin unequal, capacity/nonpositive spread, window rejection, family rejection, strict improvement. Report every analytic exclusion.",
+      "direct_control_domain": "For each seed,128pairs drawn by that seed from the full distinct-call domain plus every selected witness; compare indexed membership and direct exact guards, with no solver.",
+      "enumeration": "Orient unequal widths by a>b. Canonical role index408*call+helper. Exhaust all higher-width sources; exact bit intersections count all lower-width targets without sampling. Eight consecutive source calls per shard:84shards per seed. Seed changes source traversal order only.",
+      "exact_predicate": "For d=a-b>0, original residuals rA,rB and capacities capA,capB, require different physical bins,0<=rA+d<=capA,0<=rB-d<=capB,d*(rA-rB+d)>0. Equivalent range d<=rB<rA+d. Both target windows must contain the incoming call. Both simultaneous remove/add family sets must remain injective. Same-family exchanges use the exact exception and are not silently omitted.",
+      "family_guard": "For different families, fB is absent from callA except removed fA and fA absent from callB except removed fB. Same-family swaps must pass the literal simultaneous family test. Exact physical assignment includes port.",
+      "incomplete": "Any missing shard, coverage discrepancy, failed control, error or cutoff prevents a scientific PASS/NULL. TIMEOUT/ERROR/EXPLORATORY do not reset lane streak.",
+      "lane": "constructive-fill",
+      "null_bar": "Entire registered domain completes with no feasible strict improvement and all controls pass. NULL is limited to two-role cross-call exchanges on this literal fill.",
+      "pass_bar": "Entire census completes, all controls pass, selected concrete improving witness passes complete literal/profile checks and exact concavity proof; both seeds select identical candidate bytes. This is constructive fill PASS only; V1 complete changed-obligation admission is mandatory for the user goal.",
+      "question": "Can an exact cross-call exchange of two unequal-width roles improve the latest pinned complete profile?",
+      "recording": "Immutable RESULT.json perseed, per-shard compressed checkpoints, exact counts, candidate FILL/PROFILE and hashes, source archive, memory projection, measured CPU/wall/RSS, complete source attribution.",
+      "scope": "All unordered roles from distinct calls: choose(666,2)*408^2 = 36862620480. Same-call pairs are excluded and separately reported. Equal-width exchanges are analytically nonimproving.",
+      "second_seed": "Repeat the complete exact indexed census with independent source traversal; canonical candidate bytes and verdict must agree.",
+      "selection": "Maximum integer squared residual gain2*d*(rA-rB+d), then lexicographically smallest sorted pair((call,helper),(call,helper)); no numerical root-based selection.",
+      "stop_rule": "C2 is the immediately preceding scientific NULL in this lane. A confirmed C3 NULL is the second consecutive NULL and stops the constructive-fill lane for this round."
+    }
+  },
+  "hard_stop_utc": "2026-10-30T04:08:31.792839+00:00",
+  "milestone": "CONTINUATION-01/C3",
+  "resources": {
+    "cpu_budget_seconds_family": 7200,
+    "internal_cpu_guard_seconds": 240,
+    "parallelism": "pipeline/pool.py only; no simultaneous pools",
+    "parent_load_once": [
+      "fill",
+      "plan",
+      "template",
+      "words",
+      "exact width/residual/window/family bit indexes"
+    ],
+    "project_peak_memory_before_launch": true,
+    "reserved_cores": 8,
+    "rss_gib": 6,
+    "solver_calls": 0,
+    "timeout_seconds_per_task": 300,
+    "workers": "min(120,floor(RAM_GiB/4))"
+  },
+  "round": "CONTINUATION-01",
+  "schema_version": 1,
+  "seeds": [
+    11031,
+    29063
+  ],
+  "source_attribution": "Mason Hale PR2917, full package CREDITS/SOURCES and every original data/words/PINS.json credit retained.",
+  "source_manifest_sha256": "2efa79d1a44d46ca51b9d35a1392fec87514776585f66d372e20d7ccbbcee764",
+  "state": "FROZEN"
+}
