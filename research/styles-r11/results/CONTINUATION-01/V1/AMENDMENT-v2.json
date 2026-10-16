@@ -1,0 +1,28 @@
+{
+  "attempt": "v2",
+  "created_utc": "2026-10-16T12:09:10.532264+00:00",
+  "experiment": "V1-FILL-ADMISSION",
+  "fixed_candidate_sha256": "a5f58050ebf95f0c0798177bf3e0063050796241f0bc05bb7e7a3e4666586f29",
+  "implementation_sha256": {
+    "research/styles-r11/pipeline/continuation/admission_v2.py": "1d5f12fa4faa3a044c8bef70ba71b1020ef216ea9e5fd5f3013167edd08d952e",
+    "research/styles-r11/pipeline/continuation/run_v1_v2.py": "e540781e86a31faaa40cc12dd6cdda52fa6ba5a348d32489cbc60067094be01c"
+  },
+  "preregistration_sha256": "1f340d4630b3a1a147f3d807c3db624801559f73b994be94c585d32ea1b2ccac",
+  "preservation": "Original admission.py, run_v1.py and v1 RESULTs remain unchanged; all previous CPU counts toward7200second familycap.",
+  "previous_attempt": {
+    "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v1/RELEASE-RECEIPT.json",
+    "sha256": "9e8499e2272b74e8814abab264da8566cb1de9d213ee83ea717656a57101409d",
+    "status": "ERROR"
+  },
+  "previous_attempt_cpu_seconds": 28.210885176,
+  "reason": "Both v1 seeds stopped at a schema assertion: DATA-PHASES.ports is integer112; ordered vectors are recipes[*].q. Both source word lists match those vectors.",
+  "repair": "Compare the word port list to ordered recipe q values; separately require phases.ports == len(wordports) == len(recipes) ==112. No changed construction, gate, bound, selection or scientific threshold.",
+  "review": "Independent source/schema review by growth_ledger and word_pipeline, no agent-run experiments.",
+  "schema_version": 1,
+  "scope": "Implementation repair; not a scientific null, new family or lane reset.",
+  "seeds": [
+    11031,
+    29063
+  ],
+  "state": "FROZEN"
+}

@@ -1,0 +1,98 @@
+{
+  "amendment_sha256": "cb2a3eb092f25d4435f1baad8e03a1be6f51bdb39714821fef0bb52a8a1d1874",
+  "failure": null,
+  "fresh_native_replay": false,
+  "headline": {
+    "baseline_pr": 2917,
+    "complex_lower": "68863547442805920291/40000000000000000000000",
+    "conditional": true,
+    "improvement": "3887234612667/100000000000000000000000",
+    "improvement_decimal": "3.887234612667E-11",
+    "kappa": "17215886860701480072749999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+    "kappa_decimal": "0.0017215886860701480072749999999999999999999998999999999999999999999999"
+  },
+  "preregistration_sha256": "1f340d4630b3a1a147f3d807c3db624801559f73b994be94c585d32ea1b2ccac",
+  "result_files": [
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-11031/RESULT.json",
+      "sha256": "aa37d0f8f1b55af7ed805363f94e22496b49e10cf21ffcf683308416fd3fc380"
+    },
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-29063/RESULT.json",
+      "sha256": "5a58ebba440cce95272d4d4f27b18f5c63c3ce88f7c6c5c7799c546f6cf80ba2"
+    }
+  ],
+  "scope": "No public posting, selected-frontier update or all-size theorem claim. Coordinator review remains required.",
+  "selected": {
+    "candidate": {
+      "bytes": 1480984,
+      "path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/FILL.json.gz",
+      "sha256": "a5f58050ebf95f0c0798177bf3e0063050796241f0bc05bb7e7a3e4666586f29"
+    },
+    "search_experiment": "C3-CROSS-CALL-EXCHANGE",
+    "search_results": [
+      {
+        "path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/RESULT.json",
+        "sha256": "8a6a15c33854f0dfa123eef66cc12c14c32422784f4bb9f4c7cab52477f11612"
+      },
+      {
+        "path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-29063/RESULT.json",
+        "sha256": "f2d8aa5af97c5f8f3cf54d4a387291f62eb46e99f0362ed7c5b8447cd4ab4546"
+      }
+    ]
+  },
+  "source_bound_prior_evidence": {
+    "baseline_commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+    "baseline_pr": 2917,
+    "inherited_scope": "Conditional finite supplier/outer certificate. Inherited all-size/compiler/theorem hypotheses remain. No selected frontier change, optimality or independent-human-review claim. Both changed native chains are fresh; unchanged retained parent/native evidence is explicitly authenticated and reused.",
+    "integrated_package_manifest_sha256": "bf852fb4ecfa28dddfb8cc6fe7bf53019b3932114e01cba3e026b63ef2b1babd",
+    "integrated_source_manifest_sha256": "98d57c82a1c7318be3c330c3b66897844d57232f0aaeaea88fb4bebd0a1bedf1",
+    "native_receipt_sha256": "5c1ea6f03e48673d9b56563494fff2258ee18bc8dacdeb72ba5c07e2044008ca",
+    "physical_invoice_sha256": "f9d865732c9e6cb918be3b8924350f852610bc0d7fa6b6c2a7c3d2cdb437c1ba",
+    "release_receipt_sha256": "f7639e51fd620070767b8e2a855a0a613ae9bfd19f86a1ba023d88316193ae06",
+    "scope": "Fresh hash/link checks of previously published evidence; no native cache or prior executable is replayed here.",
+    "status": "PASS_SOURCE_BOUND_PRIOR_RELEASE_BINDING",
+    "unchanged_native_providers": {
+      "extra": {
+        "actual_cache_bytes_replayed_here": false,
+        "complete_native_files": {
+          "STEPS.json": "bd823ceef46b5ae18bd462f267610e921cd20e51c25f36c511fc82c8b35f9622",
+          "local/CANONICAL-WORD.json.gz": "ae06445d45f4482bc8e796350fa3d2057efdb02f2c6c1f0018e844d35e6a7155",
+          "local/CLIFFORD-RECIPES.json": "ff27bef98de1ee45bda0f3b13e892a197223b249e7df55e2f7ac5137e81b290d",
+          "local/CLIFFORD-REVIEW.json": "164498fc3ae2e63e01d270f4730eacd66dd28ebfe9cebb0233b085a515dfdca4",
+          "local/FULL-WORD.json.gz": "e4d0c617df85bf8a824ff68310ca3373dc017c1ebf9ea733056a3ee4a784b36f",
+          "local/INDEPENDENT-LOCAL-REPLAY.json": "a28c61fa107cb671881e5784dd3600f5803ac9bb74f7f771686b98dfe69c1d4c",
+          "local/LOCAL-CHECKS.json": "267fcd623066776956ed1e2483b7d98dde9fc44c5984f752d1042807d8937e90",
+          "local/LOCAL-PROGRAMS.json.gz": "f9ebe471ab44de612c55fb05c78f81d6ef26bba2dff96115331ca5f54d21767f",
+          "local/RESIDUAL-ADAPTERS.json": "3dabb2399852c6ee81b0f350682f41bd3a2d9497f1ffbcad0f8cd50f71fac834",
+          "local/SCALAR-FRAME-AUDIT.json": "667d637807fe479c1721ef1f1dcfccd001c79594ba814f2db0cff716984a291d",
+          "local/WARP-RECIPE-CHECKS.json": "e6eafe0ad31b7ae2eac010bfeabf3e549b910f23c837676cc8698b0f33c5daf6",
+          "local/WRAPPER-CHECKS.json": "b1b66e6a7e134fb26b0b7799dfe5388b327bd207fd402ed9b0cbfc420c824d40"
+        },
+        "word_sha256": "e4d0c617df85bf8a824ff68310ca3373dc017c1ebf9ea733056a3ee4a784b36f"
+      },
+      "gauge44": {
+        "actual_cache_bytes_replayed_here": false,
+        "complete_native_files": {
+          "STEPS.json": "75bfe165f201b78e79881850783f985c88d0247222244efa4e316dd5bf239448",
+          "local/CANONICAL-WORD.json.gz": "22e6021b025d1dd59afe7cbbe9803daa36309e8270f0969a4829c0654206c9c1",
+          "local/CLIFFORD-RECIPES.json": "3c7e400bcf9cf93af2b4c511c8136ac4d9286e9d3cd3c819e95e88c7f5433eaf",
+          "local/CLIFFORD-REVIEW.json": "cd815d6eca0a587e97018b9d41f6c0e8c06d0b951ea25e0496b89a930f1df964",
+          "local/FULL-WORD.json.gz": "fec3c120db1a35022944628d34b56a36f2456248c274c2eaba1a325cdc690ce8",
+          "local/INDEPENDENT-LOCAL-REPLAY.json": "7ac75285a6f3f7b4e454b7af04c4cc7252089f5ccc53ad87ec17db72fd529f16",
+          "local/LOCAL-CHECKS.json": "267fcd623066776956ed1e2483b7d98dde9fc44c5984f752d1042807d8937e90",
+          "local/LOCAL-PROGRAMS.json.gz": "f9ebe471ab44de612c55fb05c78f81d6ef26bba2dff96115331ca5f54d21767f",
+          "local/RESIDUAL-ADAPTERS.json": "e880bcc7ec4c8f3f3abde5bfc18ce3e9fc9926ccb5afcf18d11aa54fdf6721bb",
+          "local/SCALAR-FRAME-AUDIT.json": "ccc816649290e9b9e94f489b69bb2d23bb9267bc2055b63e44810cacb11d0e42",
+          "local/WARP-RECIPE-CHECKS.json": "c1a9216a8c5d0e7f6674207a315b9c9900a5fb8736dfad0ca0030d548972930b",
+          "local/WRAPPER-CHECKS.json": "b1b66e6a7e134fb26b0b7799dfe5388b327bd207fd402ed9b0cbfc420c824d40"
+        },
+        "word_sha256": "fec3c120db1a35022944628d34b56a36f2456248c274c2eaba1a325cdc690ce8"
+      }
+    }
+  },
+  "source_implementation_sha256": "9322ff00657c338d214a48a67a76b10c595d884c16cadce91a01f2d441d214dd",
+  "status": "PASS",
+  "total_cpu_seconds": 29.305780155000004,
+  "total_wall_seconds": 14.58647854346782
+}

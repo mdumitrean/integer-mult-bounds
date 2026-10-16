@@ -1,0 +1,752 @@
+{
+  "baseline": {
+    "author": "Mason Hale (mason-hale)",
+    "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+    "kappa": "17215886471978018806049999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+    "pr": 2917
+  },
+  "certificate_summary": [
+    {
+      "acceptance_margin": "260928490084121531777/5000000000000000000000000000000000000000",
+      "complex_lower": "68863547442805920291/40000000000000000000000",
+      "complex_upper": "430397171517537001819/250000000000000000000000",
+      "gain": "3887234612667/100000000000000000000000",
+      "kappa": "17215886860701480072749999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+      "rejection_margin": "273670382595581674767/2000000000000000000000000000000000000000",
+      "seed": 11031,
+      "separator": "86079433331698747197010135313812998494443594813392647428361583696660452196944776922219367/50000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "acceptance_margin": "260928490084121531777/5000000000000000000000000000000000000000",
+      "complex_lower": "68863547442805920291/40000000000000000000000",
+      "complex_upper": "430397171517537001819/250000000000000000000000",
+      "gain": "3887234612667/100000000000000000000000",
+      "kappa": "17215886860701480072749999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+      "rejection_margin": "273670382595581674767/2000000000000000000000000000000000000000",
+      "seed": 29063,
+      "separator": "86079433331698747197010135313812998494443594813392647428361583696660452196944776922219367/50000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "check_categories": [
+    "registration and schema-only amendment",
+    "immutable source archive and original error preservation",
+    "source data hashes/Git blobs and full PINS attribution",
+    "canonical candidate and two-seed identity",
+    "complete local/owner/chart/physical scope",
+    "stored exact rational bracket/separation and headline",
+    "nine finite supplier gates and both outer checkers",
+    "negative controls and resource accounting"
+  ],
+  "checks_passed": 427,
+  "compute": {
+    "review_cpu_seconds": 0.029102106,
+    "validation_all_attempts_cpu_seconds": 57.516665331000006,
+    "validation_v2_cpu_seconds": 29.305780155000004,
+    "validation_v2_wall_seconds": 14.58647854346782
+  },
+  "created_utc": "2026-10-16T12:14:07.571773+00:00",
+  "evidence": [
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/RELEASE-RECEIPT.json",
+      "sha256": "15b634161a9a9c58503bca2a5302796666a143e520c2b918ac43cfa241d1c39e"
+    },
+    {
+      "path": "results/CONTINUATION-01/V1/PREREGISTRATION.json",
+      "sha256": "1f340d4630b3a1a147f3d807c3db624801559f73b994be94c585d32ea1b2ccac"
+    },
+    {
+      "path": "results/CONTINUATION-01/V1/AMENDMENT-v2.json",
+      "sha256": "cb2a3eb092f25d4435f1baad8e03a1be6f51bdb39714821fef0bb52a8a1d1874"
+    },
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/IMPLEMENTATION.json",
+      "sha256": "9322ff00657c338d214a48a67a76b10c595d884c16cadce91a01f2d441d214dd"
+    },
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v1/RELEASE-RECEIPT.json",
+      "sha256": "9e8499e2272b74e8814abab264da8566cb1de9d213ee83ea717656a57101409d"
+    },
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v1/seed-11031/RESULT.json",
+      "sha256": "85349456c4c428f0bb885f9c3ff773b7805df680478bdd26914da4ad3df546b8"
+    },
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v1/seed-29063/RESULT.json",
+      "sha256": "aafe24eff7a8572983a7ab0967f6fcc0cb1ef7dc17e2ddef0930cb60322c9d40"
+    },
+    {
+      "path": "data/continuation-01/pr2917/MANIFEST.json",
+      "sha256": "2efa79d1a44d46ca51b9d35a1392fec87514776585f66d372e20d7ccbbcee764"
+    },
+    {
+      "path": "data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    {
+      "path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/RESULT.json",
+      "sha256": "8a6a15c33854f0dfa123eef66cc12c14c32422784f4bb9f4c7cab52477f11612"
+    },
+    {
+      "path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-29063/RESULT.json",
+      "sha256": "f2d8aa5af97c5f8f3cf54d4a387291f62eb46e99f0362ed7c5b8447cd4ab4546"
+    },
+    {
+      "path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/FILL.json.gz",
+      "sha256": "a5f58050ebf95f0c0798177bf3e0063050796241f0bc05bb7e7a3e4666586f29"
+    },
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-11031/RESULT.json",
+      "sha256": "aa37d0f8f1b55af7ed805363f94e22496b49e10cf21ffcf683308416fd3fc380"
+    },
+    {
+      "path": "research/complex-mixed-coldkernel/vendor/pr558/vendor/pr552/complex-global/vendor531/inputs/data-base/work/complex-nine-native/DATA-PHASES.json",
+      "sha256": "c5916ff312678f12aba403847643fbbc29f643acec60bdf836fa56cd3e8251fa"
+    },
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-29063/RESULT.json",
+      "sha256": "5a58ebba440cce95272d4d4f27b18f5c63c3ce88f7c6c5c7799c546f6cf80ba2"
+    },
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/MEMORY-PROJECTION.json",
+      "sha256": "12e8297f4ad0a67a2ae6faf64e77a6d085d16ffbbb8e33743a4059287fb4eea4"
+    }
+  ],
+  "headline": {
+    "baseline_pr": 2917,
+    "complex_lower": "68863547442805920291/40000000000000000000000",
+    "conditional": true,
+    "improvement": "3887234612667/100000000000000000000000",
+    "improvement_decimal": "3.887234612667E-11",
+    "kappa": "17215886860701480072749999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+    "kappa_decimal": "0.0017215886860701480072749999999999999999999998999999999999999999999999"
+  },
+  "pending_list_reconciliation": [
+    {
+      "evidence": "Both RESULT.statistics.admission.endpoint_admission and root_separation; lower outer b follows strict moment monotonicity.",
+      "intermediate_item": "fresh exact endpoint moment bound",
+      "status": "CLOSED"
+    },
+    {
+      "evidence": "Both RESULT.statistics.outer and independent_balance, plus obligations.outer=PASS_TWO_EXACT_ARITHMETIC_CHECKERS.",
+      "intermediate_item": "fresh modern outer arithmetic",
+      "status": "CLOSED"
+    },
+    {
+      "evidence": "V1-FILL-ADMISSION/v2/RELEASE-RECEIPT.json binds both RESULT hashes, exact implementation, candidate, preregistration and amendment.",
+      "intermediate_item": "new immutable candidate/source/release receipt binding",
+      "receipt_sha256": "15b634161a9a9c58503bca2a5302796666a143e520c2b918ac43cfa241d1c39e",
+      "status": "CLOSED"
+    }
+  ],
+  "preserved_error": {
+    "attempt": "v1",
+    "cpu_seconds": 28.210885176,
+    "reason": "Phase ports count/list schema mismatch; isolated admission_v2 correction; no candidate or threshold changed.",
+    "status": "ERROR"
+  },
+  "remaining_affected_finite_obligations": [],
+  "retained_conditions": {
+    "native_evidence": "The exact unchanged PR2917 native/phase/endpoint receipts and inherited universal block-energy premise are explicitly reused. Full native cache bytes were not available or replayed in this continuation.",
+    "outer_evidence": "Fifty functional inequalities and two arithmetic derivations are fresh; thirteen historical comparisons and unchanged outer mechanisms transfer from the pinned PASS_RELEASE.",
+    "theorem_hypotheses": [
+      "all-size compiler and machine realization",
+      "common labels and mutable-source access",
+      "physical hosting and routing",
+      "precision and fixed-tape contracts",
+      "exact recovery and analytic transfer",
+      "PR559 recurrence correction",
+      "PR589 bit H1-H5 and cited fine-prime/gauge-free theorems"
+    ]
+  },
+  "review_method": "Read-only inspection of immutable receipts, source archives, source data pins and stored exact rational certificate relations. No experimental function, native replay, solver, census or moment engine was rerun.",
+  "reviewer_role": "independent result review by growth_ledger",
+  "schema_version": 1,
+  "scope": "Verified conditional finite improvement over the specifically pinned PR2917 claim. This is source-bound transfer rather than fresh native replay; it is not an all-size theorem, global optimality, selected-frontier change or claim against unreviewed later upstream results. Intermediate pending annotations are reconciled here without altering immutable results.",
+  "source_archives_verified": 58,
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43extra.json.gz",
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Mason Hale (mason-hale)",
+      "author_login": "mason-hale",
+      "bytes": 69818,
+      "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+      "format": "BORROW-WORD",
+      "git_blob": "9be0aa5349dbc8c928a46089a7695e224d0e4d16",
+      "lineage_attribution": "Retain package CREDITS.md/SOURCES.json and every original data/words/PINS.json credit.",
+      "local_path": "data/continuation-01/pr2917/package/data/WORD-base.json.gz",
+      "path": "research/paired-helper-extension/data/WORD-base.json.gz",
+      "pin_key": "research/paired-helper-extension/data/WORD-base.json.gz",
+      "pr": 2917,
+      "relative_path": "data/WORD-base.json.gz",
+      "sha256": "fec3c120db1a35022944628d34b56a36f2456248c274c2eaba1a325cdc690ce8",
+      "treatment": "inert data; source text renamed .txt, never import or execute"
+    },
+    {
+      "author": "Mason Hale (mason-hale)",
+      "author_login": "mason-hale",
+      "bytes": 69814,
+      "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+      "format": "BORROW-WORD",
+      "git_blob": "40b38365ea4b841101405ebd2c4fdcadcb8b9808",
+      "lineage_attribution": "Retain package CREDITS.md/SOURCES.json and every original data/words/PINS.json credit.",
+      "local_path": "data/continuation-01/pr2917/package/data/WORD-extra.json.gz",
+      "path": "research/paired-helper-extension/data/WORD-extra.json.gz",
+      "pin_key": "research/paired-helper-extension/data/WORD-extra.json.gz",
+      "pr": 2917,
+      "relative_path": "data/WORD-extra.json.gz",
+      "sha256": "e4d0c617df85bf8a824ff68310ca3373dc017c1ebf9ea733056a3ee4a784b36f",
+      "treatment": "inert data; source text renamed .txt, never import or execute"
+    }
+  ],
+  "source_data_files_verified": 62,
+  "status": "PASS_CONDITIONAL_SOURCE_BOUND_RELEASE_REVIEW"
+}
