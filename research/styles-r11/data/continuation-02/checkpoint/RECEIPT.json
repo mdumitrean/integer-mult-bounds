@@ -1,0 +1,346 @@
+{
+  "canonical_main": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+  "coverage_limits": [
+    "Open and closed/merged PR title/body snapshots are separate and not atomic; at most40 pages of100 each, with explicit completeness.",
+    "PR file paths, patches, inline review comments and nested implementation code are not searched.",
+    "Recent discussions: latest100 bodies. Required hubs1163/1166/1167: body plus last100 comments and first20 replies per retained comment; pagination flags retained.",
+    "Closed/open duplicates use the newer updated_at record. A text-search miss is not a novelty or nonoverlap certificate.",
+    "A pending PR kappa is an author claim until separately checked; the selected reviewed record remains authoritative for selected status."
+  ],
+  "distinct_prs": 2631,
+  "elapsed_seconds": 35.000175788998604,
+  "errors": [],
+  "files": {
+    "AGENTS.md.gz": {
+      "bytes": 2216,
+      "sha256": "c3a05e190f2b6a30027f12f8b32db30dfeb7d3aff9956227bd50a421761591bf",
+      "source": {
+        "commit": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+        "kind": "git",
+        "path": "AGENTS.md"
+      },
+      "uncompressed_sha256": "2d47ee25f6900efa3bac76f66f59cc6d6e077ed1e7301497ab332668ad288d4c"
+    },
+    "CONTRIBUTING.md.gz": {
+      "bytes": 2808,
+      "sha256": "9ebe0f6663dbf06f7c399b543e8625e4fc893677795c8b064e1f98b2909ce038",
+      "source": {
+        "commit": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+        "kind": "git",
+        "path": "CONTRIBUTING.md"
+      },
+      "uncompressed_sha256": "df5b5646602f42cb5da5844f04ac925182ddcd0f627b9de1c96a5095bb7a277a"
+    },
+    "autoresearch.md.gz": {
+      "bytes": 13769,
+      "sha256": "9a5067c229d39a7079d5c58cf64305c49a610dbced6b664b31c312d398f330dc",
+      "source": {
+        "commit": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+        "kind": "git",
+        "path": "autoresearch.md"
+      },
+      "uncompressed_sha256": "0cf06f58756b37269b99c02ec3102b76720c10bbdc94e755aba39ebe311cb3de"
+    },
+    "certificates__selected-result.json.gz": {
+      "bytes": 4980,
+      "sha256": "6de4cc10dc909194373f401c77a33ccdb8fdb593bb48ea8cb59804de7eec9d34",
+      "source": {
+        "commit": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+        "kind": "git",
+        "path": "certificates/selected-result.json"
+      },
+      "uncompressed_sha256": "bb2eaa58647b353f88d0aec2eafb9d30df1be53589231b23e12ceef3e4bad129"
+    },
+    "closed-prs.json.gz": {
+      "bytes": 3072581,
+      "sha256": "f22705430b33ef8c7a19f1bb16344161bbc420db1667f78911d657721b75d156",
+      "source": {
+        "endpoint": "repos/CrocSwap/integer-mult-bounds/pulls",
+        "kind": "REST",
+        "per_page": 100,
+        "state": "closed"
+      },
+      "uncompressed_sha256": "55f53899de27a5dccbc51d22fe538a95f32d5d1fc700acfa8083a0f334e1c0c9"
+    },
+    "discussion-1163.json.gz": {
+      "bytes": 53183,
+      "sha256": "4babc9916b3394a31521f234b0a928be6879cd4df9abfcf859edb3179a220025",
+      "source": {
+        "kind": "GraphQL",
+        "query": "query { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:1163) {number title body url updatedAt author {login}\n            comments(last:100) {pageInfo {hasPreviousPage startCursor}\n              nodes {id body createdAt updatedAt author {login}\n                replies(first:20) {pageInfo {hasNextPage endCursor}\n                  nodes {id body createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}"
+      },
+      "uncompressed_sha256": "0516d4cbb0aac353d2d162e0e8f66e3aab034eb3d8efbc1f9472c401d2f18dd2"
+    },
+    "discussion-1166.json.gz": {
+      "bytes": 67447,
+      "sha256": "afe83015a9a764da7cf8c35d35dc776aee066f0232af6c4a32b1f5086e149b87",
+      "source": {
+        "kind": "GraphQL",
+        "query": "query { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:1166) {number title body url updatedAt author {login}\n            comments(last:100) {pageInfo {hasPreviousPage startCursor}\n              nodes {id body createdAt updatedAt author {login}\n                replies(first:20) {pageInfo {hasNextPage endCursor}\n                  nodes {id body createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}"
+      },
+      "uncompressed_sha256": "f7f2b1be8e3351d7afd00f6634951d3bc5c3ac99b69d85d23be2e30e1cf78447"
+    },
+    "discussion-1167.json.gz": {
+      "bytes": 72316,
+      "sha256": "fce5862d528ad5b79df93032ba269d9c9338ecf6fd9ac2b99ce83194c2c934ec",
+      "source": {
+        "kind": "GraphQL",
+        "query": "query { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:1167) {number title body url updatedAt author {login}\n            comments(last:100) {pageInfo {hasPreviousPage startCursor}\n              nodes {id body createdAt updatedAt author {login}\n                replies(first:20) {pageInfo {hasNextPage endCursor}\n                  nodes {id body createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}"
+      },
+      "uncompressed_sha256": "e6352440ac8f563fa5c9b359b748cd5b61606e2302efb6c5903335830a88742b"
+    },
+    "docs__research__agent-task-catalog.json.gz": {
+      "bytes": 10711,
+      "sha256": "c0601a541a10e92dd9e5ae8b58d8a93588d54aa3cc08d96d034c8f4c40d6abf0",
+      "source": {
+        "commit": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+        "kind": "git",
+        "path": "docs/research/agent-task-catalog.json"
+      },
+      "uncompressed_sha256": "7d185cd8c2af35988d638d969748ad7b670f902606444dbfc748e4402c340df6"
+    },
+    "docs__research__contribution-review.md.gz": {
+      "bytes": 4298,
+      "sha256": "70090a18ba7fa6017f3d2a496b95cad978bfa498d836ea127b824abba41f3e61",
+      "source": {
+        "commit": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+        "kind": "git",
+        "path": "docs/research/contribution-review.md"
+      },
+      "uncompressed_sha256": "e00877af0ae4ff4327bfa72117a465c3955ec035bec205dfa665a986244a0dd8"
+    },
+    "docs__research__current-status.md.gz": {
+      "bytes": 8880,
+      "sha256": "d6ae9b4852a6e490008671401299fe1c47f3e5e3c2e2987e820969ad66be94e0",
+      "source": {
+        "commit": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+        "kind": "git",
+        "path": "docs/research/current-status.md"
+      },
+      "uncompressed_sha256": "00a08925c51b26d168b8099ddeed659ac4381f7e04f3c7fd0e9de8e71f206823"
+    },
+    "docs__research__pr-ledger.md.gz": {
+      "bytes": 25104,
+      "sha256": "10a4327bb70e1f8cd576baea294f0ef929b61d79578e1b48cec535013b8e4f89",
+      "source": {
+        "commit": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+        "kind": "git",
+        "path": "docs/research/pr-ledger.md"
+      },
+      "uncompressed_sha256": "203fba9f61270930eabf78af35640b5082e5e80c434c81cd57b355bc21fa0130"
+    },
+    "docs__research__research-family-status.md.gz": {
+      "bytes": 4445,
+      "sha256": "531333887d239c6efd17bb048b41b283895649d8f318dc9da9c1865820235862",
+      "source": {
+        "commit": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+        "kind": "git",
+        "path": "docs/research/research-family-status.md"
+      },
+      "uncompressed_sha256": "c37c7e0f6a1134983990e1b3efef55e65239b38be780e8a4cc10f5aefdaf2df5"
+    },
+    "docs__research__research-priority-log.md.gz": {
+      "bytes": 11528,
+      "sha256": "075e46de9c119c76dc4dbfb6b6f16ffe96ab672cd8cdecacbb7e1edb8a6b984f",
+      "source": {
+        "commit": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+        "kind": "git",
+        "path": "docs/research/research-priority-log.md"
+      },
+      "uncompressed_sha256": "442b5a9d8487bb6f08da43efbec9f3897fd9138f1b1887697c4b88b5d0f52685"
+    },
+    "open-prs.json.gz": {
+      "bytes": 724984,
+      "sha256": "a1edf15621cff0291eb8118e227330e76c9942d6ed0773037610c7abcb6955c2",
+      "source": {
+        "endpoint": "repos/CrocSwap/integer-mult-bounds/pulls",
+        "kind": "REST",
+        "per_page": 100,
+        "state": "open"
+      },
+      "uncompressed_sha256": "d746d7af6faa0267207c406b696fcd68c0867fc336a4a752a246ef5295a1caab"
+    },
+    "overlap-index.json.gz": {
+      "bytes": 16105,
+      "sha256": "63d4df25371f1989767de493945c655471100d632e56f193d836dc1ffca5f40f",
+      "source": {
+        "kind": "local-text-index",
+        "terms": [
+          "cross-call",
+          "cross call",
+          "simultaneous",
+          "iterated",
+          "iterative",
+          "multi-exchange",
+          "multi exchange",
+          "fill exchange",
+          "two-role",
+          "2917",
+          "styles-r11",
+          "continuation-01",
+          "paired helper",
+          "helper408"
+        ]
+      },
+      "uncompressed_sha256": "677a3f037fe43c64ec10fac2a158e60cd33d8d03f4ed9201c35c5528e4fc9628"
+    },
+    "recent-discussions.json.gz": {
+      "bytes": 141791,
+      "sha256": "78796d89b4f21baa5e60eec8239bd3699224fa22043bc9d12f07ea2c91271011",
+      "source": {
+        "kind": "GraphQL",
+        "query": "query { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n      discussions(first:100,orderBy:{field:UPDATED_AT,direction:DESC}) {\n        pageInfo {hasNextPage endCursor} nodes {number title body url updatedAt author {login}}\n      }\n    }}"
+      },
+      "uncompressed_sha256": "b3d5d729d629bff12fd9bad626f406fe6bd7771c1198a4dfca470c64ed0eff28"
+    },
+    "scripts__find_overlap.py.txt.gz": {
+      "bytes": 7054,
+      "sha256": "9869cdf7ff85cd522dbe2c07bbddd18b784d391823f334b7f27beb4bfbd4ae3b",
+      "source": {
+        "commit": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+        "kind": "git",
+        "path": "scripts/find_overlap.py"
+      },
+      "uncompressed_sha256": "a11289dc1e0ce3500bddbb28f36fd24d15042808cdc422f14c2564658dbefb61"
+    }
+  },
+  "finished_utc": "2026-10-16T12:57:10.209137+00:00",
+  "guidance": [
+    {
+      "file": "AGENTS.md.gz",
+      "git_blob": "00c96932e109c701310f4910057bae2d6cec0c0f",
+      "path": "AGENTS.md",
+      "sha256": "2d47ee25f6900efa3bac76f66f59cc6d6e077ed1e7301497ab332668ad288d4c"
+    },
+    {
+      "file": "CONTRIBUTING.md.gz",
+      "git_blob": "e51435543687f1bd88ab22248082dc689ce8b853",
+      "path": "CONTRIBUTING.md",
+      "sha256": "df5b5646602f42cb5da5844f04ac925182ddcd0f627b9de1c96a5095bb7a277a"
+    },
+    {
+      "file": "autoresearch.md.gz",
+      "git_blob": "c0f80834ca3ed0700d125d747f04478cea33198a",
+      "path": "autoresearch.md",
+      "sha256": "0cf06f58756b37269b99c02ec3102b76720c10bbdc94e755aba39ebe311cb3de"
+    },
+    {
+      "file": "docs__research__agent-task-catalog.json.gz",
+      "git_blob": "889b95d936746df124872133ae1e7cc339adcb92",
+      "path": "docs/research/agent-task-catalog.json",
+      "sha256": "7d185cd8c2af35988d638d969748ad7b670f902606444dbfc748e4402c340df6"
+    },
+    {
+      "file": "docs__research__research-priority-log.md.gz",
+      "git_blob": "7d845c5e42c15806c9b3c46d93ce66b3cd82f6cb",
+      "path": "docs/research/research-priority-log.md",
+      "sha256": "442b5a9d8487bb6f08da43efbec9f3897fd9138f1b1887697c4b88b5d0f52685"
+    },
+    {
+      "file": "docs__research__research-family-status.md.gz",
+      "git_blob": "1a2195004c5d681679279f0095b7964fb14a01e6",
+      "path": "docs/research/research-family-status.md",
+      "sha256": "c37c7e0f6a1134983990e1b3efef55e65239b38be780e8a4cc10f5aefdaf2df5"
+    },
+    {
+      "file": "docs__research__current-status.md.gz",
+      "git_blob": "4e0a8b7cdacc1d9680f7f81d03624118bb20416d",
+      "path": "docs/research/current-status.md",
+      "sha256": "00a08925c51b26d168b8099ddeed659ac4381f7e04f3c7fd0e9de8e71f206823"
+    },
+    {
+      "file": "docs__research__contribution-review.md.gz",
+      "git_blob": "6d653737feb8942e0caad58e46c4bbde81250cd4",
+      "path": "docs/research/contribution-review.md",
+      "sha256": "e00877af0ae4ff4327bfa72117a465c3955ec035bec205dfa665a986244a0dd8"
+    },
+    {
+      "file": "docs__research__pr-ledger.md.gz",
+      "git_blob": "56ffc8535b1758dac5a72ab836fb7634196a0ade",
+      "path": "docs/research/pr-ledger.md",
+      "sha256": "203fba9f61270930eabf78af35640b5082e5e80c434c81cd57b355bc21fa0130"
+    },
+    {
+      "file": "certificates__selected-result.json.gz",
+      "git_blob": "b1fea0c94436b236cc2b7d41a7be032811b94c81",
+      "path": "certificates/selected-result.json",
+      "sha256": "bb2eaa58647b353f88d0aec2eafb9d30df1be53589231b23e12ceef3e4bad129"
+    },
+    {
+      "file": "scripts__find_overlap.py.txt.gz",
+      "git_blob": "9afbfa99e5d2fd89abff02da1680b6176cbbba4b",
+      "path": "scripts/find_overlap.py",
+      "sha256": "a11289dc1e0ce3500bddbb28f36fd24d15042808cdc422f14c2564658dbefb61"
+    }
+  ],
+  "overlap_matches": 182,
+  "priority_revision": 5,
+  "recorded_utc": "2026-10-16T12:56:35.209121+00:00",
+  "remote": {
+    "closed_prs": {
+      "complete": true,
+      "count": 2159,
+      "error": null,
+      "file": "closed-prs.json.gz",
+      "finished_utc": "2026-10-16T12:57:05.105253+00:00",
+      "pages": 22,
+      "started_utc": "2026-10-16T12:56:40.678846+00:00"
+    },
+    "discussion_1163": {
+      "commentPageInfo": {
+        "hasPreviousPage": false,
+        "startCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0xM1QyMjo1NjoyNlrOASCOlQ=="
+      },
+      "comments": 73,
+      "truncated_reply_threads": 0,
+      "updatedAt": "2026-10-16T02:54:20Z"
+    },
+    "discussion_1166": {
+      "commentPageInfo": {
+        "hasPreviousPage": true,
+        "startCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0xNVQxMjoyOTowNFrOASEjfg=="
+      },
+      "comments": 100,
+      "truncated_reply_threads": 0,
+      "updatedAt": "2026-10-16T12:55:36Z"
+    },
+    "discussion_1167": {
+      "commentPageInfo": {
+        "hasPreviousPage": true,
+        "startCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0xNFQxMzozMToxNlrOASDGDw=="
+      },
+      "comments": 100,
+      "truncated_reply_threads": 0,
+      "updatedAt": "2026-10-16T08:17:06Z"
+    },
+    "open_prs": {
+      "complete": true,
+      "count": 472,
+      "error": null,
+      "file": "open-prs.json.gz",
+      "finished_utc": "2026-10-16T12:56:40.678761+00:00",
+      "pages": 5,
+      "started_utc": "2026-10-16T12:56:35.275505+00:00"
+    },
+    "recent_discussions": {
+      "count": 100,
+      "pageInfo": {
+        "endCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0xNVQwNDozMDowNVrOAKg3iA==",
+        "hasNextPage": true
+      }
+    }
+  },
+  "repository": "CrocSwap/integer-mult-bounds",
+  "schema_version": 1,
+  "scope": "Metadata/text overlap only; no scientific experiments or fetched-code execution.",
+  "script_sha256": "765a7164da7c8cf7ff44538868f922d9064d727fa04d9955175e243f90517a11",
+  "selected_result": {
+    "decimal": "0.001672660197076918",
+    "kappa": "836330098538459/500000000000000000",
+    "reproduce": "make frontier1094-verify",
+    "review": "docs/research/community-batch1099-review.md",
+    "scope": "Finite composition under inherited all-size/compiler, common-label/mutable-source, whole-call hosting, precision/tape, analytic and bit H1-H5 assumptions. Not a full Lean multiplication theorem.",
+    "source_manifest": "research/community-frontier1094-audit/SELECTED-SOURCE.json",
+    "status": "Maintainer-reviewed conditional finite construction; see the integration receipt for publication and PR resolution status"
+  }
+}

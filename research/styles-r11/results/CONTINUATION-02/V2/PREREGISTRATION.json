@@ -1,0 +1,74 @@
+{
+  "baseline": {
+    "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+    "manifest": "data/continuation-01/pr2917/MANIFEST.json",
+    "manifest_sha256": "2efa79d1a44d46ca51b9d35a1392fec87514776585f66d372e20d7ccbbcee764",
+    "pr": 2917
+  },
+  "controls": [
+    "Retain admission_v2 controls and rejecting mutations.",
+    "Candidate fill and independently supplied full profile must agree.",
+    "Exact outward bounds at a rational separator establish oldmoment>1 and newmoment<1.",
+    "No inference from scalar savings or decimal root proposals alone.",
+    "Packing-cap calculation certified at rational brackets using the actual fixed-dispatch average local profile and coverage law."
+  ],
+  "created_utc": "2026-10-16T12:58:10.431320+00:00",
+  "decision_scope": "Conditional finite \u03ba improvement only, no selected-frontier change, global optimality or independent-human-review claim.",
+  "experiment": "V2-BATCH-ADMISSION",
+  "failure": "Any failed obligation is ERROR or EXPLORATORY, never a scientificNULL. Preserve failed attempts. Any repair needs a separate frozen amendment and attempt; count all CPU.",
+  "hard_stop_utc": "2026-10-16T13:53:31.469347+00:00",
+  "lane": "validation",
+  "milestone": "CONTINUATION-02/V2",
+  "packing_cap": "Report broad halving R51 and unchanged-template R48 relaxation caps for the fixed dispatch, with exact rational root brackets and achieved primitive fraction C/cap interval. Do not use the historical kappa=a/(1+a) conversion for the current outer ledger. Do not claim a universal heterogeneous-provider bound.",
+  "pass_bar": "Both seeds independently pass all affected finite owner/chart/stock/prefix/cost/root obligations, exact common separator against the starting CONT01 profile, two independent outer arithmetic checkers, and exact headline improvement over CONT01. Candidate/profile/headline agree. All unchanged source evidence and inherited conditions remain explicit.",
+  "resources": {
+    "allocated_cores": 128,
+    "cpu_budget_seconds_family": 7200,
+    "each_sweep": "Rebuild current assignment indexes in parent once; fork immutable state to workers.",
+    "parallelism": "pipeline/pool.py only; no simultaneous pools",
+    "parent_load_once": [
+      "words",
+      "source fill",
+      "plan",
+      "template"
+    ],
+    "private_python_bytecode_namespace": true,
+    "project_memory_before_every_launch": true,
+    "reserved_cores": 8,
+    "results_total_bytes_cap": 209715200,
+    "round_cpu_budget_seconds": 14400,
+    "rss_gib": 6,
+    "solver_calls": 0,
+    "timeout_seconds_per_task": 600,
+    "workers": "min(120,floor(RAM_GiB/4))"
+  },
+  "round": "CONTINUATION-02",
+  "round_started_utc": "2026-10-16T12:53:31.469347+00:00",
+  "schema_version": 1,
+  "science_launch_cutoff_utc": "2026-10-16T13:38:31.469347+00:00",
+  "seeds": [
+    12037,
+    31069
+  ],
+  "selection": "Only the final canonical candidate from confirmed C4PASS; no alternate candidate selection based on admission or root values.",
+  "source_attribution": "Retain every original data/words/PINS.json author, Mason Hale PR2917 and its complete predecessor/source attribution, and the CONTINUATION-01 source credits in every result.",
+  "source_reuse": "Unchanged PR2917 native programs retain authenticated prior native receipts. Native cache bytes are not freshly replayed. Full changed finite fill/supplier and exact outer arithmetic checks run anew. List every inherited all-size/compiler/machine/routing/precision/analytic/bit condition.",
+  "starting_candidate": {
+    "claim_path": "results/CONTINUATION-01/CLAIM.json",
+    "claim_sha256": "f95c78e334fcebd1b2eb81379a7bda0e05e9efe5c2bf1a7127f88ca7bcdead44",
+    "headline": {
+      "baseline_pr": 2917,
+      "complex_lower": "68863547442805920291/40000000000000000000000",
+      "conditional": true,
+      "improvement": "3887234612667/100000000000000000000000",
+      "improvement_decimal": "3.887234612667E-11",
+      "kappa": "17215886860701480072749999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+      "kappa_decimal": "0.0017215886860701480072749999999999999999999998999999999999999999999999"
+    },
+    "path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/FILL.json.gz",
+    "profile_path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/PROFILE.json",
+    "profile_sha256": "13388fda242c98a9466ff9931b59a08a76f4f7874f80b261fb893ea5fdd67bbf",
+    "sha256": "a5f58050ebf95f0c0798177bf3e0063050796241f0bc05bb7e7a3e4666586f29"
+  },
+  "state": "FROZEN"
+}

@@ -1,0 +1,15 @@
+{
+  "comments": 15,
+  "pageInfo": {
+    "hasPreviousPage": false,
+    "startCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0xNVQxODoxMjoyOVrOASE7tA=="
+  },
+  "path": "research/styles-r11/data/continuation-02/checkpoint/discussion-2612.json.gz",
+  "query": "query { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") { discussion(number:2612) { number title body url updatedAt author {login} comments(last:100) {pageInfo {hasPreviousPage startCursor} nodes {id body url createdAt updatedAt author {login} replies(first:20) {pageInfo {hasNextPage endCursor} nodes {id body url createdAt updatedAt author {login}}}}}}}}",
+  "recorded_utc": "2026-10-16T12:58:49.302925+00:00",
+  "schema_version": 1,
+  "scope": "Read-only canonical mechanism discussion body plus last100comments, first20replies per comment. No scientific execution; no remote writes.",
+  "sha256": "2a29a330a4a3a122e17d020b3ba3599eeaab176447979f0f4f39659b0473d847",
+  "truncated_reply_threads": 0,
+  "uncompressed_sha256": "30dd699baeb2af6b2c99c5e9ea0e935af63bc9b2fef3531693424110d2329d86"
+}

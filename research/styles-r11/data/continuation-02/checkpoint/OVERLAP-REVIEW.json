@@ -1,0 +1,270 @@
+{
+  "active_competing_claim": {
+    "coverage_interpretation": "The displayed concrete construction is four sequential rank8 extractions at the same hyperplane normal45. A broad single-further-extraction sentence does not explicitly specify rank7 or codim2 coverage. No nonoverlap guarantee is inferred.",
+    "local_cap_is_admitted_bound": false,
+    "local_path_or_public_artifact": "LOCAL-ONLY; no local path, raw witness or unpublished commit is linked. Public predecessor2930 is linked.",
+    "quoted_local_cap": "0.0017228172707428495209",
+    "source": {
+      "author": {
+        "login": "mdumitrean"
+      },
+      "body": "**CLAIM** (expires 2026-10-16 15:30 UTC): joint paired extractions on PR2917's final words, packed at their cap. Follows our [PR #2930](https://github.com/CrocSwap/integer-mult-bounds/pull/2930) and answers PR2917's open question 1.\n\n```text\nStatus / UTC update / priority revision: CLAIM, 2026-10-16 12:55 UTC, revision 5\nConcrete question and changed premise: single further paired extractions on PR2917's final 82-endpoint words are all below\n  break-even (best: normal 7/42, pivot 233, {1:+3,2:+2,4:-2}, -1.0e-7 at the cap of the changed inventory). Changed premise:\n  extractions at the SAME hyperplane reuse the partner frame lowering paid by the first one. Four sequential extractions at\n  normal 45 (pivots 249, 267, 251, 265; E_45 = <256,128,64,33,16,9,5,2>) give a certified cumulative local delta\n  {1:+18,2:-8,3:+6,4:-6} per call with four 9->8 width reductions and four more charged private buffers (86).\nEstablished result and evidence status: LOCAL, author-checked (AI-assisted). Every step: exact two-sided certificate\n  (PR2908/PR2917 structure.py), certified optimal frames, PR2833 auditor PASS on both providers; exact relaxation cap of the\n  new inventory {4:26,5:2,7:62,8:100,9:218}: 0.0017228172707428495209 (+3.17e-7 over PR2930).\nPublic artifact URL + exact commit, or LOCAL-ONLY: LOCAL-ONLY; cap-attaining fill and complete admission running.\nNext useful task, success/stop test and rough runtime: success = complete fresh-native admission strictly above PR2930;\n  stop with a FINDING if the fill or any admission stage rejects. ~1-2 h.\nActive claim / expiry: this claim / 2026-10-16 15:30 UTC.\n```\n\nCredit: Jeremy Diviney (PR2908) for the paired extraction and structural certificate; Mason Hale (PR2917) for the nine-step words and composition tooling; Jeremy Kothe (PR2894/2833); Yiyang Lu (PR2857/2848). Marius-Paul Dumitrean, with substantial AI assistance (Claude Code).",
+      "createdAt": "2026-10-16T12:35:37Z",
+      "id": "DC_kwDOU-508s4BIYNz",
+      "replies": {
+        "nodes": [],
+        "pageInfo": {
+          "endCursor": null,
+          "hasNextPage": false
+        }
+      },
+      "updatedAt": "2026-10-16T12:35:37Z",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18973555"
+    }
+  },
+  "coverage": {
+    "closed_merged": {
+      "complete": true,
+      "count": 2159,
+      "error": null,
+      "file": "closed-prs.json.gz",
+      "finished_utc": "2026-10-16T12:57:05.105253+00:00",
+      "pages": 22,
+      "started_utc": "2026-10-16T12:56:40.678846+00:00"
+    },
+    "discussion_2612_comments": 15,
+    "discussion_2612_has_earlier_omitted": false,
+    "discussion_2612_truncated_replies": 0,
+    "distinct_prs": 2631,
+    "hubs": {
+      "1163": {
+        "commentPageInfo": {
+          "hasPreviousPage": false,
+          "startCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0xM1QyMjo1NjoyNlrOASCOlQ=="
+        },
+        "comments": 73,
+        "truncated_reply_threads": 0,
+        "updatedAt": "2026-10-16T02:54:20Z"
+      },
+      "1166": {
+        "commentPageInfo": {
+          "hasPreviousPage": true,
+          "startCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0xNVQxMjoyOTowNFrOASEjfg=="
+        },
+        "comments": 100,
+        "truncated_reply_threads": 0,
+        "updatedAt": "2026-10-16T12:55:36Z"
+      },
+      "1167": {
+        "commentPageInfo": {
+          "hasPreviousPage": true,
+          "startCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0xNFQxMzozMToxNlrOASDGDw=="
+        },
+        "comments": 100,
+        "truncated_reply_threads": 0,
+        "updatedAt": "2026-10-16T08:17:06Z"
+      }
+    },
+    "limits": [
+      "Open and closed/merged PR title/body snapshots are separate and not atomic; at most40 pages of100 each, with explicit completeness.",
+      "PR file paths, patches, inline review comments and nested implementation code are not searched.",
+      "Recent discussions: latest100 bodies. Required hubs1163/1166/1167: body plus last100 comments and first20 replies per retained comment; pagination flags retained.",
+      "Closed/open duplicates use the newer updated_at record. A text-search miss is not a novelty or nonoverlap certificate.",
+      "A pending PR kappa is an author claim until separately checked; the selected reviewed record remains authoritative for selected status."
+    ],
+    "open": {
+      "complete": true,
+      "count": 472,
+      "error": null,
+      "file": "open-prs.json.gz",
+      "finished_utc": "2026-10-16T12:56:40.678761+00:00",
+      "pages": 5,
+      "started_utc": "2026-10-16T12:56:35.275505+00:00"
+    },
+    "recent_discussions": {
+      "count": 100,
+      "pageInfo": {
+        "endCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0xNVQwNDozMDowNVrOAKg3iA==",
+        "hasNextPage": true
+      }
+    }
+  },
+  "historical_exchange_overlap": [
+    {
+      "author": "navinor",
+      "head": "48ee04ee708081c8713e8868a370bbbf5aa099e1",
+      "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/1790",
+      "number": 1790,
+      "state": "closed",
+      "title": "Selected PR1094: complete two-role whole-helper swap census (no improving swap)",
+      "updated_at": "2026-10-15T19:04:53Z"
+    },
+    {
+      "author": "navinor",
+      "head": "d8d6244df98271c91f57de1e95d0599226839837",
+      "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2145",
+      "number": 2145,
+      "state": "closed",
+      "title": "Selected packing: all 21,886 cross-call 0,1,7 to 0,0,8 cycles fail timing",
+      "updated_at": "2026-10-15T19:02:45Z"
+    },
+    {
+      "author": "navinor",
+      "head": "0d8d4be2b8093e809c4c422849c486532f6ee1c1",
+      "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/876",
+      "number": 876,
+      "state": "closed",
+      "title": "Scoped negative result: simultaneous full pair/triple exchanges do not beat SW4 (seed 29)",
+      "updated_at": "2026-10-15T19:03:56Z"
+    },
+    {
+      "author": "Dugongue",
+      "head": "34328b1d5e5bebac62d5cabec993dfbfd7b2123f",
+      "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2863",
+      "number": 2863,
+      "state": "open",
+      "title": "Attain the fixed-word packing optimum: conditional \u03ba \u2248 0.0017201008054",
+      "updated_at": "2026-10-16T04:47:29Z"
+    }
+  ],
+  "independent_frame_audit": {
+    "limits": "Reports frame/ledger and reverse-inverse syntax only; not operator/zero-buffer/native/allocation/outer admission.",
+    "reported_scope": "Set-based GF2 frame/accounting reconstruction on both providers, four parent/final words, nine extractions, thirteen refits. Delta9H1+18H3-18H4, rankmass5179to5170, widths3323to3314, buffers73to82. Helper499 scale refit separately charged.",
+    "source": {
+      "author": "ToikY",
+      "head": "5c6c32db4449aa661aca3c37416df0d7593908bd",
+      "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2932",
+      "number": 2932,
+      "state": "open",
+      "title": "Independently audit PR2917's paired-helper frame ledger",
+      "updated_at": "2026-10-16T12:27:25Z"
+    }
+  },
+  "main": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+  "metadata_cutoff": {
+    "mechanism_discussion_fetched_utc": "2026-10-16T12:58:49.302925+00:00",
+    "pr2930_files_finished_utc": "2026-10-16T13:00:50.742417+00:00",
+    "snapshot_finished_utc": "2026-10-16T12:57:10.209137+00:00",
+    "snapshot_started_utc": "2026-10-16T12:56:35.209121+00:00"
+  },
+  "native_leads": [
+    {
+      "scope": "Stage3/stage2 stopped-range audit; stock coefficient unresolved, no changed complex supplier.",
+      "source": {
+        "author": "hevlyo",
+        "head": "706067cec10da4ecb3fc83e51d52396b76f53c0f",
+        "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2931",
+        "number": 2931,
+        "state": "open",
+        "title": "Audit: native stage 3 lands in stage 2's stopped range",
+        "updated_at": "2026-10-16T12:20:40Z"
+      }
+    },
+    {
+      "scope": "Selected callback backing theorem; numerical/program/physical/total reserve and supplier admission still open.",
+      "source": {
+        "author": "petalas",
+        "head": "f837237f2a8432cd41a65be1b281a29d11d8834b",
+        "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2935",
+        "number": 2935,
+        "state": "open",
+        "title": "Prove exact joint continuation backing for fixed selected programs",
+        "updated_at": "2026-10-16T12:27:18Z"
+      }
+    },
+    {
+      "scope": "Selected native ADD backing joint theorem; no full reserve, supplier or kappa.",
+      "source": {
+        "author": "petalas",
+        "head": "70530e39253f507f3773e48a0b9e6484c3143835",
+        "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2923",
+        "number": 2923,
+        "state": "open",
+        "title": "Prove joint numerical and countdown backing during native ADD",
+        "updated_at": "2026-10-16T11:24:12Z"
+      }
+    },
+    {
+      "scope": "Conditional terminal native source-response factorization; no paid decoder or invoice reduction.",
+      "source": {
+        "author": "DLamdata",
+        "head": "f122d255c4cdb0714c079d8e91b76bd7a34da23e",
+        "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2907",
+        "number": 2907,
+        "state": "closed",
+        "title": "Prove conditional native terminal source-response factorization",
+        "updated_at": "2026-10-16T11:54:54Z"
+      }
+    }
+  ],
+  "priority_revision": 5,
+  "rank7_scope_comparison": {
+    "caveat": "Metadata cannot exclude unpublished work, unsearched PR implementation text or omitted older discussion comments; active broad paired-extraction claim remains credited.",
+    "changed_premise": "Other helpers on PR2917 final82-endpoint words; rank7 codim2 frames whose dual2-plane meets anchors7/42/45; excludehelper408.",
+    "finite_domain_note": "Anchors7xor42=45. The three255-plane families share the same plane<span7,42>, yielding763 distinct dual2-planes. This is a combinatorial domain count, not a candidate experiment.",
+    "metadata_finding": "No explicit exhaustion of this changed premise found in retained corpus.",
+    "obstruction": "Fixed PR2894 middle, helper408 original rank7 endpoint, protected entrances and target-free terminal support; all scalar input/output basis choices.",
+    "released_obstruction": {
+      "author": "RossRichardson",
+      "head": "9360ba7312cf8961e672e9eb26c612719028d39d",
+      "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2918",
+      "number": 2918,
+      "state": "closed",
+      "title": "Exclude rank-seven helper408 extraction at the fixed terminal cut",
+      "updated_at": "2026-10-16T12:05:57Z"
+    }
+  },
+  "receipts": {
+    "FOCUS-RECEIPT.json": "41b523457d8401aa557aa6f76ada58451adbc769a3a56065ee731d348eb65ffd",
+    "RECEIPT.json": "90156aa33ee2e16e7012d47396acd58649e1f8bbb7c777664aae2df6cd7a1a72",
+    "pr2930/ACQUISITION.json": "262eded8a5178e8d3a7029ed0c5d0d6af0bb6947d8d9eeb76020f378e8988a19"
+  },
+  "recommended_handoff": "Retire unchanged2917 fill extension as UNRUN/superseded, never NULL. A bounded rank7 changed-inventory screen is a complementary explicitly narrowed question; only exact cap improvement plus complete candidate admission can establish any gain.",
+  "recorded_utc": "2026-10-16T13:06:27.335795+00:00",
+  "schema_version": 1,
+  "scope": "Read-only source and metadata comparison. No scientific functions, controls, solvers, candidate tests, native chains, or fetched code were executed.",
+  "selected_reviewed_result": {
+    "decimal": "0.001672660197076918",
+    "kappa": "836330098538459/500000000000000000",
+    "reproduce": "make frontier1094-verify",
+    "review": "docs/research/community-batch1099-review.md",
+    "scope": "Finite composition under inherited all-size/compiler, common-label/mutable-source, whole-call hosting, precision/tape, analytic and bit H1-H5 assumptions. Not a full Lean multiplication theorem.",
+    "source_manifest": "research/community-frontier1094-audit/SELECTED-SOURCE.json",
+    "status": "Maintainer-reviewed conditional finite construction; see the integration receipt for publication and PR resolution status"
+  },
+  "source_credit": {
+    "current_cap": "Marius-Paul Dumitrean, PR2930.",
+    "original_word_attribution": "../../words/PINS.json remains frozen; all original and continuation01 source credit must be retained in downstream results.",
+    "packing_and_audit": "Dugongue, PR2863/2839; Tekalign independent owner/admission.",
+    "paired_word": "Mason Hale, PR2917; Jeremy Diviney, PR2908; Jeremy Kothe, PR2894/2833; Yiyang Lu, PR2857/2848.",
+    "retained_source_documents": [
+      "pr2930/CREDITS.md",
+      "pr2930/NOTICE",
+      "pr2930/SOURCES.json",
+      "pr2930/PINS.json",
+      "pr2930/ALLOCATION-PINS.json"
+    ]
+  },
+  "strongest_relevant_public_claim": {
+    "cap_path": "pr2930/certificates/RELAX-CAP.json",
+    "claim_path": "pr2930/CLAIM.json",
+    "claimed_kappa_decimal": "0.0017224999064432745643569999999999999999999899999999999999999999999999",
+    "conditional": true,
+    "fixed_scope": "PR2917 unchanged provider words, T74 chronology, 82 buffers, capacities8/16/32/48, one idle child per bin,1163 count-vector patterns.",
+    "implication": "The reported cap-attaining allocation supersedes continuation01 and removes the rationale for another unchanged-inventory exchange census targeting a strict improvement over2930. Changed words, capacities, chronology or coverage contracts are outside the fixed-word cap.",
+    "review_status": "Author-checked pending PR; locally authenticated source bytes, not independently replayed scientific certificate.",
+    "root_bracket": [
+      "0.001722499906443274564357",
+      "0.0017224999064432745643571"
+    ],
+    "source": {
+      "author": "mdumitrean",
+      "head": "81f3b5d12977eba09e06fbff729167d59faabe90",
+      "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2930",
+      "number": 2930,
+      "state": "open",
+      "title": "Conditional \u03ba \u2248 0.0017224999064433: cap-attaining allocation of #2917's unchanged words (+9.11e-7)",
+      "updated_at": "2026-10-16T12:18:36Z"
+    }
+  }
+}

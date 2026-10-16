@@ -1,0 +1,48 @@
+{
+  "experiments": [
+    {
+      "confirmed": false,
+      "cpu_seconds": 0,
+      "disposition": "Registered but not executed: fresh PR2930 reports a cap-attaining allocation of the unchanged source words, so this fixed-word exchange route cannot meet the new competitive target if that source certificate holds. Preserve preregistration; this is not a scientific NULL.",
+      "execution": "UNRUN",
+      "id": "C4-BATCHED-CROSS-CALL",
+      "lane": "constructive-fill",
+      "preregistration": "results/CONTINUATION-02/C4/PREREGISTRATION.json",
+      "status": "EXPLORATORY"
+    },
+    {
+      "confirmed": false,
+      "cpu_seconds": 0,
+      "disposition": "Registered but not executed: fresh PR2930 reports a cap-attaining allocation of the unchanged source words, so this fixed-word exchange route cannot meet the new competitive target if that source certificate holds. Preserve preregistration; this is not a scientific NULL.",
+      "execution": "UNRUN",
+      "id": "V2-BATCH-ADMISSION",
+      "lane": "validation",
+      "preregistration": "results/CONTINUATION-02/V2/PREREGISTRATION.json",
+      "status": "EXPLORATORY"
+    },
+    {
+      "confirmed": false,
+      "id": "G2-ANCHORED-RANK7",
+      "lane": "constructive-word",
+      "preregistration": "results/CONTINUATION-02/G2/PREREGISTRATION.json",
+      "status": "planned"
+    }
+  ],
+  "lane_status": {
+    "constructive-fill": {
+      "consecutive_confirmed_nulls": 0,
+      "prior_experiment": "CONTINUATION-01/C3PASS",
+      "stopped": false
+    },
+    "constructive-word": {
+      "consecutive_confirmed_nulls": 0,
+      "prior_experiment": "CONTINUATION-01/G1UNRUN",
+      "stopped": false
+    }
+  },
+  "no_active_experiments": true,
+  "round": "CONTINUATION-02",
+  "round_cpu_budget_seconds": 14400,
+  "schema_version": 1,
+  "status": "PIVOT_REGISTERED"
+}

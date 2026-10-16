@@ -1,0 +1,82 @@
+{
+  "baseline": {
+    "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+    "manifest": "data/continuation-01/pr2917/MANIFEST.json",
+    "manifest_sha256": "2efa79d1a44d46ca51b9d35a1392fec87514776585f66d372e20d7ccbbcee764",
+    "pr": 2917
+  },
+  "batch_selection": "Greedily accept an edge iff both its calls and both its physical bins are disjoint from every earlier accepted edge. Selection is sufficient for commutation; it is not claimed maximum-weight or maximum-cardinality.",
+  "changed_hypothesis": "Replace the prior one-swap candidate restriction by a canonical compatible batch and at most eight iterations on its updated literal fill. The word/dispatch/native programs remain fixed.",
+  "controls": [
+    "Unchanged starting admitted fill and published source binding accepted.",
+    "Original C3 indexed/direct guard parity128seeded pairs plus every selected edge each sweep.",
+    "Known single exchange and synthetic compatible disjoint batch accepted; shared-bin/shared-call candidate batches rejected by the compatibility guard.",
+    "Overcapacity, invalid window, duplicate physical family and equal-width nonimprovement controls.",
+    "Fresh complete literal audit of every resulting batch: complete role inventory, windows, capacity, offsets and physical family injectivity.",
+    "Aggregate complete profile delta equals sum of exact two-bin deltas, conserved4816512rank mass, no increased positive idle count, maxrank48."
+  ],
+  "created_utc": "2026-10-16T12:58:10.431320+00:00",
+  "domain": "At each enrolled state enumerate every unordered pair of roles from distinct calls: choose(666,2)*408^2=36862620480. Eight-call blocks,84shards perseed; all accepted exact indexed edges retained, never sampled.",
+  "edge_order": "Sort every accepted edge by (-integer_squared_residual_gain,min_canonical_role,max_canonical_role). Seed changes traversal only.",
+  "edge_predicate": "Same exact C3 capacity, reciprocal window and simultaneous physical-family guards. Orient by higher width a>b. With d=a-b, require different bins,0<=rA+d<=capA,0<=rB-d<=capB,d*(rA-rB+d)>0. Equal-width analytically nonimproving.",
+  "experiment": "C4-BATCHED-CROSS-CALL",
+  "hard_stop_utc": "2026-10-16T13:53:31.469347+00:00",
+  "incomplete": "Missing shards, failed controls, edge truncation, resource exhaustion, a generation mismatch or deadline gives ERROR/TIMEOUT/EXPLORATORY, never scientificPASS/NULL. Preserve the best completed candidate as exploratory only.",
+  "iteration": "Both complete seed censuses/reducers must agree on counts, canonical selected edges, full profile and canonical fill bytes before installing the next parent state. Stop at first complete zero-edge state or after8completed sweeps. Retain every generation checkpoint; no adaptive extra sweeps.",
+  "lane": "constructive-fill",
+  "maximum_sweeps": 8,
+  "milestone": "CONTINUATION-02/C4",
+  "null_bar": "The initial complete census has zero accepted edges, all controls pass and secondseed agrees. NULL is limited to this positive two-role cross-call exchange family on the exact starting fill. Later terminal zero-edge sweeps are stopping evidence inside a successful family, not separate NULL experiments.",
+  "pass_bar": "The registered path completes (8sweeps or first full zero-edge census), all controls and coverage checks pass, at least one new strict exchange beyond the starting CONT01 fill, and both seeds agree exactly. This is constructive candidate PASS; V2 admission is mandatory before any \u03ba improvement claim.",
+  "pattern_status": "Constructive registered continuation, not a pattern claim. PLAN section6 five-criterion pattern bar unchanged; no original pattern result is promoted.",
+  "proof": "Each selected edge is strict two-bin majorization. Disjoint bins make all occupancy and profile deltas independent; disjoint calls make simultaneous family replacement independent. Their sum preserves rank mass and lowers every p-power moment for0<p<1. All baseline source constraints and a fresh full literal audit remain mandatory.",
+  "resources": {
+    "allocated_cores": 128,
+    "cpu_budget_seconds_family": 7200,
+    "each_sweep": "Rebuild current assignment indexes in parent once; fork immutable state to workers.",
+    "parallelism": "pipeline/pool.py only; no simultaneous pools",
+    "parent_load_once": [
+      "words",
+      "source fill",
+      "plan",
+      "template"
+    ],
+    "private_python_bytecode_namespace": true,
+    "project_memory_before_every_launch": true,
+    "reserved_cores": 8,
+    "results_total_bytes_cap": 209715200,
+    "round_cpu_budget_seconds": 14400,
+    "rss_gib": 6,
+    "solver_calls": 0,
+    "timeout_seconds_per_task": 300,
+    "workers": "min(120,floor(RAM_GiB/4))"
+  },
+  "round": "CONTINUATION-02",
+  "round_started_utc": "2026-10-16T12:53:31.469347+00:00",
+  "schema_version": 1,
+  "science_launch_cutoff_utc": "2026-10-16T13:38:31.469347+00:00",
+  "seeds": [
+    12037,
+    31069
+  ],
+  "source_attribution": "Retain every original data/words/PINS.json author, Mason Hale PR2917 and its complete predecessor/source attribution, and the CONTINUATION-01 source credits in every result.",
+  "starting_candidate": {
+    "claim_path": "results/CONTINUATION-01/CLAIM.json",
+    "claim_sha256": "f95c78e334fcebd1b2eb81379a7bda0e05e9efe5c2bf1a7127f88ca7bcdead44",
+    "headline": {
+      "baseline_pr": 2917,
+      "complex_lower": "68863547442805920291/40000000000000000000000",
+      "conditional": true,
+      "improvement": "3887234612667/100000000000000000000000",
+      "improvement_decimal": "3.887234612667E-11",
+      "kappa": "17215886860701480072749999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+      "kappa_decimal": "0.0017215886860701480072749999999999999999999998999999999999999999999999"
+    },
+    "path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/FILL.json.gz",
+    "profile_path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/PROFILE.json",
+    "profile_sha256": "13388fda242c98a9466ff9931b59a08a76f4f7874f80b261fb893ea5fdd67bbf",
+    "sha256": "a5f58050ebf95f0c0798177bf3e0063050796241f0bc05bb7e7a3e4666586f29"
+  },
+  "state": "FROZEN",
+  "stop_rule": "Two consecutive preregistered scientificNULL experiments stop this lane. Prior C3PASS resets the entering streak to0. Validation errors and incomplete runs do not reset a streak. Original stopped r11 lanes stay frozen."
+}

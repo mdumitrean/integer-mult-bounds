@@ -1,0 +1,62 @@
+{
+  "findings": [
+    {
+      "finding": "Each dual2-plane containing a fixed nonzero anchor occurs from its510 other normals twice;255planes peranchor. Anchors7,42,45 form one commonplane, so union3*255-3+1=763. Canonical sorted(a,b,a xor b) enumeration and rank7perp predicate match this domain.",
+      "topic": "finite domain"
+    },
+    {
+      "finding": "Two modes, both providers, first8 exact canonical basis pairs and first16 eligiblepivots are retained. Tasks use blocks of at most16planes. Rootrunner must explicitly verify each provider/mode/seed covers all763 distinctplanes exactlyonce, not merely taskcount.",
+      "topic": "bounded coverage"
+    },
+    {
+      "finding": "Pinned generic kernel enforces alpha*M=u, M*v=y, alpha*y=1, supportH, andC*v=0. LiteralS/T gates additionally certify S*e_h=v,u*S=e_h^T,T*y=e_h,e_h^T*T=alpha. Thus the transformed scalar/freeoperator block isolates the selected coordinate; this does not replace complete native admission.",
+      "topic": "paired algebra"
+    },
+    {
+      "finding": "Reverse iteration over beforegates performs right multiplication C\u2192C*S. The newlyisolated column is zero byC*v=0; derived exactcleanup and fullWordData replay are retained.",
+      "topic": "compensation"
+    },
+    {
+      "finding": "Only declared start0/end9 freshhelpers excluding408 qualify. Downwardrefits preserve original cut/warp/entrypins; outputframe rank7 explicit. All82restored endpoints and408helperroles preserved,83buffers charged, complete paidmass exactly\u22122, widthinventoryH9\u22121/H7+1, centreinvoice unchanged.",
+      "topic": "frames and budget"
+    },
+    {
+      "finding": "All synthesized coefficients dyadic; scale coefficients mustbe invertible dyadicunits. Rationalbit/matrixterm limits produce incompleteness/errors, not scientific rejection. Unexpected algebra/frame failures propagate.",
+      "topic": "coefficient ring"
+    },
+    {
+      "finding": "Exact dispatch-weighted average ofboth actualprovider localprofiles is linear in the complete moment. Paidmass=sum408orderedwidths+1856; coverage4816512;R48fixedtemplate andR51halvingrelaxations put fractional idle mass at largestallowedrank. They lowerbound any compatiblemoment and provide only necessary optimisticheadroom.",
+      "topic": "cap mathematics"
+    },
+    {
+      "finding": "Compares complex_lower directly against pinnedPR2930claim. Historicala/(1+a)interpretation in the trustedceilingdocstring is not used. R48screen is looser than PR2930inventoryLP; a passing screen is not a competitive admitted bound.",
+      "topic": "target interpretation"
+    },
+    {
+      "finding": "packing_cap.screen_task requires bothproviders but does notinfer sharedaddress. Runner mustmatch(helper,dualplane,mode,basisindices) perregistration before invokingcap.",
+      "topic": "matched provider family"
+    }
+  ],
+  "recorded_utc": "2026-10-16T13:10:06.867264+00:00",
+  "remaining_runtime_obligations": [
+    "Registered baseline allcolumn forward/dual andnine-stagepositive controls",
+    "Actual negativecontrols andfull763plane perprovider/mode/seedcoverage",
+    "Bothseed exactcandidate inventory/hashagreement",
+    "Matchedcandidate reconstruction andindependentfullsemantic audit",
+    "Any\u03baclaim needsactualallocation,freshchangedwordnative/fullphysicalinvoice andmodernouteradmission"
+  ],
+  "resolved_review_issue": {
+    "issue": "Excluded408negative fixture originally also excluded408fromH, so it didnotisolate the explicit408guard.",
+    "resolution": "Finalsource admits408in fixtureH/live/start/end before demandinghelper408rejection; separate already-restoredhelper test added. Source inspected afterrepair; actualcontrolrun remainsrootowned."
+  },
+  "schema_version": 1,
+  "scope": "Independent agent source/proof inspection only; no scientific execution, source imports, kernels, candidate generation, controls, solvers or pools run by reviewer. This is not a dynamic certification or independent human review.",
+  "source_sha256": {
+    "pipeline/continuation/rewrite_search.py": "685cd2a884f58eab9855296bc298cf62bc299c36047afe08c4935e522f1dd219",
+    "pipeline/continuation02/packing_cap.py": "92c845250f7ccd5a611bcce196875ae472751ff52254d01e2167e36f19252361",
+    "pipeline/continuation02/rank7_search.py": "476d44cd8995f8fc3db82c2d70be0062220a0c349db2e095a0d88ab5437c1feb",
+    "pipeline/wordio.py": "a9c254acdc04c3302ed0a31d9e0da39a8e3348aa20d189798e86539464fd81d4",
+    "results/CONTINUATION-02/G2/PREREGISTRATION.json": "678046f825d5943bc768afba378c3e59a37e7de1194e7b1f8c3b149a13a41526"
+  },
+  "status": "PASS_STATIC_REVIEW"
+}
