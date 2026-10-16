@@ -1,0 +1,216 @@
+{
+  "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+  "changed_guidance": [],
+  "checkpoint": {
+    "bytes": 39368,
+    "path": "data/continuation-10/checkpoint/RECEIPT.json",
+    "sha256": "453c9661fb295746deb244fbe98c559e305c1fbc71a0ced95a484adf059fae67"
+  },
+  "coverage": {
+    "discussions": {
+      "1163": {
+        "changed_records": [],
+        "coverage": {
+          "comments": 73,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:38:18.721562+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 1,
+          "replies": 12,
+          "reported_comments": 73,
+          "started_utc": "2026-10-16T19:38:17.589234+00:00",
+          "unique_comments": 73
+        },
+        "file": {
+          "bytes": 54213,
+          "path": "data/continuation-10/checkpoint/threads/discussion-1163.json.gz",
+          "sha256": "d8b2f1750a0d9313d2ce594be4e40e6fb5bd29d6dd0c3544683b0d22a2a36a09"
+        }
+      },
+      "1166": {
+        "changed_records": [
+          {
+            "author": {
+              "login": "navinor"
+            },
+            "body_sha256": "b296faa70b50aac8bfb3f849bd772897fa101accdda986ed37fb08a1258e86af",
+            "change": "ADDED",
+            "created_at": "2026-10-16T19:37:54Z",
+            "updated_at": "2026-10-16T19:37:54Z",
+            "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18981563"
+          }
+        ],
+        "coverage": {
+          "comments": 326,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:38:30.368707+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 4,
+          "replies": 62,
+          "reported_comments": 326,
+          "started_utc": "2026-10-16T19:38:18.737171+00:00",
+          "unique_comments": 326
+        },
+        "file": {
+          "bytes": 255311,
+          "path": "data/continuation-10/checkpoint/threads/discussion-1166.json.gz",
+          "sha256": "94769dc1a2c129e8e2602c87a093b7042bb5ff5d26f5e9f805e21c6e77fff85a"
+        }
+      },
+      "1167": {
+        "changed_records": [],
+        "coverage": {
+          "comments": 123,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:38:32.609400+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 2,
+          "replies": 18,
+          "reported_comments": 123,
+          "started_utc": "2026-10-16T19:38:30.428129+00:00",
+          "unique_comments": 123
+        },
+        "file": {
+          "bytes": 98112,
+          "path": "data/continuation-10/checkpoint/threads/discussion-1167.json.gz",
+          "sha256": "1958cdf66982a11cdea35e2497857f46fb852b2acaccee6ff843ca692885003a"
+        }
+      },
+      "2612": {
+        "changed_records": [],
+        "coverage": {
+          "comments": 34,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:38:17.579550+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 1,
+          "replies": 9,
+          "reported_comments": 34,
+          "started_utc": "2026-10-16T19:38:16.602898+00:00",
+          "unique_comments": 34
+        },
+        "file": {
+          "bytes": 51149,
+          "path": "data/continuation-10/checkpoint/threads/discussion-2612.json.gz",
+          "sha256": "13fd3edbfe8068c667a0287e3f513193565b1cdc694ff06367632e31b6c717ca"
+        }
+      }
+    },
+    "recent_pr_delta": {
+      "complete_all_prs": false,
+      "complete_recent_delta": true,
+      "new_since_cutoff": 1,
+      "pages": 1,
+      "reached_cutoff": true,
+      "rows": 100,
+      "unique_numbers": 100,
+      "updates_since_cutoff": 1
+    }
+  },
+  "cutoff_rule": "Prior checkpoint start rounded down to overlap its acquisition window; full thread content refreshed regardless of updatedAt.",
+  "cutoff_utc": "2026-10-16T19:31:39Z",
+  "guidance_pin": {
+    "bytes": 3764,
+    "path": "data/continuation-10/checkpoint/guidance/PINS.json",
+    "sha256": "ba33b4668623523cd8ca258ce3a9707998cd55de19eed4972c7fa0897271219d"
+  },
+  "guidance_read": [
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "certificates/selected-result.json"
+  ],
+  "kind": "Read-only initial source checkpoint and exact-byte comparator acquisition; no scientific execution",
+  "latest_reported_complete": {
+    "acquisition": {
+      "bytes": 20203,
+      "path": "data/continuation-10/pr3030/ACQUISITION.json",
+      "sha256": "e79d1c92a0fe637e71d0ee81026867a9b671d5e6f044ffa7c6498fe3387f1c14"
+    },
+    "author": "Nick Petalas (petalas)",
+    "claim": {
+      "bytes": 2143,
+      "path": "data/continuation-10/pr3030/package/evidence/OUTER-CLAIM.json",
+      "sha256": "f670e3efe5d99954c1e033dce3921630620b31c536a9c7ea17066dc53b20680d"
+    },
+    "complex_endpoint": "345830551200866186907/200000000000000000000000",
+    "conditional_decimal": "0.001729152756004330934535 -10^-46 -10^-70",
+    "evidence_tier": "SOURCE_REPORTED_CONDITIONAL_COMPLETE_FINITE_RELEASE",
+    "head": "78e77d820393c6b8648b47af219e991edfcc54e6",
+    "independent_admission_this_round": false,
+    "physical_families": 663549,
+    "pr": 3030,
+    "private_buffers": 91,
+    "replicas": 740,
+    "same_word_source_pr": 3015,
+    "source_bindings": {
+      "bytes": 9801,
+      "path": "data/continuation-10/pr3030/SOURCE-BINDINGS.json",
+      "sha256": "888485decf3e578f8c1cbf529b739c21efdd42389e27fc3ee4184136e0ba6e45"
+    },
+    "source_reported_only": true,
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3030",
+    "word_identity_verified": true
+  },
+  "limits": [
+    "One non-atomic update-descending100PR page reached the cutoff; this is not a fresh complete historical PR census.",
+    "All comments and replies of2612/1163/1166/1167 were fully acquired; other threads and arbitrary linked artifacts remain outside this checkpoint.",
+    "Compact3030receipts and37package/input files were acquired; full native cache/materialized T740fill/order/dispatch and recursive dependencies omitted.",
+    "Source-reported finite conditional release is not maintainer selection, independent native/outer replay, or a complete all-size theorem.",
+    "No scientific source imports, candidate extraction, experimental preparation or pool jobs were executed by this checkpoint."
+  ],
+  "new_or_changed_prs": [
+    {
+      "author": "navinor",
+      "head": "a05791d428f5d06802fb4c96b33732e6347c64eb",
+      "pr": 3034,
+      "scope": "Set-level F2^7 eighteen-point-cover remainder; partial result with no kappa/supplier/candidate-word change.",
+      "state": "open",
+      "title": "KB3i: the 18-point cover remainder for F2^7 - parity shortcut DEMOTED, m=5 obstruction localized (outcome=partial, no new kappa)"
+    }
+  ],
+  "overlap": {
+    "conclusion": "No fresh explicit duplicate claim or exhaustive coverage of both gather directions for J1 saved packets was found. Commuting and carrier methods have direct predecessors; partial overlap and unpublished work remain possible. This is a bounded changed-premise continuation, not novelty or a statement that the family was previously unsearched.",
+    "fresh_direct_claim_found": false,
+    "fresh_thread_2612_body_changes": 0,
+    "previous_composition_claim_status": "DONE_RELEASED_PR3030; no active T740 composition claim remains",
+    "prior_broader_census": {
+      "head": "be191346391661f4d35fc0d1508d0a6029572576",
+      "pr": 2979,
+      "readme": {
+        "bytes": 24923,
+        "path": "data/continuation-05/pr2979/package/README.md",
+        "sha256": "d00d123fc6cb7da627a8db1b8ae95b732ef7c55f802a784059de982159548634"
+      },
+      "scope": "Reports5893candidates/provider from retimes, commuting moves, cut-start reads, restore-to-B/cross-cut, read merges/splits on new input/output/refit/lowered-helper contacts; no complete public generator in this acquisition establishes whether all current packet-gather schedules are covered."
+    },
+    "prior_concrete_commutation_source": {
+      "head": "e62d3eb9005117d82a9babcfa937ecc53237c490",
+      "pr": 2966,
+      "readme": {
+        "bytes": 9474,
+        "path": "data/continuation-04/pr2966/package/README.md",
+        "sha256": "9441e1cecaefa674f7452de179ea495e76286b7e9e2f6e5700238f6cb12ad220"
+      },
+      "scope": "Five adjacent A-phase commuting swaps with the moved gate frame re-solved, plus carrier/restore retimes; direct predecessor credit required."
+    },
+    "proposed_domain": "The2878 blocked four-register rank-one packet addresses/provider preserved by J1; exact permitted adjacent commutations gather selected contacts to the left or right, followed by the registered shared-carrier identity and complete frame costs. No new word census has been run."
+  },
+  "previous_checkpoint": {
+    "bytes": 23447,
+    "path": "data/continuation-09/final_checkpoint/RECEIPT.json",
+    "sha256": "dffc8936ae9362a6db338a59d3b33944fe0f0c5698c558fb138403d0b12670cd"
+  },
+  "priority_revision": 6,
+  "recorded_utc": "2026-10-16T19:42:58.241165+00:00",
+  "schema_version": 1,
+  "selected_result_changed": false,
+  "selected_result_maintained_kappa": "836330098538459/500000000000000000"
+}
