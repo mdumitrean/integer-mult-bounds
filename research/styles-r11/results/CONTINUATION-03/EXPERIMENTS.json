@@ -1,0 +1,108 @@
+{
+  "completed_utc": "2026-10-16T15:14:40.271631+00:00",
+  "experiments": [
+    {
+      "attempts": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 4.179659525,
+          "result_files": [
+            "results/CONTINUATION-03/T1-CAP-CLOSURE/v1/seed-14051/RESULT.json",
+            "results/CONTINUATION-03/T1-CAP-CLOSURE/v1/seed-33073/RESULT.json"
+          ],
+          "status": "PASS",
+          "wall_seconds": 2.554594605229795
+        }
+      ],
+      "confirmed": true,
+      "cpu_seconds": 4.179659525,
+      "execution": "COMPLETED",
+      "id": "T1-CAP-CLOSURE",
+      "milestone": "CONTINUATION-03/T1",
+      "preregistration": "results/CONTINUATION-03/T1/PREREGISTRATION.json",
+      "result_files": [
+        "results/CONTINUATION-03/T1-CAP-CLOSURE/v1/seed-14051/RESULT.json",
+        "results/CONTINUATION-03/T1-CAP-CLOSURE/v1/seed-33073/RESULT.json"
+      ],
+      "scientific_decision_agreement": true,
+      "started_utc": "2026-10-16T14:52:46.779036+00:00",
+      "status": "PASS",
+      "updated_utc": "2026-10-16T14:52:49.336998+00:00",
+      "wall_seconds": 2.554594605229795
+    },
+    {
+      "attempts": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 135.00205348699998,
+          "result_files": [
+            "results/CONTINUATION-03/G3-GUARDED-TRIANGLES/v1/seed-14051/RESULT.json",
+            "results/CONTINUATION-03/G3-GUARDED-TRIANGLES/v1/seed-33073/RESULT.json"
+          ],
+          "status": "NULL",
+          "wall_seconds": 8.718556153587997
+        }
+      ],
+      "confirmed": true,
+      "cpu_seconds": 135.00205348699998,
+      "execution": "COMPLETED",
+      "id": "G3-GUARDED-TRIANGLES",
+      "milestone": "CONTINUATION-03/G3",
+      "preregistration": "results/CONTINUATION-03/G3/PREREGISTRATION.json",
+      "result_files": [
+        "results/CONTINUATION-03/G3-GUARDED-TRIANGLES/v1/seed-14051/RESULT.json",
+        "results/CONTINUATION-03/G3-GUARDED-TRIANGLES/v1/seed-33073/RESULT.json"
+      ],
+      "scientific_decision_agreement": true,
+      "started_utc": "2026-10-16T14:59:29.989941+00:00",
+      "status": "NULL",
+      "updated_utc": "2026-10-16T14:59:38.715935+00:00",
+      "wall_seconds": 8.718556153587997
+    },
+    {
+      "attempts": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 881.348079375,
+          "result_files": [
+            "results/CONTINUATION-03/G4-JOINT-TRIANGLES/v1/seed-14051/RESULT.json",
+            "results/CONTINUATION-03/G4-JOINT-TRIANGLES/v1/seed-33073/RESULT.json"
+          ],
+          "status": "NULL",
+          "wall_seconds": 20.195607198402286
+        }
+      ],
+      "confirmed": true,
+      "cpu_seconds": 881.348079375,
+      "execution": "COMPLETED",
+      "id": "G4-JOINT-TRIANGLES",
+      "milestone": "CONTINUATION-03/G4",
+      "preregistration": "results/CONTINUATION-03/G4/PREREGISTRATION.json",
+      "result_files": [
+        "results/CONTINUATION-03/G4-JOINT-TRIANGLES/v1/seed-14051/RESULT.json",
+        "results/CONTINUATION-03/G4-JOINT-TRIANGLES/v1/seed-33073/RESULT.json"
+      ],
+      "scientific_decision_agreement": true,
+      "started_utc": "2026-10-16T15:09:19.682644+00:00",
+      "status": "NULL",
+      "updated_utc": "2026-10-16T15:09:39.887154+00:00",
+      "wall_seconds": 20.195607198402286
+    }
+  ],
+  "goal_status": "ACTIVE_NOT_ACHIEVED",
+  "lane_status": {
+    "constructive-word": {
+      "consecutive_confirmed_nulls": 2,
+      "latest_experiment": "G4-JOINT-TRIANGLES",
+      "scope": "No additional scientific family this round; two confirmed nulls stop the word lane.",
+      "stop_if_G4_NULL": true,
+      "stopped": true
+    }
+  },
+  "no_active_experiments": true,
+  "round": "CONTINUATION-03",
+  "schema_version": 1,
+  "status": "ROUND_COMPLETE_NO_KAPPA_IMPROVEMENT",
+  "total_experimental_cpu_seconds": 1020.5297923869999,
+  "total_family_wall_seconds": 31.468757957220078
+}

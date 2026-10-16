@@ -1,0 +1,125 @@
+{
+  "acquisition_helper_sha256": "5b16a7b2b4a23d7367a10f3909836b959336a8eef8e80360f7b714da4ec84ed5",
+  "canonical_main": "ec1f08b16f85937471950f986fffb2efcb4b223a",
+  "elapsed_seconds": 4.154743856750429,
+  "errors": [],
+  "files": {
+    "main.json.gz": {
+      "bytes": 22407,
+      "sha256": "300b294c26e556c8b184817c76273f68cbefb8cca3f515e9153f92622c9dafc3",
+      "source": {
+        "endpoint": "repos/CrocSwap/integer-mult-bounds/commits/main",
+        "kind": "REST"
+      },
+      "uncompressed_sha256": "36c0c5ee60030bda5182d2454a57f6aea7fd3ebb82424564c885a58a90161824"
+    },
+    "pr-2957.json.gz": {
+      "bytes": 4257,
+      "sha256": "634e2d67739073ecc683b8c0e5034219950e3f6f04b97a513294ce18ebaf7061",
+      "source": {
+        "endpoint": "repos/CrocSwap/integer-mult-bounds/pulls/2957",
+        "kind": "REST"
+      },
+      "uncompressed_sha256": "4ac5a230e74bd7e4e64d493d1140b27904b12331b80102ae3be10d8e050b9216"
+    },
+    "pr-2966.json.gz": {
+      "bytes": 4185,
+      "sha256": "b93b5e4f31b86aaea5c21f57a102a7d90e4ed2d2f153dac8d5fb8c031a7b2390",
+      "source": {
+        "endpoint": "repos/CrocSwap/integer-mult-bounds/pulls/2966",
+        "kind": "REST"
+      },
+      "uncompressed_sha256": "115893d320a778468726e198a934fa4bce84debcee399950866efefb2424b9bd"
+    },
+    "pr-2969.json.gz": {
+      "bytes": 3513,
+      "sha256": "9e99ff9edfe303e978e5aba215a82723ddf6e2b73bb0ac021ac25acaf8e95d65",
+      "source": {
+        "endpoint": "repos/CrocSwap/integer-mult-bounds/pulls/2969",
+        "kind": "REST"
+      },
+      "uncompressed_sha256": "8ee6074b76d88da61545bbe30d1d2611b464511051d7f60cf87a1ab88b048a55"
+    },
+    "priority-catalog.json.gz": {
+      "bytes": 10376,
+      "sha256": "c407d041d23a3adbbac6b3f8051fbfdc3bf47cb2f0005682001117041ab4e22b",
+      "source": {
+        "commit": "ec1f08b16f85937471950f986fffb2efcb4b223a",
+        "git_blob": "889b95d936746df124872133ae1e7cc339adcb92",
+        "kind": "REST",
+        "path": "docs/research/agent-task-catalog.json",
+        "source_sha256": "7d185cd8c2af35988d638d969748ad7b670f902606444dbfc748e4402c340df6"
+      },
+      "uncompressed_sha256": "65f29634c0d9330a75fe77f3745d0d37580b5a44bd324be99c888735c552d9b6"
+    },
+    "threads/discussion-2612.json.gz": {
+      "bytes": 32656,
+      "sha256": "a4540c1a676327356ee373552b6f70c707c07bab9d692ae892ba729e394023a2",
+      "source": {
+        "comments_query": "query($number:Int!,$cursor:String) { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") {\n          discussion(number:$number) {id number title body url updatedAt author {login}\n            comments(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n              nodes {id databaseId body url createdAt updatedAt author {login}\n                replies(first:100) {totalCount pageInfo {hasNextPage endCursor}\n                  nodes {id databaseId body url createdAt updatedAt author {login}}}\n              }\n            }\n          }\n        }}",
+        "kind": "GraphQL",
+        "number": 2612,
+        "replies_query": "query($id:ID!,$cursor:String) { node(id:$id) { ... on DiscussionComment {\n          replies(first:100,after:$cursor) {totalCount pageInfo {hasNextPage endCursor}\n            nodes {id databaseId body url createdAt updatedAt author {login}}}\n        }}}"
+      },
+      "uncompressed_sha256": "44ab05c7c576c3ec67dff2fe0fb6b559ae601f75a63ee480e1e43de9ac6fe063"
+    }
+  },
+  "finished_utc": "2026-10-16T15:16:54.358627+00:00",
+  "guidance": {
+    "path": "data/continuation-03/guidance/PINS.json",
+    "sha256": "092475b354bfdbfd6a6ded4a1d15dee764df6994b458993abd3434cd76666b8b"
+  },
+  "limits": [
+    "Final administrative source/status capture only; the word lane remains stopped and no scientific family is reopened.",
+    "Only canonical main, exact-head priority catalog, PR2957/2966/2969 metadata and complete Discussion2612 are refreshed.",
+    "This is not an all-PR or all-discussion census; preceding full and pivot checkpoints remain separate immutable evidence.",
+    "Public claims remain author-reported and unexecuted here; concurrent edits can occur during acquisition."
+  ],
+  "priority_revision": 5,
+  "pull_requests": {
+    "2957": {
+      "author": "jeremykothe2",
+      "head": "b74b25f3ccc84c16e1a801d73b2f47e5ea764c78",
+      "merged": true,
+      "state": "closed",
+      "title": "Conditional \u03ba = 0.001723717415070738: fourteen declared gate rewrites (five classes) on #2917's words with #2930's cap-attaining fill",
+      "updated_at": "2026-10-16T14:47:34Z"
+    },
+    "2966": {
+      "author": "jeremykothe2",
+      "head": "e62d3eb9005117d82a9babcfa937ecc53237c490",
+      "merged": false,
+      "state": "open",
+      "title": "Conditional \u03ba = 0.001724034272523452: fourteen declared gate rewrites (five classes) on #2942's words and literal allocation",
+      "updated_at": "2026-10-16T14:50:21Z"
+    },
+    "2969": {
+      "author": "Dugongue",
+      "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+      "merged": false,
+      "state": "open",
+      "title": "Compose normal-45 extraction and fourteen gate rewrites: candidate \u03ba \u2248 0.0017240352247481",
+      "updated_at": "2026-10-16T15:00:49Z"
+    }
+  },
+  "remote": {
+    "discussion_2612": {
+      "comments": 21,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T15:16:54.349527+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 2,
+      "reported_comments": 21,
+      "started_utc": "2026-10-16T15:16:53.480517+00:00",
+      "unique_comments": 21
+    }
+  },
+  "repository": "CrocSwap/integer-mult-bounds",
+  "schema_version": 1,
+  "scope": "Read-only source and overlap acquisition. No scientific experiment or fetched-code execution.",
+  "script_sha256": "b8b12f026a6f3b08310ab8dafe8bc45106d09e68184e977e4ae9933e66f22a33",
+  "started_utc": "2026-10-16T15:16:50.203902+00:00"
+}
