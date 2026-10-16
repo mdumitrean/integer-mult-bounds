@@ -1,0 +1,49 @@
+{
+  "blocking_findings": [],
+  "conclusion": "The constructor changes only the retained-candidate output subtree. The runner changes only round, storage, output-confinement and milestone paths. The source adapter is byte-identical. All inherited scientific logic, finite-domain definitions, controls, seed values and decision rules are unchanged.",
+  "controls_executed_by_reviewer": false,
+  "files": [
+    {
+      "byte_identical": false,
+      "new_path": "pipeline/continuation11/commuting_carrier.py",
+      "new_sha256": "09091293d8bc82e84b530e013fee2cf19d53055ae43fa3f2d056afccd1a37197",
+      "old_path": "pipeline/continuation10/commuting_carrier.py",
+      "old_sha256": "0cacc1c96c3f50820116a1621223e3969b434efbc27f687aee57ba0b2757df84",
+      "only_round_path_substitutions": true,
+      "substitution_count": 1
+    },
+    {
+      "byte_identical": false,
+      "new_path": "pipeline/continuation11/run_j2.py",
+      "new_sha256": "4fbe3925e1899835e1ea3f177323ee70e3e8d13e29e8ead857639e2a74bc89bf",
+      "old_path": "pipeline/continuation10/run_j2.py",
+      "old_sha256": "44cce208ed81780d3f02ac2d20dbc088f6e28648856501fac9e60be6fa54763f",
+      "only_round_path_substitutions": true,
+      "substitution_count": 6
+    },
+    {
+      "byte_identical": true,
+      "new_path": "pipeline/continuation11/source_inputs.py",
+      "new_sha256": "d4701bef8eafe233d07b1311786fb827846811338ba92b61aebc9da2b28505bb",
+      "old_path": "pipeline/continuation10/source_inputs.py",
+      "old_sha256": "d4701bef8eafe233d07b1311786fb827846811338ba92b61aebc9da2b28505bb",
+      "only_round_path_substitutions": true,
+      "substitution_count": 0
+    }
+  ],
+  "inherited_review": {
+    "path": "results/CONTINUATION-11/planning/INHERITED-IMPLEMENTATION-REVIEW.json",
+    "sha256": "21df9de977b3cf2b0c1922c20da3ae7ab8073fdc23376db08c06e09f2904881a"
+  },
+  "recorded_utc": "2026-10-16T21:42:57.007680+00:00",
+  "review_method": "Read source diffs, then compare every byte: either unchanged, or replacing only the old round-name path strings; no imports or tests.",
+  "reviewer": "Independent fill/matching agent",
+  "schema_version": 1,
+  "scientific_execution": false,
+  "scope_limits": [
+    "This review does not assert that any control or experiment was executed.",
+    "The new CONTINUATION-11 preregistration and source checkpoint must still be frozen before the root launches science.",
+    "The inherited fixed-context and fresh-admission limitations remain in force; this is not a kappa or intrinsic-Laplacian claim."
+  ],
+  "status": "STATIC_REVIEW_PASS"
+}

@@ -1,0 +1,88 @@
+{
+  "administrative_note": {
+    "action": "Coordinator notified to correct these new-round administrative fields before registration; no prior file or scientific source edit is needed.",
+    "issue_at_review": "CONTINUATION-11/TASK.json constraints.recording_layout and constraints.write_scope still named continuation10.",
+    "not_a_scientific_source_blocker": true
+  },
+  "checks": {
+    "candidate_write_confinement_matches_new_runner": true,
+    "constructor_one_confinement_path_change_only": true,
+    "new_sources_match_parent_supplied_hashes": true,
+    "prior_round_files_not_modified": true,
+    "runner_six_round_data_milestone_path_changes_only": true,
+    "scientific_algorithms_controls_seeds_domains_and_endpoint_unchanged": true,
+    "scientific_imports_preparation_tests_or_experiments_executed_by_reviewer": false,
+    "source_adapter_byte_identical": true
+  },
+  "files": [
+    {
+      "ast_parse": "PASS",
+      "bytes": 45711,
+      "changed_lines": 1,
+      "old_path": "pipeline/continuation10/commuting_carrier.py",
+      "old_sha256": "0cacc1c96c3f50820116a1621223e3969b434efbc27f687aee57ba0b2757df84",
+      "only_round_path_or_milestone_changes": true,
+      "path": "pipeline/continuation11/commuting_carrier.py",
+      "sha256": "09091293d8bc82e84b530e013fee2cf19d53055ae43fa3f2d056afccd1a37197"
+    },
+    {
+      "ast_parse": "PASS",
+      "bytes": 27839,
+      "changed_lines": 6,
+      "old_path": "pipeline/continuation10/run_j2.py",
+      "old_sha256": "44cce208ed81780d3f02ac2d20dbc088f6e28648856501fac9e60be6fa54763f",
+      "only_round_path_or_milestone_changes": true,
+      "path": "pipeline/continuation11/run_j2.py",
+      "sha256": "4fbe3925e1899835e1ea3f177323ee70e3e8d13e29e8ead857639e2a74bc89bf"
+    },
+    {
+      "ast_parse": "PASS",
+      "bytes": 6654,
+      "changed_lines": 0,
+      "old_path": "pipeline/continuation10/source_inputs.py",
+      "old_sha256": "d4701bef8eafe233d07b1311786fb827846811338ba92b61aebc9da2b28505bb",
+      "only_round_path_or_milestone_changes": true,
+      "path": "pipeline/continuation11/source_inputs.py",
+      "sha256": "d4701bef8eafe233d07b1311786fb827846811338ba92b61aebc9da2b28505bb"
+    }
+  ],
+  "inherited_references": [
+    {
+      "path": "results/CONTINUATION-10/planning/GATHERED-WINDOW-PROOF.md",
+      "sha256": "0dd99a57d6a08dc05b47c357cbaa29efad86342e90f73a37fcf23ead14c30c58"
+    },
+    {
+      "path": "pipeline/continuation09/shared_carrier.py",
+      "sha256": "6c8b9b40bdfabf575f5f4b687541cbd3a20f5c10d44720b95c12dfc5e1570c47"
+    },
+    {
+      "path": "data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    {
+      "path": "results/CONTINUATION-10/AUDIT-UNRUN.json",
+      "sha256": "2a27b659240efef9eac831cc1aee4bbd4b276e775e7e994c792d8a628d27c531"
+    }
+  ],
+  "limitations": [
+    "This verifies an exact source carry-forward and syntax only; it does not execute controls, census, prices, admission or certificate verification.",
+    "The original source attributions and PINS chain remain inherited without alteration."
+  ],
+  "recorded_utc": "2026-10-16T21:42:24.546313+00:00",
+  "review_kind": "STATIC_IMPLEMENTATION_CARRY_FORWARD",
+  "reviewer": "growth_ledger",
+  "schema_version": 1,
+  "scope": {
+    "carry_forward_reason": "Prior round was closed UNRUN_SERVICE_INTERRUPTION before scientific freeze/import/preparation; no outcome-informed change.",
+    "endpoint_role": "Superseded diagnostic comparison, intentionally unchanged; the coordinator reports a stronger PR3054 source. This static review does not establish the current frontier.",
+    "fixed_comparator_pr": 3030,
+    "fixed_endpoint": "345830551200866186907/200000000000000000000000",
+    "fixed_word_source": "PR3015 words authenticated by the unchanged adapter and reused by PR3030.",
+    "new_registration_and_implementation_freeze_required_before_execution": true,
+    "new_round": "CONTINUATION-11",
+    "no_kappa_or_intrinsic_laplacian_claim": true,
+    "previous_round": "CONTINUATION-10",
+    "source_reported_receipts_are_not_fresh_native_admission": true
+  },
+  "status": "PASS_SOURCE_SCOPE"
+}
