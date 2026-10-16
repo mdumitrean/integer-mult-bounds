@@ -1,0 +1,30 @@
+{
+  "decision_rule": "Reconcile only the originally registered decision after independent saved-row coverage, exact sign, guard witness, source/control and two-seed checks. No new domain, endpoint, threshold, seed or selection rule. Any failed obligation leaves ERROR. Original v1 remains ERROR regardless.",
+  "kind": "Post-result mechanical storage repair and saved-receipt reconciliation, not a fresh experiment",
+  "known_outcome_before_registration": {
+    "cause": "Post-prices results4MB cap",
+    "combined_priced_rows": 141760,
+    "completed_tasks": 266,
+    "favorable_rows": 0,
+    "unresolved_rows": 0,
+    "v1_status": "ERROR"
+  },
+  "observed_storage_breach": {
+    "global_bytes": 199975395,
+    "global_limit_bytes": 200000000,
+    "round_bytes": 5473292,
+    "round_limit_bytes": 4000000
+  },
+  "outputs": [
+    "F1-CARRIER-FACTORIZATIONS/RELOCATION.json",
+    "F1-CARRIER-FACTORIZATIONS/v1-preserved.tar.xz",
+    "F1-RECONCILIATION/v1/RUN.json",
+    "F1-RECONCILIATION/v1/seed-41117/RESULT.json",
+    "F1-RECONCILIATION/v1/seed-83003/RESULT.json"
+  ],
+  "preservation": "Move original v1 directory byte-identically to data/continuation-08/evidence-v1; retain original logical paths in RELOCATION.json and an exact TAR.XZ bundle. Every original source/result/task byte, including ERROR receipts, remains authenticated. No lost evidence and no rewritten scientific attempt.",
+  "registered_utc": "2026-10-16T18:56:26.819457+00:00",
+  "resources": "No pool or solver launch; administrative saved-byte verification only. Account original106.248710617 scientific CPU seconds once; record administrative CPU separately. Record prepack budget breach alongside final stored sizes.",
+  "schema_version": 1,
+  "scientific_rerun": false
+}
