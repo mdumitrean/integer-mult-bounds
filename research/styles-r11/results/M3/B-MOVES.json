@@ -1,0 +1,3137 @@
+{
+  "amendments": [
+    {
+      "path": "results/M3/AMENDMENT-1.json",
+      "sha256": "e14ddf9eb24bb4f4d9605b88ea377414e1dc0f7135e8cb649f41d22b8b4aa734"
+    },
+    {
+      "path": "results/M3/AMENDMENT-2.json",
+      "sha256": "2d9608c1a29d7a4895caf9c28a47563a70688e8e425fcc68b9536ccf3b149480"
+    }
+  ],
+  "artifact": "B-MOVES",
+  "ceilings": {
+    "fixed_helper_payments": {
+      "per_register": [
+        {
+          "kind": "centre_descent",
+          "mass": 8,
+          "paid_parts": [
+            8
+          ],
+          "register": 224
+        },
+        {
+          "kind": "centre_descent",
+          "mass": 8,
+          "paid_parts": [
+            8
+          ],
+          "register": 240
+        },
+        {
+          "kind": "centre_descent",
+          "mass": 8,
+          "paid_parts": [
+            8
+          ],
+          "register": 256
+        }
+      ],
+      "profile": {
+        "8": 3
+      },
+      "scope": "Only nonascending payments on helpers are fixed here, each with its actual paid partition; other registers are not added again.",
+      "total_mass": 24
+    },
+    "fixed_inventory": [
+      {
+        "certified_upper": "0.001717795812",
+        "falsification_class": "local paid profile, role-width inventory, bin capacities/counts, or coverage geometry",
+        "literal_control_scope": "literal pinned provider metadata and recorded fill",
+        "local_profile_source": "literal pinned provider metadata",
+        "model": "2802",
+        "selected_dual_source": "active_positive_columns_lstsq_at_target"
+      },
+      {
+        "certified_upper": "0.001717142414",
+        "falsification_class": "local paid profile, role-width inventory, bin capacities/counts, or coverage geometry",
+        "literal_control_scope": "literal pinned provider metadata and recorded fill",
+        "local_profile_source": "literal pinned provider metadata",
+        "model": "2751",
+        "selected_dual_source": "active_positive_columns_lstsq_at_target"
+      },
+      {
+        "certified_upper": "0.001679754958",
+        "falsification_class": "local paid profile, role-width inventory, bin capacities/counts, or coverage geometry",
+        "literal_control_scope": "same recorded owner fill with exact held-word local-profile overlay",
+        "local_profile_source": "explicit held-word overlay at unchanged helper widths",
+        "model": "1672",
+        "selected_dual_source": "original_lp_equality_marginals"
+      }
+    ],
+    "helper_removal_envelope": [
+      {
+        "ceiling": "0.001758085936",
+        "k_removed": 0,
+        "rejected": true
+      },
+      {
+        "ceiling": "0.001761170075",
+        "k_removed": 1,
+        "rejected": true
+      },
+      {
+        "ceiling": "0.001764265063",
+        "k_removed": 2,
+        "rejected": true
+      },
+      {
+        "ceiling": "0.001770487816",
+        "k_removed": 4,
+        "rejected": true
+      },
+      {
+        "ceiling": "0.001783066061",
+        "k_removed": 8,
+        "rejected": true
+      },
+      {
+        "ceiling": "0.001807743133",
+        "k_removed": 16,
+        "rejected": true
+      },
+      {
+        "ceiling": "0.001859206446",
+        "k_removed": 32,
+        "rejected": true
+      },
+      {
+        "ceiling": "0.001971462656",
+        "k_removed": 64,
+        "rejected": true
+      },
+      {
+        "ceiling": "0.002234864757",
+        "k_removed": 128,
+        "rejected": true
+      },
+      {
+        "ceiling": "0.002940700529",
+        "k_removed": 256,
+        "rejected": true
+      },
+      {
+        "ceiling": "0.004097539104",
+        "k_removed": 408,
+        "rejected": true
+      }
+    ],
+    "integral_rank48_bracket": {
+      "hi": "0.001747404387",
+      "lo": "0.001747404384",
+      "lower_certified": true,
+      "moment_lower_at_hi": "16576000000089523014580207285129569/250000000000000000000000000000",
+      "moment_upper_at_lo": "33151999999899692337780532179961259/500000000000000000000000000000",
+      "proof": "exact rational cost intervals; positive-profile moment strictly increases with kappa",
+      "upper_certified": true
+    },
+    "packing_bracket": {
+      "hi": "0.001758085936",
+      "lo": "0.001758085933",
+      "lower_certified": true,
+      "moment_lower_at_hi": "140896000000539149627955836694823557/2125000000000000000000000000000",
+      "moment_upper_at_lo": "281791999998718136253949302502910931/4250000000000000000000000000000",
+      "proof": "exact rational cost intervals; positive-profile moment strictly increases with kappa",
+      "upper_certified": true
+    },
+    "results": [
+      {
+        "path": "results/L-8/v3/seed-11031/RESULT.json",
+        "sha256": "e14bf40de1ba41d6fa0046731dc8d96c3610e005b6958d69e9453a5d09f28ae8"
+      },
+      {
+        "path": "results/L-8/v3/seed-29063/RESULT.json",
+        "sha256": "49c693ca24186ecab95a3e092c4d3c64b8d4a9f2d86c344c60bba087cb64bd1a"
+      }
+    ],
+    "scope": "up to k whole ascending helper climb strings removed, freed physical width joins fractional idle rank51; centre descents and all other local paid children stay fixed; no feasibility of deleting these strings or registers asserted",
+    "status": "PASS"
+  },
+  "census_targets": [
+    {
+      "guard_change": "The named alias5 records require literal U of dimension 5 and entrance containment. Before refit5 the actual lender frames have dimension 6 and both predicates fail for each pair. Original-order refit5 then alias5 passes.",
+      "register_pairs": [
+        [
+          606,
+          550
+        ],
+        [
+          635,
+          551
+        ],
+        [
+          637,
+          552
+        ],
+        [
+          638,
+          553
+        ],
+        [
+          639,
+          562
+        ]
+      ],
+      "scope": "Enumerate those current-state predicates and candidate refits; no additional alias gain is claimed.",
+      "target": "Refit-dependent alias admission"
+    },
+    {
+      "guard_change": "Before refit7 the current new-lender frames have dimension 6 while the named moves require literal U of dimension 5. The literal_U predicates fail; original-order refit7 then hostmove2 passes.",
+      "hosted_entry_B": [
+        941,
+        944
+      ],
+      "last_new_lender_B": [
+        911,
+        912
+      ],
+      "old_to_new_lenders": [
+        [
+          401,
+          564
+        ],
+        [
+          403,
+          565
+        ]
+      ],
+      "operator_ids": [
+        30,
+        31
+      ],
+      "scope": "Future census may track exact floor-reaching refits and consumed warp identities. No gain or universal feasibility claim.",
+      "target": "Refit-dependent hostee move admission"
+    },
+    {
+      "follower_first_B": [
+        259,
+        262
+      ],
+      "guard_change": "alias7 before hostmove2 fails retired_before_entry for both pairs. Moving the named hosted lives removes those late B uses, after which the two named aliases pass.",
+      "old_lender_last_B_after_hostmove": [
+        -1,
+        -1
+      ],
+      "old_lender_last_B_before_hostmove": [
+        1486,
+        1483
+      ],
+      "register_pairs": [
+        [
+          667,
+          401
+        ],
+        [
+          669,
+          403
+        ]
+      ],
+      "scope": "Census target for current-state lifetime release; dimensions alone do not prove alias feasibility.",
+      "target": "Lender availability created by moving hosted lives"
+    },
+    {
+      "exact_scope": "Direct aliases and one-hostee augmenting paths under the retained necessary time/dimension bounds are empty.",
+      "status": "Census target only; no global saturation or kappa gain.",
+      "target": "Current #2802 class exit",
+      "unresolved": [
+        "constructive simultaneous hostee-refit gains",
+        "restorable width cuts",
+        "kernel identities"
+      ]
+    },
+    {
+      "exact_scope": "These IDs lead the fixed-profile removal-envelope ordering at the recorded k=1/2 targets.",
+      "register_ids_first_two_in_relaxed_sort": [
+        442,
+        405
+      ],
+      "status": "A relaxed bound does not provide a deletion/kernel identity; census only, unpriced.",
+      "target": "Ascending-chain removal candidates"
+    },
+    {
+      "exact_scope": "Preserve exact before/after local profiles and their mass change; benchmark the cached full-moment dot product before exact conditional-local root evaluation on a separately registered census.",
+      "status": "Calibration/timing target only; complete global profiles and audits remain necessary for any global statement.",
+      "target": "Cached full-moment screening"
+    }
+  ],
+  "cheap_screening": {
+    "census_target_only": true,
+    "companions_separate": 33,
+    "comparators": {
+      "companion": {
+        "full_moment_estimate": {
+          "max_relative_error": 0.0002434593622408322,
+          "max_relative_error_percent": 0.02434593622408322,
+          "order_disagreements": 0,
+          "pairwise_comparisons": 528,
+          "rows": 33,
+          "sign_disagreements": 0
+        },
+        "mass_corrected_phi_estimate": {
+          "max_relative_error": 0.0002600214984674378,
+          "max_relative_error_percent": 0.026002149846743778,
+          "order_disagreements": 0,
+          "pairwise_comparisons": 528,
+          "rows": 33,
+          "sign_disagreements": 0
+        },
+        "phi_estimate": {
+          "max_relative_error": 1.0067681934864223,
+          "max_relative_error_percent": 100.67681934864223,
+          "order_disagreements": 0,
+          "pairwise_comparisons": 528,
+          "rows": 33,
+          "sign_disagreements": 33
+        }
+      },
+      "primary": {
+        "full_moment_estimate": {
+          "max_relative_error": 0.0002434593622408322,
+          "max_relative_error_percent": 0.02434593622408322,
+          "order_disagreements": 0,
+          "pairwise_comparisons": 11476,
+          "rows": 152,
+          "sign_disagreements": 0
+        },
+        "mass_corrected_phi_estimate": {
+          "max_relative_error": 0.0002600214984674378,
+          "max_relative_error_percent": 0.026002149846743778,
+          "order_disagreements": 0,
+          "pairwise_comparisons": 11476,
+          "rows": 152,
+          "sign_disagreements": 0
+        },
+        "phi_estimate": {
+          "max_relative_error": 1.0067681934864223,
+          "max_relative_error_percent": 100.67681934864223,
+          "order_disagreements": 0,
+          "pairwise_comparisons": 11476,
+          "rows": 152,
+          "sign_disagreements": 152
+        }
+      }
+    },
+    "conditional_root_equation": "M_after(k*) = M_before(k0), M_p(k)=sum p_r*(r/73)^(1-k)",
+    "data_manifest": {
+      "companions": "33 rows in EH-b, EH-e and HYP-e; separate descriptive stratum",
+      "files": [
+        {
+          "path": "research/t74-r10-hosting-leads/J-dim1/out/eh/ALL-b-0.json",
+          "record_fields": [
+            "E",
+            "audit",
+            "audit_err",
+            "corrections",
+            "cost_delta",
+            "delta_local",
+            "inventory",
+            "k1",
+            "profile",
+            "reads",
+            "seconds",
+            "status",
+            "word"
+          ],
+          "records": 23,
+          "sha256": "29cd684a5d21b5bbf7b1836d3a6a78c9ba48e47bff582dc3ca79c7ce17ff9f76"
+        },
+        {
+          "path": "research/t74-r10-hosting-leads/J-dim1/out/eh/ALL-b-1.json",
+          "record_fields": [
+            "E",
+            "audit",
+            "audit_err",
+            "corrections",
+            "cost_delta",
+            "delta_local",
+            "inventory",
+            "k1",
+            "profile",
+            "reads",
+            "seconds",
+            "status",
+            "word"
+          ],
+          "records": 23,
+          "sha256": "d82c563f0435091380fdfc612864b5f18d3c6cd4dd00fc49827d6d8a8c519d47"
+        },
+        {
+          "path": "research/t74-r10-hosting-leads/J-dim1/out/eh/ALL-b-2.json",
+          "record_fields": [
+            "E",
+            "audit",
+            "audit_err",
+            "corrections",
+            "cost_delta",
+            "delta_local",
+            "inventory",
+            "k1",
+            "profile",
+            "reads",
+            "seconds",
+            "status",
+            "word"
+          ],
+          "records": 22,
+          "sha256": "30891be7e4e6bb233575bfc72e6623dd4c0906448e7c7b5ff9d8a598d741f910"
+        },
+        {
+          "path": "research/t74-r10-hosting-leads/J-dim1/out/eh/ALL-b-3.json",
+          "record_fields": [
+            "E",
+            "audit",
+            "audit_err",
+            "corrections",
+            "cost_delta",
+            "delta_local",
+            "inventory",
+            "k1",
+            "profile",
+            "reads",
+            "seconds",
+            "status",
+            "word"
+          ],
+          "records": 22,
+          "sha256": "899b2129a793989c0ef195ff2b9a9199af3d49e033696999f8a5416b52ea564b"
+        },
+        {
+          "path": "research/t74-r10-hosting-leads/J-dim1/out/eh/HYP-b.json",
+          "record_fields": [
+            "E",
+            "audit",
+            "audit_err",
+            "corrections",
+            "cost_delta",
+            "delta_local",
+            "inventory",
+            "k1",
+            "profile",
+            "reads",
+            "seconds",
+            "status",
+            "word"
+          ],
+          "records": 62,
+          "sha256": "d25e1b1b43b9dfbc3e5ee0d60078f192c0fa7bee1ad31bf7f843b20763aca789"
+        },
+        {
+          "path": "research/t74-r10-hosting-leads/J-dim1/out/eh/EH-b.json",
+          "record_fields": [
+            "E",
+            "audit",
+            "audit_err",
+            "corrections",
+            "cost_delta",
+            "delta_local",
+            "inventory",
+            "k1",
+            "profile",
+            "reads",
+            "seconds",
+            "status",
+            "word"
+          ],
+          "records": 1,
+          "sha256": "e4296714ac88b6a3062ee7f778822fe1cbd0df3f0ec74bd5e9506124a19c7aca"
+        },
+        {
+          "path": "research/t74-r10-hosting-leads/J-dim1/out/eh/EH-e.json",
+          "record_fields": [
+            "E",
+            "audit",
+            "audit_err",
+            "corrections",
+            "cost_delta",
+            "delta_local",
+            "inventory",
+            "k1",
+            "profile",
+            "reads",
+            "seconds",
+            "status",
+            "word"
+          ],
+          "records": 1,
+          "sha256": "a14eb007e96afdec030ab57f5655da7dcd3f8cabca7eca55033034ad160a8c1d"
+        },
+        {
+          "path": "research/t74-r10-hosting-leads/J-dim1/out/eh/HYP-e.json",
+          "record_fields": [
+            "E",
+            "audit",
+            "audit_err",
+            "corrections",
+            "cost_delta",
+            "delta_local",
+            "inventory",
+            "k1",
+            "profile",
+            "reads",
+            "seconds",
+            "status",
+            "word"
+          ],
+          "records": 31,
+          "sha256": "236e8d856b9f38244cf9286dabfaa0197d8e281d0227f6ef679011d7de75db71"
+        }
+      ],
+      "primary_enrollment": "all 152 rows in ALL-b-0..3 and HYP-b, with no outcome filtering",
+      "producer_source": {
+        "handling": "read as text only, never imported",
+        "path": "research/t74-r10-hosting-leads/J-dim1/code/ehost_build2.py",
+        "sha256": "2f93bc3466bd076832efa38dec8f6288d29796285e202e9e5582ff9863838e9b"
+      },
+      "word_binding": "hyperplane records overwrite their word paths; no row-to-word identity is assumed"
+    },
+    "limitations": [
+      "Only local profiles are held for each near-miss; no global/idle profile is invented.",
+      "Conditional local roots are sensitivity diagnostics, not global construction exponents.",
+      "Hyperplane output word paths were overwritten by the producer and are not individual row witnesses.",
+      "Existing audit labels are retained as source data; this calibration does not re-audit absent variants.",
+      "Phi ignores nonzero local mass change; mass-corrected Phi is a first-order-in-kappa approximation.",
+      "Decimal brackets are numerical, not interval-arithmetic transcendental certificates."
+    ],
+    "primary_rows": 152,
+    "results": [
+      {
+        "path": "results/L6-COST-N6/v1/seed-11031/RESULT.json",
+        "sha256": "73c3a494ae9550dd8c41a924237a280c685a55b5701c8823aed8578510df0441"
+      },
+      {
+        "path": "results/L6-COST-N6/v1/seed-29063/RESULT.json",
+        "sha256": "150c7b6fe3a06562e34343fbf40cd26090f4fc782012e7142e13a96eaa7a901e"
+      }
+    ],
+    "status": "PASS",
+    "timing_by_seed": [
+      {
+        "coefficient_setup_cpu_ns": 50134262,
+        "dot_repetitions_per_row": 1024,
+        "median_cpu_ns_per_call": {
+          "conditional_root": 37384686.0,
+          "full_moment_estimate": 1693.791015625,
+          "mass_corrected_phi_estimate": 1641.427734375,
+          "phi_estimate": 1621.2724609375
+        },
+        "median_per_row_derivative_target_setup_cpu_ns": 9888,
+        "root_over_full_moment_ratio_of_medians": 22071.604852742264,
+        "root_repetitions_per_row": 1,
+        "seed": 11031,
+        "timing_rows": 185
+      },
+      {
+        "coefficient_setup_cpu_ns": 50164519,
+        "dot_repetitions_per_row": 1024,
+        "median_cpu_ns_per_call": {
+          "conditional_root": 37326748.0,
+          "full_moment_estimate": 1792.8046875,
+          "mass_corrected_phi_estimate": 1649.3720703125,
+          "phi_estimate": 1701.3447265625
+        },
+        "median_per_row_derivative_target_setup_cpu_ns": 9938,
+        "root_over_full_moment_ratio_of_medians": 20820.30923962541,
+        "root_repetitions_per_row": 1,
+        "seed": 29063,
+        "timing_rows": 185
+      }
+    ],
+    "timing_scope": "Ratios of medians over all185 enrolled rows against the registered uncached90-digit/280-bisection conditional-local root, excluding coefficient setup and per-row derivative/target setup. Not end-to-end or generic root-solver speedups."
+  },
+  "compute": {
+    "L8_LP_calls_all_attempts": 18,
+    "L8_all_attempt_cpu_seconds": 92.823319781,
+    "M3_experiment_cpu_seconds_including_L8_v1_v2": 206.152218282,
+    "attempts": [
+      {
+        "attempt": "v1",
+        "experiment": "L7-GUARD-ORDER",
+        "family_cpu_seconds": 82.382446067,
+        "results": [
+          {
+            "path": "results/L7-GUARD-ORDER/v1/seed-11031/RESULT.json",
+            "sha256": "57728fc7927addf1da924e52cb7a8ab21b03ee7149b3621cb54675c3ef175b4c"
+          },
+          {
+            "path": "results/L7-GUARD-ORDER/v1/seed-29063/RESULT.json",
+            "sha256": "9aab100d984d2b5242100549c5f1f01c882156a7c7b1c8da81af6fa361270771"
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "attempt": "v3",
+        "experiment": "L-8",
+        "family_cpu_seconds": 22.604346708999998,
+        "results": [
+          {
+            "path": "results/L-8/v3/seed-11031/RESULT.json",
+            "sha256": "e14bf40de1ba41d6fa0046731dc8d96c3610e005b6958d69e9453a5d09f28ae8"
+          },
+          {
+            "path": "results/L-8/v3/seed-29063/RESULT.json",
+            "sha256": "49c693ca24186ecab95a3e092c4d3c64b8d4a9f2d86c344c60bba087cb64bd1a"
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "attempt": "v1",
+        "experiment": "L-9",
+        "family_cpu_seconds": 2.343962029,
+        "results": [
+          {
+            "path": "results/L-9/v1/seed-11031/RESULT.json",
+            "sha256": "a5bf3d343b376a4784d31b22dd3c273f12f4e97ffdfa74d1876c6bfd52c40f02"
+          },
+          {
+            "path": "results/L-9/v1/seed-29063/RESULT.json",
+            "sha256": "3cab508eed644698673b5f380389746465575120a62e1cdbdfb9a69302eb66a6"
+          }
+        ],
+        "status": "EXPLORATORY"
+      },
+      {
+        "attempt": "v1",
+        "experiment": "L-10",
+        "family_cpu_seconds": 5.911287599,
+        "results": [
+          {
+            "path": "results/L-10/v1/seed-11031/RESULT.json",
+            "sha256": "34f3d6baf4b71efd0400de1edaeace21d4afba86ddbc0dafe9f8b7f88dd56188"
+          },
+          {
+            "path": "results/L-10/v1/seed-29063/RESULT.json",
+            "sha256": "fbf4ce4e093b5dc54901f43a95248fe99a1fa4b4db0ba53eaac1b2f14336a0f2"
+          }
+        ],
+        "status": "NULL"
+      },
+      {
+        "attempt": "v1",
+        "experiment": "L-11",
+        "family_cpu_seconds": 5.364213584,
+        "results": [
+          {
+            "path": "results/L-11/v1/seed-11031/RESULT.json",
+            "sha256": "af694880e8c95176fddd356b5a31519c9f2cdb269d7d6133acdec17618152ca4"
+          },
+          {
+            "path": "results/L-11/v1/seed-29063/RESULT.json",
+            "sha256": "d29d7e3554b6f8924c00a70a5e564e86eebfcf56c9e48cf2bd5f13380b4d5288"
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "attempt": "v1",
+        "experiment": "L6-COST-N6",
+        "family_cpu_seconds": 17.326989222,
+        "results": [
+          {
+            "path": "results/L6-COST-N6/v1/seed-11031/RESULT.json",
+            "sha256": "73c3a494ae9550dd8c41a924237a280c685a55b5701c8823aed8578510df0441"
+          },
+          {
+            "path": "results/L6-COST-N6/v1/seed-29063/RESULT.json",
+            "sha256": "150c7b6fe3a06562e34343fbf40cd26090f4fc782012e7142e13a96eaa7a901e"
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "attempt": "v1",
+        "experiment": "L-8",
+        "family_cpu_seconds": 32.391018212,
+        "results": [
+          {
+            "path": "results/L-8/v1/seed-11031/RESULT.json",
+            "sha256": "a072ef7a50c20df2bf5e5c8443ff36f377f93a42d27b0eece0896c65418534a5"
+          },
+          {
+            "path": "results/L-8/v1/seed-29063/RESULT.json",
+            "sha256": "ab54d0eb4f2596017cfaa28bc5ea6478c6a3fac17c921268d8895cd1925bf906"
+          }
+        ],
+        "status": "ERROR"
+      },
+      {
+        "attempt": "v2",
+        "experiment": "L-8",
+        "family_cpu_seconds": 37.82795486,
+        "results": [
+          {
+            "path": "results/L-8/v2/seed-11031/RESULT.json",
+            "sha256": "9adf65ff45cff2b3e239411ff278cd2d68762c848f651734948be23d186809cd"
+          },
+          {
+            "path": "results/L-8/v2/seed-29063/RESULT.json",
+            "sha256": "99b426cbaf1a60ba99331ccc6c3fdf0905ceb315ebdb5a3ab5571ca6ca61b6bc"
+          }
+        ],
+        "status": "EXPLORATORY"
+      }
+    ],
+    "bookkeeping_assembly_cpu_seconds": 0.132216586,
+    "independent_certificate_review_cpu_seconds": 7.273402129
+  },
+  "confirmed_outcomes": {
+    "L-10": "NULL",
+    "L-11": "PASS",
+    "L-8": "PASS",
+    "L-9": "EXPLORATORY",
+    "L6-COST-N6": "PASS",
+    "L7-GUARD-ORDER": "PASS"
+  },
+  "guard_order": {
+    "counts_per_seed": {
+      "all_rejected_pairs_stop_before_first_commit": true,
+      "classification_counts_per_seed": {
+        "both_orders_admissible_and_same_payload": 6,
+        "both_orders_admissible_but_different_payload": 0,
+        "inadmissible_swapped_named_sequence": 6
+      },
+      "exact_cross_seed_semantic_equality_excluding_timing_and_seed_fields": true,
+      "original_plus_swapped_admitted_auditor_checks_per_seed": 26,
+      "original_stages_pass_per_seed": 14,
+      "original_stages_per_seed": 14,
+      "scientific_families_counted": 1,
+      "second_seed_changes_only_evaluation_order": true,
+      "swapped_pairs_per_seed": 12,
+      "swapped_prefixes_admitted_per_seed": 12,
+      "swapped_prefixes_examined_per_seed": 18,
+      "swapped_prefixes_guard_rejected_per_seed": 6,
+      "unexplained_auditor_rejections": 0
+    },
+    "pair_summary": [
+      {
+        "classification": "inadmissible_swapped_named_sequence",
+        "confirmed_seeds": [
+          11031,
+          29063
+        ],
+        "failed_guards": [
+          "606<-550:literal_U",
+          "606<-550:entrance_containment",
+          "635<-551:literal_U",
+          "635<-551:entrance_containment",
+          "637<-552:literal_U",
+          "637<-552:entrance_containment",
+          "638<-553:literal_U",
+          "638<-553:entrance_containment",
+          "639<-562:literal_U",
+          "639<-562:entrance_containment"
+        ],
+        "first_rejected_prefix": 0,
+        "guard_details": [
+          {
+            "actual_lender_frame_dim": 6,
+            "declared_entry_B": 947,
+            "first_follower_B": 947,
+            "last_lender_B": 901,
+            "production": "606<-550",
+            "required_E_dim": 5,
+            "required_U_dim": 5,
+            "transport_error": null
+          },
+          {
+            "actual_lender_frame_dim": 6,
+            "declared_entry_B": 1024,
+            "first_follower_B": 1024,
+            "last_lender_B": 902,
+            "production": "635<-551",
+            "required_E_dim": 5,
+            "required_U_dim": 5,
+            "transport_error": null
+          },
+          {
+            "actual_lender_frame_dim": 6,
+            "declared_entry_B": 1027,
+            "first_follower_B": 1027,
+            "last_lender_B": 909,
+            "production": "637<-552",
+            "required_E_dim": 5,
+            "required_U_dim": 5,
+            "transport_error": null
+          },
+          {
+            "actual_lender_frame_dim": 6,
+            "declared_entry_B": 1030,
+            "first_follower_B": 1030,
+            "last_lender_B": 910,
+            "production": "638<-553",
+            "required_E_dim": 5,
+            "required_U_dim": 5,
+            "transport_error": null
+          },
+          {
+            "actual_lender_frame_dim": 6,
+            "declared_entry_B": 1033,
+            "first_follower_B": 1033,
+            "last_lender_B": 903,
+            "production": "639<-562",
+            "required_E_dim": 5,
+            "required_U_dim": 5,
+            "transport_error": null
+          }
+        ],
+        "original": [
+          "refit5",
+          "alias5"
+        ],
+        "same_payload_after_two": null,
+        "swapped": [
+          "alias5",
+          "refit5"
+        ],
+        "unexecuted_suffix": [
+          "refit5"
+        ],
+        "variants": [
+          "base",
+          "extra"
+        ]
+      },
+      {
+        "classification": "both_orders_admissible_and_same_payload",
+        "confirmed_seeds": [
+          11031,
+          29063
+        ],
+        "first_rejected_prefix": null,
+        "original": [
+          "alias5",
+          "refit5c"
+        ],
+        "same_payload_after_two": true,
+        "swapped": [
+          "refit5c",
+          "alias5"
+        ],
+        "unexecuted_suffix": [],
+        "variants": [
+          "base",
+          "extra"
+        ]
+      },
+      {
+        "classification": "both_orders_admissible_and_same_payload",
+        "confirmed_seeds": [
+          11031,
+          29063
+        ],
+        "first_rejected_prefix": null,
+        "original": [
+          "refit5c",
+          "refit7"
+        ],
+        "same_payload_after_two": true,
+        "swapped": [
+          "refit7",
+          "refit5c"
+        ],
+        "unexecuted_suffix": [],
+        "variants": [
+          "base",
+          "extra"
+        ]
+      },
+      {
+        "classification": "inadmissible_swapped_named_sequence",
+        "confirmed_seeds": [
+          11031,
+          29063
+        ],
+        "failed_guards": [
+          "401->564:literal_U",
+          "403->565:literal_U"
+        ],
+        "first_rejected_prefix": 0,
+        "guard_details": [
+          {
+            "actual_lender_frame_dim": 6,
+            "declared_entry_B": 941,
+            "last_new_lender_B": 911,
+            "operator_id": 30,
+            "production": "401->564",
+            "required_E_dim": 5,
+            "required_U_dim": 5,
+            "transport_error": null
+          },
+          {
+            "actual_lender_frame_dim": 6,
+            "declared_entry_B": 944,
+            "last_new_lender_B": 912,
+            "operator_id": 31,
+            "production": "403->565",
+            "required_E_dim": 5,
+            "required_U_dim": 5,
+            "transport_error": null
+          }
+        ],
+        "original": [
+          "refit7",
+          "hostmove2"
+        ],
+        "same_payload_after_two": null,
+        "swapped": [
+          "hostmove2",
+          "refit7"
+        ],
+        "unexecuted_suffix": [
+          "refit7"
+        ],
+        "variants": [
+          "base",
+          "extra"
+        ]
+      },
+      {
+        "classification": "inadmissible_swapped_named_sequence",
+        "confirmed_seeds": [
+          11031,
+          29063
+        ],
+        "failed_guards": [
+          "667<-401:retired_before_entry",
+          "669<-403:retired_before_entry"
+        ],
+        "first_rejected_prefix": 0,
+        "guard_details": [
+          {
+            "actual_lender_frame_dim": 4,
+            "declared_entry_B": 259,
+            "first_follower_B": 259,
+            "last_lender_B": 1486,
+            "production": "667<-401",
+            "required_E_dim": 4,
+            "required_U_dim": 4,
+            "transport_error": null
+          },
+          {
+            "actual_lender_frame_dim": 4,
+            "declared_entry_B": 262,
+            "first_follower_B": 262,
+            "last_lender_B": 1483,
+            "production": "669<-403",
+            "required_E_dim": 4,
+            "required_U_dim": 4,
+            "transport_error": null
+          }
+        ],
+        "original": [
+          "hostmove2",
+          "alias7"
+        ],
+        "same_payload_after_two": null,
+        "swapped": [
+          "alias7",
+          "hostmove2"
+        ],
+        "unexecuted_suffix": [
+          "hostmove2"
+        ],
+        "variants": [
+          "base",
+          "extra"
+        ]
+      },
+      {
+        "classification": "both_orders_admissible_and_same_payload",
+        "confirmed_seeds": [
+          11031,
+          29063
+        ],
+        "first_rejected_prefix": null,
+        "original": [
+          "alias7",
+          "refit7c"
+        ],
+        "same_payload_after_two": true,
+        "swapped": [
+          "refit7c",
+          "alias7"
+        ],
+        "unexecuted_suffix": [],
+        "variants": [
+          "base",
+          "extra"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "path": "results/L7-GUARD-ORDER/v1/seed-11031/RESULT.json",
+        "sha256": "57728fc7927addf1da924e52cb7a8ab21b03ee7149b3621cb54675c3ef175b4c"
+      },
+      {
+        "path": "results/L7-GUARD-ORDER/v1/seed-29063/RESULT.json",
+        "sha256": "9aab100d984d2b5242100549c5f1f01c882156a7c7b1c8da81af6fa361270771"
+      }
+    ],
+    "scope_limits": [
+      "Six finite adjacent pairs at their pinned prefixes, repeated on base and extra, were tested. This is not a claim about arbitrary prefixes or all productions in a class.",
+      "Six swapped named sequences are outside their guards. That establishes order-dependent admissibility, not two valid orders yielding different words.",
+      "All six admitted swapped pairs produce the same payload. This run contains no witness of two admissible orders with different payloads.",
+      "The earlier M0 whole-section patch inequalities remain preserved as data but are not primitive noncommutation evidence.",
+      "No order-dependent value of a fixed algebraic sum of Parikh deltas, global kappa comparison, candidate pricing, or structural-pattern claim is made.",
+      "The two early lineage compound-decomposition obligations (#2679 to #2745 and #2745 to #2751) remain unresolved; L7 overall remains EXPLORATORY."
+    ]
+  },
+  "lineage": {
+    "all_lineage_guards_proven": false,
+    "calls": 666,
+    "edges": [
+      {
+        "after": "2745",
+        "before": "2679",
+        "complete_delta_global": {
+          "1": -2776,
+          "3": -20,
+          "32": 1,
+          "39": -1,
+          "48": 23,
+          "5": 53,
+          "7": -2834,
+          "8": 2664
+        },
+        "exact_local_plus_idle_identity": true,
+        "guarded_decomposition": "EXPLORATORY: early compound decomposition still requires validation",
+        "idle_delta_global": {
+          "1": -112,
+          "3": -20,
+          "32": 1,
+          "39": -1,
+          "48": 23,
+          "5": 53,
+          "7": -170
+        },
+        "local_delta_per_call": {
+          "1": -4,
+          "7": -4,
+          "8": 4
+        },
+        "local_rank_mass_delta_per_call": 0,
+        "per_register_ledger_ref": {
+          "path": "results/L-7/v1/seed-11031/RESULT.json",
+          "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+        },
+        "pointer": "/statistics/tasks/0/result/lineage/0"
+      },
+      {
+        "after": "2751",
+        "before": "2745",
+        "complete_delta_global": {
+          "1": -2664,
+          "7": -2664,
+          "8": 2664
+        },
+        "exact_local_plus_idle_identity": true,
+        "guarded_decomposition": "EXPLORATORY: early compound decomposition still requires validation",
+        "idle_delta_global": {},
+        "local_delta_per_call": {
+          "1": -4,
+          "7": -4,
+          "8": 4
+        },
+        "local_rank_mass_delta_per_call": 0,
+        "per_register_ledger_ref": {
+          "path": "results/L-7/v1/seed-11031/RESULT.json",
+          "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+        },
+        "pointer": "/statistics/tasks/0/result/lineage/1"
+      },
+      {
+        "after": "2766",
+        "before": "2751",
+        "complete_delta_global": {
+          "1": -1332,
+          "2": 666
+        },
+        "exact_local_plus_idle_identity": true,
+        "guarded_decomposition": "Verified held later stages; see exact bridge and guarded stage records",
+        "idle_delta_global": {},
+        "local_delta_per_call": {
+          "1": -2,
+          "2": 1
+        },
+        "local_rank_mass_delta_per_call": 0,
+        "per_register_ledger_ref": {
+          "path": "results/L-7/v1/seed-11031/RESULT.json",
+          "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+        },
+        "pointer": "/statistics/tasks/0/result/lineage/2"
+      },
+      {
+        "after": "retired5",
+        "before": "2766",
+        "complete_delta_global": {
+          "1": 14652,
+          "2": -3330,
+          "3": -15318,
+          "4": 5328,
+          "5": 3330
+        },
+        "exact_local_plus_idle_identity": true,
+        "guarded_decomposition": "Verified held later stages; see exact bridge and guarded stage records",
+        "idle_delta_global": {
+          "5": 3330
+        },
+        "local_delta_per_call": {
+          "1": 22,
+          "2": -5,
+          "3": -23,
+          "4": 8
+        },
+        "local_rank_mass_delta_per_call": -25,
+        "per_register_ledger_ref": {
+          "path": "results/L-7/v1/seed-11031/RESULT.json",
+          "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+        },
+        "pointer": "/statistics/tasks/0/result/lineage/3"
+      },
+      {
+        "after": "2802",
+        "before": "retired5",
+        "complete_delta_global": {
+          "1": -2664,
+          "2": 3996,
+          "3": -3996,
+          "5": 1332
+        },
+        "exact_local_plus_idle_identity": true,
+        "guarded_decomposition": "Verified held later stages; see exact bridge and guarded stage records",
+        "idle_delta_global": {
+          "5": 1332
+        },
+        "local_delta_per_call": {
+          "1": -4,
+          "2": 6,
+          "3": -6
+        },
+        "local_rank_mass_delta_per_call": -10,
+        "per_register_ledger_ref": {
+          "path": "results/L-7/v1/seed-11031/RESULT.json",
+          "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+        },
+        "pointer": "/statistics/tasks/0/result/lineage/4"
+      }
+    ],
+    "exact_arithmetic_all_five_edges": true,
+    "original_result_refs": [
+      {
+        "path": "results/L-7/v1/seed-11031/RESULT.json",
+        "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+      },
+      {
+        "path": "results/L-7/v1/seed-29063/RESULT.json",
+        "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+      }
+    ],
+    "overall_status": "EXPLORATORY",
+    "unresolved": [
+      "2679 -> 2745: held source pins identify changed alias8/prelife/refit563/alias1 stages and fill, but source-partner reassignment has not been decomposed into the registered move alphabet",
+      "2745 -> 2751: source joint_engine explains twelve-source recovery, but no validated decomposition into the registered move alphabet"
+    ]
+  },
+  "milestone": "M3",
+  "move_alphabet": [
+    {
+      "effect": "Repartition ascending climbs at fixed endpoints, ordinary rank mass zero. Centre-descents are separate paid children.",
+      "evidence": "Exact #2751->#2766 bridge and refit5/refit5c/refit7/refit7c named stages.",
+      "guards": "Actual propagated frame bounds, named gates, monotone chains/cuts and independent exact audit.",
+      "production": "refit",
+      "scope": "S2 certifies the recorded integer-surrogate optimum at its fixed endpoint; no universal nonlinear-root or order-free optimum."
+    },
+    {
+      "effect": "Remove a follower role and retarget its named life; local rank-mass loss must be balanced by the idle layer.",
+      "evidence": "Five alias5 pairs and two alias7 pairs, both variants and seeds.",
+      "guards": "Distinct live/private registers, literal U, compatible entrance E, retirement time, disjointness, invertible G(U)=E, exact candidate audit.",
+      "production": "retired-lender alias",
+      "scope": "Only named held realizations and the stated current-word necessary-guard census are proven."
+    },
+    {
+      "effect": "Relabel a named hosted life to another retired lender and replace its warp in place.",
+      "evidence": "Operators30/31:401->564 and403->565. Named hostmove2 has local delta {1:-2,4:-2,5:+2}, rank mass zero.",
+      "guards": "Consumed warp identity, free/distinct lender, literal U, matching dimensions, exact transport, retirement time, original lender has only the named B life.",
+      "production": "hostee move",
+      "scope": "A zero rank-mass change is not a zero Parikh delta. No universal zero-profile-effect claim is made."
+    },
+    {
+      "effect": "Shorten an ascending helper chain and compensate released rank mass in idle children.",
+      "evidence_status": "Unresolved production-class census; no positive edit or complete emptiness proof.",
+      "guards": "A restorable end frame and exact audited construction.",
+      "production": "width cut"
+    },
+    {
+      "effect": "Remove an ascending helper chain; the registered relaxation leaves all centre descents/other local payments fixed and sends freed width to fractional rank51 idle.",
+      "evidence_status": "Certified relaxation envelope only; feasibility is not asserted.",
+      "guards": "Actual register deletion additionally needs a kernel identity and exact replay.",
+      "production": "helper deletion"
+    },
+    {
+      "effect": "Historical production classes in the plan; changes to local roles and idle fill require separate exact accounting.",
+      "evidence_status": "No completed general constructor or saturation proof in this run.",
+      "guards": "Exact undo/private-life/kernel predicates as applicable.",
+      "production": "cold-host merge / pre-life hosting"
+    },
+    {
+      "effect": "Alter idle histogram while retaining local provider profiles and declared physical inventory.",
+      "evidence_status": "All-pattern fractional LP relaxation certifies class ceilings; dropped guards are named, not inferred feasible.",
+      "guards": "Actual fills require capacities, owner/window eligibility and family restrictions.",
+      "production": "owner-fill re-tiling"
+    },
+    {
+      "effect": "Changes the word and the reachability class itself.",
+      "evidence_status": "Reserved for preregistered M4 held-out data; no #2833/#2853 content is used in these M3 artifacts.",
+      "guards": "Exact kernel identity and reconstruction.",
+      "production": "A-phase kernel / dirt-entry rewrite"
+    }
+  ],
+  "multitype": {
+    "calls": 666,
+    "distinct_local_profiles": [
+      {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      }
+    ],
+    "recursive_type_inheritance": "not inferred from stage labels alone; persistent child-type transitions would require a separate semantic derivation",
+    "results": [
+      {
+        "path": "results/L-11/v1/seed-11031/RESULT.json",
+        "sha256": "af694880e8c95176fddd356b5a31519c9f2cdb269d7d6133acdec17618152ca4"
+      },
+      {
+        "path": "results/L-11/v1/seed-29063/RESULT.json",
+        "sha256": "d29d7e3554b6f8924c00a70a5e564e86eebfcf56c9e48cf2bd5f13380b4d5288"
+      }
+    ],
+    "scope": "tests paid child profile of dispatched local providers per stage/orientation; varying idle allocations are a fill layer, not evidence of inherited recursive types",
+    "stage_orientation_groups": 9,
+    "status": "PASS"
+  },
+  "named_stage_replay": [
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": 35,
+        "2": -7,
+        "3": -19,
+        "4": 9
+      },
+      "local_rank_mass_delta_per_call": 0,
+      "pinned_successor_payload_equal": true,
+      "production": "frame_refit",
+      "register_ids": [
+        66,
+        376,
+        396,
+        398,
+        405,
+        502,
+        503,
+        514,
+        516,
+        517,
+        550,
+        551,
+        552,
+        553,
+        562,
+        600,
+        602,
+        604,
+        606,
+        632,
+        633,
+        634,
+        635,
+        636,
+        637,
+        638,
+        639
+      ],
+      "required_idle_rank_mass_change_global": 0,
+      "source_credit": "exact minimal-change frame refit for the five retired-lender aliases (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): new/borrow/refit/search lowers each lender's last gate (550, 551, 552, 553, 562: dim 6 -> 5, the exact propagated floor) and raises each follower's first gate (606, 635, 637, 638, 639: dim 4 -> 5, the exact ceiling), with their meet/join closures; gates unchanged",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/refit5_43base.json",
+      "source_sha256": "ff434b1820339f0f7c2c8ba7982edc4c236e522ea30aaa56890206c0fa96f642",
+      "stage": "refit5",
+      "variant": "base"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": -5,
+        "4": -5
+      },
+      "local_rank_mass_delta_per_call": -25,
+      "pinned_successor_payload_equal": true,
+      "production": "retired_lender_alias",
+      "register_ids": [
+        550,
+        551,
+        552,
+        553,
+        562,
+        606,
+        635,
+        637,
+        638,
+        639
+      ],
+      "required_idle_rank_mass_change_global": 16650,
+      "source_credit": "five retired-lender aliases 606<-550, 635<-551, 637<-552, 638<-553, 639<-562 on the refit5 state (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): new/borrow/alias_build.alias, one B warp each with an explicit invertible G, G(U)=E, dim 5; the helpers are removed",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/alias5_43base.json",
+      "source_sha256": "a9ef916e6afcba33345bce3fd0e33606f09f340e0378cf017e2994a9206b969d",
+      "stage": "alias5",
+      "variant": "base"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": -10,
+        "2": 3,
+        "3": -4,
+        "4": 4
+      },
+      "local_rank_mass_delta_per_call": 0,
+      "pinned_successor_payload_equal": true,
+      "production": "frame_refit",
+      "register_ids": [
+        31,
+        101,
+        143,
+        145,
+        167,
+        168,
+        197,
+        214,
+        225,
+        281,
+        377,
+        393,
+        401,
+        403,
+        502,
+        503,
+        514,
+        515,
+        516,
+        517,
+        531,
+        543,
+        554,
+        555,
+        566,
+        567,
+        600,
+        601,
+        602,
+        604
+      ],
+      "required_idle_rank_mass_change_global": 0,
+      "source_credit": "certified optimal frames of the aliased program (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): our #1186 toolkit optimal_frames on the borrow-word model of new/borrow/audit_local.py; gates, warps, start/final frames, compensation and widths unchanged",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/refit5c_43base.json",
+      "source_sha256": "cd8e6b7f8b8dacf21875f465e3df05bf827f12dd063fe1be7557c7281bff16f1",
+      "stage": "refit5c",
+      "variant": "base"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": 2,
+        "2": 4,
+        "3": -6,
+        "4": 2
+      },
+      "local_rank_mass_delta_per_call": 0,
+      "pinned_successor_payload_equal": true,
+      "production": "frame_refit",
+      "register_ids": [
+        504,
+        505,
+        564,
+        565
+      ],
+      "required_idle_rank_mass_change_global": 0,
+      "source_credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): new/borrow/refit/search lowers the last gates of the free retired lenders 564 (B911) and 565 (B912) from dim 6 to their exact propagated floor dim 5 (meet closure: no other gate changes); gates unchanged",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/refit7_43base.json",
+      "source_sha256": "c1ca4637c3b88828d2628c87a20f93088769dbceb9f487cb75ce90ec1a0ff5f7",
+      "stage": "refit7",
+      "variant": "base"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": -2,
+        "4": -2,
+        "5": 2
+      },
+      "local_rank_mass_delta_per_call": 0,
+      "pinned_successor_payload_equal": true,
+      "production": "hostee_move",
+      "register_ids": [
+        401,
+        403,
+        564,
+        565
+      ],
+      "required_idle_rank_mass_change_global": 0,
+      "source_credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): the hostees of B-warps 30 and 31 (lenders 401 and 403, whose own lives end in A) move onto the free retired lenders 564 and 565 (last B use B911/B912 before the hostees enter); each gate of the hostee is relabelled and its warp record is replaced in place (op ids 30/31 kept), U = the lender frame after its refitted last gate, E = the hostee entrance frame, explicit invertible G with G(U) = E",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/hostmove2_43base.json",
+      "source_sha256": "ee0f0de1ebe2f84e37e439f783a76f5d210fa1c34b3497a8d3c490296ee88e3b",
+      "stage": "hostmove2",
+      "variant": "base"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "5": -2
+      },
+      "local_rank_mass_delta_per_call": -10,
+      "pinned_successor_payload_equal": true,
+      "production": "retired_lender_alias",
+      "register_ids": [
+        401,
+        403,
+        667,
+        669
+      ],
+      "required_idle_rank_mass_change_global": 6660,
+      "source_credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): new/borrow/alias_build.alias 667 <- 401 and 669 <- 403 (the PR2679 retired-lender alias), one B warp each with an explicit invertible G, G(U) = E, dim 4; the helpers are removed",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/alias7_43base.json",
+      "source_sha256": "100558d0f0ffbb2df38668b3d2bc4e4e11d5f328f629f5b4d931b0f619d49700",
+      "stage": "alias7",
+      "variant": "base"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": -4,
+        "2": 2
+      },
+      "local_rank_mass_delta_per_call": 0,
+      "pinned_successor_payload_equal": true,
+      "production": "frame_refit",
+      "register_ids": [
+        345,
+        381,
+        504,
+        505
+      ],
+      "required_idle_rank_mass_change_global": 0,
+      "source_credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): certified optimal frames of the aliased program (our #1186 toolkit optimal_frames on the borrow-word model, certified=True); gates, warps, start/final frames, compensation and widths unchanged",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/refit7c_43base.json",
+      "source_sha256": "086dc27f17448ab9bddb2e890752cf13d5965a63cd79fcf25aa7f1c9402503df",
+      "stage": "refit7c",
+      "variant": "base"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": 35,
+        "2": -7,
+        "3": -19,
+        "4": 9
+      },
+      "local_rank_mass_delta_per_call": 0,
+      "pinned_successor_payload_equal": true,
+      "production": "frame_refit",
+      "register_ids": [
+        66,
+        376,
+        396,
+        398,
+        405,
+        502,
+        503,
+        514,
+        516,
+        517,
+        550,
+        551,
+        552,
+        553,
+        562,
+        600,
+        602,
+        604,
+        606,
+        632,
+        633,
+        634,
+        635,
+        636,
+        637,
+        638,
+        639
+      ],
+      "required_idle_rank_mass_change_global": 0,
+      "source_credit": "exact minimal-change frame refit for the five retired-lender aliases (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): new/borrow/refit/search lowers each lender's last gate (550, 551, 552, 553, 562: dim 6 -> 5, the exact propagated floor) and raises each follower's first gate (606, 635, 637, 638, 639: dim 4 -> 5, the exact ceiling), with their meet/join closures; gates unchanged",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/refit5_43extra.json",
+      "source_sha256": "ff434b1820339f0f7c2c8ba7982edc4c236e522ea30aaa56890206c0fa96f642",
+      "stage": "refit5",
+      "variant": "extra"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": -5,
+        "4": -5
+      },
+      "local_rank_mass_delta_per_call": -25,
+      "pinned_successor_payload_equal": true,
+      "production": "retired_lender_alias",
+      "register_ids": [
+        550,
+        551,
+        552,
+        553,
+        562,
+        606,
+        635,
+        637,
+        638,
+        639
+      ],
+      "required_idle_rank_mass_change_global": 16650,
+      "source_credit": "five retired-lender aliases 606<-550, 635<-551, 637<-552, 638<-553, 639<-562 on the refit5 state (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): new/borrow/alias_build.alias, one B warp each with an explicit invertible G, G(U)=E, dim 5; the helpers are removed",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/alias5_43extra.json",
+      "source_sha256": "aeff3d1ffa74e4bffa892293f88a968e2c2b0330ad61128696a6bce7bc383b46",
+      "stage": "alias5",
+      "variant": "extra"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": -10,
+        "2": 3,
+        "3": -4,
+        "4": 4
+      },
+      "local_rank_mass_delta_per_call": 0,
+      "pinned_successor_payload_equal": true,
+      "production": "frame_refit",
+      "register_ids": [
+        31,
+        101,
+        143,
+        145,
+        167,
+        168,
+        197,
+        214,
+        225,
+        281,
+        377,
+        393,
+        401,
+        403,
+        502,
+        503,
+        514,
+        515,
+        516,
+        517,
+        531,
+        543,
+        554,
+        555,
+        566,
+        567,
+        600,
+        601,
+        602,
+        604
+      ],
+      "required_idle_rank_mass_change_global": 0,
+      "source_credit": "certified optimal frames of the aliased program (retired5: Marius-Paul Dumitrean, with substantial AI assistance, Anthropic Claude via Claude Code): our #1186 toolkit optimal_frames on the borrow-word model of new/borrow/audit_local.py; gates, warps, start/final frames, compensation and widths unchanged",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/refit5c_43extra.json",
+      "source_sha256": "cd8e6b7f8b8dacf21875f465e3df05bf827f12dd063fe1be7557c7281bff16f1",
+      "stage": "refit5c",
+      "variant": "extra"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": 2,
+        "2": 4,
+        "3": -6,
+        "4": 2
+      },
+      "local_rank_mass_delta_per_call": 0,
+      "pinned_successor_payload_equal": true,
+      "production": "frame_refit",
+      "register_ids": [
+        504,
+        505,
+        564,
+        565
+      ],
+      "required_idle_rank_mass_change_global": 0,
+      "source_credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): new/borrow/refit/search lowers the last gates of the free retired lenders 564 (B911) and 565 (B912) from dim 6 to their exact propagated floor dim 5 (meet closure: no other gate changes); gates unchanged",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/refit7_43extra.json",
+      "source_sha256": "c1ca4637c3b88828d2628c87a20f93088769dbceb9f487cb75ce90ec1a0ff5f7",
+      "stage": "refit7",
+      "variant": "extra"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": -2,
+        "4": -2,
+        "5": 2
+      },
+      "local_rank_mass_delta_per_call": 0,
+      "pinned_successor_payload_equal": true,
+      "production": "hostee_move",
+      "register_ids": [
+        401,
+        403,
+        564,
+        565
+      ],
+      "required_idle_rank_mass_change_global": 0,
+      "source_credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): the hostees of B-warps 30 and 31 (lenders 401 and 403, whose own lives end in A) move onto the free retired lenders 564 and 565 (last B use B911/B912 before the hostees enter); each gate of the hostee is relabelled and its warp record is replaced in place (op ids 30/31 kept), U = the lender frame after its refitted last gate, E = the hostee entrance frame, explicit invertible G with G(U) = E",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/hostmove2_43extra.json",
+      "source_sha256": "d06b7a56b457c16ea138e8265fc6f2d1b32711f0515a76137e86325a6f77a024",
+      "stage": "hostmove2",
+      "variant": "extra"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "5": -2
+      },
+      "local_rank_mass_delta_per_call": -10,
+      "pinned_successor_payload_equal": true,
+      "production": "retired_lender_alias",
+      "register_ids": [
+        401,
+        403,
+        667,
+        669
+      ],
+      "required_idle_rank_mass_change_global": 6660,
+      "source_credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): new/borrow/alias_build.alias 667 <- 401 and 669 <- 403 (the PR2679 retired-lender alias), one B warp each with an explicit invertible G, G(U) = E, dim 4; the helpers are removed",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/alias7_43extra.json",
+      "source_sha256": "783ed700791b1dcd4bb35422f5fb8114a0c5d82773394b87a613e5f32da51250",
+      "stage": "alias7",
+      "variant": "extra"
+    },
+    {
+      "all_guards_pass": true,
+      "auditor_status": "PASS",
+      "idle_histogram_scope": "This is a mass identity only; per-stage idle histograms are not invented. The paired lineage fills provide the retained complete deltas.",
+      "local_delta_per_call": {
+        "1": -4,
+        "2": 2
+      },
+      "local_rank_mass_delta_per_call": 0,
+      "pinned_successor_payload_equal": true,
+      "production": "frame_refit",
+      "register_ids": [
+        345,
+        381,
+        504,
+        505
+      ],
+      "required_idle_rank_mass_change_global": 0,
+      "source_credit": "retired7: Marius-Paul Dumitrean, with substantial AI assistance (Anthropic Claude, via Claude Code): certified optimal frames of the aliased program (our #1186 toolkit optimal_frames on the borrow-word model, certified=True); gates, warps, start/final frames, compensation and widths unchanged",
+      "source_path": "research/t74-joint-twelve-retired7/inputs/refit7c_43extra.json",
+      "source_sha256": "086dc27f17448ab9bddb2e890752cf13d5965a63cd79fcf25aa7f1c9402503df",
+      "stage": "refit7c",
+      "variant": "extra"
+    }
+  ],
+  "partitions": {
+    "every_word_conjunction_failed": true,
+    "merge_calibration": {
+      "delta": {
+        "1": -1332,
+        "2": 666
+      },
+      "label": "2751->2766 (1,1)->2 once per call",
+      "observed": "1.153871185759701612591209734E-7",
+      "predicted": "1.153871185759701612591209734E-7",
+      "profile_identity": true,
+      "relative_error": "0",
+      "scope": "one supported realised refit step; no invented calibration margin",
+      "within_one_percent": true
+    },
+    "multiple_testing": "BH-FDR 5% across the fixed per-word moment family; Phi is descriptive",
+    "n_per_word_per_seed": 2000,
+    "protocol": "Uniform positive ordered compositions of physical ascending helper width with unchanged ascending part count; actual nonascending helper payments held fixed exactly once.",
+    "results": [
+      {
+        "path": "results/L-10/v1/seed-11031/RESULT.json",
+        "sha256": "34f3d6baf4b71efd0400de1edaeace21d4afba86ddbc0dafe9f8b7f88dd56188"
+      },
+      {
+        "path": "results/L-10/v1/seed-29063/RESULT.json",
+        "sha256": "fbf4ce4e093b5dc54901f43a95248fe99a1fa4b4db0ba53eaac1b2f14336a0f2"
+      }
+    ],
+    "scope": "All three FULL rows pass numerical thresholds; all six BORROW rows lie above every sampled null moment, not tied. Samples are compositions, not audited feasible words. Profile-derived statistics do not meet the non-circular pattern criterion.",
+    "status": "NULL",
+    "tie_tolerance": 1e-10,
+    "word_tests": [
+      {
+        "attribution": {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 57222,
+          "format": "FULL-WORD",
+          "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+          "kappa": "0.001672660197076918",
+          "local_profile": {
+            "1": 2412,
+            "2": 418,
+            "3": 432,
+            "4": 142,
+            "5": 82,
+            "8": 8
+          },
+          "path": "1094-K8S7-FULL-WORD.json.gz",
+          "pr": 1094,
+          "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+          "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+          "width_inventory": {
+            "4": 56,
+            "5": 32,
+            "7": 30,
+            "8": 122,
+            "9": 240
+          }
+        },
+        "bh_q": [
+          0.0014992503748125937,
+          0.0014992503748125937
+        ],
+        "empirical_p": [
+          0.0004997501249375312,
+          0.0004997501249375312
+        ],
+        "family": "FULL-WORD",
+        "fixed_nonascending_helper_payments": [
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 224
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 240
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 256
+          }
+        ],
+        "fraction_null_strictly_above": [
+          1.0,
+          1.0
+        ],
+        "passed_per_seed": [
+          true,
+          true
+        ],
+        "real_above_every_sample_per_seed": [
+          false,
+          false
+        ],
+        "real_below_every_sample_per_seed": [
+          true,
+          true
+        ],
+        "word": "1094-K8S7-FULL-WORD.json.gz"
+      },
+      {
+        "attribution": {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "bytes": 57438,
+          "format": "FULL-WORD",
+          "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+          "kappa": "0.001676938111022438",
+          "local_profile": {
+            "1": 2348,
+            "2": 500,
+            "3": 416,
+            "4": 130,
+            "5": 82,
+            "8": 8
+          },
+          "path": "1672-gauge44-word-566-554.json.gz",
+          "pr": 1672,
+          "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+          "width_inventory": {
+            "4": 44,
+            "5": 44,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        "bh_q": [
+          0.0014992503748125937,
+          0.0014992503748125937
+        ],
+        "empirical_p": [
+          0.0004997501249375312,
+          0.0004997501249375312
+        ],
+        "family": "FULL-WORD",
+        "fixed_nonascending_helper_payments": [
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 224
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 240
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 256
+          }
+        ],
+        "fraction_null_strictly_above": [
+          1.0,
+          1.0
+        ],
+        "passed_per_seed": [
+          true,
+          true
+        ],
+        "real_above_every_sample_per_seed": [
+          false,
+          false
+        ],
+        "real_below_every_sample_per_seed": [
+          true,
+          true
+        ],
+        "word": "1672-gauge44-word-566-554.json.gz"
+      },
+      {
+        "attribution": {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "bytes": 57440,
+          "format": "FULL-WORD",
+          "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+          "kappa": "0.001676938111022438",
+          "local_profile": {
+            "1": 2340,
+            "2": 508,
+            "3": 420,
+            "4": 126,
+            "5": 82,
+            "8": 8
+          },
+          "path": "1672-extra-word-566-554.json.gz",
+          "pr": 1672,
+          "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+          "width_inventory": {
+            "4": 40,
+            "5": 48,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        "bh_q": [
+          0.0014992503748125937,
+          0.0014992503748125937
+        ],
+        "empirical_p": [
+          0.0004997501249375312,
+          0.0004997501249375312
+        ],
+        "family": "FULL-WORD",
+        "fixed_nonascending_helper_payments": [
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 224
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 240
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 256
+          }
+        ],
+        "fraction_null_strictly_above": [
+          1.0,
+          1.0
+        ],
+        "passed_per_seed": [
+          true,
+          true
+        ],
+        "real_above_every_sample_per_seed": [
+          false,
+          false
+        ],
+        "real_below_every_sample_per_seed": [
+          true,
+          true
+        ],
+        "word": "1672-extra-word-566-554.json.gz"
+      },
+      {
+        "attribution": {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 71241,
+          "format": "BORROW-WORD",
+          "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+          "kappa": "0.0017161404259974415",
+          "local_profile": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "path": "2745-BORROW-WORD-43base.json.gz",
+          "pr": 2745,
+          "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+          "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "bh_q": [
+          1.0,
+          1.0
+        ],
+        "empirical_p": [
+          1.0,
+          1.0
+        ],
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": [
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              7,
+              1
+            ],
+            "register": 224
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              7,
+              1
+            ],
+            "register": 240
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 256
+          }
+        ],
+        "fraction_null_strictly_above": [
+          0.0,
+          0.0
+        ],
+        "passed_per_seed": [
+          false,
+          false
+        ],
+        "real_above_every_sample_per_seed": [
+          true,
+          true
+        ],
+        "real_below_every_sample_per_seed": [
+          false,
+          false
+        ],
+        "word": "2745-BORROW-WORD-43base.json.gz"
+      },
+      {
+        "attribution": {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 71242,
+          "format": "BORROW-WORD",
+          "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+          "kappa": "0.0017161404259974415",
+          "local_profile": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "path": "2745-BORROW-WORD-43extra.json.gz",
+          "pr": 2745,
+          "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+          "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "bh_q": [
+          1.0,
+          1.0
+        ],
+        "empirical_p": [
+          1.0,
+          1.0
+        ],
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": [
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              7,
+              1
+            ],
+            "register": 224
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              7,
+              1
+            ],
+            "register": 240
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 256
+          }
+        ],
+        "fraction_null_strictly_above": [
+          0.0,
+          0.0
+        ],
+        "passed_per_seed": [
+          false,
+          false
+        ],
+        "real_above_every_sample_per_seed": [
+          true,
+          true
+        ],
+        "real_below_every_sample_per_seed": [
+          false,
+          false
+        ],
+        "word": "2745-BORROW-WORD-43extra.json.gz"
+      },
+      {
+        "attribution": {
+          "author": "DavidAriasC",
+          "bytes": 72192,
+          "format": "BORROW-WORD",
+          "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+          "kappa": "0.001717256973467002308270",
+          "local_profile": {
+            "1": 2364,
+            "2": 647,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "path": "2766-WORD-base.json.gz",
+          "pr": 2766,
+          "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+          "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "bh_q": [
+          1.0,
+          1.0
+        ],
+        "empirical_p": [
+          1.0,
+          1.0
+        ],
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": [
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 224
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 240
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 256
+          }
+        ],
+        "fraction_null_strictly_above": [
+          0.0,
+          0.0
+        ],
+        "passed_per_seed": [
+          false,
+          false
+        ],
+        "real_above_every_sample_per_seed": [
+          true,
+          true
+        ],
+        "real_below_every_sample_per_seed": [
+          false,
+          false
+        ],
+        "word": "2766-WORD-base.json.gz"
+      },
+      {
+        "attribution": {
+          "author": "Tekalign (tekuuu)",
+          "bytes": 72468,
+          "format": "BORROW-WORD",
+          "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+          "kappa": "0.001717141586348426338109",
+          "local_profile": {
+            "1": 2366,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+          "pr": 2751,
+          "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "bh_q": [
+          1.0,
+          1.0
+        ],
+        "empirical_p": [
+          1.0,
+          1.0
+        ],
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": [
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 224
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 240
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 256
+          }
+        ],
+        "fraction_null_strictly_above": [
+          0.0,
+          0.0
+        ],
+        "passed_per_seed": [
+          false,
+          false
+        ],
+        "real_above_every_sample_per_seed": [
+          true,
+          true
+        ],
+        "real_below_every_sample_per_seed": [
+          false,
+          false
+        ],
+        "word": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+      },
+      {
+        "attribution": {
+          "author": "Marius-Paul Dumitrean",
+          "bytes": 72444,
+          "format": "BORROW-WORD",
+          "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+          "kappa": "0.001717794984118634663827",
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "pr": 2802,
+          "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "bh_q": [
+          1.0,
+          1.0
+        ],
+        "empirical_p": [
+          1.0,
+          1.0
+        ],
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": [
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 224
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 240
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 256
+          }
+        ],
+        "fraction_null_strictly_above": [
+          0.0,
+          0.0
+        ],
+        "passed_per_seed": [
+          false,
+          false
+        ],
+        "real_above_every_sample_per_seed": [
+          true,
+          true
+        ],
+        "real_below_every_sample_per_seed": [
+          false,
+          false
+        ],
+        "word": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+      },
+      {
+        "attribution": {
+          "author": "Marius-Paul Dumitrean",
+          "bytes": 72443,
+          "format": "BORROW-WORD",
+          "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+          "kappa": "0.001717794984118634663827",
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+          "pr": 2802,
+          "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "bh_q": [
+          1.0,
+          1.0
+        ],
+        "empirical_p": [
+          1.0,
+          1.0
+        ],
+        "family": "BORROW-WORD",
+        "fixed_nonascending_helper_payments": [
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 224
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 240
+          },
+          {
+            "kind": "centre_descent",
+            "mass": 8,
+            "paid_parts": [
+              8
+            ],
+            "register": 256
+          }
+        ],
+        "fraction_null_strictly_above": [
+          0.0,
+          0.0
+        ],
+        "passed_per_seed": [
+          false,
+          false
+        ],
+        "real_above_every_sample_per_seed": [
+          true,
+          true
+        ],
+        "real_below_every_sample_per_seed": [
+          false,
+          false
+        ],
+        "word": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+      }
+    ]
+  },
+  "pins_file": {
+    "path": "data/words/PINS.json",
+    "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+  },
+  "preregistration": {
+    "path": "results/M3/PREREGISTRATION.json",
+    "sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938"
+  },
+  "review_refs": [
+    {
+      "path": "results/M3/GUARD-ORDER-REVIEW.json",
+      "sha256": "e34141ac883c7bad15a4cecdb3b3fd35776223ea002a67888852db89fbdb3572"
+    },
+    {
+      "path": "results/M3/L8-CERTIFICATE-REVIEW.json",
+      "sha256": "64460e56ef3cd8f3b2faa73ba895f0be2fa17ce5ea70cca031734bc4a08dd9b0"
+    }
+  ],
+  "saturation": {
+    "bounds": {
+      "feasible": true,
+      "literal_inside_bounds": true,
+      "mutable_gates": 5470,
+      "slack_hist": {
+        "0": 4595,
+        "1": 720,
+        "2": 127,
+        "3": 28
+      },
+      "static_bad": []
+    },
+    "direct_alias_pairs": [],
+    "fixed_order_control": {
+      "certification": "Exact integer-surrogate optimum; rational interval bounds the true toolkit cost minimum. It does not establish uniqueness of a true-moment optimum profile.",
+      "certified": true,
+      "cost": "10836668668",
+      "endpoint": "0.001717794984118634663827",
+      "exact_true_optimum_profile_proved": false,
+      "literal_cost": "10836668668",
+      "literal_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "true_cost_scope": "Pinned toolkit T_r includes its per-child fallback overhead; this is not the global kappa-root equation. Interval excludes the unchanged centre descents."
+    },
+    "one_hostee_augmenting_paths": [],
+    "random_pair_control": {
+      "feasible_fraction_per_seed": [
+        0.097,
+        0.0955
+      ],
+      "interpretation": "The broad life/slot control is not zero. Its 9.7%/9.55% feasible fractions do not make the narrower direct-alias census nonempty; they do refute an unqualified expected-zero statement for this control.",
+      "n_per_seed": 2000,
+      "protocol": "uniform independent life/slot pairs; exact time/dimension guards only"
+    },
+    "results": [
+      {
+        "path": "results/L-9/v1/seed-11031/RESULT.json",
+        "sha256": "a5bf3d343b376a4784d31b22dd3c273f12f4e97ffdfa74d1876c6bfd52c40f02"
+      },
+      {
+        "path": "results/L-9/v1/seed-29063/RESULT.json",
+        "sha256": "3cab508eed644698673b5f380389746465575120a62e1cdbdfb9a69302eb66a6"
+      }
+    ],
+    "status": "EXPLORATORY",
+    "unresolved": [
+      "constructive simultaneous hostee-refit gains",
+      "restorable width-cut class",
+      "kernel identity classes"
+    ],
+    "word_attribution": [
+      {
+        "author": "Marius-Paul Dumitrean",
+        "bytes": 72444,
+        "format": "BORROW-WORD",
+        "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+        "kappa": "0.001717794984118634663827",
+        "local_profile": {
+          "1": 2382,
+          "2": 648,
+          "3": 268,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "pr": 2802,
+        "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 2,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      }
+    ]
+  },
+  "schema_version": 1,
+  "scope": "Finite guarded move bookkeeping, exact class ceilings and protocol-specific controls. No new structural-pattern or candidate-price claim.",
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43extra.json.gz",
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    }
+  ],
+  "stop_rules": {
+    "Lane_C_stopped": true,
+    "N6_executed_after_L11_PASS": true,
+    "S3_bookkeeping_ref": {
+      "path": "results/L-10/v1/S3-BOOKKEEPING.json",
+      "sha256": "00440c72af70c5ebebcfd4771aec7ed668cfb65f0a1a10cee24d30d7b5d535f2"
+    },
+    "S3_counted_as_new_family": false,
+    "consecutive_null_stop_binding": false,
+    "growth_bookkeeping_stop_binding": false,
+    "reasons": [
+      "Early guarded lineage decomposition remains unresolved.",
+      "A certified #2802 fixed-inventory ceiling is strictly below the certified rank51 packing lower endpoint."
+    ],
+    "sequence": [
+      "L-8 PASS",
+      "L-9 EXPLORATORY",
+      "L-10 NULL",
+      "L-11 PASS",
+      "L6-COST-N6 PASS"
+    ]
+  }
+}

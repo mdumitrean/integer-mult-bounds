@@ -96,6 +96,52 @@ def review(require_complete=True):
         for link in linked:
             if link not in records:
                 errors.append(row['id'] + ': missing result ' + link)
+    heldout_review = []
+    m4 = R.RESULTS/'M4/PREREGISTRATION.json'
+    if m4.exists():
+        frozen = json.loads(m4.read_text())
+        snapshot = R.PKG/frozen['prediction_snapshot']['path']
+        if R.sha256(snapshot) != frozen['prediction_snapshot']['sha256']:
+            errors.append('M4 frozen prediction snapshot changed')
+        for path in sorted((R.PKG/'data/heldout').glob('*/FETCH.json')):
+            fetch = json.loads(path.read_text())
+            if fetch['fetch_started_utc'] <= frozen['registered_utc']:
+                errors.append('held-out fetch predates frozen predictions: '+str(fetch['pr']))
+            if fetch['preregistration_sha256'] != R.sha256(m4):
+                errors.append('held-out fetch has wrong preregistration: '+str(fetch['pr']))
+            if fetch['prediction_snapshot_sha256'] != R.sha256(snapshot):
+                errors.append('held-out fetch has wrong prediction snapshot: '+str(fetch['pr']))
+            if not fetch['selected_commit'].startswith(fetch['expected_head_prefix']):
+                errors.append('held-out selected commit differs from planned prefix: '+str(fetch['pr']))
+            heldout_review.append(dict(pr=fetch['pr'],selected_commit=fetch['selected_commit'],
+                                       fetch_after_freeze=True))
+        predictions = R.RESULTS/'PREDICTIONS.json'
+        if require_complete:
+            final = json.loads(predictions.read_text())
+            original = json.loads(snapshot.read_text())
+            if final['predictions'] != original['predictions']:
+                errors.append('final prediction definitions differ from frozen snapshot')
+            if final.get('state') != 'COMPLETED' or not final.get('outcomes'):
+                errors.append('M4 prediction outcomes missing')
+    # Binding scientific stops are different from unrun or exploratory items.
+    stop_reviews=[]
+    for milestone, lane, pair, unrun in [('M1','A',['L-2','L-1'],['L-3','L-4','L-5']),
+                                      ('M2','C',['S-6','S-2'],['S-4','S-5'])]:
+        stop_path=R.RESULTS/milestone/'STOP.json'
+        if not stop_path.exists():
+            if require_complete:errors.append('missing lane stop: '+lane)
+            continue
+        stop=json.loads(stop_path.read_text())
+        for experiment in pair:
+            row=next(x for x in registry if x['id']==experiment)
+            if row['status']!='NULL' or not row.get('confirmed'):
+                errors.append('lane stop lacks confirmed NULL: '+experiment)
+        for experiment in unrun:
+            row=next(x for x in registry if x['id']==experiment)
+            if row['status']!='EXPLORATORY' or any(records[p]['n_permutations'] or
+                records[p]['cpu_seconds'] for p in row['result_files']):
+                errors.append('stopped experiment was counted as executed: '+experiment)
+        stop_reviews.append(dict(lane=lane,trigger=pair,unrun=unrun))
     total_bytes = sum(p.stat().st_size for p in R.RESULTS.rglob('*') if p.is_file())
     if total_bytes >= 200*1000*1000:
         errors.append('results/ reaches the 200 MB limit')
@@ -114,6 +160,7 @@ def review(require_complete=True):
         result_bytes=total_bytes,source_digest_count=len(archives),missing_source_archives=missing_sources,
         historical_source_archive_status='PARTIAL' if missing_sources else 'COMPLETE',
         archive_scope='The required SHA256 records are preserved for every run. Byte archives were added during M0; missing early snapshots remain an explicit reproducibility limitation, separate from receipt integrity.',
+        heldout_acquisition_review=heldout_review,binding_stop_review=stop_reviews,
         memory_projection_files=projections,
         source_attribution=R.provenance(),
         scientific_scope='Integrity review only; does not promote exploratory, skipped, or protocol-specific results.')
