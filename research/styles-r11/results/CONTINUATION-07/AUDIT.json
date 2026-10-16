@@ -1,0 +1,260 @@
+{
+  "administrative_cpu_seconds": 3.617199056,
+  "recorded_utc": "2026-10-16T18:27:22.960562+00:00",
+  "stable": {
+    "administrative_base_script_sha256": "d451f7ccea9c4ad01503624ca5caa150869b825c83df6a5790059d607b54addd",
+    "base_work_commit": "bbc18613878c80f4540da0604db8de74a73bb20c",
+    "cohort": {
+      "acquired_file_blob_checks": 136,
+      "acquired_payload_bytes": 8257625,
+      "exact_claim_release_receipt_matches": 12,
+      "provider_pairs": 24,
+      "releases": 12,
+      "sha256": "3969d32d59be02b88059da8a6e16c21606eb7fadd7c3982c2feda90fe5a4636f",
+      "source_reported_only": true
+    },
+    "coverage_correction": {
+      "addendum": {
+        "path": "results/CONTINUATION-07/ML2/COVERAGE-CORRECTION-v2.json",
+        "sha256": "e2e173133dcc8acec7c495dda41422510fc5f755a19556bbf4f4ba9e4c6aff59"
+      },
+      "fixed_fill_regression_releases": [
+        2948,
+        2957,
+        2966
+      ],
+      "prior_outputs_known": true,
+      "retained_v1": true,
+      "source_scopes_not_relabelled": true
+    },
+    "experiments": {
+      "ML1-HISTORICAL-CONTROLS": [
+        {
+          "attempt": "v1",
+          "completed_by_phase": {
+            "controls": 6,
+            "history": 2,
+            "observed": 4,
+            "permutations": 398
+          },
+          "cpu_seconds": 134.73822955,
+          "max_task_seconds": 1.2494010385125875,
+          "max_worker_rss_bytes": 397123584,
+          "memory_projections": [
+            {
+              "path": "results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/CONTROLS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 81.38048400878905,
+              "sha256": "6991b53b70476d6043931d3d254c0956269ea56540858bb454ac832ee3cb88b4"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/HISTORY-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 81.38048400878905,
+              "sha256": "6991b53b70476d6043931d3d254c0956269ea56540858bb454ac832ee3cb88b4"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/OBSERVED-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 81.38048400878905,
+              "sha256": "6991b53b70476d6043931d3d254c0956269ea56540858bb454ac832ee3cb88b4"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/PERMUTATIONS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 81.38048400878905,
+              "sha256": "6991b53b70476d6043931d3d254c0956269ea56540858bb454ac832ee3cb88b4"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/PREPARATION-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 58.035406494140624,
+              "sha256": "45648cd415ebb6476e5a6ffaa0a487d701efb8946023d84705d8c0ab318b100a"
+            }
+          ],
+          "pool_status_counts": {
+            "OK": 410
+          },
+          "pool_tasks": 410,
+          "source_credits_per_result": {
+            "37003": 23,
+            "74017": 23
+          },
+          "source_preimages_used": [],
+          "status": "EXPLORATORY",
+          "wall_seconds": 16.3596627805382
+        }
+      ],
+      "ML2-RELEASE-COMPARISON": [
+        {
+          "attempt": "v1",
+          "completed_by_phase": {
+            "feature_controls": 2,
+            "features": 48,
+            "model_controls": 2,
+            "observed": 2,
+            "permutations": 398
+          },
+          "cpu_seconds": 348.70006579899996,
+          "max_task_seconds": 7.8444290943443775,
+          "max_worker_rss_bytes": 965726208,
+          "memory_projections": [
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/FEATURES-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 96.96439666748047,
+              "sha256": "7b3feba345ed51f6deb974e0f17b73730eeb340bb23a8e46278c74fa73ed959b"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/FEATURE_CONTROLS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 96.84330291748047,
+              "sha256": "afd97c5fc226300e049820b09c3d2239b2beaf2eeae8ad9aaddfa62d8eb56a02"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/MODEL_CONTROLS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 98.17533416748047,
+              "sha256": "1ddea01e052df16193d22d07871dd358f3f32b62aa9000807b5f23a8b393d639"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/OBSERVED-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 98.17533416748047,
+              "sha256": "1ddea01e052df16193d22d07871dd358f3f32b62aa9000807b5f23a8b393d639"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/PERMUTATIONS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 98.17533416748047,
+              "sha256": "1ddea01e052df16193d22d07871dd358f3f32b62aa9000807b5f23a8b393d639"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/PREPARATION-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 61.08564300537109,
+              "sha256": "7eade6e2cae89c490be7ed3345276e4b78250f55d79153433aeaf3c1ee93b96b"
+            }
+          ],
+          "paired_release_provider_count": 24,
+          "pool_status_counts": {
+            "OK": 452
+          },
+          "pool_tasks": 452,
+          "source_credits_per_result": {
+            "37003": 21,
+            "74017": 21
+          },
+          "source_preimages_used": [],
+          "status": "EXPLORATORY",
+          "wall_seconds": 19.465195182710886
+        },
+        {
+          "attempt": "v2",
+          "completed_by_phase": {
+            "feature_controls": 2,
+            "features": 48,
+            "model_controls": 2,
+            "observed": 2,
+            "permutations": 398
+          },
+          "cpu_seconds": 338.890547171,
+          "max_task_seconds": 7.833449780009687,
+          "max_worker_rss_bytes": 955228160,
+          "memory_projections": [
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/FEATURES-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 96.99277801513672,
+              "sha256": "71cf70448eaaec2179e086057138cbd9cc0fceb9db74fc786835ac20f4d9a1e8"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/FEATURE_CONTROLS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 96.87168426513672,
+              "sha256": "19c4e0d23abf1eab39cb1f6f12e3d5d28795f5446edcb14b45708e33d9c21256"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/MODEL_CONTROLS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 97.84043426513672,
+              "sha256": "51991b84363d3d8956f2249862ec56def024861e5b82c2ca03a3614f45aea9f5"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/OBSERVED-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 97.84043426513672,
+              "sha256": "51991b84363d3d8956f2249862ec56def024861e5b82c2ca03a3614f45aea9f5"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/PERMUTATIONS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 97.96152801513672,
+              "sha256": "36192aefbe05b6eb9bd9f4c1f3bbf167af46236abe58860abb8659cae82f091b"
+            },
+            {
+              "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/PREPARATION-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 61.08351440429687,
+              "sha256": "6db004c55981db693a00d11a2a45588f311330bf1eb14a493aa9ac814fab2d42"
+            }
+          ],
+          "paired_release_provider_count": 24,
+          "pool_status_counts": {
+            "OK": 452
+          },
+          "pool_tasks": 452,
+          "source_credits_per_result": {
+            "37003": 21,
+            "74017": 21
+          },
+          "source_preimages_used": [],
+          "status": "EXPLORATORY",
+          "wall_seconds": 19.33721537142992
+        }
+      ],
+      "ML3-OUT-OF-COHORT": [
+        {
+          "attempt": "v1",
+          "completed_by_phase": {
+            "feature_controls": 2,
+            "features": 4,
+            "predictions": 2
+          },
+          "cpu_seconds": 21.060529403,
+          "distinct_archived_sources": 113,
+          "outcome_known_before_registration": true,
+          "pool_tasks": 8,
+          "scientific_functions_rerun": false,
+          "source": {
+            "acquired_bytes": 1841940,
+            "acquired_files": 37,
+            "exact_parent_gain": "58495443855455489/500000000000000000000000",
+            "outcome_known_before_registration": true,
+            "parent_pr": 2979,
+            "pr": 3015,
+            "source_only": true
+          },
+          "source_binding_and_seed_agreement": "PASS",
+          "status": "EXPLORATORY",
+          "wall_seconds": 6.24306449200958
+        }
+      ]
+    },
+    "final_documents": {
+      "EXPERIMENTS.json": "78e36bd906e2135418a78c608bece21a1accdb4d08e06dcc798ecd9b746a1a88",
+      "HANDBACK.md": "d7691e2547a9ae52180d925bb0b55daec7537aacfdff4a9d429b364862920d6d",
+      "PREDICTIONS.json": "23906bdd4bb3e67639dd546108382da94111116c7db29504a79022fe3be5dab3",
+      "RESULTS.md": "dff174bb1b688115c37b4960b633b48cb7b617bb4b37ebcc1d16290e8879ac1b",
+      "TASK.json": "49b34e789d159388a4714da311d8eacdba01680d1bef46afab9c56176626c546"
+    },
+    "kind": "Administrative saved-byte and receipt audit; no scientific reruns",
+    "local_artifact_references_checked": 1600,
+    "preserved_pre_round_files": 22059,
+    "results_bytes_excluding_audit": 194491386,
+    "round_bytes_excluding_audit": 13772869,
+    "schema_version": 1,
+    "script_sha256": "25450519a2a7e59c1dc710a89e3ec508bae1f8ce77798e1194a9a7197793eca1",
+    "source_archives_checked": 116,
+    "source_checkpoints": {
+      "checkpoint": {
+        "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+        "files": 19,
+        "priority_revision": 6,
+        "sha256": "7e104300792270b4893c909f09447777b84e56ad490ee2400402970043c0b538"
+      },
+      "final-checkpoint": {
+        "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+        "files": 19,
+        "priority_revision": 6,
+        "sha256": "f12c8817580e1eaff84605559a20ce848521b1b1c14e6997bd3f8eb62d19a63d"
+      }
+    },
+    "status": "PASS",
+    "total_experimental_cpu_seconds": 843.389371923,
+    "total_pool_tasks": 1322
+  }
+}

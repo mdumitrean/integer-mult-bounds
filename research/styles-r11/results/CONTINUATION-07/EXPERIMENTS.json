@@ -1,4 +1,27 @@
 {
+  "closed_utc": "2026-10-16T18:27:16.702992+00:00",
+  "compute": {
+    "configured_workers": 61,
+    "cpu_seconds": 843.3893719229999,
+    "permutation_tasks": 1194,
+    "pool_tasks": 1322,
+    "source_acquisition_and_administrative_audit_separate": true,
+    "summed_scientific_wall_seconds": 61.40513782668859
+  },
+  "deliverables": {
+    "HANDBACK.md": {
+      "path": "results/CONTINUATION-07/HANDBACK.md",
+      "sha256": "d7691e2547a9ae52180d925bb0b55daec7537aacfdff4a9d429b364862920d6d"
+    },
+    "PREDICTIONS.json": {
+      "path": "results/CONTINUATION-07/PREDICTIONS.json",
+      "sha256": "23906bdd4bb3e67639dd546108382da94111116c7db29504a79022fe3be5dab3"
+    },
+    "RESULTS.md": {
+      "path": "results/CONTINUATION-07/RESULTS.md",
+      "sha256": "dff174bb1b688115c37b4960b633b48cb7b617bb4b37ebcc1d16290e8879ac1b"
+    }
+  },
   "experiments": [
     {
       "attempts": [
@@ -66,22 +89,46 @@
         "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/seed-74017/RESULT.json"
       ],
       "review_note": "v1 retained exploratory; source-coverage enforcement repaired in registered v2",
-      "scope": "Userclarifiedlatest10-20completedimprovementPRs;acquisition/source-onlyimplementationpendingpreregistration",
+      "scope": "Twelve completed parent-matched source releases; paired descriptive analysis, with conservative v2 unchanged-allocation regression coverage.",
       "started_utc": "2026-10-16T18:15:50.139185+00:00",
       "status": "EXPLORATORY",
       "updated_utc": "2026-10-16T18:16:09.484500+00:00",
       "wall_seconds": 38.802410554140806
     },
     {
+      "attempts": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 21.060529403,
+          "result_files": [
+            "results/CONTINUATION-07/ML3-OUT-OF-COHORT/v1/seed-37003/RESULT.json",
+            "results/CONTINUATION-07/ML3-OUT-OF-COHORT/v1/seed-74017/RESULT.json"
+          ],
+          "status": "EXPLORATORY",
+          "wall_seconds": 6.24306449200958
+        }
+      ],
+      "confirmed": true,
+      "cpu_seconds": 21.060529403,
+      "execution": "COMPLETED",
       "id": "ML3-OUT-OF-COHORT",
       "preregistration": "results/CONTINUATION-07/ML3/PREREGISTRATION.json",
       "preregistration_sha256": "c21b4758dfc2f7f06aed16ed9e0fd3a386db2475edb82b9108b192d2b420386f",
-      "status": "planned"
+      "result_files": [
+        "results/CONTINUATION-07/ML3-OUT-OF-COHORT/v1/seed-37003/RESULT.json",
+        "results/CONTINUATION-07/ML3-OUT-OF-COHORT/v1/seed-74017/RESULT.json"
+      ],
+      "started_utc": "2026-10-16T18:18:49.496712+00:00",
+      "status": "EXPLORATORY",
+      "updated_utc": "2026-10-16T18:18:55.743487+00:00",
+      "wall_seconds": 6.24306449200958
     }
   ],
+  "formal_pattern_claims": 0,
   "goal_status": "ACTIVE_NOT_ACHIEVED",
+  "new_kappa_improvement": false,
   "no_active_experiments": true,
   "round": "CONTINUATION-07",
   "schema_version": 1,
-  "status": "RUNNING_REGISTERED_HISTORICAL_ANALYSIS"
+  "status": "COMPLETE_RETROSPECTIVE_ANALYSIS_NO_PROMOTED_PATTERN"
 }
