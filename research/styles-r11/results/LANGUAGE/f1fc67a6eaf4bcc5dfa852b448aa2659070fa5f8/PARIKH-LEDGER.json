@@ -1,0 +1,491 @@
+{
+  "artifact_status": "EXPORTED_EXISTING_EVIDENCE",
+  "attribution": {
+    "author": "Tekalign (tekuuu)",
+    "bytes": 72468,
+    "format": "BORROW-WORD",
+    "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+    "kappa": "0.001717141586348426338109",
+    "local_profile": {
+      "1": 2366,
+      "2": 646,
+      "3": 297,
+      "4": 120,
+      "5": 26,
+      "8": 8
+    },
+    "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+    "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+    "pr": 2751,
+    "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+    "source": "in tree (package of PR #2802)",
+    "width_inventory": {
+      "4": 26,
+      "5": 9,
+      "7": 62,
+      "8": 78,
+      "9": 240
+    }
+  },
+  "availability": "recorded_incident_edges_with_stated_guard_gaps",
+  "complete_ledger_receipts": [
+    {
+      "bytes": 2576449,
+      "experiment": "L-7",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "EXPLORATORY",
+      "seed": 11031,
+      "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+    },
+    {
+      "bytes": 2576448,
+      "experiment": "L-7",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "EXPLORATORY",
+      "seed": 29063,
+      "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+    }
+  ],
+  "family": "BORROW-WORD",
+  "guarded_order_receipts": [
+    {
+      "bytes": 625068,
+      "experiment": "L7-GUARD-ORDER",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L7-GUARD-ORDER/v1/seed-11031/RESULT.json",
+      "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+      "recorded_status": "PASS",
+      "seed": 11031,
+      "sha256": "57728fc7927addf1da924e52cb7a8ab21b03ee7149b3621cb54675c3ef175b4c"
+    },
+    {
+      "bytes": 625069,
+      "experiment": "L7-GUARD-ORDER",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L7-GUARD-ORDER/v1/seed-29063/RESULT.json",
+      "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+      "recorded_status": "PASS",
+      "seed": 29063,
+      "sha256": "9aab100d984d2b5242100549c5f1f01c882156a7c7b1c8da81af6fa361270771"
+    }
+  ],
+  "incident_edges": [
+    {
+      "after": "2751",
+      "before": "2745",
+      "complete_delta": {
+        "1": -2664,
+        "7": -2664,
+        "8": 2664
+      },
+      "exact_profile_sum": true,
+      "guarded_productions": {
+        "availability": "unavailable",
+        "certificate": null,
+        "obligation": {
+          "bytes": 2576449,
+          "experiment": "L-7",
+          "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/0/early_transition_obligations",
+          "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+          "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+          "recorded_status": "EXPLORATORY",
+          "seed": 11031,
+          "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+        },
+        "phi": null,
+        "reason": "The early transition has exact profile bookkeeping but no validated decomposition into the registered move alphabet.",
+        "status": "EXPLORATORY"
+      },
+      "idle_delta": {},
+      "idle_status": "derived from two pinned complete profiles and canonical local difference",
+      "local_delta_per_call": {
+        "1": -4,
+        "7": -4,
+        "8": 4
+      },
+      "register_delta_reference": {
+        "bytes": 2576449,
+        "experiment": "L-7",
+        "json_pointer": "/statistics/tasks/0/result/lineage/1/variants/0",
+        "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+        "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+        "recorded_status": "EXPLORATORY",
+        "seed": 11031,
+        "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+      },
+      "registers_touched": [
+        9,
+        74,
+        92,
+        224,
+        240,
+        640,
+        641,
+        642,
+        644,
+        696,
+        697,
+        698,
+        700
+      ],
+      "scalar_evidence": [
+        {
+          "dphi": "8029.7256766971807892955349578215614582028205532147324850690895709336253336538136312722220",
+          "exact_dkappa": "0.000001001160350984821920084371774",
+          "law_dkappa": "9.974419701102881919446340409E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110348,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/1",
+            "path": "research/styles-r11/results/L-6/v1/seed-11031/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 11031,
+            "sha256": "92faf9b276dc2b9df94cc54fb40cec3397b0e1bb0fd42f0a99ac0bff198159d3"
+          }
+        },
+        {
+          "dphi": "8029.7256766971807892955349578215614582028205532147324850690895709336253336538136312722220",
+          "exact_dkappa": "0.000001001160350984821920084371774",
+          "law_dkappa": "9.974419701102881919446340409E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110340,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/1",
+            "path": "research/styles-r11/results/L-6/v1/seed-29063/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 29063,
+            "sha256": "b99b8e3272a1d39092d2aad2bc03cfb1357da2a0e9b71158317e5d767d8318e6"
+          }
+        }
+      ],
+      "seed": 11031,
+      "sum_mass_neutral": true
+    },
+    {
+      "after": "2766",
+      "before": "2751",
+      "complete_delta": {
+        "1": -1332,
+        "2": 666
+      },
+      "exact_profile_sum": true,
+      "guarded_productions": {
+        "availability": "recorded_local_guard_audit",
+        "reference": {
+          "bytes": 2576449,
+          "experiment": "L-7",
+          "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/0/refit2751_to_2766",
+          "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+          "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+          "recorded_status": "EXPLORATORY",
+          "seed": 11031,
+          "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+        },
+        "scope": "Recorded exact frame refit and its stated inverse scope."
+      },
+      "idle_delta": {},
+      "idle_status": "derived from two pinned complete profiles and canonical local difference",
+      "local_delta_per_call": {
+        "1": -2,
+        "2": 1
+      },
+      "register_delta_reference": {
+        "bytes": 2576449,
+        "experiment": "L-7",
+        "json_pointer": "/statistics/tasks/0/result/lineage/2/variants/0",
+        "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+        "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+        "recorded_status": "EXPLORATORY",
+        "seed": 11031,
+        "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+      },
+      "registers_touched": [
+        393,
+        515
+      ],
+      "scalar_evidence": [
+        {
+          "dphi": "923.272044505847152143753185782291188676566178967859998488745772645200304463633361187009952",
+          "exact_dkappa": "1.153871185759701612591209734E-7",
+          "law_dkappa": "1.146876399143013319919592945E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110348,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/2",
+            "path": "research/styles-r11/results/L-6/v1/seed-11031/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 11031,
+            "sha256": "92faf9b276dc2b9df94cc54fb40cec3397b0e1bb0fd42f0a99ac0bff198159d3"
+          }
+        },
+        {
+          "dphi": "923.272044505847152143753185782291188676566178967859998488745772645200304463633361187009952",
+          "exact_dkappa": "1.153871185759701612591209734E-7",
+          "law_dkappa": "1.146876399143013319919592945E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110340,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/2",
+            "path": "research/styles-r11/results/L-6/v1/seed-29063/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 29063,
+            "sha256": "b99b8e3272a1d39092d2aad2bc03cfb1357da2a0e9b71158317e5d767d8318e6"
+          }
+        }
+      ],
+      "seed": 11031,
+      "sum_mass_neutral": true
+    },
+    {
+      "after": "2751",
+      "before": "2745",
+      "complete_delta": {
+        "1": -2664,
+        "7": -2664,
+        "8": 2664
+      },
+      "exact_profile_sum": true,
+      "guarded_productions": {
+        "availability": "unavailable",
+        "certificate": null,
+        "obligation": {
+          "bytes": 2576448,
+          "experiment": "L-7",
+          "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/0/early_transition_obligations",
+          "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+          "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+          "recorded_status": "EXPLORATORY",
+          "seed": 29063,
+          "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+        },
+        "phi": null,
+        "reason": "The early transition has exact profile bookkeeping but no validated decomposition into the registered move alphabet.",
+        "status": "EXPLORATORY"
+      },
+      "idle_delta": {},
+      "idle_status": "derived from two pinned complete profiles and canonical local difference",
+      "local_delta_per_call": {
+        "1": -4,
+        "7": -4,
+        "8": 4
+      },
+      "register_delta_reference": {
+        "bytes": 2576448,
+        "experiment": "L-7",
+        "json_pointer": "/statistics/tasks/0/result/lineage/1/variants/0",
+        "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+        "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+        "recorded_status": "EXPLORATORY",
+        "seed": 29063,
+        "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+      },
+      "registers_touched": [
+        9,
+        74,
+        92,
+        224,
+        240,
+        640,
+        641,
+        642,
+        644,
+        696,
+        697,
+        698,
+        700
+      ],
+      "scalar_evidence": [
+        {
+          "dphi": "8029.7256766971807892955349578215614582028205532147324850690895709336253336538136312722220",
+          "exact_dkappa": "0.000001001160350984821920084371774",
+          "law_dkappa": "9.974419701102881919446340409E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110348,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/1",
+            "path": "research/styles-r11/results/L-6/v1/seed-11031/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 11031,
+            "sha256": "92faf9b276dc2b9df94cc54fb40cec3397b0e1bb0fd42f0a99ac0bff198159d3"
+          }
+        },
+        {
+          "dphi": "8029.7256766971807892955349578215614582028205532147324850690895709336253336538136312722220",
+          "exact_dkappa": "0.000001001160350984821920084371774",
+          "law_dkappa": "9.974419701102881919446340409E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110340,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/1",
+            "path": "research/styles-r11/results/L-6/v1/seed-29063/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 29063,
+            "sha256": "b99b8e3272a1d39092d2aad2bc03cfb1357da2a0e9b71158317e5d767d8318e6"
+          }
+        }
+      ],
+      "seed": 29063,
+      "sum_mass_neutral": true
+    },
+    {
+      "after": "2766",
+      "before": "2751",
+      "complete_delta": {
+        "1": -1332,
+        "2": 666
+      },
+      "exact_profile_sum": true,
+      "guarded_productions": {
+        "availability": "recorded_local_guard_audit",
+        "reference": {
+          "bytes": 2576448,
+          "experiment": "L-7",
+          "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/0/refit2751_to_2766",
+          "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+          "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+          "recorded_status": "EXPLORATORY",
+          "seed": 29063,
+          "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+        },
+        "scope": "Recorded exact frame refit and its stated inverse scope."
+      },
+      "idle_delta": {},
+      "idle_status": "derived from two pinned complete profiles and canonical local difference",
+      "local_delta_per_call": {
+        "1": -2,
+        "2": 1
+      },
+      "register_delta_reference": {
+        "bytes": 2576448,
+        "experiment": "L-7",
+        "json_pointer": "/statistics/tasks/0/result/lineage/2/variants/0",
+        "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+        "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+        "recorded_status": "EXPLORATORY",
+        "seed": 29063,
+        "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+      },
+      "registers_touched": [
+        393,
+        515
+      ],
+      "scalar_evidence": [
+        {
+          "dphi": "923.272044505847152143753185782291188676566178967859998488745772645200304463633361187009952",
+          "exact_dkappa": "1.153871185759701612591209734E-7",
+          "law_dkappa": "1.146876399143013319919592945E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110348,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/2",
+            "path": "research/styles-r11/results/L-6/v1/seed-11031/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 11031,
+            "sha256": "92faf9b276dc2b9df94cc54fb40cec3397b0e1bb0fd42f0a99ac0bff198159d3"
+          }
+        },
+        {
+          "dphi": "923.272044505847152143753185782291188676566178967859998488745772645200304463633361187009952",
+          "exact_dkappa": "1.153871185759701612591209734E-7",
+          "law_dkappa": "1.146876399143013319919592945E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110340,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/2",
+            "path": "research/styles-r11/results/L-6/v1/seed-29063/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 29063,
+            "sha256": "b99b8e3272a1d39092d2aad2bc03cfb1357da2a0e9b71158317e5d767d8318e6"
+          }
+        }
+      ],
+      "seed": 29063,
+      "sum_mass_neutral": true
+    }
+  ],
+  "language_source": {
+    "bytes": 172753,
+    "json_pointer": "",
+    "path": "research/styles-r11/results/M0/language/f1fc67a6eaf4.json.gz",
+    "sha256": "0910472746edfeaabc258fbef8005d3ed1c21c618cd2ff28c7038943094c6c59",
+    "uncompressed_sha256": "e5f16cf18d5432c9df4f70c76bf476f5b132458946e2f7470bb116abc69931af"
+  },
+  "lineage_stage": "2751",
+  "new_prices_or_claims": false,
+  "no_new_experiment": true,
+  "object": "parikh_ledger_index",
+  "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+  "pins_entry": {
+    "bytes": 15544,
+    "json_pointer": "/files/research~1t74-joint-twelve-retired7~1inputs~1WORD2751-base.json.gz",
+    "path": "research/styles-r11/data/words/PINS.json",
+    "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+  },
+  "preconditions_consumed_created": {
+    "availability": "unavailable",
+    "certificate": null,
+    "phi": null,
+    "reason": "Local guard and register-change records are linked where available; a complete per-production consumed/created predicate ledger was not recorded.",
+    "status": "EXPLORATORY"
+  },
+  "provenance": {
+    "exporter": {
+      "path": "research/styles-r11/pipeline/export_language.py",
+      "sha256": "16be8fcf0677d8b90b4dd1a1bca1a1eccc9816ff08365d9f6c8d5135fdbb122e"
+    },
+    "input_policy": "Inert JSON reads only; no source words or fetched code executed.",
+    "pins": {
+      "bytes": 15544,
+      "json_pointer": "",
+      "path": "research/styles-r11/data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    "registry_snapshot_sha256": "3e531028d956a8340194fb516d866633e0c6ad3f7a12418f4640d3a6168bcf1d"
+  },
+  "scalar_ledger_receipts": [
+    {
+      "bytes": 110348,
+      "experiment": "L-6",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-6/v1/seed-11031/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "PASS",
+      "seed": 11031,
+      "sha256": "92faf9b276dc2b9df94cc54fb40cec3397b0e1bb0fd42f0a99ac0bff198159d3"
+    },
+    {
+      "bytes": 110340,
+      "experiment": "L-6",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-6/v1/seed-29063/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "PASS",
+      "seed": 29063,
+      "sha256": "b99b8e3272a1d39092d2aad2bc03cfb1357da2a0e9b71158317e5d767d8318e6"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Indexes recorded lineage deltas and their local guards. A profile identity alone is not a guarded production proof.",
+  "status": "EXPLORATORY",
+  "variant": "base"
+}

@@ -26,6 +26,19 @@ def review(require_complete=True):
         blob = hashlib.sha1(b'blob ' + str(len(raw)).encode() + b'\0' + raw).hexdigest()
         if hashlib.sha256(raw).hexdigest() != pin['sha256'] or blob != pin['git_blob']:
             errors.append('pinned word identity changed: ' + name)
+    held_pins={}
+    for path in (R.PKG/'data/heldout').glob('*/DATA-MANIFEST.json'):
+        manifest=json.loads(path.read_text())
+        for pin in manifest['files'].values():
+            actual=(R.PKG/pin['local_path']).resolve()
+            if not actual.is_relative_to(R.PKG/'data/heldout'):
+                errors.append('held-out file escapes the data directory: '+pin['path'])
+                continue
+            raw=actual.read_bytes()
+            blob=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
+            if len(raw)!=pin['bytes'] or hashlib.sha256(raw).hexdigest()!=pin['sha256'] or blob!=pin['git_blob']:
+                errors.append('held-out data identity changed: '+pin['path'])
+            held_pins[pin['path']]=pin
     registrations = {R.sha256(p): p for p in R.RESULTS.glob('**/*PREREGISTRATION*.json')}
     registrations.update({R.sha256(p): p for p in R.RESULTS.glob('**/PREREGISTRATION.json')})
     records, missing_sources = {}, {}
@@ -61,6 +74,10 @@ def review(require_complete=True):
                 for key, expected in pins[name].items():
                     if source.get(key) != expected:
                         errors.append(relative + ': changed PINS attribution ' + name + ':' + key)
+            if name in held_pins:
+                for key,expected in held_pins[name].items():
+                    if source.get(key)!=expected:
+                        errors.append(relative+': changed held-out attribution '+name+':'+key)
             if value['word_blob_ids'].get(name) != source['git_blob']:
                 errors.append(relative + ': blob/attribution mismatch ' + name)
         manifest = value['script_sha256']
@@ -123,6 +140,11 @@ def review(require_complete=True):
                 errors.append('final prediction definitions differ from frozen snapshot')
             if final.get('state') != 'COMPLETED' or not final.get('outcomes'):
                 errors.append('M4 prediction outcomes missing')
+            for claim,confirmation in final.get('confirmation',{}).items():
+                if confirmation.get('confirmed') and (
+                    len(set(confirmation['outcomes']))!=1 or
+                    any(x not in ('PASS','FAIL') for x in confirmation['outcomes'])):
+                    errors.append('invalid held-out confirmation: '+claim)
     # Binding scientific stops are different from unrun or exploratory items.
     stop_reviews=[]
     for milestone, lane, pair, unrun in [('M1','A',['L-2','L-1'],['L-3','L-4','L-5']),
@@ -142,6 +164,31 @@ def review(require_complete=True):
                 records[p]['cpu_seconds'] for p in row['result_files']):
                 errors.append('stopped experiment was counted as executed: '+experiment)
         stop_reviews.append(dict(lane=lane,trigger=pair,unrun=unrun))
+    language_review=None
+    language_index=R.RESULTS/'LANGUAGE/INDEX.json'
+    if language_index.exists():
+        exported=json.loads(language_index.read_text())
+        wanted={'SECTION-STRINGS.json.gz','CLIMB-STRINGS.json.gz','PARIKH-LEDGER.json','MOVE-CENSUS.json'}
+        if exported['word_count']!=len(pins) or {row['pin_key'] for row in exported['words']}!=set(pins):
+            errors.append('language export does not cover the frozen corpus exactly')
+        file_count=0
+        for row in exported['words']:
+            if set(row['files'])!=wanted:
+                errors.append('language export file set differs: '+row['pin_key'])
+            for item in row['files'].values():
+                path=R.ROOT/item['path'];raw=path.read_bytes()
+                plain=gzip.decompress(raw) if path.suffix=='.gz' else raw
+                if len(raw)!=item['bytes'] or hashlib.sha256(raw).hexdigest()!=item['sha256'] or hashlib.sha256(plain).hexdigest()!=item['uncompressed_sha256']:
+                    errors.append('language export identity changed: '+item['path'])
+                json.loads(plain)
+                file_count+=1
+        for source in exported['inputs'].values():
+            if R.sha256(R.ROOT/source['path'])!=source['sha256']:
+                errors.append('language export input changed: '+source['path'])
+        language_review=dict(words=exported['word_count'],files=file_count,source_hashes_verified=True,
+                             scope='Exported bytes and references only; no scientific experiment rerun.')
+    elif require_complete:
+        errors.append('final language export is missing')
     total_bytes = sum(p.stat().st_size for p in R.RESULTS.rglob('*') if p.is_file())
     if total_bytes >= 200*1000*1000:
         errors.append('results/ reaches the 200 MB limit')
@@ -153,6 +200,7 @@ def review(require_complete=True):
     return dict(status='PASS' if not errors else 'REVIEW_REQUIRED',
         reviewed_utc=R.utcnow(),errors=errors,notes=notes,
         pinned_word_count=len(pins),result_count=len(records),experiment_count=len(registry),
+        heldout_data_file_count=len(held_pins),
         receipt_status_counts=dict(Counter(r['status'] for r in records.values())),
         recorded_cpu_seconds=sum(r.get('cpu_seconds',0) for r in records.values()),
         recorded_cpu_hours=sum(r.get('cpu_seconds',0) for r in records.values())/3600,
@@ -161,6 +209,7 @@ def review(require_complete=True):
         historical_source_archive_status='PARTIAL' if missing_sources else 'COMPLETE',
         archive_scope='The required SHA256 records are preserved for every run. Byte archives were added during M0; missing early snapshots remain an explicit reproducibility limitation, separate from receipt integrity.',
         heldout_acquisition_review=heldout_review,binding_stop_review=stop_reviews,
+        language_export_review=language_review,
         memory_projection_files=projections,
         source_attribution=R.provenance(),
         scientific_scope='Integrity review only; does not promote exploratory, skipped, or protocol-specific results.')

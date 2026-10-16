@@ -1,0 +1,128 @@
+{
+  "artifact_status": "EXPORTED_EXISTING_EVIDENCE",
+  "attribution": {
+    "author": "Marius-Paul Dumitrean (mdumitrean)",
+    "bytes": 57412,
+    "format": "FULL-WORD",
+    "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+    "kappa": "0.001676896669021299",
+    "local_profile": {
+      "1": 2339,
+      "2": 510,
+      "3": 419,
+      "4": 126,
+      "5": 82,
+      "8": 8
+    },
+    "path": "research/styles-r11/data/words/1625-extra-word-566.json.gz",
+    "pin_key": "1625-extra-word-566.json.gz",
+    "pr": 1625,
+    "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+    "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+    "width_inventory": {
+      "4": 40,
+      "5": 48,
+      "7": 38,
+      "8": 114,
+      "9": 240
+    }
+  },
+  "availability": "unavailable_for_this_word",
+  "complete_ledger_receipts": [
+    {
+      "bytes": 2576449,
+      "experiment": "L-7",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "EXPLORATORY",
+      "seed": 11031,
+      "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+    },
+    {
+      "bytes": 2576448,
+      "experiment": "L-7",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "EXPLORATORY",
+      "seed": 29063,
+      "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+    }
+  ],
+  "family": "FULL-WORD",
+  "guarded_order_receipts": [],
+  "incident_edges": [],
+  "language_source": {
+    "bytes": 153692,
+    "json_pointer": "",
+    "path": "research/styles-r11/results/M0/language/ac08516e3b7a.json.gz",
+    "sha256": "c420353d85db967e3e239aef419162421d0ff984f5a62914e07e3ac42b96cd21",
+    "uncompressed_sha256": "bbf0ff81b8b947dd4046672c6824d5df14f4830639072dba8779552996c2dc80"
+  },
+  "lineage_stage": "1625",
+  "missing": {
+    "availability": "unavailable",
+    "certificate": null,
+    "phi": null,
+    "reason": "No enrolled L7 lineage edge for this word. The linked global ledger is context, not a derivation of this word.",
+    "status": "EXPLORATORY"
+  },
+  "new_prices_or_claims": false,
+  "no_new_experiment": true,
+  "object": "parikh_ledger_index",
+  "pin_key": "1625-extra-word-566.json.gz",
+  "pins_entry": {
+    "bytes": 15544,
+    "json_pointer": "/files/1625-extra-word-566.json.gz",
+    "path": "research/styles-r11/data/words/PINS.json",
+    "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+  },
+  "preconditions_consumed_created": {
+    "availability": "unavailable",
+    "certificate": null,
+    "phi": null,
+    "reason": "Local guard and register-change records are linked where available; a complete per-production consumed/created predicate ledger was not recorded.",
+    "status": "EXPLORATORY"
+  },
+  "provenance": {
+    "exporter": {
+      "path": "research/styles-r11/pipeline/export_language.py",
+      "sha256": "16be8fcf0677d8b90b4dd1a1bca1a1eccc9816ff08365d9f6c8d5135fdbb122e"
+    },
+    "input_policy": "Inert JSON reads only; no source words or fetched code executed.",
+    "pins": {
+      "bytes": 15544,
+      "json_pointer": "",
+      "path": "research/styles-r11/data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    "registry_snapshot_sha256": "3e531028d956a8340194fb516d866633e0c6ad3f7a12418f4640d3a6168bcf1d"
+  },
+  "scalar_ledger_receipts": [
+    {
+      "bytes": 110348,
+      "experiment": "L-6",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-6/v1/seed-11031/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "PASS",
+      "seed": 11031,
+      "sha256": "92faf9b276dc2b9df94cc54fb40cec3397b0e1bb0fd42f0a99ac0bff198159d3"
+    },
+    {
+      "bytes": 110340,
+      "experiment": "L-6",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-6/v1/seed-29063/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "PASS",
+      "seed": 29063,
+      "sha256": "b99b8e3272a1d39092d2aad2bc03cfb1357da2a0e9b71158317e5d767d8318e6"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Indexes recorded lineage deltas and their local guards. A profile identity alone is not a guarded production proof.",
+  "status": "EXPLORATORY",
+  "variant": "extra"
+}

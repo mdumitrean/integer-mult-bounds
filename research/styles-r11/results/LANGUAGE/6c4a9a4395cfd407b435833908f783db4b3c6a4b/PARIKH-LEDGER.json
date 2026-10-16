@@ -1,0 +1,391 @@
+{
+  "artifact_status": "EXPORTED_EXISTING_EVIDENCE",
+  "attribution": {
+    "author": "Marius-Paul Dumitrean",
+    "bytes": 72443,
+    "format": "BORROW-WORD",
+    "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+    "kappa": "0.001717794984118634663827",
+    "local_profile": {
+      "1": 2382,
+      "2": 648,
+      "3": 268,
+      "4": 128,
+      "5": 26,
+      "8": 8
+    },
+    "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+    "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+    "pr": 2802,
+    "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+    "source": "in tree (package of PR #2802)",
+    "width_inventory": {
+      "4": 26,
+      "5": 2,
+      "7": 62,
+      "8": 78,
+      "9": 240
+    }
+  },
+  "availability": "recorded_incident_edges_with_stated_guard_gaps",
+  "complete_ledger_receipts": [
+    {
+      "bytes": 2576449,
+      "experiment": "L-7",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "EXPLORATORY",
+      "seed": 11031,
+      "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+    },
+    {
+      "bytes": 2576448,
+      "experiment": "L-7",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "EXPLORATORY",
+      "seed": 29063,
+      "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+    }
+  ],
+  "family": "BORROW-WORD",
+  "guarded_order_receipts": [
+    {
+      "bytes": 625068,
+      "experiment": "L7-GUARD-ORDER",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L7-GUARD-ORDER/v1/seed-11031/RESULT.json",
+      "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+      "recorded_status": "PASS",
+      "seed": 11031,
+      "sha256": "57728fc7927addf1da924e52cb7a8ab21b03ee7149b3621cb54675c3ef175b4c"
+    },
+    {
+      "bytes": 625069,
+      "experiment": "L7-GUARD-ORDER",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L7-GUARD-ORDER/v1/seed-29063/RESULT.json",
+      "preregistration_sha256": "74668cbdaf49b3f0b21b21667630eec0a90db6eec7661ab80ee02c430de65938",
+      "recorded_status": "PASS",
+      "seed": 29063,
+      "sha256": "9aab100d984d2b5242100549c5f1f01c882156a7c7b1c8da81af6fa361270771"
+    }
+  ],
+  "incident_edges": [
+    {
+      "after": "2802",
+      "before": "retired5",
+      "complete_delta": {
+        "1": -2664,
+        "2": 3996,
+        "3": -3996,
+        "5": 1332
+      },
+      "exact_profile_sum": true,
+      "guarded_productions": {
+        "availability": "recorded_local_guard_audits",
+        "references": [
+          {
+            "bytes": 2576449,
+            "experiment": "L-7",
+            "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/1/stages/3",
+            "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "EXPLORATORY",
+            "seed": 11031,
+            "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+          },
+          {
+            "bytes": 2576449,
+            "experiment": "L-7",
+            "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/1/stages/4",
+            "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "EXPLORATORY",
+            "seed": 11031,
+            "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+          },
+          {
+            "bytes": 2576449,
+            "experiment": "L-7",
+            "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/1/stages/5",
+            "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "EXPLORATORY",
+            "seed": 11031,
+            "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+          },
+          {
+            "bytes": 2576449,
+            "experiment": "L-7",
+            "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/1/stages/6",
+            "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "EXPLORATORY",
+            "seed": 11031,
+            "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+          }
+        ],
+        "scope": "Named production stages; linked guards/register deltas are retained. A complete consumed/created predicate inventory is not inferred from those checks."
+      },
+      "idle_delta": {
+        "5": 1332
+      },
+      "idle_status": "derived from two pinned complete profiles and canonical local difference",
+      "local_delta_per_call": {
+        "1": -4,
+        "2": 6,
+        "3": -6
+      },
+      "register_delta_reference": {
+        "bytes": 2576449,
+        "experiment": "L-7",
+        "json_pointer": "/statistics/tasks/0/result/lineage/4/variants/1",
+        "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+        "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+        "recorded_status": "EXPLORATORY",
+        "seed": 11031,
+        "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+      },
+      "registers_touched": [
+        345,
+        381,
+        401,
+        403,
+        504,
+        505,
+        564,
+        565,
+        667,
+        669
+      ],
+      "scalar_evidence": [
+        {
+          "dphi": "3088.32464729289242725737637375291866398578528605636759147519392144295229781011658467784571",
+          "exact_dkappa": "3.856677831430203787714408870E-7",
+          "law_dkappa": "3.836276287091088064402103277E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110348,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/4",
+            "path": "research/styles-r11/results/L-6/v1/seed-11031/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 11031,
+            "sha256": "92faf9b276dc2b9df94cc54fb40cec3397b0e1bb0fd42f0a99ac0bff198159d3"
+          }
+        },
+        {
+          "dphi": "3088.32464729289242725737637375291866398578528605636759147519392144295229781011658467784571",
+          "exact_dkappa": "3.856677831430203787714408870E-7",
+          "law_dkappa": "3.836276287091088064402103277E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110340,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/4",
+            "path": "research/styles-r11/results/L-6/v1/seed-29063/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 29063,
+            "sha256": "b99b8e3272a1d39092d2aad2bc03cfb1357da2a0e9b71158317e5d767d8318e6"
+          }
+        }
+      ],
+      "seed": 11031,
+      "sum_mass_neutral": true
+    },
+    {
+      "after": "2802",
+      "before": "retired5",
+      "complete_delta": {
+        "1": -2664,
+        "2": 3996,
+        "3": -3996,
+        "5": 1332
+      },
+      "exact_profile_sum": true,
+      "guarded_productions": {
+        "availability": "recorded_local_guard_audits",
+        "references": [
+          {
+            "bytes": 2576448,
+            "experiment": "L-7",
+            "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/1/stages/3",
+            "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "EXPLORATORY",
+            "seed": 29063,
+            "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+          },
+          {
+            "bytes": 2576448,
+            "experiment": "L-7",
+            "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/1/stages/4",
+            "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "EXPLORATORY",
+            "seed": 29063,
+            "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+          },
+          {
+            "bytes": 2576448,
+            "experiment": "L-7",
+            "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/1/stages/5",
+            "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "EXPLORATORY",
+            "seed": 29063,
+            "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+          },
+          {
+            "bytes": 2576448,
+            "experiment": "L-7",
+            "json_pointer": "/statistics/tasks/0/result/guarded_replay/variants/1/stages/6",
+            "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "EXPLORATORY",
+            "seed": 29063,
+            "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+          }
+        ],
+        "scope": "Named production stages; linked guards/register deltas are retained. A complete consumed/created predicate inventory is not inferred from those checks."
+      },
+      "idle_delta": {
+        "5": 1332
+      },
+      "idle_status": "derived from two pinned complete profiles and canonical local difference",
+      "local_delta_per_call": {
+        "1": -4,
+        "2": 6,
+        "3": -6
+      },
+      "register_delta_reference": {
+        "bytes": 2576448,
+        "experiment": "L-7",
+        "json_pointer": "/statistics/tasks/0/result/lineage/4/variants/1",
+        "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+        "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+        "recorded_status": "EXPLORATORY",
+        "seed": 29063,
+        "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+      },
+      "registers_touched": [
+        345,
+        381,
+        401,
+        403,
+        504,
+        505,
+        564,
+        565,
+        667,
+        669
+      ],
+      "scalar_evidence": [
+        {
+          "dphi": "3088.32464729289242725737637375291866398578528605636759147519392144295229781011658467784571",
+          "exact_dkappa": "3.856677831430203787714408870E-7",
+          "law_dkappa": "3.836276287091088064402103277E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110348,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/4",
+            "path": "research/styles-r11/results/L-6/v1/seed-11031/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 11031,
+            "sha256": "92faf9b276dc2b9df94cc54fb40cec3397b0e1bb0fd42f0a99ac0bff198159d3"
+          }
+        },
+        {
+          "dphi": "3088.32464729289242725737637375291866398578528605636759147519392144295229781011658467784571",
+          "exact_dkappa": "3.856677831430203787714408870E-7",
+          "law_dkappa": "3.836276287091088064402103277E-7",
+          "recorded_status": "PASS",
+          "reference": {
+            "bytes": 110340,
+            "experiment": "L-6",
+            "json_pointer": "/statistics/tasks/0/result/lineage/4",
+            "path": "research/styles-r11/results/L-6/v1/seed-29063/RESULT.json",
+            "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+            "recorded_status": "PASS",
+            "seed": 29063,
+            "sha256": "b99b8e3272a1d39092d2aad2bc03cfb1357da2a0e9b71158317e5d767d8318e6"
+          }
+        }
+      ],
+      "seed": 29063,
+      "sum_mass_neutral": true
+    }
+  ],
+  "language_source": {
+    "bytes": 173324,
+    "json_pointer": "",
+    "path": "research/styles-r11/results/M0/language/6c4a9a4395cf.json.gz",
+    "sha256": "7db8eaf3870bed98eb2b2df17a92b07024f4f82a59e94731a5d0cc7c2a50da85",
+    "uncompressed_sha256": "ab3f4d233c21d4ec238459aa8b6a433e79fa8d0a5ea5c5c143d6e300981d2a93"
+  },
+  "lineage_stage": "2802",
+  "new_prices_or_claims": false,
+  "no_new_experiment": true,
+  "object": "parikh_ledger_index",
+  "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+  "pins_entry": {
+    "bytes": 15544,
+    "json_pointer": "/files/research~1t74-joint-twelve-retired7~1inputs~1WORD-extra.json.gz",
+    "path": "research/styles-r11/data/words/PINS.json",
+    "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+  },
+  "preconditions_consumed_created": {
+    "availability": "unavailable",
+    "certificate": null,
+    "phi": null,
+    "reason": "Local guard and register-change records are linked where available; a complete per-production consumed/created predicate ledger was not recorded.",
+    "status": "EXPLORATORY"
+  },
+  "provenance": {
+    "exporter": {
+      "path": "research/styles-r11/pipeline/export_language.py",
+      "sha256": "16be8fcf0677d8b90b4dd1a1bca1a1eccc9816ff08365d9f6c8d5135fdbb122e"
+    },
+    "input_policy": "Inert JSON reads only; no source words or fetched code executed.",
+    "pins": {
+      "bytes": 15544,
+      "json_pointer": "",
+      "path": "research/styles-r11/data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    "registry_snapshot_sha256": "3e531028d956a8340194fb516d866633e0c6ad3f7a12418f4640d3a6168bcf1d"
+  },
+  "scalar_ledger_receipts": [
+    {
+      "bytes": 110348,
+      "experiment": "L-6",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-6/v1/seed-11031/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "PASS",
+      "seed": 11031,
+      "sha256": "92faf9b276dc2b9df94cc54fb40cec3397b0e1bb0fd42f0a99ac0bff198159d3"
+    },
+    {
+      "bytes": 110340,
+      "experiment": "L-6",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-6/v1/seed-29063/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "PASS",
+      "seed": 29063,
+      "sha256": "b99b8e3272a1d39092d2aad2bc03cfb1357da2a0e9b71158317e5d767d8318e6"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Indexes recorded lineage deltas and their local guards. A profile identity alone is not a guarded production proof.",
+  "status": "EXPLORATORY",
+  "variant": "extra"
+}

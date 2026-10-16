@@ -1,0 +1,128 @@
+{
+  "artifact_status": "EXPORTED_EXISTING_EVIDENCE",
+  "attribution": {
+    "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+    "bytes": 57440,
+    "format": "FULL-WORD",
+    "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+    "kappa": "0.001676938111022438",
+    "local_profile": {
+      "1": 2340,
+      "2": 508,
+      "3": 420,
+      "4": 126,
+      "5": 82,
+      "8": 8
+    },
+    "path": "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+    "pin_key": "1672-extra-word-566-554.json.gz",
+    "pr": 1672,
+    "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+    "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+    "width_inventory": {
+      "4": 40,
+      "5": 48,
+      "7": 38,
+      "8": 114,
+      "9": 240
+    }
+  },
+  "availability": "unavailable_for_this_word",
+  "complete_ledger_receipts": [
+    {
+      "bytes": 2576449,
+      "experiment": "L-7",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-7/v1/seed-11031/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "EXPLORATORY",
+      "seed": 11031,
+      "sha256": "46887af4e4e3273640ac2a2aa0fefe963d8c366989f9367775eef750caf2b1da"
+    },
+    {
+      "bytes": 2576448,
+      "experiment": "L-7",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-7/v1/seed-29063/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "EXPLORATORY",
+      "seed": 29063,
+      "sha256": "4700c6a0917fd9d2d6c4cb93042b6f8ed01592cea761a8c9fbc444f14dcaaaf6"
+    }
+  ],
+  "family": "FULL-WORD",
+  "guarded_order_receipts": [],
+  "incident_edges": [],
+  "language_source": {
+    "bytes": 153792,
+    "json_pointer": "",
+    "path": "research/styles-r11/results/M0/language/e86142b35246.json.gz",
+    "sha256": "72aa1f54e8d74a5eddbfa4aca529d98016e078c5de875a10a07f0f1a69222f79",
+    "uncompressed_sha256": "28b9915e73e38f7fce816dec17eb84a1b3db35d6526087fb2912d5a3cb4b28b1"
+  },
+  "lineage_stage": "1672",
+  "missing": {
+    "availability": "unavailable",
+    "certificate": null,
+    "phi": null,
+    "reason": "No enrolled L7 lineage edge for this word. The linked global ledger is context, not a derivation of this word.",
+    "status": "EXPLORATORY"
+  },
+  "new_prices_or_claims": false,
+  "no_new_experiment": true,
+  "object": "parikh_ledger_index",
+  "pin_key": "1672-extra-word-566-554.json.gz",
+  "pins_entry": {
+    "bytes": 15544,
+    "json_pointer": "/files/1672-extra-word-566-554.json.gz",
+    "path": "research/styles-r11/data/words/PINS.json",
+    "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+  },
+  "preconditions_consumed_created": {
+    "availability": "unavailable",
+    "certificate": null,
+    "phi": null,
+    "reason": "Local guard and register-change records are linked where available; a complete per-production consumed/created predicate ledger was not recorded.",
+    "status": "EXPLORATORY"
+  },
+  "provenance": {
+    "exporter": {
+      "path": "research/styles-r11/pipeline/export_language.py",
+      "sha256": "16be8fcf0677d8b90b4dd1a1bca1a1eccc9816ff08365d9f6c8d5135fdbb122e"
+    },
+    "input_policy": "Inert JSON reads only; no source words or fetched code executed.",
+    "pins": {
+      "bytes": 15544,
+      "json_pointer": "",
+      "path": "research/styles-r11/data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    "registry_snapshot_sha256": "3e531028d956a8340194fb516d866633e0c6ad3f7a12418f4640d3a6168bcf1d"
+  },
+  "scalar_ledger_receipts": [
+    {
+      "bytes": 110348,
+      "experiment": "L-6",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-6/v1/seed-11031/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "PASS",
+      "seed": 11031,
+      "sha256": "92faf9b276dc2b9df94cc54fb40cec3397b0e1bb0fd42f0a99ac0bff198159d3"
+    },
+    {
+      "bytes": 110340,
+      "experiment": "L-6",
+      "json_pointer": "/statistics/tasks/0/result",
+      "path": "research/styles-r11/results/L-6/v1/seed-29063/RESULT.json",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+      "recorded_status": "PASS",
+      "seed": 29063,
+      "sha256": "b99b8e3272a1d39092d2aad2bc03cfb1357da2a0e9b71158317e5d767d8318e6"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Indexes recorded lineage deltas and their local guards. A profile identity alone is not a guarded production proof.",
+  "status": "EXPLORATORY",
+  "variant": "extra"
+}
