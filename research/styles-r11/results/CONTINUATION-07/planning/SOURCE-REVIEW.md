@@ -1,0 +1,9 @@
+# Continuation 07 source checkpoint
+
+The canonical fetch at 17:39 UTC pinned `d8e0f83f00191df62174b641e9fff055c357f641`. Priority remains revision6 and the selected conditional result remains #1094, κ=0.001672660197076918. AGENTS now makes handoff-first selection explicit; autoresearch is split into current-priorities and agent-procedure, and catalogue cards expose existing checks. The new linked documents are pinned in the guidance addendum. These changes do not reroll the user’s explicit ML task or authorize external writes.
+
+No stronger complete claim or new word release appeared in the recent delta. #2979 remains the strongest source-reported conditional complete finite release here, κ=0.001729033982646513517717−10⁻⁴⁶−10⁻⁷⁰. #2969 remains outer-pending. #3010’s k940 fill is an unchanged-profile allocation alternative, not a κ gain. #3011 is a unit-weight GL2 reversal check; #3012 is a scoped box-floor counterexample. Neither reports a κ improvement.
+
+Petalas’ [active V45 claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18978871), expiring19:35 UTC, tests all16 subsets of helpers249/251/265/267 with61 fixed partner edits while retaining PR2942 owner bins and charging idle work. We will not repeat that exact experiment. A historical ranking study may use existing stage-price records while preserving their surrogate/local scope.
+
+Coverage: the full bodies/comments/replies of2612,1163,1166,1167 were refreshed, regardless of updatedAt:536comments and96replies; two new comments, zero edited prior bodies. One100-PR update-sorted page reached the17:28:17 cutoff; the recent delta has two PRs. Other threads, arbitrary linked files and scientific claims were not exhaustively verified. Acquired code remains inert. Exact heads, byte hashes and coverage are in [REVIEW.json](../../../data/continuation-07/checkpoint/REVIEW.json) and its pinned receipt.

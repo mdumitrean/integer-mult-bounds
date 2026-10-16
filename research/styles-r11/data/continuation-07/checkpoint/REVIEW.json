@@ -1,0 +1,160 @@
+{
+  "active_overlap": [
+    {
+      "author": "petalas",
+      "created_utc": "2026-10-16T17:34:24Z",
+      "decision": "Avoid repeating this exact experiment. Historical ML ranking uses already-stored prices as scoped labels, without treating them as full \u03ba outcomes.",
+      "expires_utc": "2026-10-16T19:35:00Z",
+      "scope": "All16 V45 endpoint subsets with61 fixed partner edits; PR2942 unchanged owner bins, compacted offsets, full idle charges. No changed-allocation or native claim.",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18978871"
+    }
+  ],
+  "base_commit": "bbc18613878c80f4540da0604db8de74a73bb20c",
+  "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+  "changed_guidance": [
+    "AGENTS.md: handoff-first selection; explicit task not rerolled",
+    "autoresearch.md: workflow split into current-priorities and agent-procedure",
+    "agent-task-catalog.json: existing_checks/remaining coverage fields"
+  ],
+  "checkpoint": {
+    "path": "data/continuation-07/checkpoint/RECEIPT.json",
+    "sha256": "7e104300792270b4893c909f09447777b84e56ad490ee2400402970043c0b538"
+  },
+  "decision": "Continue user-assigned historical ML planning with lineage-aware labels. No new word/stronger complete claim observed; no source migration required.",
+  "git_fetch": {
+    "path": "data/continuation-07/checkpoint/GIT-FETCH.json",
+    "sha256": "77a38457d0f265e0b5765ebccbbdacfc2b547cc01a84e70636779aef4206b38b"
+  },
+  "guidance": {
+    "path": "data/continuation-07/checkpoint/guidance/PINS.json",
+    "sha256": "7e8833444dd04f6f326d41e11caa09362207dc87163e1b8e5ceff7b50cf133ee"
+  },
+  "guidance_interpretation": "Revision6 track weights and selected record unchanged. Historical source archives are not independent admissions. User explicit ML assignment and prohibition on GitHub writes take precedence over general posting defaults.",
+  "limits": [
+    "Read-only bounded continuation07 initial source checkpoint, no fetched code execution or scientific tests.",
+    "All-state PR metadata is paged in update-descending order until a page reaches the prior cutoff, at most4pages; pagination is not atomic.",
+    "Discussions2612,1163,1166,1167 are fully refreshed regardless of discussion updatedAt; other threads and arbitrary linked resources remain outside this delta.",
+    "Remote claims and archival merges are not independent admission or novelty evidence."
+  ],
+  "linked_guidance": {
+    "path": "data/continuation-07/checkpoint/guidance-addendum/PINS.json",
+    "sha256": "c36cb0957435e1dc54f9e0e5855105a0560281382507b1ecc662b5c7d45a77ec"
+  },
+  "no_scientific_execution": true,
+  "pr_delta": [
+    {
+      "author": "navinor",
+      "created_at": "2026-10-16T17:36:57Z",
+      "decimal_tokens": [],
+      "head": "63c6525120c20543c4a7acae1a1e1ea36e099b81",
+      "number": 3012,
+      "state": "open",
+      "title": "F-star family gap: the box floor FAILS minimally at v = 3 - surviving tau >= 1 form exact (no kappa)",
+      "updated_at": "2026-10-16T17:36:57Z"
+    },
+    {
+      "author": "jwr404",
+      "created_at": "2026-10-16T17:36:43Z",
+      "decimal_tokens": [],
+      "head": "c5b58be95592a408d0cc42b0b829a3b543fd4b3b",
+      "number": 3011,
+      "state": "open",
+      "title": "Show the unit-weight GL2 machine reverses every column at one gap",
+      "updated_at": "2026-10-16T17:36:43Z"
+    }
+  ],
+  "priority_revision": 6,
+  "recorded_utc": "2026-10-16T17:41:12.338091+00:00",
+  "schema_version": 1,
+  "selected": {
+    "kappa": "0.001672660197076918",
+    "pr": 1094,
+    "unchanged": true
+  },
+  "strongest_reported_complete": {
+    "claim_path": "data/continuation-05/pr2979/package/CLAIM.json",
+    "claim_sha256": "436e0d297cbdf195445d3697d496ac675e95210b79e70ce602a6a6667a4c6ce9",
+    "head": "be191346391661f4d35fc0d1508d0a6029572576",
+    "kappa": "0.001729033982646513517717 - 1e-46 - 1e-70",
+    "pr": 2979,
+    "status": "Source-reported conditional complete finite release, not selected or independently replayed by this checkpoint"
+  },
+  "thread_deltas": [
+    {
+      "coverage": {
+        "comments": 27,
+        "complete": true,
+        "error": null,
+        "extra_reply_pages": 0,
+        "finished_utc": "2026-10-16T17:39:12.783919+00:00",
+        "incomplete_reply_threads": [],
+        "pages": 1,
+        "replies": 5,
+        "reported_comments": 27,
+        "started_utc": "2026-10-16T17:39:11.609310+00:00",
+        "unique_comments": 27
+      },
+      "edited": [],
+      "new": [
+        "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18978871"
+      ],
+      "number": 2612
+    },
+    {
+      "coverage": {
+        "comments": 73,
+        "complete": true,
+        "error": null,
+        "extra_reply_pages": 0,
+        "finished_utc": "2026-10-16T17:39:14.138378+00:00",
+        "incomplete_reply_threads": [],
+        "pages": 1,
+        "replies": 12,
+        "reported_comments": 73,
+        "started_utc": "2026-10-16T17:39:12.796636+00:00",
+        "unique_comments": 73
+      },
+      "edited": [],
+      "new": [],
+      "number": 1163
+    },
+    {
+      "coverage": {
+        "comments": 313,
+        "complete": true,
+        "error": null,
+        "extra_reply_pages": 0,
+        "finished_utc": "2026-10-16T17:39:20.659266+00:00",
+        "incomplete_reply_threads": [],
+        "pages": 4,
+        "replies": 61,
+        "reported_comments": 313,
+        "started_utc": "2026-10-16T17:39:14.159740+00:00",
+        "unique_comments": 313
+      },
+      "edited": [],
+      "new": [
+        "https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18978925"
+      ],
+      "number": 1166
+    },
+    {
+      "coverage": {
+        "comments": 123,
+        "complete": true,
+        "error": null,
+        "extra_reply_pages": 0,
+        "finished_utc": "2026-10-16T17:39:23.752525+00:00",
+        "incomplete_reply_threads": [],
+        "pages": 2,
+        "replies": 18,
+        "reported_comments": 123,
+        "started_utc": "2026-10-16T17:39:20.717693+00:00",
+        "unique_comments": 123
+      },
+      "edited": [],
+      "new": [],
+      "number": 1167
+    }
+  ]
+}
