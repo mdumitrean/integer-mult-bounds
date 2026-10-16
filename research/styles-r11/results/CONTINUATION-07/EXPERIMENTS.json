@@ -29,11 +29,38 @@
       "wall_seconds": 16.3596627805382
     },
     {
+      "attempts": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 348.70006579899996,
+          "result_files": [
+            "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/seed-37003/RESULT.json",
+            "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/seed-74017/RESULT.json"
+          ],
+          "status": "EXPLORATORY",
+          "wall_seconds": 19.465195182710886
+        }
+      ],
+      "confirmed": true,
+      "coverage_correction": {
+        "path": "results/CONTINUATION-07/ML2/COVERAGE-CORRECTION-v2.json",
+        "sha256": "e2e173133dcc8acec7c495dda41422510fc5f755a19556bbf4f4ba9e4c6aff59"
+      },
+      "cpu_seconds": 348.70006579899996,
+      "execution": "INCOMPLETE",
       "id": "ML2-RELEASE-COMPARISON",
       "preregistration": "results/CONTINUATION-07/ML2/PREREGISTRATION.json",
       "preregistration_sha256": "d694b0a5211ee11e185594e89fa3716585c24fde70af34c9c6cf30636b997938",
+      "result_files": [
+        "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/seed-37003/RESULT.json",
+        "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/seed-74017/RESULT.json"
+      ],
+      "review_note": "v1 retained exploratory; source-coverage enforcement repaired in registered v2",
       "scope": "Userclarifiedlatest10-20completedimprovementPRs;acquisition/source-onlyimplementationpendingpreregistration",
-      "status": "planned"
+      "started_utc": "2026-10-16T18:10:04.569120+00:00",
+      "status": "EXPLORATORY",
+      "updated_utc": "2026-10-16T18:10:24.044946+00:00",
+      "wall_seconds": 19.465195182710886
     }
   ],
   "goal_status": "ACTIVE_NOT_ACHIEVED",
