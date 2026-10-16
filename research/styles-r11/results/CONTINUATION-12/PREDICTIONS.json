@@ -1,0 +1,278 @@
+{
+  "ai_assistance": "Substantial OpenAI Codex assistance in implementation, verification and analysis.",
+  "document_compiled_after_outcomes": true,
+  "formal_pattern_predictions": [],
+  "kappa_claim": false,
+  "original_heldout_predictions_unchanged": {
+    "bytes": 77184,
+    "path": "results/PREDICTIONS.json",
+    "sha256": "093360d9e15f6bc9bf3bc5416bce22a908ab84c7e197ea35bf9565e87cb2e26a"
+  },
+  "pattern_claim": false,
+  "predictions": [
+    {
+      "assessment": "Scientific status remains EXPLORATORY. Integrity controls may PASS. Assess every fixed model and learning curve, including adverse/degenerate results. No model or feature selection from outcomes. Full exact guard oracle is the target definition, not evidence of a discovery. The stratum baseline prevents credit for simply rediscovering necessary gain geometry.",
+      "id": "ML4-HISTORICAL-SCREENING",
+      "kind": "Retrospective descriptive assessment; not a PLAN-qualified pattern prediction",
+      "outcome": {
+        "confirmed": true,
+        "curves_beating_cheap_screen_brier": 0,
+        "exact_necessary_gain_strata": {
+          "2853": 34727,
+          "2917": 69847,
+          "2979": 0
+        },
+        "experiment_status": "EXPLORATORY",
+        "learning_curve_cases_per_seed": 60,
+        "models_beating_cheap_screen_brier": 0,
+        "models_beating_stratum_mean_brier": 0,
+        "observed_models_per_seed": 36,
+        "run": {
+          "bytes": 533431,
+          "path": "data/continuation-12/ml4-v1/RUN.json",
+          "sha256": "95d853cdce080a8dd40c2a84a60f17c87b0128e7f8821c3d5a0f89b2c7a62824"
+        },
+        "source": "Three related historical T74 allocations; repeated seeds do not create independent observations.",
+        "unique_pairs": 3250295
+      },
+      "preregistration": {
+        "bytes": 13564,
+        "path": "results/CONTINUATION-12/ML4/PREREGISTRATION.json",
+        "sha256": "41822b332e5e7f7d27294b4c21defceffd6db517ebaf01ba70f1c00681bfdecb"
+      },
+      "registered_utc": "2026-10-16T23:07:13.313793+00:00",
+      "status": "NO_SCREENING_ADVANTAGE_OBSERVED"
+    },
+    {
+      "id": "R2-MATCHED-FRAME-CARRIER-GAIN",
+      "kind": "Registered finite census hypothesis; no learned or formal pattern claim",
+      "outcome": {
+        "confirmed": true,
+        "experiment_status": "NULL",
+        "run": {
+          "bytes": 59188,
+          "path": "data/continuation-12/r2-v1/RUN.json",
+          "sha256": "571b5deabb6aef5f1c3ff0f6fa7a4e7c15b9e50b679e502eab2b79c4a1d88012"
+        },
+        "scope": "Complete nonempty label domain; every sign resolved or exact infeasibility recorded; no favorable row on either provider; all controls/baselines pass; both seed decisions agree. Only this fixed source/domain/exposure/matched-frame family is closed.",
+        "statistics": {
+          "census_by_provider": {
+            "base": {
+              "candidate_set_sha256": "9132bc315a37aa1e7c3d33fe82b57b03591cbf2e8ffd619ede2512eae2d938b8",
+              "complete": true,
+              "counts": {
+                "admissible_carrier_anchor_choices": 2308,
+                "admissible_carrier_choices": 2308,
+                "candidates": 46160,
+                "commuting_placements": 582,
+                "crossings_verified": 53546,
+                "grouped_pair_combinations": 2712,
+                "inner_contact_pair_records": 2178,
+                "noncommuting_placements": 1650,
+                "placements_considered": 2232,
+                "preliminary_duplicate_position_combinations": 0,
+                "preliminary_overlapping_support_combinations": 0,
+                "preliminary_same_inner_combinations": 73,
+                "rank_one_outside_domain": 1523,
+                "ratio_rejected_carrier_anchor_choices": 20,
+                "ratio_rejected_carriers": 20,
+                "scalar_precondition_rejected_placements": 0,
+                "segments": 38,
+                "source_packet_addresses": 1116,
+                "source_packets": 1116
+              },
+              "domain_sha256": "9132bc315a37aa1e7c3d33fe82b57b03591cbf2e8ffd619ede2512eae2d938b8",
+              "exclusions_sha256": "66804167eaaf37c6f23a09c0cc2e2cb1ddfc2ea7ed1ac771a18636dbad69e553",
+              "parent_semantic_sha256": "a97b79fe057a3eb83cb458d2f75cd0ccd26054831a02138a95349ce5662ed424",
+              "plans_sha256": "8e5e668618ee5f06431fb42d1a4b3cad1b998237a84b821608a3de26a4a2314e",
+              "pricing_cap": null,
+              "provider": "base",
+              "restore_search": false,
+              "saved_domain": {
+                "domain": "fresh rank-two consecutive-target-contact packets",
+                "parent_semantic_sha256": "a97b79fe057a3eb83cb458d2f75cd0ccd26054831a02138a95349ce5662ed424",
+                "source_pin": {
+                  "author": "dcharb78",
+                  "author_login": "dcharb78",
+                  "bytes": 72539,
+                  "commit": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                  "format": "BORROW-WORD",
+                  "git_blob": "2ee02e318c98281a71445b954feccd55c153827c",
+                  "head": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                  "path": "data/continuation-11/latest-sources/3042/edits/FINAL-WORD-base.json.gz",
+                  "pr": 3042,
+                  "sha256": "7e98f6f2a6c9ce9e7e04b515bd8ce4a4a533ff05f01ea265be2a1a994695260e",
+                  "source": "PR3042 six restore-carrier skips on credited PR3015/2979 lineage",
+                  "source_path": "research/rank7-restore-carrier-skips/edits/FINAL-WORD-base.json.gz"
+                }
+              },
+              "sharding": "plan_ordinal modulo 64; each plan retains every carrier/order/corner label",
+              "source_attribution": {
+                "author": "dcharb78",
+                "author_login": "dcharb78",
+                "bytes": 72539,
+                "commit": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                "format": "BORROW-WORD",
+                "git_blob": "2ee02e318c98281a71445b954feccd55c153827c",
+                "head": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                "path": "data/continuation-11/latest-sources/3042/edits/FINAL-WORD-base.json.gz",
+                "pr": 3042,
+                "sha256": "7e98f6f2a6c9ce9e7e04b515bd8ce4a4a533ff05f01ea265be2a1a994695260e",
+                "source": "PR3042 six restore-carrier skips on credited PR3015/2979 lineage",
+                "source_path": "research/rank7-restore-carrier-skips/edits/FINAL-WORD-base.json.gz"
+              },
+              "source_pin": {
+                "author": "dcharb78",
+                "author_login": "dcharb78",
+                "bytes": 72539,
+                "commit": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                "format": "BORROW-WORD",
+                "git_blob": "2ee02e318c98281a71445b954feccd55c153827c",
+                "head": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                "path": "data/continuation-11/latest-sources/3042/edits/FINAL-WORD-base.json.gz",
+                "pr": 3042,
+                "sha256": "7e98f6f2a6c9ce9e7e04b515bd8ce4a4a533ff05f01ea265be2a1a994695260e",
+                "source": "PR3042 six restore-carrier skips on credited PR3015/2979 lineage",
+                "source_path": "research/rank7-restore-carrier-skips/edits/FINAL-WORD-base.json.gz"
+              },
+              "source_sections": [
+                "A",
+                "B"
+              ],
+              "status": "PASS"
+            },
+            "extra": {
+              "candidate_set_sha256": "99e5d4ad0e7911e1eeedd575f12ada1c79235637bf46cf60c62c96dc80e8a7c6",
+              "complete": true,
+              "counts": {
+                "admissible_carrier_anchor_choices": 2308,
+                "admissible_carrier_choices": 2308,
+                "candidates": 46160,
+                "commuting_placements": 582,
+                "crossings_verified": 53546,
+                "grouped_pair_combinations": 2712,
+                "inner_contact_pair_records": 2178,
+                "noncommuting_placements": 1650,
+                "placements_considered": 2232,
+                "preliminary_duplicate_position_combinations": 0,
+                "preliminary_overlapping_support_combinations": 0,
+                "preliminary_same_inner_combinations": 73,
+                "rank_one_outside_domain": 1523,
+                "ratio_rejected_carrier_anchor_choices": 20,
+                "ratio_rejected_carriers": 20,
+                "scalar_precondition_rejected_placements": 0,
+                "segments": 38,
+                "source_packet_addresses": 1116,
+                "source_packets": 1116
+              },
+              "domain_sha256": "99e5d4ad0e7911e1eeedd575f12ada1c79235637bf46cf60c62c96dc80e8a7c6",
+              "exclusions_sha256": "03ec35b4ed96659423bd6ffe611228d8aef570d67a87b67f46721b9f40dfe610",
+              "parent_semantic_sha256": "2c149b6b5acfcd7fc2ac2517ccefaf5d69f7c7aa2759757da356fd1fed1bfbf5",
+              "plans_sha256": "20e86124f7df1d2ee4d8d6947f814c015e3426363e27283c788f95be4cc670d6",
+              "pricing_cap": null,
+              "provider": "extra",
+              "restore_search": false,
+              "saved_domain": {
+                "domain": "fresh rank-two consecutive-target-contact packets",
+                "parent_semantic_sha256": "2c149b6b5acfcd7fc2ac2517ccefaf5d69f7c7aa2759757da356fd1fed1bfbf5",
+                "source_pin": {
+                  "author": "dcharb78",
+                  "author_login": "dcharb78",
+                  "bytes": 72538,
+                  "commit": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                  "format": "BORROW-WORD",
+                  "git_blob": "33ba5f34996a31edd197cb58eca575645575e529",
+                  "head": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                  "path": "data/continuation-11/latest-sources/3042/edits/FINAL-WORD-extra.json.gz",
+                  "pr": 3042,
+                  "sha256": "1396410de482883416fc7f534062ab005b484056b035fdcfa3b5cc065536ba35",
+                  "source": "PR3042 six restore-carrier skips on credited PR3015/2979 lineage",
+                  "source_path": "research/rank7-restore-carrier-skips/edits/FINAL-WORD-extra.json.gz"
+                }
+              },
+              "sharding": "plan_ordinal modulo 64; each plan retains every carrier/order/corner label",
+              "source_attribution": {
+                "author": "dcharb78",
+                "author_login": "dcharb78",
+                "bytes": 72538,
+                "commit": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                "format": "BORROW-WORD",
+                "git_blob": "33ba5f34996a31edd197cb58eca575645575e529",
+                "head": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                "path": "data/continuation-11/latest-sources/3042/edits/FINAL-WORD-extra.json.gz",
+                "pr": 3042,
+                "sha256": "1396410de482883416fc7f534062ab005b484056b035fdcfa3b5cc065536ba35",
+                "source": "PR3042 six restore-carrier skips on credited PR3015/2979 lineage",
+                "source_path": "research/rank7-restore-carrier-skips/edits/FINAL-WORD-extra.json.gz"
+              },
+              "source_pin": {
+                "author": "dcharb78",
+                "author_login": "dcharb78",
+                "bytes": 72538,
+                "commit": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                "format": "BORROW-WORD",
+                "git_blob": "33ba5f34996a31edd197cb58eca575645575e529",
+                "head": "84cc406ad91ec53fff329a11a445d7effe564a77",
+                "path": "data/continuation-11/latest-sources/3042/edits/FINAL-WORD-extra.json.gz",
+                "pr": 3042,
+                "sha256": "1396410de482883416fc7f534062ab005b484056b035fdcfa3b5cc065536ba35",
+                "source": "PR3042 six restore-carrier skips on credited PR3015/2979 lineage",
+                "source_path": "research/rank7-restore-carrier-skips/edits/FINAL-WORD-extra.json.gz"
+              },
+              "source_sections": [
+                "A",
+                "B"
+              ],
+              "status": "PASS"
+            }
+          },
+          "comparison_endpoint": "864868975032139275621/500000000000000000000000",
+          "counts_by_provider": {
+            "base": {
+              "EXPLORATORY": 0,
+              "NO_GAIN": 46160,
+              "PASS_CANDIDATE": 0,
+              "REJECTED_GUARD": 0,
+              "candidates": 46160,
+              "plans": 582,
+              "unresolved": 0
+            },
+            "extra": {
+              "EXPLORATORY": 0,
+              "NO_GAIN": 46160,
+              "PASS_CANDIDATE": 0,
+              "REJECTED_GUARD": 0,
+              "candidates": 46160,
+              "plans": 582,
+              "unresolved": 0
+            }
+          },
+          "kappa_claim": false,
+          "pattern_claim": false,
+          "retained_provider_words": 0,
+          "selection": {
+            "favorable_by_provider": {
+              "base": 0,
+              "extra": 0
+            },
+            "paired_favorable": 0,
+            "rule": "First at most8 canonical provider-independent addresses, including both fixed placements; no fitted or root-based ranking",
+            "selected_pair_keys": [],
+            "unretained_paired_favorable": 0
+          }
+        }
+      },
+      "prediction": "At least one common provider-independent address has a strictly negative full-window moment and retained full-word/632-column controls pass for both providers and both seeds. PASS identifies a census target only.",
+      "preregistration": {
+        "bytes": 11559,
+        "path": "results/CONTINUATION-12/R2/PREREGISTRATION.json",
+        "sha256": "6b326d175cd235e6179a7df7e36ea3e43fdeb23bb56a1276b0211d7c4b6e0d2f"
+      },
+      "registered_utc": "2026-10-16T23:38:45.182207+00:00",
+      "status": "NOT_SUPPORTED"
+    }
+  ],
+  "recorded_utc": "2026-10-16T23:44:16.489802+00:00",
+  "registration_preceded_each_execution": true,
+  "schema_version": 1
+}

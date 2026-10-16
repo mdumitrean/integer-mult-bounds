@@ -1,0 +1,55 @@
+{
+  "administrative_cpu_seconds": 1.7633189790000001,
+  "ai_assistance": "Substantial OpenAI Codex assistance in implementation and analysis.",
+  "base_commit": "2e8dfbfc56be5a808443643fa9928494e779f43e",
+  "changed_paths": 4896,
+  "checked_artifact_references": 5461,
+  "families": [
+    {
+      "confirmed": true,
+      "cpu_seconds": 1759.51418775,
+      "execution": "COMPLETED",
+      "id": "ML4-HISTORICAL-EXCHANGE",
+      "results": [
+        "results/CONTINUATION-12/ML4-HISTORICAL-EXCHANGE/v1/seed-61001/RESULT.json",
+        "results/CONTINUATION-12/ML4-HISTORICAL-EXCHANGE/v1/seed-122011/RESULT.json"
+      ],
+      "sources": 218,
+      "status": "EXPLORATORY",
+      "wall_seconds": 111.45043665636331
+    },
+    {
+      "confirmed": true,
+      "cpu_seconds": 215.873927664,
+      "execution": "COMPLETED",
+      "id": "R2-MATCHED-FRAME-CARRIER",
+      "results": [
+        "results/CONTINUATION-12/R2-MATCHED-FRAME-CARRIER/v1/seed-63029/RESULT.json",
+        "results/CONTINUATION-12/R2-MATCHED-FRAME-CARRIER/v1/seed-126037/RESULT.json"
+      ],
+      "sources": 225,
+      "status": "NULL",
+      "wall_seconds": 20.383969883434474
+    }
+  ],
+  "kappa_claim": false,
+  "large_arrays_local_only": {
+    "bytes": 240078748,
+    "files": 504
+  },
+  "machine_policy": "61 workers under standing min(120,floor(RAM_GiB/4)); one central pool;8 reserved cores; no inference of memory saturation.",
+  "ml4_tasks": 4702,
+  "old_tracked_files_unchanged": true,
+  "pattern_claim": false,
+  "recorded_utc": "2026-10-16T23:44:18.354711+00:00",
+  "scope": "Saved bytes, immutable source/input pins, attribution, per-task status, CPU accounting, storage and write scope. No scientific rerun or new admission.",
+  "source_attribution_original_files": 21,
+  "status": "PASS_SAVED_EVIDENCE_AUDIT",
+  "storage_bytes_before_audit": {
+    "results": 199608187,
+    "round_data": 263457132,
+    "round_results": 860926
+  },
+  "telemetry_correction": "ML4 instantaneous91.8425 estimate invalid from sampling timestamp skew. Joined-phase CPU/wall and saved RSS/PSS interpretation retained.",
+  "total_scientific_cpu_seconds": 1975.388115414
+}

@@ -1,4 +1,5 @@
 {
+  "closed_utc": "2026-10-16T23:44:16.489802+00:00",
   "experiments": [
     {
       "attempts": [
@@ -34,7 +35,21 @@
       "wall_seconds": 111.45043665636331
     },
     {
-      "execution": "REGISTERED",
+      "attempts": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 215.873927664,
+          "result_files": [
+            "results/CONTINUATION-12/R2-MATCHED-FRAME-CARRIER/v1/seed-63029/RESULT.json",
+            "results/CONTINUATION-12/R2-MATCHED-FRAME-CARRIER/v1/seed-126037/RESULT.json"
+          ],
+          "status": "NULL",
+          "wall_seconds": 20.383969883434474
+        }
+      ],
+      "confirmed": true,
+      "cpu_seconds": 215.873927664,
+      "execution": "COMPLETED",
       "id": "R2-MATCHED-FRAME-CARRIER",
       "implementation_pins": {
         "bytes": 97516,
@@ -43,11 +58,33 @@
       },
       "preregistration": "results/CONTINUATION-12/R2/PREREGISTRATION.json",
       "preregistration_sha256": "6b326d175cd235e6179a7df7e36ea3e43fdeb23bb56a1276b0211d7c4b6e0d2f",
-      "status": "planned"
+      "result_files": [
+        "results/CONTINUATION-12/R2-MATCHED-FRAME-CARRIER/v1/seed-63029/RESULT.json",
+        "results/CONTINUATION-12/R2-MATCHED-FRAME-CARRIER/v1/seed-126037/RESULT.json"
+      ],
+      "started_utc": "2026-10-16T23:39:20.346357+00:00",
+      "status": "NULL",
+      "updated_utc": "2026-10-16T23:39:40.747155+00:00",
+      "wall_seconds": 20.383969883434474
     }
   ],
+  "final_checkpoint": {
+    "bytes": 62498,
+    "path": "data/continuation-12/final-checkpoint/RECEIPT.json",
+    "sha256": "621c5175970ffb03902519f820f67ee671b24c0e495c05a19577f3f3d342c8d7"
+  },
+  "final_source_review": {
+    "bytes": 18110,
+    "path": "data/continuation-12/final-checkpoint/REVIEW.json",
+    "sha256": "1998b2e09638d7a688fecd61bbf7fc4562f907b194b1ab154429ee4f3a9ef5b1"
+  },
+  "kappa_claim": false,
   "no_active_experiments": true,
+  "pattern_claim": false,
   "round": "CONTINUATION-12",
   "schema_version": 1,
-  "status": "REGISTERED_PIVOT_READY"
+  "status": "CLOSED_FOR_COORDINATOR_REVIEW",
+  "stop_reason": "Both registered families completed; single changed-premise pivot reached its confirmed scoped NULL. No further science in this bounded round.",
+  "total_pool_tasks": 4968,
+  "total_scientific_cpu_seconds": 1975.388115414
 }

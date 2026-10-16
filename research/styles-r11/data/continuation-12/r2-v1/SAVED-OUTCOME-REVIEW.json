@@ -1,0 +1,522 @@
+{
+  "authentication": {
+    "all_bytes_and_sha256_match": true,
+    "all_pool_tasks_OK": true,
+    "all_saved_candidate_plan_exclusion_certificate_hashes_match": true,
+    "detailed_evidence_files": 282,
+    "task_payload_hashes_match": true,
+    "task_receipts": 266
+  },
+  "broader_provenance": [
+    {
+      "bytes": 40641,
+      "path": "data/continuation-12/r2-v1/PROVENANCE-SEED-63029.json.gz",
+      "sha256": "d1e1651d312b0383fa5e7ca4b8eedaed4b5a561c82fd0177d557bb1a69262360"
+    },
+    {
+      "bytes": 40641,
+      "path": "data/continuation-12/r2-v1/PROVENANCE-SEED-126037.json.gz",
+      "sha256": "d1e1651d312b0383fa5e7ca4b8eedaed4b5a561c82fd0177d557bb1a69262360"
+    }
+  ],
+  "census_per_provider_per_seed": {
+    "admissible_carrier_anchor_choices": 2308,
+    "admissible_carrier_choices": 2308,
+    "candidates": 46160,
+    "commuting_placements": 582,
+    "crossings_verified": 53546,
+    "grouped_pair_combinations": 2712,
+    "inner_contact_pair_records": 2178,
+    "noncommuting_placements": 1650,
+    "placements_considered": 2232,
+    "preliminary_duplicate_position_combinations": 0,
+    "preliminary_overlapping_support_combinations": 0,
+    "preliminary_same_inner_combinations": 73,
+    "rank_one_outside_domain": 1523,
+    "ratio_rejected_carrier_anchor_choices": 20,
+    "ratio_rejected_carriers": 20,
+    "scalar_precondition_rejected_placements": 0,
+    "segments": 38,
+    "source_packet_addresses": 1116,
+    "source_packets": 1116
+  },
+  "controls": {
+    "all24_interleavings": true,
+    "baseline_forward_and_dual_pass": true,
+    "baseline_independent_columns": 632,
+    "baseline_provider_seed_tasks": 4,
+    "baseline_restored_cold": 91,
+    "both_seeds_identical": true,
+    "checks_by_family": {
+      "all24_complete_packet_enumeration": 24,
+      "barrier_rejected": 1,
+      "block_bill_feasible": 2,
+      "both_gathers_without_interveners": 48,
+      "complete_intervened_window_map": 4,
+      "current_literal_preimage_accepted": 1,
+      "direct_decomposed_invoice_parity": 2,
+      "equal_rank_wrong_frame": 1,
+      "fixed_contact_bill_feasible": 2,
+      "hidden_warp_translation_rejected": 1,
+      "independent_matched_frame_corner_oracle": 1,
+      "missing_successor_detected": 1,
+      "missing_surviving_k_detected": 1,
+      "missing_undo_rejected": 2,
+      "noncommuting_crossing_rejected": 2,
+      "nondyadic_ratio": 1,
+      "positive_complete_bill": 1,
+      "positive_exact_registered_tariff": 1,
+      "positive_original_full_bill": 1,
+      "prelude_rejected": 1,
+      "rank_one_outside_domain": 1,
+      "shared_register_commuting_exposure": 2,
+      "signed_forward_dual": 9152,
+      "source_equality_guard": 1,
+      "stale_literal_preimage_rejected": 1,
+      "stale_parent_rejected": 1,
+      "surviving_k_contact_full_bill": 1,
+      "warp_index_translation": 1,
+      "warp_payload_mutant_detected": 1,
+      "wrong_residual_rejected": 2
+    },
+    "exact_signed_identity_checks_per_seed": 9152,
+    "matched_frame_oracle": {
+      "ambient_dimension": 3,
+      "fixture_tariff_equality_cases": 12,
+      "passed": true,
+      "scope": "Nested flags with the two residual-target reads at the same actual Y2 only",
+      "subspaces": 16
+    },
+    "per_seed_checks": 9261,
+    "per_seed_families": 30
+  },
+  "coverage": {
+    "base:126037": {
+      "all20_corner_labels_per_choice": true,
+      "candidate_ids_unique": true,
+      "candidate_labels": 46160,
+      "plans": 582,
+      "shards": 64,
+      "statuses": {
+        "NO_GAIN": 46160
+      }
+    },
+    "base:63029": {
+      "all20_corner_labels_per_choice": true,
+      "candidate_ids_unique": true,
+      "candidate_labels": 46160,
+      "plans": 582,
+      "shards": 64,
+      "statuses": {
+        "NO_GAIN": 46160
+      }
+    },
+    "extra:126037": {
+      "all20_corner_labels_per_choice": true,
+      "candidate_ids_unique": true,
+      "candidate_labels": 46160,
+      "plans": 582,
+      "shards": 64,
+      "statuses": {
+        "NO_GAIN": 46160
+      }
+    },
+    "extra:63029": {
+      "all20_corner_labels_per_choice": true,
+      "candidate_ids_unique": true,
+      "candidate_labels": 46160,
+      "plans": 582,
+      "shards": 64,
+      "statuses": {
+        "NO_GAIN": 46160
+      }
+    }
+  },
+  "crossing_accounting": {
+    "base:126037": {
+      "rejected_gather_verified_prefix_crossings": 38541,
+      "successful_plan_crossings": 15005,
+      "total_verified": 53546
+    },
+    "base:63029": {
+      "rejected_gather_verified_prefix_crossings": 38541,
+      "successful_plan_crossings": 15005,
+      "total_verified": 53546
+    },
+    "extra:126037": {
+      "rejected_gather_verified_prefix_crossings": 38541,
+      "successful_plan_crossings": 15005,
+      "total_verified": 53546
+    },
+    "extra:63029": {
+      "rejected_gather_verified_prefix_crossings": 38541,
+      "successful_plan_crossings": 15005,
+      "total_verified": 53546
+    }
+  },
+  "exclusion_scope": {
+    "comment": "Per provider and seed. The 20 ratio exclusions are carrier/anchor choices, not 20 additional placements.",
+    "non_dyadic_carrier_anchor_choices": 20,
+    "noncommuting_placements": 1650,
+    "preliminary_rank_one_combinations_outside_domain": 1523,
+    "preliminary_same_target_combinations": 73,
+    "priced_frame_guard_rejections": 0,
+    "scalar_precondition_rejected_placements": 0
+  },
+  "interpretation": [
+    "Per provider and seed, 45,784 priced labels are exact paid-profile ties and 376 have strictly positive saved lower bounds for the cost increase; there are zero strict decreases, unresolved signs or priced frame-guard failures. The 376 increases comprise 184 labels with delta 4H1-2H2, 128 with 8H1-4H2, and 64 with 6H1-3H2.",
+    "There are 92,320 provider-labelled candidates computed twice (184,640 label evaluations), not 184,640 independent scientific cases. Coinciding twenty-corner labels remain intentionally undeduplicated.",
+    "All 1,116 structural packets per provider were offered both gathers: 582 of 2,232 placements commute, 1,650 do not. Of 2,328 carrier/anchor choices on commuting placements, 2,308 are admissible and 20 fail the exact ratio guard.",
+    "Only the fixed PR3042 consecutive-contact, exact-commutation, rank-two 4-to-5, matched-Y2, fixed-exterior tariff family at the registered endpoint is closed.",
+    "No candidate improved the recursive profile. Retained candidate materialization/native/physical-owner/outer admission was not run because no candidate qualified; unchanged baseline local admission is not a new complete construction certificate.",
+    "No intrinsic sandpile Laplacian or general impossibility theorem for all rank-two frame assignments or other scalar productions follows."
+  ],
+  "kind": "Administrative/posthoc descriptive authentication and counting of saved receipts only",
+  "outcome": {
+    "comparison_endpoint": "864868975032139275621/500000000000000000000000",
+    "comparison_pr": 3054,
+    "confirmed": true,
+    "failure": null,
+    "favorable_labels": 0,
+    "incomplete_phase": null,
+    "kappa_claim": false,
+    "pattern_claim": false,
+    "recorded_status": "NULL",
+    "retained_candidate_words": 0,
+    "seeds": [
+      63029,
+      126037
+    ],
+    "source_pr": 3042
+  },
+  "price_breakdown": {
+    "base:126037": {
+      "distinct_tariff_certificates": 4,
+      "exact_profile_tie": 45784,
+      "guard_rejected": 0,
+      "nonidentity_zero_or_unresolved": 0,
+      "profile_delta_counts": [
+        {
+          "count": 45784,
+          "profile_delta": {}
+        },
+        {
+          "count": 184,
+          "profile_delta": {
+            "1": 4,
+            "2": -2
+          }
+        },
+        {
+          "count": 128,
+          "profile_delta": {
+            "1": 8,
+            "2": -4
+          }
+        },
+        {
+          "count": 64,
+          "profile_delta": {
+            "1": 6,
+            "2": -3
+          }
+        }
+      ],
+      "strict_cost_decrease": 0,
+      "strict_cost_increase": 376
+    },
+    "base:63029": {
+      "distinct_tariff_certificates": 4,
+      "exact_profile_tie": 45784,
+      "guard_rejected": 0,
+      "nonidentity_zero_or_unresolved": 0,
+      "profile_delta_counts": [
+        {
+          "count": 45784,
+          "profile_delta": {}
+        },
+        {
+          "count": 184,
+          "profile_delta": {
+            "1": 4,
+            "2": -2
+          }
+        },
+        {
+          "count": 128,
+          "profile_delta": {
+            "1": 8,
+            "2": -4
+          }
+        },
+        {
+          "count": 64,
+          "profile_delta": {
+            "1": 6,
+            "2": -3
+          }
+        }
+      ],
+      "strict_cost_decrease": 0,
+      "strict_cost_increase": 376
+    },
+    "extra:126037": {
+      "distinct_tariff_certificates": 4,
+      "exact_profile_tie": 45784,
+      "guard_rejected": 0,
+      "nonidentity_zero_or_unresolved": 0,
+      "profile_delta_counts": [
+        {
+          "count": 45784,
+          "profile_delta": {}
+        },
+        {
+          "count": 184,
+          "profile_delta": {
+            "1": 4,
+            "2": -2
+          }
+        },
+        {
+          "count": 128,
+          "profile_delta": {
+            "1": 8,
+            "2": -4
+          }
+        },
+        {
+          "count": 64,
+          "profile_delta": {
+            "1": 6,
+            "2": -3
+          }
+        }
+      ],
+      "strict_cost_decrease": 0,
+      "strict_cost_increase": 376
+    },
+    "extra:63029": {
+      "distinct_tariff_certificates": 4,
+      "exact_profile_tie": 45784,
+      "guard_rejected": 0,
+      "nonidentity_zero_or_unresolved": 0,
+      "profile_delta_counts": [
+        {
+          "count": 45784,
+          "profile_delta": {}
+        },
+        {
+          "count": 184,
+          "profile_delta": {
+            "1": 4,
+            "2": -2
+          }
+        },
+        {
+          "count": 128,
+          "profile_delta": {
+            "1": 8,
+            "2": -4
+          }
+        },
+        {
+          "count": 64,
+          "profile_delta": {
+            "1": 6,
+            "2": -3
+          }
+        }
+      ],
+      "strict_cost_decrease": 0,
+      "strict_cost_increase": 376
+    }
+  },
+  "recorded_utc": "2026-10-16T23:43:17.784672+00:00",
+  "references": {
+    "baseline": [
+      {
+        "bytes": 2337,
+        "path": "data/continuation-12/r2-v1/baseline/task-00000.json.gz",
+        "payload_sha256": "eb2fd27d3a45de2eeea272ed901ccee49affc8da30a6e960c00fb46bfeda52e3",
+        "sha256": "0b7108925b0515987f09f92c92eb6b7b512861cd525bbc62c49df1c01f9e5b62"
+      },
+      {
+        "bytes": 2343,
+        "path": "data/continuation-12/r2-v1/baseline/task-00001.json.gz",
+        "payload_sha256": "5872a523dc099a862e5d9e022ca8bca269d3a8154ddda5d6e666340e8a4b9032",
+        "sha256": "48863539ae76a4e0758204aa74467d734571a8bd03b8199e64dae5dbbb2a0e97"
+      },
+      {
+        "bytes": 2337,
+        "path": "data/continuation-12/r2-v1/baseline/task-00002.json.gz",
+        "payload_sha256": "b7f9ebc9388bba23cca4b4f1cfbfb07c7301f91455066dc1d36f46785cc253bd",
+        "sha256": "e5e2a3057cb53061d22731c1d4b2fa86c40652f0896260a3d6385ca143d2937f"
+      },
+      {
+        "bytes": 2340,
+        "path": "data/continuation-12/r2-v1/baseline/task-00003.json.gz",
+        "payload_sha256": "8329dbc06f8da5aac6a20f19938da8a347d5a73bc2970aade3e74d3be7af63ba",
+        "sha256": "0452807b702e8bfc7165c7f12eb07ee7711c0b7a7234806158a437be0eddb376"
+      }
+    ],
+    "census": [
+      {
+        "bytes": 652237,
+        "path": "data/continuation-12/r2-v1/census/task-00000.json.gz",
+        "payload_sha256": "6b0eab8ac6874f7f856e74fa212c4e7e3b1590ca4976a5c12e8ac16f6f8a095f",
+        "sha256": "0c5329802c0a75266feb86c92d3c0b87ad762b4c3d6d9bf4e613c8032836fd6d"
+      },
+      {
+        "bytes": 651880,
+        "path": "data/continuation-12/r2-v1/census/task-00001.json.gz",
+        "payload_sha256": "140cf02475876b95589eda6b414423b16f35c4caec2db32e3492844ee14bbc83",
+        "sha256": "99dfa0ccb33f1b0a09776fe098cbf9bdbb6f64639af67c8105a40a9deb1e1c52"
+      },
+      {
+        "bytes": 652230,
+        "path": "data/continuation-12/r2-v1/census/task-00002.json.gz",
+        "payload_sha256": "b8d3f94ce87b16ea218344b239e825094227b69166d5dc6047df9c96e7fc1ac4",
+        "sha256": "060176a0557ce1b2520654c175839202732d732b15a591a80e58dffa4e1bbfd6"
+      },
+      {
+        "bytes": 651878,
+        "path": "data/continuation-12/r2-v1/census/task-00003.json.gz",
+        "payload_sha256": "cebce473ac64126ec3a8c5bd2df337ca136173ec323bdd14fd903e87daab17f1",
+        "sha256": "e57e4c913f755cffb3efa77270eb9b28bfba8f71c7fee7e5f0e123f736d85b14"
+      }
+    ],
+    "controls": [
+      {
+        "bytes": 1554,
+        "path": "data/continuation-12/r2-v1/controls/task-00000.json.gz",
+        "payload_sha256": "ade81fcf66549146f8f81bd98db310f728ab0f2803c2ac95e6606553acf76b21",
+        "sha256": "ee40176a27168b524b22cbcd33eb2826b204549b3fd2a348299386229c7e74d6"
+      },
+      {
+        "bytes": 1552,
+        "path": "data/continuation-12/r2-v1/controls/task-00001.json.gz",
+        "payload_sha256": "c0ff518a697fe5ff472808c3b68d6983f9a12bda1e5dc6ce1da7e1fdfd9e2eb6",
+        "sha256": "fb5497f7adcc85a5bc8f8cf2b1a5a4398629a0115686c67715a518e3b215c374"
+      }
+    ],
+    "result_receipts": [
+      {
+        "bytes": 29379,
+        "path": "results/CONTINUATION-12/R2-MATCHED-FRAME-CARRIER/v1/seed-63029/RESULT.json",
+        "payload_sha256": "46010e7ff7b929c6bac590a91c2604214803b3b48f526c26d15eddfb9d43716a",
+        "sha256": "46010e7ff7b929c6bac590a91c2604214803b3b48f526c26d15eddfb9d43716a"
+      },
+      {
+        "bytes": 29376,
+        "path": "results/CONTINUATION-12/R2-MATCHED-FRAME-CARRIER/v1/seed-126037/RESULT.json",
+        "payload_sha256": "76146d017a3df372ae95545764258e7be359c42e0f7056d7fe1605f7d13d734b",
+        "sha256": "76146d017a3df372ae95545764258e7be359c42e0f7056d7fe1605f7d13d734b"
+      }
+    ],
+    "run": {
+      "bytes": 59188,
+      "path": "data/continuation-12/r2-v1/RUN.json",
+      "sha256": "571b5deabb6aef5f1c3ff0f6fa7a4e7c15b9e50b679e502eab2b79c4a1d88012"
+    },
+    "static_review": {
+      "bytes": 10309,
+      "path": "results/CONTINUATION-12/planning/RANK2-REVIEW.json",
+      "sha256": "221632f3c6aab3debf183e5158956577ed0e1db5a21ae92cd0200dfac933e977"
+    },
+    "task_manifests": [
+      {
+        "bytes": 12464,
+        "path": "data/continuation-12/r2-v1/TASKS-SEED-63029.json.gz",
+        "sha256": "0b41b1656941cc982044a246929efd24e3f9aa686e4ae8d0e19ea9af00e024b3"
+      },
+      {
+        "bytes": 12460,
+        "path": "data/continuation-12/r2-v1/TASKS-SEED-126037.json.gz",
+        "sha256": "236c3fd1af76c17da1f9d78133d9b3b7e9f9a3d4f5c26ecb15dc14e84991ec4b"
+      }
+    ]
+  },
+  "repricing_or_candidate_regeneration": false,
+  "resources": {
+    "configured_workers": 61,
+    "peak_worker_rss_bytes": 326725632,
+    "peak_worker_rss_gib": 0.3042869567871094,
+    "phases": {
+      "baseline": {
+        "average_core_equivalents": 4.0452181044339,
+        "cpu_seconds": 7.584281913,
+        "peak_worker_rss_bytes": 161837056,
+        "sum_task_cpu_seconds": 6.208910789,
+        "tasks": 4,
+        "wall_seconds": 1.8748758947476745
+      },
+      "census": {
+        "average_core_equivalents": 2.4185833026470185,
+        "cpu_seconds": 9.898739865,
+        "peak_worker_rss_bytes": 194945024,
+        "sum_task_cpu_seconds": 5.894879859,
+        "tasks": 4,
+        "wall_seconds": 4.0927843395620584
+      },
+      "controls": {
+        "average_core_equivalents": 2.3804095750854812,
+        "cpu_seconds": 2.007189624,
+        "peak_worker_rss_bytes": 128241664,
+        "sum_task_cpu_seconds": 1.0864335619999999,
+        "tasks": 2,
+        "wall_seconds": 0.8432118762284517
+      },
+      "prices": {
+        "average_core_equivalents": 42.92837080340203,
+        "cpu_seconds": 187.179772325,
+        "peak_worker_rss_bytes": 326725632,
+        "sum_task_cpu_seconds": 164.025280397,
+        "tasks": 256,
+        "wall_seconds": 4.360281297005713
+      }
+    },
+    "scope": "Saved pool worker high-water RSS is a per-worker peak, not aggregate resident memory. No PSS or instantaneous busy-core peak is inferred. Phase CPU/wall includes parent/lifecycle overhead and is an average, not a sampled active-worker count.",
+    "total_cpu_seconds": 215.873927664,
+    "total_wall_seconds": 20.383969883434474,
+    "whole_run_average_core_equivalents": 10.590377090354474
+  },
+  "schema_version": 1,
+  "scientific_imports_or_reruns": false,
+  "seed_confirmation": {
+    "all64_shard_rows_and_certificate_maps_equal_by_provider": true,
+    "census_candidates_plans_exclusions_equal": true,
+    "not_independent_samples": true,
+    "run_statistics_equal": true
+  },
+  "source_attribution": {
+    "base": {
+      "author": "dcharb78",
+      "author_login": "dcharb78",
+      "bytes": 72539,
+      "commit": "84cc406ad91ec53fff329a11a445d7effe564a77",
+      "format": "BORROW-WORD",
+      "git_blob": "2ee02e318c98281a71445b954feccd55c153827c",
+      "head": "84cc406ad91ec53fff329a11a445d7effe564a77",
+      "path": "data/continuation-11/latest-sources/3042/edits/FINAL-WORD-base.json.gz",
+      "pr": 3042,
+      "sha256": "7e98f6f2a6c9ce9e7e04b515bd8ce4a4a533ff05f01ea265be2a1a994695260e",
+      "source": "PR3042 six restore-carrier skips on credited PR3015/2979 lineage",
+      "source_path": "research/rank7-restore-carrier-skips/edits/FINAL-WORD-base.json.gz"
+    },
+    "extra": {
+      "author": "dcharb78",
+      "author_login": "dcharb78",
+      "bytes": 72538,
+      "commit": "84cc406ad91ec53fff329a11a445d7effe564a77",
+      "format": "BORROW-WORD",
+      "git_blob": "33ba5f34996a31edd197cb58eca575645575e529",
+      "head": "84cc406ad91ec53fff329a11a445d7effe564a77",
+      "path": "data/continuation-11/latest-sources/3042/edits/FINAL-WORD-extra.json.gz",
+      "pr": 3042,
+      "sha256": "1396410de482883416fc7f534062ab005b484056b035fdcfa3b5cc065536ba35",
+      "source": "PR3042 six restore-carrier skips on credited PR3015/2979 lineage",
+      "source_path": "research/rank7-restore-carrier-skips/edits/FINAL-WORD-extra.json.gz"
+    }
+  },
+  "status": "PASS_SAVED_RECEIPT_REVIEW"
+}
