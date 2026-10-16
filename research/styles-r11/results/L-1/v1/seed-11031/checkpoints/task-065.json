@@ -1,0 +1,185 @@
+{
+  "cpu_seconds": 1.01199,
+  "peak_rss_bytes": 204533760,
+  "result": {
+    "anti_memorization_check": {
+      "axiom_lengths": {
+        "2745-BORROW-WORD-43base.json.gz": 5227,
+        "2745-BORROW-WORD-43extra.json.gz": 5227,
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": 5229
+      },
+      "decision_threshold": null,
+      "proof_obligation": "Give parameterized axioms and productions independent of the stored output words.",
+      "residual_literal_counts": {
+        "2745-BORROW-WORD-43base.json.gz": 5201,
+        "2745-BORROW-WORD-43extra.json.gz": 5201,
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": 5203
+      }
+    },
+    "cross_word_rule_overlap": [
+      {
+        "jaccard": 1.0,
+        "words": [
+          "2745-BORROW-WORD-43base.json.gz",
+          "2745-BORROW-WORD-43extra.json.gz"
+        ]
+      },
+      {
+        "jaccard": 1.0,
+        "words": [
+          "2745-BORROW-WORD-43base.json.gz",
+          "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+        ]
+      },
+      {
+        "jaccard": 1.0,
+        "words": [
+          "2745-BORROW-WORD-43extra.json.gz",
+          "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+        ]
+      }
+    ],
+    "experiment": "L-1",
+    "max_rules_evaluated": 201,
+    "missing_pattern_obligations": [
+      "parameterized construction independent of stored outputs",
+      "matched-null margins",
+      "N4 constructor control",
+      "held-out test",
+      "profile non-circularity"
+    ],
+    "note": "Exact expansion of a stored axiom is bookkeeping; it is not a parametric D0L proof.",
+    "per_word": {
+      "2745-BORROW-WORD-43base.json.gz": {
+        "axiom_length": 5227,
+        "axiom_sha256": "e2e1355e53fba19aec72e243e7e9d9c662eaf9bcfb6e931bf16722f2c4c84e44",
+        "exact_replay": true,
+        "residual_literal_count": 5201,
+        "skeleton_gates": 5470,
+        "used_rule_count": 201
+      },
+      "2745-BORROW-WORD-43extra.json.gz": {
+        "axiom_length": 5227,
+        "axiom_sha256": "e2e1355e53fba19aec72e243e7e9d9c662eaf9bcfb6e931bf16722f2c4c84e44",
+        "exact_replay": true,
+        "residual_literal_count": 5201,
+        "skeleton_gates": 5470,
+        "used_rule_count": 201
+      },
+      "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": {
+        "axiom_length": 5229,
+        "axiom_sha256": "803f60cd38f1c9735acb9f728d115eef24140bdfc4cb087352a6623b0ade481b",
+        "exact_replay": true,
+        "residual_literal_count": 5203,
+        "skeleton_gates": 5472,
+        "used_rule_count": 201
+      }
+    },
+    "primary_numeric_bar": false,
+    "rules_sha256": "fe9989cafe243de5596998e94440142cfb520961be770b7e6e35dfeab6a52217",
+    "scope": "finite straight-line grammar of rank-annotated globally register-renamed skeletons",
+    "seed": 11031,
+    "shared_rule_count": 201,
+    "source_attribution": [
+      {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 71241,
+        "format": "BORROW-WORD",
+        "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+        "kappa": "0.0017161404259974415",
+        "local_profile": {
+          "1": 2370,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 4,
+          "8": 4
+        },
+        "path": "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "pin_key": "2745-BORROW-WORD-43base.json.gz",
+        "pr": 2745,
+        "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+        "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 71242,
+        "format": "BORROW-WORD",
+        "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+        "kappa": "0.0017161404259974415",
+        "local_profile": {
+          "1": 2370,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 4,
+          "8": 4
+        },
+        "path": "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "pin_key": "2745-BORROW-WORD-43extra.json.gz",
+        "pr": 2745,
+        "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+        "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Tekalign (tekuuu)",
+        "bytes": 72468,
+        "format": "BORROW-WORD",
+        "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+        "kappa": "0.001717141586348426338109",
+        "local_profile": {
+          "1": 2366,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "pr": 2751,
+        "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      }
+    ],
+    "status": "NULL",
+    "stopped_at_rule_cap": true,
+    "terminals_sha256": "4a220d5d84d62835348cef97b90b53636cc4763e29df3112792448edf1019898"
+  },
+  "seconds": 1.0119619341567159,
+  "spec": {
+    "experiment": "L-1",
+    "max_rules": 201,
+    "paths": [
+      "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+      "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+      "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+    ],
+    "seed": 11031,
+    "triple_id": "T66"
+  },
+  "status": "OK"
+}

@@ -1,0 +1,184 @@
+{
+  "cpu_seconds": 1.7516223929999999,
+  "peak_rss_bytes": 256356352,
+  "result": {
+    "anti_memorization_check": {
+      "axiom_lengths": {
+        "1672-gauge44-word-566-554.json.gz": 5275,
+        "2745-BORROW-WORD-43extra.json.gz": 5227,
+        "2766-WORD-base.json.gz": 5229
+      },
+      "decision_threshold": null,
+      "proof_obligation": "Give parameterized axioms and productions independent of the stored output words.",
+      "residual_literal_counts": {
+        "1672-gauge44-word-566-554.json.gz": 5259,
+        "2745-BORROW-WORD-43extra.json.gz": 5185,
+        "2766-WORD-base.json.gz": 5187
+      }
+    },
+    "cross_word_rule_overlap": [
+      {
+        "jaccard": 0.14427860696517414,
+        "words": [
+          "1672-gauge44-word-566-554.json.gz",
+          "2745-BORROW-WORD-43extra.json.gz"
+        ]
+      },
+      {
+        "jaccard": 0.14427860696517414,
+        "words": [
+          "1672-gauge44-word-566-554.json.gz",
+          "2766-WORD-base.json.gz"
+        ]
+      },
+      {
+        "jaccard": 1.0,
+        "words": [
+          "2745-BORROW-WORD-43extra.json.gz",
+          "2766-WORD-base.json.gz"
+        ]
+      }
+    ],
+    "experiment": "L-1",
+    "max_rules_evaluated": 201,
+    "missing_pattern_obligations": [
+      "parameterized construction independent of stored outputs",
+      "matched-null margins",
+      "N4 constructor control",
+      "held-out test",
+      "profile non-circularity"
+    ],
+    "note": "Exact expansion of a stored axiom is bookkeeping; it is not a parametric D0L proof.",
+    "per_word": {
+      "1672-gauge44-word-566-554.json.gz": {
+        "axiom_length": 5275,
+        "axiom_sha256": "193c9223f24e0b39a877e33bfd5bc1750dd4ab87a9799e2ba67fedfa1d3a14a6",
+        "exact_replay": true,
+        "residual_literal_count": 5259,
+        "skeleton_gates": 5304,
+        "used_rule_count": 29
+      },
+      "2745-BORROW-WORD-43extra.json.gz": {
+        "axiom_length": 5227,
+        "axiom_sha256": "b326d9560b0e11d2a26c471c431c13de5360ac1ecaf7b20b4a763d2277859cc7",
+        "exact_replay": true,
+        "residual_literal_count": 5185,
+        "skeleton_gates": 5470,
+        "used_rule_count": 201
+      },
+      "2766-WORD-base.json.gz": {
+        "axiom_length": 5229,
+        "axiom_sha256": "2fbaaeee90c7e24ea062bd1bda3f04e98ff7fbcf7caf371c5a6147037f4af5e1",
+        "exact_replay": true,
+        "residual_literal_count": 5187,
+        "skeleton_gates": 5472,
+        "used_rule_count": 201
+      }
+    },
+    "primary_numeric_bar": false,
+    "rules_sha256": "082c7421201b9e424452dbbf0a14d0486c557c5274e318dd19521d4541f2161e",
+    "scope": "finite straight-line grammar of rank-annotated globally register-renamed skeletons",
+    "seed": 29063,
+    "shared_rule_count": 201,
+    "source_attribution": [
+      {
+        "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+        "bytes": 57438,
+        "format": "FULL-WORD",
+        "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+        "kappa": "0.001676938111022438",
+        "local_profile": {
+          "1": 2348,
+          "2": 500,
+          "3": 416,
+          "4": 130,
+          "5": 82,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "pin_key": "1672-gauge44-word-566-554.json.gz",
+        "pr": 1672,
+        "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+        "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+        "width_inventory": {
+          "4": 44,
+          "5": 44,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 71242,
+        "format": "BORROW-WORD",
+        "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+        "kappa": "0.0017161404259974415",
+        "local_profile": {
+          "1": 2370,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 4,
+          "8": 4
+        },
+        "path": "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "pin_key": "2745-BORROW-WORD-43extra.json.gz",
+        "pr": 2745,
+        "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+        "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "DavidAriasC",
+        "bytes": 72192,
+        "format": "BORROW-WORD",
+        "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+        "kappa": "0.001717256973467002308270",
+        "local_profile": {
+          "1": 2364,
+          "2": 647,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "pin_key": "2766-WORD-base.json.gz",
+        "pr": 2766,
+        "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+        "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      }
+    ],
+    "status": "NULL",
+    "stopped_at_rule_cap": true,
+    "terminals_sha256": "b999afb29ff85f289d812b631cd176835d073efda7361026410dff8fdcf0aaa8"
+  },
+  "seconds": 1.7808142388239503,
+  "spec": {
+    "experiment": "L-1",
+    "max_rules": 201,
+    "paths": [
+      "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+      "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+      "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-base.json.gz"
+    ],
+    "seed": 29063,
+    "triple_id": "T40"
+  },
+  "status": "OK"
+}

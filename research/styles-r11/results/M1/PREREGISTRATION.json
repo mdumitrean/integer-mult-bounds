@@ -1,0 +1,2498 @@
+{
+  "M0_results": {
+    "L-2": {
+      "result_files": [
+        "results/L-2/v1/seed-11031/RESULT.json",
+        "results/L-2/v1/seed-29063/RESULT.json"
+      ],
+      "status": "NULL"
+    },
+    "L-6": {
+      "result_files": [
+        "results/L-6/v1/seed-11031/RESULT.json",
+        "results/L-6/v1/seed-29063/RESULT.json"
+      ],
+      "status": "PASS"
+    },
+    "L-7": {
+      "result_files": [
+        "results/L-7/v1/seed-11031/RESULT.json",
+        "results/L-7/v1/seed-29063/RESULT.json"
+      ],
+      "status": "EXPLORATORY"
+    },
+    "P-1": {
+      "result_files": [
+        "results/P-1/v2/seed-11031/RESULT.json",
+        "results/P-1/v2/seed-29063/RESULT.json"
+      ],
+      "status": "PASS"
+    },
+    "P-2": {
+      "result_files": [
+        "results/P-2/v2/seed-11031/RESULT.json",
+        "results/P-2/v2/seed-29063/RESULT.json"
+      ],
+      "status": "PASS"
+    },
+    "P-3": {
+      "result_files": [
+        "results/P-3/v2/seed-11031/RESULT.json",
+        "results/P-3/v2/seed-29063/RESULT.json"
+      ],
+      "status": "EXPLORATORY"
+    },
+    "S-1": {
+      "result_files": [
+        "results/S-1/v1/seed-11031/RESULT.json",
+        "results/S-1/v1/seed-29063/RESULT.json"
+      ],
+      "status": "EXPLORATORY"
+    },
+    "S-6": {
+      "result_files": [
+        "results/S-6/v1/seed-11031/RESULT.json",
+        "results/S-6/v1/seed-29063/RESULT.json"
+      ],
+      "status": "NULL"
+    }
+  },
+  "experiments": {
+    "L-1": {
+      "budget_core_minutes": 10,
+      "id": "L-1",
+      "if_positive": "declarative recipe; feeds the move alphabet",
+      "inputs": [
+        "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "held-out #2833/#2853 at M4"
+      ],
+      "lane": "A",
+      "method": "Re-Pair/Sequitur on register-renamed k-grams; extract rule set; replay",
+      "milestone": "M1",
+      "null_model": "N1, N1b, N4",
+      "origin": "A-E1",
+      "pass_bar": "one rule set <= 200 rules regenerates >= 3 skeletons exactly; cross-word rule overlap >= 90%",
+      "question": "Is the A/B skeleton a parametric D0L with position-independent rules?",
+      "starting_script": "research/styles-r11/planning/A-lsys-word/extract_strings.py",
+      "status": "planned",
+      "title": "Skeleton grammar"
+    },
+    "L-3": {
+      "budget_core_minutes": 5,
+      "id": "L-3",
+      "if_positive": "else record the protocol-specific null",
+      "inputs": [
+        "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz"
+      ],
+      "lane": "A",
+      "method": "lag-match spectra and autocorrelation per alphabet",
+      "milestone": "M1",
+      "null_model": "N1b, N1",
+      "origin": "A-E5",
+      "pass_bar": "a peak z >= 5 over N1b at a lag explained by a named parameter (current: multiples of 4 only)",
+      "question": "Periods tied to h=9, 8 centres, 22, v=112, 73, 666?",
+      "starting_script": "research/styles-r11/planning/A-lsys-word/lineage_checks.py",
+      "status": "planned",
+      "title": "Periodicity census"
+    },
+    "L-4": {
+      "budget_core_minutes": 5,
+      "id": "L-4",
+      "if_positive": "frames readable from the skeleton; negative confirms frames are global",
+      "inputs": [
+        "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+        "research/styles-r11/data/words/retired5-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz"
+      ],
+      "lane": "A",
+      "method": "lookup table / shallow tree; leave-one-word-out",
+      "milestone": "M1",
+      "null_model": "strings permuted among registers of the same role (358 distinct vs 56)",
+      "origin": "A-E2",
+      "pass_bar": ">= 90% exact prediction on the held-out word vs <= 50% null",
+      "question": "Is a register jump string a function of local data (role, entrance dim, width, first/last motif)?",
+      "starting_script": "research/styles-r11/planning/A-lsys-word/extract_strings.py",
+      "status": "planned",
+      "title": "Climb-string predictability"
+    },
+    "L-5": {
+      "budget_core_minutes": 20,
+      "id": "L-5",
+      "if_positive": "string-level alias pre-screen on new words",
+      "inputs": [
+        "research/t74-r10-hosting-leads/J-dim1/out/CENSUS-b.json",
+        "research/t74-r10-hosting-leads/J-dim1/out/WHY-HI-b.json",
+        "research/t74-joint-twelve-retired7/evidence/retired7/CENSUS-AND-AUGMENTING-PATHS.json",
+        "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+      ],
+      "lane": "A",
+      "method": "k-gram context with rank/role; logistic or rule screen; score the 192 augmenting paths; S-1 atlas = ground truth",
+      "milestone": "M1",
+      "null_model": "labels permuted; rank-only features (the floor rule) as baseline",
+      "origin": "A-E3",
+      "pass_bar": "AUC >= 0.9 held-out AND the two realised moves (401->564, 403->565) in the top 5 of 192 beyond the floor rule",
+      "question": "Does a local motif around (lender last gate, follower first gate) add information beyond the exact lo/hi rule?",
+      "starting_script": "research/styles-r11/planning/C-sandpile/ground_bipartite.py",
+      "status": "planned",
+      "title": "Alias-feasibility motif"
+    }
+  },
+  "milestone": "M1",
+  "plan_sha256": "43ca1bb044b8a7dba5fc2721e77bb531e9e7e5e28be77dcc8eccf4941e4cde8c",
+  "protocol": {
+    "L1": {
+      "algorithm": {
+        "early_cap": "Reaching 201 produced rules makes the <=200-rule condition false; the capped algorithm is the registered search protocol, not an exact minimum-grammar solver.",
+        "max_rules": 201,
+        "name": "joint deterministic binary RePair",
+        "nonterminal_ids": "-1,-2,...",
+        "pair_choice": "Largest overlapping adjacent-pair count summed over the three separate words; ties by lexicographic terminal/nonterminal pair IDs. Replace greedily left-to-right without crossing word boundaries. Stop if fewer than two replacements are possible.",
+        "terminal_ids": "First occurrence while scanning the three words in the registered path order"
+      },
+      "anti_memorization": {
+        "additional_pass_threshold": null,
+        "diagnostics": [
+          "axiom_length",
+          "residual_literal_count",
+          "used_rule_count",
+          "shared_rule_count",
+          "exact_replay"
+        ],
+        "interpretation": "Stored axioms can encode the observed output. A numerical PASS alone does not establish a parametric D0L family; independent parameterized axioms and productions remain a proof obligation."
+      },
+      "artifact_policy": "Retain input/script hashes, triple ID, rule count, exact-replay flags, overlap values, axiom lengths and residual counts for all triples. Full NULL axioms/terminal dictionaries may be omitted from committed summaries after hashing; preserve a complete PASS witness if one exists.",
+      "budget_cpu_seconds_per_seed": 600,
+      "exactness": "Expand each word axiom through the shared rule dictionary and compare every terminal ID with the original declared skeleton sequence.",
+      "failure_handling": "A missing/error/timeout triple prevents an all-triples NULL. An exact witness can establish the existential numerical PASS; all incomplete work and seed consistency must still be reported.",
+      "method": "For each of all 84 fixed triples, use string_screen.shared_grammar on globally first-occurrence register-renamed and signed-warp-operator-renamed rank-annotated A/B skeletons. The algorithm, token definitions and triple list are fixed before observations.",
+      "n_permutations": 0,
+      "optional_all_nine_fit": "Descriptive only, if run within the registered budget. It cannot replace the existential 84-triple decision.",
+      "overlap": "For every pair of the three words, Jaccard overlap of all transitively used shared-rule IDs must be >=0.90. Report all three values.",
+      "pass_bar_verbatim": "one rule set <= 200 rules regenerates >= 3 skeletons exactly; cross-word rule overlap >= 90%",
+      "primary_decision": "A triple passes iff its shared rule count <=200, all three skeletons replay exactly and all three pairwise rule-use overlaps >=0.90. L-1 passes iff at least one of the 84 registered triples passes. L-1 is NULL only if all 84 evaluable triples fail, confirmed by the second seed.",
+      "remaining_pattern_obligations": [
+        "N1 and applicable stronger null margins",
+        "non-circularity under N2",
+        "presence at N2b certified optimum",
+        "conditional constructor N4",
+        "cross-family replication or declared family-local replication",
+        "one falsifiable <=1-core-hour exact prediction",
+        "held-out M4 success"
+      ],
+      "scope_of_null": "Failure of the fixed capped RePair algorithm on the 84 registered triples only. It does not prove that another grammar or a parametric D0L construction cannot exist.",
+      "sections": [
+        "A",
+        "B"
+      ],
+      "seed_semantics": "The exact fit is deterministic; rerun under the second seed to verify the same numerical decision and retain both receipts. No permutation p-value is assigned to the exact gate.",
+      "skeleton_token": [
+        "section",
+        "operation",
+        "exact_reduced_coefficient",
+        "target_role",
+        "source_role",
+        "frame_rank",
+        "first_occurrence_register_tuple",
+        "signed_first_occurrence_warp_operator_or_null"
+      ],
+      "triples": [
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz"
+          ],
+          "triple_id": "T01",
+          "word_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz"
+          ],
+          "triple_id": "T02",
+          "word_indices": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz"
+          ],
+          "triple_id": "T03",
+          "word_indices": [
+            0,
+            1,
+            4
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz"
+          ],
+          "triple_id": "T04",
+          "word_indices": [
+            0,
+            1,
+            5
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T05",
+          "word_indices": [
+            0,
+            1,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T06",
+          "word_indices": [
+            0,
+            1,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T07",
+          "word_indices": [
+            0,
+            1,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz"
+          ],
+          "triple_id": "T08",
+          "word_indices": [
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz"
+          ],
+          "triple_id": "T09",
+          "word_indices": [
+            0,
+            2,
+            4
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz"
+          ],
+          "triple_id": "T10",
+          "word_indices": [
+            0,
+            2,
+            5
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T11",
+          "word_indices": [
+            0,
+            2,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T12",
+          "word_indices": [
+            0,
+            2,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T13",
+          "word_indices": [
+            0,
+            2,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz"
+          ],
+          "triple_id": "T14",
+          "word_indices": [
+            0,
+            3,
+            4
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz"
+          ],
+          "triple_id": "T15",
+          "word_indices": [
+            0,
+            3,
+            5
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T16",
+          "word_indices": [
+            0,
+            3,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T17",
+          "word_indices": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T18",
+          "word_indices": [
+            0,
+            3,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz"
+          ],
+          "triple_id": "T19",
+          "word_indices": [
+            0,
+            4,
+            5
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T20",
+          "word_indices": [
+            0,
+            4,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T21",
+          "word_indices": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T22",
+          "word_indices": [
+            0,
+            4,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T23",
+          "word_indices": [
+            0,
+            5,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T24",
+          "word_indices": [
+            0,
+            5,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T25",
+          "word_indices": [
+            0,
+            5,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T26",
+          "word_indices": [
+            0,
+            6,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T27",
+          "word_indices": [
+            0,
+            6,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T28",
+          "word_indices": [
+            0,
+            7,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz"
+          ],
+          "triple_id": "T29",
+          "word_indices": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz"
+          ],
+          "triple_id": "T30",
+          "word_indices": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz"
+          ],
+          "triple_id": "T31",
+          "word_indices": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T32",
+          "word_indices": [
+            1,
+            2,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T33",
+          "word_indices": [
+            1,
+            2,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T34",
+          "word_indices": [
+            1,
+            2,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz"
+          ],
+          "triple_id": "T35",
+          "word_indices": [
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz"
+          ],
+          "triple_id": "T36",
+          "word_indices": [
+            1,
+            3,
+            5
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T37",
+          "word_indices": [
+            1,
+            3,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T38",
+          "word_indices": [
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T39",
+          "word_indices": [
+            1,
+            3,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz"
+          ],
+          "triple_id": "T40",
+          "word_indices": [
+            1,
+            4,
+            5
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T41",
+          "word_indices": [
+            1,
+            4,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T42",
+          "word_indices": [
+            1,
+            4,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T43",
+          "word_indices": [
+            1,
+            4,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T44",
+          "word_indices": [
+            1,
+            5,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T45",
+          "word_indices": [
+            1,
+            5,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T46",
+          "word_indices": [
+            1,
+            5,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T47",
+          "word_indices": [
+            1,
+            6,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T48",
+          "word_indices": [
+            1,
+            6,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T49",
+          "word_indices": [
+            1,
+            7,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz"
+          ],
+          "triple_id": "T50",
+          "word_indices": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz"
+          ],
+          "triple_id": "T51",
+          "word_indices": [
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T52",
+          "word_indices": [
+            2,
+            3,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T53",
+          "word_indices": [
+            2,
+            3,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T54",
+          "word_indices": [
+            2,
+            3,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz"
+          ],
+          "triple_id": "T55",
+          "word_indices": [
+            2,
+            4,
+            5
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T56",
+          "word_indices": [
+            2,
+            4,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T57",
+          "word_indices": [
+            2,
+            4,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T58",
+          "word_indices": [
+            2,
+            4,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T59",
+          "word_indices": [
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T60",
+          "word_indices": [
+            2,
+            5,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T61",
+          "word_indices": [
+            2,
+            5,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T62",
+          "word_indices": [
+            2,
+            6,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T63",
+          "word_indices": [
+            2,
+            6,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T64",
+          "word_indices": [
+            2,
+            7,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz"
+          ],
+          "triple_id": "T65",
+          "word_indices": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T66",
+          "word_indices": [
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T67",
+          "word_indices": [
+            3,
+            4,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T68",
+          "word_indices": [
+            3,
+            4,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T69",
+          "word_indices": [
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T70",
+          "word_indices": [
+            3,
+            5,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T71",
+          "word_indices": [
+            3,
+            5,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T72",
+          "word_indices": [
+            3,
+            6,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T73",
+          "word_indices": [
+            3,
+            6,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T74",
+          "word_indices": [
+            3,
+            7,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          ],
+          "triple_id": "T75",
+          "word_indices": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T76",
+          "word_indices": [
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T77",
+          "word_indices": [
+            4,
+            5,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T78",
+          "word_indices": [
+            4,
+            6,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T79",
+          "word_indices": [
+            4,
+            6,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T80",
+          "word_indices": [
+            4,
+            7,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          ],
+          "triple_id": "T81",
+          "word_indices": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T82",
+          "word_indices": [
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T83",
+          "word_indices": [
+            5,
+            7,
+            8
+          ]
+        },
+        {
+          "paths": [
+            "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+            "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          ],
+          "triple_id": "T84",
+          "word_indices": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "warp_handling": "Retain all recorded forward warps associated with those sections, including B warps after the last B gate. Do not include cut, cleanup, compensation or restore in this grammar target."
+    },
+    "L3": {
+      "decision_constraints": "A named-lag peak z>=5 over N1b is necessary, together with q<=0.05 in the complete 864 family. z alone never establishes a finding. Pattern status additionally requires all PLAN section 6 criteria, including >=3-word replication, applicable effect margins and genuinely held-out confirmation. Report any zero-SD null explicitly rather than inventing a finite z.",
+      "descriptive_autocorrelation": "For each section and lag, center the one-hot category vectors using that section's full unigram frequencies p. Sum e_i dot e_(i+L) - p[x_i] - p[x_(i+L)] + sum(p^2), divided by (n-L)*(1-sum(p^2)); pool numerators/denominators across A/B for a pooled descriptive value. A constant string has undefined covariance normalization. No extra q-values are assigned to these diagnostics.",
+      "family": {
+        "alphabets": [
+          "full",
+          "mid",
+          "rank",
+          "op",
+          "role",
+          "registers"
+        ],
+        "count": 864,
+        "dimensions": {
+          "alphabets": 6,
+          "named_lags": 8,
+          "nulls": 2,
+          "word_files": 9
+        },
+        "fdr": "BH at 0.05 across these 864 cells separately within each seed; do not merge with, replace, or expand the 540-cell core family.",
+        "id": "L3-864-LAG",
+        "n_permutations_per_cell_per_seed": 2000,
+        "null_protocol": "Use the same registered whole-forward section shuffle or exact commuting-window sweep as M0/M1, then measure A/B only. Cut randomization is ignored by the statistic; its fixed RNG consumption is retained.",
+        "nulls": [
+          "N1",
+          "N1b"
+        ],
+        "rng": "word_tasks.sample_seed(master_seed,pin_key,L3:null_name,index), Python random.Random.",
+        "score": "Higher within-section lag match is stronger; empirical p=(1+count(null>=real))/2001.",
+        "word_paths": [
+          "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+          "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+          "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+          "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+          "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+          "research/styles-r11/data/words/2766-WORD-base.json.gz",
+          "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+          "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+        ]
+      },
+      "implementation": "word_periods.lag_batch; word_periods.prepare_template in parent then word_periods.template_census through pool.py. Definition is complete; execute only if the Lane A stop permits continuation.",
+      "inputs": [
+        "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz"
+      ],
+      "named_periods": [
+        9,
+        8,
+        22,
+        112,
+        73,
+        480,
+        666,
+        1332
+      ],
+      "pass_bar_verbatim": "a peak z >= 5 over N1b at a lag explained by a named parameter (current: multiples of 4 only)",
+      "primary_statistic": "For each alphabet and lag L, count equal-token pairs separately within A and within B, sum the two counts, and divide by max(0,|A|-L)+max(0,|B|-L). No pair crosses a section boundary; cut, cleanup and compensation are excluded. Include prelude and B warps as ordinary canonical events.",
+      "template_census": {
+        "alphabets": {
+          "literal": "Injective typed tuple serialization of each entire JSON instruction, preserving all operands.",
+          "opcode": "(outer tag, scalar-operation name) for scalar records; (outer tag,) for other records."
+        },
+        "measurements": "For each orientation/alphabet, instruction count, instruction-kind histogram, fixed-lag equality/autocorrelation census and categorical periodogram at the same eight periods.",
+        "path": "research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz",
+        "provenance": "Read with python -I -B, never import/execute instructions. Record compressed file SHA256 and Git blob plus #2802 PINS lineage attribution. Load the template once in the parent, with optional reuse of its already-loaded object.",
+        "schema": "local_programs.forward and local_programs.backward are ordered tagged JSON instruction lists. Scalar records contain a scalar-operation list and a rank; phase and other tags remain literal instructions.",
+        "status": "EXPLORATORY descriptive component of L-3; no p or q. Complete literal programs contain derived phases, and backward is not an independent construction replicate."
+      }
+    },
+    "L4": {
+      "features": [
+        "role",
+        "entrance_dim",
+        "width",
+        "first_motif(op,coefficient,target_role,source_role,frame_rank)",
+        "last_motif(op,coefficient,target_role,source_role,frame_rank)"
+      ],
+      "inputs": [
+        "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+        "research/styles-r11/data/words/retired5-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz"
+      ],
+      "leakage_exclusion": "Do not use paid dt/ds fields from first/last motifs; they overlap the target climb labels.",
+      "model": "Deterministic exact-feature lookup with majority label, lexicographic label tie-break, and role-majority fallback for unseen features.",
+      "multiplicity": "Separate fixed family of 12 per-word accuracy tests, BH at 0.05 within each seed; leave-one-PR-out sensitivity descriptive. No combination with the 540-screen q-values.",
+      "n_permutations_per_seed": 2000,
+      "null": "Independently permute entire climb-string labels within each word and role, then refit every leave-one-word-out and leave-one-PR-group-out fold.",
+      "pass_bar_verbatim": ">= 90% exact prediction on the held-out word vs <= 50% null",
+      "pattern_requirement": "Even a passed prediction bar remains a candidate until N2 non-circularity and the genuinely held-out M4 check are satisfied.",
+      "primary_aggregation": "Report the >=0.90 real exact accuracy and <=0.50 matched-null mean threshold per held-out word; an all-word claim requires every registered file to meet the bar. Report a qualifying subset separately, subject to >=3-word and family criteria, without substituting it for the all-word result.",
+      "target": "Entire ordered tuple of positive per-register paid climb ranks, including any registered centre descent children.",
+      "validation": "Leave one word file out; fit only on other files. Also report predeclared leave-one-PR-group-out sensitivity, grouping base/extra variants together."
+    },
+    "L5": {
+      "additional_pinned_inputs": [
+        "research/styles-r11/data/words/retired5-WORD-base.json.gz",
+        "research/styles-r11/data/words/retired5-WORD-extra.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/refit7_43base.json",
+        "research/t74-joint-twelve-retired7/inputs/refit7_43extra.json"
+      ],
+      "auc_evaluation": "Enumerate all life-slot pairs excluding a private register paired to itself. Label by exact adjacency and score with the same fixed motif edge rule. Report per-variant motif AUC and exact-guard AUC; these are guard-label diagnostics, not independent realized-outcome evidence. No unselected augmenting path is labeled negative.",
+      "baselines": {
+        "exact_guard": "Feasibility labels are the exact time/floor-ceiling adjacency rule, so its AUC is exactly 1 where both classes exist; every legal candidate path ties at score 1.",
+        "floor_slack": "Additional fixed ranking diagnostic: negative sum of (life ceiling - slot floor) over the two compatibility edges. Report the same exact tie intervals. It is not used in the motif score."
+      },
+      "decision": "Record the two realized-path top-5 predicates and the AUC>=0.9 numerical predicate separately. Missing distinct realized-outcome labels prevents a claim of incremental predictive information beyond the exact guard. If a necessary top-5 condition demonstrably fails under the fixed tie rule, report that scoped ranking NULL; otherwise the complete beyond-floor L-5 question remains EXPLORATORY until its missing outcome evidence exists. Both seeds must reproduce any decision.",
+      "edge_score": "Form multisets of all contiguous 1-,2-,3-grams within each of the two context strings. Similarity is exact rational Dice: 2*sum_g min(count_exit[g],count_entry[g])/(total_exit_ngrams+total_entry_ngrams). If either context is empty the score is 0. This fixed unsupervised rule is evaluated without fitting to feasibility labels.",
+      "evaluation_units": "The historical pre-host-move refit7 base word is the primary 192-path ranking unit; the extra variant is a predeclared sensitivity unit, not an independent construction family. The scorer is fixed and unsupervised: no examples, labels or realized moves are used to fit it. This is not the M4 held-out check.",
+      "implementation": "word_alias_score.prepare in parent, then word_alias_score.task through pool.py. All graph/data objects are cached in the parent; execution only if Lane A remains active.",
+      "inputs": [
+        "research/t74-r10-hosting-leads/J-dim1/out/CENSUS-b.json",
+        "research/t74-r10-hosting-leads/J-dim1/out/WHY-HI-b.json",
+        "research/t74-joint-twelve-retired7/evidence/retired7/CENSUS-AND-AUGMENTING-PATHS.json",
+        "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+      ],
+      "missing_outcomes": "The other 190 paths have no failure labels merely because they were unselected. Feasibility labels are circular with the exact baseline and leave zero AUC-improvement headroom. Report this limitation explicitly rather than manufacture labels or substitute an easier claim.",
+      "motif_definition": "For a slot, use its last three scalar A/B/restore touches ending at its own-life last event, without crossing a warp. For a life, use its first three scalar touches starting at its first event, ending before any later warp. Keep chronological order. Token=(operation,exact reduced signed coefficient,frame rank,target role,source role), replacing the focal register role by SELF and classifying other registers only as P/T/C/H. Never include numerical register IDs, positions/times, exact floors/ceilings, paid climbs, labels, realized-move identity or later-stage data.",
+      "null": {
+        "description": "Independently permute the actual pair feasibility labels within each word, preserving class counts, and reuse the fixed motif/exact-guard score ranks. No path-outcome permutation is possible without path outcomes.",
+        "family": "base/extra x motif/exact-guard AUC; BH at 0.05 per seed, separate from both string families.",
+        "family_count": 4,
+        "n_permutations_per_seed": 2000,
+        "p": "(1+count(null_AUC>=real_AUC))/2001",
+        "rng": "word_tasks.sample_seed(master_seed,variant,L5:pair-labels,index)"
+      },
+      "pass_bar_verbatim": "AUC >= 0.9 held-out AND the two realised moves (401->564, 403->565) in the top 5 of 192 beyond the floor rule",
+      "path_enumeration": "Build matching.graph_data and adjacency from the exact pre-host census. Enumerate every length-3 alternating path: currently unmatched follower -> occupied own-life segment -> its currently hosted life -> a free slot. Verify both compatibility edges and occupied-life identity. Require exactly 192 unique paths in each registered variant; a mismatch is ERROR, not padding/truncation. Existing matching.augmenting_paths returns only one shortest path and is not used for this enumeration.",
+      "path_score": "Arithmetic mean of the two compatibility-edge motif similarities, represented as an exact Fraction. Score every one of the 192 paths identically before locating realized-path identities.",
+      "realized_paths": [
+        [
+          "follower:667",
+          "segment:401",
+          "hosted:30",
+          "free:564"
+        ],
+        [
+          "follower:669",
+          "segment:403",
+          "hosted:31",
+          "free:565"
+        ]
+      ],
+      "state_reconstruction": "Load each retired5 pinned word; apply only the explicit refit7 frame assignments and its declared local_profile. Recount canonically and construct exact Bounds. Record predecessor PINS attribution, patch SHA256/blob and the derived canonical-JSON SHA256. No hostmove2/alias7/final-word features enter the scorer.",
+      "tie_handling": "For each realized path report best rank=1+number of strictly higher scores, worst rank=number of scores >= its score, midrank, and tie count. Top-5 is demonstrated only when worst rank<=5. Hash/lexicographic identity may order a displayed tie but never break it for the decision."
+    },
+    "conditional_controls": {
+      "N1c": "Report register-renaming metamorphic control; equality-only statistics are invariant to a bijective token relabelling, so identity here is not extra scientific evidence.",
+      "N2": "Use the validated exact-profile-preserving lattice walk. Retain accepted/attempted moves, rejected profiles, changed vertices, and degeneracy. An identity-only walk does not demonstrate non-circularity.",
+      "N2b": "Solve the registered optimal-frame surrogate once per word, outside permutation loops, and require a certified optimum before claiming a pattern remains present there.",
+      "N4": "Build and preregister constructor-synthetic words only if a candidate survives M1; this control remains a prerequisite for a constructor-level string claim.",
+      "N5": "Report FULL-WORD/BORROW-WORD split and predeclared family-local scope; both format families are available in the nine-word set.",
+      "N6": "Use the held 152 PASS-but-losing words and 142 FAIL mutants for any applicable predictive alias motif, under a separately frozen scoring protocol before examining labels.",
+      "rule": "Missing required controls prevent a pattern designation; do not silently redefine the pattern bar."
+    },
+    "current_observation_boundary": {
+      "L2_confirmed_outcome": "NULL",
+      "L2_note": "M0 L-2 v1 confirmed NULL on both seeds before M1 registration; no M1 experiment has run.",
+      "M1_experiments_run": false
+    },
+    "decision_confirmation": "Keep distinct immutable RESULT.json receipts for both seeds. A scientific decision stands only if both seeds agree. A technical failure is ERROR/TIMEOUT; missing evidence is EXPLORATORY; neither is a scientific NULL.",
+    "definition_status": "M1 continuation definitions complete; code validation and all experiments are still coordinator-owned. This draft file itself is not a preregistration receipt.",
+    "draft": false,
+    "execution_and_recording": {
+      "artifact_limit": "Keep committed results below 200 MB; retain summaries and hashes, and preserve full witness artifacts only when needed. No raw permutation lists in final committed receipts.",
+      "cpu_caps": "Screening runs <=20 core-minutes, confirmation runs <=2 core-hours, checkpoint before 2 core-hours; M1 target allocation about 6 core-hours. Preregister any division into runs before execution and retain TIMEOUT rather than changing n or silently retrying.",
+      "entrypoints": [
+        "string_screen.prepare(paths, controls=True)",
+        "string_screen.task({experiment: L-1, paths: triple_paths, seed: seed, max_rules: 201})",
+        "string_screen.task({experiment: M1-SCREEN, path: path, seed: seed, null: N1_or_N1b, start: sample_start, n: batch_size})",
+        "string_screen.task({experiment: L-4, paths: L4_paths, seed: seed, start: sample_start, n: batch_size})",
+        "word_periods.lag_batch({path,seed,null,start,n})",
+        "word_periods.prepare_template(path, raw=already_loaded_template), then word_periods.template_census({seed})",
+        "word_alias_score.prepare(), then word_alias_score.task({variant,seed,start,n})"
+      ],
+      "memory_projection": "Before each launch record parent RSS and project parent + workers*(inherited parent + word + working set); reject a projection beyond available RAM or the worker cap.",
+      "parent_loading": "Load words, control graphs, GLOBAL-TEMPLATE and any large shared objects once in the parent; workers receive indices/paths into the prepared fork-shared cache.",
+      "pool": "Every parallel task goes through research/styles-r11/pipeline/pool.py.",
+      "registry": "Root updates EXPERIMENTS.json planned -> running -> final status, retains both seed receipts and a confirmation record, and makes small progress commits.",
+      "rss_gib_per_worker": 4,
+      "run_receipt": [
+        "experiment",
+        "word blob IDs and SHA256",
+        "source attribution from PINS",
+        "script SHA256",
+        "seed",
+        "n permutations requested/completed",
+        "wall seconds",
+        "CPU seconds",
+        "peak RSS",
+        "statistic values",
+        "null mean/SD/p/q",
+        "decision against the frozen bar",
+        "status"
+      ],
+      "solver_rule": "No solver longer than 10 minutes inside a permutation loop; any MILP/LP surrogate is solved once per word outside loops.",
+      "statuses": [
+        "PASS",
+        "NULL",
+        "TIMEOUT",
+        "ERROR",
+        "EXPLORATORY"
+      ],
+      "task_timeout_seconds": 300,
+      "wording": "Every NULL names its fixed protocol. No kappa claim; any plausible lever is a census target in results/HANDBACK.md.",
+      "workers": "min(120, floor(RAM_GiB / 4)); leave 8 cores free."
+    },
+    "execution_order": [
+      {
+        "action": "Require completion of M0 and read the confirmed Lane A scientific-result history. Freeze this preregistration before fitting a grammar.",
+        "stage": 1
+      },
+      {
+        "action": "L-1 exact grammar gate: fit the same fixed deterministic capped joint RePair algorithm separately on all 84 registered triples of the nine word files, in both seed runs.",
+        "stage": 2
+      },
+      {
+        "action": "Apply the two-consecutive-NULL lane stop immediately. In particular, confirmed L-2 NULL followed by confirmed L-1 NULL stops Lane A before the 540-cell screen, L-3, L-4, L-5, and N4.",
+        "stage": 3
+      },
+      {
+        "action": "Only if Lane A remains active, execute the fixed 540-cell N1/N1b screen with 2000 samples per cell and per seed; report the motif census, period diagnostics, and N5 split.",
+        "stage": 4
+      },
+      {
+        "action": "Complete the registered L-3 A/B and template census, then apply both the screen stop and two-consecutive-NULL stop before continuing.",
+        "stage": 5
+      },
+      {
+        "action": "If still active, run L-4, confirm its decision with the second seed, and check the lane stop.",
+        "stage": 6
+      },
+      {
+        "action": "If still active, run L-5 against the S-1 atlas and real 192-path set, confirm the second seed, and check the lane stop.",
+        "stage": 7
+      },
+      {
+        "action": "Only surviving candidates receive the required N1c, N2, N2b, conditional N4, N5 and applicable N6 controls. Each surviving candidate must have a frozen exact <=1-core-hour prediction before M4 held-out data are fetched.",
+        "stage": 8
+      }
+    ],
+    "fixed_screen_family": {
+      "N1": "One independent Fisher-Yates shuffle of each section from the shipped word for every sample; preserve event-attached token fields and section lengths.",
+      "N1b": "One shuffled visitation sweep of every gate from the shipped word for every sample; choose each destination uniformly in the current exact toolkit commute/move_window interval. Use the accelerator only after its all-pair predicate and seeded output/RNG equivalence certificate.",
+      "alphabets": {
+        "full": [
+          "section",
+          "operation",
+          "coefficient",
+          "target_role",
+          "source_role",
+          "frame_rank",
+          "target_paid_climb",
+          "source_paid_climb"
+        ],
+        "mid": [
+          "section",
+          "operation",
+          "coefficient",
+          "frame_rank"
+        ],
+        "op": [
+          "section",
+          "operation",
+          "coefficient"
+        ],
+        "rank": [
+          "section",
+          "frame_rank"
+        ],
+        "registers": [
+          "section",
+          "operation",
+          "coefficient",
+          "target_register",
+          "source_register_or_minus_one",
+          "frame_rank"
+        ],
+        "role": [
+          "section",
+          "operation",
+          "coefficient",
+          "target_role",
+          "source_role"
+        ]
+      },
+      "count": 540,
+      "decision_confirmation": "The same alphabet/statistic candidate and its qualifying words must meet the prescribed effect and q conditions in both independent master-seed runs.",
+      "dependence": "One sampled event permutation supplies all six alphabets and all five statistics. Dependence does not change the fixed 540 hypothesis count.",
+      "descriptive": "Report null mean/SD, empirical p, q, effect size, z and degenerate-null diagnostics. H1..H5, h1..h6, individual repeat motifs and per-period lag statistics are descriptive unless a separate family is frozen before they are run.",
+      "dimensions": {
+        "alphabets": 6,
+        "nulls": 2,
+        "statistics": 5,
+        "word_files": 9
+      },
+      "effects": "CR=null mean/real for lz76, repair and H6. Aggregate repeat and period enrichment=real/null mean. Report zero denominators explicitly and do not silently assign a finite ratio.",
+      "fdr": "Benjamini-Hochberg at 0.05 over exactly all 540 predeclared cell p-values within each seed. A motif-pattern claim additionally requires q<0.01. Never calculate a q-value for exploratory added tests.",
+      "incomplete_family": "A TIMEOUT/ERROR or incomplete 2000-sample cell is not a scientific NULL. Do not present FDR acceptance on a selectively completed subset as if the full family completed.",
+      "n_permutations_per_cell_per_seed": 2000,
+      "nulls": [
+        "N1",
+        "N1b"
+      ],
+      "permutation_p": "(1 + count(null_score >= real_score))/(1 + 2000), where compression/entropy score=-value and enrichment score=value; never zero.",
+      "rng": "word_tasks.sample_seed(master_seed, pin_key, M1:null_name, sample_index), then Python random.Random; batch boundaries and worker scheduling do not change samples.",
+      "statistics": {
+        "H6": {
+          "definition": "Empirical overlapping length-6 block entropy in bits; H1..H5 and h1..h6 are descriptive outputs only",
+          "direction": "lower",
+          "effect": "null_mean / real",
+          "score": "-value"
+        },
+        "lz76": {
+          "definition": "Kaspar-Schuster LZ76 phrase count from the Lane A implementation",
+          "direction": "lower",
+          "effect": "null_mean / real",
+          "score": "-value"
+        },
+        "maximal_repeat_mass": {
+          "definition": "Sum length * occurrence_count over suffix-array repeats of length >=4 and count >=3 that are left- and right-maximal; occurrences may overlap",
+          "direction": "higher",
+          "effect": "real / null_mean",
+          "limitation": "This is an aggregate repeat statistic, not a separately tested motif. Individual motif listings receive no additional q-values.",
+          "score": "value"
+        },
+        "period_peak": {
+          "definition": "Maximum one-hot centered categorical Fourier energy over the fixed eight structural periods; normalization is n * sum_a p_a(1-p_a)",
+          "direction": "higher",
+          "effect": "real / null_mean",
+          "limitation": "The maximum is the one registered statistic; per-period powers, lag matches, and the argmax are diagnostics, not additional independent tests.",
+          "periods": [
+            9,
+            8,
+            22,
+            112,
+            73,
+            480,
+            666,
+            1332
+          ],
+          "score": "value"
+        },
+        "repair": {
+          "definition": "Deterministic binary RePair description size: final sequence length plus twice the rule count",
+          "direction": "lower",
+          "effect": "null_mean / real",
+          "score": "-value"
+        }
+      },
+      "stream": "Concatenated canonical forward A/cut/B, preserving section tags and including all prelude/B warps; cleanup and compensation excluded. This is the existing screen_batch stream. The additional L-3 A/B/template obligation is identified separately below.",
+      "word_paths": [
+        "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+      ]
+    },
+    "lane_stop": {
+      "conditional_example": "If and only if both seeds confirm L-2 NULL and both seeds then confirm L-1 NULL, stop Lane A immediately for this round.",
+      "screen_stop": "No (alphabet, statistic) pair with CR >=1.2 against N1b on >=3 words after M1 implies stop and a protocol-specific screen NULL. CR is null_mean/real for the lower-is-stronger compression/entropy statistics; repeat/period enrichment is reported separately and does not silently substitute for CR.",
+      "skipped_items": "For every stopped downstream item, write an EXPLORATORY receipt with not_run=true, the stop-trigger result paths, zero permutations, and a precise skip reason. Do not fabricate a NULL or a q-value for unrun tests.",
+      "technical_failures": "ERROR, TIMEOUT, incomplete batches, absent controls and unconfirmed seed disagreement do not count as scientific NULL.",
+      "two_consecutive_nulls": "Count confirmed pre-registered scientific experiments within Lane A, in execution order. L-2 is the preceding Lane A experiment if confirmed; P-1/P-2 infrastructure results and Lane B/C results do not reset this sequence.",
+      "whole_plan": "Hard stop at the end of week 2; write-up and hand-back remain required."
+    },
+    "milestone": "M1",
+    "note": "Frozen before any M1 experiment. RUNBOOK section 3 ordering and PLAN section 6 stopping rules apply.",
+    "ordering_rationale": "The explicit user instruction follows RUNBOOK section 3: L-1/L-3 screen, then L-4, then L-5. The contrary priority sentence at the end of PLAN section 8 does not change that order. The exact L-1 gate is first within M1 because its necessary numerical condition can fail without a permutation inference.",
+    "pattern_criteria": [
+      "reproducible on >=3 words of W including both families, or declared family-local with >=3 words of that family",
+      "CR >=1.5 vs N1 and >=1.2 vs N1b; motif enrichment >=2x at q<0.01; applicable strongest null must also be beaten",
+      "yields a falsifiable prediction checkable with the exact tools in <=1 core-hour",
+      "passes a held-out check on a word not used to find it",
+      "non-circular: not a function of local profile, rank mass or width inventory; recompute under N2 and require the statistic to move"
+    ],
+    "registered": true,
+    "schema_version": 1,
+    "seeds": [
+      11031,
+      29063
+    ],
+    "sources": [
+      "research/styles-r11/RUNBOOK.md section 3",
+      "research/styles-r11/PLAN.md sections 3.2, 6, 7, 8",
+      "research/styles-r11/EXPERIMENTS.json",
+      "research/styles-r11/data/words/PINS.json"
+    ],
+    "word_scope": {
+      "L4": [
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "format": "FULL-WORD",
+          "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+          "path": "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+          "pin_key": "1094-K8S7-FULL-WORD.json.gz",
+          "pr": 1094,
+          "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+          "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)"
+        },
+        {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "format": "FULL-WORD",
+          "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+          "path": "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+          "pin_key": "1672-gauge44-word-566-554.json.gz",
+          "pr": 1672,
+          "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz"
+        },
+        {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "format": "FULL-WORD",
+          "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+          "path": "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+          "pin_key": "1672-extra-word-566-554.json.gz",
+          "pr": 1672,
+          "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz"
+        },
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "format": "BORROW-WORD",
+          "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+          "path": "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+          "pin_key": "2745-BORROW-WORD-43base.json.gz",
+          "pr": 2745,
+          "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+          "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz"
+        },
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "format": "BORROW-WORD",
+          "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+          "path": "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+          "pin_key": "2745-BORROW-WORD-43extra.json.gz",
+          "pr": 2745,
+          "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+          "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz"
+        },
+        {
+          "author": "DavidAriasC",
+          "format": "BORROW-WORD",
+          "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+          "path": "research/styles-r11/data/words/2766-WORD-base.json.gz",
+          "pin_key": "2766-WORD-base.json.gz",
+          "pr": 2766,
+          "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+          "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz"
+        },
+        {
+          "author": "Tekalign (tekuuu)",
+          "format": "BORROW-WORD",
+          "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+          "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+          "pr": 2751,
+          "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+          "source": "in tree (package of PR #2802)"
+        },
+        {
+          "author": "Marius-Paul Dumitrean",
+          "format": "BORROW-WORD",
+          "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "pr": 2802,
+          "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+          "source": "in tree (package of PR #2802)"
+        },
+        {
+          "author": "Marius-Paul Dumitrean",
+          "format": "BORROW-WORD",
+          "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+          "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+          "pr": 2802,
+          "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+          "source": "in tree (package of PR #2802)"
+        },
+        {
+          "author": "Philippe Van Velzen (philippeVV)",
+          "format": "BORROW-WORD",
+          "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+          "path": "research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+          "pin_key": "2679-BORROW-WORD-43base.json.gz",
+          "pr": 2679,
+          "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+          "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz"
+        },
+        {
+          "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+          "format": "BORROW-WORD",
+          "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+          "path": "research/styles-r11/data/words/retired5-WORD-base.json.gz",
+          "pin_key": "retired5-WORD-base.json.gz",
+          "pr": null,
+          "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+          "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz"
+        },
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "format": "BORROW-WORD",
+          "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+          "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+          "pin_key": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+          "pr": 2462,
+          "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+          "source": "in tree (package of PR #2802)"
+        }
+      ],
+      "held_out": "Do not fetch or read #2833/#2853 before M4. Their held-out role is not replaced by leave-one-word-out fits within M1.",
+      "screen": [
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "format": "FULL-WORD",
+          "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+          "path": "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+          "pin_key": "1094-K8S7-FULL-WORD.json.gz",
+          "pr": 1094,
+          "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+          "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)"
+        },
+        {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "format": "FULL-WORD",
+          "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+          "path": "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+          "pin_key": "1672-gauge44-word-566-554.json.gz",
+          "pr": 1672,
+          "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz"
+        },
+        {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "format": "FULL-WORD",
+          "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+          "path": "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+          "pin_key": "1672-extra-word-566-554.json.gz",
+          "pr": 1672,
+          "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz"
+        },
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "format": "BORROW-WORD",
+          "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+          "path": "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+          "pin_key": "2745-BORROW-WORD-43base.json.gz",
+          "pr": 2745,
+          "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+          "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz"
+        },
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "format": "BORROW-WORD",
+          "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+          "path": "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+          "pin_key": "2745-BORROW-WORD-43extra.json.gz",
+          "pr": 2745,
+          "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+          "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz"
+        },
+        {
+          "author": "DavidAriasC",
+          "format": "BORROW-WORD",
+          "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+          "path": "research/styles-r11/data/words/2766-WORD-base.json.gz",
+          "pin_key": "2766-WORD-base.json.gz",
+          "pr": 2766,
+          "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+          "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz"
+        },
+        {
+          "author": "Tekalign (tekuuu)",
+          "format": "BORROW-WORD",
+          "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+          "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+          "pr": 2751,
+          "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+          "source": "in tree (package of PR #2802)"
+        },
+        {
+          "author": "Marius-Paul Dumitrean",
+          "format": "BORROW-WORD",
+          "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "pr": 2802,
+          "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+          "source": "in tree (package of PR #2802)"
+        },
+        {
+          "author": "Marius-Paul Dumitrean",
+          "format": "BORROW-WORD",
+          "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+          "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+          "pr": 2802,
+          "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+          "source": "in tree (package of PR #2802)"
+        }
+      ]
+    }
+  },
+  "registered_utc": "2026-10-16T04:53:29.013499+00:00",
+  "runbook_sha256": "a0746614e399dec968246ae80bbc77a49aed9ab3ece9f0ed5399bb7a056bd340",
+  "schema_version": 1,
+  "source_attribution": {
+    "1094-K8PRE-FULL-WORD.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    "1094-K8S7-FULL-WORD.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    "1195-FULL-WORD.json.gz": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "1625-extra-word-566.json.gz": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "1625-gauge44-word-566.json.gz": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "1672-extra-word-566-554.json.gz": {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "1672-gauge44-word-566-554.json.gz": {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "2679-BORROW-WORD-43base.json.gz": {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "2679-BORROW-WORD-43extra.json.gz": {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "2745-BORROW-WORD-43base.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "2745-BORROW-WORD-43extra.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "2766-WORD-base.json.gz": {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "2766-WORD-extra.json.gz": {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz": {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz": {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "retired5-WORD-base.json.gz": {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "retired5-WORD-extra.json.gz": {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    }
+  }
+}

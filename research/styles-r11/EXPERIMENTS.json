@@ -107,7 +107,10 @@
       "updated_utc": "2026-10-16T04:44:16.665415+00:00"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 10,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
       "id": "L-1",
       "if_positive": "declarative recipe; feeds the move alphabet",
       "inputs": [
@@ -128,10 +131,16 @@
       "null_model": "N1, N1b, N4",
       "origin": "A-E1",
       "pass_bar": "one rule set <= 200 rules regenerates >= 3 skeletons exactly; cross-word rule overlap >= 90%",
+      "preregistration_sha256": "94c7780984add8ef000ea6928d7f7fa60c43546a3f69f6d3237d2a7bf5c402c8",
       "question": "Is the A/B skeleton a parametric D0L with position-independent rules?",
+      "result_files": [
+        "results/L-1/v1/seed-11031/RESULT.json",
+        "results/L-1/v1/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/styles-r11/planning/A-lsys-word/extract_strings.py",
-      "status": "planned",
-      "title": "Skeleton grammar"
+      "status": "NULL",
+      "title": "Skeleton grammar",
+      "updated_utc": "2026-10-16T04:53:41.119953+00:00"
     },
     {
       "attempt": "v1",
@@ -173,6 +182,8 @@
     },
     {
       "budget_core_minutes": 5,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": false,
       "id": "L-3",
       "if_positive": "else record the protocol-specific null",
       "inputs": [
@@ -190,16 +201,31 @@
       "lane": "A",
       "method": "lag-match spectra and autocorrelation per alphabet",
       "milestone": "M1",
+      "not_run": true,
       "null_model": "N1b, N1",
       "origin": "A-E5",
       "pass_bar": "a peak z >= 5 over N1b at a lag explained by a named parameter (current: multiples of 4 only)",
       "question": "Periods tied to h=9, 8 centres, 22, v=112, 73, 666?",
+      "result_files": [
+        "results/L-3/stopped/seed-11031/RESULT.json",
+        "results/L-3/stopped/seed-29063/RESULT.json"
+      ],
+      "skip_reason": "Two consecutive confirmed scientific NULLs in Lane A: L-2 literal cleanup and L-1 fixed capped RePair on all 84 triples. PLAN section 6 stops the string lane.",
       "starting_script": "research/styles-r11/planning/A-lsys-word/lineage_checks.py",
-      "status": "planned",
-      "title": "Periodicity census"
+      "status": "EXPLORATORY",
+      "stop_trigger_results": [
+        "results/L-2/v1/seed-11031/RESULT.json",
+        "results/L-2/v1/seed-29063/RESULT.json",
+        "results/L-1/v1/seed-11031/RESULT.json",
+        "results/L-1/v1/seed-29063/RESULT.json"
+      ],
+      "title": "Periodicity census",
+      "updated_utc": "2026-10-16T04:53:41.133827+00:00"
     },
     {
       "budget_core_minutes": 5,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": false,
       "id": "L-4",
       "if_positive": "frames readable from the skeleton; negative confirms frames are global",
       "inputs": [
@@ -219,16 +245,31 @@
       "lane": "A",
       "method": "lookup table / shallow tree; leave-one-word-out",
       "milestone": "M1",
+      "not_run": true,
       "null_model": "strings permuted among registers of the same role (358 distinct vs 56)",
       "origin": "A-E2",
       "pass_bar": ">= 90% exact prediction on the held-out word vs <= 50% null",
       "question": "Is a register jump string a function of local data (role, entrance dim, width, first/last motif)?",
+      "result_files": [
+        "results/L-4/stopped/seed-11031/RESULT.json",
+        "results/L-4/stopped/seed-29063/RESULT.json"
+      ],
+      "skip_reason": "Two consecutive confirmed scientific NULLs in Lane A: L-2 literal cleanup and L-1 fixed capped RePair on all 84 triples. PLAN section 6 stops the string lane.",
       "starting_script": "research/styles-r11/planning/A-lsys-word/extract_strings.py",
-      "status": "planned",
-      "title": "Climb-string predictability"
+      "status": "EXPLORATORY",
+      "stop_trigger_results": [
+        "results/L-2/v1/seed-11031/RESULT.json",
+        "results/L-2/v1/seed-29063/RESULT.json",
+        "results/L-1/v1/seed-11031/RESULT.json",
+        "results/L-1/v1/seed-29063/RESULT.json"
+      ],
+      "title": "Climb-string predictability",
+      "updated_utc": "2026-10-16T04:53:41.139801+00:00"
     },
     {
       "budget_core_minutes": 20,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": false,
       "id": "L-5",
       "if_positive": "string-level alias pre-screen on new words",
       "inputs": [
@@ -248,13 +289,26 @@
       "lane": "A",
       "method": "k-gram context with rank/role; logistic or rule screen; score the 192 augmenting paths; S-1 atlas = ground truth",
       "milestone": "M1",
+      "not_run": true,
       "null_model": "labels permuted; rank-only features (the floor rule) as baseline",
       "origin": "A-E3",
       "pass_bar": "AUC >= 0.9 held-out AND the two realised moves (401->564, 403->565) in the top 5 of 192 beyond the floor rule",
       "question": "Does a local motif around (lender last gate, follower first gate) add information beyond the exact lo/hi rule?",
+      "result_files": [
+        "results/L-5/stopped/seed-11031/RESULT.json",
+        "results/L-5/stopped/seed-29063/RESULT.json"
+      ],
+      "skip_reason": "Two consecutive confirmed scientific NULLs in Lane A: L-2 literal cleanup and L-1 fixed capped RePair on all 84 triples. PLAN section 6 stops the string lane.",
       "starting_script": "research/styles-r11/planning/C-sandpile/ground_bipartite.py",
-      "status": "planned",
-      "title": "Alias-feasibility motif"
+      "status": "EXPLORATORY",
+      "stop_trigger_results": [
+        "results/L-2/v1/seed-11031/RESULT.json",
+        "results/L-2/v1/seed-29063/RESULT.json",
+        "results/L-1/v1/seed-11031/RESULT.json",
+        "results/L-1/v1/seed-29063/RESULT.json"
+      ],
+      "title": "Alias-feasibility motif",
+      "updated_utc": "2026-10-16T04:53:41.145816+00:00"
     },
     {
       "attempt": "v1",

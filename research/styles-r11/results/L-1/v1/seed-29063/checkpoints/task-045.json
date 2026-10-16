@@ -1,0 +1,183 @@
+{
+  "cpu_seconds": 1.748424797,
+  "peak_rss_bytes": 256356352,
+  "result": {
+    "anti_memorization_check": {
+      "axiom_lengths": {
+        "1672-gauge44-word-566-554.json.gz": 5251,
+        "2766-WORD-base.json.gz": 5229,
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": 5236
+      },
+      "decision_threshold": null,
+      "proof_obligation": "Give parameterized axioms and productions independent of the stored output words.",
+      "residual_literal_counts": {
+        "1672-gauge44-word-566-554.json.gz": 5231,
+        "2766-WORD-base.json.gz": 5181,
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": 5188
+      }
+    },
+    "cross_word_rule_overlap": [
+      {
+        "jaccard": 0.263681592039801,
+        "words": [
+          "1672-gauge44-word-566-554.json.gz",
+          "2766-WORD-base.json.gz"
+        ]
+      },
+      {
+        "jaccard": 0.263681592039801,
+        "words": [
+          "1672-gauge44-word-566-554.json.gz",
+          "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+        ]
+      },
+      {
+        "jaccard": 1.0,
+        "words": [
+          "2766-WORD-base.json.gz",
+          "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+        ]
+      }
+    ],
+    "experiment": "L-1",
+    "max_rules_evaluated": 201,
+    "missing_pattern_obligations": [
+      "parameterized construction independent of stored outputs",
+      "matched-null margins",
+      "N4 constructor control",
+      "held-out test",
+      "profile non-circularity"
+    ],
+    "note": "Exact expansion of a stored axiom is bookkeeping; it is not a parametric D0L proof.",
+    "per_word": {
+      "1672-gauge44-word-566-554.json.gz": {
+        "axiom_length": 5251,
+        "axiom_sha256": "54dcd4073ed8a8c3a715af25c0a06c879f8ceace901777c4840cbf2879a6c7e8",
+        "exact_replay": true,
+        "residual_literal_count": 5231,
+        "skeleton_gates": 5304,
+        "used_rule_count": 53
+      },
+      "2766-WORD-base.json.gz": {
+        "axiom_length": 5229,
+        "axiom_sha256": "1c38b273841770a1c08a96d62df288758832fccd562f746a1a2cf62f2b589c52",
+        "exact_replay": true,
+        "residual_literal_count": 5181,
+        "skeleton_gates": 5472,
+        "used_rule_count": 201
+      },
+      "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": {
+        "axiom_length": 5236,
+        "axiom_sha256": "4c16aa0498b8ea0554bd102bf4215132d570324d823f0180a4c30162b25d9dc5",
+        "exact_replay": true,
+        "residual_literal_count": 5188,
+        "skeleton_gates": 5479,
+        "used_rule_count": 201
+      }
+    },
+    "primary_numeric_bar": false,
+    "rules_sha256": "2831202c5ad44ad405cc1ca11ff8451fe4543a849e330f0f59460e5a5e42d0f5",
+    "scope": "finite straight-line grammar of rank-annotated globally register-renamed skeletons",
+    "seed": 29063,
+    "shared_rule_count": 201,
+    "source_attribution": [
+      {
+        "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+        "bytes": 57438,
+        "format": "FULL-WORD",
+        "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+        "kappa": "0.001676938111022438",
+        "local_profile": {
+          "1": 2348,
+          "2": 500,
+          "3": 416,
+          "4": 130,
+          "5": 82,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "pin_key": "1672-gauge44-word-566-554.json.gz",
+        "pr": 1672,
+        "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+        "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+        "width_inventory": {
+          "4": 44,
+          "5": 44,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      {
+        "author": "DavidAriasC",
+        "bytes": 72192,
+        "format": "BORROW-WORD",
+        "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+        "kappa": "0.001717256973467002308270",
+        "local_profile": {
+          "1": 2364,
+          "2": 647,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "pin_key": "2766-WORD-base.json.gz",
+        "pr": 2766,
+        "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+        "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Marius-Paul Dumitrean",
+        "bytes": 72443,
+        "format": "BORROW-WORD",
+        "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+        "kappa": "0.001717794984118634663827",
+        "local_profile": {
+          "1": 2382,
+          "2": 648,
+          "3": 268,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "pr": 2802,
+        "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 2,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      }
+    ],
+    "status": "NULL",
+    "stopped_at_rule_cap": true,
+    "terminals_sha256": "799fa942d88c60fd1dfdd80c56966343182b300ddf31a69092cd13366ddb3a4a"
+  },
+  "seconds": 1.7657386232167482,
+  "spec": {
+    "experiment": "L-1",
+    "max_rules": 201,
+    "paths": [
+      "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+      "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-base.json.gz",
+      "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+    ],
+    "seed": 29063,
+    "triple_id": "T46"
+  },
+  "status": "OK"
+}
