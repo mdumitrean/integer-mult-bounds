@@ -1,16 +1,41 @@
 {
   "experiments": [
     {
-      "execution": "NOT_STARTED",
+      "attempts": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 15.697287086999998,
+          "result_files": [
+            "results/CONTINUATION-09/J1-SHARED-CARRIERS/v1/seed-49019/RESULT.json",
+            "results/CONTINUATION-09/J1-SHARED-CARRIERS/v1/seed-98009/RESULT.json"
+          ],
+          "status": "EXPLORATORY",
+          "wall_seconds": 8.077522050589323
+        }
+      ],
+      "confirmed": true,
+      "cpu_seconds": 15.697287086999998,
+      "execution": "COMPLETED",
       "id": "J1-SHARED-CARRIERS",
       "preregistration": "results/CONTINUATION-09/J1/PREREGISTRATION.json",
       "preregistration_sha256": "0bfbc38c221c398f26efdb0d440a861e23833c65fee9ef5c4b3224e076e71e16",
-      "status": "planned"
+      "result_files": [
+        "results/CONTINUATION-09/J1-SHARED-CARRIERS/v1/seed-49019/RESULT.json",
+        "results/CONTINUATION-09/J1-SHARED-CARRIERS/v1/seed-98009/RESULT.json"
+      ],
+      "started_utc": "2026-10-16T19:29:13.349004+00:00",
+      "status": "EXPLORATORY",
+      "updated_utc": "2026-10-16T19:29:21.430914+00:00",
+      "wall_seconds": 8.077522050589323
     }
   ],
   "goal_status": "ACTIVE_NOT_ACHIEVED",
+  "kappa_claim": false,
   "no_active_experiments": true,
+  "pattern_claim": false,
   "round": "CONTINUATION-09",
+  "round_disposition": "J1 closed at its registered empty-domain disposition; no domain extension or extra seed. No scientific pivot launched.",
   "schema_version": 1,
-  "status": "REGISTERED_AWAITING_FROZEN_IMPLEMENTATION"
+  "status": "COMPLETE_EXPLORATORY",
+  "updated_utc": "2026-10-16T19:32:11.144724+00:00"
 }

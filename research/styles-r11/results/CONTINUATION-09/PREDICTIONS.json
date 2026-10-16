@@ -1,16 +1,33 @@
 {
   "ai_assistance": "Substantial OpenAI Codex assistance.",
   "kappa_claim": false,
+  "outcome_recorded_utc": "2026-10-16T19:32:11.144724+00:00",
   "pattern_claim": false,
   "predictions": [
     {
       "comparison_pr": 3028,
       "id": "J1-EXPOSED-SHARED-CARRIER-GAIN",
       "kind": "Registered finite census hypothesis; not a learned or formally qualified pattern",
-      "outcome": null,
+      "outcome": {
+        "both_seeds_agree": true,
+        "eligible_packets_per_provider": 0,
+        "experiment_status": "EXPLORATORY",
+        "exposure_exclusions_per_provider": 2878,
+        "favorable_candidates": 0,
+        "interpretation": "The registered exposed packet domain is empty on both current words; no local gain was found. This does not test packets requiring changed scheduling/exterior or establish a broader algebraic impossibility.",
+        "retained_words": 0,
+        "run": {
+          "path": "results/CONTINUATION-09/J1-SHARED-CARRIERS/v1/RUN.json",
+          "sha256": "b9dab5a617232208d9e4464f339529298bf8e7e1b665e41fbe6b28407172109d"
+        },
+        "seeds": [
+          49019,
+          98009
+        ]
+      },
       "prediction": "At least one matched guarded two-target shared-carrier address on both source providers has strictly negative complete local moment and passes all canonical and632-column retention controls under both fixed seeds.",
       "qualification": "A favorable retained local word would be a census target. No native, supplier, outer, or kappa admission follows from this hypothesis alone.",
-      "status": "PENDING"
+      "status": "NOT_SUPPORTED_EMPTY_DOMAIN"
     }
   ],
   "preregistration_sha256": "0bfbc38c221c398f26efdb0d440a861e23833c65fee9ef5c4b3224e076e71e16",
