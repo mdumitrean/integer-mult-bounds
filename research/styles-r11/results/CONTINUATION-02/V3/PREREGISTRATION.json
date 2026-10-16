@@ -1,0 +1,114 @@
+{
+  "certificate": {
+    "brackets": "For each distinctcandidatepaidprofile compute exactgrid1e-20rootbracket, verify lowerendpointmoment<1<upperendpointmoment and full1163dualfeasibility atupperendpoint. A feasibleprimal plus feasibledual with matchingcost certifies the fixed-relaxationcap. Fractionalpattern counts are not a realized allocation.",
+    "comparison": "Compare certifiedcapupper with pinned PR2930 complex_lower exactly. Reportgap/ratio as exactrationalinterval; no currentouterconversion assumption.",
+    "cost": "One residualchild perbin withrankcapacity-minusused, zeroresidualcost0; exactpositivepower costat\u03ba usingtrusted rationaloutwardintervals. No floating acceptance.",
+    "dual": "Solve A_basis^T*y=cost_basis exactly as rational linearcombinations of childcostfunctions. For all1163patterns, symbolicallyzero reducedcost coefficients are exacttight equalities; everyother reducedcost must have nonnegative directedlowerbound (strictpositive when claimedstrict). Anynegative/unresolvedsign givesEXPLORATORY; no multipliersrepair or solver.",
+    "moment": "Add actual nine-call paidlocalprofile perreplica to the fractional optimal idleprofile and normalize by896livefamilies; equivalently aggregate74replicas/666calls/66304families. Check exact4816512mass."
+  },
+  "controls": [
+    "Reconstruct originalPR2930integerbasis counts and verify its supplied exactrootbracket and all1163dualinequalities.",
+    "Reject a missingpattern/incorrectcoverage and an infeasible/mismatchedbasisRHS.",
+    "Reject deliberatelyinflateddualcapacitymultiplier using the affected emptybinpattern.",
+    "Reject a wronglocal-profile/widthmass ledger.",
+    "Bothseeds agree on allpatterncounts,basiscounts,dualcertificates,profilebrackets anddecisions."
+  ],
+  "created_utc": "2026-10-16T13:21:19.611033+00:00",
+  "domain": {
+    "basis": "Exactlyninepatterns supplied as inertdata byPR2930 RELAX-CAP. Independently build andinvert the9x9matrix (fourcapacity andfivewidthrows), solve oldandnew RHS overFraction, require nonnegative primalcounts andexactallnineconstraintidentities. Noadaptive basisreplacement.",
+    "capacities": [
+      8,
+      16,
+      32,
+      48
+    ],
+    "demands_per_replica": "Nine times actual408helperwidthinventory: new{4:26,5:2,7:63,8:96,9:221}. Read every candidateledger, no guessedwidths.",
+    "patterns": "All nonnegative widthcountvectors fitting each capacity, including emptybins; exactly1163totalpatterns. Deterministic complete recursive enumeration; seedschange traversalonly.",
+    "profiles": "Every16matchedledger from bothseeds; maycache onlyexactlyidentical pair of paidprofiles andwidthinventories. Six distinctprofiles observed in the frozen input, all48addresses retained bymapping.",
+    "supplies_per_replica": {
+      "16": 448,
+      "32": 448,
+      "48": 448,
+      "8": 672
+    },
+    "supply_binding": "Trusted parent-loaded source template windows: per74replicas and112ports, six8,four16,four32,four48 positivechildtypes perreplica. Verify against actual model.win; excludeonlyzero-capacitychildren.",
+    "widths": [
+      4,
+      5,
+      7,
+      8,
+      9
+    ]
+  },
+  "experiment": "V3-INVENTORY-CAP",
+  "hard_stop_utc": "2026-10-16T13:53:31.469347+00:00",
+  "headroom_bar": "Anycertifiedcandidatecapabovetarget remainsEXPLORATORYpendingactualallocation,freshchanged-wordnative,physical/supplier andouteradmission. No\u03baclaimfromcap.",
+  "incomplete": "Coverageerror, sourcepinmismatch, failedcontrol, negativebasiscount, unresolveddualinequality, timeoutorbudget ->ERROR/TIMEOUT/EXPLORATORY, neverNULL.",
+  "inputs": {
+    "basis": {
+      "path": "data/continuation-02/checkpoint/pr2930/certificates/RELAX-CAP.json",
+      "sha256": "518ba849ece61bf191d161aa3e61c0f1229c4fda6f8171f8eca5761bc0fc1644"
+    },
+    "g2_results": [
+      {
+        "path": "results/CONTINUATION-02/G2-ANCHORED-RANK7/v1/seed-12037/RESULT.json",
+        "sha256": "45ce2e23b6efc9ac2d45b1cefe22327dc475bd86b83a2596751a06de49958035"
+      },
+      {
+        "path": "results/CONTINUATION-02/G2-ANCHORED-RANK7/v1/seed-31069/RESULT.json",
+        "sha256": "5008a3ac7a2e6288ce0d767138c25188f20f6d9cade43bafb69157387abf56f8"
+      }
+    ],
+    "g2_run": {
+      "path": "results/CONTINUATION-02/G2-ANCHORED-RANK7/v1/RUN.json",
+      "sha256": "f11ae71681938de8844a41272adf103f10e66141d14c757033f5971db324d73d"
+    },
+    "ledger_source": {
+      "path": "results/CONTINUATION-02/G2-ANCHORED-RANK7/v1/CAP-TASKS.json.gz",
+      "sha256": "1550641d0a6fa687a8e1cd12a41942e7bcdd37eda09dfc541f6e72cf6f6bad59"
+    },
+    "matched_ledger": {
+      "path": "results/CONTINUATION-02/G2-ANCHORED-RANK7/v1/MATCHED-LEDGERS.json.gz",
+      "sha256": "a7f9e7f26704dd786de0f37b682f7067b5ee608e064b4c82040636116476bbeb"
+    },
+    "target": {
+      "path": "data/continuation-02/checkpoint/pr2930/CLAIM.json",
+      "sha256": "9c2c14158780a677b3661623d7476acc4f535ac9e0481addfa1d6c4c7633b74b"
+    }
+  },
+  "lane": "constructive-word",
+  "milestone": "CONTINUATION-02/V3",
+  "null_bar": "Completeall16ledgers/all48nominees andall1163patternchecks withcontrolsPASS; everydistinctcandidatecapupper isstrictlybelowPR2930complex_lower inbothseeds. ScopedNULL: noG2nominee canbeat that endpoint within this fixedtemplate/widthalphabet/one-residual-childmodel.",
+  "question": "Can any of all16matched costledgers representing all48G2nominees beat the exactPR2930endpoint under the actual fixed bin-capacity/helper-inventory relaxation?",
+  "recording": "Immutable RESULT.json perseed, exactinput/sourcehashes, rationalcoefficients/basis/dual/brackets, CPUwallRSS, memoryprojection,fullsourceattribution; currentroundregistryupdated.",
+  "relationship": "Necessary cost validation of G2 nominees, inside the same single rank7pivot; no second architectural pivot. G2 originalEXPLORATORYreceipts remain immutable.",
+  "resources": {
+    "allocated_cores": 128,
+    "cpu_budget_seconds_family": 3600,
+    "parallelism": "pipeline/pool.py only; no simultaneous pools",
+    "parent_load_once": [
+      "sourcewords/fill/plan/template",
+      "pinnedbasis/claim",
+      "G2candidateledgers"
+    ],
+    "prior_measured_cpu_seconds": 513.838823774,
+    "private_bytecode_namespace": true,
+    "project_memory_before_every_launch": true,
+    "reserved_cores": 8,
+    "round_cpu_budget_seconds": 14400,
+    "rss_gib": 4,
+    "solver_calls": 0,
+    "timeout_seconds_per_task": 300,
+    "workers": "min(120,floor(RAM_GiB/4))"
+  },
+  "round": "CONTINUATION-02",
+  "schema_version": 1,
+  "science_launch_cutoff_utc": "2026-10-16T13:38:31.469347+00:00",
+  "seeds": [
+    12037,
+    31069
+  ],
+  "source_attribution": "PR2930 byMarius-PaulDumitrean, PR2917byMasonHale, pairedproductionPR2908JeremyDiviney, JeremyKothe/nativeandownerlineage, DouglasColkittpackingbound, andeveryoriginaldata/words/PINS.jsonauthor preserved. FetchedPRcode remainsinertdata.",
+  "state": "FROZEN",
+  "stop_rule": "Ifallnomineesarecappedbelowtarget, stopthisrank7routefor theround andhandback. Noactualfill/nativeworkonlosingnominees. Otherwise actualfill/admissionneedsanotherpreregistration beforeexecution. Original two-consecutiveNULLrule retained; G2wasEXPLORATORYanddoesnotcountasNULL."
+}

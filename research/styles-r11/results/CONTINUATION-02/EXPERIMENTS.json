@@ -22,9 +22,26 @@
     },
     {
       "confirmed": false,
+      "cpu_seconds": 513.838823774,
+      "execution": "COMPLETED",
       "id": "G2-ANCHORED-RANK7",
       "lane": "constructive-word",
       "preregistration": "results/CONTINUATION-02/G2/PREREGISTRATION.json",
+      "result_files": [
+        "results/CONTINUATION-02/G2-ANCHORED-RANK7/v1/seed-12037/RESULT.json",
+        "results/CONTINUATION-02/G2-ANCHORED-RANK7/v1/seed-31069/RESULT.json"
+      ],
+      "scientific_decision_agreement": true,
+      "started_utc": "2026-10-16T13:13:21.984916+00:00",
+      "status": "EXPLORATORY",
+      "updated_utc": "2026-10-16T13:14:23.827805+00:00",
+      "wall_seconds": 61.836955135688186
+    },
+    {
+      "confirmed": false,
+      "id": "V3-INVENTORY-CAP",
+      "lane": "constructive-word",
+      "preregistration": "results/CONTINUATION-02/V3/PREREGISTRATION.json",
       "status": "planned"
     }
   ],
@@ -36,7 +53,9 @@
     },
     "constructive-word": {
       "consecutive_confirmed_nulls": 0,
+      "latest_experiment": "G2-ANCHORED-RANK7",
       "prior_experiment": "CONTINUATION-01/G1UNRUN",
+      "scope": "No next pivot or experiment scheduled in this bounded round.",
       "stopped": false
     }
   },
@@ -44,5 +63,5 @@
   "round": "CONTINUATION-02",
   "round_cpu_budget_seconds": 14400,
   "schema_version": 1,
-  "status": "PIVOT_REGISTERED"
+  "status": "COST_VALIDATION_REGISTERED"
 }
