@@ -1,0 +1,97 @@
+{
+  "administrative_cpu_seconds": 3.2704864689999997,
+  "base_work_commit": "875e31d7346ba87b640edb7c9155e928b742d187",
+  "current_source_package_files": 110,
+  "distinct_prepinned_source_archives": 86,
+  "experiments": {
+    "E1-ADJACENT-EXPANSIONS": {
+      "confirmed": true,
+      "cpu_seconds": 2360.4972810319996,
+      "longest_task_seconds": 1.5196897955611348,
+      "outcomes": [
+        {
+          "count": 4,
+          "phase": "census",
+          "status": "PASS"
+        },
+        {
+          "count": 6,
+          "phase": "controls",
+          "status": "PASS"
+        },
+        {
+          "count": 3680,
+          "phase": "price",
+          "status": "NO_GAIN"
+        },
+        {
+          "count": 608,
+          "phase": "price",
+          "status": "REJECTED_GUARD"
+        }
+      ],
+      "peak_rss_bytes": 326971392,
+      "pool_tasks": 4298,
+      "priced_profile_kinds": {
+        "different": 112,
+        "identical": 3568
+      },
+      "seeds": [
+        22079,
+        51031
+      ],
+      "source_credits_per_result": 23,
+      "status": "NULL",
+      "wall_seconds": 46.155810445547104
+    },
+    "E2-OTHER-CORRECTION-POSITIONS": {
+      "confirmed": true,
+      "cpu_seconds": 5084.810687161,
+      "longest_task_seconds": 1.6525556668639183,
+      "outcomes": [
+        {
+          "count": 4,
+          "phase": "census",
+          "status": "PASS"
+        },
+        {
+          "count": 6,
+          "phase": "controls",
+          "status": "PASS"
+        },
+        {
+          "count": 7360,
+          "phase": "price",
+          "status": "NO_GAIN"
+        },
+        {
+          "count": 1216,
+          "phase": "price",
+          "status": "REJECTED_GUARD"
+        }
+      ],
+      "peak_rss_bytes": 469602304,
+      "pool_tasks": 8586,
+      "priced_profile_kinds": {
+        "different": 144,
+        "identical": 7216
+      },
+      "seeds": [
+        31081,
+        62039
+      ],
+      "source_credits_per_result": 23,
+      "status": "NULL",
+      "wall_seconds": 94.69383507408202
+    }
+  },
+  "kind": "administrative byte and receipt audit; no new scientific tests",
+  "preserved_pre_round_files": 7952,
+  "recorded_utc": "2026-10-16T15:58:02.278068+00:00",
+  "results_bytes_before_audit": 169982203,
+  "schema_version": 1,
+  "script_sha256": "9ee2679a2357b77cc5707b18c4ced4039756c585ed92f84d038033c605fa7946",
+  "status": "PASS",
+  "total_experimental_cpu_seconds": 7445.307968192999,
+  "total_pool_tasks": 12884
+}

@@ -1,0 +1,257 @@
+{
+  "acquisition": {
+    "bytes": 21104,
+    "path": "data/continuation-04/final-checkpoint/RECEIPT.json",
+    "sha256": "56c672feb5b3285c7fcf080d7b64583eb515a643beb1fc9c1cc7c6b508e44ab6"
+  },
+  "all_seven_guidance_files_unchanged_from_pivot": true,
+  "canonical_main": "fadae6f469e0d5c9c03bbe047a4d383dac254448",
+  "coverage": {
+    "discussion_1163": {
+      "comments": 73,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T15:55:59.648862+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 12,
+      "reported_comments": 73,
+      "started_utc": "2026-10-16T15:55:58.488569+00:00",
+      "unique_comments": 73
+    },
+    "discussion_1166": {
+      "comments": 302,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T15:56:05.350256+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 4,
+      "replies": 61,
+      "reported_comments": 302,
+      "started_utc": "2026-10-16T15:55:59.664115+00:00",
+      "unique_comments": 302
+    },
+    "discussion_1167": {
+      "comments": 123,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T15:56:08.287282+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 2,
+      "replies": 18,
+      "reported_comments": 123,
+      "started_utc": "2026-10-16T15:56:05.393157+00:00",
+      "unique_comments": 123
+    },
+    "discussion_2612": {
+      "comments": 21,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T15:55:58.478567+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 2,
+      "reported_comments": 21,
+      "started_utc": "2026-10-16T15:55:57.266047+00:00",
+      "unique_comments": 21
+    },
+    "updated_prs": {
+      "complete_all_prs": false,
+      "complete_recent_delta": true,
+      "new_since_cutoff": 0,
+      "pages": 1,
+      "reached_cutoff": true,
+      "rows": 100,
+      "unique_numbers": 100,
+      "updates_since_cutoff": 1
+    }
+  },
+  "coverage_limits": [
+    "Read-only bounded final checkpoint, no fetched code execution or scientific tests.",
+    "All-state PR metadata is paged in update-descending order until a page reaches the prior cutoff, at most4pages; pagination is not atomic.",
+    "Discussions2612,1163,1166,1167 are fully refreshed regardless of discussion updatedAt; other threads and arbitrary linked resources remain outside this delta.",
+    "Remote claims and archival merges are not independent admission or novelty evidence."
+  ],
+  "cutoff_utc": "2026-10-16T15:56:09.596193+00:00",
+  "decision": {
+    "comparison": "Separate the maintained selected result, reported released conditional package, outer-pending public candidate and larger local-only L27R claim. No current-frontier or whole-theorem claim follows from this checkpoint.",
+    "new_scientific_pivot": false,
+    "overlap_blocker_identified": false,
+    "released_word_source_change": false,
+    "round_scope": "This refresh changes no frozen registration or completed experiment. Preserve all lane stops."
+  },
+  "guidance": {
+    "bytes": 2838,
+    "path": "data/continuation-04/final-checkpoint/guidance/PINS.json",
+    "sha256": "f8a228fb78dd3398adeb6c7452ab90d7b89d55ef9a232a7f9d33d79c2b36e0f1"
+  },
+  "larger_unreleased_claim": {
+    "active_scope": "Joint22-helper rank7 lowering, five extractions and14rewrites; iterate lowering/extraction and alternative stage2 normals25/52 until18:30UTC.",
+    "artifact_url": null,
+    "author": "mdumitrean",
+    "body_time_label": "15:35 UTC",
+    "comment": 18975555,
+    "discussion": 2612,
+    "exact_commit": null,
+    "limit": "No public release artifact or exact source is linked in the fully refreshed thread or acquired changed PR bodies. The claim is not independent verified evidence for this round.",
+    "local_path": null,
+    "physical_families": 66813,
+    "private_buffers": 91,
+    "reported_cap": "0.001729035764875516181444",
+    "reported_kappa": "0.001729033982646513517717 - 1e-46 - 1e-70",
+    "status": "LOCAL-ONLY; author reports complete native/admission/release PASS",
+    "unchanged_from_pivot": true,
+    "updated_at": "2026-10-16T15:32:36Z",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18975555",
+    "word": "L27R"
+  },
+  "literal_fetch": {
+    "bytes": 324,
+    "path": "data/continuation-04/final-checkpoint/GIT-FETCH.json",
+    "sha256": "2a24fca178b1fa71074d166184d745d3068e82340188859dcda75ff261de4b63"
+  },
+  "maintained_selected": {
+    "decimal": "0.001672660197076918",
+    "kappa": "836330098538459/500000000000000000",
+    "scope": "Finite composition under inherited all-size/compiler, common-label/mutable-source, whole-call hosting, precision/tape, analytic and bit H1-H5 assumptions. Not a full Lean multiplication theorem.",
+    "status": "Maintainer-reviewed conditional finite construction; see the integration receipt for publication and PR resolution status",
+    "unchanged": true
+  },
+  "pr_delta": {
+    "index": {
+      "bytes": 382,
+      "path": "data/continuation-04/final-checkpoint/delta-index.json",
+      "sha256": "23b75cda0adec5f20962525f764fcb96487fdde3931c05f0a59828696035a82c"
+    },
+    "since_utc": "2026-10-16T15:48:53Z",
+    "summary": "One updated PR275, merged historical finite-assembly source-bound application; no new PR created after the cutoff and no newer released complex source or adjacent expansion overlap identified."
+  },
+  "priority_revision": 5,
+  "recorded_utc": "2026-10-16T15:57:46.562714+00:00",
+  "reported_public_conditional_release": {
+    "author": "Jeremy Kothe (jeremykothe2)",
+    "head": "e62d3eb9005117d82a9babcfa937ecc53237c490",
+    "head_and_body_unchanged": true,
+    "metadata": {
+      "bytes": 4304,
+      "path": "data/continuation-04/final-checkpoint/pr-2966.json.gz",
+      "sha256": "8a7f129e2090f903379f74e59c9dc94cda877f4560a31a17cb88a9f78d06640a"
+    },
+    "pr": 2966,
+    "reported_kappa": "0.0017240342725234521774119999999999999999999998999999999999999999999999",
+    "scope": "Strongest released complete conditional finite package identified in the saved bounded sources, with producer receipts retained; not independently replayed by this checkpoint.",
+    "status": "CONDITIONAL_CANDIDATE_COMPLETE_FINITE_RELEASE"
+  },
+  "schema_version": 1,
+  "scope": "Final source/status checkpoint only. No scientific test, fetched-code execution, native replay or outer admission.",
+  "stronger_public_finite_candidate": {
+    "author": "Dugongue",
+    "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+    "head_and_body_unchanged": true,
+    "metadata": {
+      "bytes": 3621,
+      "path": "data/continuation-04/final-checkpoint/pr-2969.json.gz",
+      "sha256": "f06717c7f5a92e22d7080c0351bafcc92a50b657e10b04145b012ec08a1711d0"
+    },
+    "pr": 2969,
+    "reported_kappa_approx": "0.0017240352247481",
+    "scope": "Outer/discovery/physical prefix obligations remain pending; archival merge does not complete them.",
+    "status": "FINITE_NATIVE_OWNER_AND_MOMENT_CANDIDATE_OUTER_PENDING"
+  },
+  "thread_deltas": {
+    "1163": {
+      "changed_comments": [],
+      "current": {
+        "bytes": 54213,
+        "path": "data/continuation-04/final-checkpoint/threads/discussion-1163.json.gz",
+        "sha256": "42ec286c1e5639969ea768f32e87d1a7e80e40b13eb90863c1d21c60d815cd85"
+      },
+      "current_discussion_updatedAt": "2026-10-16T02:54:20Z",
+      "discussion_body_unchanged": true,
+      "prior": {
+        "bytes": 54214,
+        "path": "data/continuation-03/checkpoint/threads/discussion-1163.json.gz",
+        "sha256": "94473d34c48b05c884caa19673d27c565ed7c0cc6f3ad04453b7e0c1407beaab"
+      },
+      "prior_discussion_updatedAt": "2026-10-16T02:54:20Z",
+      "removed_comment_ids": []
+    },
+    "1166": {
+      "changed_comments": [
+        {
+          "author": "petalas",
+          "body": "DONE / released: [PR2977](https://github.com/CrocSwap/integer-mult-bounds/pull/2977), exact head `cd23d242dfe0e7a71cafba0ad5590dc4f2fbf4f2`, adds a paired-scatter counterexample: full symbolic and native legality acceptance do not imply correct record-export parity. [Canonical finding, exact witness, evidence and handoff](https://github.com/CrocSwap/integer-mult-bounds/discussions/2976#discussioncomment-18976957). Next: choose and enforce a successor scatter schema while retaining the native column check and frozen inputs. Registered local replay, eight behavioral groups, native controls, separate internal review and committed-byte checks pass; hosted CI is queued. Native evidence uses the authenticated checked cpp_int stand-in. The selected unique-row construction and frontier remain unchanged; no active claim.",
+          "id": 18976964,
+          "updated_at": "2026-10-16T15:40:42Z",
+          "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18976964"
+        },
+        {
+          "author": "tekuuu",
+          "body": "CLAIM \u2014 verification engineering, OS seed 88; base main `472f4e78b338215f0b2c3f590b0bc7d2f03c02eb`, priority revision 5.\n\nScope: accelerate Nicholas Stone's corrected PR2973 word-census engine (head `d48f3945dbb1ef5d06835744c4082b3bd04181c0`) while preserving its complete traversal, both Hamming-weight collision budgets, ordered witnesses, cap/abort semantics and exact counts. Test parity-coset compression with XOR-permutation bitsets, first on the L20 (10,8) pilot selected by seed88, then all five L20 splits and L18 (9,9). This is a representation/verification change, not a new prune or a length22 search. Cross-check small domains against the predecessor's raw-product oracle and test rejecting implementation mutants.\n\nExpected deliverable: a scoped opt-in implementation, written equivalence argument and same-input before/after benchmark, or an honest failed-performance handoff. Finish/expiry 2026-10-16 16:41 UTC; final 15 minutes reserved for verification/publication. Other candidates considered: four-flat setup acceleration and scatter-export schema repair; chosen task makes the fresh corrected exclusion cheaper to independently replay. Live PR and recent handoff comments refreshed immediately before this claim; the correction claim is released. No overlap with the active set-cover or F-star tasks.\n\nTekalign (@tekuuu), with substantial OpenAI Codex assistance. Credit Nicholas Stone, Ross Richardson, Aaron Wang/opencode and Douglas Colkitt. No new kappa or formal proof of multiplication is claimed.",
+          "id": 18977093,
+          "updated_at": "2026-10-16T15:47:14Z",
+          "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18977093"
+        }
+      ],
+      "current": {
+        "bytes": 238319,
+        "path": "data/continuation-04/final-checkpoint/threads/discussion-1166.json.gz",
+        "sha256": "2b7092f3c21442f7efb361ee2d382acfd72089463da1b5985c58c9dd21b645be"
+      },
+      "current_discussion_updatedAt": "2026-10-16T15:47:14Z",
+      "discussion_body_unchanged": true,
+      "prior": {
+        "bytes": 237437,
+        "path": "data/continuation-04/checkpoint/threads/discussion-1166.json.gz",
+        "sha256": "def44846a46100f1a1818d2ceedf4d1c1473b05f5bc79a5c2d1d8f9903057c4b"
+      },
+      "prior_discussion_updatedAt": "2026-10-16T15:23:37Z",
+      "removed_comment_ids": []
+    },
+    "1167": {
+      "changed_comments": [],
+      "current": {
+        "bytes": 98113,
+        "path": "data/continuation-04/final-checkpoint/threads/discussion-1167.json.gz",
+        "sha256": "8ddeec779793090065b29a1f2605360fc841eceec4d0ae6e4fdb9ab84676b50b"
+      },
+      "current_discussion_updatedAt": "2026-10-16T08:17:06Z",
+      "discussion_body_unchanged": true,
+      "prior": {
+        "bytes": 98114,
+        "path": "data/continuation-03/checkpoint/threads/discussion-1167.json.gz",
+        "sha256": "70e28b73fefa3206c33e7e2a46b0ff75cb69b9a2862682a9c10b60459fbc5c02"
+      },
+      "prior_discussion_updatedAt": "2026-10-16T08:17:06Z",
+      "removed_comment_ids": []
+    },
+    "2612": {
+      "changed_comments": [],
+      "current": {
+        "bytes": 33606,
+        "path": "data/continuation-04/final-checkpoint/threads/discussion-2612.json.gz",
+        "sha256": "e795cda2441c97661bdf3ef2128b4de24d62f68fb9073619acc3535dc44a6d85"
+      },
+      "current_discussion_updatedAt": "2026-10-16T15:03:43Z",
+      "discussion_body_unchanged": true,
+      "prior": {
+        "bytes": 33605,
+        "path": "data/continuation-04/pivot-checkpoint/threads/discussion-2612.json.gz",
+        "sha256": "43546f67ee24d492358025e8faa2b6ae3d78592ba7464a9bdb2034df6b77ace0"
+      },
+      "prior_discussion_updatedAt": "2026-10-16T15:03:43Z",
+      "removed_comment_ids": []
+    }
+  },
+  "totals": {
+    "all_complete": true,
+    "comment_pages": 8,
+    "comments": 519,
+    "fully_refreshed_threads": 4,
+    "replies": 93
+  }
+}
