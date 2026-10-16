@@ -1,0 +1,149 @@
+{
+  "active_overlap": {
+    "new_or_changed_relevant_claims_in_four_threads": 0,
+    "older_advisory_claim": "Comment18975387 still says CLAIM for PR2948/2942 composition until18:30UTC. Preserve that literal status; later PR2966/2969/2979 already address stronger compositions. It is not a new claim on this round's changed source.",
+    "pr2987_status": "DONE / FINDING / RELEASED; no active claim, comment18977418",
+    "pr2993_status": "DONE / FINDING / RELEASED; no active claim, comment18977778"
+  },
+  "all_18_acquired_payload_hashes_verified": true,
+  "canonical_main": "836b19bfa309ceafbc8ee32a15e8c4b10dde7e11",
+  "comparators": {
+    "named_prior": {
+      "author": "Dugongue",
+      "changed_since_prior": false,
+      "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+      "pr": 2969
+    },
+    "selected_conditional": {
+      "decimal": "0.001672660197076918",
+      "pr": 1094,
+      "unchanged": true
+    },
+    "strongest_identified_public_conditional_claim": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "changed_since_prior": false,
+      "claim": "0.001729033982646513517717 - 10^-46 - 10^-70",
+      "head": "be191346391661f4d35fc0d1508d0a6029572576",
+      "pr": 2979,
+      "source_acquisition": "data/continuation-05/pr2979/ACQUISITION.json",
+      "source_acquisition_sha256": "e5ad48ac05e897dcc2e073d29be451cfd1493ba3077e7e2de0f9460aa11a7d71",
+      "status": "Author-reported conditional complete finite release; archived/merged does not mean independent admission or selected-frontier change."
+    }
+  },
+  "coverage": {
+    "non_atomic": true,
+    "pr_metadata": {
+      "complete_all_prs": false,
+      "complete_recent_delta": true,
+      "new_since_cutoff": 2,
+      "pages": 1,
+      "reached_cutoff": true,
+      "rows": 100,
+      "unique_numbers": 100,
+      "updates_since_cutoff": 3
+    },
+    "threads": {
+      "1163": {
+        "comments": 73,
+        "complete": true,
+        "record_identical_to_prior": true,
+        "replies": 12
+      },
+      "1166": {
+        "comments": 307,
+        "complete": true,
+        "record_identical_to_prior": true,
+        "replies": 61
+      },
+      "1167": {
+        "comments": 123,
+        "complete": true,
+        "record_identical_to_prior": true,
+        "replies": 18
+      },
+      "2612": {
+        "comments": 23,
+        "complete": true,
+        "record_identical_to_prior": true,
+        "replies": 3
+      }
+    },
+    "total_comments": 526,
+    "total_replies": 94
+  },
+  "guidance_changes": [],
+  "guidance_pins_sha256": "be0d9db7f0a8217ffb8fb56939cb161072c52df2db5415aa4904a316b957328f",
+  "limitations": [
+    "Read-only bounded continuation06 source checkpoint, no fetched code execution or scientific tests.",
+    "All-state PR metadata is paged in update-descending order until a page reaches the prior cutoff, at most4pages; pagination is not atomic.",
+    "Discussions2612,1163,1166,1167 are fully refreshed regardless of discussion updatedAt; other threads and arbitrary linked resources remain outside this delta.",
+    "Remote claims and archival merges are not independent admission or novelty evidence.",
+    "The100-row update-descending REST page covers the recent cutoff delta, not all historical PRs.",
+    "All four named discussion bodies/comments/replies were refetched irrespective of updatedAt; other discussions, arbitrary linked artifacts and unpublished work are outside scope.",
+    "PR3003 has only a template body in this snapshot; no complete claim or source proof was inspected.",
+    "No new word package was acquired or executed, no remote communication was sent, and no scientific result was produced by this checkpoint."
+  ],
+  "next_actions": {
+    "cost_neutral_warning": "PR2987's473<=k<=1063 family preserves the complete residual histogram for every tariff. Chronological feasibility in this family cannot by itself improve kappa.",
+    "independent_admission_handoff": "PR2993 requests one source-bound V45 native transition and private-buffer endpoint joined to PR2987's complementary owner invoice. Their finite frame/packing checks do not close native/physical/outer obligations.",
+    "prior_local_obstruction": "Continuation05 R2 emitted forbidden consumer dependencies in both orientations; all192 attempts failed L-not-inside-U before moment pricing. Its separate saved-data proof fixes specific parity witnesses. Another unchanged-contact shear is not a changed premise.",
+    "recommendation": "Retain PR2979 as a conditional source baseline. Before another scientific launch, specify a guard-valid changed input/output graph or a complete-invoice admission obligation; do not reopen the stopped R2 family.",
+    "source_author_open_leads": [
+      "B output-map re-pairing around363/73 and395/5 on PR2979; a legal changed output graph is required, not register relabelling.",
+      "Input changes placed later in A, with chronological access, compensation and complete invoice retained.",
+      "Integral packing at the PR2979 fixed-inventory cap, approximately1.8e-9 above its literal profile, subject to the exact owner constraints."
+    ]
+  },
+  "priority_revision": 6,
+  "recorded_utc": "2026-10-16T17:04:02.846396+00:00",
+  "schema_version": 1,
+  "scope": "Read-only source checkpoint, inert metadata and prior saved-evidence review only; no scientific execution or source package replay.",
+  "source_credits": [
+    "Marius-Paul Dumitrean/#2979 and #2942",
+    "Jeremy Kothe/#2957/#2948/#2966 rewrites and applier",
+    "Dugongue/#2969 composition",
+    "Jeremy Diviney/#2908",
+    "Mason Hale/#2917",
+    "Ross Richardson/#2918/#2987",
+    "Nick Petalas/#2993",
+    "Yiyang Lu; Tekalign; icekylinx; themilkman216 and the retained pinned source lineage"
+  ],
+  "source_window": {
+    "finished_utc": "2026-10-16T16:58:38.684610+00:00",
+    "git_fetch_sha256": "34ac89eceebb7db44048f81674f2dd531d16571167835ee2922366447428fd78",
+    "helper_sha256": "ba74c74b47738738d6a9168be0e0e8e02695cde67156a2d47ae15138d1e0b645",
+    "prior_cutoff_utc": "2026-10-16T16:47:38Z",
+    "receipt_path": "data/continuation-06/checkpoint/RECEIPT.json",
+    "receipt_sha256": "d99e6e437f95b536ee25fb8fa26aea21e89ebd2861a74cfb39ed554bb3ff0baa",
+    "started_utc": "2026-10-16T16:58:24.144487+00:00"
+  },
+  "updated_prs": [
+    {
+      "author": "DreamingOfClouds",
+      "head": "d7399bc317418a217e71fe89624989ff7d7dbc24",
+      "interpretation": "Residue-closure proof/audit update: 480 audited kills, seven prior-only kills and 116 open cells; explicitly no supplier word or kappa claim.",
+      "number": 2985,
+      "state": "open",
+      "updated_at": "2026-10-16T16:57:04Z",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2985"
+    },
+    {
+      "author": "Arham-Tahir64",
+      "head": "38a0eddf69de8d64840353b5e1ed53bb37b6bc68",
+      "interpretation": "Title reports exact controls for one-sided residue dominance provenance; the acquired body is an unfilled template, so substantive mathematical status is unavailable from this checkpoint.",
+      "number": 3003,
+      "state": "open",
+      "updated_at": "2026-10-16T16:55:19Z",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3003"
+    },
+    {
+      "author": "petalas",
+      "head": "0bc34c304441740273e30e06cb28710bdd3d788d",
+      "interpretation": "Coordination-tool repair: canonical integer task references no longer match decimal/hash substrings. No supplier admission or scientific replay.",
+      "number": 3002,
+      "state": "open",
+      "updated_at": "2026-10-16T16:53:56Z",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3002"
+    }
+  ]
+}
