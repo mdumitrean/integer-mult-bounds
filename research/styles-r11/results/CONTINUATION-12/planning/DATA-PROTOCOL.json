@@ -1,0 +1,99 @@
+{
+  "extraction": "AST literal/name/dict/list/string data only; no module import or scientific execution.",
+  "feature_schema": {
+    "baseline": [
+      "capacity_feasible",
+      "positive_spread",
+      "reciprocal_windows",
+      "half_square_gain"
+    ],
+    "call_group_encoding": "stage*74+replica (not chronological call time)",
+    "core": [
+      "call_gap",
+      "stage_gap",
+      "replica_gap",
+      "window_length_A",
+      "window_length_B",
+      "own_start_margin_A",
+      "own_start_margin_B",
+      "own_stop_margin_A",
+      "own_stop_margin_B",
+      "cross_start_margin_A",
+      "cross_start_margin_B",
+      "cross_stop_margin_A",
+      "cross_stop_margin_B",
+      "family_call_degree_A",
+      "family_call_degree_B",
+      "bin_role_degree_A",
+      "bin_role_degree_B",
+      "same_physical_family",
+      "same_bin",
+      "same_port",
+      "same_child_family",
+      "same_helper",
+      "window_overlap_length"
+    ],
+    "core_scope": "Prospective temporal/role/physical-graph descriptors; no widths, ranks, residuals, costs, labels or IDs.",
+    "full_oracle": "legal AND gain_sign==1; an exact diagnostic upper bound, not a trainable predictor.",
+    "gain_sign": "For legal pairs only: +1 strict concave-moment improvement, 0 tie, -1 harm. Illegal gain_sign is 0.",
+    "groups": [
+      "callA",
+      "callB",
+      "physical_familyA",
+      "physical_familyB",
+      "binA",
+      "binB"
+    ],
+    "labels": [
+      "legal",
+      "gain_sign",
+      "inS",
+      "uniform_selected"
+    ],
+    "mechanism": [
+      "widthA",
+      "widthB",
+      "residualA",
+      "residualB",
+      "capacityA",
+      "capacityB"
+    ],
+    "mechanism_scope": "Explicitly width/residual/capacity-derived comparator; not rank-free ML."
+  },
+  "implementation": {
+    "path": "pipeline/continuation12/historical_exchange.py",
+    "sha256": "a83216945068281fc50c1319118012807a5c44ca98cb580e2c7bb17ab364fc2f"
+  },
+  "memory_note": "Trusted PR2979 loader additionally materializes unused 1,358,640-row T370 lift; only 271,728-row T74 base_model enters corpus. Parent before/after/peak RSS and corpus projection are recorded at registered preparation. release_generation_state discards private caches before model loading.",
+  "protocol": {
+    "S": "Distinct bins, unequal widths, both post-swap capacities feasible, d*(ra-rb+d)>0; no window/family selection.",
+    "call_group_identity": "stage*74+replica; stable physical call identity across historical chronological orders. core call_gap remains chronological.",
+    "calls": 666,
+    "corpus_seed": 120071,
+    "cross_call_domain": 36862620480,
+    "domain_order": "Lexicographic call pair (ta<tb), then helperA, helperB; canonical role i=408*t+h.",
+    "execution_seeds": [
+      61001,
+      122011
+    ],
+    "helpers": 408,
+    "inclusion_probability": {
+      "on_S": "1",
+      "outside_S": "1048576/36862620480"
+    },
+    "lineage_scope": "All three fills share substantial word/template ancestry; held-source validation is not held-ancestry validation.",
+    "pair_purge_identity": "Canonical time/helper coordinates only; this sensitivity is not a physical role identity match when order or provider layouts differ.",
+    "row_cap_per_fill": 2000000,
+    "scientific_scope": "Historical exact owner-exchange outcome prediction; no new construction or native/outer admission.",
+    "shards": "Earlier canonical role call //8; all 84 shards, including empty shards, are recorded.",
+    "shards_per_source": 84,
+    "sources": [
+      2853,
+      2917,
+      2979
+    ],
+    "uniform_algorithm": "random.Random(int(SHA256(ASCII(\"CONT12-UNIFORM-v1:120071:<PR>\")),16)).sample(range(D),N)",
+    "uniform_n": 1048576
+  },
+  "status": "SOURCE_ONLY_PREREGISTRATION_INPUT"
+}

@@ -1,0 +1,75 @@
+{
+  "baselines": [
+    "training_population_mean",
+    "training_prevalence_within_S_and_zero_outside_cost_derived",
+    "capacity_and_positive_spread_and_reciprocal_windows",
+    "complete_exact_guard_oracle_equals_target"
+  ],
+  "benchmark_panel_per_fill": 8192,
+  "corpus_seed": 120071,
+  "execution_seeds": [
+    61001,
+    122011
+  ],
+  "features": "core rank/price-free columns; optional six width/residual/capacity columns explicitly cost-derived",
+  "heldout_cap": 131072,
+  "inferential_status": "DESCRIPTIVE_ONLY",
+  "joint_split": "same global salted hash namespace for call IDs and physical-family IDs; train all four endpoints in side0, test all four in side1; discard mixed rows",
+  "learning_curve_caps": [
+    512,
+    2048,
+    8192,
+    32768,
+    131072
+  ],
+  "metrics": [
+    "weighted_AUROC",
+    "weighted_average_precision",
+    "weighted_Brier",
+    "weighted_logloss",
+    "population_and_conditional_S",
+    "sample_top100_1000_10000"
+  ],
+  "models": [
+    "core_linear",
+    "core_quadratic",
+    "mechanism_linear",
+    "mechanism_quadratic"
+  ],
+  "no_adaptive_tuning": true,
+  "optimizer": {
+    "ftol": 1e-10,
+    "gtol": 1e-07,
+    "maxiter": 80,
+    "maxls": 30,
+    "method": "L-BFGS-B"
+  },
+  "pair_purge": "remove from other-fill training every canonical role pair present anywhere in held-out fill before sampling; report degeneration",
+  "penalty": {
+    "intercept_penalized": false,
+    "lambda": 0.1,
+    "type": "L2"
+  },
+  "permutation_null": "Within each fixed source-fill x S-flag benchmark-panel block, shuffle exact binary labels, keeping pairs/features/weights and block class counts fixed. One-class blocks unchanged. Tests conditional within-block feature-label association in this finite related lineage only.",
+  "permutation_reporting": "unshuffled matched benchmark and 2000 indexed shuffle statistics; no p/q, pattern, independence, causal or best-model claim",
+  "permutation_secondary_statistic": "same Brier difference against train-within-S prevalence and zero outsideS; guards against credit merely for identifying the necessary-gain stratum",
+  "permutation_statistic": "mean over three held-out fills of weighted Brier(training mean)-weighted Brier(model), separately core_linear/core_quadratic",
+  "permutations_per_seed": 2000,
+  "preprocessing": "train-only inverse-inclusion-weighted means/scales; clip standardized x to [-8,8]; quadratic appends x*x; no feature selection",
+  "relatedness": "Three allocations share ancestry; entire-fill holdout is a sensitivity, not independent replication.",
+  "schema": "styles-r11-historical-exchange-ml/v1",
+  "sources": [
+    "2853",
+    "2917",
+    "2979"
+  ],
+  "splits": [
+    "whole_fill",
+    "joint_endpoint_disjoint",
+    "exact_pair_purged"
+  ],
+  "subsampling": "label-blind fixed salted SplitMix64 pair hash, choose smallest hashes; include exact N/n retention factor; no adaptive cap",
+  "target": "legal AND gain_sign==+1; strict exact complete-profile improvement, not kappa admission",
+  "training_cap": 131072,
+  "training_weights": "inverse inclusion and label-blind subsampling; balance each class to one half for fitting; restore training population-prior log odds at prediction"
+}
