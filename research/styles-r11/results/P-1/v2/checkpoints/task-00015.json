@@ -1,0 +1,156 @@
+{
+  "cpu_seconds": 3.302709871,
+  "peak_rss_bytes": 831660032,
+  "result": {
+    "alphabets": {
+      "full": 405,
+      "mid": 79,
+      "op": 30,
+      "rank": 15,
+      "registers": 5267,
+      "role": 160
+    },
+    "attribution": {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+      "pin_key": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "centre_paid": {
+      "1": 8,
+      "7": 8
+    },
+    "controls": {
+      "N0": {
+        "length_preserved": true,
+        "support_preserved": true
+      },
+      "N1b": {
+        "attempted_moves": 5654,
+        "cache": {
+          "currsize": 500000,
+          "hits": 181839,
+          "maxsize": 500000,
+          "misses": 2843409
+        },
+        "crossed_pairs": 885769,
+        "degenerate": false,
+        "exact_section_map": {
+          "A": true,
+          "B": true,
+          "cut": true
+        },
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4946,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "N1c": {
+        "equality_partition_invariant": true,
+        "mid_invariant": true,
+        "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+        "null": "N1c",
+        "relabelled_registers": 698
+      },
+      "N2": {
+        "acceptance_rate": 0.09159482758620689,
+        "accepted_moves": 85,
+        "attempts": 928,
+        "changed_vertices": 85,
+        "degenerate": false,
+        "feasibility_rejections": 317,
+        "identity_proposals": 429,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 97,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 928
+      }
+    },
+    "experiment": "P-1",
+    "family": "BORROW-WORD",
+    "helpers": 415,
+    "independent_loader": {
+      "match": true,
+      "profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "source": "pinned wordmodel.Word.paid (asserted by Word)"
+    },
+    "live_registers": 639,
+    "paid": {
+      "1": 2374,
+      "2": 646,
+      "3": 297,
+      "4": 120,
+      "5": 26,
+      "7": 8
+    },
+    "profile_match": true,
+    "registers": 704,
+    "report_profile": {
+      "1": 2374,
+      "2": 646,
+      "3": 297,
+      "4": 120,
+      "5": 26,
+      "7": 8
+    },
+    "sections": {
+      "A": 3543,
+      "B": 1935,
+      "cleanup": 4536,
+      "compensation": 7130,
+      "cut": 176,
+      "precondition": 192,
+      "restore": 87
+    },
+    "seed": 29063,
+    "status": "PASS",
+    "word_count_conventions": {
+      "A_prelude_warps": 24,
+      "Bwarps": 65,
+      "D_planning_forward_excluding_Bwarps": 5589,
+      "D_planning_lz76_excluding_Bwarps": 312,
+      "canonical_lz76_including_Bwarps": 325,
+      "forward_including_Bwarps": 5654
+    }
+  },
+  "seconds": 3.3029142916202545,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "P-1",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+    "seed": 29063
+  }
+}

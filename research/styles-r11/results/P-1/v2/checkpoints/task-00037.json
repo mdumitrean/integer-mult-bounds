@@ -1,0 +1,155 @@
+{
+  "cpu_seconds": 4.103035831,
+  "peak_rss_bytes": 831438848,
+  "result": {
+    "alphabets": {
+      "full": 396,
+      "mid": 79,
+      "op": 30,
+      "rank": 15,
+      "registers": 5261,
+      "role": 154
+    },
+    "attribution": {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "centre_paid": {
+      "8": 8
+    },
+    "controls": {
+      "N0": {
+        "length_preserved": true,
+        "support_preserved": true
+      },
+      "N1b": {
+        "attempted_moves": 5648,
+        "cache": {
+          "currsize": 500000,
+          "hits": 177272,
+          "maxsize": 500000,
+          "misses": 2824923
+        },
+        "crossed_pairs": 857191,
+        "degenerate": false,
+        "exact_section_map": {
+          "A": true,
+          "B": true,
+          "cut": true
+        },
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4907,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "N1c": {
+        "equality_partition_invariant": true,
+        "mid_invariant": true,
+        "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+        "null": "N1c",
+        "relabelled_registers": 697
+      },
+      "N2": {
+        "acceptance_rate": 0.08681318681318681,
+        "accepted_moves": 79,
+        "attempts": 910,
+        "changed_vertices": 79,
+        "degenerate": false,
+        "feasibility_rejections": 324,
+        "identity_proposals": 404,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 103,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 910
+      }
+    },
+    "experiment": "P-1",
+    "family": "BORROW-WORD",
+    "helpers": 415,
+    "independent_loader": {
+      "match": true,
+      "profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "source": "pinned wordmodel.Word.paid (asserted by Word)"
+    },
+    "live_registers": 639,
+    "paid": {
+      "1": 2366,
+      "2": 646,
+      "3": 297,
+      "4": 120,
+      "5": 26,
+      "8": 8
+    },
+    "profile_match": true,
+    "registers": 704,
+    "report_profile": {
+      "1": 2366,
+      "2": 646,
+      "3": 297,
+      "4": 120,
+      "5": 26,
+      "8": 8
+    },
+    "sections": {
+      "A": 3535,
+      "B": 1937,
+      "cleanup": 4540,
+      "compensation": 7130,
+      "cut": 176,
+      "precondition": 192,
+      "restore": 87
+    },
+    "seed": 29063,
+    "status": "PASS",
+    "word_count_conventions": {
+      "A_prelude_warps": 24,
+      "Bwarps": 65,
+      "D_planning_forward_excluding_Bwarps": 5583,
+      "D_planning_lz76_excluding_Bwarps": 299,
+      "canonical_lz76_including_Bwarps": 310,
+      "forward_including_Bwarps": 5648
+    }
+  },
+  "seconds": 4.101943394169211,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "P-1",
+    "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+    "seed": 29063
+  }
+}

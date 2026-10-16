@@ -1,0 +1,155 @@
+{
+  "cpu_seconds": 4.118994648,
+  "peak_rss_bytes": 830418944,
+  "result": {
+    "alphabets": {
+      "full": 397,
+      "mid": 81,
+      "op": 30,
+      "rank": 15,
+      "registers": 5268,
+      "role": 155
+    },
+    "attribution": {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "centre_paid": {
+      "8": 8
+    },
+    "controls": {
+      "N0": {
+        "length_preserved": true,
+        "support_preserved": true
+      },
+      "N1b": {
+        "attempted_moves": 5655,
+        "cache": {
+          "currsize": 500000,
+          "hits": 179835,
+          "maxsize": 500000,
+          "misses": 2866613
+        },
+        "crossed_pairs": 899251,
+        "degenerate": false,
+        "exact_section_map": {
+          "A": true,
+          "B": true,
+          "cut": true
+        },
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4932,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "N1c": {
+        "equality_partition_invariant": true,
+        "mid_invariant": true,
+        "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+        "null": "N1c",
+        "relabelled_registers": 697
+      },
+      "N2": {
+        "acceptance_rate": 0.09714285714285714,
+        "accepted_moves": 85,
+        "attempts": 875,
+        "changed_vertices": 85,
+        "degenerate": false,
+        "feasibility_rejections": 306,
+        "identity_proposals": 378,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 106,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 875
+      }
+    },
+    "experiment": "P-1",
+    "family": "BORROW-WORD",
+    "helpers": 408,
+    "independent_loader": {
+      "match": true,
+      "profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "source": "pinned wordmodel.Word.paid (asserted by Word)"
+    },
+    "live_registers": 632,
+    "paid": {
+      "1": 2382,
+      "2": 648,
+      "3": 268,
+      "4": 128,
+      "5": 26,
+      "8": 8
+    },
+    "profile_match": true,
+    "registers": 704,
+    "report_profile": {
+      "1": 2382,
+      "2": 648,
+      "3": 268,
+      "4": 128,
+      "5": 26,
+      "8": 8
+    },
+    "sections": {
+      "A": 3535,
+      "B": 1944,
+      "cleanup": 4547,
+      "compensation": 7130,
+      "cut": 176,
+      "precondition": 192,
+      "restore": 87
+    },
+    "seed": 11031,
+    "status": "PASS",
+    "word_count_conventions": {
+      "A_prelude_warps": 24,
+      "Bwarps": 72,
+      "D_planning_forward_excluding_Bwarps": 5583,
+      "D_planning_lz76_excluding_Bwarps": 302,
+      "canonical_lz76_including_Bwarps": 316,
+      "forward_including_Bwarps": 5655
+    }
+  },
+  "seconds": 4.117689413949847,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "P-1",
+    "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+    "seed": 11031
+  }
+}

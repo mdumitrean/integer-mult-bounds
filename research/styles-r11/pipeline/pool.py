@@ -97,6 +97,7 @@ def _alarm(signum, frame):
 
 def _call(fn, args, timeout):
     t0, c0 = time.monotonic(), time.process_time()
+    child0 = resource.getrusage(resource.RUSAGE_CHILDREN)
     signal.signal(signal.SIGALRM, _alarm)
     signal.setitimer(signal.ITIMER_REAL, timeout)
     try:
@@ -107,8 +108,10 @@ def _call(fn, args, timeout):
         out = {'status': 'ERROR', 'error': traceback.format_exc()[-6000:]}
     finally:
         signal.setitimer(signal.ITIMER_REAL, 0)
+    child1 = resource.getrusage(resource.RUSAGE_CHILDREN)
     out.update(seconds=time.monotonic() - t0,
-               cpu_seconds=time.process_time() - c0,
+               cpu_seconds=time.process_time() - c0 + child1.ru_utime
+               + child1.ru_stime - child0.ru_utime - child0.ru_stime,
                peak_rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
                * (1024 if sys.platform.startswith('linux') else 1))
     return out

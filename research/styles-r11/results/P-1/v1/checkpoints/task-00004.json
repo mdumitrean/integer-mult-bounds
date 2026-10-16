@@ -1,0 +1,154 @@
+{
+  "cpu_seconds": 3.045970446,
+  "peak_rss_bytes": 831254528,
+  "result": {
+    "alphabets": {
+      "full": 237,
+      "mid": 71,
+      "op": 25,
+      "rank": 15,
+      "registers": 5096,
+      "role": 79
+    },
+    "attribution": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/1195-FULL-WORD.json.gz",
+      "pin_key": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "centre_paid": {
+      "8": 8
+    },
+    "controls": {
+      "N0": {
+        "length_preserved": true,
+        "support_preserved": true
+      },
+      "N1b": {
+        "attempted_moves": 5471,
+        "cache": {
+          "currsize": 500000,
+          "hits": 185902,
+          "maxsize": 500000,
+          "misses": 2656211
+        },
+        "crossed_pairs": 824116,
+        "degenerate": false,
+        "exact_section_map": {
+          "A": true,
+          "B": true,
+          "cut": true
+        },
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4792,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "N1c": {
+        "equality_partition_invariant": true,
+        "mid_invariant": true,
+        "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+        "null": "N1c",
+        "relabelled_registers": 699
+      },
+      "N2": {
+        "acceptance_rate": 0.04475043029259897,
+        "accepted_moves": 78,
+        "attempts": 1743,
+        "changed_vertices": 78,
+        "degenerate": false,
+        "feasibility_rejections": 849,
+        "identity_proposals": 659,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 157,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 1743
+      }
+    },
+    "experiment": "P-1",
+    "family": "FULL-WORD",
+    "helpers": 480,
+    "independent_loader": {
+      "match": true,
+      "profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "source": "toolkit Graph.profile(literal) + independent recount centre children"
+    },
+    "live_registers": 704,
+    "paid": {
+      "1": 2358,
+      "2": 504,
+      "3": 408,
+      "4": 134,
+      "5": 80,
+      "8": 8
+    },
+    "profile_match": true,
+    "registers": 704,
+    "report_profile": {
+      "1": 2358,
+      "2": 504,
+      "3": 408,
+      "4": 134,
+      "5": 80,
+      "8": 8
+    },
+    "sections": {
+      "A": 3451,
+      "B": 1844,
+      "cleanup": 6680,
+      "cut": 176,
+      "early_cleanup": 114,
+      "precondition": 192
+    },
+    "seed": 11031,
+    "status": "PASS",
+    "word_count_conventions": {
+      "A_prelude_warps": 0,
+      "Bwarps": 0,
+      "D_planning_forward_excluding_Bwarps": 5471,
+      "D_planning_lz76_excluding_Bwarps": 260,
+      "canonical_lz76_including_Bwarps": 260,
+      "forward_including_Bwarps": 5471
+    }
+  },
+  "seconds": 3.046125049702823,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "P-1",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1195-FULL-WORD.json.gz",
+    "seed": 11031
+  }
+}

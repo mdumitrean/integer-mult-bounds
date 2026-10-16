@@ -1,0 +1,155 @@
+{
+  "cpu_seconds": 4.112995126,
+  "peak_rss_bytes": 831422464,
+  "result": {
+    "alphabets": {
+      "full": 401,
+      "mid": 81,
+      "op": 30,
+      "rank": 15,
+      "registers": 5266,
+      "role": 155
+    },
+    "attribution": {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/retired5-WORD-base.json.gz",
+      "pin_key": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "centre_paid": {
+      "8": 8
+    },
+    "controls": {
+      "N0": {
+        "length_preserved": true,
+        "support_preserved": true
+      },
+      "N1b": {
+        "attempted_moves": 5653,
+        "cache": {
+          "currsize": 500000,
+          "hits": 184398,
+          "maxsize": 500000,
+          "misses": 2850723
+        },
+        "crossed_pairs": 889744,
+        "degenerate": false,
+        "exact_section_map": {
+          "A": true,
+          "B": true,
+          "cut": true
+        },
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4948,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "N1c": {
+        "equality_partition_invariant": true,
+        "mid_invariant": true,
+        "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+        "null": "N1c",
+        "relabelled_registers": 698
+      },
+      "N2": {
+        "acceptance_rate": 0.10067873303167421,
+        "accepted_moves": 89,
+        "attempts": 884,
+        "changed_vertices": 89,
+        "degenerate": false,
+        "feasibility_rejections": 311,
+        "identity_proposals": 386,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 98,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 884
+      }
+    },
+    "experiment": "P-1",
+    "family": "BORROW-WORD",
+    "helpers": 410,
+    "independent_loader": {
+      "match": true,
+      "profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "source": "pinned wordmodel.Word.paid (asserted by Word)"
+    },
+    "live_registers": 634,
+    "paid": {
+      "1": 2386,
+      "2": 642,
+      "3": 274,
+      "4": 128,
+      "5": 26,
+      "8": 8
+    },
+    "profile_match": true,
+    "registers": 704,
+    "report_profile": {
+      "1": 2386,
+      "2": 642,
+      "3": 274,
+      "4": 128,
+      "5": 26,
+      "8": 8
+    },
+    "sections": {
+      "A": 3535,
+      "B": 1942,
+      "cleanup": 4545,
+      "compensation": 7130,
+      "cut": 176,
+      "precondition": 192,
+      "restore": 87
+    },
+    "seed": 11031,
+    "status": "PASS",
+    "word_count_conventions": {
+      "A_prelude_warps": 24,
+      "Bwarps": 70,
+      "D_planning_forward_excluding_Bwarps": 5583,
+      "D_planning_lz76_excluding_Bwarps": 303,
+      "canonical_lz76_including_Bwarps": 319,
+      "forward_including_Bwarps": 5653
+    }
+  },
+  "seconds": 4.1111693270504475,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "P-1",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/retired5-WORD-base.json.gz",
+    "seed": 11031
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "cpu_seconds": 3.044445737,
+  "peak_rss_bytes": 831176704,
+  "result": {
+    "alphabets": {
+      "full": 231,
+      "mid": 69,
+      "op": 25,
+      "rank": 15,
+      "registers": 5098,
+      "role": 79
+    },
+    "attribution": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/1094-K8PRE-FULL-WORD.json.gz",
+      "pin_key": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    "centre_paid": {
+      "8": 8
+    },
+    "controls": {
+      "N0": {
+        "length_preserved": true,
+        "support_preserved": true
+      },
+      "N1b": {
+        "attempted_moves": 5473,
+        "cache": {
+          "currsize": 500000,
+          "hits": 189048,
+          "maxsize": 500000,
+          "misses": 2670131
+        },
+        "crossed_pairs": 826162,
+        "degenerate": false,
+        "exact_section_map": {
+          "A": true,
+          "B": true,
+          "cut": true
+        },
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4788,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "N1c": {
+        "equality_partition_invariant": true,
+        "mid_invariant": true,
+        "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+        "null": "N1c",
+        "relabelled_registers": 699
+      },
+      "N2": {
+        "acceptance_rate": 0.0392156862745098,
+        "accepted_moves": 68,
+        "attempts": 1734,
+        "changed_vertices": 68,
+        "degenerate": false,
+        "feasibility_rejections": 823,
+        "identity_proposals": 676,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 167,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 1734
+      }
+    },
+    "experiment": "P-1",
+    "family": "FULL-WORD",
+    "helpers": 480,
+    "independent_loader": {
+      "match": true,
+      "profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "source": "toolkit Graph.profile(literal) + independent recount centre children"
+    },
+    "live_registers": 704,
+    "paid": {
+      "1": 2412,
+      "2": 418,
+      "3": 418,
+      "4": 170,
+      "5": 68,
+      "8": 8
+    },
+    "profile_match": true,
+    "registers": 704,
+    "report_profile": {
+      "1": 2412,
+      "2": 418,
+      "3": 418,
+      "4": 170,
+      "5": 68,
+      "8": 8
+    },
+    "sections": {
+      "A": 3451,
+      "B": 1846,
+      "cleanup": 6673,
+      "cut": 176,
+      "early_cleanup": 109,
+      "precondition": 192
+    },
+    "seed": 11031,
+    "status": "PASS",
+    "word_count_conventions": {
+      "A_prelude_warps": 0,
+      "Bwarps": 0,
+      "D_planning_forward_excluding_Bwarps": 5473,
+      "D_planning_lz76_excluding_Bwarps": 257,
+      "canonical_lz76_including_Bwarps": 257,
+      "forward_including_Bwarps": 5473
+    }
+  },
+  "seconds": 3.045063632540405,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "P-1",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1094-K8PRE-FULL-WORD.json.gz",
+    "seed": 11031
+  }
+}

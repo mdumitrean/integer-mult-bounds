@@ -1,0 +1,154 @@
+{
+  "cpu_seconds": 3.339221482,
+  "peak_rss_bytes": 829935616,
+  "result": {
+    "alphabets": {
+      "full": 241,
+      "mid": 72,
+      "op": 25,
+      "rank": 15,
+      "registers": 5102,
+      "role": 80
+    },
+    "attribution": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/1625-gauge44-word-566.json.gz",
+      "pin_key": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "centre_paid": {
+      "8": 8
+    },
+    "controls": {
+      "N0": {
+        "length_preserved": true,
+        "support_preserved": true
+      },
+      "N1b": {
+        "attempted_moves": 5477,
+        "cache": {
+          "currsize": 500000,
+          "hits": 185018,
+          "maxsize": 500000,
+          "misses": 2661029
+        },
+        "crossed_pairs": 826689,
+        "degenerate": false,
+        "exact_section_map": {
+          "A": true,
+          "B": true,
+          "cut": true
+        },
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4770,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "N1c": {
+        "equality_partition_invariant": true,
+        "mid_invariant": true,
+        "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+        "null": "N1c",
+        "relabelled_registers": 701
+      },
+      "N2": {
+        "acceptance_rate": 0.04164289788933257,
+        "accepted_moves": 73,
+        "attempts": 1753,
+        "changed_vertices": 73,
+        "degenerate": false,
+        "feasibility_rejections": 849,
+        "identity_proposals": 665,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 166,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 1753
+      }
+    },
+    "experiment": "P-1",
+    "family": "FULL-WORD",
+    "helpers": 480,
+    "independent_loader": {
+      "match": true,
+      "profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "source": "toolkit Graph.profile(literal) + independent recount centre children"
+    },
+    "live_registers": 704,
+    "paid": {
+      "1": 2347,
+      "2": 502,
+      "3": 415,
+      "4": 130,
+      "5": 82,
+      "8": 8
+    },
+    "profile_match": true,
+    "registers": 704,
+    "report_profile": {
+      "1": 2347,
+      "2": 502,
+      "3": 415,
+      "4": 130,
+      "5": 82,
+      "8": 8
+    },
+    "sections": {
+      "A": 3451,
+      "B": 1850,
+      "cleanup": 6681,
+      "cut": 176,
+      "early_cleanup": 120,
+      "precondition": 192
+    },
+    "seed": 11031,
+    "status": "PASS",
+    "word_count_conventions": {
+      "A_prelude_warps": 0,
+      "Bwarps": 0,
+      "D_planning_forward_excluding_Bwarps": 5477,
+      "D_planning_lz76_excluding_Bwarps": 265,
+      "canonical_lz76_including_Bwarps": 265,
+      "forward_including_Bwarps": 5477
+    }
+  },
+  "seconds": 3.339502646587789,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "P-1",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1625-gauge44-word-566.json.gz",
+    "seed": 11031
+  }
+}

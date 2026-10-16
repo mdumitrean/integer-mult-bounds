@@ -1,0 +1,3900 @@
+{
+  "checkpoint_directory": "results/P-1/v2/checkpoints",
+  "confirmation_required": true,
+  "cpu_seconds": 84.07988742949999,
+  "decision": {
+    "pass_bar": "profile parity on all 12 word files; warps counted once",
+    "verdict": "PASS"
+  },
+  "experiment": "P-1",
+  "milestone": "M0",
+  "n_permutations": 0,
+  "null_summary": {
+    "empirical_p": null,
+    "mean": null,
+    "model": "none (exact check)",
+    "sd": null
+  },
+  "peak_rss_bytes": 833736704,
+  "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+  "recorded_utc": "2026-10-16T04:15:28.379895+00:00",
+  "schema_version": 1,
+  "scope": "Finite scoped evaluation; potential kappa levers are census targets only.",
+  "script_manifest_sha256": "8195d08ca76957d1b34950600a6a537a472ecf5b74463bdbca9618515a40033f",
+  "script_sha256": {
+    "research/styles-r11/pipeline/fill.py": "e198da192f02728d1165e396ab74e5d88e934caa6ac38240f16c1834343fbe9c",
+    "research/styles-r11/pipeline/growth.py": "d8052b76b9de5e6510c2f679a26482198af70a00dde67c61f70fe95c1813345f",
+    "research/styles-r11/pipeline/growth_replay.py": "dc5b29f5b78290bb27d7ee83ac40acbd56f58359f4a7d12b6968c484e060b9d2",
+    "research/styles-r11/pipeline/matching.py": "a1cf1f9a65010eb2096dfeacd686d45b4b9c9386a987907ec99dd480ab3de497",
+    "research/styles-r11/pipeline/measures.py": "ec7fd2264129b922f8988098d41ebc9200f742aad92a060b7b54af191fa7bf3a",
+    "research/styles-r11/pipeline/nulls.py": "a6c6b3ce9c3db775f43058c3dda3640b5fcdbb46a94eca00c012c5302f165e86",
+    "research/styles-r11/pipeline/pool.py": "c54eb2efe147fc810addf8ccfacc02bdc76f67b5c5765ba8f908f134ceee5702",
+    "research/styles-r11/pipeline/records.py": "7afb313707e4cf6f287636f5654759fbd899ee55f2c567997d8cb47470ce7c81",
+    "research/styles-r11/pipeline/root.py": "b2eef8a2236e5ceb4ef92c9563b7a1e270b0719d345017cf38a9ee0784ceccd1",
+    "research/styles-r11/pipeline/run_m0.py": "7264a0cc0a5c5eabb71226d3bc116e555c7ec2ee0541917466eddf0a2cf38d08",
+    "research/styles-r11/pipeline/word_tasks.py": "5f14c4f3f389751baeeede856369db83a3b9ab93bd8e58dc520584abd940adf4",
+    "research/styles-r11/pipeline/wordio.py": "a9c254acdc04c3302ed0a31d9e0da39a8e3348aa20d189798e86539464fd81d4"
+  },
+  "seed": 11031,
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43extra.json.gz",
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    }
+  ],
+  "statistics": {
+    "preparation": {
+      "cpu_seconds": 8.779266577,
+      "peak_rss_bytes": 671735808,
+      "wall_seconds": 8.784813506528735
+    },
+    "preparation_errors": [],
+    "tasks": [
+      {
+        "cpu_seconds": 3.377610661,
+        "peak_rss_bytes": 829079552,
+        "result": {
+          "alphabets": {
+            "full": 231,
+            "mid": 69,
+            "op": 25,
+            "rank": 15,
+            "registers": 5098,
+            "role": 79
+          },
+          "attribution": {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 57109,
+            "format": "FULL-WORD",
+            "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+            "kappa": null,
+            "local_profile": {
+              "1": 2412,
+              "2": 418,
+              "3": 418,
+              "4": 170,
+              "5": 68,
+              "8": 8
+            },
+            "path": "research/styles-r11/data/words/1094-K8PRE-FULL-WORD.json.gz",
+            "pin_key": "1094-K8PRE-FULL-WORD.json.gz",
+            "pr": 1094,
+            "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+            "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+            "width_inventory": {
+              "4": 56,
+              "5": 32,
+              "7": 30,
+              "8": 122,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5473,
+              "cache": {
+                "currsize": 500000,
+                "hits": 189048,
+                "maxsize": 500000,
+                "misses": 2670131
+              },
+              "crossed_pairs": 826162,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4788,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 699
+            },
+            "N2": {
+              "acceptance_rate": 0.0392156862745098,
+              "accepted_moves": 68,
+              "attempts": 1734,
+              "changed_vertices": 68,
+              "degenerate": false,
+              "feasibility_rejections": 823,
+              "identity_proposals": 676,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 167,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 1734
+            }
+          },
+          "experiment": "P-1",
+          "family": "FULL-WORD",
+          "helpers": 480,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2412,
+              "2": 418,
+              "3": 418,
+              "4": 170,
+              "5": 68,
+              "8": 8
+            },
+            "source": "toolkit Graph.profile(literal) + independent recount centre children"
+          },
+          "live_registers": 704,
+          "paid": {
+            "1": 2412,
+            "2": 418,
+            "3": 418,
+            "4": 170,
+            "5": 68,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2412,
+            "2": 418,
+            "3": 418,
+            "4": 170,
+            "5": 68,
+            "8": 8
+          },
+          "sections": {
+            "A": 3451,
+            "B": 1846,
+            "cleanup": 6673,
+            "cut": 176,
+            "early_cleanup": 109,
+            "precondition": 192
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 0,
+            "Bwarps": 0,
+            "D_planning_forward_excluding_Bwarps": 5473,
+            "D_planning_lz76_excluding_Bwarps": 257,
+            "canonical_lz76_including_Bwarps": 257,
+            "forward_including_Bwarps": 5473
+          }
+        },
+        "seconds": 3.3774061892181635,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1094-K8PRE-FULL-WORD.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 3.411616441,
+        "peak_rss_bytes": 829100032,
+        "result": {
+          "alphabets": {
+            "full": 233,
+            "mid": 69,
+            "op": 25,
+            "rank": 15,
+            "registers": 5098,
+            "role": 79
+          },
+          "attribution": {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 57222,
+            "format": "FULL-WORD",
+            "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+            "kappa": "0.001672660197076918",
+            "local_profile": {
+              "1": 2412,
+              "2": 418,
+              "3": 432,
+              "4": 142,
+              "5": 82,
+              "8": 8
+            },
+            "path": "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+            "pin_key": "1094-K8S7-FULL-WORD.json.gz",
+            "pr": 1094,
+            "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+            "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+            "width_inventory": {
+              "4": 56,
+              "5": 32,
+              "7": 30,
+              "8": 122,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5473,
+              "cache": {
+                "currsize": 500000,
+                "hits": 185266,
+                "maxsize": 500000,
+                "misses": 2639088
+              },
+              "crossed_pairs": 819927,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4780,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 699
+            },
+            "N2": {
+              "acceptance_rate": 0.040206777713957496,
+              "accepted_moves": 70,
+              "attempts": 1741,
+              "changed_vertices": 70,
+              "degenerate": false,
+              "feasibility_rejections": 807,
+              "identity_proposals": 709,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 155,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 1741
+            }
+          },
+          "experiment": "P-1",
+          "family": "FULL-WORD",
+          "helpers": 480,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2412,
+              "2": 418,
+              "3": 432,
+              "4": 142,
+              "5": 82,
+              "8": 8
+            },
+            "source": "toolkit Graph.profile(literal) + independent recount centre children"
+          },
+          "live_registers": 704,
+          "paid": {
+            "1": 2412,
+            "2": 418,
+            "3": 432,
+            "4": 142,
+            "5": 82,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2412,
+            "2": 418,
+            "3": 432,
+            "4": 142,
+            "5": 82,
+            "8": 8
+          },
+          "sections": {
+            "A": 3451,
+            "B": 1846,
+            "cleanup": 6680,
+            "cut": 176,
+            "early_cleanup": 116,
+            "precondition": 192
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 0,
+            "Bwarps": 0,
+            "D_planning_forward_excluding_Bwarps": 5473,
+            "D_planning_lz76_excluding_Bwarps": 260,
+            "canonical_lz76_including_Bwarps": 260,
+            "forward_including_Bwarps": 5473
+          }
+        },
+        "seconds": 3.4115943741053343,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 3.342955994,
+        "peak_rss_bytes": 829153280,
+        "result": {
+          "alphabets": {
+            "full": 237,
+            "mid": 71,
+            "op": 25,
+            "rank": 15,
+            "registers": 5096,
+            "role": 79
+          },
+          "attribution": {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 57307,
+            "format": "FULL-WORD",
+            "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+            "kappa": "0.001675658002271934",
+            "local_profile": {
+              "1": 2358,
+              "2": 504,
+              "3": 408,
+              "4": 134,
+              "5": 80,
+              "8": 8
+            },
+            "path": "research/styles-r11/data/words/1195-FULL-WORD.json.gz",
+            "pin_key": "1195-FULL-WORD.json.gz",
+            "pr": 1195,
+            "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+            "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+            "width_inventory": {
+              "4": 44,
+              "5": 44,
+              "7": 38,
+              "8": 114,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5471,
+              "cache": {
+                "currsize": 500000,
+                "hits": 185902,
+                "maxsize": 500000,
+                "misses": 2656211
+              },
+              "crossed_pairs": 824116,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4792,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 699
+            },
+            "N2": {
+              "acceptance_rate": 0.04475043029259897,
+              "accepted_moves": 78,
+              "attempts": 1743,
+              "changed_vertices": 78,
+              "degenerate": false,
+              "feasibility_rejections": 849,
+              "identity_proposals": 659,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 157,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 1743
+            }
+          },
+          "experiment": "P-1",
+          "family": "FULL-WORD",
+          "helpers": 480,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2358,
+              "2": 504,
+              "3": 408,
+              "4": 134,
+              "5": 80,
+              "8": 8
+            },
+            "source": "toolkit Graph.profile(literal) + independent recount centre children"
+          },
+          "live_registers": 704,
+          "paid": {
+            "1": 2358,
+            "2": 504,
+            "3": 408,
+            "4": 134,
+            "5": 80,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2358,
+            "2": 504,
+            "3": 408,
+            "4": 134,
+            "5": 80,
+            "8": 8
+          },
+          "sections": {
+            "A": 3451,
+            "B": 1844,
+            "cleanup": 6680,
+            "cut": 176,
+            "early_cleanup": 114,
+            "precondition": 192
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 0,
+            "Bwarps": 0,
+            "D_planning_forward_excluding_Bwarps": 5471,
+            "D_planning_lz76_excluding_Bwarps": 260,
+            "canonical_lz76_including_Bwarps": 260,
+            "forward_including_Bwarps": 5471
+          }
+        },
+        "seconds": 3.3430075077340007,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1195-FULL-WORD.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 3.401291041,
+        "peak_rss_bytes": 829181952,
+        "result": {
+          "alphabets": {
+            "full": 241,
+            "mid": 72,
+            "op": 25,
+            "rank": 15,
+            "registers": 5102,
+            "role": 80
+          },
+          "attribution": {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 57412,
+            "format": "FULL-WORD",
+            "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+            "kappa": "0.001676896669021299",
+            "local_profile": {
+              "1": 2339,
+              "2": 510,
+              "3": 419,
+              "4": 126,
+              "5": 82,
+              "8": 8
+            },
+            "path": "research/styles-r11/data/words/1625-extra-word-566.json.gz",
+            "pin_key": "1625-extra-word-566.json.gz",
+            "pr": 1625,
+            "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+            "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+            "width_inventory": {
+              "4": 40,
+              "5": 48,
+              "7": 38,
+              "8": 114,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5477,
+              "cache": {
+                "currsize": 500000,
+                "hits": 183562,
+                "maxsize": 500000,
+                "misses": 2640612
+              },
+              "crossed_pairs": 824620,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4771,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 701
+            },
+            "N2": {
+              "acceptance_rate": 0.040226628895184136,
+              "accepted_moves": 71,
+              "attempts": 1765,
+              "changed_vertices": 71,
+              "degenerate": false,
+              "feasibility_rejections": 840,
+              "identity_proposals": 684,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 170,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 1765
+            }
+          },
+          "experiment": "P-1",
+          "family": "FULL-WORD",
+          "helpers": 480,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2339,
+              "2": 510,
+              "3": 419,
+              "4": 126,
+              "5": 82,
+              "8": 8
+            },
+            "source": "toolkit Graph.profile(literal) + independent recount centre children"
+          },
+          "live_registers": 704,
+          "paid": {
+            "1": 2339,
+            "2": 510,
+            "3": 419,
+            "4": 126,
+            "5": 82,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2339,
+            "2": 510,
+            "3": 419,
+            "4": 126,
+            "5": 82,
+            "8": 8
+          },
+          "sections": {
+            "A": 3451,
+            "B": 1850,
+            "cleanup": 6681,
+            "cut": 176,
+            "early_cleanup": 120,
+            "precondition": 192
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 0,
+            "Bwarps": 0,
+            "D_planning_forward_excluding_Bwarps": 5477,
+            "D_planning_lz76_excluding_Bwarps": 264,
+            "canonical_lz76_including_Bwarps": 264,
+            "forward_including_Bwarps": 5477
+          }
+        },
+        "seconds": 3.401209839619696,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1625-extra-word-566.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 3.339221482,
+        "peak_rss_bytes": 829935616,
+        "result": {
+          "alphabets": {
+            "full": 241,
+            "mid": 72,
+            "op": 25,
+            "rank": 15,
+            "registers": 5102,
+            "role": 80
+          },
+          "attribution": {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 57411,
+            "format": "FULL-WORD",
+            "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+            "kappa": "0.001676896669021299",
+            "local_profile": {
+              "1": 2347,
+              "2": 502,
+              "3": 415,
+              "4": 130,
+              "5": 82,
+              "8": 8
+            },
+            "path": "research/styles-r11/data/words/1625-gauge44-word-566.json.gz",
+            "pin_key": "1625-gauge44-word-566.json.gz",
+            "pr": 1625,
+            "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+            "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+            "width_inventory": {
+              "4": 44,
+              "5": 44,
+              "7": 38,
+              "8": 114,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5477,
+              "cache": {
+                "currsize": 500000,
+                "hits": 185018,
+                "maxsize": 500000,
+                "misses": 2661029
+              },
+              "crossed_pairs": 826689,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4770,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 701
+            },
+            "N2": {
+              "acceptance_rate": 0.04164289788933257,
+              "accepted_moves": 73,
+              "attempts": 1753,
+              "changed_vertices": 73,
+              "degenerate": false,
+              "feasibility_rejections": 849,
+              "identity_proposals": 665,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 166,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 1753
+            }
+          },
+          "experiment": "P-1",
+          "family": "FULL-WORD",
+          "helpers": 480,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2347,
+              "2": 502,
+              "3": 415,
+              "4": 130,
+              "5": 82,
+              "8": 8
+            },
+            "source": "toolkit Graph.profile(literal) + independent recount centre children"
+          },
+          "live_registers": 704,
+          "paid": {
+            "1": 2347,
+            "2": 502,
+            "3": 415,
+            "4": 130,
+            "5": 82,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2347,
+            "2": 502,
+            "3": 415,
+            "4": 130,
+            "5": 82,
+            "8": 8
+          },
+          "sections": {
+            "A": 3451,
+            "B": 1850,
+            "cleanup": 6681,
+            "cut": 176,
+            "early_cleanup": 120,
+            "precondition": 192
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 0,
+            "Bwarps": 0,
+            "D_planning_forward_excluding_Bwarps": 5477,
+            "D_planning_lz76_excluding_Bwarps": 265,
+            "canonical_lz76_including_Bwarps": 265,
+            "forward_including_Bwarps": 5477
+          }
+        },
+        "seconds": 3.339502646587789,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1625-gauge44-word-566.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 3.384253436,
+        "peak_rss_bytes": 831291392,
+        "result": {
+          "alphabets": {
+            "full": 241,
+            "mid": 72,
+            "op": 25,
+            "rank": 15,
+            "registers": 5105,
+            "role": 80
+          },
+          "attribution": {
+            "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+            "bytes": 57440,
+            "format": "FULL-WORD",
+            "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+            "kappa": "0.001676938111022438",
+            "local_profile": {
+              "1": 2340,
+              "2": 508,
+              "3": 420,
+              "4": 126,
+              "5": 82,
+              "8": 8
+            },
+            "path": "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+            "pin_key": "1672-extra-word-566-554.json.gz",
+            "pr": 1672,
+            "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+            "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+            "width_inventory": {
+              "4": 40,
+              "5": 48,
+              "7": 38,
+              "8": 114,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5480,
+              "cache": {
+                "currsize": 500000,
+                "hits": 184464,
+                "maxsize": 500000,
+                "misses": 2636670
+              },
+              "crossed_pairs": 805655,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4778,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 700
+            },
+            "N2": {
+              "acceptance_rate": 0.04315729699034639,
+              "accepted_moves": 76,
+              "attempts": 1761,
+              "changed_vertices": 76,
+              "degenerate": false,
+              "feasibility_rejections": 825,
+              "identity_proposals": 689,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 171,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 1761
+            }
+          },
+          "experiment": "P-1",
+          "family": "FULL-WORD",
+          "helpers": 480,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2340,
+              "2": 508,
+              "3": 420,
+              "4": 126,
+              "5": 82,
+              "8": 8
+            },
+            "source": "toolkit Graph.profile(literal) + independent recount centre children"
+          },
+          "live_registers": 704,
+          "paid": {
+            "1": 2340,
+            "2": 508,
+            "3": 420,
+            "4": 126,
+            "5": 82,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2340,
+            "2": 508,
+            "3": 420,
+            "4": 126,
+            "5": 82,
+            "8": 8
+          },
+          "sections": {
+            "A": 3451,
+            "B": 1853,
+            "cleanup": 6681,
+            "cut": 176,
+            "early_cleanup": 121,
+            "precondition": 192
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 0,
+            "Bwarps": 0,
+            "D_planning_forward_excluding_Bwarps": 5480,
+            "D_planning_lz76_excluding_Bwarps": 265,
+            "canonical_lz76_including_Bwarps": 265,
+            "forward_including_Bwarps": 5480
+          }
+        },
+        "seconds": 3.3842751318588853,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 3.4241291019999998,
+        "peak_rss_bytes": 831287296,
+        "result": {
+          "alphabets": {
+            "full": 241,
+            "mid": 72,
+            "op": 25,
+            "rank": 15,
+            "registers": 5105,
+            "role": 80
+          },
+          "attribution": {
+            "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+            "bytes": 57438,
+            "format": "FULL-WORD",
+            "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+            "kappa": "0.001676938111022438",
+            "local_profile": {
+              "1": 2348,
+              "2": 500,
+              "3": 416,
+              "4": 130,
+              "5": 82,
+              "8": 8
+            },
+            "path": "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+            "pin_key": "1672-gauge44-word-566-554.json.gz",
+            "pr": 1672,
+            "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+            "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+            "width_inventory": {
+              "4": 44,
+              "5": 44,
+              "7": 38,
+              "8": 114,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5480,
+              "cache": {
+                "currsize": 500000,
+                "hits": 183886,
+                "maxsize": 500000,
+                "misses": 2665612
+              },
+              "crossed_pairs": 829740,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4788,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 700
+            },
+            "N2": {
+              "acceptance_rate": 0.0440251572327044,
+              "accepted_moves": 77,
+              "attempts": 1749,
+              "changed_vertices": 77,
+              "degenerate": false,
+              "feasibility_rejections": 828,
+              "identity_proposals": 677,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 167,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 1749
+            }
+          },
+          "experiment": "P-1",
+          "family": "FULL-WORD",
+          "helpers": 480,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2348,
+              "2": 500,
+              "3": 416,
+              "4": 130,
+              "5": 82,
+              "8": 8
+            },
+            "source": "toolkit Graph.profile(literal) + independent recount centre children"
+          },
+          "live_registers": 704,
+          "paid": {
+            "1": 2348,
+            "2": 500,
+            "3": 416,
+            "4": 130,
+            "5": 82,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2348,
+            "2": 500,
+            "3": 416,
+            "4": 130,
+            "5": 82,
+            "8": 8
+          },
+          "sections": {
+            "A": 3451,
+            "B": 1853,
+            "cleanup": 6681,
+            "cut": 176,
+            "early_cleanup": 121,
+            "precondition": 192
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 0,
+            "Bwarps": 0,
+            "D_planning_forward_excluding_Bwarps": 5480,
+            "D_planning_lz76_excluding_Bwarps": 266,
+            "canonical_lz76_including_Bwarps": 266,
+            "forward_including_Bwarps": 5480
+          }
+        },
+        "seconds": 3.424106925725937,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 3.303195393,
+        "peak_rss_bytes": 831152128,
+        "result": {
+          "alphabets": {
+            "full": 405,
+            "mid": 79,
+            "op": 30,
+            "rank": 15,
+            "registers": 5267,
+            "role": 160
+          },
+          "attribution": {
+            "author": "Philippe Van Velzen (philippeVV)",
+            "bytes": 71364,
+            "format": "BORROW-WORD",
+            "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+            "kappa": null,
+            "local_profile": {
+              "1": 2374,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 8
+            },
+            "path": "research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+            "pin_key": "2679-BORROW-WORD-43base.json.gz",
+            "pr": 2679,
+            "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+            "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "1": 8,
+            "7": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5654,
+              "cache": {
+                "currsize": 500000,
+                "hits": 180152,
+                "maxsize": 500000,
+                "misses": 2858928
+              },
+              "crossed_pairs": 882404,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4960,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 696
+            },
+            "N2": {
+              "acceptance_rate": 0.09375,
+              "accepted_moves": 87,
+              "attempts": 928,
+              "changed_vertices": 87,
+              "degenerate": false,
+              "feasibility_rejections": 317,
+              "identity_proposals": 426,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 98,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 928
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 415,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2374,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 8
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 639,
+          "paid": {
+            "1": 2374,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2374,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 8
+          },
+          "sections": {
+            "A": 3543,
+            "B": 1935,
+            "cleanup": 4536,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 65,
+            "D_planning_forward_excluding_Bwarps": 5589,
+            "D_planning_lz76_excluding_Bwarps": 312,
+            "canonical_lz76_including_Bwarps": 325,
+            "forward_including_Bwarps": 5654
+          }
+        },
+        "seconds": 3.303429091349244,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.055520571,
+        "peak_rss_bytes": 833212416,
+        "result": {
+          "alphabets": {
+            "full": 405,
+            "mid": 79,
+            "op": 30,
+            "rank": 15,
+            "registers": 5267,
+            "role": 160
+          },
+          "attribution": {
+            "author": "Philippe Van Velzen (philippeVV)",
+            "bytes": 71365,
+            "format": "BORROW-WORD",
+            "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+            "kappa": null,
+            "local_profile": {
+              "1": 2374,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 8
+            },
+            "path": "research/styles-r11/data/words/2679-BORROW-WORD-43extra.json.gz",
+            "pin_key": "2679-BORROW-WORD-43extra.json.gz",
+            "pr": 2679,
+            "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+            "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "1": 8,
+            "7": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5654,
+              "cache": {
+                "currsize": 500000,
+                "hits": 180152,
+                "maxsize": 500000,
+                "misses": 2858928
+              },
+              "crossed_pairs": 882404,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4960,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 696
+            },
+            "N2": {
+              "acceptance_rate": 0.09375,
+              "accepted_moves": 87,
+              "attempts": 928,
+              "changed_vertices": 87,
+              "degenerate": false,
+              "feasibility_rejections": 317,
+              "identity_proposals": 426,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 98,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 928
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 415,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2374,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 8
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 639,
+          "paid": {
+            "1": 2374,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2374,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 8
+          },
+          "sections": {
+            "A": 3543,
+            "B": 1935,
+            "cleanup": 4536,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 65,
+            "D_planning_forward_excluding_Bwarps": 5589,
+            "D_planning_lz76_excluding_Bwarps": 312,
+            "canonical_lz76_including_Bwarps": 325,
+            "forward_including_Bwarps": 5654
+          }
+        },
+        "seconds": 4.056027054786682,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2679-BORROW-WORD-43extra.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.203560993,
+        "peak_rss_bytes": 833736704,
+        "result": {
+          "alphabets": {
+            "full": 400,
+            "mid": 79,
+            "op": 30,
+            "rank": 15,
+            "registers": 5259,
+            "role": 159
+          },
+          "attribution": {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 71241,
+            "format": "BORROW-WORD",
+            "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+            "kappa": "0.0017161404259974415",
+            "local_profile": {
+              "1": 2370,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 4,
+              "8": 4
+            },
+            "path": "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+            "pin_key": "2745-BORROW-WORD-43base.json.gz",
+            "pr": 2745,
+            "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+            "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "1": 4,
+            "7": 4,
+            "8": 4
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5646,
+              "cache": {
+                "currsize": 500000,
+                "hits": 181046,
+                "maxsize": 500000,
+                "misses": 2852068
+              },
+              "crossed_pairs": 898219,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4964,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 693
+            },
+            "N2": {
+              "acceptance_rate": 0.09080962800875274,
+              "accepted_moves": 83,
+              "attempts": 914,
+              "changed_vertices": 83,
+              "degenerate": false,
+              "feasibility_rejections": 312,
+              "identity_proposals": 416,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 103,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 914
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 415,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2370,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 4,
+              "8": 4
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 639,
+          "paid": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "sections": {
+            "A": 3535,
+            "B": 1935,
+            "cleanup": 4536,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 65,
+            "D_planning_forward_excluding_Bwarps": 5581,
+            "D_planning_lz76_excluding_Bwarps": 305,
+            "canonical_lz76_including_Bwarps": 318,
+            "forward_including_Bwarps": 5646
+          }
+        },
+        "seconds": 4.204110232181847,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.148263344,
+        "peak_rss_bytes": 831643648,
+        "result": {
+          "alphabets": {
+            "full": 400,
+            "mid": 79,
+            "op": 30,
+            "rank": 15,
+            "registers": 5259,
+            "role": 159
+          },
+          "attribution": {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 71242,
+            "format": "BORROW-WORD",
+            "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+            "kappa": "0.0017161404259974415",
+            "local_profile": {
+              "1": 2370,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 4,
+              "8": 4
+            },
+            "path": "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+            "pin_key": "2745-BORROW-WORD-43extra.json.gz",
+            "pr": 2745,
+            "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+            "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "1": 4,
+            "7": 4,
+            "8": 4
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5646,
+              "cache": {
+                "currsize": 500000,
+                "hits": 181046,
+                "maxsize": 500000,
+                "misses": 2852068
+              },
+              "crossed_pairs": 898219,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4964,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 693
+            },
+            "N2": {
+              "acceptance_rate": 0.09080962800875274,
+              "accepted_moves": 83,
+              "attempts": 914,
+              "changed_vertices": 83,
+              "degenerate": false,
+              "feasibility_rejections": 312,
+              "identity_proposals": 416,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 103,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 914
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 415,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2370,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "7": 4,
+              "8": 4
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 639,
+          "paid": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "sections": {
+            "A": 3535,
+            "B": 1935,
+            "cleanup": 4536,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 65,
+            "D_planning_forward_excluding_Bwarps": 5581,
+            "D_planning_lz76_excluding_Bwarps": 305,
+            "canonical_lz76_including_Bwarps": 318,
+            "forward_including_Bwarps": 5646
+          }
+        },
+        "seconds": 4.1483906339854,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.117458532000001,
+        "peak_rss_bytes": 831258624,
+        "result": {
+          "alphabets": {
+            "full": 396,
+            "mid": 79,
+            "op": 30,
+            "rank": 15,
+            "registers": 5261,
+            "role": 154
+          },
+          "attribution": {
+            "author": "DavidAriasC",
+            "bytes": 72192,
+            "format": "BORROW-WORD",
+            "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+            "kappa": "0.001717256973467002308270",
+            "local_profile": {
+              "1": 2364,
+              "2": 647,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/styles-r11/data/words/2766-WORD-base.json.gz",
+            "pin_key": "2766-WORD-base.json.gz",
+            "pr": 2766,
+            "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+            "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5648,
+              "cache": {
+                "currsize": 500000,
+                "hits": 179117,
+                "maxsize": 500000,
+                "misses": 2832479
+              },
+              "crossed_pairs": 869917,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4925,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 696
+            },
+            "N2": {
+              "acceptance_rate": 0.1,
+              "accepted_moves": 91,
+              "attempts": 910,
+              "changed_vertices": 91,
+              "degenerate": false,
+              "feasibility_rejections": 333,
+              "identity_proposals": 381,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 105,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 910
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 415,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2364,
+              "2": 647,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 639,
+          "paid": {
+            "1": 2364,
+            "2": 647,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2364,
+            "2": 647,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "sections": {
+            "A": 3535,
+            "B": 1937,
+            "cleanup": 4540,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 65,
+            "D_planning_forward_excluding_Bwarps": 5583,
+            "D_planning_lz76_excluding_Bwarps": 299,
+            "canonical_lz76_including_Bwarps": 311,
+            "forward_including_Bwarps": 5648
+          }
+        },
+        "seconds": 4.1153804063797,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-base.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.13020686,
+        "peak_rss_bytes": 833523712,
+        "result": {
+          "alphabets": {
+            "full": 396,
+            "mid": 79,
+            "op": 30,
+            "rank": 15,
+            "registers": 5261,
+            "role": 154
+          },
+          "attribution": {
+            "author": "DavidAriasC",
+            "bytes": 72192,
+            "format": "BORROW-WORD",
+            "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+            "kappa": "0.001717256973467002308270",
+            "local_profile": {
+              "1": 2364,
+              "2": 647,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/styles-r11/data/words/2766-WORD-extra.json.gz",
+            "pin_key": "2766-WORD-extra.json.gz",
+            "pr": 2766,
+            "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+            "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5648,
+              "cache": {
+                "currsize": 500000,
+                "hits": 179117,
+                "maxsize": 500000,
+                "misses": 2832479
+              },
+              "crossed_pairs": 869917,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4925,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 696
+            },
+            "N2": {
+              "acceptance_rate": 0.1,
+              "accepted_moves": 91,
+              "attempts": 910,
+              "changed_vertices": 91,
+              "degenerate": false,
+              "feasibility_rejections": 333,
+              "identity_proposals": 381,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 105,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 910
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 415,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2364,
+              "2": 647,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 639,
+          "paid": {
+            "1": 2364,
+            "2": 647,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2364,
+            "2": 647,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "sections": {
+            "A": 3535,
+            "B": 1937,
+            "cleanup": 4540,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 65,
+            "D_planning_forward_excluding_Bwarps": 5583,
+            "D_planning_lz76_excluding_Bwarps": 299,
+            "canonical_lz76_including_Bwarps": 311,
+            "forward_including_Bwarps": 5648
+          }
+        },
+        "seconds": 4.128713241778314,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-extra.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.112995126,
+        "peak_rss_bytes": 831422464,
+        "result": {
+          "alphabets": {
+            "full": 401,
+            "mid": 81,
+            "op": 30,
+            "rank": 15,
+            "registers": 5266,
+            "role": 155
+          },
+          "attribution": {
+            "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+            "bytes": 72354,
+            "format": "BORROW-WORD",
+            "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+            "kappa": "0.001717409316335491643448",
+            "local_profile": {
+              "1": 2386,
+              "2": 642,
+              "3": 274,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/styles-r11/data/words/retired5-WORD-base.json.gz",
+            "pin_key": "retired5-WORD-base.json.gz",
+            "pr": null,
+            "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+            "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 4,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5653,
+              "cache": {
+                "currsize": 500000,
+                "hits": 184398,
+                "maxsize": 500000,
+                "misses": 2850723
+              },
+              "crossed_pairs": 889744,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4948,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 698
+            },
+            "N2": {
+              "acceptance_rate": 0.10067873303167421,
+              "accepted_moves": 89,
+              "attempts": 884,
+              "changed_vertices": 89,
+              "degenerate": false,
+              "feasibility_rejections": 311,
+              "identity_proposals": 386,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 98,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 884
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 410,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2386,
+              "2": 642,
+              "3": 274,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 634,
+          "paid": {
+            "1": 2386,
+            "2": 642,
+            "3": 274,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2386,
+            "2": 642,
+            "3": 274,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "sections": {
+            "A": 3535,
+            "B": 1942,
+            "cleanup": 4545,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 70,
+            "D_planning_forward_excluding_Bwarps": 5583,
+            "D_planning_lz76_excluding_Bwarps": 303,
+            "canonical_lz76_including_Bwarps": 319,
+            "forward_including_Bwarps": 5653
+          }
+        },
+        "seconds": 4.1111693270504475,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/retired5-WORD-base.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.112594662999999,
+        "peak_rss_bytes": 831414272,
+        "result": {
+          "alphabets": {
+            "full": 401,
+            "mid": 81,
+            "op": 30,
+            "rank": 15,
+            "registers": 5266,
+            "role": 155
+          },
+          "attribution": {
+            "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+            "bytes": 72353,
+            "format": "BORROW-WORD",
+            "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+            "kappa": "0.001717409316335491643448",
+            "local_profile": {
+              "1": 2386,
+              "2": 642,
+              "3": 274,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/styles-r11/data/words/retired5-WORD-extra.json.gz",
+            "pin_key": "retired5-WORD-extra.json.gz",
+            "pr": null,
+            "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+            "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+            "width_inventory": {
+              "4": 26,
+              "5": 4,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5653,
+              "cache": {
+                "currsize": 500000,
+                "hits": 184398,
+                "maxsize": 500000,
+                "misses": 2850723
+              },
+              "crossed_pairs": 889744,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4948,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 698
+            },
+            "N2": {
+              "acceptance_rate": 0.10067873303167421,
+              "accepted_moves": 89,
+              "attempts": 884,
+              "changed_vertices": 89,
+              "degenerate": false,
+              "feasibility_rejections": 311,
+              "identity_proposals": 386,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 98,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 884
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 410,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2386,
+              "2": 642,
+              "3": 274,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 634,
+          "paid": {
+            "1": 2386,
+            "2": 642,
+            "3": 274,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2386,
+            "2": 642,
+            "3": 274,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "sections": {
+            "A": 3535,
+            "B": 1942,
+            "cleanup": 4545,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 70,
+            "D_planning_forward_excluding_Bwarps": 5583,
+            "D_planning_lz76_excluding_Bwarps": 303,
+            "canonical_lz76_including_Bwarps": 319,
+            "forward_including_Bwarps": 5653
+          }
+        },
+        "seconds": 4.110845527611673,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/retired5-WORD-extra.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.118994648,
+        "peak_rss_bytes": 830418944,
+        "result": {
+          "alphabets": {
+            "full": 397,
+            "mid": 81,
+            "op": 30,
+            "rank": 15,
+            "registers": 5268,
+            "role": 155
+          },
+          "attribution": {
+            "author": "Marius-Paul Dumitrean",
+            "bytes": 72444,
+            "format": "BORROW-WORD",
+            "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+            "kappa": "0.001717794984118634663827",
+            "local_profile": {
+              "1": 2382,
+              "2": 648,
+              "3": 268,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+            "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+            "pr": 2802,
+            "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 26,
+              "5": 2,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5655,
+              "cache": {
+                "currsize": 500000,
+                "hits": 179835,
+                "maxsize": 500000,
+                "misses": 2866613
+              },
+              "crossed_pairs": 899251,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4932,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 697
+            },
+            "N2": {
+              "acceptance_rate": 0.09714285714285714,
+              "accepted_moves": 85,
+              "attempts": 875,
+              "changed_vertices": 85,
+              "degenerate": false,
+              "feasibility_rejections": 306,
+              "identity_proposals": 378,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 106,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 875
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 408,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2382,
+              "2": 648,
+              "3": 268,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 632,
+          "paid": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "sections": {
+            "A": 3535,
+            "B": 1944,
+            "cleanup": 4547,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 72,
+            "D_planning_forward_excluding_Bwarps": 5583,
+            "D_planning_lz76_excluding_Bwarps": 302,
+            "canonical_lz76_including_Bwarps": 316,
+            "forward_including_Bwarps": 5655
+          }
+        },
+        "seconds": 4.117689413949847,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.122959799,
+        "peak_rss_bytes": 833511424,
+        "result": {
+          "alphabets": {
+            "full": 397,
+            "mid": 81,
+            "op": 30,
+            "rank": 15,
+            "registers": 5268,
+            "role": 155
+          },
+          "attribution": {
+            "author": "Marius-Paul Dumitrean",
+            "bytes": 72443,
+            "format": "BORROW-WORD",
+            "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+            "kappa": "0.001717794984118634663827",
+            "local_profile": {
+              "1": 2382,
+              "2": 648,
+              "3": 268,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+            "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+            "pr": 2802,
+            "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 26,
+              "5": 2,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5655,
+              "cache": {
+                "currsize": 500000,
+                "hits": 179835,
+                "maxsize": 500000,
+                "misses": 2866613
+              },
+              "crossed_pairs": 899251,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4932,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 697
+            },
+            "N2": {
+              "acceptance_rate": 0.09714285714285714,
+              "accepted_moves": 85,
+              "attempts": 875,
+              "changed_vertices": 85,
+              "degenerate": false,
+              "feasibility_rejections": 306,
+              "identity_proposals": 378,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 106,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 875
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 408,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2382,
+              "2": 648,
+              "3": 268,
+              "4": 128,
+              "5": 26,
+              "8": 8
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 632,
+          "paid": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "sections": {
+            "A": 3535,
+            "B": 1944,
+            "cleanup": 4547,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 72,
+            "D_planning_forward_excluding_Bwarps": 5583,
+            "D_planning_lz76_excluding_Bwarps": 302,
+            "canonical_lz76_including_Bwarps": 316,
+            "forward_including_Bwarps": 5655
+          }
+        },
+        "seconds": 4.121855318546295,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.110699231000001,
+        "peak_rss_bytes": 833527808,
+        "result": {
+          "alphabets": {
+            "full": 396,
+            "mid": 79,
+            "op": 30,
+            "rank": 15,
+            "registers": 5261,
+            "role": 154
+          },
+          "attribution": {
+            "author": "Tekalign (tekuuu)",
+            "bytes": 72468,
+            "format": "BORROW-WORD",
+            "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+            "kappa": "0.001717141586348426338109",
+            "local_profile": {
+              "1": 2366,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+            "pr": 2751,
+            "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5648,
+              "cache": {
+                "currsize": 500000,
+                "hits": 179117,
+                "maxsize": 500000,
+                "misses": 2832479
+              },
+              "crossed_pairs": 869917,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4925,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 696
+            },
+            "N2": {
+              "acceptance_rate": 0.1,
+              "accepted_moves": 91,
+              "attempts": 910,
+              "changed_vertices": 91,
+              "degenerate": false,
+              "feasibility_rejections": 332,
+              "identity_proposals": 380,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 107,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 910
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 415,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2366,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 639,
+          "paid": {
+            "1": 2366,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2366,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "sections": {
+            "A": 3535,
+            "B": 1937,
+            "cleanup": 4540,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 65,
+            "D_planning_forward_excluding_Bwarps": 5583,
+            "D_planning_lz76_excluding_Bwarps": 299,
+            "canonical_lz76_including_Bwarps": 310,
+            "forward_including_Bwarps": 5648
+          }
+        },
+        "seconds": 4.10972541756928,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.126383565,
+        "peak_rss_bytes": 831430656,
+        "result": {
+          "alphabets": {
+            "full": 396,
+            "mid": 79,
+            "op": 30,
+            "rank": 15,
+            "registers": 5261,
+            "role": 154
+          },
+          "attribution": {
+            "author": "Tekalign (tekuuu)",
+            "bytes": 72468,
+            "format": "BORROW-WORD",
+            "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+            "kappa": "0.001717141586348426338109",
+            "local_profile": {
+              "1": 2366,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+            "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+            "pr": 2751,
+            "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 26,
+              "5": 9,
+              "7": 62,
+              "8": 78,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "8": 8
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5648,
+              "cache": {
+                "currsize": 500000,
+                "hits": 179117,
+                "maxsize": 500000,
+                "misses": 2832479
+              },
+              "crossed_pairs": 869917,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4925,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 696
+            },
+            "N2": {
+              "acceptance_rate": 0.1,
+              "accepted_moves": 91,
+              "attempts": 910,
+              "changed_vertices": 91,
+              "degenerate": false,
+              "feasibility_rejections": 332,
+              "identity_proposals": 380,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 107,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 910
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 415,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2366,
+              "2": 646,
+              "3": 297,
+              "4": 120,
+              "5": 26,
+              "8": 8
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 639,
+          "paid": {
+            "1": 2366,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2366,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "sections": {
+            "A": 3535,
+            "B": 1937,
+            "cleanup": 4540,
+            "compensation": 7130,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 24,
+            "Bwarps": 65,
+            "D_planning_forward_excluding_Bwarps": 5583,
+            "D_planning_lz76_excluding_Bwarps": 299,
+            "canonical_lz76_including_Bwarps": 310,
+            "forward_including_Bwarps": 5648
+          }
+        },
+        "seconds": 4.125074910931289,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 4.070517084,
+        "peak_rss_bytes": 831504384,
+        "result": {
+          "alphabets": {
+            "full": 372,
+            "mid": 78,
+            "op": 29,
+            "rank": 15,
+            "registers": 5219,
+            "role": 149
+          },
+          "attribution": {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 70505,
+            "format": "BORROW-WORD",
+            "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+            "kappa": "0.001703552312979594",
+            "local_profile": {
+              "1": 2363,
+              "2": 632,
+              "3": 326,
+              "4": 120,
+              "5": 34,
+              "7": 4,
+              "8": 4
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+            "pin_key": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+            "pr": 2462,
+            "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 33,
+              "5": 9,
+              "7": 62,
+              "8": 86,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "1": 4,
+            "7": 4,
+            "8": 4
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5598,
+              "cache": {
+                "currsize": 500000,
+                "hits": 181054,
+                "maxsize": 500000,
+                "misses": 2848438
+              },
+              "crossed_pairs": 868730,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4891,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 700
+            },
+            "N2": {
+              "acceptance_rate": 0.07622868605817452,
+              "accepted_moves": 76,
+              "attempts": 997,
+              "changed_vertices": 76,
+              "degenerate": false,
+              "feasibility_rejections": 377,
+              "identity_proposals": 441,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 103,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 997
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 430,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2363,
+              "2": 632,
+              "3": 326,
+              "4": 120,
+              "5": 34,
+              "7": 4,
+              "8": 4
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 654,
+          "paid": {
+            "1": 2363,
+            "2": 632,
+            "3": 326,
+            "4": 120,
+            "5": 34,
+            "7": 4,
+            "8": 4
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2363,
+            "2": 632,
+            "3": 326,
+            "4": 120,
+            "5": 34,
+            "7": 4,
+            "8": 4
+          },
+          "sections": {
+            "A": 3479,
+            "B": 1943,
+            "cleanup": 4512,
+            "compensation": 7208,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 8,
+            "Bwarps": 50,
+            "D_planning_forward_excluding_Bwarps": 5548,
+            "D_planning_lz76_excluding_Bwarps": 285,
+            "canonical_lz76_including_Bwarps": 293,
+            "forward_including_Bwarps": 5598
+          }
+        },
+        "seconds": 4.069444729946554,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      },
+      {
+        "cpu_seconds": 3.275826175,
+        "peak_rss_bytes": 830054400,
+        "result": {
+          "alphabets": {
+            "full": 372,
+            "mid": 78,
+            "op": 29,
+            "rank": 15,
+            "registers": 5219,
+            "role": 149
+          },
+          "attribution": {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 70509,
+            "format": "BORROW-WORD",
+            "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+            "kappa": "0.001703552312979594",
+            "local_profile": {
+              "1": 2363,
+              "2": 632,
+              "3": 326,
+              "4": 120,
+              "5": 34,
+              "7": 4,
+              "8": 4
+            },
+            "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+            "pin_key": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+            "pr": 2462,
+            "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+            "source": "in tree (package of PR #2802)",
+            "width_inventory": {
+              "4": 33,
+              "5": 9,
+              "7": 62,
+              "8": 86,
+              "9": 240
+            }
+          },
+          "centre_paid": {
+            "1": 4,
+            "7": 4,
+            "8": 4
+          },
+          "controls": {
+            "N0": {
+              "length_preserved": true,
+              "support_preserved": true
+            },
+            "N1b": {
+              "attempted_moves": 5598,
+              "cache": {
+                "currsize": 500000,
+                "hits": 181054,
+                "maxsize": 500000,
+                "misses": 2848438
+              },
+              "crossed_pairs": 868730,
+              "degenerate": false,
+              "exact_section_map": {
+                "A": true,
+                "B": true,
+                "cut": true
+              },
+              "exact_semantics": "scalar gates plus formal operator warps",
+              "invariant_failures": 0,
+              "moved_gates": 4891,
+              "null": "N1b",
+              "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+              "sweeps": 1
+            },
+            "N1c": {
+              "equality_partition_invariant": true,
+              "mid_invariant": true,
+              "note": "A bijection preserves token equality, so equality-only compression/entropy must be invariant.",
+              "null": "N1c",
+              "relabelled_registers": 700
+            },
+            "N2": {
+              "acceptance_rate": 0.07622868605817452,
+              "accepted_moves": 76,
+              "attempts": 997,
+              "changed_vertices": 76,
+              "degenerate": false,
+              "feasibility_rejections": 377,
+              "identity_proposals": 441,
+              "invariant_failures": 0,
+              "mixing": "local Metropolis chain; no uniformity or mixing claim",
+              "null": "N2",
+              "profile_rejections": 103,
+              "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+              "variables": 997
+            }
+          },
+          "experiment": "P-1",
+          "family": "BORROW-WORD",
+          "helpers": 430,
+          "independent_loader": {
+            "match": true,
+            "profile": {
+              "1": 2363,
+              "2": 632,
+              "3": 326,
+              "4": 120,
+              "5": 34,
+              "7": 4,
+              "8": 4
+            },
+            "source": "pinned wordmodel.Word.paid (asserted by Word)"
+          },
+          "live_registers": 654,
+          "paid": {
+            "1": 2363,
+            "2": 632,
+            "3": 326,
+            "4": 120,
+            "5": 34,
+            "7": 4,
+            "8": 4
+          },
+          "profile_match": true,
+          "registers": 704,
+          "report_profile": {
+            "1": 2363,
+            "2": 632,
+            "3": 326,
+            "4": 120,
+            "5": 34,
+            "7": 4,
+            "8": 4
+          },
+          "sections": {
+            "A": 3479,
+            "B": 1943,
+            "cleanup": 4512,
+            "compensation": 7208,
+            "cut": 176,
+            "precondition": 192,
+            "restore": 87
+          },
+          "seed": 11031,
+          "status": "PASS",
+          "word_count_conventions": {
+            "A_prelude_warps": 8,
+            "Bwarps": 50,
+            "D_planning_forward_excluding_Bwarps": 5548,
+            "D_planning_lz76_excluding_Bwarps": 285,
+            "canonical_lz76_including_Bwarps": 293,
+            "forward_including_Bwarps": 5598
+          }
+        },
+        "seconds": 3.275813681073487,
+        "spec": {
+          "controls": true,
+          "experiment": "P-1",
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+          "seed": 11031
+        },
+        "status": "OK"
+      }
+    ]
+  },
+  "status": "PASS",
+  "wall_seconds": 14.20760356169194,
+  "word_blob_ids": {
+    "1094-K8PRE-FULL-WORD.json.gz": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+    "1094-K8S7-FULL-WORD.json.gz": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+    "1195-FULL-WORD.json.gz": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+    "1625-extra-word-566.json.gz": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+    "1625-gauge44-word-566.json.gz": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+    "1672-extra-word-566-554.json.gz": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+    "1672-gauge44-word-566-554.json.gz": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+    "2679-BORROW-WORD-43base.json.gz": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+    "2679-BORROW-WORD-43extra.json.gz": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+    "2745-BORROW-WORD-43base.json.gz": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+    "2745-BORROW-WORD-43extra.json.gz": "583a98c65438b96529e49897c2594aac4134333c",
+    "2766-WORD-base.json.gz": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+    "2766-WORD-extra.json.gz": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz": "0bc4e8c167de63931e5cc208527ad684573a373c",
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+    "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz": "91bd9c68f209ac29e27cac566ff7a78339788553",
+    "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+    "retired5-WORD-base.json.gz": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+    "retired5-WORD-extra.json.gz": "64f2535299938848d62e1a0ab4f5948b28b029a2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "cpu_seconds": 0.027425914000000003,
+  "error": "Traceback (most recent call last):\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/pool.py\", line 104, in _call\n    out = {'status': 'OK', 'result': fn(*args)}\n                                     ~~^^^^^^^\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/word_tasks.py\", line 188, in task\n    return p1(path, args[\"seed\"], controls=args.get(\"controls\", True))\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/word_tasks.py\", line 77, in p1\n    independent = W(str(Path(word.path).resolve()))\nTypeError: 'module' object is not callable\n",
+  "peak_rss_bytes": 650973184,
+  "seconds": 0.027431583032011986,
+  "status": "ERROR",
+  "task": {
+    "controls": true,
+    "experiment": "P-1",
+    "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+    "seed": 11031
+  }
+}

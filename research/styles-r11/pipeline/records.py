@@ -66,10 +66,10 @@ def preregistration(milestone, experiment):
 def run_record(experiment, milestone, seed, status, statistics,
                *, n=0, null=None, wall_seconds=0, cpu_seconds=0,
                peak_rss_bytes=None, words=None, decision=None,
-               run_id=None, additional=None):
+               run_id=None, additional=None, scripts=None):
     assert status in STATUSES
     preg, protocol = preregistration(milestone, experiment)
-    script = source_manifest()
+    script = source_manifest() if scripts is None else scripts
     result = dict(schema_version=1, experiment=experiment, milestone=milestone,
                   recorded_utc=utcnow(), seed=seed, n_permutations=n,
                   word_blob_ids={p['path']: p['git_blob'] for p in provenance(words)},
