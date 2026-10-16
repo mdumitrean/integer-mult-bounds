@@ -1,0 +1,207 @@
+{
+  "cpu_seconds": 4.457375451,
+  "peak_rss_bytes": 829349888,
+  "result": {
+    "N1b": {
+      "accelerated_diagnostics": {
+        "all_pairs_preverified": true,
+        "attempted_moves": 5655,
+        "crossed_pairs": 864918,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "execution": "nearest certified conflict; seed-identical to toolkit window sweep",
+        "invariant_failures": 0,
+        "moved_gates": 4922,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "attribution": {
+        "author": "Marius-Paul Dumitrean",
+        "bytes": 72443,
+        "format": "BORROW-WORD",
+        "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+        "kappa": "0.001717794984118634663827",
+        "local_profile": {
+          "1": 2382,
+          "2": 648,
+          "3": 268,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "pr": 2802,
+        "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 2,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "original_diagnostics": {
+        "attempted_moves": 5655,
+        "cache": {
+          "currsize": 500000,
+          "hits": 176996,
+          "maxsize": 500000,
+          "misses": 2823697
+        },
+        "crossed_pairs": 864918,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4922,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "predicate_certificate": {
+        "all_ordered_pairs_verified": true,
+        "cpu_seconds": 2.9651263520000057,
+        "formal_warp_pairs": 443856,
+        "invariant_failures": 0,
+        "ordered_pairs": 16306337,
+        "scalar_pairs": 15862481,
+        "seconds": 2.967741606757045,
+        "sections": [
+          {
+            "conflicts": 94026,
+            "gates": 3535,
+            "ordered_pairs": 12496225,
+            "section": "A"
+          },
+          {
+            "conflicts": 0,
+            "gates": 176,
+            "ordered_pairs": 30976,
+            "section": "cut"
+          },
+          {
+            "conflicts": 12432,
+            "gates": 1944,
+            "ordered_pairs": 3779136,
+            "section": "B"
+          }
+        ]
+      },
+      "seed": 11031,
+      "seed_identical_order": true,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "sweeps": 1,
+      "timings": {
+        "accelerated_cpu_seconds": 0.0895767460000001,
+        "accelerated_seconds": 0.08957130555063486,
+        "measured_scope": "one sample, excluding constructor and predicate certification",
+        "reference_cpu_seconds": 3.4346632070000003,
+        "reference_seconds": 3.4348957585170865
+      }
+    },
+    "N2": {
+      "all_alphabet_tokens_equal": {
+        "full": true,
+        "mid": true,
+        "op": true,
+        "rank": true,
+        "registers": true,
+        "role": true
+      },
+      "attribution": {
+        "author": "Marius-Paul Dumitrean",
+        "bytes": 72443,
+        "format": "BORROW-WORD",
+        "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+        "kappa": "0.001717794984118634663827",
+        "local_profile": {
+          "1": 2382,
+          "2": 648,
+          "3": 268,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "pr": 2802,
+        "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 2,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "diagnostics": {
+        "acceptance_rate": 0.09485714285714286,
+        "accepted_moves": 83,
+        "attempts": 875,
+        "changed_vertices": 83,
+        "degenerate": false,
+        "feasibility_rejections": 298,
+        "identity_proposals": 394,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 100,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 875
+      },
+      "paid_profile_equal": true,
+      "seed": 11031,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "timings": {
+        "accelerated_cpu_seconds": 0.014289563000000172,
+        "accelerated_seconds": 0.014288780279457569,
+        "measured_scope": "one walk and lazy view; all-alphabet comparison separately timed",
+        "reference_cpu_seconds": 0.6519403979999998,
+        "reference_seconds": 0.650403038598597,
+        "token_comparison_cpu_seconds": 0.24901338899999992,
+        "token_comparison_seconds": 0.2490237196907401
+      }
+    },
+    "attribution": {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "seed": 11031,
+    "status": "PASS"
+  },
+  "seconds": 4.456104119308293,
+  "status": "OK",
+  "task": {
+    "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+    "seed": 11031,
+    "sweeps": 1
+  }
+}

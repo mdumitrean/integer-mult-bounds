@@ -1,0 +1,207 @@
+{
+  "cpu_seconds": 4.081219777,
+  "peak_rss_bytes": 827293696,
+  "result": {
+    "N1b": {
+      "accelerated_diagnostics": {
+        "all_pairs_preverified": true,
+        "attempted_moves": 5473,
+        "crossed_pairs": 828892,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "execution": "nearest certified conflict; seed-identical to toolkit window sweep",
+        "invariant_failures": 0,
+        "moved_gates": 4753,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "attribution": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 57222,
+        "format": "FULL-WORD",
+        "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+        "kappa": "0.001672660197076918",
+        "local_profile": {
+          "1": 2412,
+          "2": 418,
+          "3": 432,
+          "4": 142,
+          "5": 82,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "pin_key": "1094-K8S7-FULL-WORD.json.gz",
+        "pr": 1094,
+        "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+        "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+        "width_inventory": {
+          "4": 56,
+          "5": 32,
+          "7": 30,
+          "8": 122,
+          "9": 240
+        }
+      },
+      "original_diagnostics": {
+        "attempted_moves": 5473,
+        "cache": {
+          "currsize": 500000,
+          "hits": 186093,
+          "maxsize": 500000,
+          "misses": 2637059
+        },
+        "crossed_pairs": 828892,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4753,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "predicate_certificate": {
+        "all_ordered_pairs_verified": true,
+        "cpu_seconds": 2.8918936210000012,
+        "formal_warp_pairs": 0,
+        "invariant_failures": 0,
+        "ordered_pairs": 15348093,
+        "scalar_pairs": 15348093,
+        "seconds": 2.893436380662024,
+        "sections": [
+          {
+            "conflicts": 93458,
+            "gates": 3451,
+            "ordered_pairs": 11909401,
+            "section": "A"
+          },
+          {
+            "conflicts": 0,
+            "gates": 176,
+            "ordered_pairs": 30976,
+            "section": "cut"
+          },
+          {
+            "conflicts": 10508,
+            "gates": 1846,
+            "ordered_pairs": 3407716,
+            "section": "B"
+          }
+        ]
+      },
+      "seed": 29063,
+      "seed_identical_order": true,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "sweeps": 1,
+      "timings": {
+        "accelerated_cpu_seconds": 0.08132678800000015,
+        "accelerated_seconds": 0.08132615778595209,
+        "measured_scope": "one sample, excluding constructor and predicate certification",
+        "reference_cpu_seconds": 2.727191917,
+        "reference_seconds": 2.727247449569404
+      }
+    },
+    "N2": {
+      "all_alphabet_tokens_equal": {
+        "full": true,
+        "mid": true,
+        "op": true,
+        "rank": true,
+        "registers": true,
+        "role": true
+      },
+      "attribution": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 57222,
+        "format": "FULL-WORD",
+        "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+        "kappa": "0.001672660197076918",
+        "local_profile": {
+          "1": 2412,
+          "2": 418,
+          "3": 432,
+          "4": 142,
+          "5": 82,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "pin_key": "1094-K8S7-FULL-WORD.json.gz",
+        "pr": 1094,
+        "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+        "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+        "width_inventory": {
+          "4": 56,
+          "5": 32,
+          "7": 30,
+          "8": 122,
+          "9": 240
+        }
+      },
+      "diagnostics": {
+        "acceptance_rate": 0.043653072946582425,
+        "accepted_moves": 76,
+        "attempts": 1741,
+        "changed_vertices": 76,
+        "degenerate": false,
+        "feasibility_rejections": 818,
+        "identity_proposals": 682,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 165,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 1741
+      },
+      "paid_profile_equal": true,
+      "seed": 29063,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "timings": {
+        "accelerated_cpu_seconds": 0.022987931999999933,
+        "accelerated_seconds": 0.022987310774624348,
+        "measured_scope": "one walk and lazy view; all-alphabet comparison separately timed",
+        "reference_cpu_seconds": 1.0113924870000002,
+        "reference_seconds": 1.009618328884244,
+        "token_comparison_cpu_seconds": 0.22818701100000016,
+        "token_comparison_seconds": 0.22818721644580364
+      }
+    },
+    "attribution": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+      "pin_key": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    "seed": 29063,
+    "status": "PASS"
+  },
+  "seconds": 4.079511635936797,
+  "status": "OK",
+  "task": {
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+    "seed": 29063,
+    "sweeps": 1
+  }
+}

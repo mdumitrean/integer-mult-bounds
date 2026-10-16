@@ -1,0 +1,207 @@
+{
+  "cpu_seconds": 3.977430433,
+  "peak_rss_bytes": 828461056,
+  "result": {
+    "N1b": {
+      "accelerated_diagnostics": {
+        "all_pairs_preverified": true,
+        "attempted_moves": 5473,
+        "crossed_pairs": 825049,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "execution": "nearest certified conflict; seed-identical to toolkit window sweep",
+        "invariant_failures": 0,
+        "moved_gates": 4750,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "attribution": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 57109,
+        "format": "FULL-WORD",
+        "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+        "kappa": null,
+        "local_profile": {
+          "1": 2412,
+          "2": 418,
+          "3": 418,
+          "4": 170,
+          "5": 68,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/1094-K8PRE-FULL-WORD.json.gz",
+        "pin_key": "1094-K8PRE-FULL-WORD.json.gz",
+        "pr": 1094,
+        "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+        "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+        "width_inventory": {
+          "4": 56,
+          "5": 32,
+          "7": 30,
+          "8": 122,
+          "9": 240
+        }
+      },
+      "original_diagnostics": {
+        "attempted_moves": 5473,
+        "cache": {
+          "currsize": 500000,
+          "hits": 185432,
+          "maxsize": 500000,
+          "misses": 2644462
+        },
+        "crossed_pairs": 825049,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4750,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "predicate_certificate": {
+        "all_ordered_pairs_verified": true,
+        "cpu_seconds": 2.887616873,
+        "formal_warp_pairs": 0,
+        "invariant_failures": 0,
+        "ordered_pairs": 15348093,
+        "scalar_pairs": 15348093,
+        "seconds": 2.8896480314433575,
+        "sections": [
+          {
+            "conflicts": 93458,
+            "gates": 3451,
+            "ordered_pairs": 11909401,
+            "section": "A"
+          },
+          {
+            "conflicts": 0,
+            "gates": 176,
+            "ordered_pairs": 30976,
+            "section": "cut"
+          },
+          {
+            "conflicts": 10480,
+            "gates": 1846,
+            "ordered_pairs": 3407716,
+            "section": "B"
+          }
+        ]
+      },
+      "seed": 29063,
+      "seed_identical_order": true,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "sweeps": 1,
+      "timings": {
+        "accelerated_cpu_seconds": 0.08278384999999977,
+        "accelerated_seconds": 0.08278254885226488,
+        "measured_scope": "one sample, excluding constructor and predicate certification",
+        "reference_cpu_seconds": 2.650075834,
+        "reference_seconds": 2.650128628127277
+      }
+    },
+    "N2": {
+      "all_alphabet_tokens_equal": {
+        "full": true,
+        "mid": true,
+        "op": true,
+        "rank": true,
+        "registers": true,
+        "role": true
+      },
+      "attribution": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 57109,
+        "format": "FULL-WORD",
+        "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+        "kappa": null,
+        "local_profile": {
+          "1": 2412,
+          "2": 418,
+          "3": 418,
+          "4": 170,
+          "5": 68,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/1094-K8PRE-FULL-WORD.json.gz",
+        "pin_key": "1094-K8PRE-FULL-WORD.json.gz",
+        "pr": 1094,
+        "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+        "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+        "width_inventory": {
+          "4": 56,
+          "5": 32,
+          "7": 30,
+          "8": 122,
+          "9": 240
+        }
+      },
+      "diagnostics": {
+        "acceptance_rate": 0.039792387543252594,
+        "accepted_moves": 69,
+        "attempts": 1734,
+        "changed_vertices": 69,
+        "degenerate": false,
+        "feasibility_rejections": 818,
+        "identity_proposals": 679,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 168,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 1734
+      },
+      "paid_profile_equal": true,
+      "seed": 29063,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "timings": {
+        "accelerated_cpu_seconds": 0.023436783999999822,
+        "accelerated_seconds": 0.02343551442027092,
+        "measured_scope": "one walk and lazy view; all-alphabet comparison separately timed",
+        "reference_cpu_seconds": 0.9588955180000003,
+        "reference_seconds": 0.9577907547354698,
+        "token_comparison_cpu_seconds": 0.24984651199999997,
+        "token_comparison_seconds": 0.24984258133918047
+      }
+    },
+    "attribution": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/1094-K8PRE-FULL-WORD.json.gz",
+      "pin_key": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    "seed": 29063,
+    "status": "PASS"
+  },
+  "seconds": 3.9763995492830873,
+  "status": "OK",
+  "task": {
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1094-K8PRE-FULL-WORD.json.gz",
+    "seed": 29063,
+    "sweeps": 1
+  }
+}

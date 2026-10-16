@@ -143,25 +143,34 @@ def run_pool(fn, args_list, workers=None, timeout=300, rss_gib=4.0,
         pool = mp.get_context('fork').Pool(
             processes=workers, maxtasksperchild=maxtasksperchild,
             initializer=_limits, initargs=(rss_gib,))
-        out = []
+        out = [None] * len(args_list)
         try:
             handles = {}
             submitted = 0
-            for i in range(len(args_list)):
-                while submitted < min(len(args_list), i + workers):
-                    handles[submitted] = pool.apply_async(
-                        _call, (fn, args_list[submitted], timeout))
+            completed = 0
+            while completed < len(args_list):
+                while submitted < len(args_list) and len(handles) < workers:
+                    handles[submitted] = (time.monotonic(), pool.apply_async(
+                        _call, (fn, args_list[submitted], timeout)))
                     submitted += 1
-                try:
-                    item = handles.pop(i).get(timeout=timeout + 15)
-                except mp.TimeoutError:
-                    item = {'status': 'ERROR',
-                            'error': 'worker lost after execution deadline; no retry',
-                            'seconds': timeout + 15, 'cpu_seconds': None,
-                            'peak_rss_bytes': None}
-                out.append(item)
-                if on_result:
-                    on_result(i, item)
+                ready = [i for i, (start, h) in handles.items()
+                         if h.ready() or time.monotonic() - start > timeout + 15]
+                if not ready:
+                    time.sleep(0.05)
+                    continue
+                for i in ready:
+                    start, handle = handles.pop(i)
+                    try:
+                        item = handle.get(timeout=0.01)
+                    except mp.TimeoutError:
+                        item = {'status': 'ERROR',
+                                'error': 'worker lost after execution deadline; no retry',
+                                'seconds': time.monotonic() - start, 'cpu_seconds': None,
+                                'peak_rss_bytes': None}
+                    out[i] = item
+                    completed += 1
+                    if on_result:
+                        on_result(i, item)
         finally:
             pool.terminate()
             pool.join()

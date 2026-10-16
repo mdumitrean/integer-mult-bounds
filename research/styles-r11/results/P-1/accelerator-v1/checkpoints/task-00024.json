@@ -1,0 +1,207 @@
+{
+  "cpu_seconds": 4.39110206,
+  "peak_rss_bytes": 828514304,
+  "result": {
+    "N1b": {
+      "accelerated_diagnostics": {
+        "all_pairs_preverified": true,
+        "attempted_moves": 5648,
+        "crossed_pairs": 883100,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "execution": "nearest certified conflict; seed-identical to toolkit window sweep",
+        "invariant_failures": 0,
+        "moved_gates": 4920,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "attribution": {
+        "author": "DavidAriasC",
+        "bytes": 72192,
+        "format": "BORROW-WORD",
+        "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+        "kappa": "0.001717256973467002308270",
+        "local_profile": {
+          "1": 2364,
+          "2": 647,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/2766-WORD-extra.json.gz",
+        "pin_key": "2766-WORD-extra.json.gz",
+        "pr": 2766,
+        "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+        "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "original_diagnostics": {
+        "attempted_moves": 5648,
+        "cache": {
+          "currsize": 500000,
+          "hits": 180829,
+          "maxsize": 500000,
+          "misses": 2845192
+        },
+        "crossed_pairs": 883100,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4920,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "predicate_certificate": {
+        "all_ordered_pairs_verified": true,
+        "cpu_seconds": 3.005089982000001,
+        "formal_warp_pairs": 416689,
+        "invariant_failures": 0,
+        "ordered_pairs": 16279170,
+        "scalar_pairs": 15862481,
+        "seconds": 3.0068958615884185,
+        "sections": [
+          {
+            "conflicts": 94026,
+            "gates": 3535,
+            "ordered_pairs": 12496225,
+            "section": "A"
+          },
+          {
+            "conflicts": 0,
+            "gates": 176,
+            "ordered_pairs": 30976,
+            "section": "cut"
+          },
+          {
+            "conflicts": 12208,
+            "gates": 1937,
+            "ordered_pairs": 3751969,
+            "section": "B"
+          }
+        ]
+      },
+      "seed": 11031,
+      "seed_identical_order": true,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "sweeps": 1,
+      "timings": {
+        "accelerated_cpu_seconds": 0.08411073899999977,
+        "accelerated_seconds": 0.0844563189893961,
+        "measured_scope": "one sample, excluding constructor and predicate certification",
+        "reference_cpu_seconds": 2.988700026,
+        "reference_seconds": 2.9887053994461894
+      }
+    },
+    "N2": {
+      "all_alphabet_tokens_equal": {
+        "full": true,
+        "mid": true,
+        "op": true,
+        "rank": true,
+        "registers": true,
+        "role": true
+      },
+      "attribution": {
+        "author": "DavidAriasC",
+        "bytes": 72192,
+        "format": "BORROW-WORD",
+        "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+        "kappa": "0.001717256973467002308270",
+        "local_profile": {
+          "1": 2364,
+          "2": 647,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/2766-WORD-extra.json.gz",
+        "pin_key": "2766-WORD-extra.json.gz",
+        "pr": 2766,
+        "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+        "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "diagnostics": {
+        "acceptance_rate": 0.1,
+        "accepted_moves": 91,
+        "attempts": 910,
+        "changed_vertices": 91,
+        "degenerate": false,
+        "feasibility_rejections": 306,
+        "identity_proposals": 417,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 96,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 910
+      },
+      "paid_profile_equal": true,
+      "seed": 11031,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "timings": {
+        "accelerated_cpu_seconds": 0.014381826000000153,
+        "accelerated_seconds": 0.014381333254277706,
+        "measured_scope": "one walk and lazy view; all-alphabet comparison separately timed",
+        "reference_cpu_seconds": 1.0257420469999996,
+        "reference_seconds": 1.0244393618777394,
+        "token_comparison_cpu_seconds": 0.26389208700000033,
+        "token_comparison_seconds": 0.2639439571648836
+      }
+    },
+    "attribution": {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/2766-WORD-extra.json.gz",
+      "pin_key": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "seed": 11031,
+    "status": "PASS"
+  },
+  "seconds": 4.390215772204101,
+  "status": "OK",
+  "task": {
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-extra.json.gz",
+    "seed": 11031,
+    "sweeps": 1
+  }
+}

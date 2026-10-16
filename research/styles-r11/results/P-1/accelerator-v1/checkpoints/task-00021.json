@@ -1,0 +1,210 @@
+{
+  "cpu_seconds": 4.350860066,
+  "peak_rss_bytes": 828510208,
+  "result": {
+    "N1b": {
+      "accelerated_diagnostics": {
+        "all_pairs_preverified": true,
+        "attempted_moves": 5646,
+        "crossed_pairs": 904834,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "execution": "nearest certified conflict; seed-identical to toolkit window sweep",
+        "invariant_failures": 0,
+        "moved_gates": 4917,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "attribution": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 71242,
+        "format": "BORROW-WORD",
+        "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+        "kappa": "0.0017161404259974415",
+        "local_profile": {
+          "1": 2370,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 4,
+          "8": 4
+        },
+        "path": "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "pin_key": "2745-BORROW-WORD-43extra.json.gz",
+        "pr": 2745,
+        "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+        "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "original_diagnostics": {
+        "attempted_moves": 5646,
+        "cache": {
+          "currsize": 500000,
+          "hits": 180281,
+          "maxsize": 500000,
+          "misses": 2870856
+        },
+        "crossed_pairs": 904834,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4917,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "predicate_certificate": {
+        "all_ordered_pairs_verified": true,
+        "cpu_seconds": 2.9745151529999987,
+        "formal_warp_pairs": 416429,
+        "invariant_failures": 0,
+        "ordered_pairs": 16271426,
+        "scalar_pairs": 15854997,
+        "seconds": 2.9769934378564358,
+        "sections": [
+          {
+            "conflicts": 94026,
+            "gates": 3535,
+            "ordered_pairs": 12496225,
+            "section": "A"
+          },
+          {
+            "conflicts": 0,
+            "gates": 176,
+            "ordered_pairs": 30976,
+            "section": "cut"
+          },
+          {
+            "conflicts": 12160,
+            "gates": 1935,
+            "ordered_pairs": 3744225,
+            "section": "B"
+          }
+        ]
+      },
+      "seed": 29063,
+      "seed_identical_order": true,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "sweeps": 1,
+      "timings": {
+        "accelerated_cpu_seconds": 0.08379509400000007,
+        "accelerated_seconds": 0.08418269362300634,
+        "measured_scope": "one sample, excluding constructor and predicate certification",
+        "reference_cpu_seconds": 2.9661239129999997,
+        "reference_seconds": 2.966119303368032
+      }
+    },
+    "N2": {
+      "all_alphabet_tokens_equal": {
+        "full": true,
+        "mid": true,
+        "op": true,
+        "rank": true,
+        "registers": true,
+        "role": true
+      },
+      "attribution": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 71242,
+        "format": "BORROW-WORD",
+        "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+        "kappa": "0.0017161404259974415",
+        "local_profile": {
+          "1": 2370,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 4,
+          "8": 4
+        },
+        "path": "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "pin_key": "2745-BORROW-WORD-43extra.json.gz",
+        "pr": 2745,
+        "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+        "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "diagnostics": {
+        "acceptance_rate": 0.1050328227571116,
+        "accepted_moves": 96,
+        "attempts": 914,
+        "changed_vertices": 96,
+        "degenerate": false,
+        "feasibility_rejections": 311,
+        "identity_proposals": 412,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 95,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 914
+      },
+      "paid_profile_equal": true,
+      "seed": 29063,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "timings": {
+        "accelerated_cpu_seconds": 0.014644087999999833,
+        "accelerated_seconds": 0.014642545953392982,
+        "measured_scope": "one walk and lazy view; all-alphabet comparison separately timed",
+        "reference_cpu_seconds": 1.0209734590000004,
+        "reference_seconds": 1.0198529092594981,
+        "token_comparison_cpu_seconds": 0.24912499000000032,
+        "token_comparison_seconds": 0.2491254210472107
+      }
+    },
+    "attribution": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+      "pin_key": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "seed": 29063,
+    "status": "PASS"
+  },
+  "seconds": 4.350126429460943,
+  "status": "OK",
+  "task": {
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+    "seed": 29063,
+    "sweeps": 1
+  }
+}

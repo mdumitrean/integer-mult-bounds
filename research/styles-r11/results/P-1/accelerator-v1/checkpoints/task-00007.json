@@ -1,0 +1,207 @@
+{
+  "cpu_seconds": 4.235936736,
+  "peak_rss_bytes": 828477440,
+  "result": {
+    "N1b": {
+      "accelerated_diagnostics": {
+        "all_pairs_preverified": true,
+        "attempted_moves": 5477,
+        "crossed_pairs": 813587,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "execution": "nearest certified conflict; seed-identical to toolkit window sweep",
+        "invariant_failures": 0,
+        "moved_gates": 4743,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "attribution": {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "bytes": 57412,
+        "format": "FULL-WORD",
+        "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+        "kappa": "0.001676896669021299",
+        "local_profile": {
+          "1": 2339,
+          "2": 510,
+          "3": 419,
+          "4": 126,
+          "5": 82,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/1625-extra-word-566.json.gz",
+        "pin_key": "1625-extra-word-566.json.gz",
+        "pr": 1625,
+        "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+        "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+        "width_inventory": {
+          "4": 40,
+          "5": 48,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      "original_diagnostics": {
+        "attempted_moves": 5477,
+        "cache": {
+          "currsize": 500000,
+          "hits": 182387,
+          "maxsize": 500000,
+          "misses": 2618090
+        },
+        "crossed_pairs": 813587,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4743,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "predicate_certificate": {
+        "all_ordered_pairs_verified": true,
+        "cpu_seconds": 2.788867658999999,
+        "formal_warp_pairs": 0,
+        "invariant_failures": 0,
+        "ordered_pairs": 15362877,
+        "scalar_pairs": 15362877,
+        "seconds": 2.790872795507312,
+        "sections": [
+          {
+            "conflicts": 93458,
+            "gates": 3451,
+            "ordered_pairs": 11909401,
+            "section": "A"
+          },
+          {
+            "conflicts": 0,
+            "gates": 176,
+            "ordered_pairs": 30976,
+            "section": "cut"
+          },
+          {
+            "conflicts": 10586,
+            "gates": 1850,
+            "ordered_pairs": 3422500,
+            "section": "B"
+          }
+        ]
+      },
+      "seed": 29063,
+      "seed_identical_order": true,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "sweeps": 1,
+      "timings": {
+        "accelerated_cpu_seconds": 0.08289467800000017,
+        "accelerated_seconds": 0.08289034198969603,
+        "measured_scope": "one sample, excluding constructor and predicate certification",
+        "reference_cpu_seconds": 2.8774058449999997,
+        "reference_seconds": 2.877528444863856
+      }
+    },
+    "N2": {
+      "all_alphabet_tokens_equal": {
+        "full": true,
+        "mid": true,
+        "op": true,
+        "rank": true,
+        "registers": true,
+        "role": true
+      },
+      "attribution": {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "bytes": 57412,
+        "format": "FULL-WORD",
+        "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+        "kappa": "0.001676896669021299",
+        "local_profile": {
+          "1": 2339,
+          "2": 510,
+          "3": 419,
+          "4": 126,
+          "5": 82,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/1625-extra-word-566.json.gz",
+        "pin_key": "1625-extra-word-566.json.gz",
+        "pr": 1625,
+        "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+        "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+        "width_inventory": {
+          "4": 40,
+          "5": 48,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      "diagnostics": {
+        "acceptance_rate": 0.039660056657223795,
+        "accepted_moves": 70,
+        "attempts": 1765,
+        "changed_vertices": 70,
+        "degenerate": false,
+        "feasibility_rejections": 838,
+        "identity_proposals": 699,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 158,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 1765
+      },
+      "paid_profile_equal": true,
+      "seed": 29063,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "timings": {
+        "accelerated_cpu_seconds": 0.02141529399999964,
+        "accelerated_seconds": 0.02141229622066021,
+        "measured_scope": "one walk and lazy view; all-alphabet comparison separately timed",
+        "reference_cpu_seconds": 1.0103990139999999,
+        "reference_seconds": 1.0088081751018763,
+        "token_comparison_cpu_seconds": 0.22569190300000042,
+        "token_comparison_seconds": 0.22569174133241177
+      }
+    },
+    "attribution": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/1625-extra-word-566.json.gz",
+      "pin_key": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "seed": 29063,
+    "status": "PASS"
+  },
+  "seconds": 4.2344862734898925,
+  "status": "OK",
+  "task": {
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1625-extra-word-566.json.gz",
+    "seed": 29063,
+    "sweeps": 1
+  }
+}

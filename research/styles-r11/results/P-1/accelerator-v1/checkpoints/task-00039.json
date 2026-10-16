@@ -1,0 +1,207 @@
+{
+  "cpu_seconds": 4.244771965,
+  "peak_rss_bytes": 828530688,
+  "result": {
+    "N1b": {
+      "accelerated_diagnostics": {
+        "all_pairs_preverified": true,
+        "attempted_moves": 5653,
+        "crossed_pairs": 868218,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "execution": "nearest certified conflict; seed-identical to toolkit window sweep",
+        "invariant_failures": 0,
+        "moved_gates": 4903,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "attribution": {
+        "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+        "bytes": 72354,
+        "format": "BORROW-WORD",
+        "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+        "kappa": "0.001717409316335491643448",
+        "local_profile": {
+          "1": 2386,
+          "2": 642,
+          "3": 274,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/retired5-WORD-base.json.gz",
+        "pin_key": "retired5-WORD-base.json.gz",
+        "pr": null,
+        "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+        "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 4,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "original_diagnostics": {
+        "attempted_moves": 5653,
+        "cache": {
+          "currsize": 500000,
+          "hits": 180978,
+          "maxsize": 500000,
+          "misses": 2828579
+        },
+        "crossed_pairs": 868218,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4903,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "predicate_certificate": {
+        "all_ordered_pairs_verified": true,
+        "cpu_seconds": 2.979081332000007,
+        "formal_warp_pairs": 436084,
+        "invariant_failures": 0,
+        "ordered_pairs": 16298565,
+        "scalar_pairs": 15862481,
+        "seconds": 2.9809617353603244,
+        "sections": [
+          {
+            "conflicts": 94026,
+            "gates": 3535,
+            "ordered_pairs": 12496225,
+            "section": "A"
+          },
+          {
+            "conflicts": 0,
+            "gates": 176,
+            "ordered_pairs": 30976,
+            "section": "cut"
+          },
+          {
+            "conflicts": 12368,
+            "gates": 1942,
+            "ordered_pairs": 3771364,
+            "section": "B"
+          }
+        ]
+      },
+      "seed": 29063,
+      "seed_identical_order": true,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "sweeps": 1,
+      "timings": {
+        "accelerated_cpu_seconds": 0.086250261,
+        "accelerated_seconds": 0.0867402981966734,
+        "measured_scope": "one sample, excluding constructor and predicate certification",
+        "reference_cpu_seconds": 2.932685366,
+        "reference_seconds": 2.9327716063708067
+      }
+    },
+    "N2": {
+      "all_alphabet_tokens_equal": {
+        "full": true,
+        "mid": true,
+        "op": true,
+        "rank": true,
+        "registers": true,
+        "role": true
+      },
+      "attribution": {
+        "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+        "bytes": 72354,
+        "format": "BORROW-WORD",
+        "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+        "kappa": "0.001717409316335491643448",
+        "local_profile": {
+          "1": 2386,
+          "2": 642,
+          "3": 274,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/retired5-WORD-base.json.gz",
+        "pin_key": "retired5-WORD-base.json.gz",
+        "pr": null,
+        "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+        "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 4,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "diagnostics": {
+        "acceptance_rate": 0.08936651583710407,
+        "accepted_moves": 79,
+        "attempts": 884,
+        "changed_vertices": 79,
+        "degenerate": false,
+        "feasibility_rejections": 286,
+        "identity_proposals": 414,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 105,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 884
+      },
+      "paid_profile_equal": true,
+      "seed": 29063,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "timings": {
+        "accelerated_cpu_seconds": 0.014539311000000055,
+        "accelerated_seconds": 0.01453808881342411,
+        "measured_scope": "one walk and lazy view; all-alphabet comparison separately timed",
+        "reference_cpu_seconds": 0.9488516600000003,
+        "reference_seconds": 0.9487937726080418,
+        "token_comparison_cpu_seconds": 0.24877078600000013,
+        "token_comparison_seconds": 0.24878583196550608
+      }
+    },
+    "attribution": {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/retired5-WORD-base.json.gz",
+      "pin_key": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "seed": 29063,
+    "status": "PASS"
+  },
+  "seconds": 4.245326193980873,
+  "status": "OK",
+  "task": {
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/retired5-WORD-base.json.gz",
+    "seed": 29063,
+    "sweeps": 1
+  }
+}

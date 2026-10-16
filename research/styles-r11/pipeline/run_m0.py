@@ -53,7 +53,7 @@ def run_small(experiment,attempt):
     scripts = R.source_manifest()
     R.registry_update(experiment,'running',attempt=attempt,preregistration_sha256=R.sha256(preg))
     t0,c0=time.monotonic(),time.process_time()
-    specs=[]; prep_errors=[]; rss=4; timeout=300
+    specs=[]; prep_errors=[]; rss=4; timeout=300; control_outputs=[]
     words=list(R.pins())
     try:
         if experiment in ('P-1','L-2'):
@@ -79,7 +79,7 @@ def run_small(experiment,attempt):
             indexes=module.prepare(R.ROOT,names)
             specs=[dict(experiment=experiment,index=x['index'],seed=s,n_permutations=2000,budget_seconds=300)
                    for x in indexes for s in SEEDS]
-            rss=6;timeout=600 if experiment=='P-3' else 360
+            rss=6;timeout=600
         elif experiment=='S-1':
             import matching as module
             indexes=module.prepare([pin_path(name) for name in words])
@@ -98,6 +98,18 @@ def run_small(experiment,attempt):
     outputs=[]
     if specs:
         try:
+            if experiment=='P-3':
+                control_specs=[dict(experiment='P3-CEILING',index=x['index'],seed=SEEDS[0]) for x in indexes]
+                control_outputs=pool.run_pool(module.task,[(s,) for s in control_specs],
+                    workers=pool.worker_count(),timeout=600,rss_gib=6,
+                    projection_path=directory/'CONTROL-MEMORY-PROJECTION.json',
+                    on_result=checkpoint_callback(directory/'controls',control_specs))
+            if experiment=='S-1':
+                control_specs=[dict(seed=s) for s in SEEDS]
+                control_outputs=pool.run_pool(module.lineage_task,[(s,) for s in control_specs],
+                    workers=pool.worker_count(),timeout=300,rss_gib=4,
+                    projection_path=directory/'LINEAGE-MEMORY-PROJECTION.json',
+                    on_result=checkpoint_callback(directory/'lineage',control_specs))
             outputs=pool.run_pool(module.task,[(s,) for s in specs],workers=pool.worker_count(),
                 timeout=timeout,rss_gib=rss,projection_path=directory/'MEMORY-PROJECTION.json',
                 on_result=checkpoint_callback(directory/'checkpoints',specs))
@@ -110,12 +122,27 @@ def run_small(experiment,attempt):
         pairs=[(s,o) for s,o in zip(specs,outputs) if s['seed']==seed]
         errors=[e for e in prep_errors if e['seed']==seed]
         status=status_of([o for _,o in pairs]) if pairs else 'ERROR'
+        aggregate=None
+        if experiment=='S-1':
+            lineage=control_outputs[SEEDS.index(seed)] if len(control_outputs)==2 else None
+            ledger_registry=next(e for e in json.loads((R.PKG/'EXPERIMENTS.json').read_text())['experiments'] if e['id']=='L-7')
+            ledger=None
+            for path in ledger_registry.get('result_files',[]):
+                record=json.loads((R.PKG/path).read_text())
+                if record['seed']==seed:
+                    completed=record['statistics']['tasks']
+                    if completed and completed[0]['status']=='OK': ledger=completed[0]['result']
+            aggregate=module.summarize_s1([o for _,o in pairs],lineage,ledger,seed)
+            status=aggregate['status']
         if errors: status='ERROR'
-        data=dict(preparation=prep,preparation_errors=errors,
+        data=dict(preparation=prep,preparation_errors=errors,once_per_word_controls=control_outputs,aggregate=aggregate,
                   tasks=[dict(spec=s,**o) for s,o in pairs])
-        cpu=prep['cpu_seconds']/2 + sum(o.get('cpu_seconds') or 0 for _,o in pairs)
+        cpu=prep['cpu_seconds']/2 + sum(o.get('cpu_seconds') or 0 for _,o in pairs) + sum(o.get('cpu_seconds') or 0 for o in control_outputs)/2
+        ns=dict(model=protocol['null_model'],mean=None,sd=None,empirical_p=None,
+                by_task=[o['result'].get('null_summary') for _,o in pairs if o['status']=='OK'])
         paths.append(R.run_record(experiment,'M0',seed,status,data,
             n=2000 if experiment in ('L-6','L-7','S-1','S-6') else 0,
+            null=ns,
             wall_seconds=time.monotonic()-t0,cpu_seconds=cpu,
             peak_rss_bytes=max([prep['peak_rss_bytes']]+[o.get('peak_rss_bytes') or 0 for _,o in pairs]),
             words=words,run_id=attempt+'/seed-'+str(seed),scripts=scripts,
@@ -136,7 +163,7 @@ class BudgetExhausted(Exception):
     pass
 
 
-def run_p2(attempt):
+def run_p2(attempt, accelerated=False):
     import word_tasks as module
     preg, protocol = R.preregistration('M0','P-2')
     scripts=R.source_manifest()
@@ -148,7 +175,19 @@ def run_p2(attempt):
         names.append(key)
     tprep,cprep=time.monotonic(),time.process_time()
     module.prepare([pin_path(n) for n in names],controls=True)
-    prep=dict(wall_seconds=time.monotonic()-tprep,cpu_seconds=time.process_time()-cprep,peak_rss_bytes=peak())
+    acceleration=None
+    if accelerated:
+        verification=R.RESULTS/'P-1'/'accelerator-v1'/'CONFIRMATION.json'
+        verified=json.loads(verification.read_text())
+        assert verified['status']=='PASS','accelerator has not passed exact verification'
+        checked=json.loads((R.PKG/verified['result_files'][0]).read_text())['script_sha256']
+        for filename in ('word_commute_fast.py','word_frame_fast.py','nulls.py','wordio.py','word_tasks.py'):
+            key='research/styles-r11/pipeline/'+filename
+            assert R.sha256(R.PKG/'pipeline'/filename)==checked[key],('validated code changed',filename)
+        import word_frame_fast
+        acceleration=word_frame_fast.accelerate(module,enabled=True)
+        acceleration['verification_file']=str(verification.relative_to(R.PKG))
+    prep=dict(wall_seconds=time.monotonic()-tprep,cpu_seconds=time.process_time()-cprep,peak_rss_bytes=peak(),acceleration=acceleration)
     result_paths=[]
     for seed in SEEDS:
         directory=R.RESULTS/'P-2'/attempt/('seed-'+str(seed))
@@ -223,10 +262,11 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument('experiment')
     p.add_argument('--attempt',default='v1')
+    p.add_argument('--accelerated',action='store_true')
     args=p.parse_args()
     os.chdir(R.ROOT)
     if args.experiment=='P-2':
-        run_p2(args.attempt)
+        run_p2(args.attempt,args.accelerated)
     else:
         run_small(args.experiment,args.attempt)
 

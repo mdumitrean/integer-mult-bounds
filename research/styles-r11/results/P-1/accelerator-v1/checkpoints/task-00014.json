@@ -1,0 +1,207 @@
+{
+  "cpu_seconds": 4.444086208,
+  "peak_rss_bytes": 830590976,
+  "result": {
+    "N1b": {
+      "accelerated_diagnostics": {
+        "all_pairs_preverified": true,
+        "attempted_moves": 5654,
+        "crossed_pairs": 888243,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "execution": "nearest certified conflict; seed-identical to toolkit window sweep",
+        "invariant_failures": 0,
+        "moved_gates": 4956,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "attribution": {
+        "author": "Philippe Van Velzen (philippeVV)",
+        "bytes": 71364,
+        "format": "BORROW-WORD",
+        "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+        "kappa": null,
+        "local_profile": {
+          "1": 2374,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 8
+        },
+        "path": "research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+        "pin_key": "2679-BORROW-WORD-43base.json.gz",
+        "pr": 2679,
+        "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+        "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "original_diagnostics": {
+        "attempted_moves": 5654,
+        "cache": {
+          "currsize": 500000,
+          "hits": 183045,
+          "maxsize": 500000,
+          "misses": 2854289
+        },
+        "crossed_pairs": 888243,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4956,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "predicate_certificate": {
+        "all_ordered_pairs_verified": true,
+        "cpu_seconds": 3.0391189800000014,
+        "formal_warp_pairs": 416813,
+        "invariant_failures": 0,
+        "ordered_pairs": 16328050,
+        "scalar_pairs": 15911237,
+        "seconds": 3.0407288623973727,
+        "sections": [
+          {
+            "conflicts": 94026,
+            "gates": 3543,
+            "ordered_pairs": 12552849,
+            "section": "A"
+          },
+          {
+            "conflicts": 0,
+            "gates": 176,
+            "ordered_pairs": 30976,
+            "section": "cut"
+          },
+          {
+            "conflicts": 12160,
+            "gates": 1935,
+            "ordered_pairs": 3744225,
+            "section": "B"
+          }
+        ]
+      },
+      "seed": 11031,
+      "seed_identical_order": true,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "sweeps": 1,
+      "timings": {
+        "accelerated_cpu_seconds": 0.10022527200000031,
+        "accelerated_seconds": 0.10021901223808527,
+        "measured_scope": "one sample, excluding constructor and predicate certification",
+        "reference_cpu_seconds": 3.392043828,
+        "reference_seconds": 3.39199554361403
+      }
+    },
+    "N2": {
+      "all_alphabet_tokens_equal": {
+        "full": true,
+        "mid": true,
+        "op": true,
+        "rank": true,
+        "registers": true,
+        "role": true
+      },
+      "attribution": {
+        "author": "Philippe Van Velzen (philippeVV)",
+        "bytes": 71364,
+        "format": "BORROW-WORD",
+        "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+        "kappa": null,
+        "local_profile": {
+          "1": 2374,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 8
+        },
+        "path": "research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+        "pin_key": "2679-BORROW-WORD-43base.json.gz",
+        "pr": 2679,
+        "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+        "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "diagnostics": {
+        "acceptance_rate": 0.10560344827586207,
+        "accepted_moves": 98,
+        "attempts": 928,
+        "changed_vertices": 98,
+        "degenerate": false,
+        "feasibility_rejections": 336,
+        "identity_proposals": 394,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 100,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 928
+      },
+      "paid_profile_equal": true,
+      "seed": 11031,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "timings": {
+        "accelerated_cpu_seconds": 0.015027778000000325,
+        "accelerated_seconds": 0.015052608214318752,
+        "measured_scope": "one walk and lazy view; all-alphabet comparison separately timed",
+        "reference_cpu_seconds": 0.6740344050000004,
+        "reference_seconds": 0.6740348916500807,
+        "token_comparison_cpu_seconds": 0.24563217000000037,
+        "token_comparison_seconds": 0.2456329884007573
+      }
+    },
+    "attribution": {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+      "pin_key": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "seed": 11031,
+    "status": "PASS"
+  },
+  "seconds": 4.444080401211977,
+  "status": "OK",
+  "task": {
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+    "seed": 11031,
+    "sweeps": 1
+  }
+}

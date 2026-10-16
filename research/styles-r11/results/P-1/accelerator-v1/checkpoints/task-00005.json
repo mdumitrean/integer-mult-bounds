@@ -1,0 +1,207 @@
+{
+  "cpu_seconds": 3.914478925,
+  "peak_rss_bytes": 828473344,
+  "result": {
+    "N1b": {
+      "accelerated_diagnostics": {
+        "all_pairs_preverified": true,
+        "attempted_moves": 5471,
+        "crossed_pairs": 817220,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "execution": "nearest certified conflict; seed-identical to toolkit window sweep",
+        "invariant_failures": 0,
+        "moved_gates": 4752,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "attribution": {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "bytes": 57307,
+        "format": "FULL-WORD",
+        "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+        "kappa": "0.001675658002271934",
+        "local_profile": {
+          "1": 2358,
+          "2": 504,
+          "3": 408,
+          "4": 134,
+          "5": 80,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/1195-FULL-WORD.json.gz",
+        "pin_key": "1195-FULL-WORD.json.gz",
+        "pr": 1195,
+        "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+        "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+        "width_inventory": {
+          "4": 44,
+          "5": 44,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      "original_diagnostics": {
+        "attempted_moves": 5471,
+        "cache": {
+          "currsize": 500000,
+          "hits": 184391,
+          "maxsize": 500000,
+          "misses": 2621677
+        },
+        "crossed_pairs": 817220,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4752,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "predicate_certificate": {
+        "all_ordered_pairs_verified": true,
+        "cpu_seconds": 2.8399853349999997,
+        "formal_warp_pairs": 0,
+        "invariant_failures": 0,
+        "ordered_pairs": 15340713,
+        "scalar_pairs": 15340713,
+        "seconds": 2.841786210425198,
+        "sections": [
+          {
+            "conflicts": 93458,
+            "gates": 3451,
+            "ordered_pairs": 11909401,
+            "section": "A"
+          },
+          {
+            "conflicts": 0,
+            "gates": 176,
+            "ordered_pairs": 30976,
+            "section": "cut"
+          },
+          {
+            "conflicts": 10488,
+            "gates": 1844,
+            "ordered_pairs": 3400336,
+            "section": "B"
+          }
+        ]
+      },
+      "seed": 29063,
+      "seed_identical_order": true,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "sweeps": 1,
+      "timings": {
+        "accelerated_cpu_seconds": 0.08155710999999988,
+        "accelerated_seconds": 0.08155572973191738,
+        "measured_scope": "one sample, excluding constructor and predicate certification",
+        "reference_cpu_seconds": 2.6193190740000003,
+        "reference_seconds": 2.6193768568336964
+      }
+    },
+    "N2": {
+      "all_alphabet_tokens_equal": {
+        "full": true,
+        "mid": true,
+        "op": true,
+        "rank": true,
+        "registers": true,
+        "role": true
+      },
+      "attribution": {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "bytes": 57307,
+        "format": "FULL-WORD",
+        "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+        "kappa": "0.001675658002271934",
+        "local_profile": {
+          "1": 2358,
+          "2": 504,
+          "3": 408,
+          "4": 134,
+          "5": 80,
+          "8": 8
+        },
+        "path": "research/styles-r11/data/words/1195-FULL-WORD.json.gz",
+        "pin_key": "1195-FULL-WORD.json.gz",
+        "pr": 1195,
+        "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+        "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+        "width_inventory": {
+          "4": 44,
+          "5": 44,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      "diagnostics": {
+        "acceptance_rate": 0.04647160068846816,
+        "accepted_moves": 81,
+        "attempts": 1743,
+        "changed_vertices": 81,
+        "degenerate": false,
+        "feasibility_rejections": 858,
+        "identity_proposals": 642,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 162,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 1743
+      },
+      "paid_profile_equal": true,
+      "seed": 29063,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "timings": {
+        "accelerated_cpu_seconds": 0.024848481000000255,
+        "accelerated_seconds": 0.024846339598298073,
+        "measured_scope": "one walk and lazy view; all-alphabet comparison separately timed",
+        "reference_cpu_seconds": 0.9198990569999999,
+        "reference_seconds": 0.9194961469620466,
+        "token_comparison_cpu_seconds": 0.25807517099999977,
+        "token_comparison_seconds": 0.2580716470256448
+      }
+    },
+    "attribution": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/1195-FULL-WORD.json.gz",
+      "pin_key": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "seed": 29063,
+    "status": "PASS"
+  },
+  "seconds": 3.914149919524789,
+  "status": "OK",
+  "task": {
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1195-FULL-WORD.json.gz",
+    "seed": 29063,
+    "sweeps": 1
+  }
+}

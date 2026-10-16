@@ -1,0 +1,210 @@
+{
+  "cpu_seconds": 4.333806689,
+  "peak_rss_bytes": 828510208,
+  "result": {
+    "N1b": {
+      "accelerated_diagnostics": {
+        "all_pairs_preverified": true,
+        "attempted_moves": 5598,
+        "crossed_pairs": 862096,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "execution": "nearest certified conflict; seed-identical to toolkit window sweep",
+        "invariant_failures": 0,
+        "moved_gates": 4894,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "attribution": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 70505,
+        "format": "BORROW-WORD",
+        "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+        "kappa": "0.001703552312979594",
+        "local_profile": {
+          "1": 2363,
+          "2": 632,
+          "3": 326,
+          "4": 120,
+          "5": 34,
+          "7": 4,
+          "8": 4
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+        "pin_key": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+        "pr": 2462,
+        "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 33,
+          "5": 9,
+          "7": 62,
+          "8": 86,
+          "9": 240
+        }
+      },
+      "original_diagnostics": {
+        "attempted_moves": 5598,
+        "cache": {
+          "currsize": 500000,
+          "hits": 179896,
+          "maxsize": 500000,
+          "misses": 2827892
+        },
+        "crossed_pairs": 862096,
+        "degenerate": false,
+        "exact_semantics": "scalar gates plus formal operator warps",
+        "invariant_failures": 0,
+        "moved_gates": 4894,
+        "null": "N1b",
+        "protocol": "one uniformly located move per gate in a randomized visitation sweep",
+        "sweeps": 1
+      },
+      "predicate_certificate": {
+        "all_ordered_pairs_verified": true,
+        "cpu_seconds": 2.950311253999999,
+        "formal_warp_pairs": 247400,
+        "invariant_failures": 0,
+        "ordered_pairs": 15909666,
+        "scalar_pairs": 15662266,
+        "seconds": 2.9527767654508352,
+        "sections": [
+          {
+            "conflicts": 93650,
+            "gates": 3479,
+            "ordered_pairs": 12103441,
+            "section": "A"
+          },
+          {
+            "conflicts": 0,
+            "gates": 176,
+            "ordered_pairs": 30976,
+            "section": "cut"
+          },
+          {
+            "conflicts": 11740,
+            "gates": 1943,
+            "ordered_pairs": 3775249,
+            "section": "B"
+          }
+        ]
+      },
+      "seed": 29063,
+      "seed_identical_order": true,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "sweeps": 1,
+      "timings": {
+        "accelerated_cpu_seconds": 0.08487983300000002,
+        "accelerated_seconds": 0.08533048443496227,
+        "measured_scope": "one sample, excluding constructor and predicate certification",
+        "reference_cpu_seconds": 2.987267266,
+        "reference_seconds": 2.9872422656044364
+      }
+    },
+    "N2": {
+      "all_alphabet_tokens_equal": {
+        "full": true,
+        "mid": true,
+        "op": true,
+        "rank": true,
+        "registers": true,
+        "role": true
+      },
+      "attribution": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 70505,
+        "format": "BORROW-WORD",
+        "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+        "kappa": "0.001703552312979594",
+        "local_profile": {
+          "1": 2363,
+          "2": 632,
+          "3": 326,
+          "4": 120,
+          "5": 34,
+          "7": 4,
+          "8": 4
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+        "pin_key": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+        "pr": 2462,
+        "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 33,
+          "5": 9,
+          "7": 62,
+          "8": 86,
+          "9": 240
+        }
+      },
+      "diagnostics": {
+        "acceptance_rate": 0.0732196589769308,
+        "accepted_moves": 73,
+        "attempts": 997,
+        "changed_vertices": 73,
+        "degenerate": false,
+        "feasibility_rejections": 369,
+        "identity_proposals": 449,
+        "invariant_failures": 0,
+        "mixing": "local Metropolis chain; no uniformity or mixing claim",
+        "null": "N2",
+        "profile_rejections": 106,
+        "proposal": "randomized single vertex sweep and uniform exact lattice domain",
+        "variables": 997
+      },
+      "paid_profile_equal": true,
+      "seed": 29063,
+      "seed_identical_rng_state": true,
+      "status": "PASS",
+      "timings": {
+        "accelerated_cpu_seconds": 0.015568630999999833,
+        "accelerated_seconds": 0.015567566268146038,
+        "measured_scope": "one walk and lazy view; all-alphabet comparison separately timed",
+        "reference_cpu_seconds": 0.9860890649999998,
+        "reference_seconds": 0.984922744333744,
+        "token_comparison_cpu_seconds": 0.2470491370000003,
+        "token_comparison_seconds": 0.24706229846924543
+      }
+    },
+    "attribution": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pin_key": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    "seed": 29063,
+    "status": "PASS"
+  },
+  "seconds": 4.333095568232238,
+  "status": "OK",
+  "task": {
+    "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+    "seed": 29063,
+    "sweeps": 1
+  }
+}
