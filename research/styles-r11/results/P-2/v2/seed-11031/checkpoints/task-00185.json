@@ -1,0 +1,176 @@
+{
+  "cpu_seconds": 8.238494419,
+  "peak_rss_bytes": 324595712,
+  "result": {
+    "alphabet": "mid",
+    "attribution": {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+      "pin_key": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "batch_summary": {
+      "H1": {
+        "mean": 5.273148199740376,
+        "population_sd": 0.0
+      },
+      "H2": {
+        "mean": 8.48389730450645,
+        "population_sd": 0.013648056283436578
+      },
+      "H3": {
+        "mean": 10.71248210222928,
+        "population_sd": 0.018872764884863575
+      },
+      "H4": {
+        "mean": 11.775712795806037,
+        "population_sd": 0.016071654796556957
+      },
+      "H5": {
+        "mean": 12.16636519276591,
+        "population_sd": 0.011145033704410286
+      },
+      "H6": {
+        "mean": 12.295184686201084,
+        "population_sd": 0.0065998751329599875
+      },
+      "lz76": {
+        "mean": 1526.16,
+        "population_sd": 8.112607472323557
+      },
+      "repair": {
+        "mean": 3600.1,
+        "population_sd": 15.85212919452778
+      }
+    },
+    "diagnostics": {
+      "all_pairs_preverified": 50,
+      "attempted_moves": 274000,
+      "crossed_pairs": 40941379,
+      "degenerate": 0,
+      "identical_token_samples": 0,
+      "invariant_failures": 0,
+      "moved_gates": 238701,
+      "sweeps": 50
+    },
+    "experiment": "P-2",
+    "family": "FULL-WORD",
+    "inferential": false,
+    "n": 50,
+    "null": "N1b",
+    "q_values": null,
+    "real": {
+      "H1": 5.273148199740376,
+      "H2": 6.7427014271027925,
+      "H3": 7.624554262931156,
+      "H4": 8.121273349271327,
+      "H5": 8.48204489226716,
+      "H6": 8.715276091587269,
+      "alphabet": 72,
+      "h1": 5.273148199740376,
+      "h2": 1.4695532273624163,
+      "h3": 0.8818528358283633,
+      "h4": 0.49671908634017115,
+      "h5": 0.3607715429958329,
+      "h6": 0.23323119932010883,
+      "lz76": 266,
+      "n": 5480,
+      "repair": 1032,
+      "repair_final": 228,
+      "repair_rules": 402
+    },
+    "seed": 11031,
+    "start": 250,
+    "status": "PASS",
+    "sufficient_statistics": {
+      "H1": {
+        "M2": 0.0,
+        "max": 5.273148199740376,
+        "mean": 5.273148199740376,
+        "min": 5.273148199740376,
+        "n": 50
+      },
+      "H2": {
+        "M2": 0.009313472015792633,
+        "max": 8.517571559661686,
+        "mean": 8.48389730450645,
+        "min": 8.457431857977818,
+        "n": 50
+      },
+      "H3": {
+        "M2": 0.01780906271996698,
+        "max": 10.747514649201541,
+        "mean": 10.71248210222928,
+        "min": 10.677697575002815,
+        "n": 50
+      },
+      "H4": {
+        "M2": 0.01291490439498461,
+        "max": 11.820711054888813,
+        "mean": 11.775712795806037,
+        "min": 11.744112637082024,
+        "n": 50
+      },
+      "H5": {
+        "M2": 0.006210588813622063,
+        "max": 12.197780610640121,
+        "mean": 12.16636519276591,
+        "min": 12.142058026360862,
+        "n": 50
+      },
+      "H6": {
+        "M2": 0.0021779175885331807,
+        "max": 12.308648646673936,
+        "mean": 12.295184686201084,
+        "min": 12.276392094202615,
+        "n": 50
+      },
+      "lz76": {
+        "M2": 3290.7200000000003,
+        "max": 1548,
+        "mean": 1526.16,
+        "min": 1512,
+        "n": 50
+      },
+      "repair": {
+        "M2": 12564.5,
+        "max": 3630,
+        "mean": 3600.1,
+        "min": 3551,
+        "n": 50
+      }
+    }
+  },
+  "seconds": 8.238139271736145,
+  "status": "OK",
+  "task": {
+    "alphabet": "mid",
+    "experiment": "P-2",
+    "n": 50,
+    "null": "N1b",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+    "seed": 11031,
+    "start": 250
+  }
+}

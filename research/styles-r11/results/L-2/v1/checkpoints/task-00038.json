@@ -1,0 +1,52 @@
+{
+  "cpu_seconds": 0.14223063200000002,
+  "peak_rss_bytes": 434020352,
+  "result": {
+    "attribution": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pin_key": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    "cleanup_gates": 4512,
+    "exact": true,
+    "experiment": "L-2",
+    "family": "BORROW-WORD",
+    "first_mismatch": null,
+    "literal_equality": true,
+    "production": "reverse(inverse(buffer(recorded A after prelude + B warps + B + restore)))",
+    "recorded_gates": 4512,
+    "seed": 11031,
+    "status": "PASS"
+  },
+  "seconds": 0.14223894104361534,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "L-2",
+    "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+    "seed": 11031
+  }
+}

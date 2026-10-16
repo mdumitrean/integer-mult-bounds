@@ -1,0 +1,178 @@
+{
+  "cpu_seconds": 2.640567424000011,
+  "peak_rss_bytes": 341450752,
+  "result": {
+    "alphabet": "mid",
+    "attribution": {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/2766-WORD-base.json.gz",
+      "pin_key": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "batch_summary": {
+      "H1": {
+        "mean": 5.4077408921666485,
+        "population_sd": 0.0011034395020554594
+      },
+      "H2": {
+        "mean": 6.968328289828562,
+        "population_sd": 0.0019829243217164547
+      },
+      "H3": {
+        "mean": 7.893683882143043,
+        "population_sd": 0.0021568733137298083
+      },
+      "H4": {
+        "mean": 8.411060824296959,
+        "population_sd": 0.0026285678547410415
+      },
+      "H5": {
+        "mean": 8.787658200655757,
+        "population_sd": 0.0030654994040305228
+      },
+      "H6": {
+        "mean": 9.041743359030118,
+        "population_sd": 0.003684575171268615
+      },
+      "lz76": {
+        "mean": 336.92,
+        "population_sd": 2.598768939324926
+      },
+      "repair": {
+        "mean": 1223.16,
+        "population_sd": 7.6167184535073895
+      }
+    },
+    "diagnostics": {
+      "accepted_moves": 4070,
+      "attempts": 45500,
+      "changed_vertices": 4070,
+      "degenerate": 0,
+      "feasibility_rejections": 16244,
+      "identical_token_samples": 0,
+      "identity_proposals": 20056,
+      "invariant_failures": 0,
+      "profile_rejections": 5130,
+      "variables": 45500
+    },
+    "experiment": "P-2",
+    "family": "BORROW-WORD",
+    "inferential": false,
+    "n": 50,
+    "null": "N2",
+    "q_values": null,
+    "real": {
+      "H1": 5.395957320228492,
+      "H2": 6.941785567304235,
+      "H3": 7.853928780578517,
+      "H4": 8.360941253150049,
+      "H5": 8.726155998322827,
+      "H6": 8.968885903840471,
+      "alphabet": 79,
+      "h1": 5.395957320228492,
+      "h2": 1.5458282470757432,
+      "h3": 0.9121432132742822,
+      "h4": 0.5070124725715317,
+      "h5": 0.3652147451727785,
+      "h6": 0.24272990551764373,
+      "lz76": 311,
+      "n": 5648,
+      "repair": 1174,
+      "repair_final": 300,
+      "repair_rules": 437
+    },
+    "seed": 29063,
+    "start": 1500,
+    "status": "PASS",
+    "sufficient_statistics": {
+      "H1": {
+        "M2": 6.087893673482001e-05,
+        "max": 5.409449933428649,
+        "mean": 5.4077408921666485,
+        "min": 5.404480388489924,
+        "n": 50
+      },
+      "H2": {
+        "M2": 0.0001965994432827331,
+        "max": 6.97197458068388,
+        "mean": 6.968328289828562,
+        "min": 6.9632634204607635,
+        "n": 50
+      },
+      "H3": {
+        "M2": 0.00023260512457399022,
+        "max": 7.898107132036379,
+        "mean": 7.893683882143043,
+        "min": 7.888471984645991,
+        "n": 50
+      },
+      "H4": {
+        "M2": 0.0003454684483488961,
+        "max": 8.416649981518924,
+        "mean": 8.411060824296959,
+        "min": 8.403031707877764,
+        "n": 50
+      },
+      "H5": {
+        "M2": 0.0004698643298055745,
+        "max": 8.793366817133851,
+        "mean": 8.787658200655757,
+        "min": 8.777144230831551,
+        "n": 50
+      },
+      "H6": {
+        "M2": 0.0006788047096364571,
+        "max": 9.047322635234398,
+        "mean": 9.041743359030118,
+        "min": 9.028860779576013,
+        "n": 50
+      },
+      "lz76": {
+        "M2": 337.68,
+        "max": 341,
+        "mean": 336.92,
+        "min": 330,
+        "n": 50
+      },
+      "repair": {
+        "M2": 2900.7200000000003,
+        "max": 1239,
+        "mean": 1223.16,
+        "min": 1205,
+        "n": 50
+      }
+    }
+  },
+  "seconds": 2.640647736378014,
+  "status": "OK",
+  "task": {
+    "alphabet": "mid",
+    "experiment": "P-2",
+    "n": 50,
+    "null": "N2",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-base.json.gz",
+    "seed": 29063,
+    "start": 1500
+  }
+}

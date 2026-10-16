@@ -1,0 +1,51 @@
+{
+  "cpu_seconds": 0.201351314,
+  "peak_rss_bytes": 434003968,
+  "result": {
+    "attribution": {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+      "pin_key": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "cleanup_gates": 4536,
+    "exact": true,
+    "experiment": "L-2",
+    "family": "BORROW-WORD",
+    "first_mismatch": null,
+    "literal_equality": true,
+    "production": "reverse(inverse(buffer(recorded A after prelude + B warps + B + restore)))",
+    "recorded_gates": 4536,
+    "seed": 29063,
+    "status": "PASS"
+  },
+  "seconds": 0.2013736255466938,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "L-2",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2679-BORROW-WORD-43base.json.gz",
+    "seed": 29063
+  }
+}

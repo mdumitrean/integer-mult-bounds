@@ -1,0 +1,294 @@
+{
+  "cpu_seconds": 1.616718015,
+  "peak_rss_bytes": 505769984,
+  "result": {
+    "active_patterns": [
+      {
+        "capacity": 8,
+        "count": "49728.0",
+        "remainder": 0,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 0,
+          "8": 1,
+          "9": 0
+        }
+      },
+      {
+        "capacity": 16,
+        "count": "33152.0",
+        "remainder": 0,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 1,
+          "8": 0,
+          "9": 1
+        }
+      },
+      {
+        "capacity": 32,
+        "count": "9879.000000000044",
+        "remainder": 5,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 0,
+          "8": 0,
+          "9": 3
+        }
+      },
+      {
+        "capacity": 32,
+        "count": "554.9999999999987",
+        "remainder": 0,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 0,
+          "8": 4,
+          "9": 0
+        }
+      },
+      {
+        "capacity": 32,
+        "count": "4069.999999999987",
+        "remainder": 0,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 2,
+          "8": 0,
+          "9": 2
+        }
+      },
+      {
+        "capacity": 32,
+        "count": "1331.999999999995",
+        "remainder": 0,
+        "widths": {
+          "4": 0,
+          "5": 1,
+          "7": 0,
+          "8": 0,
+          "9": 3
+        }
+      },
+      {
+        "capacity": 32,
+        "count": "17315.999999999975",
+        "remainder": 1,
+        "widths": {
+          "4": 1,
+          "5": 0,
+          "7": 0,
+          "8": 0,
+          "9": 3
+        }
+      },
+      {
+        "capacity": 48,
+        "count": "26558.6",
+        "remainder": 48,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        }
+      },
+      {
+        "capacity": 48,
+        "count": "6593.399999999983",
+        "remainder": 3,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 0,
+          "8": 0,
+          "9": 5
+        }
+      }
+    ],
+    "attribution": [
+      {
+        "author": "Marius-Paul Dumitrean",
+        "bytes": 72444,
+        "format": "BORROW-WORD",
+        "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+        "kappa": "0.001717794984118634663827",
+        "local_profile": {
+          "1": 2382,
+          "2": 648,
+          "3": 268,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "pr": 2802,
+        "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 2,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Marius-Paul Dumitrean",
+        "bytes": 72443,
+        "format": "BORROW-WORD",
+        "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+        "kappa": "0.001717794984118634663827",
+        "local_profile": {
+          "1": 2382,
+          "2": 648,
+          "3": 268,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "pr": 2802,
+        "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 2,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      }
+    ],
+    "capacity_counts": {
+      "8": 49728,
+      "16": 33152,
+      "32": 33152,
+      "48": 33152
+    },
+    "ceiling_dominates_literal": true,
+    "certificate_kind": "certified LP dual ceiling; floating primal is a proposal, not an exact optimum certificate",
+    "certified_ceiling": "0.001717795812",
+    "dual": {
+      "all_column_inequalities": 1163,
+      "capacity_multipliers": {
+        "16": "10970525063510259/50000000000000000",
+        "32": "10970525063510259/25000000000000000",
+        "48": "658007973555402414353852768287/1000000000000000000000000000000",
+        "8": "10970525063510259/100000000000000000"
+      },
+      "cost_rounding_grid": "1e-30",
+      "dual_idle_moment_lower": "145835542198649614861835366986333/7812500000000000000000000000",
+      "exact_rational_verification": true,
+      "exponent": "0.001717795812",
+      "inequality_violations": [],
+      "local_moment_lower": "595463132484737054568504583050159/12500000000000000000000000000",
+      "rejection_margin": "2.06115067795293618263344E-7",
+      "root_rejected": true,
+      "total_moment_lower": "4144000000012882191737205851141459/62500000000000000000000000000",
+      "total_moment_lower_decimal": "66304.00000020611506779529362",
+      "width_multipliers": {
+        "4": "-3438084747513199/62500000000000000",
+        "5": "-3440465989474731/50000000000000000",
+        "7": "-4803663684328331/50000000000000000",
+        "8": "-10970525063510259/100000000000000000",
+        "9": "-6166861379181937/50000000000000000"
+      }
+    },
+    "inherited_local_profile": null,
+    "inherited_provider_notes": {
+      "pinned_word_provider_profile_parity": {
+        "extra": true,
+        "gauge44": true
+      },
+      "pinned_word_provider_width_parity": true,
+      "provider_profile_source": "pinned package providers"
+    },
+    "literal_root": "0.00171779498411863466382722991842817890408858438546231220090092725676198114516931289589682978",
+    "local_profile": {
+      "1": 1586412,
+      "2": 431568,
+      "3": 178488,
+      "4": 85248,
+      "5": 17316,
+      "8": 5328
+    },
+    "local_profile_source": "literal pinned provider metadata",
+    "model": "2802",
+    "pattern_count": 1163,
+    "primal_idle_profile": {
+      "1": "17315.999999999975",
+      "3": "6593.399999999983",
+      "5": "9879.000000000044",
+      "48": "26558.6"
+    },
+    "primal_profile_root": "0.00171779581091181044199266188918719766997440290833978350315027710219562253097557298345769973",
+    "primal_residual_max": 5.820766091346741e-11,
+    "role_width_counts": {
+      "4": 17316,
+      "5": 1332,
+      "7": 41292,
+      "8": 51948,
+      "9": 159840
+    },
+    "scope": "fixed role-width inventory and physical capacity multiplicities; arbitrary fractional bin patterns; eligibility/family constraints relaxed",
+    "solver_calls": 1,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "solver_options": {
+      "parallel": "off",
+      "threads": 1,
+      "time_limit": 300.0
+    },
+    "source_files": [
+      {
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PLAN.json.gz",
+        "sha256": "afb3c5c8134fc2cfce0b50a21758490c225574994b2c3c5161e53e2355acc6fa"
+      },
+      {
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz",
+        "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e"
+      },
+      {
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/ORDER.json",
+        "sha256": "129e791d5b45c279443ff9e1edef5ac33d5abc51717ecbae8265abea5c247ae7"
+      },
+      {
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/DISPATCH.json.gz",
+        "sha256": "14fe756dcac93a0f3b2b7f38ba7b998dec89d56d5171b691af4fae45e5d83d11"
+      },
+      {
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PROVIDERS.json",
+        "sha256": "391075b1411a3976850c633f92f58c35ed3f046f09d55bd435d7545124543fd4"
+      },
+      {
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/FILL.json.gz",
+        "sha256": "2f2a25a8d82b424b1e643a8a5167361fcc5ab33cfbc6f186f4cb7ddcaf9df7d9"
+      },
+      {
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/PROFILE.json",
+        "sha256": "9d71407ded0b17496b0f94ca896355933a850dc6fc8456e39b0a1f72995b1406"
+      },
+      {
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66"
+      },
+      {
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7"
+      }
+    ],
+    "status": "PASS",
+    "violating_construction_must_change": "local paid profile, role-width inventory, bin capacities/counts, or coverage geometry"
+  },
+  "seconds": 1.6173352124169469,
+  "status": "OK",
+  "task": {
+    "experiment": "P3-CEILING",
+    "index": 0,
+    "seed": 11031
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "cpu_seconds": 8.890787059,
+  "peak_rss_bytes": 505888768,
+  "result": {
+    "active_patterns": [
+      {
+        "capacity": 8,
+        "count": "41111.999999999985",
+        "remainder": 0,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 0,
+          "8": 1,
+          "9": 0
+        }
+      },
+      {
+        "capacity": 8,
+        "count": "8616.000000000016",
+        "remainder": 0,
+        "widths": {
+          "4": 2,
+          "5": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        }
+      },
+      {
+        "capacity": 16,
+        "count": "7843.999999999996",
+        "remainder": 0,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 0,
+          "8": 2,
+          "9": 0
+        }
+      },
+      {
+        "capacity": 16,
+        "count": "25308.000000000004",
+        "remainder": 0,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 1,
+          "8": 0,
+          "9": 1
+        }
+      },
+      {
+        "capacity": 32,
+        "count": "2180.000000000007",
+        "remainder": 0,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 0,
+          "8": 4,
+          "9": 0
+        }
+      },
+      {
+        "capacity": 32,
+        "count": "30972.000000000025",
+        "remainder": 0,
+        "widths": {
+          "4": 0,
+          "5": 1,
+          "7": 0,
+          "8": 0,
+          "9": 3
+        }
+      },
+      {
+        "capacity": 48,
+        "count": "22748.000000000004",
+        "remainder": 48,
+        "widths": {
+          "4": 0,
+          "5": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        }
+      },
+      {
+        "capacity": 48,
+        "count": "10403.999999999993",
+        "remainder": 0,
+        "widths": {
+          "4": 1,
+          "5": 0,
+          "7": 0,
+          "8": 1,
+          "9": 4
+        }
+      }
+    ],
+    "attribution": [
+      {
+        "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+        "bytes": 57438,
+        "format": "FULL-WORD",
+        "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+        "kappa": "0.001676938111022438",
+        "local_profile": {
+          "1": 2348,
+          "2": 500,
+          "3": 416,
+          "4": 130,
+          "5": 82,
+          "8": 8
+        },
+        "pr": 1672,
+        "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+        "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+        "width_inventory": {
+          "4": 44,
+          "5": 44,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      {
+        "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+        "bytes": 57440,
+        "format": "FULL-WORD",
+        "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+        "kappa": "0.001676938111022438",
+        "local_profile": {
+          "1": 2340,
+          "2": 508,
+          "3": 420,
+          "4": 126,
+          "5": 82,
+          "8": 8
+        },
+        "pr": 1672,
+        "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+        "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+        "width_inventory": {
+          "4": 40,
+          "5": 48,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      }
+    ],
+    "capacity_counts": {
+      "8": 49728,
+      "16": 33152,
+      "32": 33152,
+      "48": 33152
+    },
+    "ceiling_dominates_literal": true,
+    "certificate_kind": "certified LP dual ceiling; floating primal is a proposal, not an exact optimum certificate",
+    "certified_ceiling": "0.001680782907",
+    "dual": {
+      "all_column_inequalities": 1163,
+      "capacity_multipliers": {
+        "16": "-311212262310484519947935257929/500000000000000000000000000000",
+        "32": "-622440590078797513247634387777/500000000000000000000000000000",
+        "48": "-1867349937288858503815618784679/1000000000000000000000000000000",
+        "8": "-170757144869343703815618784679/1000000000000000000000000000000"
+      },
+      "cost_rounding_grid": "1e-30",
+      "dual_idle_moment_lower": "-2387528974466452219715461479110721/15625000000000000000000000000",
+      "exact_rational_verification": true,
+      "exponent": "0.001680782907",
+      "inequality_violations": [],
+      "local_moment_lower": "6417010266662178074512873525794969/125000000000000000000000000000",
+      "rejection_margin": "-167769.7722325555174656865465",
+      "root_rejected": false,
+      "total_moment_lower": "-12683221529069439683210818307090799/125000000000000000000000000000",
+      "total_moment_lower_decimal": "-101465.7722325555174656865465",
+      "width_multipliers": {
+        "4": "-13728010876162239/500000000000000000",
+        "5": "4241481981048787/20000000000000000",
+        "7": "170416686738567/5000000000000000",
+        "8": "-27456021752324703/500000000000000000",
+        "9": "-14390742435701243/100000000000000000"
+      }
+    },
+    "inherited_local_profile": null,
+    "inherited_provider_notes": {
+      "held_word_profile_differs": true,
+      "overlay_policy": "Literal inherited fill is checked against supplied PROFILE; held #1672 word local profiles are separately substituted at identical exact helper widths.",
+      "provider_profile_source": "inherited PLAN.provider_registry"
+    },
+    "literal_root": "0.00167967179550473762154207580896485385256569402634755251260919550730894524191433236773636407",
+    "local_profile": {
+      "1": 1559100,
+      "2": 339000,
+      "3": 277392,
+      "4": 84912,
+      "5": 54612,
+      "8": 5328
+    },
+    "local_profile_source": "literal pinned provider metadata",
+    "model": "1672",
+    "pattern_count": 1163,
+    "primal_idle_profile": {
+      "48": "22748.000000000004"
+    },
+    "primal_profile_root": "0.00167967179550472403458980704063191609249552076471103344220666965841417846320607654207995976",
+    "primal_residual_max": 4.001776687800884e-11,
+    "role_width_counts": {
+      "4": 27636,
+      "5": 30972,
+      "7": 25308,
+      "8": 75924,
+      "9": 159840
+    },
+    "scope": "fixed role-width inventory and physical capacity multiplicities; arbitrary fractional bin patterns; eligibility/family constraints relaxed",
+    "solver_calls": 1,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "solver_options": {
+      "parallel": "off",
+      "threads": 1,
+      "time_limit": 300.0
+    },
+    "source_files": [
+      {
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-PLAN.json",
+        "sha256": "e9ca855b0ccba243868aa7bd24b42f9e59f2f554bfe10521143591073e72ea18"
+      },
+      {
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-GLOBAL-TEMPLATE.json.gz",
+        "sha256": "1d31424c4e27e26a35a9932ca778e43f1f3577589275422cc642aa68b31112db"
+      },
+      {
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-OWNERS.json.gz",
+        "sha256": "cdfdcdec09592b4fd296ec49efe38573c1a61ecb8385b538ce801ee29355695b"
+      },
+      {
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-PROFILE.json",
+        "sha256": "932453b2b045f73c81aa2b6f169a05ae2426c573965bbf4f5d3998b63b78a38f"
+      }
+    ],
+    "status": "EXPLORATORY",
+    "violating_construction_must_change": "local paid profile, role-width inventory, bin capacities/counts, or coverage geometry"
+  },
+  "seconds": 8.895966387353837,
+  "status": "OK",
+  "task": {
+    "experiment": "P3-CEILING",
+    "index": 2,
+    "seed": 11031
+  }
+}

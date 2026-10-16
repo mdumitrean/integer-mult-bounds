@@ -1,0 +1,177 @@
+{
+  "cpu_seconds": 8.700685957999994,
+  "peak_rss_bytes": 324636672,
+  "result": {
+    "alphabet": "mid",
+    "attribution": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+      "pin_key": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "batch_summary": {
+      "H1": {
+        "mean": 5.398379177625525,
+        "population_sd": 0.0
+      },
+      "H2": {
+        "mean": 8.726791486817966,
+        "population_sd": 0.013887205080473718
+      },
+      "H3": {
+        "mean": 10.912142230666353,
+        "population_sd": 0.018624817455974375
+      },
+      "H4": {
+        "mean": 11.884050903896771,
+        "population_sd": 0.016426289908019837
+      },
+      "H5": {
+        "mean": 12.232869742890939,
+        "population_sd": 0.01010801027111395
+      },
+      "H6": {
+        "mean": 12.347330582812575,
+        "population_sd": 0.005326461093289635
+      },
+      "lz76": {
+        "mean": 1630.34,
+        "population_sd": 8.17461925718868
+      },
+      "repair": {
+        "mean": 3803.12,
+        "population_sd": 12.993290576293598
+      }
+    },
+    "diagnostics": {
+      "all_pairs_preverified": 50,
+      "attempted_moves": 282300,
+      "crossed_pairs": 44523622,
+      "degenerate": 0,
+      "identical_token_samples": 0,
+      "invariant_failures": 0,
+      "moved_gates": 246651,
+      "sweeps": 50
+    },
+    "experiment": "P-2",
+    "family": "BORROW-WORD",
+    "inferential": false,
+    "n": 50,
+    "null": "N1b",
+    "q_values": null,
+    "real": {
+      "H1": 5.398379177625525,
+      "H2": 6.944775290937278,
+      "H3": 7.857886981643389,
+      "H4": 8.365770191346739,
+      "H5": 8.7317511890125,
+      "H6": 8.97286575268349,
+      "alphabet": 79,
+      "h1": 5.398379177625525,
+      "h2": 1.5463961133117525,
+      "h3": 0.9131116907061116,
+      "h4": 0.5078832097033494,
+      "h5": 0.365980997665762,
+      "h6": 0.2411145636709886,
+      "lz76": 318,
+      "n": 5646,
+      "repair": 1182,
+      "repair_final": 314,
+      "repair_rules": 434
+    },
+    "seed": 11031,
+    "start": 1900,
+    "status": "PASS",
+    "sufficient_statistics": {
+      "H1": {
+        "M2": 0.0,
+        "max": 5.398379177625525,
+        "mean": 5.398379177625525,
+        "min": 5.398379177625525,
+        "n": 50
+      },
+      "H2": {
+        "M2": 0.009642723247356752,
+        "max": 8.768776515602099,
+        "mean": 8.726791486817966,
+        "min": 8.699001467452463,
+        "n": 50
+      },
+      "H3": {
+        "M2": 0.01734419126341839,
+        "max": 10.953393294535699,
+        "mean": 10.912142230666353,
+        "min": 10.858629698821249,
+        "n": 50
+      },
+      "H4": {
+        "M2": 0.013491150007115715,
+        "max": 11.921157395716824,
+        "mean": 11.884050903896771,
+        "min": 11.845060141280099,
+        "n": 50
+      },
+      "H5": {
+        "M2": 0.005108593582047255,
+        "max": 12.25383079276433,
+        "mean": 12.232869742890939,
+        "min": 12.20119146373246,
+        "n": 50
+      },
+      "H6": {
+        "M2": 0.0014185593889164104,
+        "max": 12.357516876561391,
+        "mean": 12.347330582812575,
+        "min": 12.332268206177089,
+        "n": 50
+      },
+      "lz76": {
+        "M2": 3341.2200000000003,
+        "max": 1648,
+        "mean": 1630.34,
+        "min": 1604,
+        "n": 50
+      },
+      "repair": {
+        "M2": 8441.28,
+        "max": 3833,
+        "mean": 3803.12,
+        "min": 3779,
+        "n": 50
+      }
+    }
+  },
+  "seconds": 8.700707943178713,
+  "status": "OK",
+  "task": {
+    "alphabet": "mid",
+    "experiment": "P-2",
+    "n": 50,
+    "null": "N1b",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+    "seed": 11031,
+    "start": 1900
+  }
+}

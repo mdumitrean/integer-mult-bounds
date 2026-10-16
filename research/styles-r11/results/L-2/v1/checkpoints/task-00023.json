@@ -1,0 +1,51 @@
+{
+  "cpu_seconds": 0.13228262999999998,
+  "peak_rss_bytes": 434008064,
+  "result": {
+    "attribution": {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/2766-WORD-base.json.gz",
+      "pin_key": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "cleanup_gates": 4540,
+    "exact": true,
+    "experiment": "L-2",
+    "family": "BORROW-WORD",
+    "first_mismatch": null,
+    "literal_equality": true,
+    "production": "reverse(inverse(buffer(recorded A after prelude + B warps + B + restore)))",
+    "recorded_gates": 4540,
+    "seed": 29063,
+    "status": "PASS"
+  },
+  "seconds": 0.1322874603793025,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "L-2",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-base.json.gz",
+    "seed": 29063
+  }
+}

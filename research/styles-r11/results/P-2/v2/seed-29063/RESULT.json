@@ -1,0 +1,4256 @@
+{
+  "confirmation_required": true,
+  "cpu_seconds": 6569.966474846999,
+  "decision": {
+    "complete": true,
+    "incomplete_samples_are_not_null": true,
+    "pass_bar": "sd reported per statistic; N1b wider than N1 expected",
+    "verdict": "PASS"
+  },
+  "experiment": "P-2",
+  "milestone": "M0",
+  "n_permutations": 2000,
+  "null_summary": {
+    "empirical_p": null,
+    "inferential": false,
+    "mean": null,
+    "model": "N1/N1b/N1c/N2 calibration; per-cell summaries in statistics",
+    "sd": null
+  },
+  "peak_rss_bytes": 546148352,
+  "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
+  "recorded_utc": "2026-10-16T04:39:06.995891+00:00",
+  "schema_version": 1,
+  "scope": "Finite scoped evaluation; potential kappa levers are census targets only.",
+  "script_manifest_sha256": "405d64d57334878a4269024f46be933cb1ae450231320792065bc4807ee346eb",
+  "script_sha256": {
+    "research/styles-r11/pipeline/fill.py": "9ca05b47016ddbbb4a6713c981932d63a6eaecdd27f3604fcfb66877f239fc4a",
+    "research/styles-r11/pipeline/growth.py": "4f29eba652ea1c7ca889f784c612a6ab11d8aefe96637d18bd32391532b8f167",
+    "research/styles-r11/pipeline/growth_cost.py": "da8443a2abc7e01da4985e04bb1cf1bb65371a2c8b16dc9d9f0247ba91692c73",
+    "research/styles-r11/pipeline/growth_m3.py": "9a66a0d48deb2f5c5b50d6d9c2f89bdb93835c654547971879f7e7e16eec469b",
+    "research/styles-r11/pipeline/growth_replay.py": "c14f7807b6d4d8ad0365b6e811ddf8928745598686be0441333635069b0966d3",
+    "research/styles-r11/pipeline/matching.py": "aa61959914a4594dbd7bb7c1b0a9f68535d15fb5c8462a12ab14301334ac86a7",
+    "research/styles-r11/pipeline/measures.py": "ec7fd2264129b922f8988098d41ebc9200f742aad92a060b7b54af191fa7bf3a",
+    "research/styles-r11/pipeline/nulls.py": "a6c6b3ce9c3db775f43058c3dda3640b5fcdbb46a94eca00c012c5302f165e86",
+    "research/styles-r11/pipeline/pool.py": "f21f781e0d0b5473e2af605b5a4c15ba9f021e2be24b868ea01b355931d083e2",
+    "research/styles-r11/pipeline/records.py": "7afb313707e4cf6f287636f5654759fbd899ee55f2c567997d8cb47470ce7c81",
+    "research/styles-r11/pipeline/root.py": "b2eef8a2236e5ceb4ef92c9563b7a1e270b0719d345017cf38a9ee0784ceccd1",
+    "research/styles-r11/pipeline/run_acceleration.py": "6eb38a6cebc166c0cfedd04ea2f10d24357ad2c2d041f15a1305eae9c5a04d08",
+    "research/styles-r11/pipeline/run_m0.py": "98d1705e74afe2c462bc2350c89290ac58c3eea997b89f47f9e7355d63f14d04",
+    "research/styles-r11/pipeline/sandpile.py": "4775fc959193593f06bc8403e5d7434275122422cccf6aaea708722b8511cb66",
+    "research/styles-r11/pipeline/string_screen.py": "cf542d53f37eaa0e0164094d4edd40794018fd387df56a068708191e2cc33fe3",
+    "research/styles-r11/pipeline/word_commute_fast.py": "3a9e58e6e66642f566778304b6c765b262dc8407645724112db081e4e6cc6a1d",
+    "research/styles-r11/pipeline/word_frame_fast.py": "1985602b6390a9e468ff656e135f6c79b208f159567e72b0eeb41e604e7275c1",
+    "research/styles-r11/pipeline/word_tasks.py": "5f14c4f3f389751baeeede856369db83a3b9ab93bd8e58dc520584abd940adf4",
+    "research/styles-r11/pipeline/wordio.py": "a9c254acdc04c3302ed0a31d9e0da39a8e3348aa20d189798e86539464fd81d4"
+  },
+  "seed": 29063,
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    }
+  ],
+  "statistics": {
+    "cell_count_planned": 36,
+    "cells": [
+      {
+        "diagnostics": {
+          "identical_token_samples": 2000,
+          "relabelled_registers": 1400137
+        },
+        "n": 2000,
+        "null": "N1c",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.270192896494587,
+            "mean": 5.270192896494587,
+            "min": 5.270192896494587,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.270192896494587
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.738247176511893,
+            "mean": 6.738247176511893,
+            "min": 6.738247176511893,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 6.738247176511893
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.620266519592177,
+            "mean": 7.620266519592177,
+            "min": 7.620266519592177,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 7.620266519592177
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.11661249168908,
+            "mean": 8.11661249168908,
+            "min": 8.11661249168908,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.11661249168908
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.477077697329973,
+            "mean": 8.477077697329973,
+            "min": 8.477077697329973,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.477077697329973
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.71008057159204,
+            "mean": 8.71008057159204,
+            "min": 8.71008057159204,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.71008057159204
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 265,
+            "mean": 265.0,
+            "min": 265,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 265
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1026,
+            "mean": 1026.0,
+            "min": 1026,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 1026
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 2000,
+          "relabelled_registers": 1396046
+        },
+        "n": 2000,
+        "null": "N1c",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.395957320228492,
+            "mean": 5.395957320228493,
+            "min": 5.395957320228492,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 5.395957320228492
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.941785567304235,
+            "mean": 6.941785567304234,
+            "min": 6.941785567304235,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 6.941785567304235
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.853928780578517,
+            "mean": 7.853928780578517,
+            "min": 7.853928780578517,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 7.853928780578517
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.360941253150049,
+            "mean": 8.360941253150049,
+            "min": 8.360941253150049,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.360941253150049
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.726155998322827,
+            "mean": 8.726155998322827,
+            "min": 8.726155998322827,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.726155998322827
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.968885903840471,
+            "mean": 8.968885903840471,
+            "min": 8.968885903840471,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.968885903840471
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 311,
+            "mean": 311.0,
+            "min": 311,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 311
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1174,
+            "mean": 1174.0,
+            "min": 1174,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 1174
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 2000,
+          "relabelled_registers": 1400055
+        },
+        "n": 2000,
+        "null": "N1c",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.248649093711433,
+            "mean": 5.248649093711433,
+            "min": 5.248649093711433,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.248649093711433
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.732510281095758,
+            "mean": 6.732510281095759,
+            "min": 6.732510281095758,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 6.732510281095758
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.608998148434995,
+            "mean": 7.608998148434995,
+            "min": 7.608998148434995,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 7.608998148434995
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.089701250051482,
+            "mean": 8.089701250051482,
+            "min": 8.089701250051482,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.089701250051482
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.438319370378412,
+            "mean": 8.438319370378412,
+            "min": 8.438319370378412,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.438319370378412
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.66471237412225,
+            "mean": 8.66471237412225,
+            "min": 8.66471237412225,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.66471237412225
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 260,
+            "mean": 260.0,
+            "min": 260,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 260
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1015,
+            "mean": 1015.0,
+            "min": 1015,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 1015
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 2000,
+          "relabelled_registers": 1395876
+        },
+        "n": 2000,
+        "null": "N1c",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.398379177625525,
+            "mean": 5.398379177625525,
+            "min": 5.398379177625525,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.398379177625525
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.944775290937278,
+            "mean": 6.944775290937278,
+            "min": 6.944775290937278,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 6.944775290937278
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.857886981643389,
+            "mean": 7.857886981643389,
+            "min": 7.857886981643389,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 7.857886981643389
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.365770191346739,
+            "mean": 8.365770191346739,
+            "min": 8.365770191346739,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.365770191346739
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.7317511890125,
+            "mean": 8.7317511890125,
+            "min": 8.7317511890125,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.7317511890125
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.97286575268349,
+            "mean": 8.97286575268349,
+            "min": 8.97286575268349,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.97286575268349
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 318,
+            "mean": 318.0,
+            "min": 318,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 318
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1182,
+            "mean": 1182.0,
+            "min": 1182,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 1182
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 2000,
+          "relabelled_registers": 1395895
+        },
+        "n": 2000,
+        "null": "N1c",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.398379177625525,
+            "mean": 5.398379177625525,
+            "min": 5.398379177625525,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.398379177625525
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.944775290937278,
+            "mean": 6.944775290937278,
+            "min": 6.944775290937278,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 6.944775290937278
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.857886981643389,
+            "mean": 7.857886981643389,
+            "min": 7.857886981643389,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 7.857886981643389
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.365770191346739,
+            "mean": 8.365770191346739,
+            "min": 8.365770191346739,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.365770191346739
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.7317511890125,
+            "mean": 8.7317511890125,
+            "min": 8.7317511890125,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.7317511890125
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.97286575268349,
+            "mean": 8.97286575268349,
+            "min": 8.97286575268349,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.97286575268349
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 318,
+            "mean": 318.0,
+            "min": 318,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 318
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1182,
+            "mean": 1182.0,
+            "min": 1182,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 1182
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 2000,
+          "relabelled_registers": 1395900
+        },
+        "n": 2000,
+        "null": "N1c",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.395742324524608,
+            "mean": 5.395742324524608,
+            "min": 5.395742324524608,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.395742324524608
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.94114675101895,
+            "mean": 6.941146751018951,
+            "min": 6.94114675101895,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 6.94114675101895
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.852573711269676,
+            "mean": 7.852573711269676,
+            "min": 7.852573711269676,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 7.852573711269676
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.358942980778037,
+            "mean": 8.358942980778037,
+            "min": 8.358942980778037,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.358942980778037
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.723516531914585,
+            "mean": 8.723516531914585,
+            "min": 8.723516531914585,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.723516531914585
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.965546108583,
+            "mean": 8.965546108583,
+            "min": 8.965546108583,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.965546108583
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 310,
+            "mean": 310.0,
+            "min": 310,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 310
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1172,
+            "mean": 1172.0,
+            "min": 1172,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 1172
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 2000,
+          "relabelled_registers": 1396091
+        },
+        "n": 2000,
+        "null": "N1c",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.414191338809041,
+            "mean": 5.414191338809042,
+            "min": 5.414191338809041,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 5.414191338809041
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.960290568997024,
+            "mean": 6.960290568997025,
+            "min": 6.960290568997024,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 6.960290568997024
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.876077289101137,
+            "mean": 7.876077289101136,
+            "min": 7.876077289101137,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 7.876077289101137
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.385238081937112,
+            "mean": 8.385238081937112,
+            "min": 8.385238081937112,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.385238081937112
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.750490535474464,
+            "mean": 8.750490535474464,
+            "min": 8.750490535474464,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.750490535474464
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.988801208274937,
+            "mean": 8.988801208274937,
+            "min": 8.988801208274937,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.988801208274937
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 316,
+            "mean": 316.0,
+            "min": 316,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 316
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1187,
+            "mean": 1187.0,
+            "min": 1187,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 1187
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 2000,
+          "relabelled_registers": 1400191
+        },
+        "n": 2000,
+        "null": "N1c",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.273148199740376,
+            "mean": 5.273148199740376,
+            "min": 5.273148199740376,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.273148199740376
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.7427014271027925,
+            "mean": 6.7427014271027925,
+            "min": 6.7427014271027925,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 6.7427014271027925
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.624554262931156,
+            "mean": 7.624554262931156,
+            "min": 7.624554262931156,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 7.624554262931156
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.121273349271327,
+            "mean": 8.121273349271327,
+            "min": 8.121273349271327,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.121273349271327
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.48204489226716,
+            "mean": 8.48204489226716,
+            "min": 8.48204489226716,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.48204489226716
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.715276091587269,
+            "mean": 8.715276091587269,
+            "min": 8.715276091587269,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.715276091587269
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 266,
+            "mean": 266.0,
+            "min": 266,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 266
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1032,
+            "mean": 1032.0,
+            "min": 1032,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 1032
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 2000,
+          "relabelled_registers": 1395952
+        },
+        "n": 2000,
+        "null": "N1c",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.414191338809041,
+            "mean": 5.414191338809042,
+            "min": 5.414191338809041,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 5.414191338809041
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.960290568997024,
+            "mean": 6.960290568997025,
+            "min": 6.960290568997024,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 6.960290568997024
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.876077289101137,
+            "mean": 7.876077289101136,
+            "min": 7.876077289101137,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 7.876077289101137
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.385238081937112,
+            "mean": 8.385238081937112,
+            "min": 8.385238081937112,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.385238081937112
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.750490535474464,
+            "mean": 8.750490535474464,
+            "min": 8.750490535474464,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.750490535474464
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.988801208274937,
+            "mean": 8.988801208274937,
+            "min": 8.988801208274937,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 8.988801208274937
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 316,
+            "mean": 316.0,
+            "min": 316,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 316
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1187,
+            "mean": 1187.0,
+            "min": 1187,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 1187
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "accepted_moves": 163014,
+          "attempts": 1820000,
+          "changed_vertices": 163014,
+          "degenerate": 0,
+          "feasibility_rejections": 644357,
+          "identical_token_samples": 0,
+          "identity_proposals": 809043,
+          "invariant_failures": 0,
+          "profile_rejections": 203586,
+          "variables": 1820000
+        },
+        "n": 2000,
+        "null": "N2",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.410278918925247,
+            "mean": 5.407912245696102,
+            "min": 5.403866211133301,
+            "n": 2000,
+            "population_sd": 0.0009233228190722018,
+            "q": null,
+            "real": 5.395957320228492
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.974363818875137,
+            "mean": 6.968725676651014,
+            "min": 6.961574514010788,
+            "n": 2000,
+            "population_sd": 0.0019116162139365812,
+            "q": null,
+            "real": 6.941785567304235
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.900323668459371,
+            "mean": 7.894012574352878,
+            "min": 7.886488129620354,
+            "n": 2000,
+            "population_sd": 0.0020751471831690835,
+            "q": null,
+            "real": 7.853928780578517
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.417817424348408,
+            "mean": 8.411341711726088,
+            "min": 8.402160951177985,
+            "n": 2000,
+            "population_sd": 0.002327914035005645,
+            "q": null,
+            "real": 8.360941253150049
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.794649035950274,
+            "mean": 8.78794480263321,
+            "min": 8.777144230831551,
+            "n": 2000,
+            "population_sd": 0.002693333302903208,
+            "q": null,
+            "real": 8.726155998322827
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 9.049362830945878,
+            "mean": 9.041989023203612,
+            "min": 9.028459281642963,
+            "n": 2000,
+            "population_sd": 0.003145511052742221,
+            "q": null,
+            "real": 8.968885903840471
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 347,
+            "mean": 337.50550000000004,
+            "min": 328,
+            "n": 2000,
+            "population_sd": 2.8520115269753035,
+            "q": null,
+            "real": 311
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1244,
+            "mean": 1225.0865,
+            "min": 1200,
+            "n": 2000,
+            "population_sd": 7.619778064353314,
+            "q": null,
+            "real": 1174
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "accepted_moves": 162821,
+          "attempts": 1820000,
+          "changed_vertices": 162821,
+          "degenerate": 0,
+          "feasibility_rejections": 643318,
+          "identical_token_samples": 0,
+          "identity_proposals": 809740,
+          "invariant_failures": 0,
+          "profile_rejections": 204121,
+          "variables": 1820000
+        },
+        "n": 2000,
+        "null": "N2",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.409771711845567,
+            "mean": 5.407724914487919,
+            "min": 5.404168299270411,
+            "n": 2000,
+            "population_sd": 0.0008733563104557985,
+            "q": null,
+            "real": 5.395742324524608
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.974114850511358,
+            "mean": 6.968200443631332,
+            "min": 6.960742483121111,
+            "n": 2000,
+            "population_sd": 0.0018604541060614247,
+            "q": null,
+            "real": 6.94114675101895
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.8985447157181,
+            "mean": 7.892784282487115,
+            "min": 7.883752704161365,
+            "n": 2000,
+            "population_sd": 0.002080961448573493,
+            "q": null,
+            "real": 7.852573711269676
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.415697850309723,
+            "mean": 8.409482533505795,
+            "min": 8.399708834480482,
+            "n": 2000,
+            "population_sd": 0.002272709777680922,
+            "q": null,
+            "real": 8.358942980778037
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.792156661227597,
+            "mean": 8.785511254207561,
+            "min": 8.7744308412845,
+            "n": 2000,
+            "population_sd": 0.002576523129116966,
+            "q": null,
+            "real": 8.723516531914585
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 9.045742027123756,
+            "mean": 9.038888837077637,
+            "min": 9.02541392253122,
+            "n": 2000,
+            "population_sd": 0.0029723910028247227,
+            "q": null,
+            "real": 8.965546108583
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 348,
+            "mean": 336.7054999999999,
+            "min": 326,
+            "n": 2000,
+            "population_sd": 2.826264274621182,
+            "q": null,
+            "real": 310
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1243,
+            "mean": 1223.0645000000004,
+            "min": 1193,
+            "n": 2000,
+            "population_sd": 7.578016874486355,
+            "q": null,
+            "real": 1172
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "accepted_moves": 162705,
+          "attempts": 1750000,
+          "changed_vertices": 162705,
+          "degenerate": 0,
+          "feasibility_rejections": 613451,
+          "identical_token_samples": 0,
+          "identity_proposals": 774730,
+          "invariant_failures": 0,
+          "profile_rejections": 199114,
+          "variables": 1750000
+        },
+        "n": 2000,
+        "null": "N2",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.428376946610967,
+            "mean": 5.426331885839788,
+            "min": 5.422176159530826,
+            "n": 2000,
+            "population_sd": 0.0008761014846859601,
+            "q": null,
+            "real": 5.414191338809041
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.997670556245224,
+            "mean": 6.992316001027989,
+            "min": 6.983778851604494,
+            "n": 2000,
+            "population_sd": 0.0019699789862877427,
+            "q": null,
+            "real": 6.960290568997024
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.926018084237175,
+            "mean": 7.920097372949602,
+            "min": 7.911038012780681,
+            "n": 2000,
+            "population_sd": 0.0021554607318380057,
+            "q": null,
+            "real": 7.876077289101137
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.444759974343219,
+            "mean": 8.43875436555752,
+            "min": 8.428554364089779,
+            "n": 2000,
+            "population_sd": 0.002379025472023356,
+            "q": null,
+            "real": 8.385238081937112
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.821692890842037,
+            "mean": 8.815410415627946,
+            "min": 8.803740383653603,
+            "n": 2000,
+            "population_sd": 0.002727111293889619,
+            "q": null,
+            "real": 8.750490535474464
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 9.07218621787034,
+            "mean": 9.06485242832169,
+            "min": 9.05078862532828,
+            "n": 2000,
+            "population_sd": 0.003152152937720479,
+            "q": null,
+            "real": 8.988801208274937
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 353,
+            "mean": 343.59700000000004,
+            "min": 334,
+            "n": 2000,
+            "population_sd": 2.7663316865480905,
+            "q": null,
+            "real": 316
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1264,
+            "mean": 1245.3570000000002,
+            "min": 1217,
+            "n": 2000,
+            "population_sd": 7.8617778523690225,
+            "q": null,
+            "real": 1187
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "accepted_moves": 141400,
+          "attempts": 3482000,
+          "changed_vertices": 141400,
+          "degenerate": 0,
+          "feasibility_rejections": 1657643,
+          "identical_token_samples": 0,
+          "identity_proposals": 1346822,
+          "invariant_failures": 0,
+          "profile_rejections": 336135,
+          "variables": 3482000
+        },
+        "n": 2000,
+        "null": "N2",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.273856332171287,
+            "mean": 5.271590990373014,
+            "min": 5.267896615386163,
+            "n": 2000,
+            "population_sd": 0.0008647211013653252,
+            "q": null,
+            "real": 5.248649093711433
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.782101530865314,
+            "mean": 6.777676520751344,
+            "min": 6.771200194507677,
+            "n": 2000,
+            "population_sd": 0.0015961544758387243,
+            "q": null,
+            "real": 6.732510281095758
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.67533213712928,
+            "mean": 7.671213425338651,
+            "min": 7.663823281866897,
+            "n": 2000,
+            "population_sd": 0.0017052700802717095,
+            "q": null,
+            "real": 7.608998148434995
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.176368853604735,
+            "mean": 8.171974475807328,
+            "min": 8.161708545288459,
+            "n": 2000,
+            "population_sd": 0.001963085508190976,
+            "q": null,
+            "real": 8.089701250051482
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.545613936195139,
+            "mean": 8.540762988417907,
+            "min": 8.52795822317637,
+            "n": 2000,
+            "population_sd": 0.0023912825610237247,
+            "q": null,
+            "real": 8.438319370378412
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.792562927935698,
+            "mean": 8.786823437506499,
+            "min": 8.770931458900646,
+            "n": 2000,
+            "population_sd": 0.0028767442908077755,
+            "q": null,
+            "real": 8.66471237412225
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 298,
+            "mean": 288.62500000000006,
+            "min": 280,
+            "n": 2000,
+            "population_sd": 2.5300938717763026,
+            "q": null,
+            "real": 260
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1120,
+            "mean": 1099.6635,
+            "min": 1076,
+            "n": 2000,
+            "population_sd": 7.213824765684285,
+            "q": null,
+            "real": 1015
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "accepted_moves": 162931,
+          "attempts": 1828000,
+          "changed_vertices": 162931,
+          "degenerate": 0,
+          "feasibility_rejections": 647824,
+          "identical_token_samples": 0,
+          "identity_proposals": 812299,
+          "invariant_failures": 0,
+          "profile_rejections": 204946,
+          "variables": 1828000
+        },
+        "n": 2000,
+        "null": "N2",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.412762861447994,
+            "mean": 5.41035921112726,
+            "min": 5.406980269188892,
+            "n": 2000,
+            "population_sd": 0.0008857660993511039,
+            "q": null,
+            "real": 5.398379177625525
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.977377411259917,
+            "mean": 6.9716082702583035,
+            "min": 6.963733625082681,
+            "n": 2000,
+            "population_sd": 0.0019341494008327056,
+            "q": null,
+            "real": 6.944775290937278
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.902325519074834,
+            "mean": 7.897248123317279,
+            "min": 7.888453045860791,
+            "n": 2000,
+            "population_sd": 0.0020942273171957026,
+            "q": null,
+            "real": 7.857886981643389
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.419820847078189,
+            "mean": 8.414669918977756,
+            "min": 8.404744763366422,
+            "n": 2000,
+            "population_sd": 0.0022741622753541476,
+            "q": null,
+            "real": 8.365770191346739
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.797912492312747,
+            "mean": 8.791381512339344,
+            "min": 8.779711086025557,
+            "n": 2000,
+            "population_sd": 0.0026158998717271697,
+            "q": null,
+            "real": 8.7317511890125
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 9.05083807170319,
+            "mean": 9.043573782389952,
+            "min": 9.02954929956845,
+            "n": 2000,
+            "population_sd": 0.003059718267398789,
+            "q": null,
+            "real": 8.97286575268349
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 353,
+            "mean": 344.54950000000014,
+            "min": 334,
+            "n": 2000,
+            "population_sd": 2.907154923632382,
+            "q": null,
+            "real": 318
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1256,
+            "mean": 1233.8345,
+            "min": 1204,
+            "n": 2000,
+            "population_sd": 7.822410737745753,
+            "q": null,
+            "real": 1182
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "accepted_moves": 162535,
+          "attempts": 1828000,
+          "changed_vertices": 162535,
+          "degenerate": 0,
+          "feasibility_rejections": 647365,
+          "identical_token_samples": 0,
+          "identity_proposals": 814186,
+          "invariant_failures": 0,
+          "profile_rejections": 203914,
+          "variables": 1828000
+        },
+        "n": 2000,
+        "null": "N2",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.412620752040251,
+            "mean": 5.410338887386269,
+            "min": 5.406619796897355,
+            "n": 2000,
+            "population_sd": 0.000899496310714381,
+            "q": null,
+            "real": 5.398379177625525
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.97671823653378,
+            "mean": 6.971631877279098,
+            "min": 6.96446193645153,
+            "n": 2000,
+            "population_sd": 0.0019206022432081175,
+            "q": null,
+            "real": 6.944775290937278
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.902467751096465,
+            "mean": 7.897294769220187,
+            "min": 7.889716987652868,
+            "n": 2000,
+            "population_sd": 0.0020851500117112175,
+            "q": null,
+            "real": 7.857886981643389
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.420344761118946,
+            "mean": 8.41472098674712,
+            "min": 8.405214163038112,
+            "n": 2000,
+            "population_sd": 0.0022462250812098094,
+            "q": null,
+            "real": 8.365770191346739
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.797219393912474,
+            "mean": 8.791454040860545,
+            "min": 8.780887857920327,
+            "n": 2000,
+            "population_sd": 0.0025649780951034528,
+            "q": null,
+            "real": 8.7317511890125
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 9.050290881407056,
+            "mean": 9.043653694911127,
+            "min": 9.031522236380201,
+            "n": 2000,
+            "population_sd": 0.0029701286528431613,
+            "q": null,
+            "real": 8.97286575268349
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 354,
+            "mean": 344.5225,
+            "min": 334,
+            "n": 2000,
+            "population_sd": 2.842972695964562,
+            "q": null,
+            "real": 318
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1255,
+            "mean": 1234.1724999999997,
+            "min": 1208,
+            "n": 2000,
+            "population_sd": 7.833629028106956,
+            "q": null,
+            "real": 1182
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "accepted_moves": 143729,
+          "attempts": 3498000,
+          "changed_vertices": 143729,
+          "degenerate": 0,
+          "feasibility_rejections": 1657404,
+          "identical_token_samples": 0,
+          "identity_proposals": 1359638,
+          "invariant_failures": 0,
+          "profile_rejections": 337229,
+          "variables": 3498000
+        },
+        "n": 2000,
+        "null": "N2",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.285949739946262,
+            "mean": 5.283570520660667,
+            "min": 5.279682804225314,
+            "n": 2000,
+            "population_sd": 0.0008799398612818436,
+            "q": null,
+            "real": 5.273148199740376
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.771422778376444,
+            "mean": 6.76582155556176,
+            "min": 6.758317366743806,
+            "n": 2000,
+            "population_sd": 0.0018162223550887131,
+            "q": null,
+            "real": 6.7427014271027925
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.660794712272046,
+            "mean": 7.656796012969058,
+            "min": 7.646764200528011,
+            "n": 2000,
+            "population_sd": 0.0019470373366689182,
+            "q": null,
+            "real": 7.624554262931156
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.166665199031371,
+            "mean": 8.16226159708243,
+            "min": 8.150818719558012,
+            "n": 2000,
+            "population_sd": 0.0021784087962327947,
+            "q": null,
+            "real": 8.121273349271327
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.538039403998372,
+            "mean": 8.532887539443578,
+            "min": 8.519647181885453,
+            "n": 2000,
+            "population_sd": 0.0025146512745142847,
+            "q": null,
+            "real": 8.48204489226716
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.783172769940009,
+            "mean": 8.777375233695118,
+            "min": 8.762611124863598,
+            "n": 2000,
+            "population_sd": 0.0029637159991230573,
+            "q": null,
+            "real": 8.715276091587269
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 297,
+            "mean": 288.008,
+            "min": 280,
+            "n": 2000,
+            "population_sd": 2.5410501766002187,
+            "q": null,
+            "real": 266
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1106,
+            "mean": 1087.0315000000003,
+            "min": 1062,
+            "n": 2000,
+            "population_sd": 7.670235182183138,
+            "q": null,
+            "real": 1032
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "accepted_moves": 143768,
+          "attempts": 3522000,
+          "changed_vertices": 143768,
+          "degenerate": 0,
+          "feasibility_rejections": 1668727,
+          "identical_token_samples": 0,
+          "identity_proposals": 1371456,
+          "invariant_failures": 0,
+          "profile_rejections": 338049,
+          "variables": 3522000
+        },
+        "n": 2000,
+        "null": "N2",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.282581306748755,
+            "mean": 5.280624373458546,
+            "min": 5.276856476218113,
+            "n": 2000,
+            "population_sd": 0.0008603549357618017,
+            "q": null,
+            "real": 5.270192896494587
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.766683289471562,
+            "mean": 6.761476318440474,
+            "min": 6.754998361077273,
+            "n": 2000,
+            "population_sd": 0.0017914625686573464,
+            "q": null,
+            "real": 6.738247176511893
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.65725177361911,
+            "mean": 7.6525782982239265,
+            "min": 7.644157002422192,
+            "n": 2000,
+            "population_sd": 0.0019345846936370586,
+            "q": null,
+            "real": 7.620266519592177
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.162410529342703,
+            "mean": 8.157645715743284,
+            "min": 8.147954352980767,
+            "n": 2000,
+            "population_sd": 0.002170446082231074,
+            "q": null,
+            "real": 8.11661249168908
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.533587098263963,
+            "mean": 8.527924492107088,
+            "min": 8.515879968446317,
+            "n": 2000,
+            "population_sd": 0.002508300808230452,
+            "q": null,
+            "real": 8.477077697329973
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 8.778622809720346,
+            "mean": 8.772132215433645,
+            "min": 8.756768059904394,
+            "n": 2000,
+            "population_sd": 0.0029668107005462203,
+            "q": null,
+            "real": 8.71008057159204
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 295,
+            "mean": 287.0245,
+            "min": 279,
+            "n": 2000,
+            "population_sd": 2.5410430437125626,
+            "q": null,
+            "real": 265
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1100,
+            "mean": 1081.6385,
+            "min": 1060,
+            "n": 2000,
+            "population_sd": 7.560146675164445,
+            "q": null,
+            "real": 1026
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "accepted_moves": 162327,
+          "attempts": 1750000,
+          "changed_vertices": 162327,
+          "degenerate": 0,
+          "feasibility_rejections": 614403,
+          "identical_token_samples": 0,
+          "identity_proposals": 774040,
+          "invariant_failures": 0,
+          "profile_rejections": 199230,
+          "variables": 1750000
+        },
+        "n": 2000,
+        "null": "N2",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.428641542499518,
+            "mean": 5.426345755846432,
+            "min": 5.422651855909726,
+            "n": 2000,
+            "population_sd": 0.0008730521551436237,
+            "q": null,
+            "real": 5.414191338809041
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 6.997553955034259,
+            "mean": 6.992323127034688,
+            "min": 6.985194413915289,
+            "n": 2000,
+            "population_sd": 0.001985389432977492,
+            "q": null,
+            "real": 6.960290568997024
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 7.925763709861824,
+            "mean": 7.92002931224465,
+            "min": 7.912081148357542,
+            "n": 2000,
+            "population_sd": 0.00217524066645968,
+            "q": null,
+            "real": 7.876077289101137
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 8.444349796151212,
+            "mean": 8.438654301337943,
+            "min": 8.429211770429452,
+            "n": 2000,
+            "population_sd": 0.002387426074756059,
+            "q": null,
+            "real": 8.385238081937112
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 8.821402803822027,
+            "mean": 8.815305214107504,
+            "min": 8.804203437609113,
+            "n": 2000,
+            "population_sd": 0.0027150522455146064,
+            "q": null,
+            "real": 8.750490535474464
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 9.07101230983729,
+            "mean": 9.064748849775805,
+            "min": 9.051462510256723,
+            "n": 2000,
+            "population_sd": 0.0031285605192487376,
+            "q": null,
+            "real": 8.988801208274937
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 353,
+            "mean": 343.6075,
+            "min": 334,
+            "n": 2000,
+            "population_sd": 2.8169919683946563,
+            "q": null,
+            "real": 316
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 1263,
+            "mean": 1245.6245,
+            "min": 1212,
+            "n": 2000,
+            "population_sd": 8.021564669688827,
+            "q": null,
+            "real": 1187
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 0
+        },
+        "n": 2000,
+        "null": "N1",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.273148199740376,
+            "mean": 5.273148199740376,
+            "min": 5.273148199740376,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.273148199740376
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 9.228966233808457,
+            "mean": 9.207652260787283,
+            "min": 9.182900466021037,
+            "n": 2000,
+            "population_sd": 0.00649320811045251,
+            "q": null,
+            "real": 6.7427014271027925
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 11.672446600612997,
+            "mean": 11.635248697898875,
+            "min": 11.59034374492436,
+            "n": 2000,
+            "population_sd": 0.010943215218469585,
+            "q": null,
+            "real": 7.624554262931156
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 12.241402269618252,
+            "mean": 12.224708487140438,
+            "min": 12.207705159026474,
+            "n": 2000,
+            "population_sd": 0.00516374698286504,
+            "q": null,
+            "real": 8.121273349271327
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.311350821707409,
+            "mean": 12.304979373255028,
+            "min": 12.295072292411122,
+            "n": 2000,
+            "population_sd": 0.00215126198986671,
+            "q": null,
+            "real": 8.48204489226716
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.33653630049667,
+            "mean": 12.33127983053353,
+            "min": 12.319401314253513,
+            "n": 2000,
+            "population_sd": 0.002237238232226157,
+            "q": null,
+            "real": 8.715276091587269
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1805,
+            "mean": 1781.1610000000003,
+            "min": 1759,
+            "n": 2000,
+            "population_sd": 6.890143612436536,
+            "q": null,
+            "real": 266
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 4053,
+            "mean": 4017.6869999999994,
+            "min": 3978,
+            "n": 2000,
+            "population_sd": 11.649078547249996,
+            "q": null,
+            "real": 1032
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 0
+        },
+        "n": 2000,
+        "null": "N1",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.270192896494587,
+            "mean": 5.270192896494587,
+            "min": 5.270192896494587,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.270192896494587
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 9.22867425856599,
+            "mean": 9.203657135648433,
+            "min": 9.183854495961892,
+            "n": 2000,
+            "population_sd": 0.006367702455489443,
+            "q": null,
+            "real": 6.738247176511893
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 11.666170798173582,
+            "mean": 11.634289858496485,
+            "min": 11.598655710184177,
+            "n": 2000,
+            "population_sd": 0.010705715895032173,
+            "q": null,
+            "real": 7.620266519592177
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 12.239486333953073,
+            "mean": 12.224819183473077,
+            "min": 12.205099703381295,
+            "n": 2000,
+            "population_sd": 0.004982259992928869,
+            "q": null,
+            "real": 8.11661249168908
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.310575328211641,
+            "mean": 12.305016640980966,
+            "min": 12.295072503525128,
+            "n": 2000,
+            "population_sd": 0.0020949727004080927,
+            "q": null,
+            "real": 8.477077697329973
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.337180770065645,
+            "mean": 12.331271175839616,
+            "min": 12.320001772365242,
+            "n": 2000,
+            "population_sd": 0.0022252950585883047,
+            "q": null,
+            "real": 8.71008057159204
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1801,
+            "mean": 1780.3929999999998,
+            "min": 1758,
+            "n": 2000,
+            "population_sd": 6.983233563328664,
+            "q": null,
+            "real": 265
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 4057,
+            "mean": 4015.4815,
+            "min": 3971,
+            "n": 2000,
+            "population_sd": 12.059795095688827,
+            "q": null,
+            "real": 1026
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 0
+        },
+        "n": 2000,
+        "null": "N1",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.398379177625525,
+            "mean": 5.398379177625525,
+            "min": 5.398379177625525,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.398379177625525
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 9.435885073527158,
+            "mean": 9.414246748597336,
+            "min": 9.391597951619053,
+            "n": 2000,
+            "population_sd": 0.006776797614002521,
+            "q": null,
+            "real": 6.944775290937278
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 11.790391271836572,
+            "mean": 11.756173043533286,
+            "min": 11.713012273139755,
+            "n": 2000,
+            "population_sd": 0.010739847454586962,
+            "q": null,
+            "real": 7.857886981643389
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 12.299114538816637,
+            "mean": 12.282173037240977,
+            "min": 12.265588326620522,
+            "n": 2000,
+            "population_sd": 0.004741506353440085,
+            "q": null,
+            "real": 8.365770191346739
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.357950301831147,
+            "mean": 12.352285296063174,
+            "min": 12.344874756550485,
+            "n": 2000,
+            "population_sd": 0.002000172397405607,
+            "q": null,
+            "real": 8.7317511890125
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.382536055786664,
+            "mean": 12.377038192332359,
+            "min": 12.367559397062998,
+            "n": 2000,
+            "population_sd": 0.0021779102955038327,
+            "q": null,
+            "real": 8.97286575268349
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1896,
+            "mean": 1872.394,
+            "min": 1843,
+            "n": 2000,
+            "population_sd": 7.319751635130803,
+            "q": null,
+            "real": 318
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 4242,
+            "mean": 4205.6635000000015,
+            "min": 4161,
+            "n": 2000,
+            "population_sd": 11.65355172254366,
+            "q": null,
+            "real": 1182
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 0
+        },
+        "n": 2000,
+        "null": "N1",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.395957320228492,
+            "mean": 5.395957320228493,
+            "min": 5.395957320228492,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 5.395957320228492
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 9.438640373517194,
+            "mean": 9.411807791395315,
+            "min": 9.388385649255019,
+            "n": 2000,
+            "population_sd": 0.006591696597239486,
+            "q": null,
+            "real": 6.941785567304235
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 11.797255515441359,
+            "mean": 11.756402690143148,
+            "min": 11.711759397143371,
+            "n": 2000,
+            "population_sd": 0.010687091244108073,
+            "q": null,
+            "real": 7.853928780578517
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 12.297560543982708,
+            "mean": 12.282901925920761,
+            "min": 12.26734966581805,
+            "n": 2000,
+            "population_sd": 0.00468685006453544,
+            "q": null,
+            "real": 8.360941253150049
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.357960439617688,
+            "mean": 12.352858018257336,
+            "min": 12.344102235640523,
+            "n": 2000,
+            "population_sd": 0.001968354283137411,
+            "q": null,
+            "real": 8.726155998322827
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.383108696757452,
+            "mean": 12.377507435000881,
+            "min": 12.365943877762692,
+            "n": 2000,
+            "population_sd": 0.0021816209559606756,
+            "q": null,
+            "real": 8.968885903840471
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1900,
+            "mean": 1872.3319999999997,
+            "min": 1845,
+            "n": 2000,
+            "population_sd": 7.420631779033364,
+            "q": null,
+            "real": 311
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 4242,
+            "mean": 4205.9884999999995,
+            "min": 4167,
+            "n": 2000,
+            "population_sd": 11.915761316424572,
+            "q": null,
+            "real": 1174
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 0
+        },
+        "n": 2000,
+        "null": "N1",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.398379177625525,
+            "mean": 5.398379177625525,
+            "min": 5.398379177625525,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.398379177625525
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 9.436470514099423,
+            "mean": 9.414078840342585,
+            "min": 9.39301703317963,
+            "n": 2000,
+            "population_sd": 0.0066647020163113895,
+            "q": null,
+            "real": 6.944775290937278
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 11.798404540154174,
+            "mean": 11.756342506398255,
+            "min": 11.718653629260995,
+            "n": 2000,
+            "population_sd": 0.010550675288793904,
+            "q": null,
+            "real": 7.857886981643389
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 12.299718999220337,
+            "mean": 12.28221613284287,
+            "min": 12.266619813867838,
+            "n": 2000,
+            "population_sd": 0.004572479628751477,
+            "q": null,
+            "real": 8.365770191346739
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.357790076221454,
+            "mean": 12.35222388881262,
+            "min": 12.344130225463886,
+            "n": 2000,
+            "population_sd": 0.0019514443449331165,
+            "q": null,
+            "real": 8.7317511890125
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.382105894459075,
+            "mean": 12.376931413590167,
+            "min": 12.366769720414593,
+            "n": 2000,
+            "population_sd": 0.002171987064102223,
+            "q": null,
+            "real": 8.97286575268349
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1896,
+            "mean": 1872.425,
+            "min": 1849,
+            "n": 2000,
+            "population_sd": 7.300642095048897,
+            "q": null,
+            "real": 318
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 4245,
+            "mean": 4205.019,
+            "min": 4152,
+            "n": 2000,
+            "population_sd": 11.93459840128692,
+            "q": null,
+            "real": 1182
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 0
+        },
+        "n": 2000,
+        "null": "N1",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.395742324524608,
+            "mean": 5.395742324524608,
+            "min": 5.395742324524608,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.395742324524608
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 9.431846998509371,
+            "mean": 9.411471986597414,
+            "min": 9.390754786980969,
+            "n": 2000,
+            "population_sd": 0.006654448385723176,
+            "q": null,
+            "real": 6.94114675101895
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 11.798872483374923,
+            "mean": 11.756360209841457,
+            "min": 11.724004526613514,
+            "n": 2000,
+            "population_sd": 0.010592747608044673,
+            "q": null,
+            "real": 7.852573711269676
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 12.299330989777998,
+            "mean": 12.282719788582432,
+            "min": 12.268156203871797,
+            "n": 2000,
+            "population_sd": 0.0046439222976495005,
+            "q": null,
+            "real": 8.358942980778037
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.358554562641965,
+            "mean": 12.352732926959597,
+            "min": 12.344376560929213,
+            "n": 2000,
+            "population_sd": 0.001998453642010734,
+            "q": null,
+            "real": 8.723516531914585
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.383293813083817,
+            "mean": 12.377429687318246,
+            "min": 12.367649300197774,
+            "n": 2000,
+            "population_sd": 0.0022136099162561504,
+            "q": null,
+            "real": 8.965546108583
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1896,
+            "mean": 1872.951,
+            "min": 1849,
+            "n": 2000,
+            "population_sd": 7.304423248963604,
+            "q": null,
+            "real": 310
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 4259,
+            "mean": 4206.9205,
+            "min": 4158,
+            "n": 2000,
+            "population_sd": 11.907484190625647,
+            "q": null,
+            "real": 1172
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 0
+        },
+        "n": 2000,
+        "null": "N1",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.414191338809041,
+            "mean": 5.414191338809042,
+            "min": 5.414191338809041,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 5.414191338809041
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 9.461955872325417,
+            "mean": 9.437758049735034,
+            "min": 9.415701961057298,
+            "n": 2000,
+            "population_sd": 0.006795911800828896,
+            "q": null,
+            "real": 6.960290568997024
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 11.79893738184077,
+            "mean": 11.766112713320036,
+            "min": 11.731417247339087,
+            "n": 2000,
+            "population_sd": 0.010518919480891453,
+            "q": null,
+            "real": 7.876077289101137
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 12.298664352047185,
+            "mean": 12.285402701928026,
+            "min": 12.270586695599356,
+            "n": 2000,
+            "population_sd": 0.0045233180784315374,
+            "q": null,
+            "real": 8.385238081937112
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.360126540190254,
+            "mean": 12.354702275849966,
+            "min": 12.347283540212755,
+            "n": 2000,
+            "population_sd": 0.002033051649491557,
+            "q": null,
+            "real": 8.750490535474464
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.385173857870596,
+            "mean": 12.37929804372744,
+            "min": 12.368955407152033,
+            "n": 2000,
+            "population_sd": 0.0022744992309050704,
+            "q": null,
+            "real": 8.988801208274937
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1907,
+            "mean": 1881.017,
+            "min": 1846,
+            "n": 2000,
+            "population_sd": 7.416583512642456,
+            "q": null,
+            "real": 316
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 4257,
+            "mean": 4222.144499999999,
+            "min": 4178,
+            "n": 2000,
+            "population_sd": 11.387783794487847,
+            "q": null,
+            "real": 1187
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 0
+        },
+        "n": 2000,
+        "null": "N1",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.414191338809041,
+            "mean": 5.414191338809042,
+            "min": 5.414191338809041,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 5.414191338809041
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 9.459786673534119,
+            "mean": 9.438314616996509,
+            "min": 9.410819031453903,
+            "n": 2000,
+            "population_sd": 0.006707484839365723,
+            "q": null,
+            "real": 6.960290568997024
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 11.800028471635889,
+            "mean": 11.766162341116884,
+            "min": 11.73339571137739,
+            "n": 2000,
+            "population_sd": 0.010643508080182646,
+            "q": null,
+            "real": 7.876077289101137
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 12.299077399630029,
+            "mean": 12.28542034302965,
+            "min": 12.269801074841654,
+            "n": 2000,
+            "population_sd": 0.004581210991705375,
+            "q": null,
+            "real": 8.385238081937112
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.359795538973525,
+            "mean": 12.354821924942321,
+            "min": 12.346260498034836,
+            "n": 2000,
+            "population_sd": 0.0019819401218581396,
+            "q": null,
+            "real": 8.750490535474464
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.385063081692474,
+            "mean": 12.37941541847402,
+            "min": 12.370206265780718,
+            "n": 2000,
+            "population_sd": 0.002160652979779144,
+            "q": null,
+            "real": 8.988801208274937
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1910,
+            "mean": 1880.846,
+            "min": 1855,
+            "n": 2000,
+            "population_sd": 7.282326825953367,
+            "q": null,
+            "real": 316
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 4259,
+            "mean": 4221.4834999999985,
+            "min": 4182,
+            "n": 2000,
+            "population_sd": 11.836415325173421,
+            "q": null,
+            "real": 1187
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "identical_token_samples": 0
+        },
+        "n": 2000,
+        "null": "N1",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.248649093711433,
+            "mean": 5.248649093711433,
+            "min": 5.248649093711433,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.248649093711433
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 9.197958559050363,
+            "mean": 9.176897884423504,
+            "min": 9.158742874138655,
+            "n": 2000,
+            "population_sd": 0.006293628608586528,
+            "q": null,
+            "real": 6.732510281095758
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 11.66176747212057,
+            "mean": 11.62361314499477,
+            "min": 11.584181315636718,
+            "n": 2000,
+            "population_sd": 0.011024458717017285,
+            "q": null,
+            "real": 7.608998148434995
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 12.238327961518642,
+            "mean": 12.22152815694374,
+            "min": 12.204531891760066,
+            "n": 2000,
+            "population_sd": 0.005270460947967674,
+            "q": null,
+            "real": 8.089701250051482
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.309567899668613,
+            "mean": 12.30288959270861,
+            "min": 12.294177076248385,
+            "n": 2000,
+            "population_sd": 0.0021947054583921263,
+            "q": null,
+            "real": 8.438319370378412
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.33497495245409,
+            "mean": 12.329193494580016,
+            "min": 12.319468857247108,
+            "n": 2000,
+            "population_sd": 0.0022568746981091094,
+            "q": null,
+            "real": 8.66471237412225
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1796,
+            "mean": 1771.4335,
+            "min": 1748,
+            "n": 2000,
+            "population_sd": 7.035167215496729,
+            "q": null,
+            "real": 260
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 4045,
+            "mean": 4007.0465,
+            "min": 3969,
+            "n": 2000,
+            "population_sd": 12.049329348557123,
+            "q": null,
+            "real": 1015
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "all_pairs_preverified": 2000,
+          "attempted_moves": 10946000,
+          "crossed_pairs": 1633107321,
+          "degenerate": 0,
+          "identical_token_samples": 0,
+          "invariant_failures": 0,
+          "moved_gates": 9545015,
+          "sweeps": 2000
+        },
+        "n": 2000,
+        "null": "N1b",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.248649093711433,
+            "mean": 5.248649093711433,
+            "min": 5.248649093711433,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.248649093711433
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 8.505198104590175,
+            "mean": 8.45574043715718,
+            "min": 8.402752233478521,
+            "n": 2000,
+            "population_sd": 0.015034473449250903,
+            "q": null,
+            "real": 6.732510281095758
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 10.76475910470498,
+            "mean": 10.69408557292907,
+            "min": 10.620209231169683,
+            "n": 2000,
+            "population_sd": 0.02121479414860318,
+            "q": null,
+            "real": 7.608998148434995
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 11.820523250901873,
+            "mean": 11.76794725361375,
+            "min": 11.703955151012257,
+            "n": 2000,
+            "population_sd": 0.018113875648436185,
+            "q": null,
+            "real": 8.089701250051482
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.201570940644821,
+            "mean": 12.163099705299716,
+            "min": 12.11851962161926,
+            "n": 2000,
+            "population_sd": 0.011462844622379764,
+            "q": null,
+            "real": 8.438319370378412
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.309559182091332,
+            "mean": 12.293533460696974,
+            "min": 12.266731605180535,
+            "n": 2000,
+            "population_sd": 0.006067936663227883,
+            "q": null,
+            "real": 8.66471237412225
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1550,
+            "mean": 1517.2185000000002,
+            "min": 1490,
+            "n": 2000,
+            "population_sd": 8.622978473242297,
+            "q": null,
+            "real": 260
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 3634,
+            "mean": 3587.072,
+            "min": 3538,
+            "n": 2000,
+            "population_sd": 14.654549327768487,
+            "q": null,
+            "real": 1015
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "all_pairs_preverified": 2000,
+          "attempted_moves": 11292000,
+          "crossed_pairs": 1776368445,
+          "degenerate": 0,
+          "identical_token_samples": 0,
+          "invariant_failures": 0,
+          "moved_gates": 9868088,
+          "sweeps": 2000
+        },
+        "n": 2000,
+        "null": "N1b",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.398379177625525,
+            "mean": 5.398379177625525,
+            "min": 5.398379177625525,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.398379177625525
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 8.777830215422151,
+            "mean": 8.727911666209778,
+            "min": 8.676005307614322,
+            "n": 2000,
+            "population_sd": 0.015255673325999076,
+            "q": null,
+            "real": 6.944775290937278
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 10.981355300437961,
+            "mean": 10.912337445339398,
+            "min": 10.847522990435793,
+            "n": 2000,
+            "population_sd": 0.020542014937802715,
+            "q": null,
+            "real": 7.857886981643389
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 11.930184621334238,
+            "mean": 11.882530366474816,
+            "min": 11.830091525256371,
+            "n": 2000,
+            "population_sd": 0.01695737789579724,
+            "q": null,
+            "real": 8.365770191346739
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.263041712107894,
+            "mean": 12.231299763080905,
+            "min": 12.197076731808677,
+            "n": 2000,
+            "population_sd": 0.01040783096431647,
+            "q": null,
+            "real": 8.7317511890125
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.361773977640217,
+            "mean": 12.34626088342211,
+            "min": 12.324370909730527,
+            "n": 2000,
+            "population_sd": 0.00561172212834519,
+            "q": null,
+            "real": 8.97286575268349
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1655,
+            "mean": 1630.9244999999999,
+            "min": 1600,
+            "n": 2000,
+            "population_sd": 9.002655150009911,
+            "q": null,
+            "real": 318
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 3857,
+            "mean": 3804.9875,
+            "min": 3756,
+            "n": 2000,
+            "population_sd": 14.517070770303487,
+            "q": null,
+            "real": 1182
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "all_pairs_preverified": 2000,
+          "attempted_moves": 10960000,
+          "crossed_pairs": 1634104482,
+          "degenerate": 0,
+          "identical_token_samples": 0,
+          "invariant_failures": 0,
+          "moved_gates": 9545166,
+          "sweeps": 2000
+        },
+        "n": 2000,
+        "null": "N1b",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.273148199740376,
+            "mean": 5.273148199740376,
+            "min": 5.273148199740376,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.273148199740376
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 8.531747678553199,
+            "mean": 8.481260650694423,
+            "min": 8.431256010759405,
+            "n": 2000,
+            "population_sd": 0.014861968351875754,
+            "q": null,
+            "real": 6.7427014271027925
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 10.776682735874084,
+            "mean": 10.711000256581956,
+            "min": 10.645037274775934,
+            "n": 2000,
+            "population_sd": 0.020800888719997527,
+            "q": null,
+            "real": 7.624554262931156
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 11.828275738415003,
+            "mean": 11.77513395736792,
+            "min": 11.71781326504035,
+            "n": 2000,
+            "population_sd": 0.017648480863981512,
+            "q": null,
+            "real": 8.121273349271327
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.201212565036235,
+            "mean": 12.166131546429188,
+            "min": 12.125691639679877,
+            "n": 2000,
+            "population_sd": 0.011277554905418105,
+            "q": null,
+            "real": 8.48204489226716
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.314400237166144,
+            "mean": 12.295418383580117,
+            "min": 12.272900432869772,
+            "n": 2000,
+            "population_sd": 0.0060461116316211224,
+            "q": null,
+            "real": 8.715276091587269
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1561,
+            "mean": 1525.7855,
+            "min": 1496,
+            "n": 2000,
+            "population_sd": 8.72080786108718,
+            "q": null,
+            "real": 266
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 3650,
+            "mean": 3599.419999999999,
+            "min": 3539,
+            "n": 2000,
+            "population_sd": 14.78629771105668,
+            "q": null,
+            "real": 1032
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "all_pairs_preverified": 2000,
+          "attempted_moves": 10960000,
+          "crossed_pairs": 1634039652,
+          "degenerate": 0,
+          "identical_token_samples": 0,
+          "invariant_failures": 0,
+          "moved_gates": 9544712,
+          "sweeps": 2000
+        },
+        "n": 2000,
+        "null": "N1b",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.270192896494587,
+            "mean": 5.270192896494587,
+            "min": 5.270192896494587,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.270192896494587
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 8.52575655887032,
+            "mean": 8.4777439966207,
+            "min": 8.425213030171628,
+            "n": 2000,
+            "population_sd": 0.01498549565528037,
+            "q": null,
+            "real": 6.738247176511893
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 10.786573263469046,
+            "mean": 10.710027040619629,
+            "min": 10.62481835179182,
+            "n": 2000,
+            "population_sd": 0.02110692214276146,
+            "q": null,
+            "real": 7.620266519592177
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 11.836516880142515,
+            "mean": 11.775553626063402,
+            "min": 11.69533511409136,
+            "n": 2000,
+            "population_sd": 0.01805770547164045,
+            "q": null,
+            "real": 8.11661249168908
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.209105352976447,
+            "mean": 12.166495024153537,
+            "min": 12.127543973413674,
+            "n": 2000,
+            "population_sd": 0.011368590663479885,
+            "q": null,
+            "real": 8.477077697329973
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.316754372415431,
+            "mean": 12.295521003541309,
+            "min": 12.267296897128125,
+            "n": 2000,
+            "population_sd": 0.006039972644584147,
+            "q": null,
+            "real": 8.71008057159204
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1552,
+            "mean": 1524.7034999999998,
+            "min": 1491,
+            "n": 2000,
+            "population_sd": 8.758286804506914,
+            "q": null,
+            "real": 265
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 3650,
+            "mean": 3597.7115000000003,
+            "min": 3547,
+            "n": 2000,
+            "population_sd": 14.115745384144619,
+            "q": null,
+            "real": 1026
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "all_pairs_preverified": 2000,
+          "attempted_moves": 11292000,
+          "crossed_pairs": 1774765455,
+          "degenerate": 0,
+          "identical_token_samples": 0,
+          "invariant_failures": 0,
+          "moved_gates": 9867995,
+          "sweeps": 2000
+        },
+        "n": 2000,
+        "null": "N1b",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.398379177625525,
+            "mean": 5.398379177625525,
+            "min": 5.398379177625525,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.398379177625525
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 8.781505175193384,
+            "mean": 8.727526866380082,
+            "min": 8.678972047499396,
+            "n": 2000,
+            "population_sd": 0.014864592942698023,
+            "q": null,
+            "real": 6.944775290937278
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 10.987851954356149,
+            "mean": 10.91227139265586,
+            "min": 10.844584290619258,
+            "n": 2000,
+            "population_sd": 0.02072724326971129,
+            "q": null,
+            "real": 7.857886981643389
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 11.935104497514741,
+            "mean": 11.882514261932016,
+            "min": 11.822493756119641,
+            "n": 2000,
+            "population_sd": 0.017231087021021288,
+            "q": null,
+            "real": 8.365770191346739
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.26127967672449,
+            "mean": 12.23125006166058,
+            "min": 12.194881894709773,
+            "n": 2000,
+            "population_sd": 0.01072977766138938,
+            "q": null,
+            "real": 8.7317511890125
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.361465619884594,
+            "mean": 12.346149766743645,
+            "min": 12.325332918025593,
+            "n": 2000,
+            "population_sd": 0.005624346774576611,
+            "q": null,
+            "real": 8.97286575268349
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1667,
+            "mean": 1631.1410000000003,
+            "min": 1600,
+            "n": 2000,
+            "population_sd": 8.902815228903714,
+            "q": null,
+            "real": 318
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 3852,
+            "mean": 3804.614,
+            "min": 3751,
+            "n": 2000,
+            "population_sd": 14.824304503078723,
+            "q": null,
+            "real": 1182
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "all_pairs_preverified": 2000,
+          "attempted_moves": 11296000,
+          "crossed_pairs": 1775472296,
+          "degenerate": 0,
+          "identical_token_samples": 0,
+          "invariant_failures": 0,
+          "moved_gates": 9864613,
+          "sweeps": 2000
+        },
+        "n": 2000,
+        "null": "N1b",
+        "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.395957320228492,
+            "mean": 5.395957320228493,
+            "min": 5.395957320228492,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 5.395957320228492
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 8.777160329438937,
+            "mean": 8.724197236455524,
+            "min": 8.68238650537872,
+            "n": 2000,
+            "population_sd": 0.014761265214532164,
+            "q": null,
+            "real": 6.941785567304235
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 10.972493347157776,
+            "mean": 10.911551208385024,
+            "min": 10.843858812399628,
+            "n": 2000,
+            "population_sd": 0.02039162984770675,
+            "q": null,
+            "real": 7.853928780578517
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 11.937928890777728,
+            "mean": 11.883437072840742,
+            "min": 11.825040392758787,
+            "n": 2000,
+            "population_sd": 0.017133966353569823,
+            "q": null,
+            "real": 8.360941253150049
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.267010204383658,
+            "mean": 12.232361737217586,
+            "min": 12.193753952636376,
+            "n": 2000,
+            "population_sd": 0.01052534311233563,
+            "q": null,
+            "real": 8.726155998322827
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.361925396948118,
+            "mean": 12.346985598996193,
+            "min": 12.320948890130174,
+            "n": 2000,
+            "population_sd": 0.005520619735104643,
+            "q": null,
+            "real": 8.968885903840471
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1663,
+            "mean": 1630.1349999999998,
+            "min": 1597,
+            "n": 2000,
+            "population_sd": 9.086791237835282,
+            "q": null,
+            "real": 311
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 3853,
+            "mean": 3804.8745,
+            "min": 3752,
+            "n": 2000,
+            "population_sd": 14.508954123230241,
+            "q": null,
+            "real": 1174
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "all_pairs_preverified": 2000,
+          "attempted_moves": 11296000,
+          "crossed_pairs": 1775278497,
+          "degenerate": 0,
+          "identical_token_samples": 0,
+          "invariant_failures": 0,
+          "moved_gates": 9864484,
+          "sweeps": 2000
+        },
+        "n": 2000,
+        "null": "N1b",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.395742324524608,
+            "mean": 5.395742324524608,
+            "min": 5.395742324524608,
+            "n": 2000,
+            "population_sd": 0.0,
+            "q": null,
+            "real": 5.395742324524608
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 8.771324397531234,
+            "mean": 8.722652960672844,
+            "min": 8.677138110583984,
+            "n": 2000,
+            "population_sd": 0.01487596014813902,
+            "q": null,
+            "real": 6.94114675101895
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 10.973396010445708,
+            "mean": 10.909906787925992,
+            "min": 10.840778040772594,
+            "n": 2000,
+            "population_sd": 0.020660483367650858,
+            "q": null,
+            "real": 7.852573711269676
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 11.940534872090403,
+            "mean": 11.88236248430678,
+            "min": 11.813323199855269,
+            "n": 2000,
+            "population_sd": 0.017045013313153216,
+            "q": null,
+            "real": 8.358942980778037
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.266306201994537,
+            "mean": 12.231728211207942,
+            "min": 12.194508859101111,
+            "n": 2000,
+            "population_sd": 0.01041112360841256,
+            "q": null,
+            "real": 8.723516531914585
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.364459135501134,
+            "mean": 12.346851957690383,
+            "min": 12.326740599140768,
+            "n": 2000,
+            "population_sd": 0.005543103015222754,
+            "q": null,
+            "real": 8.965546108583
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1662,
+            "mean": 1629.7855,
+            "min": 1603,
+            "n": 2000,
+            "population_sd": 8.905699846165934,
+            "q": null,
+            "real": 310
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 3854,
+            "mean": 3804.074,
+            "min": 3756,
+            "n": 2000,
+            "population_sd": 14.921344577483627,
+            "q": null,
+            "real": 1172
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "all_pairs_preverified": 2000,
+          "attempted_moves": 11310000,
+          "crossed_pairs": 1776728810,
+          "degenerate": 0,
+          "identical_token_samples": 0,
+          "invariant_failures": 0,
+          "moved_gates": 9876961,
+          "sweeps": 2000
+        },
+        "n": 2000,
+        "null": "N1b",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.414191338809041,
+            "mean": 5.414191338809042,
+            "min": 5.414191338809041,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 5.414191338809041
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 8.798408581905372,
+            "mean": 8.750471544184869,
+            "min": 8.691966491113186,
+            "n": 2000,
+            "population_sd": 0.015146270800155622,
+            "q": null,
+            "real": 6.960290568997024
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 11.000209798696565,
+            "mean": 10.925348849643907,
+            "min": 10.84711263380253,
+            "n": 2000,
+            "population_sd": 0.020487943563319892,
+            "q": null,
+            "real": 7.876077289101137
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 11.943045017445222,
+            "mean": 11.887855233830182,
+            "min": 11.821399186206154,
+            "n": 2000,
+            "population_sd": 0.01725046386455209,
+            "q": null,
+            "real": 8.385238081937112
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.26779007240106,
+            "mean": 12.234396299142478,
+            "min": 12.19204917437426,
+            "n": 2000,
+            "population_sd": 0.01053250819352402,
+            "q": null,
+            "real": 8.750490535474464
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.364226255497718,
+            "mean": 12.348723725633633,
+            "min": 12.328688793260811,
+            "n": 2000,
+            "population_sd": 0.005482743699776517,
+            "q": null,
+            "real": 8.988801208274937
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1672,
+            "mean": 1638.3344999999997,
+            "min": 1606,
+            "n": 2000,
+            "population_sd": 8.87905455270999,
+            "q": null,
+            "real": 316
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 3870,
+            "mean": 3819.8199999999997,
+            "min": 3768,
+            "n": 2000,
+            "population_sd": 14.956924817622111,
+            "q": null,
+            "real": 1187
+          }
+        }
+      },
+      {
+        "diagnostics": {
+          "all_pairs_preverified": 2000,
+          "attempted_moves": 11310000,
+          "crossed_pairs": 1775674966,
+          "degenerate": 0,
+          "identical_token_samples": 0,
+          "invariant_failures": 0,
+          "moved_gates": 9878006,
+          "sweeps": 2000
+        },
+        "n": 2000,
+        "null": "N1b",
+        "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "statistics": {
+          "H1": {
+            "empirical_p": null,
+            "max": 5.414191338809041,
+            "mean": 5.414191338809042,
+            "min": 5.414191338809041,
+            "n": 2000,
+            "population_sd": 8.881784197001252e-16,
+            "q": null,
+            "real": 5.414191338809041
+          },
+          "H2": {
+            "empirical_p": null,
+            "max": 8.809615616774812,
+            "mean": 8.750597859256011,
+            "min": 8.699971026789472,
+            "n": 2000,
+            "population_sd": 0.015222435775929067,
+            "q": null,
+            "real": 6.960290568997024
+          },
+          "H3": {
+            "empirical_p": null,
+            "max": 10.990942164233553,
+            "mean": 10.925594795888857,
+            "min": 10.853034531478734,
+            "n": 2000,
+            "population_sd": 0.020887543916917828,
+            "q": null,
+            "real": 7.876077289101137
+          },
+          "H4": {
+            "empirical_p": null,
+            "max": 11.938055367495492,
+            "mean": 11.887991869505273,
+            "min": 11.83493621047563,
+            "n": 2000,
+            "population_sd": 0.017459946023389447,
+            "q": null,
+            "real": 8.385238081937112
+          },
+          "H5": {
+            "empirical_p": null,
+            "max": 12.264539196839882,
+            "mean": 12.23458216970366,
+            "min": 12.202626002749046,
+            "n": 2000,
+            "population_sd": 0.010450002675822915,
+            "q": null,
+            "real": 8.750490535474464
+          },
+          "H6": {
+            "empirical_p": null,
+            "max": 12.363383636227676,
+            "mean": 12.34889972957621,
+            "min": 12.329678031872241,
+            "n": 2000,
+            "population_sd": 0.005477459566629984,
+            "q": null,
+            "real": 8.988801208274937
+          },
+          "lz76": {
+            "empirical_p": null,
+            "max": 1665,
+            "mean": 1638.3059999999998,
+            "min": 1605,
+            "n": 2000,
+            "population_sd": 8.92610575783191,
+            "q": null,
+            "real": 316
+          },
+          "repair": {
+            "empirical_p": null,
+            "max": 3876,
+            "mean": 3820.2864999999997,
+            "min": 3772,
+            "n": 2000,
+            "population_sd": 15.158146910160223,
+            "q": null,
+            "real": 1187
+          }
+        }
+      }
+    ],
+    "completed_samples": 72000,
+    "failed_tasks": [],
+    "planned_samples_per_cell": 2000,
+    "preparation": {
+      "acceleration": {
+        "commuting": true,
+        "enabled": true,
+        "frames": true,
+        "verification_file": "results/P-1/accelerator-v1/CONFIRMATION.json",
+        "words": [
+          {
+            "attribution": {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 57222,
+              "format": "FULL-WORD",
+              "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+              "kappa": "0.001672660197076918",
+              "local_profile": {
+                "1": 2412,
+                "2": 418,
+                "3": 432,
+                "4": 142,
+                "5": 82,
+                "8": 8
+              },
+              "path": "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+              "pin_key": "1094-K8S7-FULL-WORD.json.gz",
+              "pr": 1094,
+              "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+              "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+              "width_inventory": {
+                "4": 56,
+                "5": 32,
+                "7": 30,
+                "8": 122,
+                "9": 240
+              }
+            },
+            "commutation_predicate_certificate": {
+              "all_ordered_pairs_verified": true,
+              "cpu_seconds": 2.8016331740000004,
+              "formal_warp_pairs": 0,
+              "invariant_failures": 0,
+              "ordered_pairs": 15348093,
+              "scalar_pairs": 15348093,
+              "seconds": 2.8033199701458216,
+              "sections": [
+                {
+                  "conflicts": 93458,
+                  "gates": 3451,
+                  "ordered_pairs": 11909401,
+                  "section": "A"
+                },
+                {
+                  "conflicts": 0,
+                  "gates": 176,
+                  "ordered_pairs": 30976,
+                  "section": "cut"
+                },
+                {
+                  "conflicts": 10508,
+                  "gates": 1846,
+                  "ordered_pairs": 3407716,
+                  "section": "B"
+                }
+              ]
+            },
+            "frame_transition_logic": "unchanged inherited FrameSampler.walk; only lazy output projection",
+            "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz"
+          },
+          {
+            "attribution": {
+              "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+              "bytes": 57438,
+              "format": "FULL-WORD",
+              "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+              "kappa": "0.001676938111022438",
+              "local_profile": {
+                "1": 2348,
+                "2": 500,
+                "3": 416,
+                "4": 130,
+                "5": 82,
+                "8": 8
+              },
+              "path": "research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz",
+              "pin_key": "1672-gauge44-word-566-554.json.gz",
+              "pr": 1672,
+              "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+              "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+              "width_inventory": {
+                "4": 44,
+                "5": 44,
+                "7": 38,
+                "8": 114,
+                "9": 240
+              }
+            },
+            "commutation_predicate_certificate": {
+              "all_ordered_pairs_verified": true,
+              "cpu_seconds": 2.873194872000001,
+              "formal_warp_pairs": 0,
+              "invariant_failures": 0,
+              "ordered_pairs": 15373986,
+              "scalar_pairs": 15373986,
+              "seconds": 2.874358999542892,
+              "sections": [
+                {
+                  "conflicts": 93458,
+                  "gates": 3451,
+                  "ordered_pairs": 11909401,
+                  "section": "A"
+                },
+                {
+                  "conflicts": 0,
+                  "gates": 176,
+                  "ordered_pairs": 30976,
+                  "section": "cut"
+                },
+                {
+                  "conflicts": 10600,
+                  "gates": 1853,
+                  "ordered_pairs": 3433609,
+                  "section": "B"
+                }
+              ]
+            },
+            "frame_transition_logic": "unchanged inherited FrameSampler.walk; only lazy output projection",
+            "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-gauge44-word-566-554.json.gz"
+          },
+          {
+            "attribution": {
+              "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+              "bytes": 57440,
+              "format": "FULL-WORD",
+              "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+              "kappa": "0.001676938111022438",
+              "local_profile": {
+                "1": 2340,
+                "2": 508,
+                "3": 420,
+                "4": 126,
+                "5": 82,
+                "8": 8
+              },
+              "path": "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+              "pin_key": "1672-extra-word-566-554.json.gz",
+              "pr": 1672,
+              "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+              "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+              "width_inventory": {
+                "4": 40,
+                "5": 48,
+                "7": 38,
+                "8": 114,
+                "9": 240
+              }
+            },
+            "commutation_predicate_certificate": {
+              "all_ordered_pairs_verified": true,
+              "cpu_seconds": 2.80969159,
+              "formal_warp_pairs": 0,
+              "invariant_failures": 0,
+              "ordered_pairs": 15373986,
+              "scalar_pairs": 15373986,
+              "seconds": 2.8126528039574623,
+              "sections": [
+                {
+                  "conflicts": 93458,
+                  "gates": 3451,
+                  "ordered_pairs": 11909401,
+                  "section": "A"
+                },
+                {
+                  "conflicts": 0,
+                  "gates": 176,
+                  "ordered_pairs": 30976,
+                  "section": "cut"
+                },
+                {
+                  "conflicts": 10600,
+                  "gates": 1853,
+                  "ordered_pairs": 3433609,
+                  "section": "B"
+                }
+              ]
+            },
+            "frame_transition_logic": "unchanged inherited FrameSampler.walk; only lazy output projection",
+            "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-extra-word-566-554.json.gz"
+          },
+          {
+            "attribution": {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 71241,
+              "format": "BORROW-WORD",
+              "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+              "kappa": "0.0017161404259974415",
+              "local_profile": {
+                "1": 2370,
+                "2": 646,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "7": 4,
+                "8": 4
+              },
+              "path": "research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz",
+              "pin_key": "2745-BORROW-WORD-43base.json.gz",
+              "pr": 2745,
+              "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+              "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            "commutation_predicate_certificate": {
+              "all_ordered_pairs_verified": true,
+              "cpu_seconds": 3.106079351,
+              "formal_warp_pairs": 416429,
+              "invariant_failures": 0,
+              "ordered_pairs": 16271426,
+              "scalar_pairs": 15854997,
+              "seconds": 3.1077438993379474,
+              "sections": [
+                {
+                  "conflicts": 94026,
+                  "gates": 3535,
+                  "ordered_pairs": 12496225,
+                  "section": "A"
+                },
+                {
+                  "conflicts": 0,
+                  "gates": 176,
+                  "ordered_pairs": 30976,
+                  "section": "cut"
+                },
+                {
+                  "conflicts": 12160,
+                  "gates": 1935,
+                  "ordered_pairs": 3744225,
+                  "section": "B"
+                }
+              ]
+            },
+            "frame_transition_logic": "unchanged inherited FrameSampler.walk; only lazy output projection",
+            "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43base.json.gz"
+          },
+          {
+            "attribution": {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 71242,
+              "format": "BORROW-WORD",
+              "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+              "kappa": "0.0017161404259974415",
+              "local_profile": {
+                "1": 2370,
+                "2": 646,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "7": 4,
+                "8": 4
+              },
+              "path": "research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz",
+              "pin_key": "2745-BORROW-WORD-43extra.json.gz",
+              "pr": 2745,
+              "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+              "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            "commutation_predicate_certificate": {
+              "all_ordered_pairs_verified": true,
+              "cpu_seconds": 3.093325945,
+              "formal_warp_pairs": 416429,
+              "invariant_failures": 0,
+              "ordered_pairs": 16271426,
+              "scalar_pairs": 15854997,
+              "seconds": 3.0945811262354255,
+              "sections": [
+                {
+                  "conflicts": 94026,
+                  "gates": 3535,
+                  "ordered_pairs": 12496225,
+                  "section": "A"
+                },
+                {
+                  "conflicts": 0,
+                  "gates": 176,
+                  "ordered_pairs": 30976,
+                  "section": "cut"
+                },
+                {
+                  "conflicts": 12160,
+                  "gates": 1935,
+                  "ordered_pairs": 3744225,
+                  "section": "B"
+                }
+              ]
+            },
+            "frame_transition_logic": "unchanged inherited FrameSampler.walk; only lazy output projection",
+            "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2745-BORROW-WORD-43extra.json.gz"
+          },
+          {
+            "attribution": {
+              "author": "DavidAriasC",
+              "bytes": 72192,
+              "format": "BORROW-WORD",
+              "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+              "kappa": "0.001717256973467002308270",
+              "local_profile": {
+                "1": 2364,
+                "2": 647,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "8": 8
+              },
+              "path": "research/styles-r11/data/words/2766-WORD-base.json.gz",
+              "pin_key": "2766-WORD-base.json.gz",
+              "pr": 2766,
+              "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+              "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            "commutation_predicate_certificate": {
+              "all_ordered_pairs_verified": true,
+              "cpu_seconds": 3.0265470240000028,
+              "formal_warp_pairs": 416689,
+              "invariant_failures": 0,
+              "ordered_pairs": 16279170,
+              "scalar_pairs": 15862481,
+              "seconds": 3.0290682883933187,
+              "sections": [
+                {
+                  "conflicts": 94026,
+                  "gates": 3535,
+                  "ordered_pairs": 12496225,
+                  "section": "A"
+                },
+                {
+                  "conflicts": 0,
+                  "gates": 176,
+                  "ordered_pairs": 30976,
+                  "section": "cut"
+                },
+                {
+                  "conflicts": 12208,
+                  "gates": 1937,
+                  "ordered_pairs": 3751969,
+                  "section": "B"
+                }
+              ]
+            },
+            "frame_transition_logic": "unchanged inherited FrameSampler.walk; only lazy output projection",
+            "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/2766-WORD-base.json.gz"
+          },
+          {
+            "attribution": {
+              "author": "Tekalign (tekuuu)",
+              "bytes": 72468,
+              "format": "BORROW-WORD",
+              "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+              "kappa": "0.001717141586348426338109",
+              "local_profile": {
+                "1": 2366,
+                "2": 646,
+                "3": 297,
+                "4": 120,
+                "5": 26,
+                "8": 8
+              },
+              "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+              "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+              "pr": 2751,
+              "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+              "source": "in tree (package of PR #2802)",
+              "width_inventory": {
+                "4": 26,
+                "5": 9,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            "commutation_predicate_certificate": {
+              "all_ordered_pairs_verified": true,
+              "cpu_seconds": 3.0876918310000008,
+              "formal_warp_pairs": 416689,
+              "invariant_failures": 0,
+              "ordered_pairs": 16279170,
+              "scalar_pairs": 15862481,
+              "seconds": 3.089101566001773,
+              "sections": [
+                {
+                  "conflicts": 94026,
+                  "gates": 3535,
+                  "ordered_pairs": 12496225,
+                  "section": "A"
+                },
+                {
+                  "conflicts": 0,
+                  "gates": 176,
+                  "ordered_pairs": 30976,
+                  "section": "cut"
+                },
+                {
+                  "conflicts": 12208,
+                  "gates": 1937,
+                  "ordered_pairs": 3751969,
+                  "section": "B"
+                }
+              ]
+            },
+            "frame_transition_logic": "unchanged inherited FrameSampler.walk; only lazy output projection",
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz"
+          },
+          {
+            "attribution": {
+              "author": "Marius-Paul Dumitrean",
+              "bytes": 72444,
+              "format": "BORROW-WORD",
+              "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+              "kappa": "0.001717794984118634663827",
+              "local_profile": {
+                "1": 2382,
+                "2": 648,
+                "3": 268,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              },
+              "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+              "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+              "pr": 2802,
+              "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+              "source": "in tree (package of PR #2802)",
+              "width_inventory": {
+                "4": 26,
+                "5": 2,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            "commutation_predicate_certificate": {
+              "all_ordered_pairs_verified": true,
+              "cpu_seconds": 3.1183753549999977,
+              "formal_warp_pairs": 443856,
+              "invariant_failures": 0,
+              "ordered_pairs": 16306337,
+              "scalar_pairs": 15862481,
+              "seconds": 3.120221821591258,
+              "sections": [
+                {
+                  "conflicts": 94026,
+                  "gates": 3535,
+                  "ordered_pairs": 12496225,
+                  "section": "A"
+                },
+                {
+                  "conflicts": 0,
+                  "gates": 176,
+                  "ordered_pairs": 30976,
+                  "section": "cut"
+                },
+                {
+                  "conflicts": 12432,
+                  "gates": 1944,
+                  "ordered_pairs": 3779136,
+                  "section": "B"
+                }
+              ]
+            },
+            "frame_transition_logic": "unchanged inherited FrameSampler.walk; only lazy output projection",
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz"
+          },
+          {
+            "attribution": {
+              "author": "Marius-Paul Dumitrean",
+              "bytes": 72443,
+              "format": "BORROW-WORD",
+              "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+              "kappa": "0.001717794984118634663827",
+              "local_profile": {
+                "1": 2382,
+                "2": 648,
+                "3": 268,
+                "4": 128,
+                "5": 26,
+                "8": 8
+              },
+              "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+              "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+              "pr": 2802,
+              "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+              "source": "in tree (package of PR #2802)",
+              "width_inventory": {
+                "4": 26,
+                "5": 2,
+                "7": 62,
+                "8": 78,
+                "9": 240
+              }
+            },
+            "commutation_predicate_certificate": {
+              "all_ordered_pairs_verified": true,
+              "cpu_seconds": 3.0410170239999985,
+              "formal_warp_pairs": 443856,
+              "invariant_failures": 0,
+              "ordered_pairs": 16306337,
+              "scalar_pairs": 15862481,
+              "seconds": 3.0429756501689553,
+              "sections": [
+                {
+                  "conflicts": 94026,
+                  "gates": 3535,
+                  "ordered_pairs": 12496225,
+                  "section": "A"
+                },
+                {
+                  "conflicts": 0,
+                  "gates": 176,
+                  "ordered_pairs": 30976,
+                  "section": "cut"
+                },
+                {
+                  "conflicts": 12432,
+                  "gates": 1944,
+                  "ordered_pairs": 3779136,
+                  "section": "B"
+                }
+              ]
+            },
+            "frame_transition_logic": "unchanged inherited FrameSampler.walk; only lazy output projection",
+            "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+          }
+        ]
+      },
+      "cpu_seconds": 30.736741694,
+      "peak_rss_bytes": 546148352,
+      "wall_seconds": 30.75554086174816
+    },
+    "stopped": null
+  },
+  "status": "PASS",
+  "wall_seconds": 113.6798438495025,
+  "word_blob_ids": {
+    "1094-K8S7-FULL-WORD.json.gz": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+    "1672-extra-word-566-554.json.gz": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+    "1672-gauge44-word-566-554.json.gz": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+    "2745-BORROW-WORD-43base.json.gz": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+    "2745-BORROW-WORD-43extra.json.gz": "583a98c65438b96529e49897c2594aac4134333c",
+    "2766-WORD-base.json.gz": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+    "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz": "91bd9c68f209ac29e27cac566ff7a78339788553",
+    "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8"
+  }
+}

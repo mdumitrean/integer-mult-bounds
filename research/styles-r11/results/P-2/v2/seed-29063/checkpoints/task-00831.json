@@ -1,0 +1,178 @@
+{
+  "cpu_seconds": 2.834414236999997,
+  "peak_rss_bytes": 341401600,
+  "result": {
+    "alphabet": "mid",
+    "attribution": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+      "pin_key": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    "batch_summary": {
+      "H1": {
+        "mean": 5.271718412120867,
+        "population_sd": 0.0007755248519671489
+      },
+      "H2": {
+        "mean": 6.777666793785333,
+        "population_sd": 0.001285237403819817
+      },
+      "H3": {
+        "mean": 7.670755924809701,
+        "population_sd": 0.0017168189077026485
+      },
+      "H4": {
+        "mean": 8.171605258644854,
+        "population_sd": 0.001977618667621574
+      },
+      "H5": {
+        "mean": 8.540386251062065,
+        "population_sd": 0.002483235307242814
+      },
+      "H6": {
+        "mean": 8.786478305495695,
+        "population_sd": 0.003000620532451982
+      },
+      "lz76": {
+        "mean": 288.18,
+        "population_sd": 2.1041863035387336
+      },
+      "repair": {
+        "mean": 1098.94,
+        "population_sd": 6.859766759883313
+      }
+    },
+    "diagnostics": {
+      "accepted_moves": 3614,
+      "attempts": 87050,
+      "changed_vertices": 3614,
+      "degenerate": 0,
+      "feasibility_rejections": 41593,
+      "identical_token_samples": 0,
+      "identity_proposals": 33449,
+      "invariant_failures": 0,
+      "profile_rejections": 8394,
+      "variables": 87050
+    },
+    "experiment": "P-2",
+    "family": "FULL-WORD",
+    "inferential": false,
+    "n": 50,
+    "null": "N2",
+    "q_values": null,
+    "real": {
+      "H1": 5.248649093711433,
+      "H2": 6.732510281095758,
+      "H3": 7.608998148434995,
+      "H4": 8.089701250051482,
+      "H5": 8.438319370378412,
+      "H6": 8.66471237412225,
+      "alphabet": 69,
+      "h1": 5.248649093711433,
+      "h2": 1.483861187384325,
+      "h3": 0.8764878673392369,
+      "h4": 0.4807031016164869,
+      "h5": 0.34861812032693074,
+      "h6": 0.22639300374383708,
+      "lz76": 260,
+      "n": 5473,
+      "repair": 1015,
+      "repair_final": 249,
+      "repair_rules": 383
+    },
+    "seed": 29063,
+    "start": 1150,
+    "status": "PASS",
+    "sufficient_statistics": {
+      "H1": {
+        "M2": 3.0071939800933415e-05,
+        "max": 5.273015957578684,
+        "mean": 5.271718412120867,
+        "min": 5.270159590977138,
+        "n": 50
+      },
+      "H2": {
+        "M2": 8.259175920887518e-05,
+        "max": 6.780698533030747,
+        "mean": 6.777666793785333,
+        "min": 6.77516189139443,
+        "n": 50
+      },
+      "H3": {
+        "M2": 0.00014737335809226573,
+        "max": 7.6741831776790805,
+        "mean": 7.670755924809701,
+        "min": 7.667177377303975,
+        "n": 50
+      },
+      "H4": {
+        "M2": 0.00019554877972626644,
+        "max": 8.175164196178468,
+        "mean": 8.171605258644854,
+        "min": 8.166832814116825,
+        "n": 50
+      },
+      "H5": {
+        "M2": 0.0003083228795568657,
+        "max": 8.544981934013114,
+        "mean": 8.540386251062065,
+        "min": 8.533554288894749,
+        "n": 50
+      },
+      "H6": {
+        "M2": 0.0004501861789886208,
+        "max": 8.791600049524536,
+        "mean": 8.786478305495695,
+        "min": 8.777977784257828,
+        "n": 50
+      },
+      "lz76": {
+        "M2": 221.38,
+        "max": 293,
+        "mean": 288.18,
+        "min": 283,
+        "n": 50
+      },
+      "repair": {
+        "M2": 2352.82,
+        "max": 1112,
+        "mean": 1098.94,
+        "min": 1085,
+        "n": 50
+      }
+    }
+  },
+  "seconds": 2.834507843479514,
+  "status": "OK",
+  "task": {
+    "alphabet": "mid",
+    "experiment": "P-2",
+    "n": 50,
+    "null": "N2",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1094-K8S7-FULL-WORD.json.gz",
+    "seed": 29063,
+    "start": 1150
+  }
+}

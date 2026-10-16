@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-10-16T04:42:36.569327+00:00",
+  "status": "ERROR",
+  "observed_stderr": [
+    "terminate called without an active exception",
+    "terminate called without an active exception",
+    "terminate called without an active exception"
+  ],
+  "lost_solver_workers": 3,
+  "manual_action": "SIGINT to P3 runner after solver workers aborted; runner wrote two ERROR results and terminated pool. No scientific result was returned.",
+  "diagnosis": "HiGHS automatic thread allocation suspected; explicit threads=1 will be required in new attempt. Exact cause not proven.",
+  "reference": "https://ergo-code.github.io/HiGHS/dev/parallel/",
+  "compute_limitation": "Per-task CPU unavailable for native-aborted workers; reported RESULT CPU is preparation only for this attempt."
+}

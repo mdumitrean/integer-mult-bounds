@@ -1,0 +1,178 @@
+{
+  "cpu_seconds": 3.063174774999993,
+  "peak_rss_bytes": 341270528,
+  "result": {
+    "alphabet": "mid",
+    "attribution": {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+      "pin_key": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "batch_summary": {
+      "H1": {
+        "mean": 5.280469483231245,
+        "population_sd": 0.0009234463646575838
+      },
+      "H2": {
+        "mean": 6.761515564141294,
+        "population_sd": 0.0017802596673808758
+      },
+      "H3": {
+        "mean": 7.6526421981193975,
+        "population_sd": 0.0019713563321985513
+      },
+      "H4": {
+        "mean": 8.157773461019943,
+        "population_sd": 0.002169401996722699
+      },
+      "H5": {
+        "mean": 8.528010513400647,
+        "population_sd": 0.002439486789142253
+      },
+      "H6": {
+        "mean": 8.772188083120017,
+        "population_sd": 0.00278727620344397
+      },
+      "lz76": {
+        "mean": 287.22,
+        "population_sd": 2.394076022184759
+      },
+      "repair": {
+        "mean": 1081.28,
+        "population_sd": 7.794972738887545
+      }
+    },
+    "diagnostics": {
+      "accepted_moves": 3575,
+      "attempts": 88050,
+      "changed_vertices": 3575,
+      "degenerate": 0,
+      "feasibility_rejections": 41627,
+      "identical_token_samples": 0,
+      "identity_proposals": 34527,
+      "invariant_failures": 0,
+      "profile_rejections": 8321,
+      "variables": 88050
+    },
+    "experiment": "P-2",
+    "family": "FULL-WORD",
+    "inferential": false,
+    "n": 50,
+    "null": "N2",
+    "q_values": null,
+    "real": {
+      "H1": 5.270192896494587,
+      "H2": 6.738247176511893,
+      "H3": 7.620266519592177,
+      "H4": 8.11661249168908,
+      "H5": 8.477077697329973,
+      "H6": 8.71008057159204,
+      "alphabet": 72,
+      "h1": 5.270192896494587,
+      "h2": 1.4680542800173066,
+      "h3": 0.8820193430802838,
+      "h4": 0.49634597209690323,
+      "h5": 0.36046520564089235,
+      "h6": 0.233002874262068,
+      "lz76": 265,
+      "n": 5480,
+      "repair": 1026,
+      "repair_final": 230,
+      "repair_rules": 398
+    },
+    "seed": 29063,
+    "start": 1200,
+    "status": "PASS",
+    "sufficient_statistics": {
+      "H1": {
+        "M2": 4.263765941996536e-05,
+        "max": 5.282211690941785,
+        "mean": 5.280469483231245,
+        "min": 5.278319107338805,
+        "n": 50
+      },
+      "H2": {
+        "M2": 0.00015846622416515333,
+        "max": 6.76521503845855,
+        "mean": 6.761515564141294,
+        "min": 6.758159932705273,
+        "n": 50
+      },
+      "H3": {
+        "M2": 0.00019431228942496623,
+        "max": 7.656245695580496,
+        "mean": 7.6526421981193975,
+        "min": 7.647605381219265,
+        "n": 50
+      },
+      "H4": {
+        "M2": 0.0002353152511692216,
+        "max": 8.162067921234314,
+        "mean": 8.157773461019943,
+        "min": 8.151925161639008,
+        "n": 50
+      },
+      "H5": {
+        "M2": 0.0002975547897199789,
+        "max": 8.532438088991704,
+        "mean": 8.528010513400647,
+        "min": 8.521694098321312,
+        "n": 50
+      },
+      "H6": {
+        "M2": 0.0003884454317142516,
+        "max": 8.776842933096804,
+        "mean": 8.772188083120017,
+        "min": 8.765337008616788,
+        "n": 50
+      },
+      "lz76": {
+        "M2": 286.58,
+        "max": 292,
+        "mean": 287.22,
+        "min": 280,
+        "n": 50
+      },
+      "repair": {
+        "M2": 3038.08,
+        "max": 1095,
+        "mean": 1081.28,
+        "min": 1065,
+        "n": 50
+      }
+    }
+  },
+  "seconds": 3.063262007199228,
+  "status": "OK",
+  "task": {
+    "alphabet": "mid",
+    "experiment": "P-2",
+    "n": 50,
+    "null": "N2",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/1672-extra-word-566-554.json.gz",
+    "seed": 29063,
+    "start": 1200
+  }
+}

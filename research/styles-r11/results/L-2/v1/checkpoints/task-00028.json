@@ -1,0 +1,51 @@
+{
+  "cpu_seconds": 0.145240356,
+  "peak_rss_bytes": 434012160,
+  "result": {
+    "attribution": {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/styles-r11/data/words/retired5-WORD-extra.json.gz",
+      "pin_key": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "cleanup_gates": 4545,
+    "exact": true,
+    "experiment": "L-2",
+    "family": "BORROW-WORD",
+    "first_mismatch": null,
+    "literal_equality": true,
+    "production": "reverse(inverse(buffer(recorded A after prelude + B warps + B + restore)))",
+    "recorded_gates": 4545,
+    "seed": 11031,
+    "status": "PASS"
+  },
+  "seconds": 0.14524885639548302,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "L-2",
+    "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/words/retired5-WORD-extra.json.gz",
+    "seed": 11031
+  }
+}

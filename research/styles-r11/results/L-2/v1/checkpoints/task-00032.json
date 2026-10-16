@@ -1,0 +1,51 @@
+{
+  "cpu_seconds": 0.144675827,
+  "peak_rss_bytes": 434016256,
+  "result": {
+    "attribution": {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "cleanup_gates": 4547,
+    "exact": true,
+    "experiment": "L-2",
+    "family": "BORROW-WORD",
+    "first_mismatch": null,
+    "literal_equality": true,
+    "production": "reverse(inverse(buffer(recorded A after prelude + B warps + B + restore)))",
+    "recorded_gates": 4547,
+    "seed": 11031,
+    "status": "PASS"
+  },
+  "seconds": 0.14468373358249664,
+  "status": "OK",
+  "task": {
+    "controls": true,
+    "experiment": "L-2",
+    "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+    "seed": 11031
+  }
+}

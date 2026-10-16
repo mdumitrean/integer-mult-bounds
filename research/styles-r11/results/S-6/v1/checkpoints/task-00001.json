@@ -1,0 +1,253 @@
+{
+  "cpu_seconds": 37.417616494,
+  "peak_rss_bytes": 167395328,
+  "result": {
+    "decision": "No contiguous call interval has slack zero in the registered capacity relaxation, so the primary binding-interval bar fails.",
+    "n_permutations": 2000,
+    "null_summary": {
+      "central_99_interval": [
+        2044,
+        34300
+      ],
+      "empirical_p": 0.5687156421789106,
+      "infeasible_flows": 4,
+      "mean": 18019.036,
+      "missing_cells_hist": {
+        "0": 1996,
+        "1540": 2,
+        "3332": 2
+      },
+      "n": 2000,
+      "planned": 2000,
+      "sd": 6378.774918015528
+    },
+    "statistics": {
+      "attributions": [
+        {
+          "author": "Marius-Paul Dumitrean",
+          "bytes": 72444,
+          "format": "BORROW-WORD",
+          "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+          "kappa": "0.001717794984118634663827",
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "pr": 2802,
+          "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Marius-Paul Dumitrean",
+          "bytes": 72443,
+          "format": "BORROW-WORD",
+          "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+          "kappa": "0.001717794984118634663827",
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "pr": 2802,
+          "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        }
+      ],
+      "cpu_seconds": 37.417328624999996,
+      "decision": "No contiguous call interval has slack zero in the registered capacity relaxation, so the primary binding-interval bar fails.",
+      "fill": "2802",
+      "intervals": {
+        "binding_intervals": 0,
+        "minimum_certificates": [
+          {
+            "demand": 3332,
+            "neighbourhood_capacity": 21504,
+            "slack": 18172,
+            "start": 665,
+            "stop": 665
+          }
+        ],
+        "minimum_slack": 18172,
+        "n_intervals": 222111,
+        "violating_intervals": 0
+      },
+      "null_summary": {
+        "central_99_interval": [
+          2044,
+          34300
+        ],
+        "empirical_p": 0.5687156421789106,
+        "infeasible_flows": 4,
+        "mean": 18019.036,
+        "missing_cells_hist": {
+          "0": 1996,
+          "1540": 2,
+          "3332": 2
+        },
+        "n": 2000,
+        "planned": 2000,
+        "sd": 6378.774918015528
+      },
+      "promotion_evidence": {
+        "attribution": "Marius-Paul Dumitrean r10 J-dim1; pinned PR2745 hosting pattern relaxation",
+        "comparison": "These are whole-call (4,8)->9 hosting relaxations, not a one-role width increase in a binding interval. Several lose kappa while the count of rank-1 idle children decreases. They do not verify the S-6 forced-rank-1 prediction.",
+        "exact_matching_perturbation_witness_available": false,
+        "examples": {
+          "1:-3H1": {
+            "idle_rank1": 16648,
+            "idle_rank1_change_vs_2802": -668,
+            "recorded_delta_kappa": "7.8445917e-8"
+          },
+          "1:-H2-H1": {
+            "idle_rank1": 16648,
+            "idle_rank1_change_vs_2802": -668,
+            "recorded_delta_kappa": "-3.7024244e-8"
+          },
+          "1:-H3": {
+            "idle_rank1": 16648,
+            "idle_rank1_change_vs_2802": -668,
+            "recorded_delta_kappa": "-1.9595686e-7"
+          },
+          "1:-H4+H1": {
+            "idle_rank1": 16648,
+            "idle_rank1_change_vs_2802": -668,
+            "recorded_delta_kappa": "-3.8306665e-7"
+          },
+          "2:-3H1": {
+            "idle_rank1": 15984,
+            "idle_rank1_change_vs_2802": -1332,
+            "recorded_delta_kappa": "1.5913632e-7"
+          },
+          "2:-H2-H1": {
+            "idle_rank1": 15984,
+            "idle_rank1_change_vs_2802": -1332,
+            "recorded_delta_kappa": "-7.1810385e-8"
+          },
+          "2:-H3": {
+            "idle_rank1": 15984,
+            "idle_rank1_change_vs_2802": -1332,
+            "recorded_delta_kappa": "-3.8963347e-7"
+          },
+          "2:-H4+H1": {
+            "idle_rank1": 15984,
+            "idle_rank1_change_vs_2802": -1332,
+            "recorded_delta_kappa": "-7.6372787e-7"
+          },
+          "4:-3H1": {
+            "idle_rank1": 15096,
+            "idle_rank1_change_vs_2802": -2220,
+            "recorded_delta_kappa": "-7.7254724e-8"
+          },
+          "4:-H2-H1": {
+            "idle_rank1": 15096,
+            "idle_rank1_change_vs_2802": -2220,
+            "recorded_delta_kappa": "-5.3895943e-7"
+          },
+          "4:-H3": {
+            "idle_rank1": 15096,
+            "idle_rank1_change_vs_2802": -2220,
+            "recorded_delta_kappa": "-1.1741425e-6"
+          },
+          "4:-H4+H1": {
+            "idle_rank1": 15096,
+            "idle_rank1_change_vs_2802": -2220,
+            "recorded_delta_kappa": "-1.9214846e-6"
+          }
+        },
+        "sha256": "b2515c06e97eddf9f2978db97777f04e0c8a8eaba8b6f96411a5147cab27e485",
+        "source": "/home/marius/kappa/styles-r11/research/t74-r10-hosting-leads/J-dim1/out/RELAX-host.json"
+      },
+      "real": {
+        "capacity": 3580416,
+        "demand": 2219112,
+        "edges": 208200,
+        "feasible": true,
+        "flow_value": 2219112,
+        "mincut": {
+          "call_demand": 0,
+          "capacity": 2219112,
+          "source_side_calls": [],
+          "source_side_window_indices": [],
+          "verified": true,
+          "window_capacity": 0
+        },
+        "missing_cells": 0,
+        "nodes": 2000,
+        "scope": "divisible-cell capacity relaxation; family and indivisible-width constraints dropped"
+      },
+      "seconds": 37.423476461321115,
+      "seed": 29063,
+      "sources": [
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PLAN.json.gz",
+          "sha256": "afb3c5c8134fc2cfce0b50a21758490c225574994b2c3c5161e53e2355acc6fa"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz",
+          "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/ORDER.json",
+          "sha256": "129e791d5b45c279443ff9e1edef5ac33d5abc51717ecbae8265abea5c247ae7"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/DISPATCH.json.gz",
+          "sha256": "14fe756dcac93a0f3b2b7f38ba7b998dec89d56d5171b691af4fae45e5d83d11"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PROVIDERS.json",
+          "sha256": "391075b1411a3976850c633f92f58c35ed3f046f09d55bd435d7545124543fd4"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/FILL.json.gz",
+          "sha256": "2f2a25a8d82b424b1e643a8a5167361fcc5ab33cfbc6f186f4cb7ddcaf9df7d9"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/PROFILE.json",
+          "sha256": "9d71407ded0b17496b0f94ca896355933a850dc6fc8456e39b0a1f72995b1406"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+          "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7"
+        }
+      ],
+      "status": "NULL",
+      "width_increase_rank1_prediction_supported": false
+    },
+    "status": "NULL"
+  },
+  "seconds": 37.42377423122525,
+  "status": "OK",
+  "task": {
+    "budget_seconds": 300,
+    "experiment": "S-6",
+    "index": 0,
+    "n_permutations": 2000,
+    "seed": 29063
+  }
+}

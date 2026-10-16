@@ -1,0 +1,286 @@
+{
+  "cpu_seconds": 2.281765378,
+  "peak_rss_bytes": 314474496,
+  "result": {
+    "all_verified": true,
+    "earlier_transitions": [
+      {
+        "after": "2745",
+        "after_warps": 65,
+        "alias_records_unchanged": false,
+        "before": "2679",
+        "before_warps": 65,
+        "removed_helpers_added": [
+          680,
+          681,
+          682,
+          684,
+          688,
+          689,
+          690,
+          692
+        ],
+        "scope": "Changed warp/removed payloads require their own matching transition witnesses; current endpoint aliases alone do not prove that transition.",
+        "variant": "base"
+      },
+      {
+        "after": "2751",
+        "after_warps": 65,
+        "alias_records_unchanged": false,
+        "before": "2745",
+        "before_warps": 65,
+        "removed_helpers_added": [
+          696,
+          697,
+          698,
+          700
+        ],
+        "scope": "Changed warp/removed payloads require their own matching transition witnesses; current endpoint aliases alone do not prove that transition.",
+        "variant": "base"
+      },
+      {
+        "after": "2745",
+        "after_warps": 65,
+        "alias_records_unchanged": false,
+        "before": "2679",
+        "before_warps": 65,
+        "removed_helpers_added": [
+          680,
+          681,
+          682,
+          684,
+          688,
+          689,
+          690,
+          692
+        ],
+        "scope": "Changed warp/removed payloads require their own matching transition witnesses; current endpoint aliases alone do not prove that transition.",
+        "variant": "extra"
+      },
+      {
+        "after": "2751",
+        "after_warps": 65,
+        "alias_records_unchanged": false,
+        "before": "2745",
+        "before_warps": 65,
+        "removed_helpers_added": [
+          696,
+          697,
+          698,
+          700
+        ],
+        "scope": "Changed warp/removed payloads require their own matching transition witnesses; current endpoint aliases alone do not prove that transition.",
+        "variant": "extra"
+      }
+    ],
+    "scope": "All new aliases and hostee moves of the pinned #2751\u2192#2802 seven-stage replay; earlier held lineage alias differences need independent provenance.",
+    "seed": 11031,
+    "variants": [
+      {
+        "aliases": [
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 11993,
+            "floor": 5,
+            "last": 11940,
+            "life": "follower:606",
+            "slot": "free:550",
+            "stage": "alias5"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 12082,
+            "floor": 5,
+            "last": 11941,
+            "life": "follower:635",
+            "slot": "free:551",
+            "stage": "alias5"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 12085,
+            "floor": 5,
+            "last": 11948,
+            "life": "follower:637",
+            "slot": "free:552",
+            "stage": "alias5"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 12088,
+            "floor": 5,
+            "last": 11949,
+            "life": "follower:638",
+            "slot": "free:553",
+            "stage": "alias5"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 12091,
+            "floor": 5,
+            "last": 11942,
+            "life": "follower:639",
+            "slot": "free:562",
+            "stage": "alias5"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 11292,
+            "floor": 4,
+            "last": 10497,
+            "life": "follower:667",
+            "slot": "free:401",
+            "stage": "alias7"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 11295,
+            "floor": 4,
+            "last": 10496,
+            "life": "follower:669",
+            "slot": "free:403",
+            "stage": "alias7"
+          }
+        ],
+        "all_verified": true,
+        "augmenting_paths": [
+          {
+            "first_edge_gap": -1,
+            "path": [
+              "follower:667",
+              "segment:401",
+              "hosted:30",
+              "free:564"
+            ],
+            "second_edge_gap": 0,
+            "verified": true
+          },
+          {
+            "first_edge_gap": -1,
+            "path": [
+              "follower:669",
+              "segment:403",
+              "hosted:31",
+              "free:565"
+            ],
+            "second_edge_gap": 0,
+            "verified": true
+          }
+        ],
+        "variant": "base"
+      },
+      {
+        "aliases": [
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 11993,
+            "floor": 5,
+            "last": 11940,
+            "life": "follower:606",
+            "slot": "free:550",
+            "stage": "alias5"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 12082,
+            "floor": 5,
+            "last": 11941,
+            "life": "follower:635",
+            "slot": "free:551",
+            "stage": "alias5"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 12085,
+            "floor": 5,
+            "last": 11948,
+            "life": "follower:637",
+            "slot": "free:552",
+            "stage": "alias5"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 12088,
+            "floor": 5,
+            "last": 11949,
+            "life": "follower:638",
+            "slot": "free:553",
+            "stage": "alias5"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 12091,
+            "floor": 5,
+            "last": 11942,
+            "life": "follower:639",
+            "slot": "free:562",
+            "stage": "alias5"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 11292,
+            "floor": 4,
+            "last": 10497,
+            "life": "follower:667",
+            "slot": "free:401",
+            "stage": "alias7"
+          },
+          {
+            "ceiling": 5,
+            "edge_verified": true,
+            "first": 11295,
+            "floor": 4,
+            "last": 10496,
+            "life": "follower:669",
+            "slot": "free:403",
+            "stage": "alias7"
+          }
+        ],
+        "all_verified": true,
+        "augmenting_paths": [
+          {
+            "first_edge_gap": -1,
+            "path": [
+              "follower:667",
+              "segment:401",
+              "hosted:30",
+              "free:564"
+            ],
+            "second_edge_gap": 0,
+            "verified": true
+          },
+          {
+            "first_edge_gap": -1,
+            "path": [
+              "follower:669",
+              "segment:403",
+              "hosted:31",
+              "free:565"
+            ],
+            "second_edge_gap": 0,
+            "verified": true
+          }
+        ],
+        "variant": "extra"
+      }
+    ]
+  },
+  "seconds": 2.2817508224397898,
+  "status": "OK",
+  "task": {
+    "seed": 11031
+  }
+}

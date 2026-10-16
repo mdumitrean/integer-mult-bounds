@@ -148,7 +148,13 @@ def run_pool(fn, args_list, workers=None, timeout=300, rss_gib=4.0,
             handles = {}
             submitted = 0
             completed = 0
+            observed_workers = set(pool._pool)
             while completed < len(args_list):
+                observed_workers.update(pool._pool)
+                lost = [w for w in observed_workers if w.exitcode not in (None, 0)]
+                if lost:
+                    detail = [(w.pid, w.exitcode) for w in lost]
+                    raise RuntimeError('worker process exited abnormally; no retry: ' + repr(detail))
                 while submitted < len(args_list) and len(handles) < workers:
                     handles[submitted] = (time.monotonic(), pool.apply_async(
                         _call, (fn, args_list[submitted], timeout)))

@@ -1,0 +1,174 @@
+{
+  "cpu_seconds": 5.62437325,
+  "peak_rss_bytes": 522842112,
+  "result": {
+    "decision": "Exact literal rules and inherited profile parity; overlay metadata explicitly separate.",
+    "n_permutations": 0,
+    "statistics": {
+      "N3": {
+        "all_literal_rules_verified": true,
+        "changed_role_rows": 317589,
+        "flow_solves": 420,
+        "group_size": 8,
+        "idle": {
+          "48": 22748
+        },
+        "idle_is_conditioned": true,
+        "max_flow_edges": 21688,
+        "max_flow_nodes": 11810,
+        "passes": 1,
+        "protocol": "N3 conditional equal-width literal slots, random call groups, integer max-flow; fixed occupancy",
+        "row_sha256": "797cf248c396e15b659c1dbb1bdcbfcb8f4021348136a30299bc76fe821f954d",
+        "seed": 29063
+      },
+      "all_literal_rules_verified": true,
+      "attributions": [
+        {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "bytes": 57438,
+          "format": "FULL-WORD",
+          "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+          "kappa": "0.001676938111022438",
+          "local_profile": {
+            "1": 2348,
+            "2": 500,
+            "3": 416,
+            "4": 130,
+            "5": 82,
+            "8": 8
+          },
+          "pr": 1672,
+          "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+          "width_inventory": {
+            "4": 44,
+            "5": 44,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "bytes": 57440,
+          "format": "FULL-WORD",
+          "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+          "kappa": "0.001676938111022438",
+          "local_profile": {
+            "1": 2340,
+            "2": 508,
+            "3": 420,
+            "4": 126,
+            "5": 82,
+            "8": 8
+          },
+          "pr": 1672,
+          "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+          "width_inventory": {
+            "4": 40,
+            "5": 48,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        }
+      ],
+      "bins": 149184,
+      "calls": 666,
+      "clumping": 1.0,
+      "fill": "1672",
+      "held_word_overlay": {
+        "kappa_diagnostic": 0.0016797549561255154,
+        "profile": {
+          "1": 1560432,
+          "2": 336336,
+          "3": 278724,
+          "4": 84912,
+          "5": 54612,
+          "8": 5328,
+          "48": 22748
+        },
+        "source": "held #1672 words",
+        "width_parity": true
+      },
+      "helpers_per_call": [
+        480
+      ],
+      "idle": {
+        "48": 22748
+      },
+      "idle_cells": 1091904,
+      "kappa_diagnostic": 0.00167967179550472,
+      "occupancy_by_capacity": {
+        "8": {
+          "8": 49728
+        },
+        "16": {
+          "16": 33152
+        },
+        "32": {
+          "32": 33152
+        },
+        "48": {
+          "0": 22748,
+          "48": 10404
+        }
+      },
+      "profile": {
+        "1": 1559100,
+        "2": 339000,
+        "3": 277392,
+        "4": 84912,
+        "5": 54612,
+        "8": 5328,
+        "48": 22748
+      },
+      "rank_mass": 4816512,
+      "roles": 319680,
+      "roles_per_occupied_bin": {
+        "1": 41112,
+        "2": 41768,
+        "4": 33152,
+        "6": 10404
+      },
+      "source_notes": {
+        "held_word_profile_differs": true,
+        "overlay_policy": "Literal inherited fill is checked against supplied PROFILE; held #1672 word local profiles are separately substituted at identical exact helper widths.",
+        "provider_profile_source": "inherited PLAN.provider_registry"
+      },
+      "sources": [
+        {
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-PLAN.json",
+          "sha256": "e9ca855b0ccba243868aa7bd24b42f9e59f2f554bfe10521143591073e72ea18"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-GLOBAL-TEMPLATE.json.gz",
+          "sha256": "1d31424c4e27e26a35a9932ca778e43f1f3577589275422cc642aa68b31112db"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-OWNERS.json.gz",
+          "sha256": "cdfdcdec09592b4fd296ec49efe38573c1a61ecb8385b538ce801ee29355695b"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/styles-r11/data/fills/1672-PROFILE.json",
+          "sha256": "932453b2b045f73c81aa2b6f169a05ae2426c573965bbf4f5d3998b63b78a38f"
+        }
+      ],
+      "total_cells": 3580416,
+      "used_cells": 2488512,
+      "window_sha256": "42ab3eca979663f33f3de084ae7f8cb1808c14baf954faed42247f0fc723024b",
+      "windows": 1332
+    },
+    "status": "PASS"
+  },
+  "seconds": 5.624210218898952,
+  "status": "OK",
+  "task": {
+    "budget_seconds": 300,
+    "experiment": "P-3",
+    "index": 2,
+    "n_permutations": 2000,
+    "seed": 29063
+  }
+}

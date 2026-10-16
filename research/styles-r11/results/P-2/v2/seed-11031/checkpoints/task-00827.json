@@ -1,0 +1,178 @@
+{
+  "cpu_seconds": 2.335735264,
+  "peak_rss_bytes": 325500928,
+  "result": {
+    "alphabet": "mid",
+    "attribution": {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pin_key": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "batch_summary": {
+      "H1": {
+        "mean": 5.426301848358527,
+        "population_sd": 0.0007532892373524638
+      },
+      "H2": {
+        "mean": 6.992288941728315,
+        "population_sd": 0.0017428880883890853
+      },
+      "H3": {
+        "mean": 7.9201783334257865,
+        "population_sd": 0.0017053648940822637
+      },
+      "H4": {
+        "mean": 8.438771423403685,
+        "population_sd": 0.0020190456354863017
+      },
+      "H5": {
+        "mean": 8.815525391133884,
+        "population_sd": 0.0023499192868991154
+      },
+      "H6": {
+        "mean": 9.065035971032696,
+        "population_sd": 0.0027324981667646553
+      },
+      "lz76": {
+        "mean": 343.66,
+        "population_sd": 2.9705891671518634
+      },
+      "repair": {
+        "mean": 1246.22,
+        "population_sd": 7.454636141355257
+      }
+    },
+    "diagnostics": {
+      "accepted_moves": 4038,
+      "attempts": 43750,
+      "changed_vertices": 4038,
+      "degenerate": 0,
+      "feasibility_rejections": 15273,
+      "identical_token_samples": 0,
+      "identity_proposals": 19431,
+      "invariant_failures": 0,
+      "profile_rejections": 5008,
+      "variables": 43750
+    },
+    "experiment": "P-2",
+    "family": "BORROW-WORD",
+    "inferential": false,
+    "n": 50,
+    "null": "N2",
+    "q_values": null,
+    "real": {
+      "H1": 5.414191338809041,
+      "H2": 6.960290568997024,
+      "H3": 7.876077289101137,
+      "H4": 8.385238081937112,
+      "H5": 8.750490535474464,
+      "H6": 8.988801208274937,
+      "alphabet": 81,
+      "h1": 5.414191338809041,
+      "h2": 1.5460992301879832,
+      "h3": 0.915786720104113,
+      "h4": 0.5091607928359752,
+      "h5": 0.3652524535373516,
+      "h6": 0.23831067280047336,
+      "lz76": 316,
+      "n": 5655,
+      "repair": 1187,
+      "repair_final": 297,
+      "repair_rules": 445
+    },
+    "seed": 11031,
+    "start": 1100,
+    "status": "PASS",
+    "sufficient_statistics": {
+      "H1": {
+        "M2": 2.837223375555283e-05,
+        "max": 5.4277597359548,
+        "mean": 5.426301848358527,
+        "min": 5.424128517328302,
+        "n": 50
+      },
+      "H2": {
+        "M2": 0.000151882944432428,
+        "max": 6.997844108279808,
+        "mean": 6.992288941728315,
+        "min": 6.987926351961777,
+        "n": 50
+      },
+      "H3": {
+        "M2": 0.00014541347109841055,
+        "max": 7.923277290611122,
+        "mean": 7.9201783334257865,
+        "min": 7.916086748707347,
+        "n": 50
+      },
+      "H4": {
+        "M2": 0.0002038272639088142,
+        "max": 8.441924577435913,
+        "mean": 8.438771423403685,
+        "min": 8.434281057739643,
+        "n": 50
+      },
+      "H5": {
+        "M2": 0.00027610603274702235,
+        "max": 8.819862175704442,
+        "mean": 8.815525391133884,
+        "min": 8.808858254507937,
+        "n": 50
+      },
+      "H6": {
+        "M2": 0.00037332731156861017,
+        "max": 9.069843266363199,
+        "mean": 9.065035971032696,
+        "min": 9.056963768508398,
+        "n": 50
+      },
+      "lz76": {
+        "M2": 441.22,
+        "max": 350,
+        "mean": 343.66,
+        "min": 337,
+        "n": 50
+      },
+      "repair": {
+        "M2": 2778.58,
+        "max": 1260,
+        "mean": 1246.22,
+        "min": 1228,
+        "n": 50
+      }
+    }
+  },
+  "seconds": 2.335694221779704,
+  "status": "OK",
+  "task": {
+    "alphabet": "mid",
+    "experiment": "P-2",
+    "n": 50,
+    "null": "N2",
+    "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+    "seed": 11031,
+    "start": 1100
+  }
+}

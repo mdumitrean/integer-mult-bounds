@@ -41,8 +41,10 @@
       "updated_utc": "2026-10-16T04:15:28.385135+00:00"
     },
     {
-      "attempt": "v1",
+      "attempt": "v2",
       "budget_core_minutes": 120,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
       "id": "P-2",
       "if_positive": "sets p-resolution and CR margins",
       "inputs": [
@@ -63,13 +65,20 @@
       "origin": "D2",
       "pass_bar": "sd reported per statistic; N1b wider than N1 expected",
       "question": "How wide are N1/N1b/N1c/N2 distributions of LZ76, Re-Pair size and block entropies on each word?",
+      "result_files": [
+        "results/P-2/v2/seed-11031/RESULT.json",
+        "results/P-2/v2/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/styles-r11/planning/A-lsys-word/measures.py",
-      "status": "running",
+      "status": "PASS",
       "title": "Null calibration",
-      "updated_utc": "2026-10-16T04:17:16.144683+00:00"
+      "updated_utc": "2026-10-16T04:39:07.000333+00:00"
     },
     {
+      "attempt": "v2",
       "budget_core_minutes": 2,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": false,
       "id": "P-3",
       "if_positive": "sandpile mapping (iii) conservation exact; else heuristic",
       "inputs": [
@@ -86,10 +95,16 @@
       "null_model": "relaxation optimum (J-dim1 relax_host) as ceiling control",
       "origin": "D6",
       "pass_bar": "exact equality",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
       "question": "Does within-window stabilisation from the literal roles reproduce the idle profile {1:17316,3:6594,5:9878,32:1,48:26558}?",
+      "result_files": [
+        "results/P-3/v2/seed-11031/RESULT.json",
+        "results/P-3/v2/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/styles-r11/planning/C-sandpile/ground_fill.py",
-      "status": "planned",
-      "title": "Fill mapping exactness"
+      "status": "EXPLORATORY",
+      "title": "Fill mapping exactness",
+      "updated_utc": "2026-10-16T04:44:16.665415+00:00"
     },
     {
       "budget_core_minutes": 10,
@@ -119,7 +134,10 @@
       "title": "Skeleton grammar"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 2,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
       "id": "L-2",
       "if_positive": "first exact production; cleanup never an independent string",
       "inputs": [
@@ -142,10 +160,16 @@
       "null_model": "none (verification)",
       "origin": "A-E4",
       "pass_bar": "exact equality on every word",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
       "question": "cleanup = rev o inv o buf(recorded) on every word?",
+      "result_files": [
+        "results/L-2/v1/seed-11031/RESULT.json",
+        "results/L-2/v1/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/styles-r11/planning/A-lsys-word/extract_strings.py",
-      "status": "planned",
-      "title": "Forward/cleanup production"
+      "status": "NULL",
+      "title": "Forward/cleanup production",
+      "updated_utc": "2026-10-16T04:44:57.839646+00:00"
     },
     {
       "budget_core_minutes": 5,
@@ -233,7 +257,10 @@
       "title": "Alias-feasibility motif"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 5,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
       "id": "L-6",
       "if_positive": "Phi as search objective; exact root for certification",
       "inputs": [
@@ -250,13 +277,22 @@
       "null_model": "random mass-neutral deltas of the same L1 size",
       "origin": "B-B1",
       "pass_bar": "every step within 2%; pairwise kappa order reproduced by Phi",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
       "question": "Does dkappa = 1.2422e-10 dPhi predict every lineage step and the kappa order of all words?",
+      "result_files": [
+        "results/L-6/v1/seed-11031/RESULT.json",
+        "results/L-6/v1/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/styles-r11/planning/B-lsys-growth/parikh_kappa.py",
-      "status": "planned",
-      "title": "Log-rank law audit"
+      "status": "PASS",
+      "title": "Log-rank law audit",
+      "updated_utc": "2026-10-16T04:46:43.155257+00:00"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 30,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": false,
       "id": "L-7",
       "if_positive": "a derivation DAG with gain per application",
       "inputs": [
@@ -274,10 +310,16 @@
       "null_model": "random register relabelling (must not decompose)",
       "origin": "B-B3",
       "pass_bar": "every step decomposes exactly; non-commuting pairs identified",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
       "question": "Does each lineage step decompose into productions of the move alphabet?",
+      "result_files": [
+        "results/L-7/v1/seed-11031/RESULT.json",
+        "results/L-7/v1/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/styles-r11/planning/B-lsys-growth/parikh_kappa.py",
-      "status": "planned",
-      "title": "Derivation decomposition (Parikh ledger)"
+      "status": "EXPLORATORY",
+      "title": "Derivation decomposition (Parikh ledger)",
+      "updated_utc": "2026-10-16T04:48:31.859497+00:00"
     },
     {
       "budget_core_minutes": 20,
@@ -365,7 +407,10 @@
       "title": "Multi-type check"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 5,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": false,
       "id": "S-1",
       "if_positive": "exact alias-feasibility certificate; weighted-matching extension = hostee-move search",
       "inputs": [
@@ -388,10 +433,16 @@
       "null_model": "floors permuted among slots; first-times permuted among lives",
       "origin": "C-E1",
       "pass_bar": "violator set reproduces every realised alias/hostee move; per-word statement",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
       "question": "Does the lives-vs-slots graph predict exactly which lives are hostable in every lineage word; any augmenting path left?",
+      "result_files": [
+        "results/S-1/v1/seed-11031/RESULT.json",
+        "results/S-1/v1/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/styles-r11/planning/C-sandpile/ground_bipartite.py",
-      "status": "planned",
-      "title": "Hall-deficiency atlas"
+      "status": "EXPLORATORY",
+      "title": "Hall-deficiency atlas",
+      "updated_utc": "2026-10-16T04:49:02.570497+00:00"
     },
     {
       "budget_core_minutes": 30,
@@ -464,7 +515,10 @@
       "title": "Order-independent repair"
     },
     {
+      "attempt": "v1",
       "budget_core_minutes": 5,
+      "confirmation_note": "Two different seeds agree.",
+      "confirmed": true,
       "id": "S-6",
       "if_positive": "exact feasibility screen per word edit before any owner fill",
       "inputs": [
@@ -481,10 +535,16 @@
       "null_model": "the same flow on jittered eligibility intervals",
       "origin": "C-E6",
       "pass_bar": "binding intervals with slack 0; width increases on binding helpers force >= 1 rank-1 idle child (vs recorded promotion losses)",
+      "preregistration_sha256": "fe73fe0d23fd1b03789e620bcf8fc80324d8022889086f4d89614e5638ccadbd",
       "question": "Where is the window system tight, and does that explain promotions losing under real hosting?",
+      "result_files": [
+        "results/S-6/v1/seed-11031/RESULT.json",
+        "results/S-6/v1/seed-29063/RESULT.json"
+      ],
       "starting_script": "research/styles-r11/planning/C-sandpile/ground_fill.py",
-      "status": "planned",
-      "title": "Max-flow tightness map"
+      "status": "NULL",
+      "title": "Max-flow tightness map",
+      "updated_utc": "2026-10-16T04:50:32.547885+00:00"
     },
     {
       "budget_core_minutes": 360,

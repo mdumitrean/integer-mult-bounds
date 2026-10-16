@@ -53,6 +53,7 @@ def run_small(experiment,attempt):
     scripts = R.source_manifest()
     R.registry_update(experiment,'running',attempt=attempt,preregistration_sha256=R.sha256(preg))
     t0,c0=time.monotonic(),time.process_time()
+    child0=resource.getrusage(resource.RUSAGE_CHILDREN)
     specs=[]; prep_errors=[]; rss=4; timeout=300; control_outputs=[]
     words=list(R.pins())
     try:
@@ -117,11 +118,15 @@ def run_small(experiment,attempt):
             err=traceback.format_exc()[-6000:]
             prep_errors.extend(dict(seed=s,status='ERROR',error=err) for s in SEEDS)
             print(err,flush=True)
+    child1=resource.getrusage(resource.RUSAGE_CHILDREN)
+    total_cpu=time.process_time()-c0+child1.ru_utime+child1.ru_stime-child0.ru_utime-child0.ru_stime
+    measured_tasks=sum(o.get('cpu_seconds') or 0 for o in outputs+control_outputs)
+    overhead=max(0.0,total_cpu-prep['cpu_seconds']-measured_tasks)
     paths=[]
     for seed in SEEDS:
         pairs=[(s,o) for s,o in zip(specs,outputs) if s['seed']==seed]
         errors=[e for e in prep_errors if e['seed']==seed]
-        status=status_of([o for _,o in pairs]) if pairs else 'ERROR'
+        status=status_of([o for _,o in pairs]+(control_outputs if experiment=='P-3' else [])) if pairs else 'ERROR'
         aggregate=None
         if experiment=='S-1':
             lineage=control_outputs[SEEDS.index(seed)] if len(control_outputs)==2 else None
@@ -136,8 +141,9 @@ def run_small(experiment,attempt):
             status=aggregate['status']
         if errors: status='ERROR'
         data=dict(preparation=prep,preparation_errors=errors,once_per_word_controls=control_outputs,aggregate=aggregate,
+                  resource_accounting=dict(measured_total_cpu_seconds=total_cpu,unassigned_overhead_cpu_seconds=overhead,shared_allocation='preparation, common controls and overhead divided equally between seeds'),
                   tasks=[dict(spec=s,**o) for s,o in pairs])
-        cpu=prep['cpu_seconds']/2 + sum(o.get('cpu_seconds') or 0 for _,o in pairs) + sum(o.get('cpu_seconds') or 0 for o in control_outputs)/2
+        cpu=(prep['cpu_seconds']+overhead)/2 + sum(o.get('cpu_seconds') or 0 for _,o in pairs) + sum(o.get('cpu_seconds') or 0 for o in control_outputs)/2
         ns=dict(model=protocol['null_model'],mean=None,sd=None,empirical_p=None,
                 by_task=[o['result'].get('null_summary') for _,o in pairs if o['status']=='OK'])
         paths.append(R.run_record(experiment,'M0',seed,status,data,

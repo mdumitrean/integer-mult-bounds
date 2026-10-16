@@ -1,0 +1,196 @@
+{
+  "cpu_seconds": 4.674596436,
+  "peak_rss_bytes": 519806976,
+  "result": {
+    "decision": "Exact literal rules and inherited profile parity; overlay metadata explicitly separate.",
+    "n_permutations": 0,
+    "statistics": {
+      "N3": {
+        "all_literal_rules_verified": true,
+        "changed_role_rows": 269023,
+        "flow_solves": 420,
+        "group_size": 8,
+        "idle": {
+          "1": 17316,
+          "3": 6594,
+          "5": 9878,
+          "32": 1,
+          "48": 26558
+        },
+        "idle_is_conditioned": true,
+        "max_flow_edges": 25526,
+        "max_flow_nodes": 13729,
+        "passes": 1,
+        "protocol": "N3 conditional equal-width literal slots, random call groups, integer max-flow; fixed occupancy",
+        "row_sha256": "f370e68af92b7f83f1dcb2f770d4ea01be90a01d1051d5d19e9ad23b09135f7f",
+        "seed": 29063
+      },
+      "all_literal_rules_verified": true,
+      "attributions": [
+        {
+          "author": "Marius-Paul Dumitrean",
+          "bytes": 72444,
+          "format": "BORROW-WORD",
+          "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+          "kappa": "0.001717794984118634663827",
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "pr": 2802,
+          "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Marius-Paul Dumitrean",
+          "bytes": 72443,
+          "format": "BORROW-WORD",
+          "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+          "kappa": "0.001717794984118634663827",
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "pr": 2802,
+          "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        }
+      ],
+      "bins": 149184,
+      "calls": 666,
+      "clumping": 0.773514586014586,
+      "fill": "2802",
+      "helpers_per_call": [
+        408
+      ],
+      "idle": {
+        "1": 17316,
+        "3": 6594,
+        "5": 9878,
+        "32": 1,
+        "48": 26558
+      },
+      "idle_cells": 1361304,
+      "kappa_diagnostic": 0.0017177949841185674,
+      "occupancy_by_capacity": {
+        "8": {
+          "8": 49728
+        },
+        "16": {
+          "16": 33152
+        },
+        "32": {
+          "0": 1,
+          "27": 9878,
+          "31": 17316,
+          "32": 5957
+        },
+        "48": {
+          "0": 26558,
+          "45": 6594
+        }
+      },
+      "profile": {
+        "1": 1603728,
+        "2": 431568,
+        "3": 185082,
+        "4": 85248,
+        "5": 27194,
+        "8": 5328,
+        "32": 1,
+        "48": 26558
+      },
+      "rank_mass": 4816512,
+      "roles": 271728,
+      "roles_per_occupied_bin": {
+        "1": 49728,
+        "2": 33152,
+        "3": 9878,
+        "4": 23273,
+        "5": 6594
+      },
+      "source_notes": {
+        "pinned_word_provider_profile_parity": {
+          "extra": true,
+          "gauge44": true
+        },
+        "pinned_word_provider_width_parity": true,
+        "provider_profile_source": "pinned package providers"
+      },
+      "sources": [
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PLAN.json.gz",
+          "sha256": "afb3c5c8134fc2cfce0b50a21758490c225574994b2c3c5161e53e2355acc6fa"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/GLOBAL-TEMPLATE.json.gz",
+          "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/ORDER.json",
+          "sha256": "129e791d5b45c279443ff9e1edef5ac33d5abc51717ecbae8265abea5c247ae7"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/DISPATCH.json.gz",
+          "sha256": "14fe756dcac93a0f3b2b7f38ba7b998dec89d56d5171b691af4fae45e5d83d11"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/PROVIDERS.json",
+          "sha256": "391075b1411a3976850c633f92f58c35ed3f046f09d55bd435d7545124543fd4"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/FILL.json.gz",
+          "sha256": "2f2a25a8d82b424b1e643a8a5167361fcc5ab33cfbc6f186f4cb7ddcaf9df7d9"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/PROFILE.json",
+          "sha256": "9d71407ded0b17496b0f94ca896355933a850dc6fc8456e39b0a1f72995b1406"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66"
+        },
+        {
+          "path": "/home/marius/kappa/styles-r11/research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+          "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7"
+        }
+      ],
+      "total_cells": 3580416,
+      "used_cells": 2219112,
+      "window_sha256": "d301aa0d102381aecc3dd746c424d55ea6f4ade9f87b833c8db6d643e205c846",
+      "windows": 1332
+    },
+    "status": "PASS"
+  },
+  "seconds": 4.6850016843527555,
+  "status": "OK",
+  "task": {
+    "budget_seconds": 300,
+    "experiment": "P-3",
+    "index": 0,
+    "n_permutations": 2000,
+    "seed": 29063
+  }
+}

@@ -1,6 +1,7 @@
 """Provenance, immutable run records, preregistration and decision bookkeeping."""
 from datetime import datetime, timezone
 import hashlib
+import gzip
 import json
 import os
 from pathlib import Path
@@ -42,8 +43,18 @@ def provenance(names=None):
 
 
 def source_manifest():
-    return {str(p.relative_to(ROOT)): sha256(p)
-            for p in sorted((PKG / 'pipeline').glob('*.py'))}
+    # Preserve the bytes used by each run even while unrelated modules evolve.
+    manifest = {}
+    directory = RESULTS / 'SOURCES'
+    directory.mkdir(parents=True, exist_ok=True)
+    for path in sorted((PKG / 'pipeline').glob('*.py')):
+        content = path.read_bytes()
+        digest = hashlib.sha256(content).hexdigest()
+        manifest[str(path.relative_to(ROOT))] = digest
+        archive = directory / (digest + '.py.gz')
+        if not archive.exists():
+            archive.write_bytes(gzip.compress(content, mtime=0))
+    return manifest
 
 
 def registry_update(experiment, status, **extra):
