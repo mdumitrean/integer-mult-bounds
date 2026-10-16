@@ -1,0 +1,141 @@
+{
+  "blocking_findings": [],
+  "changed_top_level_fields": [
+    "comparison",
+    "inputs",
+    "milestone",
+    "overlap",
+    "recording",
+    "registered_utc",
+    "resumption",
+    "round_checkpoint_utc",
+    "science_launch_cutoff_utc"
+  ],
+  "comparison_preregistration": {
+    "path": "results/CONTINUATION-10/J2/PREREGISTRATION.json",
+    "sha256": "2931ff3dafb5bc2f2c5ba3ab3055785b8b87e6f5008e901fe9829a7d8f76188d"
+  },
+  "controls_executed_by_reviewer": false,
+  "findings": [
+    "The scientific source words, saved packet domain, endpoint, seeds, controls, pricing scope, retained-pair limit, resource limits and PASS/NULL/EXPLORATORY/ERROR/TIMEOUT rules are unchanged.",
+    "The updated clocks define a fresh predeclared execution window; the predecessor is explicitly UNRUN_SERVICE_INTERRUPTION_BEFORE_FREEZE with no scientific results seen.",
+    "Recording and milestone paths target CONTINUATION-11. The separately reviewed implementation copies alter only those round paths; the source adapter is byte-identical.",
+    "PR3030 is explicitly a fixed diagnostic endpoint, superseded by stronger source-reported releases. The comparison field does not claim independent admission or current-best status.",
+    "The new pinned field-comparison receipt supports identical A/B/warp data but records changed restore/report/cleanup. The source review correctly requires separate composition and complete admission before transferring any local diagnostic to the latest release.",
+    "The overlap statement is bounded and does not assert novelty. Fixed scalar/order frame-optimum results are distinguished from the changed scalar/order family.",
+    "All18 cited path-and-SHA references match their stored bytes."
+  ],
+  "limitations": [
+    "This is a pre-execution static review, not a runtime control or experiment result.",
+    "Any favorable local candidate requires fresh native, physical, supplier and outer admission before a conditional kappa claim.",
+    "The historical fixed endpoint remains diagnostic; this registration does not establish improvement over the newer PR3054/3051 source-reported benchmark."
+  ],
+  "method": "Read JSON diff and frozen source-status records; recheck cited file hashes. No scientific imports, controls, source-word census or experiments.",
+  "preregistration": {
+    "path": "results/CONTINUATION-11/J2/PREREGISTRATION.json",
+    "sha256": "c5d92d3c43c6a0f14f40e185ed7374c40427972e6f77eaaa31ee9efaf156161c"
+  },
+  "recorded_utc": "2026-10-16T21:46:01.207351+00:00",
+  "reviewer": "Independent fill/matching agent",
+  "schema_version": 1,
+  "scientific_execution": false,
+  "status": "STATIC_REVIEW_PASS",
+  "unchanged_top_level_fields": [
+    "ai_assistance",
+    "changed_premise",
+    "controls",
+    "domain",
+    "experiment",
+    "kappa_claim",
+    "n_permutations",
+    "null_bar",
+    "null_model",
+    "other_dispositions",
+    "pass_bar",
+    "pattern_claim",
+    "phases",
+    "resources",
+    "retained_pair_limit",
+    "schema_version",
+    "seeds",
+    "shards_per_provider",
+    "source_words",
+    "state",
+    "statistic",
+    "stop_rules"
+  ],
+  "verified_input_references": [
+    {
+      "path": "data/continuation-10/pr3030/ACQUISITION.json",
+      "sha256": "e79d1c92a0fe637e71d0ee81026867a9b671d5e6f044ffa7c6498fe3387f1c14"
+    },
+    {
+      "path": "data/continuation-10/pr3030/SOURCE-BINDINGS.json",
+      "sha256": "888485decf3e578f8c1cbf529b739c21efdd42389e27fc3ee4184136e0ba6e45"
+    },
+    {
+      "path": "data/continuation-10/pr3030/package/evidence/OUTER-CLAIM.json",
+      "sha256": "f670e3efe5d99954c1e033dce3921630620b31c536a9c7ea17066dc53b20680d"
+    },
+    {
+      "path": "results/CONTINUATION-10/planning/GATHERED-WINDOW-PROOF.md",
+      "sha256": "0dd99a57d6a08dc05b47c357cbaa29efad86342e90f73a37fcf23ead14c30c58"
+    },
+    {
+      "path": "results/CONTINUATION-09/planning/JOINT-CARRIER-PROOF.md",
+      "sha256": "691d77be0dda924bbc5c6faa8e6f815f46e2ab5a2363ad72a7654b87b12f40de"
+    },
+    {
+      "path": "data/continuation-05/pr2979/ACQUISITION.json",
+      "sha256": "e5ad48ac05e897dcc2e073d29be451cfd1493ba3077e7e2de0f9460aa11a7d71"
+    },
+    {
+      "path": "data/continuation-11/latest-sources/ACQUISITION.json",
+      "sha256": "08f77062e367fecde37005ebb199e4f555d15c8034524261d5b12ef963d0ad5c"
+    },
+    {
+      "path": "data/continuation-11/latest-sources/WORD-COMPARISON.json",
+      "sha256": "ca7d9138781b7f0ff64adc4c88029f9b2d55c62bb38d2868e94aaa947d1a18e9"
+    },
+    {
+      "path": "data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    {
+      "path": "results/CONTINUATION-09/AUDIT.json",
+      "sha256": "3af77f211d3d8698fdd1a7418b2b176e660f965b83a5cb31b1f3a95b8919489d"
+    },
+    {
+      "path": "data/continuation-09/j1-v1/census/task-00000.json.gz",
+      "sha256": "de10c267c85efdebc6ad58533632c7220ed8885f3c83742c6523677bff4ab910"
+    },
+    {
+      "path": "data/continuation-09/j1-v1/census/task-00001.json.gz",
+      "sha256": "5f7933ecef3dd2f9e7ad69e5912b3c543cde586e108d5e2661ed8241aaa3962c"
+    },
+    {
+      "path": "data/continuation-11/checkpoint/RECEIPT.json",
+      "sha256": "487fe49d146574d75422b67574aba8e0eb7611a1939612e00a2544c099896bdf"
+    },
+    {
+      "path": "data/continuation-11/checkpoint/REVIEW.json",
+      "sha256": "3434cbf466f9e52243d3fc3eecc0f4bb775fc24356327432a606eaeec9bd2d3e"
+    },
+    {
+      "path": "results/CONTINUATION-11/planning/SOURCE-REVIEW.md",
+      "sha256": "504da6c6a4d97383311db8f029de6e7a3f7549540e9dd0bc4ecc5e1c240895fc"
+    },
+    {
+      "path": "results/CONTINUATION-10/AUDIT-UNRUN.json",
+      "sha256": "2a27b659240efef9eac831cc1aee4bbd4b276e775e7e994c792d8a628d27c531"
+    },
+    {
+      "path": "data/continuation-07/holdout3015/ACQUISITION.json",
+      "sha256": "d0b48e18b559fc323cdd9e12a402d8f42b48ead8c8629f61e5d062f9adf1dde7"
+    },
+    {
+      "path": "results/CONTINUATION-10/J2/PREREGISTRATION.json",
+      "sha256": "2931ff3dafb5bc2f2c5ba3ab3055785b8b87e6f5008e901fe9829a7d8f76188d"
+    }
+  ]
+}
