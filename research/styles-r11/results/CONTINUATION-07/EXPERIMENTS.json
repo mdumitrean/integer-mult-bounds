@@ -1,1 +1,44 @@
-{"experiments":[{"attempts":[{"attempt":"v1","cpu_seconds":134.73822955,"result_files":["results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/seed-37003/RESULT.json","results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/seed-74017/RESULT.json"],"status":"EXPLORATORY","wall_seconds":16.3596627805382}],"confirmed":true,"cpu_seconds":134.73822955,"execution":"COMPLETED","id":"ML1-HISTORICAL-CONTROLS","preregistration":"results/CONTINUATION-07/ML1/PREREGISTRATION.json","preregistration_sha256":"aa2483b2608c2381c16610501a96df5304feb52889b2e43a7e3bf0f92ad1e6fa","result_files":["results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/seed-37003/RESULT.json","results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/seed-74017/RESULT.json"],"started_utc":"2026-10-16T17:58:47.253917+00:00","status":"EXPLORATORY","updated_utc":"2026-10-16T17:59:03.617794+00:00","wall_seconds":16.3596627805382},{"id":"ML2-RELEASE-COMPARISON","scope":"Userclarifiedlatest10-20completedimprovementPRs;acquisition/source-onlyimplementationpendingpreregistration","status":"planned"}],"goal_status":"ACTIVE_NOT_ACHIEVED","no_active_experiments":true,"round":"CONTINUATION-07","schema_version":1,"status":"RUNNING_REGISTERED_HISTORICAL_ANALYSIS"}
+{
+  "experiments": [
+    {
+      "attempts": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 134.73822955,
+          "result_files": [
+            "results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/seed-37003/RESULT.json",
+            "results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/seed-74017/RESULT.json"
+          ],
+          "status": "EXPLORATORY",
+          "wall_seconds": 16.3596627805382
+        }
+      ],
+      "confirmed": true,
+      "cpu_seconds": 134.73822955,
+      "execution": "COMPLETED",
+      "id": "ML1-HISTORICAL-CONTROLS",
+      "preregistration": "results/CONTINUATION-07/ML1/PREREGISTRATION.json",
+      "preregistration_sha256": "aa2483b2608c2381c16610501a96df5304feb52889b2e43a7e3bf0f92ad1e6fa",
+      "result_files": [
+        "results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/seed-37003/RESULT.json",
+        "results/CONTINUATION-07/ML1-HISTORICAL-CONTROLS/v1/seed-74017/RESULT.json"
+      ],
+      "started_utc": "2026-10-16T17:58:47.253917+00:00",
+      "status": "EXPLORATORY",
+      "updated_utc": "2026-10-16T17:59:03.617794+00:00",
+      "wall_seconds": 16.3596627805382
+    },
+    {
+      "id": "ML2-RELEASE-COMPARISON",
+      "preregistration": "results/CONTINUATION-07/ML2/PREREGISTRATION.json",
+      "preregistration_sha256": "d694b0a5211ee11e185594e89fa3716585c24fde70af34c9c6cf30636b997938",
+      "scope": "Userclarifiedlatest10-20completedimprovementPRs;acquisition/source-onlyimplementationpendingpreregistration",
+      "status": "planned"
+    }
+  ],
+  "goal_status": "ACTIVE_NOT_ACHIEVED",
+  "no_active_experiments": true,
+  "round": "CONTINUATION-07",
+  "schema_version": 1,
+  "status": "RUNNING_REGISTERED_HISTORICAL_ANALYSIS"
+}
