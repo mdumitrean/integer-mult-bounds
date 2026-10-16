@@ -1,27 +1,49 @@
 {
+  "completed_utc": "2026-10-16T17:30:34.889248+00:00",
   "experiments": [
     {
-      "confirmed": false,
-      "cpu_seconds": 0,
-      "execution": "NOT_RUN",
+      "attempts": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 317.367622998,
+          "result_files": [
+            "results/CONTINUATION-06/P1-PACKING-TOPPLE/v1/seed-28099/RESULT.json",
+            "results/CONTINUATION-06/P1-PACKING-TOPPLE/v1/seed-63073/RESULT.json"
+          ],
+          "status": "NULL",
+          "wall_seconds": 41.37838370259851
+        }
+      ],
+      "confirmed": true,
+      "cpu_seconds": 317.367622998,
+      "execution": "COMPLETED",
       "id": "P1-PACKING-TOPPLE",
       "preregistration": "results/CONTINUATION-06/P1/PREREGISTRATION.json",
       "preregistration_sha256": "deb139a9fcda30873780c56c5f6e11679514c4f1059f958360514620186a18f7",
-      "result_files": [],
-      "status": "planned",
-      "wall_seconds": 0
+      "result_files": [
+        "results/CONTINUATION-06/P1-PACKING-TOPPLE/v1/seed-28099/RESULT.json",
+        "results/CONTINUATION-06/P1-PACKING-TOPPLE/v1/seed-63073/RESULT.json"
+      ],
+      "scientific_decision_agreement": true,
+      "started_utc": "2026-10-16T17:26:03.317564+00:00",
+      "status": "NULL",
+      "updated_utc": "2026-10-16T17:26:44.711708+00:00",
+      "wall_seconds": 41.37838370259851
     }
   ],
   "goal_status": "ACTIVE_NOT_ACHIEVED",
+  "interpretation": "The registered60-case bounded69-role constructor completed under bothseeds with allcontrols and fullsource/lift audits passing. Everycase has onlytwo eligible original F bins before truncation, while four distinct F families are required. No literal candidate and no kappa improvement; the favorable complete-profile moment is hypothetical.",
   "lane_status": {
     "packing_topple": {
-      "consecutive_confirmed_nulls": 0,
+      "consecutive_confirmed_nulls": 1,
+      "round_closed": true,
       "scope": "PR2979five-copyT37055bin cycle;60boundedneighborhoodcases;300variants onlyforfirstselectedneighborhood percase; no globalpackingoralltoppling impossibility claim.",
+      "stop_reason": "One registered family exhausted; this is one confirmed protocol-specific NULL, not the two-NULL whole-lane stop. Frozen sufficient constructor cannot be repaired by tie variants or a larger F shortlist because onlytwo candidates exist before truncation. A changed literal allocation or cycle premise requires a fresh preregistration.",
       "stopped": false
     }
   },
   "no_active_experiments": true,
   "round": "CONTINUATION-06",
   "schema_version": 1,
-  "status": "REGISTERED_BEFORE_EXECUTION"
+  "status": "ROUND_COMPLETE_SCOPED_NULL"
 }
