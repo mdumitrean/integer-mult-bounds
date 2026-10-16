@@ -1,0 +1,58 @@
+{
+  "acquisition": {
+    "path": "data/continuation-07/holdout3015/ACQUISITION.json",
+    "sha256": "d0b48e18b559fc323cdd9e12a402d8f42b48ead8c8629f61e5d062f9adf1dde7"
+  },
+  "active_overlap": {
+    "author": "petalas",
+    "expires": "2026-10-16T20:05:00Z",
+    "scope": "Compose3015word with3018improving allocation and run full admission. No such composition was attempted here.",
+    "source": "discussion2612comment18979353"
+  },
+  "already_known_outcome": true,
+  "author": "Jeremy Kothe (jeremykothe2)",
+  "claim": {
+    "path": "data/continuation-07/holdout3015/package/CLAIM.json",
+    "sha256": "f9b9fbaaac794c0ce279c238a33a2f34f8c91a34d97ccdeb5ec98b7b8ba56d73"
+  },
+  "coverage": "37 compact files,36 exact manifest memberships; full source has154manifest entries. Native caches and source executables were not acquired or replayed.",
+  "credits": [
+    {
+      "path": "data/continuation-07/holdout3015/package/CREDITS.md",
+      "sha256": "bd4b09fcd2861933883cbce6ecf0e30743d5d3b4cb0cc38e258530c370c121b9"
+    },
+    {
+      "path": "data/continuation-07/holdout3015/package/NOTICE",
+      "sha256": "ffcc3de2243815db0e9fb8d820b4ca511fce3c7673c966e14b486f05d30ac11a"
+    },
+    {
+      "path": "data/continuation-07/holdout3015/package/SOURCES.json",
+      "sha256": "d5f3f498d4d34125bcaed14dafaceaff342223d511d1099993d5b217a147019c"
+    }
+  ],
+  "exact_release_receipt_binding": true,
+  "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+  "independent_admission_replayed": false,
+  "matched_parent_gain": "58495443855455489/500000000000000000000000",
+  "mechanism": "Restore178:180: two adds replaced by a three-add conjugation, fixed endpoints/widths/buffers and literal fill/order/dispatch. Exact declared edit data, not fetched code, is retained.",
+  "parent_pr": 2979,
+  "prospective_blinded_validation": false,
+  "registered_comparison_cohort": {
+    "path": "results/CONTINUATION-07/planning/HOLDOUT-3015-COHORT-v2.json",
+    "sha256": "e627bc4c150cc106a6397d86296287ddb9dab79b988da3eed9e6ef8a87c80bea"
+  },
+  "release_receipt": {
+    "path": "data/continuation-07/holdout3015/package/evidence/RELEASE-RECEIPT.json",
+    "sha256": "f6ddfdbbdd343cfd0a11e1d7b00cb9a8a6fbc9c7a64159b0d5abaf7de88cecf2"
+  },
+  "reviewed_utc": "2026-10-16T18:23:48.249209+00:00",
+  "schema": "R11_POST_COHORT_SOURCE_REVIEW_V1",
+  "selected_frontier_change": false,
+  "source_claim_inherited_baseline_2969_not_used": true,
+  "source_receipt_status": "PASS_RELEASE",
+  "source_refresh_before_acquisition": {
+    "path": "data/continuation-07/final-checkpoint/REVIEW.json",
+    "sha256": "e917d26da5f436b50df4eb48dd231cdf404d5237ada081696c8787b765031828"
+  },
+  "status": "SOURCE_REPORTED_CONDITIONAL_COMPLETE_FINITE_RELEASE"
+}
