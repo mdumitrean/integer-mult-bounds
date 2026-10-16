@@ -1,0 +1,62 @@
+{
+  "comparison": "Pointprediction of log10exactpositive matched-parent gain. Reportprediction,actual,trainingmeanbaseline,squaredlogerrors,ratio. Fixeddiagnosticbar ratioin[0.5,2] underbothseeds; barsetbeforecomputingprediction,afteractualsourceclaimknown. No p-value; this is descriptivecalibrationonly.",
+  "controls": [
+    "same frozenpositive/negativefeaturecontrols underbothseeds",
+    "all exactsourcehashes checkedbeforeprepare",
+    "independenttwo-seedpairedfeatureagreement",
+    "frozenmodeltrainingreleaseIDs asserted and heldoutexcluded",
+    "two-seed deterministicpredictionagreement"
+  ],
+  "domain": "One3015vs2979 before/afterpair,2providers,2seeds. Existingfrozen73rank-freeword/framefeatures andcanonicalgraph/climb/partialfillchecks. SourceafterwordonlyeditsFINAL-WORD; exactsamefill/order/dispatch/normalization required forwholegaineligibility.",
+  "experiment": "ML3-OUT-OF-COHORT",
+  "hard_stop_utc": "2026-10-16T18:38:01+00:00",
+  "inputs": {
+    "acquisition": {
+      "path": "data/continuation-07/holdout3015/ACQUISITION.json",
+      "sha256": "d0b48e18b559fc323cdd9e12a402d8f42b48ead8c8629f61e5d062f9adf1dde7"
+    },
+    "cohort": {
+      "path": "results/CONTINUATION-07/planning/HOLDOUT-3015-COHORT-v2.json",
+      "sha256": "e627bc4c150cc106a6397d86296287ddb9dab79b988da3eed9e6ef8a87c80bea"
+    },
+    "original_pins": {
+      "path": "data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    "training_features": {
+      "path": "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/RELEASE-FEATURES.json.gz",
+      "sha256": "6287a9eca573df54a6ce50ba3d2f23d919a3e8ad383a2ba2e16bfe71af1b33e6"
+    }
+  },
+  "milestone": "CONTINUATION-07/ML3",
+  "n_permutations": 0,
+  "pass_bar": "EXPLORATORYscientificstatus whether factor2diagnosticpassesorfails. Controls PASSonly. NoPLAN6patternpromotion: everyfivepartcriterionremainsbinding, thisunblindedonewordtestdoesnotfulfillthem. Missingcoverage =>EXPLORATORY_CENSORED_TARGET,neverNULL.",
+  "publication": "Forkresearch/styles-r11-resultsonly;noPR/comments/discussions.",
+  "question": "Does the unchanged alpha1 word-feature ridge fit to the3conservativelyfixed-allocation historicalreleases give a useful gain-size estimate on3015?",
+  "registered_utc": "2026-10-16T18:18:29.444416+00:00",
+  "resources": {
+    "cpu_budget_seconds_family": 2000,
+    "expected_workers": 61,
+    "new_artifact_bytes_cap": 18000000,
+    "one_pool": true,
+    "parent_load_once": true,
+    "per_task_timeout_seconds": 300,
+    "per_worker_rss_gib": 4,
+    "reserved_cores": 8,
+    "result_bytes_cap": 200000000,
+    "round_cpu_budget_seconds": 14400,
+    "workers": "min(120,floor(RAM_GiB/4))",
+    "working_set_gib": 0.7
+  },
+  "schema_version": 1,
+  "science_launch_cutoff_utc": "2026-10-16T18:23:01+00:00",
+  "scope": "Unblinded source-bound out-of-cohort comparison on newPR3015, whose positive source-reportedgain and edit wereknownbeforethisregistration. It was not in the frozen12releasecohort. Sameancestry andsamemechanism, noindependentlineage orblindedprospectivepatternvalidation. No freshnative/outeradmission ornew\u03baclaim.",
+  "seeds": [
+    37003,
+    74017
+  ],
+  "source_attribution": "Retainall21originalPINScredits andboth3015/2979sourcecredits ineachRESULT; JeremyKothe3015authorship andpredecessorMarius-PaulDumitrean2979 retained.",
+  "state": "FROZEN",
+  "stop_rules": "Noadaptivechanges. PreserveERROR/TIMEOUT andfreezeallfixesbeforemechanicalretry. Respect18:23sciencecutoff,18:38checkpoint,andremainingCPU/storagebudget. PriorlaneNULLstopsunchanged.",
+  "training": "Exactly2948,2957,2966 eligible underML2v2; load saved12releasefeatures onceparent. Equalprovidermeans, frozenL2alpha1, training-onlymeans/scales, constantsremoved; nochoice ofmodel/hyperparameters/features based on3015. Noholdoutupdate, fine-tuning orrefitincluding3015."
+}

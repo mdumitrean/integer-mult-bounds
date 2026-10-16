@@ -39,6 +39,16 @@
           ],
           "status": "EXPLORATORY",
           "wall_seconds": 19.465195182710886
+        },
+        {
+          "attempt": "v2",
+          "cpu_seconds": 338.890547171,
+          "result_files": [
+            "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/seed-37003/RESULT.json",
+            "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/seed-74017/RESULT.json"
+          ],
+          "status": "EXPLORATORY",
+          "wall_seconds": 19.33721537142992
         }
       ],
       "confirmed": true,
@@ -46,21 +56,27 @@
         "path": "results/CONTINUATION-07/ML2/COVERAGE-CORRECTION-v2.json",
         "sha256": "e2e173133dcc8acec7c495dda41422510fc5f755a19556bbf4f4ba9e4c6aff59"
       },
-      "cpu_seconds": 348.70006579899996,
-      "execution": "INCOMPLETE",
+      "cpu_seconds": 687.5906129699999,
+      "execution": "COMPLETED",
       "id": "ML2-RELEASE-COMPARISON",
       "preregistration": "results/CONTINUATION-07/ML2/PREREGISTRATION.json",
       "preregistration_sha256": "d694b0a5211ee11e185594e89fa3716585c24fde70af34c9c6cf30636b997938",
       "result_files": [
-        "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/seed-37003/RESULT.json",
-        "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v1/seed-74017/RESULT.json"
+        "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/seed-37003/RESULT.json",
+        "results/CONTINUATION-07/ML2-RELEASE-COMPARISON/v2/seed-74017/RESULT.json"
       ],
       "review_note": "v1 retained exploratory; source-coverage enforcement repaired in registered v2",
       "scope": "Userclarifiedlatest10-20completedimprovementPRs;acquisition/source-onlyimplementationpendingpreregistration",
-      "started_utc": "2026-10-16T18:10:04.569120+00:00",
+      "started_utc": "2026-10-16T18:15:50.139185+00:00",
       "status": "EXPLORATORY",
-      "updated_utc": "2026-10-16T18:10:24.044946+00:00",
-      "wall_seconds": 19.465195182710886
+      "updated_utc": "2026-10-16T18:16:09.484500+00:00",
+      "wall_seconds": 38.802410554140806
+    },
+    {
+      "id": "ML3-OUT-OF-COHORT",
+      "preregistration": "results/CONTINUATION-07/ML3/PREREGISTRATION.json",
+      "preregistration_sha256": "c21b4758dfc2f7f06aed16ed9e0fd3a386db2475edb82b9108b192d2b420386f",
+      "status": "planned"
     }
   ],
   "goal_status": "ACTIVE_NOT_ACHIEVED",

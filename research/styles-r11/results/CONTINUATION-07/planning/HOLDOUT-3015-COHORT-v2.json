@@ -1,0 +1,998 @@
+{
+  "assembled_at_utc": "2026-10-16T18:15:52.764566+00:00",
+  "coverage_limits": [
+    "Post-cohort positive outcome and edit were read before this registration; not a blinded prospective prediction or independent lineage test.",
+    "Full source-owned native/outer replay is reported and hash-bound but not independently rerun in this experiment.",
+    "Source CLAIM baseline2969 is inherited; matched comparison uses exact previous_claims.pr2979 and2979pairedwords."
+  ],
+  "entries": [
+    {
+      "allocation": {
+        "after": {
+          "artifacts": {
+            "dispatch": {
+              "bytes": 10401,
+              "path": "data/continuation-07/holdout3015/package/allocation/DISPATCH.json",
+              "sha256": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c"
+            },
+            "fill": {
+              "bytes": 1347458,
+              "path": "data/continuation-07/holdout3015/package/allocation/FILL.json.gz",
+              "sha256": "c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39"
+            },
+            "order": {
+              "bytes": 4573,
+              "path": "data/continuation-07/holdout3015/package/allocation/ORDER.json",
+              "sha256": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1"
+            },
+            "providers": {
+              "bytes": 7684,
+              "path": "data/continuation-07/holdout3015/package/allocation/PROVIDERS.json",
+              "sha256": "f52d926752eac5d847092dd58bfb9f3f3c6ac36adf39cd6a3c4d4a3b2d1fce15"
+            }
+          },
+          "attribution": {
+            "author": "jeremykothe2",
+            "author_name": "Jeremy Kothe",
+            "credit_files": [
+              {
+                "bytes": 3954,
+                "path": "data/continuation-07/holdout3015/package/CREDITS.md",
+                "sha256": "bd4b09fcd2861933883cbce6ecf0e30743d5d3b4cb0cc38e258530c370c121b9"
+              },
+              {
+                "bytes": 3378,
+                "path": "data/continuation-07/holdout3015/package/NOTICE",
+                "sha256": "ffcc3de2243815db0e9fb8d820b4ca511fce3c7673c966e14b486f05d30ac11a"
+              },
+              {
+                "bytes": 17063,
+                "path": "data/continuation-07/holdout3015/package/SOURCES.json",
+                "sha256": "d5f3f498d4d34125bcaed14dafaceaff342223d511d1099993d5b217a147019c"
+              }
+            ],
+            "credit_scope": "All original21PINScredits and retained predecessor credits plus source CREDITS/NOTICE/SOURCES. Source-reported complete conditional release, not fresh admission.",
+            "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+            "original_pins": {
+              "bytes": 15544,
+              "path": "data/words/PINS.json",
+              "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+            },
+            "pr": 3015,
+            "source_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3015"
+          },
+          "complete_profile_source": {
+            "bytes": 7138,
+            "field": "profile",
+            "path": "data/continuation-07/holdout3015/package/CLAIM.json",
+            "sha256": "f9b9fbaaac794c0ce279c238a33a2f34f8c91a34d97ccdeb5ec98b7b8ba56d73"
+          },
+          "missingness": [],
+          "normalization": {
+            "calls": 666,
+            "live_families": 66304,
+            "replicas": 74
+          },
+          "profile": {
+            "1": 1644348,
+            "2": 470862,
+            "3": 159468,
+            "4": 71928,
+            "48": 28190,
+            "5": 13716,
+            "8": 5328
+          },
+          "same_t_comparison_required": "Different replica counts are not forcibly identified; normalize only under separately registered exact convention."
+        },
+        "before": {
+          "artifacts": {
+            "dispatch": {
+              "bytes": 10401,
+              "path": "data/continuation-05/pr2979/package/allocation/DISPATCH.json",
+              "sha256": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c"
+            },
+            "fill": {
+              "bytes": 1347458,
+              "path": "data/continuation-05/pr2979/package/allocation/FILL.json.gz",
+              "sha256": "c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39"
+            },
+            "order": {
+              "bytes": 4573,
+              "path": "data/continuation-05/pr2979/package/allocation/ORDER.json",
+              "sha256": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1"
+            },
+            "providers": {
+              "bytes": 7684,
+              "path": "data/continuation-05/pr2979/package/allocation/PROVIDERS.json",
+              "sha256": "f2edb7922f3029a5d607437e737775ff3371bca49ebab62e5e2495d16d3bf573"
+            }
+          },
+          "attribution": {
+            "author": "mdumitrean",
+            "credit_files": [
+              {
+                "bytes": 3587,
+                "path": "data/continuation-05/pr2979/package/CREDITS.md",
+                "sha256": "bf85777bd2d9b8e537dae2e70614759ba1a265101dd903a72fbd2cfc2869c406"
+              },
+              {
+                "bytes": 2613,
+                "path": "data/continuation-05/pr2979/package/NOTICE",
+                "sha256": "b767e40e8c7e16058d1ebb8c08eef9b9bffae31cfa30512b843ae1fcbfc6f5cd"
+              },
+              {
+                "bytes": 17063,
+                "path": "data/continuation-05/pr2979/package/SOURCES.json",
+                "sha256": "d5f3f498d4d34125bcaed14dafaceaff342223d511d1099993d5b217a147019c"
+              }
+            ],
+            "credit_scope": "Named author plus every original PINS credit and complete linked acquired CREDITS/NOTICE/SOURCES; retained predecessor attribution is not replaced.",
+            "head": "be191346391661f4d35fc0d1508d0a6029572576",
+            "original_pins": {
+              "bytes": 15544,
+              "path": "data/words/PINS.json",
+              "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+            },
+            "pr": 2979,
+            "source_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2979"
+          },
+          "complete_profile_source": {
+            "bytes": 5750,
+            "field": "profile",
+            "path": "data/continuation-05/pr2979/package/CLAIM.json",
+            "sha256": "436e0d297cbdf195445d3697d496ac675e95210b79e70ce602a6a6667a4c6ce9"
+          },
+          "missingness": [],
+          "normalization": {
+            "calls": 666,
+            "live_families": 66304,
+            "replicas": 74
+          },
+          "profile": {
+            "1": 1645680,
+            "2": 470196,
+            "3": 159468,
+            "4": 71928,
+            "48": 28190,
+            "5": 13716,
+            "8": 5328
+          },
+          "same_t_comparison_required": "Different replica counts are not forcibly identified; normalize only under separately registered exact convention."
+        }
+      },
+      "allocation_description": "Unchanged exact literal fill, order, dispatch and normalization; the independently bound profile changes only through the word edit.",
+      "ancestral_lineage_group": "PR2833_shared_kernel_paired_release_lineage",
+      "author": "jeremykothe2",
+      "change_scope": "declared_restore_word_edit",
+      "created_at": "2026-10-16T17:54:20Z",
+      "declared_edit": {
+        "bytes": 2429,
+        "path": "data/continuation-07/holdout3015/package/edits/EDITS.json",
+        "sha256": "c9c68660d07bfd12ed20fd8cbfe3d36301ceb2d7bb9b4ea11350cc399b19e0b1"
+      },
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "interpretation": "One source-bound out-of-cohort descriptive comparison with fixed fill; no predictive or causal validation.",
+      "labels": {
+        "claim_refs": [
+          {
+            "bytes": 5750,
+            "field": "kappa",
+            "path": "data/continuation-05/pr2979/package/CLAIM.json",
+            "role": "paired_parent_complete_outer",
+            "sha256": "436e0d297cbdf195445d3697d496ac675e95210b79e70ce602a6a6667a4c6ce9"
+          },
+          {
+            "bytes": 7138,
+            "field": "kappa",
+            "path": "data/continuation-07/holdout3015/package/CLAIM.json",
+            "role": "candidate_complete_outer",
+            "sha256": "f9b9fbaaac794c0ce279c238a33a2f34f8c91a34d97ccdeb5ec98b7b8ba56d73"
+          }
+        ],
+        "kappa_after": "17291509735342244286949999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+        "kappa_before": "17290339826465135177169999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+        "matched_parent_gain": "58495443855455489/500000000000000000000000",
+        "matched_parent_gain_decimal_approx": "1.1699088771091097e-07",
+        "matched_parent_pr": 2979,
+        "outcome_known_before_registration": true,
+        "precision_only": false,
+        "reported_comparator_pr": 2969,
+        "reported_gain": "1023149757223910029/200000000000000000000000",
+        "source_reported_only": true,
+        "source_scope": "Conditional finite supplier/outer certificate for PR2979's words (mdumitrean: joint rank-7 end frames, five further paired extractions, fourteen PR2957 rewrites) with one declared literal restore edit (R1, Stack2979 / Jeremy Kothe) and PR2979's literal T74 allocation unchanged (paid profile re-derived). Inherited all-size/compiler/theorem hypotheses remain. No selected-frontier change or independent-human-review claim.",
+        "source_status": "CONDITIONAL_CANDIDATE_COMPLETE_FINITE_RELEASE",
+        "structural_parent_match": true,
+        "structural_regression_eligible": true,
+        "tier": "SOURCE_REPORTED_CONDITIONAL_COMPLETE_FINITE_RELEASE"
+      },
+      "lineage_group": "parent-pr-2979",
+      "missingness": [
+        "Post-cohort positive outcome and edit were read before this registration; not a blinded prospective prediction or independent lineage test.",
+        "Full source-owned native/outer replay is reported and hash-bound but not independently rerun in this experiment.",
+        "Source CLAIM baseline2969 is inherited; matched comparison uses exact previous_claims.pr2979 and2979pairedwords."
+      ],
+      "parent_head": "be191346391661f4d35fc0d1508d0a6029572576",
+      "parent_pr": 2979,
+      "pr": 3015,
+      "providers": {
+        "base": {
+          "after": {
+            "artifact_kind": "inert_json_word",
+            "attribution": {
+              "author": "jeremykothe2",
+              "author_name": "Jeremy Kothe",
+              "credit_files": [
+                {
+                  "bytes": 3954,
+                  "path": "data/continuation-07/holdout3015/package/CREDITS.md",
+                  "sha256": "bd4b09fcd2861933883cbce6ecf0e30743d5d3b4cb0cc38e258530c370c121b9"
+                },
+                {
+                  "bytes": 3378,
+                  "path": "data/continuation-07/holdout3015/package/NOTICE",
+                  "sha256": "ffcc3de2243815db0e9fb8d820b4ca511fce3c7673c966e14b486f05d30ac11a"
+                },
+                {
+                  "bytes": 17063,
+                  "path": "data/continuation-07/holdout3015/package/SOURCES.json",
+                  "sha256": "d5f3f498d4d34125bcaed14dafaceaff342223d511d1099993d5b217a147019c"
+                }
+              ],
+              "credit_scope": "All original21PINScredits and retained predecessor credits plus source CREDITS/NOTICE/SOURCES. Source-reported complete conditional release, not fresh admission.",
+              "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+              "original_pins": {
+                "bytes": 15544,
+                "path": "data/words/PINS.json",
+                "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+              },
+              "pr": 3015,
+              "source_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3015"
+            },
+            "bytes": 71434,
+            "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-base.json.gz",
+            "provider": "base",
+            "sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5"
+          },
+          "before": {
+            "artifact_kind": "inert_json_word",
+            "attribution": {
+              "author": "mdumitrean",
+              "credit_files": [
+                {
+                  "bytes": 3587,
+                  "path": "data/continuation-05/pr2979/package/CREDITS.md",
+                  "sha256": "bf85777bd2d9b8e537dae2e70614759ba1a265101dd903a72fbd2cfc2869c406"
+                },
+                {
+                  "bytes": 2613,
+                  "path": "data/continuation-05/pr2979/package/NOTICE",
+                  "sha256": "b767e40e8c7e16058d1ebb8c08eef9b9bffae31cfa30512b843ae1fcbfc6f5cd"
+                },
+                {
+                  "bytes": 17063,
+                  "path": "data/continuation-05/pr2979/package/SOURCES.json",
+                  "sha256": "d5f3f498d4d34125bcaed14dafaceaff342223d511d1099993d5b217a147019c"
+                }
+              ],
+              "credit_scope": "Named author plus every original PINS credit and complete linked acquired CREDITS/NOTICE/SOURCES; retained predecessor attribution is not replaced.",
+              "head": "be191346391661f4d35fc0d1508d0a6029572576",
+              "original_pins": {
+                "bytes": 15544,
+                "path": "data/words/PINS.json",
+                "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+              },
+              "pr": 2979,
+              "source_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2979"
+            },
+            "bytes": 71422,
+            "path": "data/continuation-05/pr2979/package/data/WORD-base.json.gz",
+            "provider": "base",
+            "sha256": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d"
+          }
+        },
+        "extra": {
+          "after": {
+            "artifact_kind": "inert_json_word",
+            "attribution": {
+              "author": "jeremykothe2",
+              "author_name": "Jeremy Kothe",
+              "credit_files": [
+                {
+                  "bytes": 3954,
+                  "path": "data/continuation-07/holdout3015/package/CREDITS.md",
+                  "sha256": "bd4b09fcd2861933883cbce6ecf0e30743d5d3b4cb0cc38e258530c370c121b9"
+                },
+                {
+                  "bytes": 3378,
+                  "path": "data/continuation-07/holdout3015/package/NOTICE",
+                  "sha256": "ffcc3de2243815db0e9fb8d820b4ca511fce3c7673c966e14b486f05d30ac11a"
+                },
+                {
+                  "bytes": 17063,
+                  "path": "data/continuation-07/holdout3015/package/SOURCES.json",
+                  "sha256": "d5f3f498d4d34125bcaed14dafaceaff342223d511d1099993d5b217a147019c"
+                }
+              ],
+              "credit_scope": "All original21PINScredits and retained predecessor credits plus source CREDITS/NOTICE/SOURCES. Source-reported complete conditional release, not fresh admission.",
+              "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+              "original_pins": {
+                "bytes": 15544,
+                "path": "data/words/PINS.json",
+                "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+              },
+              "pr": 3015,
+              "source_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3015"
+            },
+            "bytes": 71430,
+            "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-extra.json.gz",
+            "provider": "extra",
+            "sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea"
+          },
+          "before": {
+            "artifact_kind": "inert_json_word",
+            "attribution": {
+              "author": "mdumitrean",
+              "credit_files": [
+                {
+                  "bytes": 3587,
+                  "path": "data/continuation-05/pr2979/package/CREDITS.md",
+                  "sha256": "bf85777bd2d9b8e537dae2e70614759ba1a265101dd903a72fbd2cfc2869c406"
+                },
+                {
+                  "bytes": 2613,
+                  "path": "data/continuation-05/pr2979/package/NOTICE",
+                  "sha256": "b767e40e8c7e16058d1ebb8c08eef9b9bffae31cfa30512b843ae1fcbfc6f5cd"
+                },
+                {
+                  "bytes": 17063,
+                  "path": "data/continuation-05/pr2979/package/SOURCES.json",
+                  "sha256": "d5f3f498d4d34125bcaed14dafaceaff342223d511d1099993d5b217a147019c"
+                }
+              ],
+              "credit_scope": "Named author plus every original PINS credit and complete linked acquired CREDITS/NOTICE/SOURCES; retained predecessor attribution is not replaced.",
+              "head": "be191346391661f4d35fc0d1508d0a6029572576",
+              "original_pins": {
+                "bytes": 15544,
+                "path": "data/words/PINS.json",
+                "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+              },
+              "pr": 2979,
+              "source_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2979"
+            },
+            "bytes": 71419,
+            "path": "data/continuation-05/pr2979/package/data/WORD-extra.json.gz",
+            "provider": "extra",
+            "sha256": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7"
+          }
+        }
+      },
+      "release_receipts": [
+        {
+          "bytes": 2241,
+          "path": "data/continuation-07/holdout3015/package/evidence/RELEASE-RECEIPT.json",
+          "sha256": "f6ddfdbbdd343cfd0a11e1d7b00cb9a8a6fbc9c7a64159b0d5abaf7de88cecf2"
+        }
+      ],
+      "source_attribution": {
+        "author": "jeremykothe2",
+        "author_name": "Jeremy Kothe",
+        "credit_files": [
+          {
+            "bytes": 3954,
+            "path": "data/continuation-07/holdout3015/package/CREDITS.md",
+            "sha256": "bd4b09fcd2861933883cbce6ecf0e30743d5d3b4cb0cc38e258530c370c121b9"
+          },
+          {
+            "bytes": 3378,
+            "path": "data/continuation-07/holdout3015/package/NOTICE",
+            "sha256": "ffcc3de2243815db0e9fb8d820b4ca511fce3c7673c966e14b486f05d30ac11a"
+          },
+          {
+            "bytes": 17063,
+            "path": "data/continuation-07/holdout3015/package/SOURCES.json",
+            "sha256": "d5f3f498d4d34125bcaed14dafaceaff342223d511d1099993d5b217a147019c"
+          }
+        ],
+        "credit_scope": "All original21PINScredits and retained predecessor credits plus source CREDITS/NOTICE/SOURCES. Source-reported complete conditional release, not fresh admission.",
+        "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+        "original_pins": {
+          "bytes": 15544,
+          "path": "data/words/PINS.json",
+          "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+        },
+        "pr": 3015,
+        "source_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3015"
+      },
+      "source_credits": [
+        {
+          "bytes": 3954,
+          "path": "data/continuation-07/holdout3015/package/CREDITS.md",
+          "sha256": "bd4b09fcd2861933883cbce6ecf0e30743d5d3b4cb0cc38e258530c370c121b9"
+        },
+        {
+          "bytes": 3378,
+          "path": "data/continuation-07/holdout3015/package/NOTICE",
+          "sha256": "ffcc3de2243815db0e9fb8d820b4ca511fce3c7673c966e14b486f05d30ac11a"
+        },
+        {
+          "bytes": 17063,
+          "path": "data/continuation-07/holdout3015/package/SOURCES.json",
+          "sha256": "d5f3f498d4d34125bcaed14dafaceaff342223d511d1099993d5b217a147019c"
+        }
+      ],
+      "title": "One declared restore edit R1 on PR2979 with unchanged literal allocation"
+    }
+  ],
+  "excluded_pending": [],
+  "input_checkpoint": {
+    "bytes": 25108,
+    "path": "data/continuation-07/final-checkpoint/RECEIPT.json",
+    "sha256": "f12c8817580e1eaff84605559a20ce848521b1b1c14e6997bd3f8eb62d19a63d"
+  },
+  "original_source_attribution": {
+    "files": {
+      "1094-K8PRE-FULL-WORD.json.gz": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 57109,
+        "format": "FULL-WORD",
+        "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+        "kappa": null,
+        "local_profile": {
+          "1": 2412,
+          "2": 418,
+          "3": 418,
+          "4": 170,
+          "5": 68,
+          "8": 8
+        },
+        "pr": 1094,
+        "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+        "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+        "width_inventory": {
+          "4": 56,
+          "5": 32,
+          "7": 30,
+          "8": 122,
+          "9": 240
+        }
+      },
+      "1094-K8S7-FULL-WORD.json.gz": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 57222,
+        "format": "FULL-WORD",
+        "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+        "kappa": "0.001672660197076918",
+        "local_profile": {
+          "1": 2412,
+          "2": 418,
+          "3": 432,
+          "4": 142,
+          "5": 82,
+          "8": 8
+        },
+        "pr": 1094,
+        "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+        "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+        "width_inventory": {
+          "4": 56,
+          "5": 32,
+          "7": 30,
+          "8": 122,
+          "9": 240
+        }
+      },
+      "1195-FULL-WORD.json.gz": {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "bytes": 57307,
+        "format": "FULL-WORD",
+        "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+        "kappa": "0.001675658002271934",
+        "local_profile": {
+          "1": 2358,
+          "2": 504,
+          "3": 408,
+          "4": 134,
+          "5": 80,
+          "8": 8
+        },
+        "pr": 1195,
+        "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+        "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+        "width_inventory": {
+          "4": 44,
+          "5": 44,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      "1625-extra-word-566.json.gz": {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "bytes": 57412,
+        "format": "FULL-WORD",
+        "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+        "kappa": "0.001676896669021299",
+        "local_profile": {
+          "1": 2339,
+          "2": 510,
+          "3": 419,
+          "4": 126,
+          "5": 82,
+          "8": 8
+        },
+        "pr": 1625,
+        "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+        "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+        "width_inventory": {
+          "4": 40,
+          "5": 48,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      "1625-gauge44-word-566.json.gz": {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "bytes": 57411,
+        "format": "FULL-WORD",
+        "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+        "kappa": "0.001676896669021299",
+        "local_profile": {
+          "1": 2347,
+          "2": 502,
+          "3": 415,
+          "4": 130,
+          "5": 82,
+          "8": 8
+        },
+        "pr": 1625,
+        "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+        "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+        "width_inventory": {
+          "4": 44,
+          "5": 44,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      "1672-extra-word-566-554.json.gz": {
+        "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+        "bytes": 57440,
+        "format": "FULL-WORD",
+        "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+        "kappa": "0.001676938111022438",
+        "local_profile": {
+          "1": 2340,
+          "2": 508,
+          "3": 420,
+          "4": 126,
+          "5": 82,
+          "8": 8
+        },
+        "pr": 1672,
+        "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+        "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+        "width_inventory": {
+          "4": 40,
+          "5": 48,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      "1672-gauge44-word-566-554.json.gz": {
+        "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+        "bytes": 57438,
+        "format": "FULL-WORD",
+        "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+        "kappa": "0.001676938111022438",
+        "local_profile": {
+          "1": 2348,
+          "2": 500,
+          "3": 416,
+          "4": 130,
+          "5": 82,
+          "8": 8
+        },
+        "pr": 1672,
+        "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+        "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+        "width_inventory": {
+          "4": 44,
+          "5": 44,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      "2679-BORROW-WORD-43base.json.gz": {
+        "author": "Philippe Van Velzen (philippeVV)",
+        "bytes": 71364,
+        "format": "BORROW-WORD",
+        "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+        "kappa": null,
+        "local_profile": {
+          "1": 2374,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 8
+        },
+        "pr": 2679,
+        "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+        "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "2679-BORROW-WORD-43extra.json.gz": {
+        "author": "Philippe Van Velzen (philippeVV)",
+        "bytes": 71365,
+        "format": "BORROW-WORD",
+        "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+        "kappa": null,
+        "local_profile": {
+          "1": 2374,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 8
+        },
+        "pr": 2679,
+        "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+        "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "2745-BORROW-WORD-43base.json.gz": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 71241,
+        "format": "BORROW-WORD",
+        "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+        "kappa": "0.0017161404259974415",
+        "local_profile": {
+          "1": 2370,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 4,
+          "8": 4
+        },
+        "pr": 2745,
+        "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+        "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "2745-BORROW-WORD-43extra.json.gz": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 71242,
+        "format": "BORROW-WORD",
+        "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+        "kappa": "0.0017161404259974415",
+        "local_profile": {
+          "1": 2370,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 4,
+          "8": 4
+        },
+        "pr": 2745,
+        "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+        "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "2766-WORD-base.json.gz": {
+        "author": "DavidAriasC",
+        "bytes": 72192,
+        "format": "BORROW-WORD",
+        "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+        "kappa": "0.001717256973467002308270",
+        "local_profile": {
+          "1": 2364,
+          "2": 647,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "pr": 2766,
+        "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+        "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "2766-WORD-extra.json.gz": {
+        "author": "DavidAriasC",
+        "bytes": 72192,
+        "format": "BORROW-WORD",
+        "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+        "kappa": "0.001717256973467002308270",
+        "local_profile": {
+          "1": 2364,
+          "2": 647,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "pr": 2766,
+        "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+        "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 70505,
+        "format": "BORROW-WORD",
+        "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+        "kappa": "0.001703552312979594",
+        "local_profile": {
+          "1": 2363,
+          "2": 632,
+          "3": 326,
+          "4": 120,
+          "5": 34,
+          "7": 4,
+          "8": 4
+        },
+        "pr": 2462,
+        "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 33,
+          "5": 9,
+          "7": 62,
+          "8": 86,
+          "9": 240
+        }
+      },
+      "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz": {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 70509,
+        "format": "BORROW-WORD",
+        "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+        "kappa": "0.001703552312979594",
+        "local_profile": {
+          "1": 2363,
+          "2": 632,
+          "3": 326,
+          "4": 120,
+          "5": 34,
+          "7": 4,
+          "8": 4
+        },
+        "pr": 2462,
+        "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 33,
+          "5": 9,
+          "7": 62,
+          "8": 86,
+          "9": 240
+        }
+      },
+      "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz": {
+        "author": "Marius-Paul Dumitrean",
+        "bytes": 72444,
+        "format": "BORROW-WORD",
+        "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+        "kappa": "0.001717794984118634663827",
+        "local_profile": {
+          "1": 2382,
+          "2": 648,
+          "3": 268,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "pr": 2802,
+        "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 2,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": {
+        "author": "Marius-Paul Dumitrean",
+        "bytes": 72443,
+        "format": "BORROW-WORD",
+        "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+        "kappa": "0.001717794984118634663827",
+        "local_profile": {
+          "1": 2382,
+          "2": 648,
+          "3": 268,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "pr": 2802,
+        "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 2,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": {
+        "author": "Tekalign (tekuuu)",
+        "bytes": 72468,
+        "format": "BORROW-WORD",
+        "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+        "kappa": "0.001717141586348426338109",
+        "local_profile": {
+          "1": 2366,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "pr": 2751,
+        "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz": {
+        "author": "Tekalign (tekuuu)",
+        "bytes": 72468,
+        "format": "BORROW-WORD",
+        "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+        "kappa": "0.001717141586348426338109",
+        "local_profile": {
+          "1": 2366,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "pr": 2751,
+        "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "retired5-WORD-base.json.gz": {
+        "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+        "bytes": 72354,
+        "format": "BORROW-WORD",
+        "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+        "kappa": "0.001717409316335491643448",
+        "local_profile": {
+          "1": 2386,
+          "2": 642,
+          "3": 274,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "pr": null,
+        "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+        "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 4,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      "retired5-WORD-extra.json.gz": {
+        "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+        "bytes": 72353,
+        "format": "BORROW-WORD",
+        "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+        "kappa": "0.001717409316335491643448",
+        "local_profile": {
+          "1": 2386,
+          "2": 642,
+          "3": 274,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "pr": null,
+        "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+        "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 4,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      }
+    },
+    "pins": {
+      "bytes": 15544,
+      "path": "data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    }
+  },
+  "schema": "R11_RELEASE_COHORT_V1",
+  "selection": {
+    "count": 1,
+    "independence": "Direct2979descendant, same cumulative ancestry; no independent lineage validation.",
+    "outcome_known_before_registration": true,
+    "rule": "Single newly released3015episode selected after the frozen twelve-release cohort; outcome and edit known before registration.",
+    "source_only": true
+  },
+  "source_acquisitions": [
+    {
+      "bytes": 14980,
+      "path": "data/continuation-07/holdout3015/ACQUISITION.json",
+      "sha256": "d0b48e18b559fc323cdd9e12a402d8f42b48ead8c8629f61e5d062f9adf1dde7"
+    }
+  ],
+  "source_cutoff": "2026-10-16T18:11:24Z",
+  "source_schema_clarification": {
+    "prior": {
+      "path": "results/CONTINUATION-07/planning/HOLDOUT-3015-COHORT.json",
+      "sha256": "d1e22cfcd8379414d28f792b1185e0bc62f3faedb82d6e6c2ed4b7f4c31d23cc"
+    },
+    "reason": "Use the word mechanism field solely for the changed operation. The previous fixed_allocation suffix triggers the frozen conservative mechanism string exclusion despite exactly unchanged allocation. No source artifacts, endpoints, gain labels or selection changed; no3015features were observed."
+  },
+  "unchanged_training_cohort": {
+    "bytes": 241317,
+    "path": "results/CONTINUATION-07/planning/RELEASE-COHORT.json",
+    "sha256": "3969d32d59be02b88059da8a6e16c21606eb7fadd7c3982c2feda90fe5a4636f"
+  }
+}
