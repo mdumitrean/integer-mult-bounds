@@ -1,0 +1,140 @@
+# 1. climb strings vs reported local profile
+word 2751: climb histogram {1: 2358, 2: 610, 3: 297, 4: 130, 5: 26, 8: 8} mass 5183; reported {1: 2366, 2: 646, 3: 297, 4: 120, 5: 26, 8: 8} mass 5223; match=False; helpers 415 width inventory {4: 26, 5: 9, 7: 62, 8: 78, 9: 240}
+   non-helper, non-centre registers: 231; climb-sum histogram {1: 12, 5: 6, 7: 34, 8: 179}
+word 2802: climb histogram {1: 2374, 2: 612, 3: 268, 4: 138, 5: 26, 8: 8} mass 5148; reported {1: 2382, 2: 648, 3: 268, 4: 128, 5: 26, 8: 8} mass 5188; match=False; helpers 408 width inventory {4: 26, 5: 2, 7: 62, 8: 78, 9: 240}
+   non-helper, non-centre registers: 231; climb-sum histogram {1: 12, 5: 6, 7: 34, 8: 179}
+complete-profile decomposition: local {1: 2382, 2: 648, 3: 268, 4: 128, 5: 26, 8: 8} x666 + idle {1: 17316, 3: 6594, 5: 9878, 32: 1, 48: 26558}; mass 4816512 = 72*66304 + 64*666 = 4816512
+
+# 2. register-level Parikh derivation #2751 -> #2802 (forward sections)
+   reg 101: (1, 1, 1, 1, 2, 1, 1) -> (1, 1, 1, 1, 1, 2, 1)
+   reg 143: (1, 1, 2, 3, 1) -> (1, 1, 3, 2, 1)
+   reg 145: (1, 1, 2, 3, 1) -> (1, 1, 3, 2, 1)
+   reg 167: (1, 1, 2, 3, 1) -> (1, 1, 3, 2, 1)
+   reg 168: (1, 1, 2, 3, 1) -> (1, 1, 3, 2, 1)
+   reg 197: (1, 1, 2, 3, 1) -> (1, 1, 3, 2, 1)
+   reg 214: (1, 1, 2, 3, 1) -> (1, 1, 3, 2, 1)
+   reg 225: (1, 1, 1, 1, 2, 1, 1, 1) -> (1, 1, 1, 1, 1, 2, 1, 1)
+   reg 281: (1, 1, 1, 1, 2, 1, 1, 1) -> (1, 1, 1, 1, 1, 2, 1, 1)
+   reg 31: (1, 1, 1, 1, 2, 1, 1) -> (1, 1, 1, 1, 1, 2, 1)
+   reg 345: (1, 1, 1, 1, 2, 1, 1, 1) -> (1, 1, 1, 1, 1, 2, 1, 1)
+   reg 376: (1, 1, 1, 2, 2, 1, 1) -> (1, 1, 1, 2, 1, 1, 1, 1)
+   reg 377: (1, 1, 1, 1, 2, 1, 1, 1) -> (1, 1, 1, 1, 1, 2, 1, 1)
+   reg 381: (1, 1, 1, 1, 2, 1, 1, 1) -> (1, 1, 1, 1, 1, 2, 1, 1)
+   reg 393: (1, 1, 1, 1, 2, 1, 1, 1) -> (1, 1, 1, 1, 1, 2, 1, 1)
+   reg 396: (1, 1, 1, 2, 2, 1, 1) -> (1, 1, 1, 2, 1, 1, 1, 1)
+   reg 398: (1, 1, 1, 2, 2, 1, 1) -> (1, 1, 1, 2, 1, 1, 1, 1)
+   reg 403: (1, 1, 1, 1, 2, 1, 1, 1) -> (1, 1, 1, 1, 1, 2, 1, 1)
+   reg 405: (1, 1, 1, 1, 2, 1, 1, 1) -> (1, 1, 1, 1, 1, 1, 1, 1, 1)
+   reg 502: (1, 2, 3, 1, 1, 1) -> (1, 2, 2, 2, 1, 1)
+   reg 503: (1, 2, 3, 1, 1, 1) -> (1, 2, 2, 2, 1, 1)
+   reg 504: (1, 2, 3, 1, 1, 1) -> (1, 2, 2, 2, 1, 1)
+   reg 505: (1, 2, 3, 1, 1, 1) -> (1, 2, 2, 2, 1, 1)
+   reg 514: (1, 2, 3, 1, 1, 1) -> (1, 2, 2, 2, 1, 1)
+   reg 515: (1, 2, 2, 1, 1, 1, 1) -> (1, 2, 2, 2, 1, 1)
+   reg 516: (1, 2, 3, 1, 1, 1) -> (1, 2, 2, 2, 1, 1)
+   reg 517: (1, 2, 3, 1, 1, 1) -> (1, 2, 2, 2, 1, 1)
+   reg 531: (2, 1, 2, 2) -> (2, 2, 1, 2)
+   reg 543: (2, 1, 2, 2) -> (2, 2, 1, 2)
+   reg 550: (2, 3, 3) -> (2, 2, 1, 1, 1, 1)
+   reg 551: (2, 3, 3) -> (2, 2, 1, 1, 1, 1)
+   reg 552: (2, 3, 3) -> (2, 2, 1, 1, 1, 1)
+   reg 553: (2, 3, 3) -> (2, 2, 1, 1, 1, 1)
+   reg 554: (2, 1, 2, 2) -> (2, 2, 1, 2)
+   reg 555: (2, 1, 2, 2) -> (2, 2, 1, 2)
+   reg 562: (2, 3, 3) -> (2, 2, 1, 1, 1, 1)
+   reg 564: (2, 3, 3) -> (2, 2, 1, 1, 1, 1)
+   reg 565: (2, 3, 3) -> (2, 2, 1, 1, 1, 1)
+   reg 566: (2, 1, 2, 2) -> (2, 2, 1, 2)
+   reg 567: (2, 1, 2, 2) -> (2, 2, 1, 2)
+   reg 600: (3, 2, 1, 1, 1) -> (4, 1, 1, 1, 1)
+   reg 601: (3, 2, 1, 1, 1) -> (4, 1, 1, 1, 1)
+   reg 602: (3, 2, 1, 1, 1) -> (4, 1, 1, 1, 1)
+   reg 604: (3, 2, 1, 1, 1) -> (4, 1, 1, 1, 1)
+   reg 606: (2, 1, 1, 1) -> None
+   reg 632: (3, 2, 1, 1, 1) -> (4, 1, 1, 1, 1)
+   reg 633: (3, 2, 1, 1, 1) -> (4, 1, 1, 1, 1)
+   reg 634: (3, 2, 1, 1, 1) -> (4, 1, 1, 1, 1)
+   reg 635: (2, 1, 1, 1) -> None
+   reg 636: (3, 1, 2, 1, 1) -> (4, 1, 1, 1, 1)
+   reg 637: (1, 2, 1, 1) -> None
+   reg 638: (1, 2, 1, 1) -> None
+   reg 639: (1, 2, 1, 1) -> None
+   reg 66: (1, 1, 1, 2, 2, 1) -> (1, 1, 1, 2, 1, 1, 1)
+   reg 667: (2, 1, 1, 1) -> None
+   reg 669: (1, 2, 1, 1) -> None
+   local Parikh delta per call {1: 16, 2: 2, 3: -29, 4: 8} (mass -35); reported delta {1:-4,2:+6,3:-6} mass -10; idle delta {5:+1332} = +10/call
+
+# 3. root, derivative and the linear price table
+   root kappa = 0.0017177949841186346638272299  (certified endpoint 0.001717794984118634663827; agree to True)
+   M(0) = mass/73 = 65979.616 < 66304 (root exists iff mass < 73*66304 = 4840192)
+   dM/dkappa at root = 189435.574894
+   price(r) = dkappa per ADDED rank-r child (mass not fixed); price per unit mass = price(r)/r
+     r= 1  price -7.28478e-08   per unit mass -7.28478e-08
+     r= 2  price -1.45522e-07   per unit mass -7.27611e-08
+     r= 3  price -2.18131e-07   per unit mass -7.27104e-08
+     r= 4  price -2.90698e-07   per unit mass -7.26745e-08
+     r= 5  price -3.63233e-07   per unit mass -7.26467e-08
+     r= 6  price -4.35744e-07   per unit mass -7.26239e-08
+     r= 7  price -5.08233e-07   per unit mass -7.26047e-08
+     r= 8  price -5.80704e-07   per unit mass -7.25880e-08
+     r= 9  price -6.53160e-07   per unit mass -7.25734e-08
+     r=16  price -1.16003e-06   per unit mass -7.25017e-08
+     r=32  price -2.31729e-06   per unit mass -7.24154e-08
+     r=48  price -3.47352e-06   per unit mass -7.23650e-08
+     r=51  price -3.69023e-06   per unit mass -7.23574e-08
+     r=73  price -5.27884e-06   per unit mass -7.23129e-08
+   mass-fixed merge gain  g(r1,r2) = kappa(c - e_r1 - e_r2 + e_(r1+r2)) - kappa(c)  (exact, one child):
+   first-order law for mass-neutral deltas: dkappa ~ (kappa/(73 dM/dk)) * dPhi, Phi(c) = sum_r r c_r ln r; kappa/(73 dM/dk) = 1.242187e-10 per unit of Phi
+     (1,1)->2: exact +1.73374e-10  linear(price) +1.73374e-10  log-rank law +1.72204e-10
+     (1,2)->3: exact +2.38670e-10  linear(price) +2.38670e-10  log-rank law +2.37201e-10
+     (2,2)->4: exact +3.46336e-10  linear(price) +3.46336e-10  log-rank law +3.44407e-10
+     (4,4)->8: exact +6.91848e-10  linear(price) +6.91848e-10  log-rank law +6.88815e-10
+     (3,5)->8: exact +6.60358e-10  linear(price) +6.60357e-10  log-rank law +6.57428e-10
+     (8,8)->16: exact +1.38205e-09  linear(price) +1.38205e-09  log-rank law +1.37763e-09
+     (48,3)->51: exact +1.42076e-09  linear(price) +1.42076e-09  log-rank law +1.41729e-09
+
+# 4. unit Parikh moves on the real #2802 profile (exact roots; x666 = once per call)
+   merge two rank-4 -> rank-8, once per call: dkappa +4.60894e-07  (mass change +0; log-rank law +4.58751e-07)
+   split one idle 48 -> 32+16: dkappa -3.80056e-09  (mass change +0; log-rank law -3.79521e-09)
+   split one idle 48 -> 6 x 8: dkappa -1.07075e-08  (mass change +0; log-rank law -1.06834e-08)
+   split one idle 48 -> 48 x 1: dkappa -2.31753e-08  (mass change +0; log-rank law -2.30820e-08)
+   merge idle 48+3 -> 51 (halving guard max), once: dkappa +1.42076e-09  (mass change +0; log-rank law +1.41729e-09)
+   merge idle 48+3 -> 51, all 6594 rank-3 idles: dkappa +9.41980e-06  (mass change +0; log-rank law +9.34560e-06)
+   refit PR2766 kind: {1:-2,2:+1} per call: dkappa +1.15475e-07  (mass change +0; log-rank law +1.14688e-07)
+   remove width-8 helper (1,1,1,1,1,1,1,1) -> one rank-8 idle, per call: dkappa +1.38508e-06  (mass change +0; log-rank law +1.37625e-06)
+   remove width-8 helper (1,2,2,3) -> one rank-8 idle, per call: dkappa +8.79054e-07  (mass change +0; log-rank law +8.74213e-07)
+   remove width-8 helper (1,2,2,3) -> 8 rank-1 idles (worst packing), per call: dkappa -5.05207e-07  (mass change +0; log-rank law -5.02039e-07)
+   remove width-8 helper (1,2,2,3) -> absorbed in a 48-bin remainder 0->8, per call: dkappa +8.79054e-07  (mass change +0; log-rank law +8.74213e-07)
+   remove width-5 follower (2,1,1,1) -> one rank-5 idle, per call: dkappa +5.54452e-07  (mass change +0; log-rank law +5.51053e-07)
+   the #2751->#2802 step as recorded: local {1:-4,2:+6,3:-6}/call, idle {5:+1332}: dkappa +3.85841e-07  (mass change +0; log-rank law +3.83628e-07)
+   cold-host (4,8)->7 "-H3-H2": local {3:-1,2:-1}/call, freed 5 cells as one rank-5 remainder per call: dkappa +2.79897e-07  (mass change +0; log-rank law +2.78390e-07)
+   cold-host "-H3-H2" with the RECORDED relaxed fill (RELAX-host7 idle histogram; reported +8.7032532e-7): dkappa +8.70325e-07  (mass change +0; log-rank law +8.66394e-07)
+
+# 5. ceiling ladder (each row: a relaxation of the reachable set; roots by the same bisection)
+   local mass/call 5188; idle mass/call 2044 (= 7232 - 5188); helpers 3332 + centres 64 + ports 1792 = 5188
+   A. actual #2802: kappa 0.00171779498411863466  (delta vs actual +0.00000e+00)
+   B. idle mass all in rank-48 children (integral count rounded down, rest rank-1): kappa 0.00174739453526189126  (delta vs actual +2.95996e-05)
+   G. uniform manuscript model: every unit of mass a rank-1 child (kappa = log_73(73 W / mass)): kappa 0.00114308846927989595  (delta vs actual -5.74707e-04)
+   C. idle -> fractional rank-51: kappa 0.00175808593462937527  (packing_cap.py reports ~0.00175808593463)
+   D. helper mass + idle at rank 51, ports at rank 9, centres 8: kappa 0.00608033695589642431
+   E. local at rank 9 + idle at 51: kappa 0.00305775839888097976
+   F. all at 73: M = 65979.6 < 66304 at every kappa -> no root (needs r<=51 guard / r<=9 frames)
+   G check: log_73(73*66304/mass) = 0.001143088
+
+# 6a. lineage as a Parikh derivation with complete profiles (exact roots vs the log-rank law)
+   #2751 -> #2766 refit: delta {1: -1332, 2: 666} mass +0; exact dkappa +1.15387e-07  log-rank law +1.14688e-07  Phi/call +1.386
+   #2766 refit -> retired5 (5 aliases): delta {1: 14652, 2: -3330, 3: -15318, 4: 5328, 5: 3330} mass +0; exact dkappa +1.52343e-07  log-rank law +1.54013e-07  Phi/call +1.862
+   retired5 (5 aliases) -> #2802 (2 moves + 2 aliases): delta {1: -2664, 2: 3996, 3: -3996, 5: 1332} mass +0; exact dkappa +3.85668e-07  log-rank law +3.83628e-07  Phi/call +4.637
+   climb-string diff #2751 -> retired5: 49 registers changed, local Parikh delta/call {1: 20, 2: -4, 3: -23, 4: 8}
+   climb-string diff retired5 -> #2802: 10 registers changed, local Parikh delta/call {1: -4, 2: 6, 3: -6}
+   centre registers gate-climbs (diagnostic for the fixed offset): {92: (1, 1, 1, 1, 4), 57: (1, 1, 1, 1, 4), 81: (1, 1, 1, 1, 4), 224: (1, 1, 1, 1, 4, 1), 11: (1, 1, 1, 1, 4), 240: (1, 1, 1, 1, 4, 1), 9: (1, 1, 1, 1, 4), 256: (1, 1, 1, 1, 4, 1)}
+   target_levels registers gate-climbs: {104: (1, 1, 1, 1, 4), 106: (1, 1, 1, 1, 4), 110: (1, 1, 1, 1, 4), 14: (1, 1, 1, 2, 2), 21: (1, 1, 1, 2, 2), 37: (1, 1, 1, 1, 4), 41: (1, 1, 1, 1, 4), 43: (1, 1, 1, 1, 4), 47: (1, 1, 1, 2, 2), 52: (1, 1, 1, 2, 2), 78: (1, 1, 1, 2, 2), 99: (1, 1, 1, 2, 2)}
+
+# 6b. lineage kappa steps (values from CLAIM.json / README / digest)
+   #2751 joint twelve-source: 0.001717141586348426338109  step -
+   #2766 refit B1151 6->5 (per call {1:-2,2:+1}): 0.001717256973467002308270  step +1.15387e-07
+   retired5: five retired-lender aliases: 0.001717409316335491643448  step +1.52343e-07
+   #2802: two hostee moves + two aliases + refits: 0.001717794984118634663827  step +3.85668e-07
+   #2843 T124 composition (other machine): 0.00171865827784172  step +8.63294e-07
+   #2853 philippeVV dirt-entry A-phase: 0.0017193776587  step +7.19381e-07
+   ceilings: PR2679 ceil74 class-level (every fill of the 415-helper inventory) 0.00171514043461 -- exceeded by #2751 onwards (inventory left the class); packing cap (fixed #2802 local word, idle at <=51) 0.001758086 -- not exceeded by any PR on this word.

@@ -1,0 +1,574 @@
+{
+  "schema_version": 1,
+  "note": "Profiles and kappas of the frozen word set. complete_profile = global paid profile c_r (666 x local + idle on the T74 line); kappa = the exact package endpoint as a decimal string (truncated); claim_kappa_field = the raw field of the pinned CLAIM file. Entries marked \"quoted, not recomputed\" were not re-derived in this package.",
+  "constructions": {
+    "1094": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "words": {
+        "1094-K8PRE-FULL-WORD.json.gz": {
+          "local_profile": {
+            "1": 2412,
+            "2": 418,
+            "3": 418,
+            "4": 170,
+            "5": 68,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 56,
+            "5": 32,
+            "7": 30,
+            "8": 122,
+            "9": 240
+          }
+        },
+        "1094-K8S7-FULL-WORD.json.gz": {
+          "local_profile": {
+            "1": 2412,
+            "2": 418,
+            "3": 432,
+            "4": 142,
+            "5": 82,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 56,
+            "5": 32,
+            "7": 30,
+            "8": 122,
+            "9": 240
+          }
+        }
+      },
+      "kappa": "0.001672660197076918",
+      "complete_profile": {
+        "1": 349604,
+        "2": 60192,
+        "3": 62585,
+        "4": 20448,
+        "5": 11808,
+        "7": 7,
+        "8": 1152,
+        "48": 4866
+      },
+      "idle": {
+        "1": 2276,
+        "3": 377,
+        "7": 7,
+        "48": 4866
+      },
+      "complete_profile_source": "toolkit README of PR #1186 (selected #1094 replay); quoted, not recomputed here",
+      "note": "T16: 144 calls"
+    },
+    "1195": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "kappa": "0.001675658002271934",
+      "words": {
+        "1195-FULL-WORD.json.gz": {
+          "local_profile": {
+            "1": 2358,
+            "2": 504,
+            "3": 408,
+            "4": 134,
+            "5": 80,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 44,
+            "5": 44,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        }
+      }
+    },
+    "1625": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "kappa": "0.001676896669021299",
+      "words": {
+        "1625-extra-word-566.json.gz": {
+          "local_profile": {
+            "1": 2339,
+            "2": 510,
+            "3": 419,
+            "4": 126,
+            "5": 82,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 40,
+            "5": 48,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        "1625-gauge44-word-566.json.gz": {
+          "local_profile": {
+            "1": 2347,
+            "2": 502,
+            "3": 415,
+            "4": 130,
+            "5": 82,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 44,
+            "5": 44,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        }
+      },
+      "complete_profile": {
+        "1": 1559766,
+        "2": 337668,
+        "3": 278058,
+        "4": 84912,
+        "5": 54612,
+        "8": 5328,
+        "48": 22748
+      },
+      "complete_profile_source": "PR #1625 package SPEC/PLAN; quoted, not recomputed here"
+    },
+    "1672": {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "kappa": "0.001676938111022438",
+      "words": {
+        "1672-extra-word-566-554.json.gz": {
+          "local_profile": {
+            "1": 2340,
+            "2": 508,
+            "3": 420,
+            "4": 126,
+            "5": 82,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 40,
+            "5": 48,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        "1672-gauge44-word-566-554.json.gz": {
+          "local_profile": {
+            "1": 2348,
+            "2": 500,
+            "3": 416,
+            "4": 130,
+            "5": 82,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 44,
+            "5": 44,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        }
+      },
+      "claim_kappa_field": "1676938111022438771190100017020725032555691674761792047536039179/10000000000000000000000000000000000...",
+      "claim_file": "/private/tmp/claude-501/-Users-mdumitrean-Desktop-dev-aigent-math-prime/8f6e1bf2-f2b0-4414-a333-eb11d5651cff/scratchpad/wt-styles/research/styles-r11/data/fills/1672-CLAIM.json",
+      "complete_profile": {
+        "1": 1559100,
+        "2": 339000,
+        "3": 277392,
+        "4": 84912,
+        "5": 54612,
+        "8": 5328,
+        "48": 22748
+      },
+      "complete_profile_source": "/private/tmp/claude-501/-Users-mdumitrean-Desktop-dev-aigent-math-prime/8f6e1bf2-f2b0-4414-a333-eb11d5651cff/scratchpad/wt-styles/research/styles-r11/data/fills/1672-PROFILE.json:",
+      "rank_mass": 4816512
+    },
+    "2679": {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "words": {
+        "2679-BORROW-WORD-43base.json.gz": {
+          "local_profile": {
+            "1": 2374,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 8
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "2679-BORROW-WORD-43extra.json.gz": {
+          "local_profile": {
+            "1": 2374,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 8
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        }
+      }
+    },
+    "2745": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "kappa": "0.0017161404259974415",
+      "words": {
+        "2745-BORROW-WORD-43base.json.gz": {
+          "local_profile": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "2745-BORROW-WORD-43extra.json.gz": {
+          "local_profile": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        }
+      },
+      "claim_kappa_field": "0.00171614042599744151618960130415945434499832940171484733462766611025457649226368620444365155220279...",
+      "claim_file": "research/t74-joint-twelve-retired7/evidence/PR2745-CLAIM.json"
+    },
+    "2766": {
+      "author": "DavidAriasC",
+      "kappa": "0.001717256973467002308270",
+      "words": {
+        "2766-WORD-base.json.gz": {
+          "local_profile": {
+            "1": 2364,
+            "2": 647,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "2766-WORD-extra.json.gz": {
+          "local_profile": {
+            "1": 2364,
+            "2": 647,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        }
+      },
+      "complete_profile": {
+        "1": 1591740,
+        "2": 430902,
+        "3": 204396,
+        "4": 79920,
+        "5": 22532,
+        "8": 5328,
+        "32": 1,
+        "48": 26558
+      },
+      "complete_profile_source": "research/t74-joint-twelve-retired7/evidence/PR2766-CLAIM.json:/profile",
+      "rank_mass": 4816512,
+      "claim_kappa_field": "17172569734670023082699999999999999999999998999999999999999999999999/1000000000000000000000000000000...",
+      "claim_file": "research/t74-joint-twelve-retired7/evidence/PR2766-CLAIM.json"
+    },
+    "retired5": {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "kappa": "0.001717409316335491643448",
+      "words": {
+        "retired5-WORD-base.json.gz": {
+          "local_profile": {
+            "1": 2386,
+            "2": 642,
+            "3": 274,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 4,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "retired5-WORD-extra.json.gz": {
+          "local_profile": {
+            "1": 2386,
+            "2": 642,
+            "3": 274,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 4,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        }
+      },
+      "complete_profile": {
+        "1": 1606392,
+        "2": 427572,
+        "3": 189078,
+        "4": 85248,
+        "5": 25862,
+        "8": 5328,
+        "32": 1,
+        "48": 26558
+      },
+      "complete_profile_source": "/private/tmp/claude-501/-Users-mdumitrean-Desktop-dev-aigent-math-prime/8f6e1bf2-f2b0-4414-a333-eb11d5651cff/scratchpad/wt-styles/research/styles-r11/data/fills/retired5-CLAIM.json:/profile",
+      "rank_mass": 4816512,
+      "claim_kappa_field": "17174093163354916434479999999999999999999998999999999999999999999999/1000000000000000000000000000000...",
+      "claim_file": "/private/tmp/claude-501/-Users-mdumitrean-Desktop-dev-aigent-math-prime/8f6e1bf2-f2b0-4414-a333-eb11d5651cff/scratchpad/wt-styles/research/styles-r11/data/fills/retired5-CLAIM.json",
+      "idle": {
+        "1": 17316,
+        "3": 6594,
+        "5": 8546,
+        "32": 1,
+        "48": 26558
+      }
+    },
+    "2802": {
+      "author": "Marius-Paul Dumitrean",
+      "kappa": "0.001717794984118634663827",
+      "words": {
+        "WORD-base.json.gz": {
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "WORD-extra.json.gz": {
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        }
+      },
+      "complete_profile": {
+        "1": 1603728,
+        "2": 431568,
+        "3": 185082,
+        "4": 85248,
+        "5": 27194,
+        "8": 5328,
+        "32": 1,
+        "48": 26558
+      },
+      "complete_profile_source": "research/t74-joint-twelve-retired7/CLAIM.json:/profile",
+      "rank_mass": 4816512,
+      "claim_kappa_field": "17177949841186346638269999999999999999999998999999999999999999999999/1000000000000000000000000000000...",
+      "claim_file": "research/t74-joint-twelve-retired7/CLAIM.json",
+      "idle": {
+        "1": 17316,
+        "3": 6594,
+        "5": 9878,
+        "32": 1,
+        "48": 26558
+      },
+      "calls": 666,
+      "roles": 271728
+    },
+    "2751": {
+      "author": "Tekalign (tekuuu)",
+      "kappa": "0.001717141586348426338109",
+      "words": {
+        "WORD2751-base.json.gz": {
+          "local_profile": {
+            "1": 2366,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        "WORD2751-extra.json.gz": {
+          "local_profile": {
+            "1": 2366,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        }
+      },
+      "complete_profile": {
+        "1": 1593072,
+        "2": 430236,
+        "3": 204396,
+        "4": 79920,
+        "5": 22532,
+        "8": 5328,
+        "32": 1,
+        "48": 26558
+      },
+      "complete_profile_source": "research/t74-joint-twelve-retired7/evidence/PR2751-CLAIM.json:/profile",
+      "rank_mass": 4816512,
+      "claim_kappa_field": "17171415863484263381089999999999999999999998999999999999999999999999/1000000000000000000000000000000...",
+      "claim_file": "research/t74-joint-twelve-retired7/evidence/PR2751-CLAIM.json",
+      "idle": {
+        "1": 17316,
+        "3": 6594,
+        "5": 5216,
+        "32": 1,
+        "48": 26558
+      },
+      "roles": 276390
+    },
+    "2462": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "kappa": "0.001703552312979594",
+      "words": {
+        "POSITIVE2462-base.json.gz": {
+          "local_profile": {
+            "1": 2363,
+            "2": 632,
+            "3": 326,
+            "4": 120,
+            "5": 34,
+            "7": 4,
+            "8": 4
+          },
+          "width_inventory": {
+            "4": 33,
+            "5": 9,
+            "7": 62,
+            "8": 86,
+            "9": 240
+          }
+        },
+        "POSITIVE2462-extra.json.gz": {
+          "local_profile": {
+            "1": 2363,
+            "2": 632,
+            "3": 326,
+            "4": 120,
+            "5": 34,
+            "7": 4,
+            "8": 4
+          },
+          "width_inventory": {
+            "4": 33,
+            "5": 9,
+            "7": 62,
+            "8": 86,
+            "9": 240
+          }
+        }
+      }
+    },
+    "2733": {
+      "complete_profile": {
+        "1": 1595736,
+        "2": 430236,
+        "3": 204396,
+        "4": 79920,
+        "5": 22532,
+        "7": 2664,
+        "8": 2664,
+        "32": 1,
+        "48": 26558
+      },
+      "complete_profile_source": "research/t74-joint-twelve-retired7/evidence/PR2733-CLAIM.json:/global_profile",
+      "rank_mass": 4816512,
+      "claim_kappa_field": "17161404259974415161889999999999999999999998999999999999999999999999/1000000000000000000000000000000...",
+      "claim_file": "research/t74-joint-twelve-retired7/evidence/PR2733-CLAIM.json",
+      "author": "Marius-Paul Dumitrean (composition + frame refit; same kappa as #2745)",
+      "kappa": "0.00171625567823018"
+    }
+  }
+}
