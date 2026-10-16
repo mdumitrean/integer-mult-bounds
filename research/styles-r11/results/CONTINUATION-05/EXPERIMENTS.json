@@ -1,4 +1,5 @@
 {
+  "completed_utc": "2026-10-16T16:50:59.434115+00:00",
   "experiments": [
     {
       "confirmed": false,
@@ -14,16 +15,48 @@
       "wall_seconds": 0
     },
     {
-      "execution": "NOT_STARTED",
+      "attempts": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 77.34699228000001,
+          "result_files": [
+            "results/CONTINUATION-05/R2-B-RESTORE/v1/seed-24097/RESULT.json",
+            "results/CONTINUATION-05/R2-B-RESTORE/v1/seed-57059/RESULT.json"
+          ],
+          "status": "EXPLORATORY",
+          "wall_seconds": 10.021525653079152
+        }
+      ],
+      "confirmed": true,
+      "cpu_seconds": 77.34699228000001,
+      "execution": "COMPLETED",
       "id": "R2-B-RESTORE",
       "preregistration": "results/CONTINUATION-05/R2/PREREGISTRATION.json",
       "preregistration_sha256": "9909c361dd712d39ca3b59263902c75fa1110f2923f5308748889e9e8a60a691",
-      "status": "planned"
+      "result_files": [
+        "results/CONTINUATION-05/R2-B-RESTORE/v1/seed-24097/RESULT.json",
+        "results/CONTINUATION-05/R2-B-RESTORE/v1/seed-57059/RESULT.json"
+      ],
+      "scientific_decision_agreement": true,
+      "started_utc": "2026-10-16T16:47:02.170827+00:00",
+      "status": "EXPLORATORY",
+      "updated_utc": "2026-10-16T16:47:12.206076+00:00",
+      "wall_seconds": 10.021525653079152
     }
   ],
   "goal_status": "ACTIVE_NOT_ACHIEVED",
+  "interpretation": "R1 retired unexecuted. R2 has repeated unresolved frame-domain failures for every candidate; no experimental NULL and no kappa gain. All registered pool tasks completed; no further scientific family this bounded round.",
+  "lane_status": {
+    "coupled_b_production": {
+      "consecutive_confirmed_nulls": 0,
+      "round_closed": true,
+      "scope": "R2 exploratory, not a confirmed null. Earlier protocol-specific lane stops remain in force.",
+      "stop_reason": "One bounded pivot used; unresolved frame incompatibility requires diagnosis before any new family.",
+      "stopped": false
+    }
+  },
   "no_active_experiments": true,
   "round": "CONTINUATION-05",
   "schema_version": 1,
-  "status": "R2_REGISTERED"
+  "status": "ROUND_COMPLETE_EXPLORATORY"
 }
