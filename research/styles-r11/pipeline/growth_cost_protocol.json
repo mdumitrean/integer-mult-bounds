@@ -1,0 +1,47 @@
+{
+  "experiment": "L6-COST-N6",
+  "title": "Cached profile-score calibration on held near-miss local records",
+  "enrollment": {
+    "primary": ["ALL-b-0.json", "ALL-b-1.json", "ALL-b-2.json", "ALL-b-3.json", "HYP-b.json"],
+    "primary_records": 152,
+    "companions": ["EH-b.json", "EH-e.json", "HYP-e.json"],
+    "companion_records": 33,
+    "location": "research/t74-r10-hosting-leads/J-dim1/out/eh/",
+    "unit": "result filename plus JSON record key",
+    "filtering": "none; include every row independent of recorded audit or cost outcome",
+    "source_integrity": "record the SHA256 of each source JSON and producer source; retain all relevant PINS attribution"
+  },
+  "fixed_reference": "k0 is the held #2802 complete-profile moment root",
+  "inputs": "Exact local after profile and delta_local from each held JSON record; before = after minus delta_local. No global or idle profile is reconstructed.",
+  "conditional_root": "Solve M_after(k*) = M_before(k0), with M_p(k) = sum_r p_r*(r/73)^(1-k); k* minus k0 is a conditional local block sensitivity, never a global construction exponent or candidate price.",
+  "numerical_root_protocol": {
+    "precision_digits": 90,
+    "bisections": 280,
+    "bracket": ["-0.1", "0.1"],
+    "cache": "bypass profile-root cache on every timed row",
+    "certificate_scope": "Decimal bracket, not interval-arithmetic transcendental certificate"
+  },
+  "scores": {
+    "phi": "k0*deltaPhi/(73*M_before_prime(k0))",
+    "mass_corrected_phi": "[k0*deltaPhi - (1+k0*ln(73))*deltaMass]/[73*M_before_prime(k0)]",
+    "full_moment": "-sum_r delta_c_r*(r/73)^(1-k0)/M_before_prime(k0)",
+    "coefficient_policy": "Precompute rank coefficients once at k0, outside timed dot products. Record setup CPU and per-row derivative/target setup separately. All three estimates use one cached dot product and a shared before derivative."
+  },
+  "timing": {
+    "clock": "process_time_ns",
+    "dot_repetitions_per_row": 1024,
+    "root_repetitions_per_row": 1,
+    "randomization": "shuffle enrolled row order and the four algorithm timings independently using the registered seed",
+    "confirmation": "repeat the complete fixed dataset with a second timing seed; numerical conclusions must agree"
+  },
+  "statistics": "Per stratum: sign disagreements, all pairwise order disagreements including ties, per-row relative errors, median/p99/max error, CPU distributions. No permutation discovery p-value or FDR claim: exhaustive fixed-dataset numerical calibration.",
+  "primary_decision": "PASS only if full-moment linearization has no sign disagreements and all nonzero conditional local-root changes have relative error at most 2 percent across all 152 primary rows. Otherwise protocol-specific NULL. Other scores, pairwise ordering and 33 companion rows are reported separately and do not change this threshold.",
+  "missing_or_invalid_record": "ERROR with row identity; no silent exclusion",
+  "limitations": [
+    "Local changes can have nonzero mass, invalidating an uncorrected mass-neutral Phi argument.",
+    "The source producer overwrote hyperplane word files, so its referenced word path is not a distinct per-row witness.",
+    "Stored audit labels are data; this calibration does not re-audit unavailable variants.",
+    "No complete global near-miss profile is held in these rows, so no global root or kappa gain is claimed.",
+    "All scores are profile functions; this is calibration and timing, not a noncircular structural pattern."
+  ]
+}

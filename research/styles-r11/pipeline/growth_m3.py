@@ -444,7 +444,8 @@ def partitions(seed, n_permutations=2000, keys=L10_KEYS):
         rows[index]["null"]["bh_q"]=q
         rows[index]["passes_99_percent"] &= q<=.05
     calibration=merge_calibration()
-    passed=all(r["passes_99_percent"] for r in rows) and calibration["within_one_percent"]
+    passed=(all(r["passes_99_percent"] for r in rows) and calibration["profile_identity"]
+            and calibration["within_one_percent"])
     return dict(experiment="L-10",seed=seed,n_permutations=n_permutations,status="PASS" if passed else "NULL",
         words=rows,merge_calibration=calibration,
         multiple_testing="BH-FDR 5% across the fixed per-word moment family; Phi is descriptive",
@@ -464,10 +465,15 @@ def multitype(seed):
         profiles[str(key)]=profile
         groups[stage,orientation[stage]][str(key)]+=1
     call_count=sum(sum(c.values()) for c in groups.values())
-    same=len(profiles)==1 and call_count==model.calls
+    count_valid=(call_count==model.calls==G.CALLS and len(model.local_profiles)==model.calls)
+    if not count_valid:
+        raise ValueError(("registered L11 call-count mismatch", call_count, model.calls,
+                          len(model.local_profiles), G.CALLS))
+    same=len(profiles)==1
     return dict(experiment="L-11",seed=seed,n_permutations=0,status="PASS" if same else "NULL",
         decision="all dispatched local-call paid profiles identical" if same else "stage/orientation local profiles differ",
-        total_calls=call_count,distinct_local_profiles=list(profiles.values()),
+        total_calls=call_count,expected_calls=G.CALLS,call_count_valid=count_valid,
+        distinct_local_profiles=list(profiles.values()),
         stage_orientation_profiles=[dict(stage=s,reverse=o,counts=dict(c)) for (s,o),c in sorted(groups.items())],
         scope="tests paid child profile of dispatched local providers per stage/orientation; varying idle allocations are a fill layer, not evidence of inherited recursive types",
         recursive_type_inheritance="not inferred from stage labels alone; persistent child-type transitions would require a separate semantic derivation",

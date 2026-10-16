@@ -1,0 +1,1569 @@
+{
+  "experiments": {
+    "L-10": {
+      "budget_core_minutes_total": 5,
+      "calibration": "Use only the held #2751 -> #2766 complete-profile difference: one (1,1)->2 merge per call, delta {1:-1332,2:+666}. Require exact profile identity and an exact-root margin within 1 percent of the recorded held margin. This is arithmetic calibration, not a new priced candidate.",
+      "n_permutations": 2000,
+      "pass_bar": "Every one of the nine words must have at least 99 percent of null samples strictly above the real moment, p<=0.01, BH q<=0.05, and the held merge calibration must be within 1 percent. The second seed must reproduce the conjunction; otherwise protocol-specific NULL.",
+      "per_seed_timeout_seconds": 150,
+      "protocol": "For each helper independently, sample uniformly from every positive ordered composition of its exact width with its observed part count. Empty zero-width/zero-part helpers have the single empty composition. Generate 2000 whole-word samples per seed and word. Score total helper moment at the fixed #2802 root, lower is better; Phi is descriptive only.",
+      "question": "Are real helper partitions below 99 percent of the matched composition null on every enrolled word, and does the held merge price calibrate within one percent?",
+      "scope": "The statistic is a function of the paid profile, so N2 profile-preserving samples leave it unchanged. Even PASS fails the non-circular pattern criterion.",
+      "shared_family": "L-10 and S-3 are one shared data/test family, not two independent discoveries or two consecutive nulls. If the sandpile lane has already stopped, run only the permitted growth bookkeeping family and leave S-3 dropped/reused as directed by that stop rule.",
+      "statistics": "Permutation p=(1+number unfavorable)/(2001), never zero. BH-FDR 5 percent across exactly nine per-word moment tests per seed. Report null distributions and Phi summaries. No q-values are assigned to newly added post-outcome statistics.",
+      "tie_policy": "Fixed absolute moment tolerance 1e-10; count null <= real+tolerance as unfavorable and null > real+tolerance as strictly above. This prevents roundoff from turning identical histograms into strict extremality.",
+      "word_keys": [
+        "1094-K8S7-FULL-WORD.json.gz",
+        "1672-gauge44-word-566-554.json.gz",
+        "1672-extra-word-566-554.json.gz",
+        "2745-BORROW-WORD-43base.json.gz",
+        "2745-BORROW-WORD-43extra.json.gz",
+        "2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+      ]
+    },
+    "L-11": {
+      "budget_core_minutes_total": 2,
+      "n_permutations": 0,
+      "pass_bar": "PASS when every dispatched local paid profile is identical. If profiles differ, record the differing stage/orientation/profile rows as NULL for the scalar-profile prediction; this alone does not establish persistent recursive child types.",
+      "per_seed_timeout_seconds": 60,
+      "protocol": "Read every one of the 666 dispatched #2802 local calls, group by GLOBAL-TEMPLATE stage and reverse flag, and compare exact paid profiles. Verify total call count equals 666.",
+      "question": "Do stage or orientation labels induce distinct dispatched local paid child profiles?",
+      "scope": "Idle allocation variation belongs to the fill layer. A matrix Perron model requires a separate semantic child-type inheritance derivation; stage labels alone are insufficient."
+    },
+    "L-8": {
+      "additional_ceilings": {
+        "fractional_rank51": "Retain the exact fixed local profile and replace remaining idle mass by S/51 rank-51 children. This is the same coverage class as the original packing_cap.py source.",
+        "helper_removal_envelope": "k in [0,1,2,4,8,16,32,64,128,256,408]. Remove up to k whole helper climb strings, put all freed width into fractional rank-51 idle mass, leave other local paid children and coverage law unchanged. The baseline moment lower minus 666 times the k largest rigorous upper removal benefits is a lower moment bound. No deletion feasibility is asserted.",
+        "integral_rank48": "For idle mass S, use floor(S/48) rank-48 children plus ONE child of rank S mod 48 when nonzero. Concavity proves the minimum moment among integer idle children with ranks <=48. The planning expression using S mod 48 rank-1 children is retained as a documented arithmetic recipe, not a universal bound."
+      },
+      "budget_core_minutes_total": 20,
+      "controls": "All three held fills must lie below the relevant ceiling. Each returned row names the fixed inventory/local profile/coverage assumptions that any violating construction must change. The integral and fractional comparator brackets and every helper-removal point need independent rational rejection checks.",
+      "inputs": [
+        "#2802 fill/plan/providers and base word",
+        "#2751 held fill",
+        "#1672 held fill and explicit held-word provider overlay",
+        "#2802 packing_cap.py source as text"
+      ],
+      "inventory_scope": "#2802 and #2751 use literal pinned provider metadata. #1672 uses the explicit held-word local-profile overlay only at unchanged helper widths; retain both inherited metadata and overlay provenance. P3 literal-metadata controls are not silently substituted for an overlay ceiling. The overlaid held-fill control is exactly inherited global profile minus inherited local total plus overlaid local total; verify unchanged rank mass. Retain the inherited root separately.",
+      "mandatory_proof": "The floating LP primal and fitted width multipliers are proposals only. For each target exponent, form exact rational lower/upper rank costs using 40-term atanh log bounds and 32-term exponential bounds, outward-rounded to 1e-30. Set each capacity dual to the minimum over ALL columns after subtracting width dual terms, round downward, check every dual inequality exactly, and show local-moment lower plus idle dual exceeds W=66304. This proves a ceiling, not exact primal optimality.",
+      "n_permutations": 0,
+      "packing_comparison": "Certify a lower and upper bracket for the exact fractional-rank51 profile using rational moment intervals. A new ceiling is tighter only if its rationally certified upper is strictly below the certified packing LOWER endpoint. Numerical brackets that overlap do not establish tightening.",
+      "pass_bar": "PASS only when all requested dual/bracket/envelope certificates validate and held fills are dominated. Otherwise EXPLORATORY or explicit ERROR/TIMEOUT. Tighter-than-packing is a separate exact Boolean, not assumed by PASS.",
+      "per_seed_timeout_seconds": 600,
+      "protocol": "Enumerate every unordered feasible role-width multiset for every physical capacity, including empty bins. A fractional pattern LP fixes capacity multiplicities and global role-width demand, while relaxing time/window and distinct-family restrictions. Its objective is idle paid moment at the fixed word root; local paid profile remains fixed.",
+      "question": "Which independently certified class ceilings are tighter than the original fixed-word rank-51 packing cap?",
+      "scope": "Class certificates derived from fixed profiles and inventories; fails the non-circular pattern criterion and is never labeled a new structural pattern."
+    },
+    "L-9": {
+      "budget_core_minutes_total": 10,
+      "decision": "Current implementation returns EXPLORATORY for the complete requested production census: constructive simultaneous hostee-refit Phi, restorable width cuts, and kernel-identity classes remain validation obligations. It separately reports any proven empty direct-alias necessary-guard class as a falsifiable scoped certificate. Do not convert an incomplete overall census into PASS.",
+      "inputs": [
+        "canonical #2802 base word",
+        "exact Bounds census",
+        "saved certified-optimal frame control from N2b/S2"
+      ],
+      "mandatory_distinction": "The census is exact for its necessary time/dimension predicates. An empty superset excludes that scoped alias class; a nonempty graph edge/path is not by itself a constructible simultaneous refit or a positive Phi edit. A certified optimum concerns the toolkit's exact integer cost surrogate at its stated endpoint, not automatic optimality of the nonlinear global root.",
+      "n_permutations": 2000,
+      "null": "Uniform independent life/slot pairs, preserving the empirical slot and life sets; time and dimension predicates only. Report the observed feasible fraction, never force the expected-zero premise.",
+      "per_seed_timeout_seconds": 300,
+      "protocol": "Use exact event times and propagated frame floors/ceilings for direct lender/follower pairs. Enumerate follower -> occupied slot -> current hosted life -> free slot paths. Retain the exact fixed-order optimum objective/profile metadata. Draw 2000 independent uniform life/slot pairs as the registered random-pair control.",
+      "question": "Which precisely scoped production guard classes are empty on #2802?",
+      "scope": "No global Phi gain inferred from necessary guards; exact production and local-plus-idle deltas would be required."
+    },
+    "L6-COST-N6": {
+      "budget_core_minutes_total": 10,
+      "enrollment": "All 152 primary base records and 33 companion records, separate strata and no outcome filtering",
+      "full_protocol": {
+        "conditional_root": "Solve M_after(k*) = M_before(k0), with M_p(k) = sum_r p_r*(r/73)^(1-k); k* minus k0 is a conditional local block sensitivity, never a global construction exponent or candidate price.",
+        "enrollment": {
+          "companion_records": 33,
+          "companions": [
+            "EH-b.json",
+            "EH-e.json",
+            "HYP-e.json"
+          ],
+          "filtering": "none; include every row independent of recorded audit or cost outcome",
+          "location": "research/t74-r10-hosting-leads/J-dim1/out/eh/",
+          "primary": [
+            "ALL-b-0.json",
+            "ALL-b-1.json",
+            "ALL-b-2.json",
+            "ALL-b-3.json",
+            "HYP-b.json"
+          ],
+          "primary_records": 152,
+          "source_integrity": "record the SHA256 of each source JSON and producer source; retain all relevant PINS attribution",
+          "unit": "result filename plus JSON record key"
+        },
+        "experiment": "L6-COST-N6",
+        "fixed_reference": "k0 is the held #2802 complete-profile moment root",
+        "inputs": "Exact local after profile and delta_local from each held JSON record; before = after minus delta_local. No global or idle profile is reconstructed.",
+        "limitations": [
+          "Local changes can have nonzero mass, invalidating an uncorrected mass-neutral Phi argument.",
+          "The source producer overwrote hyperplane word files, so its referenced word path is not a distinct per-row witness.",
+          "Stored audit labels are data; this calibration does not re-audit unavailable variants.",
+          "No complete global near-miss profile is held in these rows, so no global root or kappa gain is claimed.",
+          "All scores are profile functions; this is calibration and timing, not a noncircular structural pattern."
+        ],
+        "missing_or_invalid_record": "ERROR with row identity; no silent exclusion",
+        "numerical_root_protocol": {
+          "bisections": 280,
+          "bracket": [
+            "-0.1",
+            "0.1"
+          ],
+          "cache": "bypass profile-root cache on every timed row",
+          "certificate_scope": "Decimal bracket, not interval-arithmetic transcendental certificate",
+          "precision_digits": 90
+        },
+        "primary_decision": "PASS only if full-moment linearization has no sign disagreements and all nonzero conditional local-root changes have relative error at most 2 percent across all 152 primary rows. Otherwise protocol-specific NULL. Other scores, pairwise ordering and 33 companion rows are reported separately and do not change this threshold.",
+        "scores": {
+          "coefficient_policy": "Precompute rank coefficients once at k0, outside timed dot products. Record setup CPU and per-row derivative/target setup separately. All three estimates use one cached dot product and a shared before derivative.",
+          "full_moment": "-sum_r delta_c_r*(r/73)^(1-k0)/M_before_prime(k0)",
+          "mass_corrected_phi": "[k0*deltaPhi - (1+k0*ln(73))*deltaMass]/[73*M_before_prime(k0)]",
+          "phi": "k0*deltaPhi/(73*M_before_prime(k0))"
+        },
+        "statistics": "Per stratum: sign disagreements, all pairwise order disagreements including ties, per-row relative errors, median/p99/max error, CPU distributions. No permutation discovery p-value or FDR claim: exhaustive fixed-dataset numerical calibration.",
+        "timing": {
+          "clock": "process_time_ns",
+          "confirmation": "repeat the complete fixed dataset with a second timing seed; numerical conclusions must agree",
+          "dot_repetitions_per_row": 1024,
+          "randomization": "shuffle enrolled row order and the four algorithm timings independently using the registered seed",
+          "root_repetitions_per_row": 1
+        },
+        "title": "Cached profile-score calibration on held near-miss local records"
+      },
+      "launch_gate": "Skip if any earlier binding growth-lane stop has occurred. In particular, if L-10 and L-11 are both confirmed NULL, record L6-COST-N6 as skipped by the two-consecutive-NULL stop; do not launch it, relabel it into another lane, or move it earlier.",
+      "n_permutations": 0,
+      "pass_bar": "All 152 primary full-moment estimates have matching signs and <=2 percent relative error for every nonzero conditional local-root change; repeat with second seed. Pairwise ranking, other scores and 33 companions are descriptive controls.",
+      "per_seed_timeout_seconds": 300,
+      "protocol_source": "pipeline/growth_cost_protocol.json",
+      "root_scope": "M_after(k*)=M_before(k0) on exact held local profiles only; conditional local sensitivity, never global kappa pricing",
+      "scope": "No complete global/idle near-miss profiles are held. Hyperplane word files were overwritten by the source producer. Preserve these limitations and full source/PINS attribution in the result; do not execute fetched source.",
+      "scores": [
+        "cached Phi",
+        "cached mass-corrected Phi",
+        "cached full moment linearization"
+      ],
+      "timing": "1024 repetitions per cached dot product per row; one uncached 90-digit/280-bisection conditional root per row; coefficient setup and per-row derivative/target setup reported separately; seed randomizes row and algorithm order"
+    },
+    "L7-GUARD-ORDER": {
+      "budget_core_minutes_total": 5,
+      "candidate_admission": "Construct a private candidate only after the source-state guards pass. Before commitment, canonical extraction checks exact monotone frame chains, cuts and literal warp source frames; refresh the profile/width report. The approved independent free-algebra auditor is the final admission check. Stop the sequence at the first rejection and record the unexecuted suffix; do not apply a later stage to a rejected prefix.",
+      "fixed_family": "Six adjacent pairs of the seven stages, each at its actual pinned prefix, for both base and extra. Rebuild all seven stages locally in original order as the positive control. Second seed randomizes pair evaluation order only.",
+      "implementation": "pipeline/growth_order.py; parent prepare(), then pool task({seed})",
+      "inputs": [
+        "Pinned #2751 base/extra words",
+        "Seven #2802 source-pinned stage JSON records per variant",
+        "Approved PR2679 auditor and patch helpers",
+        "Preserved results/L-7/v1/REVIEW.json"
+      ],
+      "local_operations": "Refits change only declared gate frames. Aliases replace named follower uses with the lender, remove that follower entrance/live role and append its named warp. Hostee moves relabel only the named hosted segment, replace the named operator record in place and apply only extracted local frame changes. Cleanup and reports are derived. No full A/B/other section is replaced during a test transition.",
+      "n_permutations": 0,
+      "outcomes": [
+        "inadmissible_swapped_named_sequence with actual first failed guard",
+        "both_orders_admissible_and_same_payload",
+        "both_orders_admissible_but_different_payload"
+      ],
+      "parent_experiment": "L-7",
+      "pass_bar": "PASS only if both variants rebuild all original successors exactly and all swapped sequences receive a classification from the local predicates/frame guards without an unexplained auditor rejection. Otherwise EXPLORATORY with the missing local guard or reconstruction obligation. Both seeds must agree.",
+      "per_seed_timeout_seconds": 150,
+      "positive_control": "Every local original-order stage must pass and reproduce its pinned successor payload exactly. Equality is a positive-control reconstruction test, not a precondition imposed on swapped states.",
+      "preconditions": "On the actual current state, check the local scalar gate anchors for refits, live/private/disjoint registers, actual first/last gate times, free-lender predicates, literal current U, equal dimensions, G(U)=E and alias entrance containment. Hostee moves additionally consume the named warp identity and require the old lender to have only that named B life. These are local semantic targets and state-dependent guards, never whole-word preimage equality.",
+      "purpose": "Resolve the explicitly documented M0 order-control scope issue; no new structural discovery claim.",
+      "scope": "Only these named local operations at the pinned prefixes. Invalid named orders are guard-domain failures, not a claim that no alternate derivation exists. Different admitted words are not an order-dependent value for a fixed algebraic sum of Parikh deltas. No global kappa root/price is computed. Two early lineage decomposition obligations remain unchanged.",
+      "statistics": "Finite exact verification; no permutation p-value, q-value or pattern claim.",
+      "stop_accounting": "Grouped under L7 replay as a verification correction; does not reset or bypass any growth-lane null streak. Original M0 RESULT.json files are preserved."
+    }
+  },
+  "held_out": "PRs #2833 and #2853 remain unread and unfetched until M4 prediction freeze.",
+  "lane_C": "Stopped by confirmed S6 and S2 nulls; shared S3 partition interpretation is not reopened by growth L10.",
+  "machine": {
+    "allocated_cores": 128,
+    "fill_rss_gib": 6,
+    "ram_gib": 247.1584243774414,
+    "reserved_cores": 8,
+    "rss_gib": 4,
+    "worker_formula": "min(120,floor(RAM_GiB/4))",
+    "workers": 61
+  },
+  "milestone": "M3",
+  "prerequisite_evidence": {
+    "results/L-7/v1/REVIEW.json": "dd9180f2adc72abeff814c7557ea9229ac562094014dfa592c4aa64757891fb0",
+    "results/M2/REVIEW.json": "46f03a0bbcbba44fb8f7ccee82ed542e9d1153bdfe152e7b8b7a9b30bfe166f1",
+    "results/M2/STOP.json": "569a66bc933263314f07d7bb2158b0823cc2885a32a7db047d45cb73af4cb024"
+  },
+  "protocol": {
+    "binding_pattern_criteria": {
+      "all_required": [
+        "Reproducible on at least three words of W including both families, or a declared family-local claim on at least three words of that family.",
+        "Beat the stated strongest matched null and margin: CR>=1.5 vs N1 and >=1.2 vs N1b; motif enrichment>=2 at q<0.01; sandpile invariants outside the central 99 percent on each word.",
+        "Give a falsifiable prediction checkable with exact tools in at most one core-hour.",
+        "Pass a held-out word not used to find the claim.",
+        "Be non-circular: not a function of local profile, rank mass or width inventory; recompute on an N2 sample."
+      ],
+      "application": "The profile-based growth/calibration outputs are bookkeeping or class certificates. They are not labeled patterns even when their experiment-specific PASS bar is met.",
+      "source": "PLAN.md section 6"
+    },
+    "binding_stop_rules": {
+      "any_lane_verbatim": "Any lane: two consecutive pre-registered experiments at null -> stop that lane for the round.",
+      "application": "The two seeds confirm one experiment, not two consecutive experiments. The shared L-10/S-3 family is likewise counted once per applicable lane. Do not launch later families after a binding stop; mark their registry state and reason explicitly. ERROR, TIMEOUT and EXPLORATORY are not silently converted into PASS or NULL.",
+      "budget": "Respect the registered family CPU limits and M3's approximately two-core-hour allocation; extra hypotheses after outcomes remain exploratory and receive no confirmatory q-value.",
+      "growth_antecedent": "Require a validated guarded production decomposition for every lineage edge; complete arithmetic profile differences alone do not establish the move-alphabet antecedent. The two early validation obligations currently leave it unresolved. If it becomes true and no certified upper is below the certified packing lower, stop the growth lane and record bookkeeping only.",
+      "growth_verbatim": "Growth lane: if the move alphabet reproduces every lineage delta but predicts no ceiling tighter than the packing cap -> bookkeeping result, stop.",
+      "optional_extension_gate": "L6-COST-N6 is last. Confirmed consecutive NULL results for L-10 and L-11 stop the growth lane and force this optional extension to be skipped, despite its separately registered protocol and timing budget.",
+      "whole_plan_verbatim": "Whole plan: hard stop at the end of week 2; the deliverable is the document with the nulls, whatever the outcome."
+    },
+    "derivation_replay": {
+      "M0_order_control_scope": "The preserved REVIEW.json records that all M0 swapped auditor prefixes passed; raw patch payload inequality did not certify primitive noncommutation. Use the separately preregistered L7-GUARD-ORDER local-operation check to refine this claim.",
+      "arithmetic_order_control": "A permutation of labelled deltas has the same sum and final profile/root; an arithmetic order effect is a bookkeeping bug. Guarded word-state permutations may be invalid and must be reported with the first rejected intermediate state.",
+      "evidence": "M0 L-6/L-7 with exact canonical local+idle ledger for all five lineage edges, all six endpoint auditors, #2751->#2766 frame bridge, seven later pinned stage productions and actual swapped-prefix auditor runs",
+      "mandatory_unresolved_obligations": [
+        "#2679->#2745 source-partner reassignment: complete held data and exact touched gates exist, but no validated decomposition into bounded registered productions has been supplied.",
+        "#2745->#2751 twelve-source recovery: endpoint kernel identity and source-restoration/lifted-target residual rewrite do not alone supply guarded intermediate productions."
+      ],
+      "scope": "EXPLORATORY means validation remains needed, not data absent or decomposition impossible. Endpoint validity and arithmetic telescoping never substitute for a guarded derivation."
+    },
+    "execution": {
+      "confirmation": "A decision stands only when the second seed reproduces it. Deterministic certificate checks still get a separate confirmation record; timing order is independently randomized for N6.",
+      "memory_projection": "Record available RAM, inherited parent objects, private working set and projected peak before every launch; reduce active tasks if the 6-GiB fill cap would exceed available memory despite the nominal worker formula.",
+      "parent_preparation": "growth_m3.prepare loads the three FillModel objects and GLOBAL-TEMPLATE once in the parent before fork. Pass saved certified N2b metadata via prepare(optima=...). growth_cost.prepare loads near-miss JSON rows once in the parent. growth_order.prepare loads both variants and extracts named local operations from held stage data in the parent; it performs no auditor call.",
+      "result_policy": "One RESULT.json per run, complete PINS attribution, input/script hashes, seed, sample count, CPU/wall seconds, peak RSS, controls and status; root updates EXPERIMENTS.json. Errors, timeouts and unavailable proof obligations remain explicit.",
+      "rss_caps": "4 GiB per worker; 6 GiB for L-8 fill tasks",
+      "runner": "Every parallel task through pipeline/pool.py; no internal pools in growth modules",
+      "solver_policy": "One pattern LP per held fill per decision evaluation, explicit HiGHS threads=1 and parallel=False (installed SciPy boolean option), time_limit=300 s by default; no solver in a permutation loop. S5 may request the separately registered 60 s cap via the optional time_limit argument. Any repeated deterministic control must be recorded, never silently retried. Prefer retained P3 controls when input/profile-scope/source hashes are identical.",
+      "thread_environment": "BLAS/OpenMP threads fixed to one before importing numeric libraries",
+      "workers": "min(120, floor(RAM_GiB / 4)), leaving 8 cores free, with actual task concurrency also constrained by the memory projection"
+    },
+    "execution_order": [
+      "L7-GUARD-ORDER",
+      "L-8",
+      "L-9",
+      "L-10/S-3",
+      "L-11",
+      "L6-COST-N6"
+    ],
+    "families": {
+      "L-10/S-3": {
+        "budget_core_minutes_total": 5,
+        "calibration": "Use only the held #2751 -> #2766 complete-profile difference: one (1,1)->2 merge per call, delta {1:-1332,2:+666}. Require exact profile identity and an exact-root margin within 1 percent of the recorded held margin. This is arithmetic calibration, not a new priced candidate.",
+        "n_permutations": 2000,
+        "pass_bar": "Every one of the nine words must have at least 99 percent of null samples strictly above the real moment, p<=0.01, BH q<=0.05, and the held merge calibration must be within 1 percent. The second seed must reproduce the conjunction; otherwise protocol-specific NULL.",
+        "per_seed_timeout_seconds": 150,
+        "protocol": "For each helper independently, sample uniformly from every positive ordered composition of its exact width with its observed part count. Empty zero-width/zero-part helpers have the single empty composition. Generate 2000 whole-word samples per seed and word. Score total helper moment at the fixed #2802 root, lower is better; Phi is descriptive only.",
+        "question": "Are real helper partitions below 99 percent of the matched composition null on every enrolled word, and does the held merge price calibrate within one percent?",
+        "scope": "The statistic is a function of the paid profile, so N2 profile-preserving samples leave it unchanged. Even PASS fails the non-circular pattern criterion.",
+        "shared_family": "L-10 and S-3 are one shared data/test family, not two independent discoveries or two consecutive nulls. If the sandpile lane has already stopped, run only the permitted growth bookkeeping family and leave S-3 dropped/reused as directed by that stop rule.",
+        "statistics": "Permutation p=(1+number unfavorable)/(2001), never zero. BH-FDR 5 percent across exactly nine per-word moment tests per seed. Report null distributions and Phi summaries. No q-values are assigned to newly added post-outcome statistics.",
+        "tie_policy": "Fixed absolute moment tolerance 1e-10; count null <= real+tolerance as unfavorable and null > real+tolerance as strictly above. This prevents roundoff from turning identical histograms into strict extremality.",
+        "word_keys": [
+          "1094-K8S7-FULL-WORD.json.gz",
+          "1672-gauge44-word-566-554.json.gz",
+          "1672-extra-word-566-554.json.gz",
+          "2745-BORROW-WORD-43base.json.gz",
+          "2745-BORROW-WORD-43extra.json.gz",
+          "2766-WORD-base.json.gz",
+          "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+          "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+        ]
+      },
+      "L-11": {
+        "budget_core_minutes_total": 2,
+        "n_permutations": 0,
+        "pass_bar": "PASS when every dispatched local paid profile is identical. If profiles differ, record the differing stage/orientation/profile rows as NULL for the scalar-profile prediction; this alone does not establish persistent recursive child types.",
+        "per_seed_timeout_seconds": 60,
+        "protocol": "Read every one of the 666 dispatched #2802 local calls, group by GLOBAL-TEMPLATE stage and reverse flag, and compare exact paid profiles. Verify total call count equals 666.",
+        "question": "Do stage or orientation labels induce distinct dispatched local paid child profiles?",
+        "scope": "Idle allocation variation belongs to the fill layer. A matrix Perron model requires a separate semantic child-type inheritance derivation; stage labels alone are insufficient."
+      },
+      "L-8": {
+        "additional_ceilings": {
+          "fractional_rank51": "Retain the exact fixed local profile and replace remaining idle mass by S/51 rank-51 children. This is the same coverage class as the original packing_cap.py source.",
+          "helper_removal_envelope": "k in [0,1,2,4,8,16,32,64,128,256,408]. Remove up to k whole helper climb strings, put all freed width into fractional rank-51 idle mass, leave other local paid children and coverage law unchanged. The baseline moment lower minus 666 times the k largest rigorous upper removal benefits is a lower moment bound. No deletion feasibility is asserted.",
+          "integral_rank48": "For idle mass S, use floor(S/48) rank-48 children plus ONE child of rank S mod 48 when nonzero. Concavity proves the minimum moment among integer idle children with ranks <=48. The planning expression using S mod 48 rank-1 children is retained as a documented arithmetic recipe, not a universal bound."
+        },
+        "budget_core_minutes_total": 20,
+        "controls": "All three held fills must lie below the relevant ceiling. Each returned row names the fixed inventory/local profile/coverage assumptions that any violating construction must change. The integral and fractional comparator brackets and every helper-removal point need independent rational rejection checks.",
+        "inputs": [
+          "#2802 fill/plan/providers and base word",
+          "#2751 held fill",
+          "#1672 held fill and explicit held-word provider overlay",
+          "#2802 packing_cap.py source as text"
+        ],
+        "inventory_scope": "#2802 and #2751 use literal pinned provider metadata. #1672 uses the explicit held-word local-profile overlay only at unchanged helper widths; retain both inherited metadata and overlay provenance. P3 literal-metadata controls are not silently substituted for an overlay ceiling. The overlaid held-fill control is exactly inherited global profile minus inherited local total plus overlaid local total; verify unchanged rank mass. Retain the inherited root separately.",
+        "mandatory_proof": "The floating LP primal and fitted width multipliers are proposals only. For each target exponent, form exact rational lower/upper rank costs using 40-term atanh log bounds and 32-term exponential bounds, outward-rounded to 1e-30. Set each capacity dual to the minimum over ALL columns after subtracting width dual terms, round downward, check every dual inequality exactly, and show local-moment lower plus idle dual exceeds W=66304. This proves a ceiling, not exact primal optimality.",
+        "n_permutations": 0,
+        "packing_comparison": "Certify a lower and upper bracket for the exact fractional-rank51 profile using rational moment intervals. A new ceiling is tighter only if its rationally certified upper is strictly below the certified packing LOWER endpoint. Numerical brackets that overlap do not establish tightening.",
+        "pass_bar": "PASS only when all requested dual/bracket/envelope certificates validate and held fills are dominated. Otherwise EXPLORATORY or explicit ERROR/TIMEOUT. Tighter-than-packing is a separate exact Boolean, not assumed by PASS.",
+        "per_seed_timeout_seconds": 600,
+        "protocol": "Enumerate every unordered feasible role-width multiset for every physical capacity, including empty bins. A fractional pattern LP fixes capacity multiplicities and global role-width demand, while relaxing time/window and distinct-family restrictions. Its objective is idle paid moment at the fixed word root; local paid profile remains fixed.",
+        "question": "Which independently certified class ceilings are tighter than the original fixed-word rank-51 packing cap?",
+        "scope": "Class certificates derived from fixed profiles and inventories; fails the non-circular pattern criterion and is never labeled a new structural pattern."
+      },
+      "L-9": {
+        "budget_core_minutes_total": 10,
+        "decision": "Current implementation returns EXPLORATORY for the complete requested production census: constructive simultaneous hostee-refit Phi, restorable width cuts, and kernel-identity classes remain validation obligations. It separately reports any proven empty direct-alias necessary-guard class as a falsifiable scoped certificate. Do not convert an incomplete overall census into PASS.",
+        "inputs": [
+          "canonical #2802 base word",
+          "exact Bounds census",
+          "saved certified-optimal frame control from N2b/S2"
+        ],
+        "mandatory_distinction": "The census is exact for its necessary time/dimension predicates. An empty superset excludes that scoped alias class; a nonempty graph edge/path is not by itself a constructible simultaneous refit or a positive Phi edit. A certified optimum concerns the toolkit's exact integer cost surrogate at its stated endpoint, not automatic optimality of the nonlinear global root.",
+        "n_permutations": 2000,
+        "null": "Uniform independent life/slot pairs, preserving the empirical slot and life sets; time and dimension predicates only. Report the observed feasible fraction, never force the expected-zero premise.",
+        "per_seed_timeout_seconds": 300,
+        "protocol": "Use exact event times and propagated frame floors/ceilings for direct lender/follower pairs. Enumerate follower -> occupied slot -> current hosted life -> free slot paths. Retain the exact fixed-order optimum objective/profile metadata. Draw 2000 independent uniform life/slot pairs as the registered random-pair control.",
+        "question": "Which precisely scoped production guard classes are empty on #2802?",
+        "scope": "No global Phi gain inferred from necessary guards; exact production and local-plus-idle deltas would be required."
+      },
+      "L6-COST-N6": {
+        "budget_core_minutes_total": 10,
+        "enrollment": "All 152 primary base records and 33 companion records, separate strata and no outcome filtering",
+        "full_protocol": {
+          "conditional_root": "Solve M_after(k*) = M_before(k0), with M_p(k) = sum_r p_r*(r/73)^(1-k); k* minus k0 is a conditional local block sensitivity, never a global construction exponent or candidate price.",
+          "enrollment": {
+            "companion_records": 33,
+            "companions": [
+              "EH-b.json",
+              "EH-e.json",
+              "HYP-e.json"
+            ],
+            "filtering": "none; include every row independent of recorded audit or cost outcome",
+            "location": "research/t74-r10-hosting-leads/J-dim1/out/eh/",
+            "primary": [
+              "ALL-b-0.json",
+              "ALL-b-1.json",
+              "ALL-b-2.json",
+              "ALL-b-3.json",
+              "HYP-b.json"
+            ],
+            "primary_records": 152,
+            "source_integrity": "record the SHA256 of each source JSON and producer source; retain all relevant PINS attribution",
+            "unit": "result filename plus JSON record key"
+          },
+          "experiment": "L6-COST-N6",
+          "fixed_reference": "k0 is the held #2802 complete-profile moment root",
+          "inputs": "Exact local after profile and delta_local from each held JSON record; before = after minus delta_local. No global or idle profile is reconstructed.",
+          "limitations": [
+            "Local changes can have nonzero mass, invalidating an uncorrected mass-neutral Phi argument.",
+            "The source producer overwrote hyperplane word files, so its referenced word path is not a distinct per-row witness.",
+            "Stored audit labels are data; this calibration does not re-audit unavailable variants.",
+            "No complete global near-miss profile is held in these rows, so no global root or kappa gain is claimed.",
+            "All scores are profile functions; this is calibration and timing, not a noncircular structural pattern."
+          ],
+          "missing_or_invalid_record": "ERROR with row identity; no silent exclusion",
+          "numerical_root_protocol": {
+            "bisections": 280,
+            "bracket": [
+              "-0.1",
+              "0.1"
+            ],
+            "cache": "bypass profile-root cache on every timed row",
+            "certificate_scope": "Decimal bracket, not interval-arithmetic transcendental certificate",
+            "precision_digits": 90
+          },
+          "primary_decision": "PASS only if full-moment linearization has no sign disagreements and all nonzero conditional local-root changes have relative error at most 2 percent across all 152 primary rows. Otherwise protocol-specific NULL. Other scores, pairwise ordering and 33 companion rows are reported separately and do not change this threshold.",
+          "scores": {
+            "coefficient_policy": "Precompute rank coefficients once at k0, outside timed dot products. Record setup CPU and per-row derivative/target setup separately. All three estimates use one cached dot product and a shared before derivative.",
+            "full_moment": "-sum_r delta_c_r*(r/73)^(1-k0)/M_before_prime(k0)",
+            "mass_corrected_phi": "[k0*deltaPhi - (1+k0*ln(73))*deltaMass]/[73*M_before_prime(k0)]",
+            "phi": "k0*deltaPhi/(73*M_before_prime(k0))"
+          },
+          "statistics": "Per stratum: sign disagreements, all pairwise order disagreements including ties, per-row relative errors, median/p99/max error, CPU distributions. No permutation discovery p-value or FDR claim: exhaustive fixed-dataset numerical calibration.",
+          "timing": {
+            "clock": "process_time_ns",
+            "confirmation": "repeat the complete fixed dataset with a second timing seed; numerical conclusions must agree",
+            "dot_repetitions_per_row": 1024,
+            "randomization": "shuffle enrolled row order and the four algorithm timings independently using the registered seed",
+            "root_repetitions_per_row": 1
+          },
+          "title": "Cached profile-score calibration on held near-miss local records"
+        },
+        "launch_gate": "Skip if any earlier binding growth-lane stop has occurred. In particular, if L-10 and L-11 are both confirmed NULL, record L6-COST-N6 as skipped by the two-consecutive-NULL stop; do not launch it, relabel it into another lane, or move it earlier.",
+        "n_permutations": 0,
+        "pass_bar": "All 152 primary full-moment estimates have matching signs and <=2 percent relative error for every nonzero conditional local-root change; repeat with second seed. Pairwise ranking, other scores and 33 companions are descriptive controls.",
+        "per_seed_timeout_seconds": 300,
+        "protocol_source": "pipeline/growth_cost_protocol.json",
+        "root_scope": "M_after(k*)=M_before(k0) on exact held local profiles only; conditional local sensitivity, never global kappa pricing",
+        "scope": "No complete global/idle near-miss profiles are held. Hyperplane word files were overwritten by the source producer. Preserve these limitations and full source/PINS attribution in the result; do not execute fetched source.",
+        "scores": [
+          "cached Phi",
+          "cached mass-corrected Phi",
+          "cached full moment linearization"
+        ],
+        "timing": "1024 repetitions per cached dot product per row; one uncached 90-digit/280-bisection conditional root per row; coefficient setup and per-row derivative/target setup reported separately; seed randomizes row and algorithm order"
+      },
+      "L7-GUARD-ORDER": {
+        "budget_core_minutes_total": 5,
+        "candidate_admission": "Construct a private candidate only after the source-state guards pass. Before commitment, canonical extraction checks exact monotone frame chains, cuts and literal warp source frames; refresh the profile/width report. The approved independent free-algebra auditor is the final admission check. Stop the sequence at the first rejection and record the unexecuted suffix; do not apply a later stage to a rejected prefix.",
+        "fixed_family": "Six adjacent pairs of the seven stages, each at its actual pinned prefix, for both base and extra. Rebuild all seven stages locally in original order as the positive control. Second seed randomizes pair evaluation order only.",
+        "implementation": "pipeline/growth_order.py; parent prepare(), then pool task({seed})",
+        "inputs": [
+          "Pinned #2751 base/extra words",
+          "Seven #2802 source-pinned stage JSON records per variant",
+          "Approved PR2679 auditor and patch helpers",
+          "Preserved results/L-7/v1/REVIEW.json"
+        ],
+        "local_operations": "Refits change only declared gate frames. Aliases replace named follower uses with the lender, remove that follower entrance/live role and append its named warp. Hostee moves relabel only the named hosted segment, replace the named operator record in place and apply only extracted local frame changes. Cleanup and reports are derived. No full A/B/other section is replaced during a test transition.",
+        "n_permutations": 0,
+        "outcomes": [
+          "inadmissible_swapped_named_sequence with actual first failed guard",
+          "both_orders_admissible_and_same_payload",
+          "both_orders_admissible_but_different_payload"
+        ],
+        "parent_experiment": "L-7",
+        "pass_bar": "PASS only if both variants rebuild all original successors exactly and all swapped sequences receive a classification from the local predicates/frame guards without an unexplained auditor rejection. Otherwise EXPLORATORY with the missing local guard or reconstruction obligation. Both seeds must agree.",
+        "per_seed_timeout_seconds": 150,
+        "positive_control": "Every local original-order stage must pass and reproduce its pinned successor payload exactly. Equality is a positive-control reconstruction test, not a precondition imposed on swapped states.",
+        "preconditions": "On the actual current state, check the local scalar gate anchors for refits, live/private/disjoint registers, actual first/last gate times, free-lender predicates, literal current U, equal dimensions, G(U)=E and alias entrance containment. Hostee moves additionally consume the named warp identity and require the old lender to have only that named B life. These are local semantic targets and state-dependent guards, never whole-word preimage equality.",
+        "purpose": "Resolve the explicitly documented M0 order-control scope issue; no new structural discovery claim.",
+        "scope": "Only these named local operations at the pinned prefixes. Invalid named orders are guard-domain failures, not a claim that no alternate derivation exists. Different admitted words are not an order-dependent value for a fixed algebraic sum of Parikh deltas. No global kappa root/price is computed. Two early lineage decomposition obligations remain unchanged.",
+        "statistics": "Finite exact verification; no permutation p-value, q-value or pattern claim.",
+        "stop_accounting": "Grouped under L7 replay as a verification correction; does not reset or bypass any growth-lane null streak. Original M0 RESULT.json files are preserved."
+      }
+    },
+    "handback": "Record useful saturation or cheap-score leads as census targets, with protocol, source and proof limits. Do not price a new construction, claim a kappa improvement, use new-method wording, or post publicly.",
+    "milestone": "M3",
+    "order_rationale": "First complete the registered correction of M0 patch-order scope using local guarded operations; then run L8,L9,L10,L11 in order. Confirm each family with the second seed before advancing. Optional N6 is last and may run only while the growth lane remains active; it must not be moved earlier to avoid a consecutive-null stop.",
+    "prerequisites": [
+      "M0, M1 and M2 outcomes and applicable stop rules have been recorded in RUNBOOK milestone order.",
+      "Freeze this protocol, source SHA256 values, input blob/hash identities, seeds, budgets and test-family membership before any M3 outcome is computed.",
+      "Reuse the M0 exact lineage ledger and guarded replay as evidence; if rerun, register that rerun explicitly and retain the original result.",
+      "Do not read or fetch #2833/#2853 until M4."
+    ],
+    "proposed_seeds": [
+      11031,
+      29063
+    ],
+    "required_location_when_frozen": "results/M3/PREREGISTRATION.json",
+    "scientific_source_freeze": "Scientific implementations are hashed here; the coordinator orchestration runner records its exact source hash in every run before launch. No scientific implementation changes after this freeze without a recorded amendment.",
+    "seeds": [
+      11031,
+      29063
+    ],
+    "state": "FROZEN_BEFORE_M3_EXECUTION"
+  },
+  "registered_utc": "2026-10-16T05:13:15.039841+00:00",
+  "schema_version": 1,
+  "script_sha256": {
+    "research/styles-r11/pipeline/fill.py": "9ca05b47016ddbbb4a6713c981932d63a6eaecdd27f3604fcfb66877f239fc4a",
+    "research/styles-r11/pipeline/growth.py": "4f29eba652ea1c7ca889f784c612a6ab11d8aefe96637d18bd32391532b8f167",
+    "research/styles-r11/pipeline/growth_cost.py": "da8443a2abc7e01da4985e04bb1cf1bb65371a2c8b16dc9d9f0247ba91692c73",
+    "research/styles-r11/pipeline/growth_m3.py": "aed3961f340c25f03190113fb104a21cc462f2c8c2a964c262c158a07497d049",
+    "research/styles-r11/pipeline/growth_order.py": "bd143d57f7df7cec9fe475f9f4aa173d9e516d93099f57b16c2e609551beea99",
+    "research/styles-r11/pipeline/growth_replay.py": "c14f7807b6d4d8ad0365b6e811ddf8928745598686be0441333635069b0966d3",
+    "research/styles-r11/pipeline/matching.py": "678ce7afc686717d0f7f99a7f3f739bc074aebcfa2392ee3f97a5ae99cd64819",
+    "research/styles-r11/pipeline/measures.py": "ec7fd2264129b922f8988098d41ebc9200f742aad92a060b7b54af191fa7bf3a",
+    "research/styles-r11/pipeline/nulls.py": "a6c6b3ce9c3db775f43058c3dda3640b5fcdbb46a94eca00c012c5302f165e86",
+    "research/styles-r11/pipeline/pool.py": "59714d0b8501a4d2a0b041bbf18be089fa6a4881943a8c4db7c7605e6c5d86d8",
+    "research/styles-r11/pipeline/records.py": "e9c46e4d0de79800bf573b4de9d6baa8fa50e47821944e043f285a536e0e2feb",
+    "research/styles-r11/pipeline/resource_check.py": "f6bfce18b87ac35b837b18df17fc5c807688654f456e7173cea77f895d136297",
+    "research/styles-r11/pipeline/root.py": "b2eef8a2236e5ceb4ef92c9563b7a1e270b0719d345017cf38a9ee0784ceccd1",
+    "research/styles-r11/pipeline/run_acceleration.py": "6eb38a6cebc166c0cfedd04ea2f10d24357ad2c2d041f15a1305eae9c5a04d08",
+    "research/styles-r11/pipeline/run_m0.py": "f7a036bba54d47f52919b8c4aa9a02865df1524d9e0c0db3b81354c2a72506b9",
+    "research/styles-r11/pipeline/run_m1.py": "e6e3fefafd18aeb2d83a78a4784b4f87033fb4ecbbd8640cf2ef51effbbea58b",
+    "research/styles-r11/pipeline/run_m2.py": "b40834fbecb5cafd8ffc3342abe90208c2e973c5fa4d18144b491f48e62882f4",
+    "research/styles-r11/pipeline/sandpile.py": "b12489046e2248f7075a374a7e6bb54b804e7bedac5c8204a7e50594973ac736",
+    "research/styles-r11/pipeline/string_screen.py": "781a228af57cc3e728e670356b88dfaa48a4202a2a76c0b62caec86fd8ab3901",
+    "research/styles-r11/pipeline/verify_results.py": "3977bfd25f6b69f3c6c7b570f07a46ec83f272e94a31e5049b3899bd5155cbc5",
+    "research/styles-r11/pipeline/word_alias_score.py": "b7766328ea4a58b65145786a1b38c0d6b074a24cb63d0be4ae658f35df807ad7",
+    "research/styles-r11/pipeline/word_commute_fast.py": "3a9e58e6e66642f566778304b6c765b262dc8407645724112db081e4e6cc6a1d",
+    "research/styles-r11/pipeline/word_frame_fast.py": "1985602b6390a9e468ff656e135f6c79b208f159567e72b0eeb41e604e7275c1",
+    "research/styles-r11/pipeline/word_periods.py": "c39ae26d9e4eb82b61294734c5f4acecd29c5b08333eeb39189709f680b2548d",
+    "research/styles-r11/pipeline/word_tasks.py": "5f14c4f3f389751baeeede856369db83a3b9ab93bd8e58dc520584abd940adf4",
+    "research/styles-r11/pipeline/wordio.py": "a9c254acdc04c3302ed0a31d9e0da39a8e3348aa20d189798e86539464fd81d4"
+  },
+  "seeds": [
+    11031,
+    29063
+  ],
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43extra.json.gz",
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    }
+  ],
+  "source_review": "Two pre-execution review fixes: exact L10 merge-profile identity and L11 count exactly666 with profile-list consistency; no M3 outcome observed.",
+  "state": "FROZEN",
+  "word_pins": {
+    "1094-K8PRE-FULL-WORD.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    "1094-K8S7-FULL-WORD.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    "1195-FULL-WORD.json.gz": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "1625-extra-word-566.json.gz": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "1625-gauge44-word-566.json.gz": {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "1672-extra-word-566-554.json.gz": {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "1672-gauge44-word-566-554.json.gz": {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    "2679-BORROW-WORD-43base.json.gz": {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "2679-BORROW-WORD-43extra.json.gz": {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "2745-BORROW-WORD-43base.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "2745-BORROW-WORD-43extra.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "2766-WORD-base.json.gz": {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "2766-WORD-extra.json.gz": {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz": {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz": {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz": {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "retired5-WORD-base.json.gz": {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    "retired5-WORD-extra.json.gz": {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    }
+  }
+}

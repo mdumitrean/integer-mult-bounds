@@ -1,0 +1,246 @@
+{
+  "milestone": "M3",
+  "state": "DRAFT_FOR_COORDINATOR_REVIEW_NOT_A_FROZEN_PREREGISTRATION",
+  "required_location_when_frozen": "results/M3/PREREGISTRATION.json",
+  "proposed_seeds": [
+    11031,
+    29063
+  ],
+  "execution_order": [
+    "L7-GUARD-ORDER",
+    "L-8",
+    "L-9",
+    "L-10/S-3",
+    "L-11",
+    "L6-COST-N6"
+  ],
+  "order_rationale": "First complete the registered correction of M0 patch-order scope using local guarded operations; then run L8,L9,L10,L11 in order. Confirm each family with the second seed before advancing. Optional N6 is last and may run only while the growth lane remains active; it must not be moved earlier to avoid a consecutive-null stop.",
+  "prerequisites": [
+    "M0, M1 and M2 outcomes and applicable stop rules have been recorded in RUNBOOK milestone order.",
+    "Freeze this protocol, source SHA256 values, input blob/hash identities, seeds, budgets and test-family membership before any M3 outcome is computed.",
+    "Reuse the M0 exact lineage ledger and guarded replay as evidence; if rerun, register that rerun explicitly and retain the original result.",
+    "Do not read or fetch #2833/#2853 until M4."
+  ],
+  "execution": {
+    "runner": "Every parallel task through pipeline/pool.py; no internal pools in growth modules",
+    "workers": "min(120, floor(RAM_GiB / 4)), leaving 8 cores free, with actual task concurrency also constrained by the memory projection",
+    "thread_environment": "BLAS/OpenMP threads fixed to one before importing numeric libraries",
+    "rss_caps": "4 GiB per worker; 6 GiB for L-8 fill tasks",
+    "parent_preparation": "growth_m3.prepare loads the three FillModel objects and GLOBAL-TEMPLATE once in the parent before fork. Pass saved certified N2b metadata via prepare(optima=...). growth_cost.prepare loads near-miss JSON rows once in the parent. growth_order.prepare loads both variants and extracts named local operations from held stage data in the parent; it performs no auditor call.",
+    "memory_projection": "Record available RAM, inherited parent objects, private working set and projected peak before every launch; reduce active tasks if the 6-GiB fill cap would exceed available memory despite the nominal worker formula.",
+    "solver_policy": "One pattern LP per held fill per decision evaluation, explicit HiGHS threads=1 and parallel=False (installed SciPy boolean option), time_limit=300 s by default; no solver in a permutation loop. S5 may request the separately registered 60 s cap via the optional time_limit argument. Any repeated deterministic control must be recorded, never silently retried. Prefer retained P3 controls when input/profile-scope/source hashes are identical.",
+    "result_policy": "One RESULT.json per run, complete PINS attribution, input/script hashes, seed, sample count, CPU/wall seconds, peak RSS, controls and status; root updates EXPERIMENTS.json. Errors, timeouts and unavailable proof obligations remain explicit.",
+    "confirmation": "A decision stands only when the second seed reproduces it. Deterministic certificate checks still get a separate confirmation record; timing order is independently randomized for N6."
+  },
+  "families": {
+    "L-8": {
+      "question": "Which independently certified class ceilings are tighter than the original fixed-word rank-51 packing cap?",
+      "inputs": [
+        "#2802 fill/plan/providers and base word",
+        "#2751 held fill",
+        "#1672 held fill and explicit held-word provider overlay",
+        "#2802 packing_cap.py source as text"
+      ],
+      "protocol": "Enumerate every unordered feasible role-width multiset for every physical capacity, including empty bins. A fractional pattern LP fixes capacity multiplicities and global role-width demand, while relaxing time/window and distinct-family restrictions. Its objective is idle paid moment at the fixed word root; local paid profile remains fixed.",
+      "mandatory_proof": "The floating LP primal and fitted width multipliers are proposals only. For each target exponent, form exact rational lower/upper rank costs using 40-term atanh log bounds and 32-term exponential bounds, outward-rounded to 1e-30. Set each capacity dual to the minimum over ALL columns after subtracting width dual terms, round downward, check every dual inequality exactly, and show local-moment lower plus idle dual exceeds W=66304. This proves a ceiling, not exact primal optimality.",
+      "inventory_scope": "#2802 and #2751 use literal pinned provider metadata. #1672 uses the explicit held-word local-profile overlay only at unchanged helper widths; retain both inherited metadata and overlay provenance. P3 literal-metadata controls are not silently substituted for an overlay ceiling. The overlaid held-fill control is exactly inherited global profile minus inherited local total plus overlaid local total; verify unchanged rank mass. Retain the inherited root separately.",
+      "additional_ceilings": {
+        "integral_rank48": "For idle mass S, use floor(S/48) rank-48 children plus ONE child of rank S mod 48 when nonzero. Concavity proves the minimum moment among integer idle children with ranks <=48. The planning expression using S mod 48 rank-1 children is retained as a documented arithmetic recipe, not a universal bound.",
+        "fractional_rank51": "Retain the exact fixed local profile and replace remaining idle mass by S/51 rank-51 children. This is the same coverage class as the original packing_cap.py source.",
+        "helper_removal_envelope": "k in [0,1,2,4,8,16,32,64,128,256,408]. Remove up to k whole helper climb strings, put all freed width into fractional rank-51 idle mass, leave other local paid children and coverage law unchanged. The baseline moment lower minus 666 times the k largest rigorous upper removal benefits is a lower moment bound. No deletion feasibility is asserted."
+      },
+      "packing_comparison": "Certify a lower and upper bracket for the exact fractional-rank51 profile using rational moment intervals. A new ceiling is tighter only if its rationally certified upper is strictly below the certified packing LOWER endpoint. Numerical brackets that overlap do not establish tightening.",
+      "controls": "All three held fills must lie below the relevant ceiling. Each returned row names the fixed inventory/local profile/coverage assumptions that any violating construction must change. The integral and fractional comparator brackets and every helper-removal point need independent rational rejection checks.",
+      "pass_bar": "PASS only when all requested dual/bracket/envelope certificates validate and held fills are dominated. Otherwise EXPLORATORY or explicit ERROR/TIMEOUT. Tighter-than-packing is a separate exact Boolean, not assumed by PASS.",
+      "n_permutations": 0,
+      "budget_core_minutes_total": 20,
+      "per_seed_timeout_seconds": 600,
+      "scope": "Class certificates derived from fixed profiles and inventories; fails the non-circular pattern criterion and is never labeled a new structural pattern."
+    },
+    "L-9": {
+      "question": "Which precisely scoped production guard classes are empty on #2802?",
+      "inputs": [
+        "canonical #2802 base word",
+        "exact Bounds census",
+        "saved certified-optimal frame control from N2b/S2"
+      ],
+      "protocol": "Use exact event times and propagated frame floors/ceilings for direct lender/follower pairs. Enumerate follower -> occupied slot -> current hosted life -> free slot paths. Retain the exact fixed-order optimum objective/profile metadata. Draw 2000 independent uniform life/slot pairs as the registered random-pair control.",
+      "mandatory_distinction": "The census is exact for its necessary time/dimension predicates. An empty superset excludes that scoped alias class; a nonempty graph edge/path is not by itself a constructible simultaneous refit or a positive Phi edit. A certified optimum concerns the toolkit's exact integer cost surrogate at its stated endpoint, not automatic optimality of the nonlinear global root.",
+      "decision": "Current implementation returns EXPLORATORY for the complete requested production census: constructive simultaneous hostee-refit Phi, restorable width cuts, and kernel-identity classes remain validation obligations. It separately reports any proven empty direct-alias necessary-guard class as a falsifiable scoped certificate. Do not convert an incomplete overall census into PASS.",
+      "null": "Uniform independent life/slot pairs, preserving the empirical slot and life sets; time and dimension predicates only. Report the observed feasible fraction, never force the expected-zero premise.",
+      "n_permutations": 2000,
+      "budget_core_minutes_total": 10,
+      "per_seed_timeout_seconds": 300,
+      "scope": "No global Phi gain inferred from necessary guards; exact production and local-plus-idle deltas would be required."
+    },
+    "L-10/S-3": {
+      "question": "Are real helper partitions below 99 percent of the matched composition null on every enrolled word, and does the held merge price calibrate within one percent?",
+      "word_keys": [
+        "1094-K8S7-FULL-WORD.json.gz",
+        "1672-gauge44-word-566-554.json.gz",
+        "1672-extra-word-566-554.json.gz",
+        "2745-BORROW-WORD-43base.json.gz",
+        "2745-BORROW-WORD-43extra.json.gz",
+        "2766-WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz"
+      ],
+      "protocol": "For each helper independently, sample uniformly from every positive ordered composition of its exact width with its observed part count. Empty zero-width/zero-part helpers have the single empty composition. Generate 2000 whole-word samples per seed and word. Score total helper moment at the fixed #2802 root, lower is better; Phi is descriptive only.",
+      "tie_policy": "Fixed absolute moment tolerance 1e-10; count null <= real+tolerance as unfavorable and null > real+tolerance as strictly above. This prevents roundoff from turning identical histograms into strict extremality.",
+      "statistics": "Permutation p=(1+number unfavorable)/(2001), never zero. BH-FDR 5 percent across exactly nine per-word moment tests per seed. Report null distributions and Phi summaries. No q-values are assigned to newly added post-outcome statistics.",
+      "calibration": "Use only the held #2751 -> #2766 complete-profile difference: one (1,1)->2 merge per call, delta {1:-1332,2:+666}. Require exact profile identity and an exact-root margin within 1 percent of the recorded held margin. This is arithmetic calibration, not a new priced candidate.",
+      "pass_bar": "Every one of the nine words must have at least 99 percent of null samples strictly above the real moment, p<=0.01, BH q<=0.05, and the held merge calibration must be within 1 percent. The second seed must reproduce the conjunction; otherwise protocol-specific NULL.",
+      "shared_family": "L-10 and S-3 are one shared data/test family, not two independent discoveries or two consecutive nulls. If the sandpile lane has already stopped, run only the permitted growth bookkeeping family and leave S-3 dropped/reused as directed by that stop rule.",
+      "n_permutations": 2000,
+      "budget_core_minutes_total": 5,
+      "per_seed_timeout_seconds": 150,
+      "scope": "The statistic is a function of the paid profile, so N2 profile-preserving samples leave it unchanged. Even PASS fails the non-circular pattern criterion."
+    },
+    "L-11": {
+      "question": "Do stage or orientation labels induce distinct dispatched local paid child profiles?",
+      "protocol": "Read every one of the 666 dispatched #2802 local calls, group by GLOBAL-TEMPLATE stage and reverse flag, and compare exact paid profiles. Verify total call count equals 666.",
+      "pass_bar": "PASS when every dispatched local paid profile is identical. If profiles differ, record the differing stage/orientation/profile rows as NULL for the scalar-profile prediction; this alone does not establish persistent recursive child types.",
+      "n_permutations": 0,
+      "budget_core_minutes_total": 2,
+      "per_seed_timeout_seconds": 60,
+      "scope": "Idle allocation variation belongs to the fill layer. A matrix Perron model requires a separate semantic child-type inheritance derivation; stage labels alone are insufficient."
+    },
+    "L6-COST-N6": {
+      "protocol_source": "pipeline/growth_cost_protocol.json",
+      "enrollment": "All 152 primary base records and 33 companion records, separate strata and no outcome filtering",
+      "scores": [
+        "cached Phi",
+        "cached mass-corrected Phi",
+        "cached full moment linearization"
+      ],
+      "root_scope": "M_after(k*)=M_before(k0) on exact held local profiles only; conditional local sensitivity, never global kappa pricing",
+      "timing": "1024 repetitions per cached dot product per row; one uncached 90-digit/280-bisection conditional root per row; coefficient setup and per-row derivative/target setup reported separately; seed randomizes row and algorithm order",
+      "pass_bar": "All 152 primary full-moment estimates have matching signs and <=2 percent relative error for every nonzero conditional local-root change; repeat with second seed. Pairwise ranking, other scores and 33 companions are descriptive controls.",
+      "n_permutations": 0,
+      "budget_core_minutes_total": 10,
+      "per_seed_timeout_seconds": 300,
+      "scope": "No complete global/idle near-miss profiles are held. Hyperplane word files were overwritten by the source producer. Preserve these limitations and full source/PINS attribution in the result; do not execute fetched source.",
+      "full_protocol": {
+        "experiment": "L6-COST-N6",
+        "title": "Cached profile-score calibration on held near-miss local records",
+        "enrollment": {
+          "primary": [
+            "ALL-b-0.json",
+            "ALL-b-1.json",
+            "ALL-b-2.json",
+            "ALL-b-3.json",
+            "HYP-b.json"
+          ],
+          "primary_records": 152,
+          "companions": [
+            "EH-b.json",
+            "EH-e.json",
+            "HYP-e.json"
+          ],
+          "companion_records": 33,
+          "location": "research/t74-r10-hosting-leads/J-dim1/out/eh/",
+          "unit": "result filename plus JSON record key",
+          "filtering": "none; include every row independent of recorded audit or cost outcome",
+          "source_integrity": "record the SHA256 of each source JSON and producer source; retain all relevant PINS attribution"
+        },
+        "fixed_reference": "k0 is the held #2802 complete-profile moment root",
+        "inputs": "Exact local after profile and delta_local from each held JSON record; before = after minus delta_local. No global or idle profile is reconstructed.",
+        "conditional_root": "Solve M_after(k*) = M_before(k0), with M_p(k) = sum_r p_r*(r/73)^(1-k); k* minus k0 is a conditional local block sensitivity, never a global construction exponent or candidate price.",
+        "numerical_root_protocol": {
+          "precision_digits": 90,
+          "bisections": 280,
+          "bracket": [
+            "-0.1",
+            "0.1"
+          ],
+          "cache": "bypass profile-root cache on every timed row",
+          "certificate_scope": "Decimal bracket, not interval-arithmetic transcendental certificate"
+        },
+        "scores": {
+          "phi": "k0*deltaPhi/(73*M_before_prime(k0))",
+          "mass_corrected_phi": "[k0*deltaPhi - (1+k0*ln(73))*deltaMass]/[73*M_before_prime(k0)]",
+          "full_moment": "-sum_r delta_c_r*(r/73)^(1-k0)/M_before_prime(k0)",
+          "coefficient_policy": "Precompute rank coefficients once at k0, outside timed dot products. Record setup CPU and per-row derivative/target setup separately. All three estimates use one cached dot product and a shared before derivative."
+        },
+        "timing": {
+          "clock": "process_time_ns",
+          "dot_repetitions_per_row": 1024,
+          "root_repetitions_per_row": 1,
+          "randomization": "shuffle enrolled row order and the four algorithm timings independently using the registered seed",
+          "confirmation": "repeat the complete fixed dataset with a second timing seed; numerical conclusions must agree"
+        },
+        "statistics": "Per stratum: sign disagreements, all pairwise order disagreements including ties, per-row relative errors, median/p99/max error, CPU distributions. No permutation discovery p-value or FDR claim: exhaustive fixed-dataset numerical calibration.",
+        "primary_decision": "PASS only if full-moment linearization has no sign disagreements and all nonzero conditional local-root changes have relative error at most 2 percent across all 152 primary rows. Otherwise protocol-specific NULL. Other scores, pairwise ordering and 33 companion rows are reported separately and do not change this threshold.",
+        "missing_or_invalid_record": "ERROR with row identity; no silent exclusion",
+        "limitations": [
+          "Local changes can have nonzero mass, invalidating an uncorrected mass-neutral Phi argument.",
+          "The source producer overwrote hyperplane word files, so its referenced word path is not a distinct per-row witness.",
+          "Stored audit labels are data; this calibration does not re-audit unavailable variants.",
+          "No complete global near-miss profile is held in these rows, so no global root or kappa gain is claimed.",
+          "All scores are profile functions; this is calibration and timing, not a noncircular structural pattern."
+        ]
+      },
+      "launch_gate": "Skip if any earlier binding growth-lane stop has occurred. In particular, if L-10 and L-11 are both confirmed NULL, record L6-COST-N6 as skipped by the two-consecutive-NULL stop; do not launch it, relabel it into another lane, or move it earlier."
+    },
+    "L7-GUARD-ORDER": {
+      "parent_experiment": "L-7",
+      "purpose": "Resolve the explicitly documented M0 order-control scope issue; no new structural discovery claim.",
+      "inputs": [
+        "Pinned #2751 base/extra words",
+        "Seven #2802 source-pinned stage JSON records per variant",
+        "Approved PR2679 auditor and patch helpers",
+        "Preserved results/L-7/v1/REVIEW.json"
+      ],
+      "implementation": "pipeline/growth_order.py; parent prepare(), then pool task({seed})",
+      "fixed_family": "Six adjacent pairs of the seven stages, each at its actual pinned prefix, for both base and extra. Rebuild all seven stages locally in original order as the positive control. Second seed randomizes pair evaluation order only.",
+      "local_operations": "Refits change only declared gate frames. Aliases replace named follower uses with the lender, remove that follower entrance/live role and append its named warp. Hostee moves relabel only the named hosted segment, replace the named operator record in place and apply only extracted local frame changes. Cleanup and reports are derived. No full A/B/other section is replaced during a test transition.",
+      "preconditions": "On the actual current state, check the local scalar gate anchors for refits, live/private/disjoint registers, actual first/last gate times, free-lender predicates, literal current U, equal dimensions, G(U)=E and alias entrance containment. Hostee moves additionally consume the named warp identity and require the old lender to have only that named B life. These are local semantic targets and state-dependent guards, never whole-word preimage equality.",
+      "candidate_admission": "Construct a private candidate only after the source-state guards pass. Before commitment, canonical extraction checks exact monotone frame chains, cuts and literal warp source frames; refresh the profile/width report. The approved independent free-algebra auditor is the final admission check. Stop the sequence at the first rejection and record the unexecuted suffix; do not apply a later stage to a rejected prefix.",
+      "positive_control": "Every local original-order stage must pass and reproduce its pinned successor payload exactly. Equality is a positive-control reconstruction test, not a precondition imposed on swapped states.",
+      "outcomes": [
+        "inadmissible_swapped_named_sequence with actual first failed guard",
+        "both_orders_admissible_and_same_payload",
+        "both_orders_admissible_but_different_payload"
+      ],
+      "pass_bar": "PASS only if both variants rebuild all original successors exactly and all swapped sequences receive a classification from the local predicates/frame guards without an unexplained auditor rejection. Otherwise EXPLORATORY with the missing local guard or reconstruction obligation. Both seeds must agree.",
+      "n_permutations": 0,
+      "budget_core_minutes_total": 5,
+      "per_seed_timeout_seconds": 150,
+      "statistics": "Finite exact verification; no permutation p-value, q-value or pattern claim.",
+      "scope": "Only these named local operations at the pinned prefixes. Invalid named orders are guard-domain failures, not a claim that no alternate derivation exists. Different admitted words are not an order-dependent value for a fixed algebraic sum of Parikh deltas. No global kappa root/price is computed. Two early lineage decomposition obligations remain unchanged.",
+      "stop_accounting": "Grouped under L7 replay as a verification correction; does not reset or bypass any growth-lane null streak. Original M0 RESULT.json files are preserved."
+    }
+  },
+  "derivation_replay": {
+    "evidence": "M0 L-6/L-7 with exact canonical local+idle ledger for all five lineage edges, all six endpoint auditors, #2751->#2766 frame bridge, seven later pinned stage productions and actual swapped-prefix auditor runs",
+    "arithmetic_order_control": "A permutation of labelled deltas has the same sum and final profile/root; an arithmetic order effect is a bookkeeping bug. Guarded word-state permutations may be invalid and must be reported with the first rejected intermediate state.",
+    "mandatory_unresolved_obligations": [
+      "#2679->#2745 source-partner reassignment: complete held data and exact touched gates exist, but no validated decomposition into bounded registered productions has been supplied.",
+      "#2745->#2751 twelve-source recovery: endpoint kernel identity and source-restoration/lifted-target residual rewrite do not alone supply guarded intermediate productions."
+    ],
+    "scope": "EXPLORATORY means validation remains needed, not data absent or decomposition impossible. Endpoint validity and arithmetic telescoping never substitute for a guarded derivation.",
+    "M0_order_control_scope": "The preserved REVIEW.json records that all M0 swapped auditor prefixes passed; raw patch payload inequality did not certify primitive noncommutation. Use the separately preregistered L7-GUARD-ORDER local-operation check to refine this claim."
+  },
+  "binding_pattern_criteria": {
+    "source": "PLAN.md section 6",
+    "all_required": [
+      "Reproducible on at least three words of W including both families, or a declared family-local claim on at least three words of that family.",
+      "Beat the stated strongest matched null and margin: CR>=1.5 vs N1 and >=1.2 vs N1b; motif enrichment>=2 at q<0.01; sandpile invariants outside the central 99 percent on each word.",
+      "Give a falsifiable prediction checkable with exact tools in at most one core-hour.",
+      "Pass a held-out word not used to find the claim.",
+      "Be non-circular: not a function of local profile, rank mass or width inventory; recompute on an N2 sample."
+    ],
+    "application": "The profile-based growth/calibration outputs are bookkeeping or class certificates. They are not labeled patterns even when their experiment-specific PASS bar is met."
+  },
+  "binding_stop_rules": {
+    "growth_verbatim": "Growth lane: if the move alphabet reproduces every lineage delta but predicts no ceiling tighter than the packing cap -> bookkeeping result, stop.",
+    "growth_antecedent": "Require a validated guarded production decomposition for every lineage edge; complete arithmetic profile differences alone do not establish the move-alphabet antecedent. The two early validation obligations currently leave it unresolved. If it becomes true and no certified upper is below the certified packing lower, stop the growth lane and record bookkeeping only.",
+    "any_lane_verbatim": "Any lane: two consecutive pre-registered experiments at null -> stop that lane for the round.",
+    "application": "The two seeds confirm one experiment, not two consecutive experiments. The shared L-10/S-3 family is likewise counted once per applicable lane. Do not launch later families after a binding stop; mark their registry state and reason explicitly. ERROR, TIMEOUT and EXPLORATORY are not silently converted into PASS or NULL.",
+    "whole_plan_verbatim": "Whole plan: hard stop at the end of week 2; the deliverable is the document with the nulls, whatever the outcome.",
+    "budget": "Respect the registered family CPU limits and M3's approximately two-core-hour allocation; extra hypotheses after outcomes remain exploratory and receive no confirmatory q-value.",
+    "optional_extension_gate": "L6-COST-N6 is last. Confirmed consecutive NULL results for L-10 and L-11 stop the growth lane and force this optional extension to be skipped, despite its separately registered protocol and timing budget."
+  },
+  "handback": "Record useful saturation or cheap-score leads as census targets, with protocol, source and proof limits. Do not price a new construction, claim a kappa improvement, use new-method wording, or post publicly."
+}

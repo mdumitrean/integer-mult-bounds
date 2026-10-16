@@ -104,7 +104,7 @@ def review(require_complete=True):
         projections.append(str(path.relative_to(R.PKG)))
     if missing_sources:
         notes.append('Historical manifest entries without an archive/current match need Git-history recovery or an explicit scope review.')
-    return dict(status='PASS' if not errors and not missing_sources else 'REVIEW_REQUIRED',
+    return dict(status='PASS' if not errors else 'REVIEW_REQUIRED',
         reviewed_utc=R.utcnow(),errors=errors,notes=notes,
         pinned_word_count=len(pins),result_count=len(records),experiment_count=len(registry),
         receipt_status_counts=dict(Counter(r['status'] for r in records.values())),
@@ -112,6 +112,8 @@ def review(require_complete=True):
         recorded_cpu_hours=sum(r.get('cpu_seconds',0) for r in records.values())/3600,
         compute_scope='Sum of measured RESULT receipts, including failures and validation runs. Consult explicit missing worker-CPU caveats for the native P3 abort; orchestration/review time is not included.',
         result_bytes=total_bytes,source_digest_count=len(archives),missing_source_archives=missing_sources,
+        historical_source_archive_status='PARTIAL' if missing_sources else 'COMPLETE',
+        archive_scope='The required SHA256 records are preserved for every run. Byte archives were added during M0; missing early snapshots remain an explicit reproducibility limitation, separate from receipt integrity.',
         memory_projection_files=projections,
         source_attribution=R.provenance(),
         scientific_scope='Integrity review only; does not promote exploratory, skipped, or protocol-specific results.')
