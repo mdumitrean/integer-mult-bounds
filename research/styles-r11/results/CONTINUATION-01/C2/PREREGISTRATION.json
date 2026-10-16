@@ -1,0 +1,71 @@
+{
+  "authorization": "User explicitly reopened r11 to obtain a verified kappa improvement through L-system patterns or sandpile analysis. Original round stays frozen.",
+  "baseline_author": "Mason Hale (mason-hale), PR2917; retain its CREDITS/SOURCES and original r11 PINS attribution.",
+  "baseline_commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+  "canonical_main_checkpoint": "a7482490b4ca256db67d767a33fa6f7553060807",
+  "created_utc": "2026-10-16T11:41:34.263703+00:00",
+  "experiments": {
+    "C2-LATEST-SAME-CALL": {
+      "baseline_pr": 2917,
+      "controls": [
+        "Unchanged literal baseline must pass all fill checks.",
+        "A no-op/self exchange must not be labelled improving.",
+        "An over-capacity mutation must be rejected.",
+        "A duplicated physical-family mutation in one call must be rejected."
+      ],
+      "exact_improvement_predicate": "For original residuals rA,rB and d = widthA-widthB, residuals become rA+d,rB-d. Require 0<=rA+d<=capA, 0<=rB-d<=capB and d*(rA-rB+d)>0. Equal sum plus strict spread gives a strictly lower sum of residual p-powers for every 0<p<1.",
+      "incomplete": "Any timeout, coverage gap, admission error or failed control prevents a scientific NULL/PASS decision.",
+      "lane": "constructive-fill",
+      "move": "Exchange the physical (owner, child) bins of two roles in the same call, retaining their helper IDs and widths. Both bins must remain within capacity, eligibility, coverage and physical-family constraints.",
+      "null_bar": "Complete exhaustive pair census, no feasible improving pair, all controls pass. NULL is restricted to same-call pair exchanges on this pinned fill.",
+      "outputs": [
+        "RESULT.json per seed",
+        "candidate FILL.json.gz and PROFILE.json for any selected witness",
+        "memory projection and incremental checkpoint",
+        "source archive and implementation manifest"
+      ],
+      "pass_bar": "At least one concrete improving pair, with complete literal-fill and full-profile reconstruction passing, exact conserved rank mass and strict moment decrease. PASS is a constructive fill gain only; separate complete native/supplier/outer admission is mandatory for the user goal.",
+      "question": "Does an exact simultaneous unequal-width pair exchange within one call improve the complete PR2917 profile?",
+      "scope": "All unordered pairs of the 408 literal role rows in each of 666 calls, at most 55296648 pairs per seed; enumeration order may vary by seed, candidate tie break is canonical. No changed words, dispatch, geometry, windows, or role inventory.",
+      "second_seed": "Repeat complete census and checks with a different randomized traversal order; identical canonical selected witness and decision required.",
+      "selection": "Choose the feasible improving pair with largest integer increase in sum of squared residuals; canonical lexical pair breaks ties. Record aggregate candidate counts and selected witness, not raw enumeration."
+    }
+  },
+  "hard_stop_utc": "2026-10-30T04:08:31.792839+00:00",
+  "milestone": "CONTINUATION-01/C2",
+  "original_registration_sha256": "f3636485b64f3338a99f84bfcfda84f259ec31ae6477b2e2902814b41c0959b6",
+  "overlap_decision": "Live metadata exposed stronger existing constructions after the original r11 round. C1 is preserved as older-source calibration. This family applies the exact residual-exchange rule to the newer 82-buffer PR2917 word and literal fill. Same-call exchange is existing allocation technique, not claimed original. A positive result counts toward the goal only after complete changed-obligation admission above the pinned PR2917 claim.",
+  "resources": {
+    "allocated_cores": 128,
+    "cpu_budget_seconds_family": 7200,
+    "large_objects": "load once in parent; workers receive indices",
+    "parallelism": "pipeline/pool.py only; no concurrent pools",
+    "project_peak_memory_before_launch": true,
+    "reserved_cores": 8,
+    "rss_gib": 6,
+    "solver_calls": 0,
+    "timeout_seconds_per_task": 600,
+    "workers": "min(120, floor(RAM_GiB/4))"
+  },
+  "round": "CONTINUATION-01",
+  "schema_version": 1,
+  "seeds": [
+    11031,
+    29063
+  ],
+  "source_pins": [
+    {
+      "path": "data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    {
+      "path": "data/heldout/2853/DATA-MANIFEST.json",
+      "sha256": "9f515fdcead2753a0fdc176417e26468e6e77eb537fdcd20f53496e00a599567"
+    },
+    {
+      "path": "data/continuation-01/pr2917/MANIFEST.json",
+      "sha256": "2efa79d1a44d46ca51b9d35a1392fec87514776585f66d372e20d7ccbbcee764"
+    }
+  ],
+  "state": "FROZEN"
+}

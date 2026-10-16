@@ -2,7 +2,7 @@
 
 The user explicitly reopened this research on 2026-10-16 with the objective of obtaining a verified κ improvement through L-system patterns or sandpile analysis, using up to four agents. This authorizes a constructive improvement search beyond the original round's unpriced census hand-back. It does not alter the completed r11 registrations, decisions, frozen predictions, or stopped lanes.
 
-The scientific starting point is the inert, pinned #2853 package by Philippe Van Velzen (`philippeVV`, commit `d01045dfb67428679618027dff552f1d032fa999`), with #2833 by Jeremy Kothe (`jeremykothe2`) and the full original PINS lineage retained. The continuation must improve the #2853 complete construction; reproducing an existing gain or reducing an uncompleted local invoice does not finish the objective. The selected upstream result is a separate, older maintainer-reviewed record, not a substitute comparison baseline.
+The initial scientific starting point was the inert, pinned #2853 package by Philippe Van Velzen (`philippeVV`, commit `d01045dfb67428679618027dff552f1d032fa999`), with #2833 by Jeremy Kothe (`jeremykothe2`) and the full original PINS lineage retained. The live overlap checkpoint exposed subsequent stronger constructions. The constructive target is now Mason Hale's #2917 (`224bd5e56041c40078ff6b5fa7393733a215de5c`), with all of its predecessor credits retained. The successful C1 pair census on #2853 remains calibration; it does not complete the goal. Reproducing an existing gain or reducing an uncompleted local invoice does not finish the objective. The selected upstream result is a separate, older maintainer-reviewed record, not a substitute comparison baseline.
 
 The first changed question is constructive residual exchange on a literal fill. The old S2 protocol tested greedy lowering and confluence; it did not enumerate simultaneous unequal-width exchanges of two roles. A same-call exchange preserves the set of occupied physical families and the eligibility time of each occupied bin. Capacities, widths, exact coverage, idle remainders and the complete profile still require fresh validation. This is an exact exchange calculation inspired by the fill interpretation; no intrinsic sandpile Laplacian is assumed.
 
@@ -17,6 +17,7 @@ Two consecutive scientific NULL decisions stop a continuation lane for this regi
 ## Open next questions
 
 - Does a simultaneous same-call exchange strictly improve the #2853 literal complete profile? First step: exhaustive bounded pair census, with exact feasibility and residual-spread checks.
+- On the newer #2917 baseline, does the same exact exchange family supply a further admissible gain? Its distinct C2 registration pins the new data before candidate execution; old-family receipts remain unchanged.
 - Can such a fill-only change reuse the unchanged local supplier evidence while independently satisfying every changed complete release obligation? First step: source-bound obligation map and candidate admission.
 - Which guarded kernel or multi-step rewrite changes a complete bill after all compensation, cleanup and idle costs? First step: inspect the specified #2833/#2853 neighborhoods and register a finite constructive family.
 

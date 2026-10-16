@@ -1,0 +1,841 @@
+{
+  "check_count": 92,
+  "checks": [
+    "source hash new/borrow-fill/FILL.json.gz",
+    "source blob new/borrow-fill/FILL.json.gz",
+    "source hash new/BORROW-PROVIDERS.json",
+    "source blob new/BORROW-PROVIDERS.json",
+    "source hash new/borrow-fill/DISPATCH.json",
+    "source blob new/borrow-fill/DISPATCH.json",
+    "source hash new/borrow-fill/ORDER.json",
+    "source blob new/borrow-fill/ORDER.json",
+    "source hash new/PLAN.json",
+    "source blob new/PLAN.json",
+    "source hash PROFILE.json",
+    "source blob PROFILE.json",
+    "11031 recorded decisions agree",
+    "11031 completed-call coverage",
+    "11031 expected pair denominator",
+    "11031 unequal/equal count partition",
+    "11031 feasibility count partition",
+    "11031 improvement count partition",
+    "11031 signature total",
+    "11031 saved controls and zero solver calls",
+    "11031 negative controls",
+    "11031 candidate artifact digest results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-11031/FILL.json.gz",
+    "11031 candidate artifact digest results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-11031/PROFILE.json",
+    "11031 fixed columns and dispatch",
+    "11031 role count unchanged",
+    "11031 only the selected two role assignments changed",
+    "11031 selected row bytes agree with receipt",
+    "11031 identical role identities and call",
+    "11031 exact bin swap",
+    "11031 pinned dispatched physical widths",
+    "11031 capacities from pinned PLAN",
+    "11031 both unchanged windows contain the same call",
+    "11031 selected-bin exact occupancy arithmetic",
+    "11031 affected-bin contiguous offset (33, 4, 98)/0",
+    "11031 affected-bin contiguous offset (33, 4, 98)/9",
+    "11031 affected-bin contiguous offset (33, 4, 98)/18",
+    "11031 affected-bin capacity (33, 4, 98)",
+    "11031 affected-bin contiguous offset (65, 10, 94)/0",
+    "11031 affected-bin contiguous offset (65, 10, 94)/9",
+    "11031 affected-bin contiguous offset (65, 10, 94)/18",
+    "11031 affected-bin contiguous offset (65, 10, 94)/27",
+    "11031 affected-bin contiguous offset (65, 10, 94)/36",
+    "11031 affected-bin capacity (65, 10, 94)",
+    "11031 same-call physical-family set preserved",
+    "11031 stored complete-profile delta",
+    "11031 stored profiles agree",
+    "11031 conserved rank mass",
+    "11031 strict majorization and equal sum",
+    "11031 candidate root lies in (0,1)",
+    "11031 baseline root lies in (0,1)",
+    "11031 final checkpoint agrees",
+    "29063 recorded decisions agree",
+    "29063 completed-call coverage",
+    "29063 expected pair denominator",
+    "29063 unequal/equal count partition",
+    "29063 feasibility count partition",
+    "29063 improvement count partition",
+    "29063 signature total",
+    "29063 saved controls and zero solver calls",
+    "29063 negative controls",
+    "29063 candidate artifact digest results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-29063/FILL.json.gz",
+    "29063 candidate artifact digest results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-29063/PROFILE.json",
+    "29063 fixed columns and dispatch",
+    "29063 role count unchanged",
+    "29063 only the selected two role assignments changed",
+    "29063 selected row bytes agree with receipt",
+    "29063 identical role identities and call",
+    "29063 exact bin swap",
+    "29063 pinned dispatched physical widths",
+    "29063 capacities from pinned PLAN",
+    "29063 both unchanged windows contain the same call",
+    "29063 selected-bin exact occupancy arithmetic",
+    "29063 affected-bin contiguous offset (33, 4, 98)/0",
+    "29063 affected-bin contiguous offset (33, 4, 98)/9",
+    "29063 affected-bin contiguous offset (33, 4, 98)/18",
+    "29063 affected-bin capacity (33, 4, 98)",
+    "29063 affected-bin contiguous offset (65, 10, 94)/0",
+    "29063 affected-bin contiguous offset (65, 10, 94)/9",
+    "29063 affected-bin contiguous offset (65, 10, 94)/18",
+    "29063 affected-bin contiguous offset (65, 10, 94)/27",
+    "29063 affected-bin contiguous offset (65, 10, 94)/36",
+    "29063 affected-bin capacity (65, 10, 94)",
+    "29063 same-call physical-family set preserved",
+    "29063 stored complete-profile delta",
+    "29063 stored profiles agree",
+    "29063 conserved rank mass",
+    "29063 strict majorization and equal sum",
+    "29063 candidate root lies in (0,1)",
+    "29063 baseline root lies in (0,1)",
+    "29063 final checkpoint agrees",
+    "both seeds have identical canonical artifacts and exhaustive counts",
+    "canonical selected pair confirmed by second seed"
+  ],
+  "evidence": [
+    {
+      "path": "data/heldout/2853/DATA-MANIFEST.json",
+      "sha256": "9f515fdcead2753a0fdc176417e26468e6e77eb537fdcd20f53496e00a599567"
+    },
+    {
+      "path": "data/heldout/2853/package/new/borrow-fill/FILL.json.gz",
+      "sha256": "36ab8173de9cc5558eb6f6407c97aa015e92b949d30de6b042db4d8427d6600b"
+    },
+    {
+      "path": "data/heldout/2853/package/new/BORROW-PROVIDERS.json",
+      "sha256": "d4b8c2ecd493a35b99c6c97cd2dfc4131859cce21e98527f45d9fd183c650f7b"
+    },
+    {
+      "path": "data/heldout/2853/package/new/borrow-fill/DISPATCH.json",
+      "sha256": "fd8132ec8957b908ee6d871216848f18bafc6bd9304acd6185519ee26d97b1ca"
+    },
+    {
+      "path": "data/heldout/2853/package/new/borrow-fill/ORDER.json",
+      "sha256": "aa7c53c188c90fd74421a804f4c6fb13aa1187c06dbac51fa147830a40e00667"
+    },
+    {
+      "path": "data/heldout/2853/package/new/PLAN.json",
+      "sha256": "5132aa4aba25c98f5b78936c4281c89dad6912696f93e390cb296f94811f28b1"
+    },
+    {
+      "path": "data/heldout/2853/package/PROFILE.json",
+      "sha256": "5ee33d3f641a9d3f0b643001ca506ae26defdfed3e823897abb7bd6f3b4011ea"
+    },
+    {
+      "path": "results/CONTINUATION-01/PREREGISTRATION.json",
+      "sha256": "f3636485b64f3338a99f84bfcfda84f259ec31ae6477b2e2902814b41c0959b6"
+    },
+    {
+      "path": "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/IMPLEMENTATION.json",
+      "sha256": "8d8735fd21dba07debe5a3787634036de72f4bf73755a5bfc9889aed65220ab9"
+    },
+    {
+      "path": "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/RUN.json",
+      "sha256": "b45f883a6bf6b10c8a15ae88710664da9571e95556b14827f6803d5c51625fc7"
+    },
+    {
+      "path": "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-11031/RESULT.json",
+      "sha256": "79d5110669c1a094c9d5b9449fef0968be3daa223bbf8abf6d6a0b9dc932c30e"
+    },
+    {
+      "path": "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-11031/FILL.json.gz",
+      "sha256": "cf98b354ddd261032ba5346ec48be4a233cd0d4d82361ec6f61a302a217f5f59"
+    },
+    {
+      "path": "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-11031/PROFILE.json",
+      "sha256": "07bcf49713091ebc40a24f968697934f6aa45033136775fc4c348696c78b6835"
+    },
+    {
+      "path": "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-11031/CHECKPOINT.json",
+      "sha256": "9606a4a76f15d4a49b29be181398c430a93c7f55262647edeb129ebdcdbb32d3"
+    },
+    {
+      "path": "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-29063/RESULT.json",
+      "sha256": "e48622ee15d7021ce4580ac9acd9339ff8c69d1297af2dfda7b2618a000669e3"
+    },
+    {
+      "path": "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-29063/FILL.json.gz",
+      "sha256": "cf98b354ddd261032ba5346ec48be4a233cd0d4d82361ec6f61a302a217f5f59"
+    },
+    {
+      "path": "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-29063/PROFILE.json",
+      "sha256": "07bcf49713091ebc40a24f968697934f6aa45033136775fc4c348696c78b6835"
+    },
+    {
+      "path": "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-29063/CHECKPOINT.json",
+      "sha256": "2e33901c5695c282333d6753e262155c137bea1d69d568b0be002e69df8eb7a0"
+    },
+    {
+      "path": "data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    }
+  ],
+  "exact_argument": "The two residuals change from (5,4) to (6,3), preserving mass9 and increasing squared spread by4. Strict concavity of x^p for0<p<1 gives 6^p+3^p<5^p+4^p. The local paid bill is unchanged; both complete-profile moments strictly increase in kappa and bracket their roots in(0,1). Thus this literal fill raises the supplier-profile root relative to pinned PR2853.",
+  "inherited_pins": {
+    "path": "data/words/PINS.json",
+    "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+  },
+  "preserved_limitations": [
+    "Exhaustive coverage and all unaffected literal constraints are supported by frozen receipts, not independently rescanned here.",
+    "The witness is older-source calibration: later authenticated PR2917 is already stronger and same-call exchange appears in prior source allocations.",
+    "No native, global supplier, outer release or inherited theorem proof was replayed by this review; no competitive or originality claim follows."
+  ],
+  "results": [
+    {
+      "counts": {
+        "all_pairs": 55296648,
+        "equal_width_pairs": 21954024,
+        "feasible_unequal_pairs": 47768,
+        "infeasible_capacity_pairs": 33294856,
+        "nonimproving_feasible_pairs": 47663,
+        "strictly_improving_pairs": 105,
+        "unequal_width_pairs": 33342624
+      },
+      "fill_sha256": "cf98b354ddd261032ba5346ec48be4a233cd0d4d82361ec6f61a302a217f5f59",
+      "pair": [
+        146,
+        0,
+        236
+      ],
+      "profile_sha256": "07bcf49713091ebc40a24f968697934f6aa45033136775fc4c348696c78b6835",
+      "residuals_after": [
+        6,
+        3
+      ],
+      "residuals_before": [
+        5,
+        4
+      ],
+      "seed": 11031,
+      "status": "PASS",
+      "widths": [
+        9,
+        8
+      ]
+    },
+    {
+      "counts": {
+        "all_pairs": 55296648,
+        "equal_width_pairs": 21954024,
+        "feasible_unequal_pairs": 47768,
+        "infeasible_capacity_pairs": 33294856,
+        "nonimproving_feasible_pairs": 47663,
+        "strictly_improving_pairs": 105,
+        "unequal_width_pairs": 33342624
+      },
+      "fill_sha256": "cf98b354ddd261032ba5346ec48be4a233cd0d4d82361ec6f61a302a217f5f59",
+      "pair": [
+        146,
+        0,
+        236
+      ],
+      "profile_sha256": "07bcf49713091ebc40a24f968697934f6aa45033136775fc4c348696c78b6835",
+      "residuals_after": [
+        6,
+        3
+      ],
+      "residuals_before": [
+        5,
+        4
+      ],
+      "seed": 29063,
+      "status": "PASS",
+      "widths": [
+        9,
+        8
+      ]
+    }
+  ],
+  "review_scope": "Independent saved-artifact and selected-witness check only. No census, fill.audit, word audit, solver, root evaluation, or candidate search rerun.",
+  "reviewed_utc": "2026-10-16T11:48:51.439267+00:00",
+  "schema_version": 1,
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43extra.json.gz",
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "philippeVV",
+      "author_login": "philippeVV",
+      "bytes": 70155,
+      "commit": "d01045dfb67428679618027dff552f1d032fa999",
+      "format": "BORROW-WORD",
+      "git_blob": "b2f6cef3ed87663ff98e5db5371ece263ad0a735",
+      "lineage_attribution": "Retains all data/words/PINS.json source credits; see package README.md for this PR's additional credits.",
+      "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "package_relative_path": "new/borrow/words/BORROW-WORD-43base.json.gz",
+      "path": "heldout/2853/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "pin_key": "heldout/2853/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "pr": 2853,
+      "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "sha256": "7f0a0715aa962f24c112ca32d1b57fc275eff0f15eac6eccd684ba702af82f8b",
+      "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+    },
+    {
+      "author": "philippeVV",
+      "author_login": "philippeVV",
+      "bytes": 70156,
+      "commit": "d01045dfb67428679618027dff552f1d032fa999",
+      "format": "BORROW-WORD",
+      "git_blob": "8e1e87364f03de5638b15292058ed60c96d219d1",
+      "lineage_attribution": "Retains all data/words/PINS.json source credits; see package README.md for this PR's additional credits.",
+      "local_path": "data/heldout/2853/package/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "package_relative_path": "new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "path": "heldout/2853/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "pin_key": "heldout/2853/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "pr": 2853,
+      "repository_path": "research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "sha256": "c94a0ac238ca72951e4580895334d39f66ea950fa7af62ca2667251a2f796d6e",
+      "source": "https://github.com/CrocSwap/integer-mult-bounds/pull/2853"
+    }
+  ],
+  "status": "PASS"
+}

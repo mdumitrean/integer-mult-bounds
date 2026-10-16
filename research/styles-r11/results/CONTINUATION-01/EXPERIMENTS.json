@@ -1,9 +1,31 @@
 {
   "experiments": [
     {
+      "candidate_identity_agreement": true,
+      "confirmation_note": "Different traversal seeds; selected candidate identity must also agree before a positive decision stands.",
+      "confirmed": true,
+      "cpu_seconds": 43.162682365,
       "id": "C1-SAME-CALL-EXCHANGE",
       "lane": "constructive-fill",
       "preregistration": "results/CONTINUATION-01/PREREGISTRATION.json",
+      "result_files": [
+        "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-11031/RESULT.json",
+        "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-29063/RESULT.json"
+      ],
+      "started_utc": "2026-10-16T11:37:29.136048+00:00",
+      "status": "PASS",
+      "updated_utc": "2026-10-16T11:37:50.222665+00:00"
+    },
+    {
+      "id": "C2-LATEST-SAME-CALL",
+      "lane": "constructive-fill",
+      "preregistration": "results/CONTINUATION-01/C2/PREREGISTRATION.json",
+      "status": "planned"
+    },
+    {
+      "id": "G1-PAIRED-GRAMMAR",
+      "lane": "constructive-word",
+      "preregistration": "results/CONTINUATION-01/G1/PREREGISTRATION.json",
       "status": "planned"
     }
   ],

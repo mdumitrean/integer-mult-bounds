@@ -1,0 +1,69 @@
+{
+  "baseline_commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+  "baseline_pr": 2917,
+  "created_utc": "2026-10-16T11:44:11.750982+00:00",
+  "experiments": {
+    "G1-PAIRED-GRAMMAR": {
+      "changed_hypothesis": "Scalar input/output shears and compensation/cleanup may change. This is not the already-covered fixed-gate dirty-entry/frame screen of PR2904. It applies the credited paired production from PR2908/PR2917 to the later final state, without a novelty claim for the mechanism.",
+      "controls": [
+        "Unchanged final baseline all-column semantic/profile check.",
+        "Known predecessor extraction as a positive production control using pinned transform data.",
+        "Wrong shear sign or omitted compensation must fail the exact identity.",
+        "Corrupted terminal frame and uncharged extra buffer must fail their respective admission gates."
+      ],
+      "domain": {
+        "excluded": "Rank-7 helper408, an active external lead.",
+        "hyperplanes": "All 511 rank-8 hyperplanes in the 9-dimensional binary frame space.",
+        "modes": [
+          "literal terminal frames",
+          "exact minimal-frame eligibility then maximal legal downward frame-cap propagation on synthesized output support only"
+        ],
+        "pair_cap_per_hyperplane_mode": 8,
+        "pair_order": "The eight sparsest nonzero pairs drawn from canonical exact rational nullspace bases; deterministic canonical tie order recorded by implementation.",
+        "pivot_cap_per_pair": 16,
+        "pivot_order": "At most sixteen eligible helper pivots in deterministic canonical order; exact tie convention frozen in implementation before run.",
+        "truncation": "Record total basis-pair and eligible-pivot counts and all truncation. No all-combinations or saturation conclusion."
+      },
+      "incomplete": "Missing algebraic coverage, timeouts, failed baseline controls or unresolved semantic/physical obligations yield EXPLORATORY/ERROR/TIMEOUT, not scientific NULL.",
+      "invariants": [
+        "All 82 existing restored endpoints preserved.",
+        "Entrances, removed helpers, correction-source identities, centre/cut/warp interfaces preserved.",
+        "Exact formal operator equations alpha*M=u and M*v=y on distinct free warp words, C*v=0, alpha*y=1.",
+        "Synthesize only dyadic input/output shears and rederive full compensation C*S and literal cleanup.",
+        "Both provider variants, forward and dual, all independent dirty input columns must pass.",
+        "Fresh canonical profile and helper inventory, all additional buffers and native/physical costs explicitly charged."
+      ],
+      "lane": "constructive-word",
+      "null_bar": "The entire registered bounded basis/pivot protocol completes without a candidate meeting its bar. Any NULL is limited to these exact bases, pair/pivot caps and frame modes, not all paired directions.",
+      "pass_bar": "At least one emitted concrete candidate whose exact production and both-provider full semantic/frame checks pass and whose completed local-plus-idle profile improves the pinned source under an explicit admissible allocation; native/supplier/outer acceptance remains a separate mandatory gate for the user goal.",
+      "question": "Does another exact paired input/output extraction on the final 82-endpoint PR2917 word yield a fully charged admissible gain?",
+      "recording": "Immutable RESULT per seed, candidate word/production data and hashes, complete ledgers, covered/truncated counts, source archives, checkpoints and memory projection.",
+      "second_seed": "Two distinct traversal seeds must independently confirm any positive/negative decision. Candidate identity and all exact output checks must be compared."
+    }
+  },
+  "hard_stop_utc": "2026-10-30T04:08:31.792839+00:00",
+  "milestone": "CONTINUATION-01/G1",
+  "resources": {
+    "cpu_budget_seconds_family": 14400,
+    "parallelism": "pipeline/pool.py only, no concurrent pools",
+    "parent_load_once": [
+      "source words",
+      "formal transfer and inverse",
+      "geometry"
+    ],
+    "project_memory_before_launch": true,
+    "rss_gib": 4,
+    "solver_calls": 0,
+    "task_timeout_seconds": 300,
+    "workers": "min(120,floor(RAM_GiB/4))"
+  },
+  "round": "CONTINUATION-01",
+  "schema_version": 1,
+  "seeds": [
+    11031,
+    29063
+  ],
+  "source_attribution": "Mason Hale PR2917 on Jeremy Diviney PR2908; retain package CREDITS/SOURCES and full original r11 PINS lineage.",
+  "source_manifest_sha256": "2efa79d1a44d46ca51b9d35a1392fec87514776585f66d372e20d7ccbbcee764",
+  "state": "FROZEN"
+}
