@@ -1,0 +1,214 @@
+{
+  "api_read_count": 13,
+  "canonical_main": "95ff4e2dd396c505932a43ff7c1cdfdd94b8c867",
+  "discussion_2612": {
+    "active_claim_comment18973555": [
+      {
+        "author": {
+          "login": "mdumitrean"
+        },
+        "body": "**DONE / RELEASED**: four paired extractions at one hyperplane on PR2917's final words, packed and admitted: [PR #2942](https://github.com/CrocSwap/integer-mult-bounds/pull/2942). Follows [PR #2930](https://github.com/CrocSwap/integer-mult-bounds/pull/2930) and answers PR2917's open question 1.\n\n```text\nStatus / UTC update / priority revision: DONE, 2026-10-16 13:10 UTC, revision 5\nConcrete question and changed premise: single further paired extractions on PR2917's final 82-endpoint words are all below\n  break-even. Extractions at the SAME hyperplane share the partner frame lowering paid by the first one. Four sequential\n  extractions at normal 45 (pivots 249, 267, 251, 265; E_45 = <256,128,64,33,16,9,5,2>) give the certified cumulative local\n  delta {1:+18,2:-8,3:+6,4:-6} per call with four 9->8 width reductions and four more charged private buffers (86).\nEstablished result and evidence status: author-checked (AI-assisted), not maintainer-reviewed. Every step: exact two-sided\n  certificate (PR2908/PR2917 structure.py), certified optimal frames, PR2833 auditor forward/dual on both providers; 40\n  semantic rejection controls; a new literal T74 allocation (9.5e-10 below the changed inventory's fractional cap); one\n  fresh complete replay (fresh retained bootstrap, fresh natives, complete admission, PASS_RELEASE):\n  kappa = 0.001722816319863214327996 - 1e-46 - 1e-70, exactly 316413419939763639/1e24 ~ +3.164e-7 over PR2930.\n  Exact cost identity: total(U,P) = Delta_end(U u P) + c1|U\\P|; every complete rank-4 composition at normal 45 touches the\n  same 12 registers, so no order or first step does better, and no other normal has a positive margin before or after.\nPublic artifact URL + exact commit: PR #2942, mdumitrean:research/paired-extension-normal45 @ a027b0f6,\n  package research/paired-extension-normal45.\nNext useful task, success/stop test and rough runtime: edits outside the paired-extraction lever (gate re-timing, output\n  gates before the end of restore, entering-helper pivots) to lower the 88,556-unit overhead of normal 45's 12-register universe.\nActive claim / expiry: released.\n```\n\nCredit: Jeremy Diviney (PR2908) for the paired extraction and structural certificate; Mason Hale (PR2917) for the parent words, producer model and tooling; Jeremy Kothe (PR2894/2833); Yiyang Lu (PR2857/2848); Dugongue; Tekalign. Marius-Paul Dumitrean, with substantial AI assistance (Claude Code).",
+        "createdAt": "2026-10-16T12:35:37Z",
+        "id": "DC_kwDOU-508s4BIYNz",
+        "replies": {
+          "nodes": [],
+          "pageInfo": {
+            "endCursor": null,
+            "hasNextPage": false
+          }
+        },
+        "updatedAt": "2026-10-16T13:10:08Z",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18973555"
+      }
+    ],
+    "comments": 16,
+    "has_earlier_omitted": false,
+    "truncated_reply_threads": 0
+  },
+  "files": {
+    "AGENTS.md.gz": {
+      "bytes": 2216,
+      "sha256": "c3a05e190f2b6a30027f12f8b32db30dfeb7d3aff9956227bd50a421761591bf",
+      "source": {
+        "commit": "95ff4e2dd396c505932a43ff7c1cdfdd94b8c867",
+        "git_blob": "00c96932e109c701310f4910057bae2d6cec0c0f",
+        "path": "AGENTS.md"
+      },
+      "uncompressed_sha256": "2d47ee25f6900efa3bac76f66f59cc6d6e077ed1e7301497ab332668ad288d4c"
+    },
+    "CONTRIBUTING.md.gz": {
+      "bytes": 2808,
+      "sha256": "9ebe0f6663dbf06f7c399b543e8625e4fc893677795c8b064e1f98b2909ce038",
+      "source": {
+        "commit": "95ff4e2dd396c505932a43ff7c1cdfdd94b8c867",
+        "git_blob": "e51435543687f1bd88ab22248082dc689ce8b853",
+        "path": "CONTRIBUTING.md"
+      },
+      "uncompressed_sha256": "df5b5646602f42cb5da5844f04ac925182ddcd0f627b9de1c96a5095bb7a277a"
+    },
+    "autoresearch.md.gz": {
+      "bytes": 13769,
+      "sha256": "9a5067c229d39a7079d5c58cf64305c49a610dbced6b664b31c312d398f330dc",
+      "source": {
+        "commit": "95ff4e2dd396c505932a43ff7c1cdfdd94b8c867",
+        "git_blob": "c0f80834ca3ed0700d125d747f04478cea33198a",
+        "path": "autoresearch.md"
+      },
+      "uncompressed_sha256": "0cf06f58756b37269b99c02ec3102b76720c10bbdc94e755aba39ebe311cb3de"
+    },
+    "certificates__selected-result.json.gz": {
+      "bytes": 4980,
+      "sha256": "6de4cc10dc909194373f401c77a33ccdb8fdb593bb48ea8cb59804de7eec9d34",
+      "source": {
+        "commit": "95ff4e2dd396c505932a43ff7c1cdfdd94b8c867",
+        "git_blob": "b1fea0c94436b236cc2b7d41a7be032811b94c81",
+        "path": "certificates/selected-result.json"
+      },
+      "uncompressed_sha256": "bb2eaa58647b353f88d0aec2eafb9d30df1be53589231b23e12ceef3e4bad129"
+    },
+    "discussion-2612.json.gz": {
+      "bytes": 27871,
+      "sha256": "7f9eeded306f07ac4d31d86385bba4d12989fdee123f428f55ef39d788bbf0bb",
+      "source": {
+        "query": "query { repository(owner:\"CrocSwap\",name:\"integer-mult-bounds\") { discussion(number:2612) { number title body url updatedAt author {login} comments(last:100) {pageInfo {hasPreviousPage startCursor} nodes {id body url createdAt updatedAt author {login} replies(first:20) {pageInfo {hasNextPage endCursor} nodes {id body url createdAt updatedAt author {login}}}}}}}}"
+      },
+      "uncompressed_sha256": "2e4eed54958042b4cca9b339bab4ae9788a7e6df78c66d3374591860c5e9bca6"
+    },
+    "docs__research__agent-task-catalog.json.gz": {
+      "bytes": 10711,
+      "sha256": "c0601a541a10e92dd9e5ae8b58d8a93588d54aa3cc08d96d034c8f4c40d6abf0",
+      "source": {
+        "commit": "95ff4e2dd396c505932a43ff7c1cdfdd94b8c867",
+        "git_blob": "889b95d936746df124872133ae1e7cc339adcb92",
+        "path": "docs/research/agent-task-catalog.json"
+      },
+      "uncompressed_sha256": "7d185cd8c2af35988d638d969748ad7b670f902606444dbfc748e4402c340df6"
+    },
+    "docs__research__research-family-status.md.gz": {
+      "bytes": 4445,
+      "sha256": "531333887d239c6efd17bb048b41b283895649d8f318dc9da9c1865820235862",
+      "source": {
+        "commit": "95ff4e2dd396c505932a43ff7c1cdfdd94b8c867",
+        "git_blob": "1a2195004c5d681679279f0095b7964fb14a01e6",
+        "path": "docs/research/research-family-status.md"
+      },
+      "uncompressed_sha256": "c37c7e0f6a1134983990e1b3efef55e65239b38be780e8a4cc10f5aefdaf2df5"
+    },
+    "main.json.gz": {
+      "bytes": 1870,
+      "sha256": "28bb4ae02768957ca35d5b839137aabea4f92e5840dcd1871cea3883230f3f32",
+      "source": {
+        "endpoint": "repos/CrocSwap/integer-mult-bounds/commits/main"
+      },
+      "uncompressed_sha256": "7ec5a11ddd6b69dc54f338f0af4dfeb65223ee6bd712638315816eac3bc18a2a"
+    },
+    "recent-prs.json.gz": {
+      "bytes": 59169,
+      "sha256": "3504c1ccc0d3ce173bff38cae37e9699aac13cd532507f1947dc45f29b3c357b",
+      "source": {
+        "coverage": "First30 most recently updated PRs only; not complete corpus pagination.",
+        "endpoint": "repos/CrocSwap/integer-mult-bounds/pulls?state=all&sort=updated&direction=desc&per_page=30&page=1"
+      },
+      "uncompressed_sha256": "89be8aae92d86591a6e6855ee16e2c370889832030c399c7a224efaaa03ebb7d"
+    },
+    "relevant-prs.json.gz": {
+      "bytes": 7315,
+      "sha256": "93831e11f294daaac8e69cacca4e16a68c755737690cedb8cda9a9f4dc889d92",
+      "source": {
+        "endpoints": [
+          "repos/CrocSwap/integer-mult-bounds/pulls/2930",
+          "repos/CrocSwap/integer-mult-bounds/pulls/2917",
+          "repos/CrocSwap/integer-mult-bounds/pulls/2918",
+          "repos/CrocSwap/integer-mult-bounds/pulls/2932"
+        ]
+      },
+      "uncompressed_sha256": "4d74d8fa63f992565f590620ca6e802a818560966f4e6106c0359874087bc7cb"
+    }
+  },
+  "finished_utc": "2026-10-16T13:30:14.117194+00:00",
+  "guidance_comparison": [
+    {
+      "changed_from_initial": false,
+      "git_blob": "00c96932e109c701310f4910057bae2d6cec0c0f",
+      "path": "AGENTS.md",
+      "sha256": "2d47ee25f6900efa3bac76f66f59cc6d6e077ed1e7301497ab332668ad288d4c"
+    },
+    {
+      "changed_from_initial": false,
+      "git_blob": "e51435543687f1bd88ab22248082dc689ce8b853",
+      "path": "CONTRIBUTING.md",
+      "sha256": "df5b5646602f42cb5da5844f04ac925182ddcd0f627b9de1c96a5095bb7a277a"
+    },
+    {
+      "changed_from_initial": false,
+      "git_blob": "c0f80834ca3ed0700d125d747f04478cea33198a",
+      "path": "autoresearch.md",
+      "sha256": "0cf06f58756b37269b99c02ec3102b76720c10bbdc94e755aba39ebe311cb3de"
+    },
+    {
+      "changed_from_initial": false,
+      "git_blob": "889b95d936746df124872133ae1e7cc339adcb92",
+      "path": "docs/research/agent-task-catalog.json",
+      "sha256": "7d185cd8c2af35988d638d969748ad7b670f902606444dbfc748e4402c340df6"
+    },
+    {
+      "changed_from_initial": false,
+      "git_blob": "1a2195004c5d681679279f0095b7964fb14a01e6",
+      "path": "docs/research/research-family-status.md",
+      "sha256": "c37c7e0f6a1134983990e1b3efef55e65239b38be780e8a4cc10f5aefdaf2df5"
+    },
+    {
+      "changed_from_initial": false,
+      "git_blob": "b1fea0c94436b236cc2b7d41a7be032811b94c81",
+      "path": "certificates/selected-result.json",
+      "sha256": "bb2eaa58647b353f88d0aec2eafb9d30df1be53589231b23e12ceef3e4bad129"
+    }
+  ],
+  "initial_canonical_main": "914cd73f563acaaa682d733a9fbfcc07272336a3",
+  "recent_prs": {
+    "complete": false,
+    "count": 30,
+    "scope": "Only first30 sorted by updated_at, plus four individually fetched relevant heads."
+  },
+  "relevant_heads": [
+    {
+      "author": "mdumitrean",
+      "head": "81f3b5d12977eba09e06fbff729167d59faabe90",
+      "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2930",
+      "number": 2930,
+      "state": "open",
+      "title": "Conditional \u03ba \u2248 0.0017224999064433: cap-attaining allocation of #2917's unchanged words (+9.11e-7)",
+      "updated_at": "2026-10-16T12:18:36Z"
+    },
+    {
+      "author": "mason-hale",
+      "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+      "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2917",
+      "number": 2917,
+      "state": "open",
+      "title": "Conditional \u03ba \u2248 0.001721588647: nine additional paired helper extractions",
+      "updated_at": "2026-10-16T10:52:06Z"
+    },
+    {
+      "author": "RossRichardson",
+      "head": "9360ba7312cf8961e672e9eb26c612719028d39d",
+      "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2918",
+      "number": 2918,
+      "state": "closed",
+      "title": "Exclude rank-seven helper408 extraction at the fixed terminal cut",
+      "updated_at": "2026-10-16T12:05:57Z"
+    },
+    {
+      "author": "ToikY",
+      "head": "5c6c32db4449aa661aca3c37416df0d7593908bd",
+      "html_url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2932",
+      "number": 2932,
+      "state": "open",
+      "title": "Independently audit PR2917's paired-helper frame ledger",
+      "updated_at": "2026-10-16T12:27:25Z"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Final bounded read-only metadata freshness only. No scientific source input repinned, no experiment rerun, no fetched code executed, no remote writes. Public claims remain their authors claims.",
+  "started_utc": "2026-10-16T13:30:05.779372+00:00"
+}

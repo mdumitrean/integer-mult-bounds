@@ -38,30 +38,51 @@
       "wall_seconds": 61.836955135688186
     },
     {
-      "confirmed": false,
+      "confirmed": true,
+      "cpu_seconds": 22.428488714,
+      "execution": "COMPLETED",
       "id": "V3-INVENTORY-CAP",
       "lane": "constructive-word",
       "preregistration": "results/CONTINUATION-02/V3/PREREGISTRATION.json",
-      "status": "planned"
+      "result_files": [
+        "results/CONTINUATION-02/V3-INVENTORY-CAP/v1/seed-12037/RESULT.json",
+        "results/CONTINUATION-02/V3-INVENTORY-CAP/v1/seed-31069/RESULT.json"
+      ],
+      "scientific_decision_agreement": true,
+      "started_utc": "2026-10-16T13:28:14.181333+00:00",
+      "status": "NULL",
+      "updated_utc": "2026-10-16T13:28:25.517459+00:00",
+      "wall_seconds": 11.329224088229239
     }
   ],
+  "final_checkpoint": {
+    "path": "results/CONTINUATION-02/FINAL-CHECKPOINT-DECISION.json",
+    "sha256": "9bc6c425f812f6913adcf78b9d91cf7fa0de349fcba731348643a67ff8708b24"
+  },
+  "final_decision": {
+    "path": "results/CONTINUATION-02/ROUND-DECISION.json",
+    "sha256": "87c458a1ee56fb8aa8d2dc5784df971884f261ab55f44c7ff1b58e67f463c3bf"
+  },
+  "finished_utc": "2026-10-16T13:35:24.226729+00:00",
   "lane_status": {
     "constructive-fill": {
       "consecutive_confirmed_nulls": 0,
       "prior_experiment": "CONTINUATION-01/C3PASS",
-      "stopped": false
+      "scope": "Registered C4/V2 retired UNRUN after superseding fixed-word cap; no scientific NULL.",
+      "stopped": true
     },
     "constructive-word": {
-      "consecutive_confirmed_nulls": 0,
-      "latest_experiment": "G2-ANCHORED-RANK7",
+      "consecutive_confirmed_nulls": 1,
+      "latest_experiment": "V3-INVENTORY-CAP",
       "prior_experiment": "CONTINUATION-01/G1UNRUN",
-      "scope": "No next pivot or experiment scheduled in this bounded round.",
-      "stopped": false
+      "scope": "V3 all-candidate cap rejection triggers its own registered route stop; one confirmed NULL, no second pivot.",
+      "stopped": true
     }
   },
+  "measured_experiment_cpu_seconds": 536.267312488,
   "no_active_experiments": true,
   "round": "CONTINUATION-02",
   "round_cpu_budget_seconds": 14400,
   "schema_version": 1,
-  "status": "COST_VALIDATION_REGISTERED"
+  "status": "COMPLETE_SCOPED_NULL"
 }
