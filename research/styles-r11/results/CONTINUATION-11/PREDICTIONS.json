@@ -8,9 +8,49 @@
       "comparison_superseded": true,
       "id": "J2-COMMUTED-SHARED-CARRIER-GAIN",
       "kind": "Finite census hypothesis; not a learned or formally qualified pattern",
-      "outcome": null,
+      "outcome": {
+        "confirmed_two_seeds": true,
+        "counts_by_provider_per_seed": {
+          "base": {
+            "EXPLORATORY": 0,
+            "NO_GAIN": 90200,
+            "PASS_CANDIDATE": 0,
+            "REJECTED_GUARD": 16920,
+            "candidates": 107120,
+            "plans": 1339,
+            "unresolved": 0
+          },
+          "extra": {
+            "EXPLORATORY": 0,
+            "NO_GAIN": 90200,
+            "PASS_CANDIDATE": 0,
+            "REJECTED_GUARD": 16920,
+            "candidates": 107120,
+            "plans": 1339,
+            "unresolved": 0
+          }
+        },
+        "kappa_claim": false,
+        "pattern_claim": false,
+        "run": {
+          "path": "results/CONTINUATION-11/J2-COMMUTING-EXPOSURE/v1/RUN.json",
+          "sha256": "6dc90878f08d54909766fcbac979116f85b6b691d1f791fdcd4e66fa90093666"
+        },
+        "scope": "Nonempty registered candidate-label domain, complete coverage, every sign resolved or exact infeasibility witnessed, zero favorable candidate on either provider, controls and unchanged baselines pass, and both seeded scientific decisions agree. Limited to these fixed crossing procedures, frames, words and endpoint.",
+        "selection": {
+          "favorable_by_provider": {
+            "base": 0,
+            "extra": 0
+          },
+          "paired_favorable": 0,
+          "rule": "First at most8 canonical provider-independent addresses, including both fixed placements; no fitted or root-based ranking",
+          "selected_pair_keys": [],
+          "unretained_paired_favorable": 0
+        },
+        "verdict": "NULL"
+      },
       "prediction": "At least one common provider-independent address has certified strictly negative full-window moment and all retained canonical/632-column controls pass for both providers and both seeds. Census target only; no kappa claim.",
-      "status": "PENDING"
+      "status": "NOT_SUPPORTED"
     }
   ],
   "preregistration_sha256": "c5d92d3c43c6a0f14f40e185ed7374c40427972e6f77eaaa31ee9efaf156161c",

@@ -1,0 +1,1630 @@
+{
+  "artifact_references": [
+    {
+      "path": "results/CONTINUATION-11/J2-COMMUTING-EXPOSURE/v1/RUN.json",
+      "sha256": "6dc90878f08d54909766fcbac979116f85b6b691d1f791fdcd4e66fa90093666"
+    },
+    {
+      "path": "results/CONTINUATION-11/J2/PREREGISTRATION.json",
+      "sha256": "c5d92d3c43c6a0f14f40e185ed7374c40427972e6f77eaaa31ee9efaf156161c"
+    },
+    {
+      "path": "data/continuation-11/j2-v1/PRICES-TASKS.json.gz",
+      "sha256": "1ea7209bf4d111b3dde2156efa46f9751f926d6d7668467a739460f6b57f8eff"
+    },
+    {
+      "bytes": 154474,
+      "path": "results/CONTINUATION-11/J2-COMMUTING-EXPOSURE/v1/seed-53017/RESULT.json",
+      "payload_sha256": "c4a97e4460a7f0965c3624d4f668b44498412c67f1888c092731e75e64ab046f",
+      "sha256": "c4a97e4460a7f0965c3624d4f668b44498412c67f1888c092731e75e64ab046f"
+    },
+    {
+      "bytes": 154475,
+      "path": "results/CONTINUATION-11/J2-COMMUTING-EXPOSURE/v1/seed-106013/RESULT.json",
+      "payload_sha256": "d3f9f7e649f5f791e1dc3fbdd1dd17fb006ad7e6143494221c95788e551dcd31",
+      "sha256": "d3f9f7e649f5f791e1dc3fbdd1dd17fb006ad7e6143494221c95788e551dcd31"
+    }
+  ],
+  "by_seed_provider": {
+    "106013": {
+      "base": {
+        "canonical_saved_row_identity_sha256": "89625c775cadf6b4aa248c054b01ffab0f3893cefd7ac629e59e6506641df62e",
+        "coverage": {
+          "all_receipts_complete": true,
+          "duplicate_ids_or_ordinals": 0,
+          "labels_per_plan_distribution": {
+            "80": 1339
+          },
+          "ordinals_complete": true,
+          "plan_ordinals_complete": true,
+          "plans": 1339,
+          "price_tasks": 64,
+          "rows": 107120,
+          "saved_run_counts_match": true,
+          "shards_complete_0_to_63": true,
+          "unique_ids": 107120,
+          "unique_ordinals": 107120
+        },
+        "guard_conditions_affected_rows": [
+          {
+            "condition": {
+              "lower": "A2",
+              "predicate": "frame_inclusion",
+              "upper": "U2"
+            },
+            "labeled_rows": 16920
+          },
+          {
+            "condition": {
+              "lower": "A1",
+              "predicate": "frame_inclusion",
+              "upper": "U1"
+            },
+            "labeled_rows": 11400
+          },
+          {
+            "condition": {
+              "lower": "Y2",
+              "predicate": "frame_inclusion",
+              "upper": "U2"
+            },
+            "labeled_rows": 10152
+          },
+          {
+            "condition": {
+              "lower": "A1",
+              "predicate": "frame_inclusion",
+              "upper": "Y1"
+            },
+            "labeled_rows": 6840
+          },
+          {
+            "condition": {
+              "lower": "A2",
+              "predicate": "frame_inclusion",
+              "upper": "Y2"
+            },
+            "labeled_rows": 6768
+          },
+          {
+            "condition": {
+              "lower": "Y1",
+              "predicate": "frame_inclusion",
+              "upper": "U1"
+            },
+            "labeled_rows": 4560
+          },
+          {
+            "condition": {
+              "lower": "Z",
+              "predicate": "frame_inclusion",
+              "upper": "D"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "lower": "Y2",
+              "predicate": "frame_inclusion",
+              "upper": "Z"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "i2"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "k"
+            },
+            "labeled_rows": 3840
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "j"
+            },
+            "labeled_rows": 3840
+          },
+          {
+            "condition": {
+              "lower": "Y1",
+              "predicate": "frame_inclusion",
+              "upper": "Y2"
+            },
+            "labeled_rows": 2280
+          },
+          {
+            "condition": {
+              "lower": "X",
+              "predicate": "frame_inclusion",
+              "upper": "Y1"
+            },
+            "labeled_rows": 1176
+          },
+          {
+            "condition": {
+              "lower": "L",
+              "predicate": "frame_inclusion",
+              "upper": "X"
+            },
+            "labeled_rows": 1176
+          }
+        ],
+        "guard_predicate_instances": {
+          "exit_inclusion": 12168,
+          "frame_inclusion": 70248
+        },
+        "guard_predicates_affected_rows": {
+          "exit_inclusion": 7320,
+          "frame_inclusion": 16920
+        },
+        "plan_feasibility": {
+          "all_labels_guard_rejected": 187,
+          "no_labels_guard_rejected": 1103,
+          "some_labels_guard_rejected": 49
+        },
+        "profile_delta_frequencies": [
+          {
+            "labeled_rows": 89624,
+            "profile_delta": {}
+          },
+          {
+            "labeled_rows": 384,
+            "profile_delta": {
+              "1": 4,
+              "2": -2
+            }
+          },
+          {
+            "labeled_rows": 192,
+            "profile_delta": {
+              "1": 6,
+              "2": -3
+            }
+          }
+        ],
+        "source_attribution": {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "author_login": "jeremykothe2",
+          "bytes": 71434,
+          "commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+          "format": "BORROW-WORD",
+          "git_blob": "4f0483657396a7f735873e1b252482c53dfb2eb6",
+          "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-base.json.gz",
+          "pr": 3015,
+          "sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5",
+          "source": "PR3015 complete declared restore edit on PR2979; all inherited credits retained",
+          "source_path": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-base.json.gz"
+        },
+        "status_by_section_kind_placement": [
+          {
+            "counts": {
+              "NO_GAIN": 36400,
+              "REJECTED_GUARD": 3920
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 0,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5760
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 0,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 4160
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 1,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5760
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 1,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 25000,
+              "REJECTED_GUARD": 13000
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 0,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5360
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 0,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 2320
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 1,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5440
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 1,
+              "section": "B"
+            }
+          }
+        ],
+        "status_counts": {
+          "NO_GAIN": 90200,
+          "REJECTED_GUARD": 16920
+        },
+        "tariff_classes": {
+          "exact_profile_tie": 89624,
+          "strict_cost_increase_certified_in_saved_interval": 576
+        },
+        "unique_guard_certificates": 1132,
+        "unique_tariff_certificates": 3
+      },
+      "extra": {
+        "canonical_saved_row_identity_sha256": "8448a2a1ba13ec4ba8f927b1d6685f0927e852fcdd11cc569b2b4213e5692347",
+        "coverage": {
+          "all_receipts_complete": true,
+          "duplicate_ids_or_ordinals": 0,
+          "labels_per_plan_distribution": {
+            "80": 1339
+          },
+          "ordinals_complete": true,
+          "plan_ordinals_complete": true,
+          "plans": 1339,
+          "price_tasks": 64,
+          "rows": 107120,
+          "saved_run_counts_match": true,
+          "shards_complete_0_to_63": true,
+          "unique_ids": 107120,
+          "unique_ordinals": 107120
+        },
+        "guard_conditions_affected_rows": [
+          {
+            "condition": {
+              "lower": "A2",
+              "predicate": "frame_inclusion",
+              "upper": "U2"
+            },
+            "labeled_rows": 16920
+          },
+          {
+            "condition": {
+              "lower": "A1",
+              "predicate": "frame_inclusion",
+              "upper": "U1"
+            },
+            "labeled_rows": 11400
+          },
+          {
+            "condition": {
+              "lower": "Y2",
+              "predicate": "frame_inclusion",
+              "upper": "U2"
+            },
+            "labeled_rows": 10152
+          },
+          {
+            "condition": {
+              "lower": "A1",
+              "predicate": "frame_inclusion",
+              "upper": "Y1"
+            },
+            "labeled_rows": 6840
+          },
+          {
+            "condition": {
+              "lower": "A2",
+              "predicate": "frame_inclusion",
+              "upper": "Y2"
+            },
+            "labeled_rows": 6768
+          },
+          {
+            "condition": {
+              "lower": "Y1",
+              "predicate": "frame_inclusion",
+              "upper": "U1"
+            },
+            "labeled_rows": 4560
+          },
+          {
+            "condition": {
+              "lower": "Z",
+              "predicate": "frame_inclusion",
+              "upper": "D"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "lower": "Y2",
+              "predicate": "frame_inclusion",
+              "upper": "Z"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "i2"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "k"
+            },
+            "labeled_rows": 3840
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "j"
+            },
+            "labeled_rows": 3840
+          },
+          {
+            "condition": {
+              "lower": "Y1",
+              "predicate": "frame_inclusion",
+              "upper": "Y2"
+            },
+            "labeled_rows": 2280
+          },
+          {
+            "condition": {
+              "lower": "X",
+              "predicate": "frame_inclusion",
+              "upper": "Y1"
+            },
+            "labeled_rows": 1176
+          },
+          {
+            "condition": {
+              "lower": "L",
+              "predicate": "frame_inclusion",
+              "upper": "X"
+            },
+            "labeled_rows": 1176
+          }
+        ],
+        "guard_predicate_instances": {
+          "exit_inclusion": 12168,
+          "frame_inclusion": 70248
+        },
+        "guard_predicates_affected_rows": {
+          "exit_inclusion": 7320,
+          "frame_inclusion": 16920
+        },
+        "plan_feasibility": {
+          "all_labels_guard_rejected": 187,
+          "no_labels_guard_rejected": 1103,
+          "some_labels_guard_rejected": 49
+        },
+        "profile_delta_frequencies": [
+          {
+            "labeled_rows": 89624,
+            "profile_delta": {}
+          },
+          {
+            "labeled_rows": 384,
+            "profile_delta": {
+              "1": 4,
+              "2": -2
+            }
+          },
+          {
+            "labeled_rows": 192,
+            "profile_delta": {
+              "1": 6,
+              "2": -3
+            }
+          }
+        ],
+        "source_attribution": {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "author_login": "jeremykothe2",
+          "bytes": 71430,
+          "commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+          "format": "BORROW-WORD",
+          "git_blob": "81f95e21ede115e8bdb6bd522c641b37b740bdf7",
+          "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-extra.json.gz",
+          "pr": 3015,
+          "sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea",
+          "source": "PR3015 complete declared restore edit on PR2979; all inherited credits retained",
+          "source_path": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-extra.json.gz"
+        },
+        "status_by_section_kind_placement": [
+          {
+            "counts": {
+              "NO_GAIN": 36400,
+              "REJECTED_GUARD": 3920
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 0,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5760
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 0,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 4160
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 1,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5760
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 1,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 25000,
+              "REJECTED_GUARD": 13000
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 0,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5360
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 0,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 2320
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 1,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5440
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 1,
+              "section": "B"
+            }
+          }
+        ],
+        "status_counts": {
+          "NO_GAIN": 90200,
+          "REJECTED_GUARD": 16920
+        },
+        "tariff_classes": {
+          "exact_profile_tie": 89624,
+          "strict_cost_increase_certified_in_saved_interval": 576
+        },
+        "unique_guard_certificates": 1132,
+        "unique_tariff_certificates": 3
+      }
+    },
+    "53017": {
+      "base": {
+        "canonical_saved_row_identity_sha256": "89625c775cadf6b4aa248c054b01ffab0f3893cefd7ac629e59e6506641df62e",
+        "coverage": {
+          "all_receipts_complete": true,
+          "duplicate_ids_or_ordinals": 0,
+          "labels_per_plan_distribution": {
+            "80": 1339
+          },
+          "ordinals_complete": true,
+          "plan_ordinals_complete": true,
+          "plans": 1339,
+          "price_tasks": 64,
+          "rows": 107120,
+          "saved_run_counts_match": true,
+          "shards_complete_0_to_63": true,
+          "unique_ids": 107120,
+          "unique_ordinals": 107120
+        },
+        "guard_conditions_affected_rows": [
+          {
+            "condition": {
+              "lower": "A2",
+              "predicate": "frame_inclusion",
+              "upper": "U2"
+            },
+            "labeled_rows": 16920
+          },
+          {
+            "condition": {
+              "lower": "A1",
+              "predicate": "frame_inclusion",
+              "upper": "U1"
+            },
+            "labeled_rows": 11400
+          },
+          {
+            "condition": {
+              "lower": "Y2",
+              "predicate": "frame_inclusion",
+              "upper": "U2"
+            },
+            "labeled_rows": 10152
+          },
+          {
+            "condition": {
+              "lower": "A1",
+              "predicate": "frame_inclusion",
+              "upper": "Y1"
+            },
+            "labeled_rows": 6840
+          },
+          {
+            "condition": {
+              "lower": "A2",
+              "predicate": "frame_inclusion",
+              "upper": "Y2"
+            },
+            "labeled_rows": 6768
+          },
+          {
+            "condition": {
+              "lower": "Y1",
+              "predicate": "frame_inclusion",
+              "upper": "U1"
+            },
+            "labeled_rows": 4560
+          },
+          {
+            "condition": {
+              "lower": "Z",
+              "predicate": "frame_inclusion",
+              "upper": "D"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "lower": "Y2",
+              "predicate": "frame_inclusion",
+              "upper": "Z"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "i2"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "k"
+            },
+            "labeled_rows": 3840
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "j"
+            },
+            "labeled_rows": 3840
+          },
+          {
+            "condition": {
+              "lower": "Y1",
+              "predicate": "frame_inclusion",
+              "upper": "Y2"
+            },
+            "labeled_rows": 2280
+          },
+          {
+            "condition": {
+              "lower": "X",
+              "predicate": "frame_inclusion",
+              "upper": "Y1"
+            },
+            "labeled_rows": 1176
+          },
+          {
+            "condition": {
+              "lower": "L",
+              "predicate": "frame_inclusion",
+              "upper": "X"
+            },
+            "labeled_rows": 1176
+          }
+        ],
+        "guard_predicate_instances": {
+          "exit_inclusion": 12168,
+          "frame_inclusion": 70248
+        },
+        "guard_predicates_affected_rows": {
+          "exit_inclusion": 7320,
+          "frame_inclusion": 16920
+        },
+        "plan_feasibility": {
+          "all_labels_guard_rejected": 187,
+          "no_labels_guard_rejected": 1103,
+          "some_labels_guard_rejected": 49
+        },
+        "profile_delta_frequencies": [
+          {
+            "labeled_rows": 89624,
+            "profile_delta": {}
+          },
+          {
+            "labeled_rows": 384,
+            "profile_delta": {
+              "1": 4,
+              "2": -2
+            }
+          },
+          {
+            "labeled_rows": 192,
+            "profile_delta": {
+              "1": 6,
+              "2": -3
+            }
+          }
+        ],
+        "source_attribution": {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "author_login": "jeremykothe2",
+          "bytes": 71434,
+          "commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+          "format": "BORROW-WORD",
+          "git_blob": "4f0483657396a7f735873e1b252482c53dfb2eb6",
+          "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-base.json.gz",
+          "pr": 3015,
+          "sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5",
+          "source": "PR3015 complete declared restore edit on PR2979; all inherited credits retained",
+          "source_path": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-base.json.gz"
+        },
+        "status_by_section_kind_placement": [
+          {
+            "counts": {
+              "NO_GAIN": 36400,
+              "REJECTED_GUARD": 3920
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 0,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5760
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 0,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 4160
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 1,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5760
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 1,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 25000,
+              "REJECTED_GUARD": 13000
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 0,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5360
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 0,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 2320
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 1,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5440
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 1,
+              "section": "B"
+            }
+          }
+        ],
+        "status_counts": {
+          "NO_GAIN": 90200,
+          "REJECTED_GUARD": 16920
+        },
+        "tariff_classes": {
+          "exact_profile_tie": 89624,
+          "strict_cost_increase_certified_in_saved_interval": 576
+        },
+        "unique_guard_certificates": 1132,
+        "unique_tariff_certificates": 3
+      },
+      "extra": {
+        "canonical_saved_row_identity_sha256": "8448a2a1ba13ec4ba8f927b1d6685f0927e852fcdd11cc569b2b4213e5692347",
+        "coverage": {
+          "all_receipts_complete": true,
+          "duplicate_ids_or_ordinals": 0,
+          "labels_per_plan_distribution": {
+            "80": 1339
+          },
+          "ordinals_complete": true,
+          "plan_ordinals_complete": true,
+          "plans": 1339,
+          "price_tasks": 64,
+          "rows": 107120,
+          "saved_run_counts_match": true,
+          "shards_complete_0_to_63": true,
+          "unique_ids": 107120,
+          "unique_ordinals": 107120
+        },
+        "guard_conditions_affected_rows": [
+          {
+            "condition": {
+              "lower": "A2",
+              "predicate": "frame_inclusion",
+              "upper": "U2"
+            },
+            "labeled_rows": 16920
+          },
+          {
+            "condition": {
+              "lower": "A1",
+              "predicate": "frame_inclusion",
+              "upper": "U1"
+            },
+            "labeled_rows": 11400
+          },
+          {
+            "condition": {
+              "lower": "Y2",
+              "predicate": "frame_inclusion",
+              "upper": "U2"
+            },
+            "labeled_rows": 10152
+          },
+          {
+            "condition": {
+              "lower": "A1",
+              "predicate": "frame_inclusion",
+              "upper": "Y1"
+            },
+            "labeled_rows": 6840
+          },
+          {
+            "condition": {
+              "lower": "A2",
+              "predicate": "frame_inclusion",
+              "upper": "Y2"
+            },
+            "labeled_rows": 6768
+          },
+          {
+            "condition": {
+              "lower": "Y1",
+              "predicate": "frame_inclusion",
+              "upper": "U1"
+            },
+            "labeled_rows": 4560
+          },
+          {
+            "condition": {
+              "lower": "Z",
+              "predicate": "frame_inclusion",
+              "upper": "D"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "lower": "Y2",
+              "predicate": "frame_inclusion",
+              "upper": "Z"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "i2"
+            },
+            "labeled_rows": 4488
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "k"
+            },
+            "labeled_rows": 3840
+          },
+          {
+            "condition": {
+              "predicate": "exit_inclusion",
+              "register": "j"
+            },
+            "labeled_rows": 3840
+          },
+          {
+            "condition": {
+              "lower": "Y1",
+              "predicate": "frame_inclusion",
+              "upper": "Y2"
+            },
+            "labeled_rows": 2280
+          },
+          {
+            "condition": {
+              "lower": "X",
+              "predicate": "frame_inclusion",
+              "upper": "Y1"
+            },
+            "labeled_rows": 1176
+          },
+          {
+            "condition": {
+              "lower": "L",
+              "predicate": "frame_inclusion",
+              "upper": "X"
+            },
+            "labeled_rows": 1176
+          }
+        ],
+        "guard_predicate_instances": {
+          "exit_inclusion": 12168,
+          "frame_inclusion": 70248
+        },
+        "guard_predicates_affected_rows": {
+          "exit_inclusion": 7320,
+          "frame_inclusion": 16920
+        },
+        "plan_feasibility": {
+          "all_labels_guard_rejected": 187,
+          "no_labels_guard_rejected": 1103,
+          "some_labels_guard_rejected": 49
+        },
+        "profile_delta_frequencies": [
+          {
+            "labeled_rows": 89624,
+            "profile_delta": {}
+          },
+          {
+            "labeled_rows": 384,
+            "profile_delta": {
+              "1": 4,
+              "2": -2
+            }
+          },
+          {
+            "labeled_rows": 192,
+            "profile_delta": {
+              "1": 6,
+              "2": -3
+            }
+          }
+        ],
+        "source_attribution": {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "author_login": "jeremykothe2",
+          "bytes": 71430,
+          "commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+          "format": "BORROW-WORD",
+          "git_blob": "81f95e21ede115e8bdb6bd522c641b37b740bdf7",
+          "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-extra.json.gz",
+          "pr": 3015,
+          "sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea",
+          "source": "PR3015 complete declared restore edit on PR2979; all inherited credits retained",
+          "source_path": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-extra.json.gz"
+        },
+        "status_by_section_kind_placement": [
+          {
+            "counts": {
+              "NO_GAIN": 36400,
+              "REJECTED_GUARD": 3920
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 0,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5760
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 0,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 4160
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 1,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5760
+            },
+            "stratum": {
+              "kind": "in",
+              "placement": 1,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 25000,
+              "REJECTED_GUARD": 13000
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 0,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5360
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 0,
+              "section": "B"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 2320
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 1,
+              "section": "A"
+            }
+          },
+          {
+            "counts": {
+              "NO_GAIN": 5440
+            },
+            "stratum": {
+              "kind": "out",
+              "placement": 1,
+              "section": "B"
+            }
+          }
+        ],
+        "status_counts": {
+          "NO_GAIN": 90200,
+          "REJECTED_GUARD": 16920
+        },
+        "tariff_classes": {
+          "exact_profile_tie": 89624,
+          "strict_cost_increase_certified_in_saved_interval": 576
+        },
+        "unique_guard_certificates": 1132,
+        "unique_tariff_certificates": 3
+      }
+    }
+  },
+  "census": [
+    {
+      "artifact": {
+        "path": "data/continuation-11/j2-v1/census/task-00000.json.gz",
+        "sha256": "3d47332179ae5f2b7cd17824280874e0e630fc607cb3ab555d582996864e9a65"
+      },
+      "complete": true,
+      "counts": {
+        "admissible_carrier_choices": 2678,
+        "candidates": 107120,
+        "commuting_placements": 1339,
+        "crossings_verified": 1035674,
+        "noncommuting_placements": 4417,
+        "placements_considered": 5756,
+        "ratio_rejected_carriers": 0,
+        "scalar_precondition_rejected_placements": 0,
+        "source_excluded_addresses": 2878
+      },
+      "exclusion_predicates": {
+        "noncommuting_crossing": 4417
+      },
+      "first_exclusion_witness": {
+        "commutation": {
+          "commutes": false,
+          "method": "add_guard",
+          "selected_source_differs_unselected_target": false,
+          "unselected_source_differs_selected_target": true
+        },
+        "plan_address": [
+          "A",
+          92,
+          93,
+          1645,
+          1647,
+          "in",
+          1
+        ],
+        "predicate": "noncommuting_crossing",
+        "selected_gate": [
+          "add",
+          395,
+          225,
+          1,
+          1,
+          []
+        ],
+        "selected_index": 93,
+        "unselected_gate": [
+          "add",
+          225,
+          363,
+          1,
+          1,
+          []
+        ],
+        "unselected_index": 111,
+        "verified_prefix_count": 18
+      },
+      "provider": "base",
+      "seed": 53017,
+      "status": "PASS"
+    },
+    {
+      "artifact": {
+        "path": "data/continuation-11/j2-v1/census/task-00001.json.gz",
+        "sha256": "6319aae9139687462072b9688c91ad2bbd5a3519724790c84e24ae5721b6ca37"
+      },
+      "complete": true,
+      "counts": {
+        "admissible_carrier_choices": 2678,
+        "candidates": 107120,
+        "commuting_placements": 1339,
+        "crossings_verified": 1035674,
+        "noncommuting_placements": 4417,
+        "placements_considered": 5756,
+        "ratio_rejected_carriers": 0,
+        "scalar_precondition_rejected_placements": 0,
+        "source_excluded_addresses": 2878
+      },
+      "exclusion_predicates": {
+        "noncommuting_crossing": 4417
+      },
+      "first_exclusion_witness": {
+        "commutation": {
+          "commutes": false,
+          "method": "add_guard",
+          "selected_source_differs_unselected_target": false,
+          "unselected_source_differs_selected_target": true
+        },
+        "plan_address": [
+          "A",
+          92,
+          93,
+          1645,
+          1647,
+          "in",
+          1
+        ],
+        "predicate": "noncommuting_crossing",
+        "selected_gate": [
+          "add",
+          395,
+          225,
+          1,
+          1,
+          []
+        ],
+        "selected_index": 93,
+        "unselected_gate": [
+          "add",
+          225,
+          363,
+          1,
+          1,
+          []
+        ],
+        "unselected_index": 111,
+        "verified_prefix_count": 18
+      },
+      "provider": "extra",
+      "seed": 53017,
+      "status": "PASS"
+    },
+    {
+      "artifact": {
+        "path": "data/continuation-11/j2-v1/census/task-00002.json.gz",
+        "sha256": "1c54f06dc5fe43ec54cb09f0b4fd7e56d5724dfd9984c9d1bf77d57c045f156a"
+      },
+      "complete": true,
+      "counts": {
+        "admissible_carrier_choices": 2678,
+        "candidates": 107120,
+        "commuting_placements": 1339,
+        "crossings_verified": 1035674,
+        "noncommuting_placements": 4417,
+        "placements_considered": 5756,
+        "ratio_rejected_carriers": 0,
+        "scalar_precondition_rejected_placements": 0,
+        "source_excluded_addresses": 2878
+      },
+      "exclusion_predicates": {
+        "noncommuting_crossing": 4417
+      },
+      "first_exclusion_witness": {
+        "commutation": {
+          "commutes": false,
+          "method": "add_guard",
+          "selected_source_differs_unselected_target": false,
+          "unselected_source_differs_selected_target": true
+        },
+        "plan_address": [
+          "A",
+          92,
+          93,
+          1645,
+          1647,
+          "in",
+          1
+        ],
+        "predicate": "noncommuting_crossing",
+        "selected_gate": [
+          "add",
+          395,
+          225,
+          1,
+          1,
+          []
+        ],
+        "selected_index": 93,
+        "unselected_gate": [
+          "add",
+          225,
+          363,
+          1,
+          1,
+          []
+        ],
+        "unselected_index": 111,
+        "verified_prefix_count": 18
+      },
+      "provider": "base",
+      "seed": 106013,
+      "status": "PASS"
+    },
+    {
+      "artifact": {
+        "path": "data/continuation-11/j2-v1/census/task-00003.json.gz",
+        "sha256": "1b4878ce6331c0a41a97b2fa1adc8a3dbd865e1f9aecf36ca1a24c9698491cf5"
+      },
+      "complete": true,
+      "counts": {
+        "admissible_carrier_choices": 2678,
+        "candidates": 107120,
+        "commuting_placements": 1339,
+        "crossings_verified": 1035674,
+        "noncommuting_placements": 4417,
+        "placements_considered": 5756,
+        "ratio_rejected_carriers": 0,
+        "scalar_precondition_rejected_placements": 0,
+        "source_excluded_addresses": 2878
+      },
+      "exclusion_predicates": {
+        "noncommuting_crossing": 4417
+      },
+      "first_exclusion_witness": {
+        "commutation": {
+          "commutes": false,
+          "method": "add_guard",
+          "selected_source_differs_unselected_target": false,
+          "unselected_source_differs_selected_target": true
+        },
+        "plan_address": [
+          "A",
+          92,
+          93,
+          1645,
+          1647,
+          "in",
+          1
+        ],
+        "predicate": "noncommuting_crossing",
+        "selected_gate": [
+          "add",
+          395,
+          225,
+          1,
+          1,
+          []
+        ],
+        "selected_index": 93,
+        "unselected_gate": [
+          "add",
+          225,
+          363,
+          1,
+          1,
+          []
+        ],
+        "unselected_index": 111,
+        "verified_prefix_count": 18
+      },
+      "provider": "extra",
+      "seed": 106013,
+      "status": "PASS"
+    }
+  ],
+  "concerns": [],
+  "confirmed_in_saved_run": true,
+  "integrity_review_status": "PASS",
+  "interpretation": [
+    "Counts are labeled corner addresses, not independent statistical observations. Duplicate geometric corners are intentionally retained by the registered domain.",
+    "An all-label guard rejection applies only to that recorded packet-placement family with its registered carriers, orders, corners and fixed exterior frames; it is not global frame or scalar-production impossibility.",
+    "A zero stored profile delta is an exact recursive-profile tie in this complete-window bill. It does not establish equal native primitive cost or interchangeable physical admission.",
+    "Positive stored moment intervals describe cost increases at the registered PR3030 diagnostic endpoint only. No interval was recomputed in this review.",
+    "The saved NULL remains limited to the registered historical words, deterministic gather placements, fixed context and twenty-corner family. It does not imply a global kappa ceiling, general confluence or an intrinsic sandpile Laplacian.",
+    "The current source-reported comparator supersedes PR3030. No positive candidate was retained and no fresh native/physical/outer admission was performed. This review authorizes no follow-up search."
+  ],
+  "method": "Sequentially read authenticated saved JSON/gzip receipts, count existing labels and profile-delta records, compare saved rational interval endpoints with zero, and compare saved row identities and coverage metadata. No scientific source imports, source-word extraction, candidate construction, repricing, solver, model, test or fresh interval computation.",
+  "new_scientific_experiment": false,
+  "posthoc_descriptive_only": true,
+  "price_receipt_authentication": {
+    "all_match_saved_run_manifest": true,
+    "count": 256,
+    "manifest_reference": {
+      "path": "results/CONTINUATION-11/J2-COMMUTING-EXPOSURE/v1/RUN.json",
+      "sha256": "6dc90878f08d54909766fcbac979116f85b6b691d1f791fdcd4e66fa90093666"
+    },
+    "ordered_receipt_refs_sha256": "fc56eba24c410cd4651d41f6ad8225d4392ea154d0d2c255fc5f9d1d60bdacdc"
+  },
+  "recorded_utc": "2026-10-16T21:53:53.857134+00:00",
+  "representative_saved_certificates": {
+    "guard:exit_inclusion": {
+      "artifact": {
+        "path": "data/continuation-11/j2-v1/prices/task-00000.json.gz",
+        "sha256": "4477ec9a99b7a084b2775fdd1f3712426ec473a22928d274b4ae460db76814f6"
+      },
+      "certificate": [
+        {
+          "excluded_vector": 145,
+          "lower": "A1",
+          "lower_frame": [
+            145
+          ],
+          "predicate": "frame_inclusion",
+          "upper": "U1",
+          "upper_frame": []
+        },
+        {
+          "excluded_vector": 145,
+          "lower": "A2",
+          "lower_frame": [
+            145
+          ],
+          "predicate": "frame_inclusion",
+          "upper": "U2",
+          "upper_frame": []
+        },
+        {
+          "excluded_vector": 145,
+          "lower": "Y1",
+          "lower_frame": [
+            145
+          ],
+          "predicate": "frame_inclusion",
+          "upper": "U1",
+          "upper_frame": []
+        },
+        {
+          "excluded_vector": 145,
+          "lower": "Y2",
+          "lower_frame": [
+            145
+          ],
+          "predicate": "frame_inclusion",
+          "upper": "U2",
+          "upper_frame": []
+        },
+        {
+          "excluded_vector": 145,
+          "lower": "Z",
+          "lower_frame": [
+            145
+          ],
+          "predicate": "frame_inclusion",
+          "upper": "D",
+          "upper_frame": []
+        },
+        {
+          "actual": [
+            145
+          ],
+          "excluded_vector": 145,
+          "predicate": "exit_inclusion",
+          "register": "k",
+          "required": []
+        }
+      ],
+      "row": {
+        "candidate_id": "A.904.905.2497.2498.in.0.0.0.0",
+        "failure_id": "430ece17a991be11789b5b6b56063f05f9d150c7f69b7b09a2f7bfbc6c5ad361",
+        "ordinal": 35840,
+        "plan_id": "6682ee0ea1bf93c86124e27b9aa75e3df9bfcf9d13f5b8e387cbfe71b5021101",
+        "plan_ordinal": 448,
+        "status": "REJECTED_GUARD"
+      }
+    },
+    "guard:frame_inclusion": {
+      "artifact": {
+        "path": "data/continuation-11/j2-v1/prices/task-00000.json.gz",
+        "sha256": "4477ec9a99b7a084b2775fdd1f3712426ec473a22928d274b4ae460db76814f6"
+      },
+      "certificate": [
+        {
+          "excluded_vector": 145,
+          "lower": "A1",
+          "lower_frame": [
+            145
+          ],
+          "predicate": "frame_inclusion",
+          "upper": "U1",
+          "upper_frame": []
+        },
+        {
+          "excluded_vector": 145,
+          "lower": "A2",
+          "lower_frame": [
+            145
+          ],
+          "predicate": "frame_inclusion",
+          "upper": "U2",
+          "upper_frame": []
+        },
+        {
+          "excluded_vector": 145,
+          "lower": "Y1",
+          "lower_frame": [
+            145
+          ],
+          "predicate": "frame_inclusion",
+          "upper": "U1",
+          "upper_frame": []
+        },
+        {
+          "excluded_vector": 145,
+          "lower": "Y2",
+          "lower_frame": [
+            145
+          ],
+          "predicate": "frame_inclusion",
+          "upper": "U2",
+          "upper_frame": []
+        },
+        {
+          "excluded_vector": 145,
+          "lower": "Z",
+          "lower_frame": [
+            145
+          ],
+          "predicate": "frame_inclusion",
+          "upper": "D",
+          "upper_frame": []
+        },
+        {
+          "actual": [
+            145
+          ],
+          "excluded_vector": 145,
+          "predicate": "exit_inclusion",
+          "register": "k",
+          "required": []
+        }
+      ],
+      "row": {
+        "candidate_id": "A.904.905.2497.2498.in.0.0.0.0",
+        "failure_id": "430ece17a991be11789b5b6b56063f05f9d150c7f69b7b09a2f7bfbc6c5ad361",
+        "ordinal": 35840,
+        "plan_id": "6682ee0ea1bf93c86124e27b9aa75e3df9bfcf9d13f5b8e387cbfe71b5021101",
+        "plan_ordinal": 448,
+        "status": "REJECTED_GUARD"
+      }
+    },
+    "tariff:{\"1\":4,\"2\":-2}": {
+      "artifact": {
+        "path": "data/continuation-11/j2-v1/prices/task-00034.json.gz",
+        "sha256": "1b99ccd9aa8eea19b158656ecbfeb099ddce33d220523a397a4803f74655e55d"
+      },
+      "certificate": {
+        "moment_delta": {
+          "endpoint": "345830551200866186907/200000000000000000000000",
+          "exact_profile_identity": false,
+          "lower": "3828305437249297143869750915337441448002336605826930826160622710392299289/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+          "upper": "957076359312324285967437728834360362000584151456732706540155677598074823/14474011154664524427946373126085988481658748083205070504932198000989141204992"
+        },
+        "profile_delta": {
+          "1": 4,
+          "2": -2
+        }
+      },
+      "row": {
+        "candidate_id": "B.964.965.972.973.out.1.0.0.1",
+        "ordinal": 105121,
+        "plan_id": "866e9d69ff9000dc8cac734a89ece6e1fe3810c68b507644e5041d81f38d7752",
+        "plan_ordinal": 1314,
+        "status": "NO_GAIN",
+        "tariff_id": "578b7ae74550f429533edc01fee812f9529e56782b2e6397278138740b5187ec"
+      }
+    },
+    "tariff:{\"1\":6,\"2\":-3}": {
+      "artifact": {
+        "path": "data/continuation-11/j2-v1/prices/task-00034.json.gz",
+        "sha256": "1b99ccd9aa8eea19b158656ecbfeb099ddce33d220523a397a4803f74655e55d"
+      },
+      "certificate": {
+        "moment_delta": {
+          "endpoint": "345830551200866186907/200000000000000000000000",
+          "exact_profile_identity": false,
+          "lower": "11484916311747891431609252746012324344007009817480792478481868131176897867/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+          "upper": "2871229077936972857902313186503081086001752454370198119620467032794224469/28948022309329048855892746252171976963317496166410141009864396001978282409984"
+        },
+        "profile_delta": {
+          "1": 6,
+          "2": -3
+        }
+      },
+      "row": {
+        "candidate_id": "B.964.965.972.973.out.1.0.1.12",
+        "ordinal": 105152,
+        "plan_id": "866e9d69ff9000dc8cac734a89ece6e1fe3810c68b507644e5041d81f38d7752",
+        "plan_ordinal": 1314,
+        "status": "NO_GAIN",
+        "tariff_id": "946bc444a06b441a2745473fcff0b329bf77a43485cf0658f23b370acf454a0a"
+      }
+    },
+    "tariff:{}": {
+      "artifact": {
+        "path": "data/continuation-11/j2-v1/prices/task-00000.json.gz",
+        "sha256": "4477ec9a99b7a084b2775fdd1f3712426ec473a22928d274b4ae460db76814f6"
+      },
+      "certificate": {
+        "moment_delta": {
+          "endpoint": "345830551200866186907/200000000000000000000000",
+          "exact_profile_identity": true,
+          "lower": "0",
+          "upper": "0"
+        },
+        "profile_delta": {}
+      },
+      "row": {
+        "candidate_id": "A.92.93.1645.1647.in.0.0.0.0",
+        "ordinal": 0,
+        "plan_id": "e059cb4193c0be3edd768d9953c9aab069107d99b7aec93b19b37d22758ab87e",
+        "plan_ordinal": 0,
+        "status": "NO_GAIN",
+        "tariff_id": "8ad6d9b46425bf84450cf6f4cb254a498eaeba7884f0365eef4df2d48da0bf7b"
+      }
+    }
+  },
+  "resource_use_from_saved_run": {
+    "cpu_seconds": 1216.10677938,
+    "wall_seconds": 92.09107517730445,
+    "workers": 61
+  },
+  "reviewer": "Independent fill/matching agent",
+  "schema_version": 1,
+  "scientific_status_unchanged": "NULL",
+  "seed_comparison": {
+    "base": {
+      "canonical_saved_rows_agree": true,
+      "same_descriptive_summary": true
+    },
+    "extra": {
+      "canonical_saved_rows_agree": true,
+      "same_descriptive_summary": true
+    }
+  },
+  "status": "DESCRIPTIVE_SAVED_OUTCOME_REVIEW"
+}

@@ -1,0 +1,215 @@
+{
+  "administrative_cpu_seconds": 67.98142276,
+  "recorded_utc": "2026-10-16T21:56:46.893662+00:00",
+  "stable": {
+    "acquisitions": [
+      {
+        "author": "Nick Petalas (petalas)",
+        "files": 37,
+        "path": "data/continuation-10/pr3030/ACQUISITION.json",
+        "payload_bytes": 210329,
+        "sha256": "e79d1c92a0fe637e71d0ee81026867a9b671d5e6f044ffa7c6498fe3387f1c14"
+      },
+      {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "files": 112,
+        "path": "data/continuation-05/pr2979/ACQUISITION.json",
+        "payload_bytes": 3439921,
+        "sha256": "e5ad48ac05e897dcc2e073d29be451cfd1493ba3077e7e2de0f9460aa11a7d71"
+      },
+      {
+        "author": null,
+        "files": 20,
+        "path": "data/continuation-11/latest-sources/ACQUISITION.json",
+        "payload_bytes": 307009,
+        "sha256": "08f77062e367fecde37005ebb199e4f555d15c8034524261d5b12ef963d0ad5c"
+      },
+      {
+        "author": "jeremykothe2",
+        "files": 37,
+        "path": "data/continuation-07/holdout3015/ACQUISITION.json",
+        "payload_bytes": 1841940,
+        "sha256": "d0b48e18b559fc323cdd9e12a402d8f42b48ead8c8629f61e5d062f9adf1dde7"
+      }
+    ],
+    "base_work_commit": "ef2dafadab5e048ea82668d5bdaf6cee7b80404a",
+    "experiments": {
+      "J2-COMMUTING-EXPOSURE": [
+        {
+          "attempt": "v1",
+          "completed_by_phase": {
+            "baseline": 4,
+            "census": 4,
+            "controls": 2,
+            "prices": 256
+          },
+          "controls": {
+            "106013": {
+              "all24_gather_control_cases": 384,
+              "direct_window_operator_checks": 2050,
+              "direct_window_tariff_checks": 1025,
+              "inherited_checks": 3212,
+              "inherited_control_result_sha256": "b2504bd2a3fc23840ee2aecc0cb2d416dcd55abfb099908702ebc12c80f11706",
+              "new_control_families": 37,
+              "total_checks": 8884
+            },
+            "53017": {
+              "all24_gather_control_cases": 384,
+              "direct_window_operator_checks": 2050,
+              "direct_window_tariff_checks": 1025,
+              "inherited_checks": 3212,
+              "inherited_control_result_sha256": "b2504bd2a3fc23840ee2aecc0cb2d416dcd55abfb099908702ebc12c80f11706",
+              "new_control_families": 37,
+              "total_checks": 8884
+            }
+          },
+          "cpu_seconds": 1216.10677938,
+          "detailed_artifacts": 276,
+          "detailed_bytes": 47082231,
+          "domain": {
+            "decision_from_saved_records": "NULL",
+            "providers": {
+              "base": {
+                "candidates": 107120,
+                "commutation_certificate_summary": {
+                  "legal_plans": 1339,
+                  "noncommuting_placements": 4417,
+                  "placements": 5756,
+                  "ratio_exclusions": 0,
+                  "scalar_precondition_rejected_placements": 0,
+                  "source_addresses": 2878,
+                  "successful_crossing_methods": {
+                    "add_guard": 780472,
+                    "pair_matrix": 113300
+                  },
+                  "verified_prefix_and_legal_crossings": 1035674
+                },
+                "guard_predicate_counts": {
+                  "exit_inclusion": 12168,
+                  "frame_inclusion": 70248
+                },
+                "identical_profile_rows": 89624,
+                "shards_per_seed": 64,
+                "status_counts": {
+                  "NO_GAIN": 90200,
+                  "REJECTED_GUARD": 16920
+                },
+                "strictly_costlier_rows": 576
+              },
+              "extra": {
+                "candidates": 107120,
+                "commutation_certificate_summary": {
+                  "legal_plans": 1339,
+                  "noncommuting_placements": 4417,
+                  "placements": 5756,
+                  "ratio_exclusions": 0,
+                  "scalar_precondition_rejected_placements": 0,
+                  "source_addresses": 2878,
+                  "successful_crossing_methods": {
+                    "add_guard": 780472,
+                    "pair_matrix": 113300
+                  },
+                  "verified_prefix_and_legal_crossings": 1035674
+                },
+                "guard_predicate_counts": {
+                  "exit_inclusion": 12168,
+                  "frame_inclusion": 70248
+                },
+                "identical_profile_rows": 89624,
+                "shards_per_seed": 64,
+                "status_counts": {
+                  "NO_GAIN": 90200,
+                  "REJECTED_GUARD": 16920
+                },
+                "strictly_costlier_rows": 576
+              }
+            },
+            "selected_pairs": 0,
+            "unresolved_rows": 0,
+            "unvalidated_paired": 0
+          },
+          "max_task_seconds": 14.418612944893539,
+          "max_worker_rss_bytes": 1785126912,
+          "memory_projections": [
+            {
+              "path": "data/continuation-11/j2-v1/BASELINE-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 101.46632385253906,
+              "sha256": "a5f5d267fac4b3a450ebaf73578b9ce4319499db38cc73397cf3413939ab1f91"
+            },
+            {
+              "path": "data/continuation-11/j2-v1/CENSUS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 101.46632385253906,
+              "sha256": "a5f5d267fac4b3a450ebaf73578b9ce4319499db38cc73397cf3413939ab1f91"
+            },
+            {
+              "path": "data/continuation-11/j2-v1/CONTROLS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 101.46632385253906,
+              "sha256": "a5f5d267fac4b3a450ebaf73578b9ce4319499db38cc73397cf3413939ab1f91"
+            },
+            {
+              "path": "data/continuation-11/j2-v1/PREPARATION-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 94.63209533691406,
+              "sha256": "0aa727b3b6e111ce191c51123df39a4769cef801d00545011a5670fd92f6a813"
+            },
+            {
+              "path": "data/continuation-11/j2-v1/PRICES-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 208.02125549316406,
+              "sha256": "c469f6d1eff7755e0edd356d9463d84cc6ec870b0be0b743fe977f7ffd51414e"
+            }
+          ],
+          "pool_status_counts": {
+            "OK": 266
+          },
+          "pool_tasks": 266,
+          "source_archives": {
+            "historical_administrative_preimages": [],
+            "reused_earlier_archives": 119,
+            "unique_source_payloads": 122
+          },
+          "source_credits_per_result": {
+            "106013": 26,
+            "53017": 26
+          },
+          "status": "NULL",
+          "wall_seconds": 92.09107517730445,
+          "worker_cpu_seconds": 1088.5174072239993
+        }
+      ]
+    },
+    "final_documents": {
+      "EXPERIMENTS.json": "2f68943b973f9d938f294a6c1d2dc9658e0750b3e4ef250d66dbf81bb0f1eb9b",
+      "HANDBACK.md": "f598aeb89d65aebc3e15b0673884b10658090c4da4064678b81981dc8a10318a",
+      "PREDICTIONS.json": "d6314174a138085ac2ee3612ecdfc66f556e5a899ff709000810cea48b27c912",
+      "RESULTS.md": "f87eeb41fa8aceb4fdd33a75b4095d9d9dbbad1af508d68a7c3c04e1a1fa684f",
+      "TASK.json": "c9a56337000a4b434d484a4c8bd73c0559c87fdfa1dcd3d3e0f59acca9f114ed"
+    },
+    "kind": "Administrative saved-byte audit; no scientific reruns",
+    "local_artifact_references_checked": 622,
+    "preserved_pre_round_files": 24742,
+    "schema_version": 1,
+    "script_sha256": "832713c5fd099faf50bc24d6fa5eb177580ad48c31652183ff2a1e04d88ffefa",
+    "source_checkpoints": {
+      "checkpoint": {
+        "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+        "files": 24,
+        "priority_revision": 6,
+        "sha256": "487fe49d146574d75422b67574aba8e0eb7611a1939612e00a2544c099896bdf"
+      },
+      "final_checkpoint": {
+        "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+        "files": 26,
+        "priority_revision": 6,
+        "sha256": "476979aa8587f60b021a2a0b8ae1dcf870f72b99f3d16a7a3ff559af56beb23e"
+      }
+    },
+    "status": "PASS",
+    "storage_bytes_excluding_audit": {
+      "global_results": 198738870,
+      "new_data": 49093252,
+      "new_pipeline": 156316,
+      "round_results": 701512
+    },
+    "total_experimental_cpu_seconds": 1216.10677938,
+    "total_pool_tasks": 266
+  }
+}
