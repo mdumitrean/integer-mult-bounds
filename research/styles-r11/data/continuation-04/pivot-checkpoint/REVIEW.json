@@ -1,0 +1,152 @@
+{
+  "acquisition": {
+    "bytes": 16259,
+    "path": "data/continuation-04/pivot-checkpoint/RECEIPT.json",
+    "sha256": "64f65b1403352692586a884f746ed003d9f1c5f5eff36cccd8c911772698dc46"
+  },
+  "active_claim_changes": {
+    "changed_comment_ids": [
+      18975555
+    ],
+    "changed_comments": 1,
+    "claim": {
+      "active_scope": "Iterated lowering/extraction on L27R; alternative stage2 normals25/52. No adjacent first/middle-chord expansion claim in this comment.",
+      "api_comment_updatedAt": "2026-10-16T15:32:36Z",
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "body_time_label": "15:35 UTC",
+      "comment": 18975555,
+      "evidence_limit": "No independent verification by this checkpoint; no source package yet available in the acquired public delta.",
+      "expires_utc": "2026-10-16T18:30:00Z",
+      "local_profile": {
+        "1": 2445,
+        "2": 706,
+        "3": 232,
+        "4": 108,
+        "5": 18,
+        "8": 8
+      },
+      "physical_families": 66813,
+      "private_buffers": 91,
+      "reported_cap": "0.001729035764875516181444",
+      "reported_kappa": "0.001729033982646513517717 - 1e-46 - 1e-70",
+      "status": "LOCAL-ONLY; author reports complete native/admission/release PASS, no released artifact or exact commit",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18975555",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "6": 16,
+        "7": 52,
+        "8": 99,
+        "9": 213
+      },
+      "word": "L27R: PR2942 +22helper shared-rank7 lowering +five rank8 extractions +PR2957 fourteen rewrites"
+    },
+    "discussion_updatedAt_unchanged": true,
+    "thread": {
+      "bytes": 33605,
+      "path": "data/continuation-04/pivot-checkpoint/threads/discussion-2612.json.gz",
+      "sha256": "43546f67ee24d492358025e8faa2b6ae3d78592ba7464a9bdb2034df6b77ace0"
+    },
+    "warning": "The discussion-level updatedAt stayed unchanged while one comment changed. The complete refetch was required to detect this."
+  },
+  "comparators": [
+    {
+      "admission": "Reported completed conditional finite release",
+      "head": "e62d3eb9005117d82a9babcfa937ecc53237c490",
+      "head_and_body_unchanged": true,
+      "metadata": {
+        "bytes": 4308,
+        "path": "data/continuation-04/pivot-checkpoint/pr-2966.json.gz",
+        "sha256": "29e01f838afca5a0a0a37babeb1d2f85c3e81d66d5aeab5e89aabda0c671a689"
+      },
+      "pr": 2966,
+      "state": "closed",
+      "updated_at": "2026-10-16T15:18:22Z"
+    },
+    {
+      "admission": "Finite native/owner/moment candidate; outer pending",
+      "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+      "head_and_body_unchanged": true,
+      "metadata": {
+        "bytes": 3623,
+        "path": "data/continuation-04/pivot-checkpoint/pr-2969.json.gz",
+        "sha256": "bc4511611994ae126891778b27d0066aceae165c47c1648761b7a9581ee6bd89"
+      },
+      "pr": 2969,
+      "state": "closed",
+      "updated_at": "2026-10-16T15:18:21Z"
+    }
+  ],
+  "coverage": {
+    "discussion_2612": {
+      "comments": 21,
+      "complete": true,
+      "error": null,
+      "extra_reply_pages": 0,
+      "finished_utc": "2026-10-16T15:48:51.979155+00:00",
+      "incomplete_reply_threads": [],
+      "pages": 1,
+      "replies": 2,
+      "reported_comments": 21,
+      "started_utc": "2026-10-16T15:48:51.008576+00:00",
+      "unique_comments": 21
+    },
+    "updated_prs": {
+      "complete_all_prs": false,
+      "complete_recent_delta": true,
+      "new_since_cutoff": 1,
+      "pages": 1,
+      "reached_cutoff": true,
+      "rows": 100,
+      "unique_numbers": 100,
+      "updates_since_cutoff": 9
+    }
+  },
+  "coverage_limits": [
+    "Read-only bounded pivot checkpoint, no fetched code execution or scientific tests.",
+    "All-state PR metadata is paged in update-descending order until a page reaches the prior cutoff, at most4pages; pagination is not atomic.",
+    "Only Discussion2612 is fully refreshed; other discussions and arbitrary linked resources remain outside this delta.",
+    "Remote claims and archival merges are not independent admission or novelty evidence."
+  ],
+  "e2_decision": {
+    "attribution": "Classical production and all three corrective orders are already in CubeJerry/PR1533 on the old bit source; E1 last-chord NULL does not cover first/middle positions with different middle-exit register.",
+    "changed_comparator": "A materially stronger local-only claimed complete release now exists; PR2966 remains strongest released complete finite package identified.",
+    "claims": "Any local favorable word remains EXPLORATORY until fresh changed-word native/fill/outer admission, and must be compared with the stronger L27R claim. Do not reopen stopped contraction or endpoint-lowering lanes.",
+    "overlap_blocker_identified": false,
+    "permitted_scope": "Remaining first/middle corrective positions on the same pinned PR2966 word, with literal exterior interfaces fixed, as a separately registered source-domain test.",
+    "source_change_required_by_released_evidence": false
+  },
+  "guidance": {
+    "bytes": 2852,
+    "path": "data/continuation-04/pivot-checkpoint/guidance/PINS.json",
+    "sha256": "0c9d43f3fa37b0a2e8b07c0ed35b06241717eadd9c8802ca27a524032895ca5c"
+  },
+  "guidance_unchanged": true,
+  "main": "ff9019ba07a87ce40765c6e75dc4fb82df6a7789",
+  "new_or_updated_context": [
+    {
+      "author": "petalas",
+      "head": "cd23d242dfe0e7a71cafba0ad5590dc4f2fbf4f2",
+      "pr": 2977,
+      "relevance": "Reinforces separation of local algebra from fresh native/exported endpoint admission. Does not cover adjacent Steinberg expansions.",
+      "scope": "New scatter parity audit: duplicate pair can cancel in symbolic checker but change membership-based exported ADD; endpoint columns detect it. Selected source has unique rows and is not invalidated. No kappa."
+    },
+    {
+      "prs": [
+        2975,
+        2974,
+        2973,
+        2972,
+        2971,
+        2780,
+        1252,
+        826
+      ],
+      "scope": "Recent archival status updates or unrelated tooling/old supplier evidence; no newly released stronger complex word or direct E2 overlap identified in saved bodies."
+    }
+  ],
+  "priority_revision": 5,
+  "recorded_utc": "2026-10-16T15:50:40.457518+00:00",
+  "schema_version": 1,
+  "scope": "Bounded read-only pre-E2 source checkpoint. No scientific execution or fetched-code import."
+}
