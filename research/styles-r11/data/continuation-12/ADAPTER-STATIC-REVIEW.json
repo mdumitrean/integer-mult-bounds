@@ -1,0 +1,248 @@
+{
+  "blocking_issues": [],
+  "checks": [
+    {
+      "detail": {
+        "entries": 21
+      },
+      "name": "original_PIN_file_and_21_entries",
+      "status": "PASS"
+    },
+    {
+      "name": "trusted3015_source_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "trusted2979_source_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "trusted_admission_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "trusted_wordio_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "trusted_auditor_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "fixture2979_acquisition_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "fixture2979_manifest_coverage",
+      "status": "PASS"
+    },
+    {
+      "name": "fixture2979_all_112_payload_preimages",
+      "status": "PASS"
+    },
+    {
+      "name": "fixture3015_acquisition_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "fixture3015_all_37_payload_preimages",
+      "status": "PASS"
+    },
+    {
+      "name": "latest_all_20_payload_preimages",
+      "status": "PASS"
+    },
+    {
+      "name": "word_release_head_and_author",
+      "status": "PASS"
+    },
+    {
+      "name": "word_local_profile_and_dimensions_declared",
+      "status": "PASS"
+    },
+    {
+      "name": "word_base_five_way_SHA_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "word_base_comparison_before_after_binding",
+      "status": "PASS"
+    },
+    {
+      "name": "word_extra_five_way_SHA_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "word_extra_comparison_before_after_binding",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reported_comparator_exact_endpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "source_reported_comparator_profile_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "distinct_T740_dimensions",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "references": 8
+      },
+      "name": "complete_new_credit_reference_preimages",
+      "status": "PASS"
+    },
+    {
+      "detail": "S.prepare returns records/provenance/endpoint; M.prepare consumes standard base/extra records. Record fields match frozen CONT08 _load_record.",
+      "name": "parent_loader_ABI",
+      "status": "PASS_STATIC"
+    },
+    {
+      "detail": "08.prepare invokes trusted05.prepare once; source-specific 08.carrier_factors.prepare is never called by rank2\u2192J1.prepare, so its positive-fixture requirement is not accidentally triggered.",
+      "name": "old_fixture_startup_compatibility",
+      "status": "PASS_STATIC"
+    },
+    {
+      "detail": "S.baseline_task(spec) returns seed/provider/cpu_seconds/status/local_admission used by runner; finite audit enforces632 columns, forward+dual,91 buffers, exact paid/width parity and immutable source hash.",
+      "name": "baseline_worker_ABI",
+      "status": "PASS_STATIC"
+    },
+    {
+      "detail": "Trusted local_admission invokes the pinned PR2679 run_borrow on the full literal raw word, including compensation and derived cleanup; no fetched producer is run.",
+      "name": "cleanup_compensation_delegation",
+      "status": "PASS_STATIC"
+    },
+    {
+      "detail": "21 original PINS plus two2979, two3015, two3042 and one3054 source entries:28 expected. Full original and release credit contents remain nested in provenance.",
+      "name": "source_attribution_chain",
+      "status": "PASS_STATIC"
+    },
+    {
+      "detail": "Each seed RESULT keeps all source_attribution entries inline and provenance={path,sha256,bytes} pointing to its compressed full provenance; write() hashes saved bytes. Task manifests and IMPLEMENTATION separately bind the same source graph.",
+      "name": "compact_RESULT_provenance",
+      "status": "PASS_STATIC"
+    },
+    {
+      "detail": "Runner initializes source_attribution from original PINS before S.prepare; early preparation failures still retain those21 entries.",
+      "name": "preparation_failure_attribution",
+      "status": "PASS_STATIC"
+    },
+    {
+      "detail": "Adapter explicitly separates T74 word-declared physical66813 from source-reported T740 comparison663549. Fresh native/physical/outer admission remains false; runner does not make a kappa claim.",
+      "name": "finite_vs_complete_scope",
+      "status": "PASS_STATIC"
+    }
+  ],
+  "checks_count": 30,
+  "expected_complete_source_attribution_entries": 28,
+  "inputs": [
+    {
+      "bytes": 10528,
+      "path": "data/continuation-11/latest-sources/ACQUISITION.json",
+      "sha256": "08f77062e367fecde37005ebb199e4f555d15c8034524261d5b12ef963d0ad5c"
+    },
+    {
+      "bytes": 2346,
+      "path": "data/continuation-11/latest-sources/WORD-COMPARISON.json",
+      "sha256": "ca7d9138781b7f0ff64adc4c88029f9b2d55c62bb38d2868e94aaa947d1a18e9"
+    },
+    {
+      "bytes": 8578,
+      "path": "data/continuation-12/allocation-source/BINDINGS.json",
+      "sha256": "b9d7ce0eda0ccf2bfb3271a0e2f9db0c20d4207f553b3bb7aa08788663240ff1"
+    },
+    {
+      "bytes": 15544,
+      "path": "data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    }
+  ],
+  "nonblocking_limits": [
+    "Runtime finite-algebra assertions still require the registered pool baselines.",
+    "Source-reported full comparator receipts are bound as data; this review does not freshly admit the native/owner/outer theorem.",
+    "PR3042 CLAIM scope text contains inherited older wording; the pinned local-profile/word/native hashes, not that prose, define these inputs."
+  ],
+  "original_PIN_entries": 21,
+  "recorded_utc": "2026-10-16T23:34:35.936956+00:00",
+  "review_status": "PASS_STATIC_NO_EXECUTION",
+  "reviewer_scope": "Static integration and immutable-data byte/schema checks only. No scientific modules imported; no prepare, baseline, census, pricing or candidate execution.",
+  "schema_version": 1,
+  "source_authors": {
+    "2979": "Marius-Paul Dumitrean (mdumitrean)",
+    "3015": "Jeremy Kothe (jeremykothe2)",
+    "3042": "dcharb78",
+    "3054": "Nick Petalas (petalas)"
+  },
+  "sources": [
+    {
+      "bytes": 11287,
+      "path": "pipeline/continuation12/latest3042_adapter.py",
+      "sha256": "44bf3cfb6bcb0602b96d4260478a56761d5a4894670ed5208e3dcf58caac2aef"
+    },
+    {
+      "bytes": 29118,
+      "path": "pipeline/continuation12/run_rank2.py",
+      "sha256": "b0224d0e7fae42e7dce91b1155a9542b71da9b56dd1e45909d2e8d15706d8c8a"
+    },
+    {
+      "bytes": 46314,
+      "path": "pipeline/continuation12/rank2_carrier.py",
+      "sha256": "dfc2105a142fd01a8c3cfe099124e3d4987779f6bdc9b2b70a607fff04df5ca1"
+    },
+    {
+      "bytes": 44125,
+      "path": "pipeline/continuation09/shared_carrier.py",
+      "sha256": "6c8b9b40bdfabf575f5f4b687541cbd3a20f5c10d44720b95c12dfc5e1570c47"
+    },
+    {
+      "bytes": 38238,
+      "path": "pipeline/continuation08/carrier_factors.py",
+      "sha256": "220532f217d78cd2cf77067372c5a80ac76c6e622bf2a2275f7e610149175f69"
+    },
+    {
+      "bytes": 8000,
+      "path": "pipeline/continuation08/source3015.py",
+      "sha256": "bbc8c770d8540278988e32946069ee225be6ee1d39b13780ac392587e11261af"
+    },
+    {
+      "bytes": 14712,
+      "path": "pipeline/continuation05/source2979.py",
+      "sha256": "fb8c5f84e076ebd0514800139b9310539ca56f4808dd92889744dee067e65bbd"
+    },
+    {
+      "bytes": 60961,
+      "path": "pipeline/continuation/admission.py",
+      "sha256": "4feb94bb7b53d37a97233ef7a2556f9931d78f8ac6776f6d16fd458373002ec5"
+    },
+    {
+      "bytes": 20434,
+      "path": "pipeline/wordio.py",
+      "sha256": "a9c254acdc04c3302ed0a31d9e0da39a8e3348aa20d189798e86539464fd81d4"
+    }
+  ],
+  "word_refs": {
+    "base": {
+      "author_login": "dcharb78",
+      "bytes": 72539,
+      "git_blob": "2ee02e318c98281a71445b954feccd55c153827c",
+      "head": "84cc406ad91ec53fff329a11a445d7effe564a77",
+      "path": "data/continuation-11/latest-sources/3042/edits/FINAL-WORD-base.json.gz",
+      "pr": 3042,
+      "sha256": "7e98f6f2a6c9ce9e7e04b515bd8ce4a4a533ff05f01ea265be2a1a994695260e",
+      "source_path": "research/rank7-restore-carrier-skips/edits/FINAL-WORD-base.json.gz"
+    },
+    "extra": {
+      "author_login": "dcharb78",
+      "bytes": 72538,
+      "git_blob": "33ba5f34996a31edd197cb58eca575645575e529",
+      "head": "84cc406ad91ec53fff329a11a445d7effe564a77",
+      "path": "data/continuation-11/latest-sources/3042/edits/FINAL-WORD-extra.json.gz",
+      "pr": 3042,
+      "sha256": "1396410de482883416fc7f534062ab005b484056b035fdcfa3b5cc065536ba35",
+      "source_path": "research/rank7-restore-carrier-skips/edits/FINAL-WORD-extra.json.gz"
+    }
+  }
+}
