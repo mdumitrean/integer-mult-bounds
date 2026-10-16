@@ -1,0 +1,354 @@
+{
+  "active_adjacent_claim": {
+    "author": "petalas",
+    "do_not_duplicate": true,
+    "evidence": "LOCAL_ONLY; fresh providers and strict discovery reported, independent complete release still rebuilding.",
+    "expires_utc": "2026-10-16T20:00:00Z",
+    "root_interval": [
+      "0.0017291527560043309345350",
+      "0.0017291527560043309345351"
+    ],
+    "scope": "T740 PR3024 plus PR3015 R1 complete admission",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18980805"
+  },
+  "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+  "changed_guidance": [],
+  "checkpoint": {
+    "bytes": 43404,
+    "path": "data/continuation-09/checkpoint/RECEIPT.json",
+    "sha256": "6aa4b431cdd8677ce59bb612247c392e63accda998878a2ad4190a43a34b5efc"
+  },
+  "completed_adjacent_claim": {
+    "active": false,
+    "status": "DONE_RELEASED_PR3028",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18980713"
+  },
+  "coverage": {
+    "historical_corpora": [
+      {
+        "file": {
+          "bytes": 399232,
+          "path": "data/continuation-03/checkpoint/open-prs.json.gz",
+          "sha256": "d7b658eaf87476836f4f75ca4b41feebff853cdc6d2c4f0114453ca3859717cc"
+        },
+        "rows": 264,
+        "scope": "Historical saved body metadata; focused text read only, not a current complete refresh.",
+        "unique_pr_numbers": 264
+      },
+      {
+        "file": {
+          "bytes": 3477868,
+          "path": "data/continuation-03/checkpoint/closed-prs.json.gz",
+          "sha256": "28c59163e023da340179deca875896ad9bec70f89799f26441793690732ac528"
+        },
+        "rows": 2413,
+        "scope": "Historical saved body metadata; focused text read only, not a current complete refresh.",
+        "unique_pr_numbers": 2385
+      }
+    ],
+    "limits": [
+      "PR pagination and thread acquisition are non-atomic; current delta is complete only back to18:55:02UTC.",
+      "Four named threads are fully refreshed regardless of updatedAt; other discussion threads and arbitrary linked files are not refreshed.",
+      "Historical body text and2979read-merge/split statements do not establish complete prior-search coverage.",
+      "No statement of novelty, global impossibility, maintained-frontier improvement or fresh admission follows."
+    ],
+    "pr_delta": {
+      "complete_all_prs": false,
+      "complete_recent_delta": true,
+      "new_since_cutoff": 3,
+      "pages": 1,
+      "reached_cutoff": true,
+      "rows": 100,
+      "unique_numbers": 100,
+      "updates_since_cutoff": 3
+    },
+    "threads": {
+      "1163": {
+        "changed_records": [],
+        "coverage": {
+          "comments": 73,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:09:33.535551+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 1,
+          "replies": 12,
+          "reported_comments": 73,
+          "started_utc": "2026-10-16T19:09:32.408528+00:00",
+          "unique_comments": 73
+        },
+        "file": {
+          "bytes": 54213,
+          "path": "data/continuation-09/checkpoint/threads/discussion-1163.json.gz",
+          "sha256": "4946fb06ed9b205f4e67f6d1efbd6df4be92d398b7b9e6b591fcce9bae1ae390"
+        }
+      },
+      "1166": {
+        "changed_records": [
+          {
+            "author": {
+              "login": "petalas"
+            },
+            "body_sha256": "bb22b35922bb765a44f85d006868f939bf6127373d273e93342e034f6fe74374",
+            "change": "ADDED",
+            "created_at": "2026-10-16T19:09:09Z",
+            "kind": "comment",
+            "updated_at": "2026-10-16T19:09:09Z",
+            "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-18981167"
+          }
+        ],
+        "coverage": {
+          "comments": 323,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:09:39.352127+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 4,
+          "replies": 62,
+          "reported_comments": 323,
+          "started_utc": "2026-10-16T19:09:33.551115+00:00",
+          "unique_comments": 323
+        },
+        "file": {
+          "bytes": 251413,
+          "path": "data/continuation-09/checkpoint/threads/discussion-1166.json.gz",
+          "sha256": "8f043d1f31f7da0a8b9376648be01e9cd498cf33fb1dafc50b5686ac8f772652"
+        }
+      },
+      "1167": {
+        "changed_records": [],
+        "coverage": {
+          "comments": 123,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:09:41.549039+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 2,
+          "replies": 18,
+          "reported_comments": 123,
+          "started_utc": "2026-10-16T19:09:39.394009+00:00",
+          "unique_comments": 123
+        },
+        "file": {
+          "bytes": 98113,
+          "path": "data/continuation-09/checkpoint/threads/discussion-1167.json.gz",
+          "sha256": "af977c91e26125f5fbbd4127a0faa610b83bab97b7ca024248afc5cdb2aae84d"
+        }
+      },
+      "2612": {
+        "changed_records": [
+          {
+            "author": {
+              "login": "petalas"
+            },
+            "body_sha256": "0eb897aba952df403209a9305e099c7b7da851e70ac1278e6c6127412da8d781",
+            "change": "BODY_CHANGED",
+            "created_at": "2026-10-16T18:36:35Z",
+            "kind": "comment",
+            "updated_at": "2026-10-16T19:08:51Z",
+            "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18980713"
+          },
+          {
+            "author": {
+              "login": "petalas"
+            },
+            "body_sha256": "949cbb918467683555f4f078fccd887bd0be05d009ae3cba258398af480ee5f0",
+            "change": "ADDED",
+            "created_at": "2026-10-16T19:09:07Z",
+            "kind": "reply",
+            "updated_at": "2026-10-16T19:09:07Z",
+            "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18981163"
+          },
+          {
+            "author": {
+              "login": "petalas"
+            },
+            "body_sha256": "0faeb320279b80c538e0eff5c116a964f0280b3ad2bbde876f31aec586f0f6fb",
+            "change": "BODY_CHANGED",
+            "created_at": "2026-10-16T18:43:01Z",
+            "kind": "comment",
+            "updated_at": "2026-10-16T19:03:10Z",
+            "url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/2612#discussioncomment-18980805"
+          }
+        ],
+        "coverage": {
+          "comments": 34,
+          "complete": true,
+          "error": null,
+          "extra_reply_pages": 0,
+          "finished_utc": "2026-10-16T19:09:32.398442+00:00",
+          "incomplete_reply_threads": [],
+          "pages": 1,
+          "replies": 9,
+          "reported_comments": 34,
+          "started_utc": "2026-10-16T19:09:31.503992+00:00",
+          "unique_comments": 34
+        },
+        "file": {
+          "bytes": 51030,
+          "path": "data/continuation-09/checkpoint/threads/discussion-2612.json.gz",
+          "sha256": "06750f04bc56feb5cea48acdcb298d981098303eac716029a5ac3c0c5c777ae1"
+        }
+      }
+    }
+  },
+  "guidance_pin": {
+    "bytes": 3764,
+    "path": "data/continuation-09/checkpoint/guidance/PINS.json",
+    "sha256": "c6c5e99c493726f9902c2e25e339d9a01cb715c4d8370a253ca0c2efeb1dc8c1"
+  },
+  "helper": {
+    "bytes": 6700,
+    "path": "pipeline/continuation09/checkpoint_sources.py",
+    "sha256": "446472491ae59f282232569b9e4cd3e668c80cc5e4ff596bc294794d43c2e60d"
+  },
+  "kind": "Source and overlap checkpoint; no scientific experiments",
+  "latest_reported_complete": {
+    "author": "Nick Petalas (petalas)",
+    "body": {
+      "bytes": 3624,
+      "path": "data/continuation-09/checkpoint/PR3028.json",
+      "sha256": "37e5d435b075b91bb2028f929fc22e985fde530785394d6d275a684c2c517db3"
+    },
+    "complex_endpoint": "34583046742859167313/20000000000000000000000",
+    "conditional_decimal": "0.001729152337142958365650 -10^-46 -10^-70",
+    "evidence_tier": "SOURCE_REPORTED_CONDITIONAL_COMPLETE_FINITE_RELEASE",
+    "head": "9d10633660a3dff5469f4e7a0a009a6c9994c0d7",
+    "independent_admission_this_round": false,
+    "kappa_rational": "17291523371429583656499999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+    "pr": 3028,
+    "same_word_source_pr": 3015,
+    "source_binding": {
+      "bytes": 8498,
+      "path": "data/continuation-09/pr3028/SOURCE-BINDINGS.json",
+      "sha256": "bdaa7a5c5193875280cd0d3e20a735e8694480de093fa0f8759e2fc085b542a0"
+    }
+  },
+  "named_sources": {
+    "2969": {
+      "author": "Dugongue",
+      "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+      "pin": {
+        "bytes": 3623,
+        "path": "data/continuation-09/checkpoint/pr-2969.json.gz",
+        "sha256": "b9eba18057465ef4e861ed602fff0a0a4f8e8c7bd17454af6ab003028cc8f3b7"
+      },
+      "state": "closed"
+    },
+    "2979": {
+      "author": "mdumitrean",
+      "head": "be191346391661f4d35fc0d1508d0a6029572576",
+      "pin": {
+        "bytes": 5043,
+        "path": "data/continuation-09/checkpoint/pr-2979.json.gz",
+        "sha256": "9ad74600569cdbdd3832f449c2b25d4fa56ac98ba05882bc471b3a0f66dc8cda"
+      },
+      "state": "closed"
+    },
+    "3015": {
+      "author": "jeremykothe2",
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "pin": {
+        "bytes": 3858,
+        "path": "data/continuation-09/checkpoint/pr-3015.json.gz",
+        "sha256": "bfcfc25527c72abf83e273e13b309bd84a982fb2faefb2b2383daa00a24644f4"
+      },
+      "state": "open"
+    },
+    "3018": {
+      "author": "petalas",
+      "head": "ca7113157d7c959fdfa9d7cd17ef92d3877070d0",
+      "pin": {
+        "bytes": 4038,
+        "path": "data/continuation-09/checkpoint/pr-3018.json.gz",
+        "sha256": "36c32fe492f5e699db0ea361b3a18552d72ff74026981725e821012afe037084"
+      },
+      "state": "open"
+    },
+    "3021": {
+      "author": "petalas",
+      "head": "217edac2ebfa6250536bd6df153de14901a69395",
+      "pin": {
+        "bytes": 4173,
+        "path": "data/continuation-09/checkpoint/pr-3021.json.gz",
+        "sha256": "16a1e68f34d2f45fc1adc0d07b1294a833d91d564a1561e97342ba8c1da34502"
+      },
+      "state": "open"
+    },
+    "3022": {
+      "author": "petalas",
+      "head": "553dc9d8fc8c1489aa2b0378331a0de4b5e9b44e",
+      "pin": {
+        "bytes": 4041,
+        "path": "data/continuation-09/checkpoint/pr-3022.json.gz",
+        "sha256": "723c53f285420f7d51d4c40c6eda216a25f7f97d42a7939023f89962ed495be2"
+      },
+      "state": "open"
+    },
+    "3024": {
+      "author": "petalas",
+      "head": "315df10c07cf8b8ee9af9b2122750635bb2582ae",
+      "pin": {
+        "bytes": 4307,
+        "path": "data/continuation-09/checkpoint/pr-3024.json.gz",
+        "sha256": "fce0e28fc911811c103c43126cbe434a73a3617f2d7de873983a5bd5fe4eeaa1"
+      },
+      "state": "open"
+    }
+  },
+  "other_new_prs": [
+    {
+      "pr": 3026,
+      "scope": "P112 five-triad low-tariff lower bound; no supplier kappa"
+    },
+    {
+      "pr": 3027,
+      "scope": "Selected-grammar unit-tape boundary finding; no new kappa"
+    }
+  ],
+  "priority_revision": 6,
+  "proposed_family_overlap": {
+    "current_explicit_direct_active_match_found": false,
+    "decision": "No explicit active overlap blocker found in acquired sources. Treat the proposed modern-word family as a source-specific shared-cost extension/replication with historical uncertainty, not an unclaimed new identity or an inference of global novelty.",
+    "description": "At least two distinct targets share sources j,k and exact common ratio b_i/a_i; one carrier encode, all target reads, one undo, with fixed exterior semantic and frame obligations.",
+    "historical_related": [
+      {
+        "pr": 722,
+        "scope": "Historical common-source coefficient preparation, primitive-cost layer"
+      },
+      {
+        "pr": 751,
+        "scope": "Reverse Horner common-target fan-in, primitive-cost layer"
+      },
+      {
+        "pr": 945,
+        "scope": "Joint same-target Horner pairs, unchanged paid children"
+      },
+      {
+        "pr": 999,
+        "scope": "Bounded target accumulation, unchanged paid histogram"
+      },
+      {
+        "pr": 1060,
+        "scope": "Shared-carrier P111 COPY decoder with a different endpoint contract"
+      }
+    ],
+    "prior_local_stop": "CONTINUATION08one-targetfan-in/fan-out NULL stays closed; shared encode/decode across at least two targets is not contained in that registered domain.",
+    "prior_scope": "PR2979 reports5,893 candidates/provider from2957rewrite classes including read merges/splits around new input/output/refit/lowered-helper gates; exact variable-length multi-target coverage is not published in the acquired implementation files.",
+    "prior_source": {
+      "bytes": 24923,
+      "path": "data/continuation-05/pr2979/package/README.md",
+      "sha256": "d00d123fc6cb7da627a8db1b8ae95b732ef7c55f802a784059de982159548634"
+    }
+  },
+  "recorded_utc": "2026-10-16T19:15:47.420066+00:00",
+  "schema_version": 1,
+  "selected_result": {
+    "changed": false,
+    "decimal": "0.001672660197076918",
+    "kappa": "836330098538459/500000000000000000"
+  }
+}

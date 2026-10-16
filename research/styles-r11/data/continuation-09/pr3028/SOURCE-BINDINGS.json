@@ -1,0 +1,234 @@
+{
+  "acquisition": {
+    "bytes": 12418,
+    "path": "data/continuation-09/pr3028/ACQUISITION.json",
+    "sha256": "dd20434c5b53fa7927b0b4090d985dd27dada6d165ebeae3873d93e52c821284"
+  },
+  "author": "Nick Petalas (petalas)",
+  "centres": 8,
+  "coefficient_families": 2,
+  "compatibility": "The unchanged raw3015 provider bytes preserve the registered local profile, ordered helper list and width inventory; T148 changes chronology/allocation and replica-dependent physical ledger only. A changed candidate still requires its own complete admission.",
+  "complete_inherited_credit_files": [
+    {
+      "existing_artifact": {
+        "bytes": 3954,
+        "path": "data/continuation-07/holdout3015/package/CREDITS.md",
+        "sha256": "bd4b09fcd2861933883cbce6ecf0e30743d5d3b4cb0cc38e258530c370c121b9"
+      },
+      "upstream_vendor_binding": {
+        "git_blob": "3b6022cd64d7753e65e1c710d91a69596e389042",
+        "path": "vendor/pr3015/CREDITS.md",
+        "sha256": "bd4b09fcd2861933883cbce6ecf0e30743d5d3b4cb0cc38e258530c370c121b9",
+        "source_commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+        "source_path": "research/rank7-joint-endframes-restore-edit/CREDITS.md"
+      }
+    },
+    {
+      "existing_artifact": {
+        "bytes": 3378,
+        "path": "data/continuation-07/holdout3015/package/NOTICE",
+        "sha256": "ffcc3de2243815db0e9fb8d820b4ca511fce3c7673c966e14b486f05d30ac11a"
+      },
+      "upstream_vendor_binding": {
+        "git_blob": "70a09b472e3c2d82b3e805d82ef898d3ad48e758",
+        "path": "vendor/pr3015/NOTICE",
+        "sha256": "ffcc3de2243815db0e9fb8d820b4ca511fce3c7673c966e14b486f05d30ac11a",
+        "source_commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+        "source_path": "research/rank7-joint-endframes-restore-edit/NOTICE"
+      }
+    }
+  ],
+  "complete_profile": {
+    "1": 3288708,
+    "2": 941724,
+    "3": 318948,
+    "32": 1,
+    "4": 143856,
+    "48": 56380,
+    "5": 27416,
+    "8": 10656
+  },
+  "complex_endpoint": "34583046742859167313/20000000000000000000000",
+  "complex_endpoint_decimal": "0.001729152337142958365650",
+  "declared_actual_global_prefix_bits": 1476,
+  "declared_actual_native_prefix_bits": 93,
+  "evidence_tier": "SOURCE_REPORTED_CONDITIONAL_COMPLETE_FINITE_RELEASE",
+  "explicit_credit_names": [
+    "Nick Petalas",
+    "Jeremy Kothe",
+    "Marius-Paul Dumitrean",
+    "Mason Hale",
+    "Jeremy Diviney",
+    "Yiyang Lu",
+    "Tekalign",
+    "Ross Richardson",
+    "Dugongue",
+    "icekylinx",
+    "themilkman216"
+  ],
+  "gain_over_pr3021": "283289984980663/250000000000000000000000",
+  "head": "9d10633660a3dff5469f4e7a0a009a6c9994c0d7",
+  "helpers": 408,
+  "independent_inputs": 632,
+  "kappa_rational": "17291523371429583656499999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+  "live_families": 132608,
+  "omitted_large_artifacts": [
+    "Materialized T148 FILL, ORDER and DISPATCH (hashes retained in exact receipts)",
+    "Full source/native/dependency archives and stage logs"
+  ],
+  "original_pins": {
+    "bytes": 15544,
+    "path": "data/words/PINS.json",
+    "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+  },
+  "outer_slacks": [
+    "1/10^46",
+    "1/10^70"
+  ],
+  "physical_families": 133117,
+  "pr": 3028,
+  "private_buffers": 91,
+  "recorded_utc": "2026-10-16T19:13:53.360533+00:00",
+  "replicas": 148,
+  "roles": 543456,
+  "schema_version": 1,
+  "scope": "Inert source metadata, exact-byte identity and declared-claim arithmetic only. No source code executed, no feature census, no scientific replay or independent admission.",
+  "source_reported_only": true,
+  "sources": {
+    "admission": {
+      "bytes": 21203,
+      "path": "data/continuation-09/pr3028/package/evidence/ADMISSION-RESULT.json",
+      "sha256": "c0c4273e72f439cd61c8b9a17f40f0183433b19e6984c8ac82c7efbddbe65d03"
+    },
+    "claim": {
+      "bytes": 2140,
+      "path": "data/continuation-09/pr3028/package/evidence/OUTER-CLAIM.json",
+      "sha256": "70c6efb0230cac0166a263b6e3084c9a284de118001fca9cfb04ca9bc98c514e"
+    },
+    "finite": {
+      "bytes": 2157,
+      "path": "data/continuation-09/pr3028/package/evidence/FINITE.json",
+      "sha256": "d0e8b8a335ae103a1f2c1e7bd0396758b87b9d4501954cb65a46da487717a604"
+    },
+    "native": {
+      "bytes": 13782,
+      "path": "data/continuation-09/pr3028/package/evidence/NATIVE-RECEIPT.json",
+      "sha256": "9f053b09b3184b952450c5a9a61077ef0732c7c180be60a7fde82eeaec0c1bab"
+    },
+    "readme": {
+      "bytes": 10928,
+      "path": "data/continuation-09/pr3028/package/README.md",
+      "sha256": "6e78aae177c65ef8d0ce7eb469ab97e4fc9f7d4248e7733d7508f05ec085693a"
+    },
+    "release": {
+      "bytes": 2241,
+      "path": "data/continuation-09/pr3028/package/evidence/RELEASE-RECEIPT.json",
+      "sha256": "279bcccd3644b08ce13ee9f5ae8040ad836a5765c23a4898b42b0a6bcec2255a"
+    },
+    "result": {
+      "bytes": 4245,
+      "path": "data/continuation-09/pr3028/package/evidence/RESULT.json",
+      "sha256": "9e4af50ce76114851a967a151d4bad2a7099b55a2e69dd7ebf0ef141ce6c9904"
+    },
+    "sources": {
+      "bytes": 2122,
+      "path": "data/continuation-09/pr3028/package/SOURCES.json",
+      "sha256": "9cc50d0eb226f860de00847dd4e1dd43ea24c95b1e3a0ad1fd9784b849e37902"
+    },
+    "vendor": {
+      "bytes": 5192,
+      "path": "data/continuation-09/pr3028/package/VENDOR.json",
+      "sha256": "a7b8b34e684575f013cda73e47d06f0da84b4f8cd70bae0195a1a4c9710ffe96"
+    }
+  },
+  "stock148": {
+    "active_depth": 18,
+    "bridges": 1332,
+    "calls": 1332,
+    "physical": 133117,
+    "physical_stock_bits": 2645,
+    "required_reserve_bits": 1511,
+    "retained_payload_bits": 2048,
+    "stock_l2_bits": 1323
+  },
+  "stock74": {
+    "active_depth": 18,
+    "bridges": 666,
+    "calls": 666,
+    "physical": 66813,
+    "physical_stock_bits": 2644,
+    "required_reserve_bits": 1510,
+    "retained_payload_bits": 2048,
+    "stock_l2_bits": 1322
+  },
+  "words": {
+    "base": {
+      "byte_identity_verified": true,
+      "existing_artifact": {
+        "bytes": 71434,
+        "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-base.json.gz",
+        "sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5"
+      },
+      "native_receipt_word_sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5",
+      "reported_local_profile": {
+        "1": 2443,
+        "2": 707,
+        "3": 232,
+        "4": 108,
+        "5": 18,
+        "8": 8
+      },
+      "reported_width_inventory": {
+        "4": 26,
+        "5": 2,
+        "6": 16,
+        "7": 52,
+        "8": 99,
+        "9": 213
+      },
+      "source_author": "Jeremy Kothe (jeremykothe2)",
+      "source_head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "upstream_vendor_binding": {
+        "git_blob": "4f0483657396a7f735873e1b252482c53dfb2eb6",
+        "path": "vendor/pr3015/FINAL-WORD-base.json.gz",
+        "sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5",
+        "source_commit": "217edac2ebfa6250536bd6df153de14901a69395",
+        "source_path": "research/rank7-restore-packing-composition/vendor/pr3015/edits/FINAL-WORD-base.json.gz"
+      }
+    },
+    "extra": {
+      "byte_identity_verified": true,
+      "existing_artifact": {
+        "bytes": 71430,
+        "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-extra.json.gz",
+        "sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea"
+      },
+      "native_receipt_word_sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea",
+      "reported_local_profile": {
+        "1": 2443,
+        "2": 707,
+        "3": 232,
+        "4": 108,
+        "5": 18,
+        "8": 8
+      },
+      "reported_width_inventory": {
+        "4": 26,
+        "5": 2,
+        "6": 16,
+        "7": 52,
+        "8": 99,
+        "9": 213
+      },
+      "source_author": "Jeremy Kothe (jeremykothe2)",
+      "source_head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "upstream_vendor_binding": {
+        "git_blob": "81f95e21ede115e8bdb6bd522c641b37b740bdf7",
+        "path": "vendor/pr3015/FINAL-WORD-extra.json.gz",
+        "sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea",
+        "source_commit": "217edac2ebfa6250536bd6df153de14901a69395",
+        "source_path": "research/rank7-restore-packing-composition/vendor/pr3015/edits/FINAL-WORD-extra.json.gz"
+      }
+    }
+  }
+}
