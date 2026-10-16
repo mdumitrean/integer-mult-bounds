@@ -1,0 +1,47 @@
+{
+  "ai_assistance": "Substantial OpenAI Codex assistance disclosed in the research documents.",
+  "base_work_commit": "f9671de10c8bb72fa4b3956f734e902f47a400df",
+  "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+  "changed_premise": "PR3015 same-target factorization generalized to explicitly guarded contact-adjacent fan-in/fan-out pairs in A/B with exact complete boundary costs and all eight frame corners. Restore excluded due published coverage; possible partial A/B overlap with undocumented2979merge/split search is retained.",
+  "constraints": {
+    "author": "Marius-Paul Dumitrean <mdumitrean@gmail.com>",
+    "commit_attribution_trailers": false,
+    "confirm_each_decision_with_second_seed": true,
+    "fetched_code": "Inert data only; read with Python -I; never import or execute",
+    "global_results_bytes_cap": 200000000,
+    "plan_section_6_pattern_and_stop_rules": "Binding; no pattern promotion from a single constructor or source",
+    "pre_register_every_test_family": true,
+    "publication": "Only small commits and push to mdumitrean/integer-mult-bounds:research/styles-r11-results; no PRs/comments/discussions",
+    "retain_original_word_pins_and_release_source_attribution": true,
+    "round_new_results_bytes_cap": 4000000,
+    "write_scope": "research/styles-r11 only; every pre-round file remains byte-identical"
+  },
+  "goal_status": "ACTIVE_NOT_ACHIEVED",
+  "previous_goal_turn": {
+    "classification": "PROGRESS",
+    "evidence": "Completed, audited and pushed the twelve-release paired ML analysis and separate PR3015 check at f9671de10c8bb72fa4b3956f734e902f47a400df. It changes the next action: use complete-cost structural productions, not the unreliable word-only gain predictor."
+  },
+  "priority_revision": 6,
+  "resources": {
+    "blas_threads": 1,
+    "expected_workers": 61,
+    "fill_worker_rss_gib": 6,
+    "load_large_inputs_once_in_parent": true,
+    "memory_projection_before_each_launch": true,
+    "no_long_solver_in_permutation_loop": true,
+    "one_pool_at_a_time": true,
+    "per_task_timeout_seconds": 300,
+    "per_worker_rss_gib": 4,
+    "pool": "research/styles-r11/pipeline/pool.py",
+    "reserved_cores_minimum": 8,
+    "workers": "min(120,floor(RAM_GiB/4))"
+  },
+  "round": "CONTINUATION-08",
+  "round_checkpoint_utc": "2026-10-16T19:29:42+00:00",
+  "round_cpu_budget_seconds": 14400,
+  "schema_version": 1,
+  "science_launch_cutoff_utc": "2026-10-16T19:14:42+00:00",
+  "scope_status": "REGISTERED_A_B_CONTACT_ADJACENT_FACTOR_CENSUS",
+  "started_utc": "2026-10-16T18:29:42+00:00",
+  "user_objective": "Push further with L-system and sandpile research, looking for toppling rules or an intrinsic Laplacian, toward improving kappa."
+}

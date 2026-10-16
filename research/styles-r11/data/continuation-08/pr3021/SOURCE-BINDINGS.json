@@ -1,0 +1,291 @@
+{
+  "acquisition": {
+    "path": "data/continuation-08/pr3021/ACQUISITION.json",
+    "sha256": "29066c016ad8129e81311c160226caa93994e9730ca3bcca95f8168bc67766fb"
+  },
+  "author": "Nick Petalas (petalas)",
+  "complete_profile": {
+    "1": 1644352,
+    "14": 1,
+    "2": 470862,
+    "3": 159472,
+    "4": 71928,
+    "48": 28190,
+    "5": 13710,
+    "8": 5328
+  },
+  "credit_bindings": [
+    {
+      "path": "data/continuation-08/pr3021/package/README.md",
+      "sha256": "6db8157a73a97963ac00204d6206090d0947d78bc95d028e734304b9458806a0"
+    },
+    {
+      "path": "data/continuation-08/pr3021/package/SOURCES.json",
+      "sha256": "50f51892b60cd64a4561513d91a172151f3a09fc1519295e1556d307982665cb"
+    },
+    {
+      "path": "data/continuation-08/pr3021/package/VENDOR.json",
+      "sha256": "538f306ca1a3199b7422021530032638ec9fbac6f9cbaf24d895be57349c3d21"
+    },
+    {
+      "path": "data/continuation-08/pr3021/package/vendor/pr3015/CREDITS.md",
+      "sha256": "bd4b09fcd2861933883cbce6ecf0e30743d5d3b4cb0cc38e258530c370c121b9"
+    },
+    {
+      "path": "data/continuation-08/pr3021/package/vendor/pr3015/NOTICE",
+      "sha256": "ffcc3de2243815db0e9fb8d820b4ca511fce3c7673c966e14b486f05d30ac11a"
+    }
+  ],
+  "evidence_tier": "SOURCE_REPORTED_CONDITIONAL_COMPLETE_FINITE_RELEASE",
+  "fill": {
+    "canonical_encoding": "UTF-8 of json.dumps(fill, sort_keys=True, separators=(comma, colon)) followed by one newline",
+    "canonical_payload_sha256": "070cbce2f7d609986afb2ecd8439ca9b3280e7d1d7c9eb7389a65f7dc8caa28f",
+    "journal": {
+      "path": "data/continuation-08/pr3021/package/vendor/pr3018/EXCHANGE.json",
+      "sha256": "8a103f643ad12d8074972f41e4359d9487eb8b96fc6849e1a178adb61b36578b"
+    },
+    "recorded_container_sha256": "15328dd296152417f9d207479fbdd15da05ddb7b499ea7491ce3cae91cc9b27b",
+    "representation": "source2979 literal FILL plus103 exact row replacements; composed standalone FILL is not committed in additive package",
+    "row_rule": "edits entries are [row_index, exact_old_row, replacement_row]; index unique, old[:2]==new[:2], all six row entries integer. Source words are immutable. No journal materialization or scientific checker has been run here.",
+    "source_fill": {
+      "git_blob": "8d4fd644d60ba2c98106dc770803b647afdf0963",
+      "path": "data/continuation-05/pr2979/package/allocation/FILL.json.gz",
+      "sha256": "c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39",
+      "upstream_path": "research/rank7-joint-endframes/allocation/FILL.json.gz",
+      "usage": "input"
+    }
+  },
+  "full_replay_here": false,
+  "head": "217edac2ebfa6250536bd6df153de14901a69395",
+  "pr": 3021,
+  "receipt_bindings": [
+    {
+      "path": "data/continuation-08/pr3021/package/evidence/COMPOSITION-RESULT.json",
+      "sha256": "cdc4874dcb17714fbe10f003a4a4516b80a9ddccfc7199278a53baa13c5d3a04"
+    },
+    {
+      "path": "data/continuation-08/pr3021/package/evidence/ADMISSION-RESULT.json",
+      "sha256": "4c03eeb067b33eb79dcbce1dce1c0dc41185b3185292ecda3ed6d37d2617713f"
+    },
+    {
+      "path": "data/continuation-08/pr3021/package/evidence/NATIVE-RECEIPT.json",
+      "sha256": "9deaeaf270e6e66a80f602b679f93a5cf2f268d21e132576c4b31d5d648c06a5"
+    },
+    {
+      "path": "data/continuation-08/pr3021/package/evidence/NATIVE-RESULT.json",
+      "sha256": "12a8457050325f1b0b072687d478603c6711d197b2496e8996bd338c7ef383ca"
+    },
+    {
+      "path": "data/continuation-08/pr3021/package/evidence/OUTER-CLAIM.json",
+      "sha256": "8beb062c36169728a8f82a5eda6638c2a83125f16e7e5de56f3a13d9cba5e1f5"
+    },
+    {
+      "path": "data/continuation-08/pr3021/package/evidence/RELEASE-RECEIPT.json",
+      "sha256": "247d9f03b9cd15b9dc0f49c7bf52d0ca1b2f027186b9b62e7f22020cfbb0f90e"
+    }
+  ],
+  "schema": "styles-r11-source-bindings/v1",
+  "source_inputs": [
+    {
+      "git_blob": "9544fee4e6ee1f202cee22bfaeaf229ee3b2515e",
+      "path": "data/continuation-05/pr2979/package/allocation/DISPATCH.json",
+      "sha256": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c",
+      "upstream_path": "research/rank7-joint-endframes/allocation/DISPATCH.json",
+      "usage": "input"
+    },
+    {
+      "git_blob": "8d4fd644d60ba2c98106dc770803b647afdf0963",
+      "path": "data/continuation-05/pr2979/package/allocation/FILL.json.gz",
+      "sha256": "c2136be9434cda511a1a8a44d98f9f72ea5376830a8426674253b4ee351c4c39",
+      "upstream_path": "research/rank7-joint-endframes/allocation/FILL.json.gz",
+      "usage": "input"
+    },
+    {
+      "git_blob": "7409c4df1092241729739596c7648bda504e6aad",
+      "path": "data/continuation-05/pr2979/package/allocation/ORDER.json",
+      "sha256": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1",
+      "upstream_path": "research/rank7-joint-endframes/allocation/ORDER.json",
+      "usage": "input"
+    },
+    {
+      "git_blob": "e1d99e12cfa3ac8375984d85c0b040dc36ea1312",
+      "path": "data/continuation-05/pr2979/package/allocation/PROVIDERS.json",
+      "sha256": "f2edb7922f3029a5d607437e737775ff3371bca49ebab62e5e2495d16d3bf573",
+      "upstream_path": "research/rank7-joint-endframes/allocation/PROVIDERS.json",
+      "usage": "input"
+    },
+    {
+      "git_blob": "7a1db55a4d53ee99280be4f3ab7d29f7b2033adf",
+      "path": "data/continuation-05/pr2979/package/allocation/vendor/PLAN.json.gz",
+      "sha256": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e",
+      "upstream_path": "research/rank7-joint-endframes/allocation/vendor/PLAN.json.gz",
+      "usage": "input"
+    },
+    {
+      "git_blob": "114808c32b1799da53524bdc25cea67efb60009e",
+      "path": "data/continuation-05/pr2979/package/allocation/vendor/TEMPLATE.json.gz",
+      "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+      "upstream_path": "research/rank7-joint-endframes/allocation/vendor/TEMPLATE.json.gz",
+      "usage": "input"
+    },
+    {
+      "git_blob": "d9aa96a93fea5f7395e7783aef0bc117c0a0ae89",
+      "path": "data/continuation-05/pr2979/package/data/WORD-base.json.gz",
+      "sha256": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d",
+      "upstream_path": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+      "usage": "input"
+    },
+    {
+      "git_blob": "74f6cb64595c21f7726ae77e69437868620bdcee",
+      "path": "data/continuation-05/pr2979/package/data/WORD-extra.json.gz",
+      "sha256": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7",
+      "upstream_path": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+      "usage": "input"
+    }
+  ],
+  "source_reported_kappa": "17291512039830184429979999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+  "vendor_bindings": [
+    {
+      "git_blob": "70813f559e2878f0c5403c0b859eefe602f70abc",
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3015/CLAIM.json",
+      "path": "vendor/pr3015/CLAIM.json",
+      "sha256": "f9b9fbaaac794c0ce279c238a33a2f34f8c91a34d97ccdeb5ec98b7b8ba56d73",
+      "source": "research/rank7-joint-endframes-restore-edit/CLAIM.json"
+    },
+    {
+      "git_blob": "cac6220d3dcb1d323e083d6ff04bc7bc0f00eba9",
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3015/allocation/PROVIDERS.json",
+      "path": "vendor/pr3015/allocation/PROVIDERS.json",
+      "sha256": "f52d926752eac5d847092dd58bfb9f3f3c6ac36adf39cd6a3c4d4a3b2d1fce15",
+      "source": "research/rank7-joint-endframes-restore-edit/allocation/PROVIDERS.json"
+    },
+    {
+      "git_blob": "90894fc6592951eaa3b4e25467d3a85c36b2d988",
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3015/edits/EDITS.json",
+      "path": "vendor/pr3015/edits/EDITS.json",
+      "sha256": "c9c68660d07bfd12ed20fd8cbfe3d36301ceb2d7bb9b4ea11350cc399b19e0b1",
+      "source": "research/rank7-joint-endframes-restore-edit/edits/EDITS.json"
+    },
+    {
+      "git_blob": "df41deff4075a42d940b2f57cd67c889fa564763",
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3015/edits/declared_edits.py.txt",
+      "path": "vendor/pr3015/edits/declared_edits.py",
+      "sha256": "d3e49b844e9522808a439d505487839addbd957c7d1055bb57fa00e32cbba7b8",
+      "source": "research/rank7-joint-endframes-restore-edit/edits/declared_edits.py"
+    },
+    {
+      "git_blob": "4f0483657396a7f735873e1b252482c53dfb2eb6",
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3015/edits/FINAL-WORD-base.json.gz",
+      "path": "vendor/pr3015/edits/FINAL-WORD-base.json.gz",
+      "sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5",
+      "source": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-base.json.gz"
+    },
+    {
+      "git_blob": "81f95e21ede115e8bdb6bd522c641b37b740bdf7",
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3015/edits/FINAL-WORD-extra.json.gz",
+      "path": "vendor/pr3015/edits/FINAL-WORD-extra.json.gz",
+      "sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea",
+      "source": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-extra.json.gz"
+    },
+    {
+      "git_blob": "d0986d804f9e7fc1f11743704d826b40c223c2cf",
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3015/reproduce.py.txt",
+      "path": "vendor/pr3015/reproduce.py",
+      "sha256": "ec9cbbf3d11377804e419745bc43ae5ad35c3b6f5fcde41df5f61f482f36e595",
+      "source": "research/rank7-joint-endframes-restore-edit/reproduce.py"
+    },
+    {
+      "git_blob": "a331a50f94b698f02092d4647c8be5385d9dd57c",
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3015/MANIFEST.json",
+      "path": "vendor/pr3015/MANIFEST.json",
+      "sha256": "5e113822c0c36ee7dd9366578fbaf5daa108b8c51e37f4d10eda25dd6ed52cae",
+      "source": "research/rank7-joint-endframes-restore-edit/MANIFEST.json"
+    },
+    {
+      "git_blob": "70a09b472e3c2d82b3e805d82ef898d3ad48e758",
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3015/NOTICE",
+      "path": "vendor/pr3015/NOTICE",
+      "sha256": "ffcc3de2243815db0e9fb8d820b4ca511fce3c7673c966e14b486f05d30ac11a",
+      "source": "research/rank7-joint-endframes-restore-edit/NOTICE"
+    },
+    {
+      "git_blob": "3b6022cd64d7753e65e1c710d91a69596e389042",
+      "head": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3015/CREDITS.md",
+      "path": "vendor/pr3015/CREDITS.md",
+      "sha256": "bd4b09fcd2861933883cbce6ecf0e30743d5d3b4cb0cc38e258530c370c121b9",
+      "source": "research/rank7-joint-endframes-restore-edit/CREDITS.md"
+    },
+    {
+      "git_blob": "1260c8d95f573a574e007038263adf883b5ecbd2",
+      "head": "ca7113157d7c959fdfa9d7cd17ef92d3877070d0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3018/EXCHANGE.json",
+      "path": "vendor/pr3018/EXCHANGE.json",
+      "sha256": "8a103f643ad12d8074972f41e4359d9487eb8b96fc6849e1a178adb61b36578b",
+      "source": "research/rank7-integrality-exchange/EXCHANGE.json"
+    },
+    {
+      "git_blob": "2d874d2054082b50c82f9f74e3583e0e28f1da2e",
+      "head": "ca7113157d7c959fdfa9d7cd17ef92d3877070d0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3018/geometry.py.txt",
+      "path": "vendor/pr3018/geometry.py",
+      "sha256": "4581b2fbfc782437b1d011508e5f1d89482e69e99cbf92536a01f8f802e93ed6",
+      "source": "research/rank7-integrality-exchange/geometry.py"
+    },
+    {
+      "git_blob": "939427c5158efe99c91455a3204d62dc33ee2b2b",
+      "head": "ca7113157d7c959fdfa9d7cd17ef92d3877070d0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3018/moment.py.txt",
+      "path": "vendor/pr3018/moment.py",
+      "sha256": "339b52eb637add91264347797d4b49cef1a412fd3843bf736cc5bb74c6bdce7c",
+      "source": "research/rank7-integrality-exchange/moment.py"
+    },
+    {
+      "git_blob": "b5b527781e2c1e03e11648727d930ab7cb5f8fa8",
+      "head": "ca7113157d7c959fdfa9d7cd17ef92d3877070d0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3018/RESULT.json",
+      "path": "vendor/pr3018/RESULT.json",
+      "sha256": "a9191f711b50476312c222a47f33d7b72a4ac26fdd190ec58b38889986f39b24",
+      "source": "research/rank7-integrality-exchange/RESULT.json"
+    },
+    {
+      "git_blob": "914327f49a10563de540b851d5ed9781f6150b03",
+      "head": "ca7113157d7c959fdfa9d7cd17ef92d3877070d0",
+      "local_path": "data/continuation-08/pr3021/package/vendor/pr3018/README.md",
+      "path": "vendor/pr3018/README.md",
+      "sha256": "2d9a53877e1b94dcea81ce8230be57d63507b710463915182dcf593e4a6e1fad",
+      "source": "research/rank7-integrality-exchange/README.md"
+    }
+  ],
+  "words": {
+    "base": {
+      "identical_to_prior": {
+        "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-base.json.gz",
+        "sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5"
+      },
+      "path": "data/continuation-08/pr3021/package/vendor/pr3015/edits/FINAL-WORD-base.json.gz",
+      "sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5",
+      "source_author": "Jeremy Kothe (jeremykothe2)",
+      "source_pr": 3015
+    },
+    "extra": {
+      "identical_to_prior": {
+        "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-extra.json.gz",
+        "sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea"
+      },
+      "path": "data/continuation-08/pr3021/package/vendor/pr3015/edits/FINAL-WORD-extra.json.gz",
+      "sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea",
+      "source_author": "Jeremy Kothe (jeremykothe2)",
+      "source_pr": 3015
+    }
+  }
+}
