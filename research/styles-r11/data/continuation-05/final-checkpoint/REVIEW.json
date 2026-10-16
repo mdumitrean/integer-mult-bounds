@@ -1,0 +1,176 @@
+{
+  "canonical_main": "836b19bfa309ceafbc8ee32a15e8c4b10dde7e11",
+  "checkpoint": {
+    "path": "data/continuation-05/final-checkpoint/RECEIPT.json",
+    "sha256": "e7e7d1eb72e2fddc395c98894f3f8fcbbbf7c71333ec9c8e9c63c102bd58a698"
+  },
+  "coverage": {
+    "all_state_pr_rows": 100,
+    "complete_comments": 526,
+    "complete_replies": 94,
+    "limits": [
+      "Read-only bounded final checkpoint, no fetched code execution or scientific tests.",
+      "All-state PR metadata is paged in update-descending order until a page reaches the prior cutoff, at most4pages; pagination is not atomic.",
+      "Discussions2612,1163,1166,1167 are fully refreshed regardless of discussion updatedAt; other threads and arbitrary linked resources remain outside this delta.",
+      "Remote claims and archival merges are not independent admission or novelty evidence."
+    ],
+    "new_or_changed_since_pivot": 6,
+    "threads": [
+      {
+        "comments": 23,
+        "complete": true,
+        "number": 2612,
+        "pin": {
+          "path": "data/continuation-05/final-checkpoint/threads/discussion-2612.json.gz",
+          "sha256": "c251d5109ff8747a61770273d5c9252e90306ac5c771439abd26eadc53314c2f"
+        },
+        "replies": 3,
+        "unchanged_from_pivot": true
+      },
+      {
+        "comments": 73,
+        "complete": true,
+        "number": 1163,
+        "pin": {
+          "path": "data/continuation-05/final-checkpoint/threads/discussion-1163.json.gz",
+          "sha256": "b6fc0f3cabc9e52caae62b7a47f974e03751071393cd179704c490804d22449a"
+        },
+        "replies": 12,
+        "unchanged_from_pivot": true
+      },
+      {
+        "comments": 307,
+        "complete": true,
+        "number": 1166,
+        "pin": {
+          "path": "data/continuation-05/final-checkpoint/threads/discussion-1166.json.gz",
+          "sha256": "ee7a686e44fcb3f7dae837d007721aa3cbeaa88edbaabe96594d9c23d2eaf0db"
+        },
+        "replies": 61,
+        "unchanged_from_pivot": true
+      },
+      {
+        "comments": 123,
+        "complete": true,
+        "number": 1167,
+        "pin": {
+          "path": "data/continuation-05/final-checkpoint/threads/discussion-1167.json.gz",
+          "sha256": "711468e02ed1c32d42bf0d52c4fdc10e3073c9c5e4c9accf45e92eacffcb5d53"
+        },
+        "replies": 18,
+        "unchanged_from_pivot": true
+      }
+    ],
+    "updated_since_round_start_cutoff": 16
+  },
+  "finished_utc": "2026-10-16T16:47:38.275541+00:00",
+  "guidance": {
+    "path": "data/continuation-05/final-checkpoint/guidance/PINS.json",
+    "sha256": "b918be90ded75dc72203e2a598c19de548bfd583ec2731570edbeaf364d1d625"
+  },
+  "guidance_interpretation": "The helper compares against round start and prints four revision5-to6 changes. These are unchanged from the already read pivot revision6; this is not another priority change. Archive/source claims remain distinct from independently admitted complete suppliers.",
+  "kind": "FINAL_SUBMISSION_SOURCE_STATUS_ONLY",
+  "literal_git_fetch": {
+    "path": "data/continuation-05/final-checkpoint/GIT-FETCH.json",
+    "sha256": "d66bc61f880e975b4e8f57c41524932a088bd3f0b8c6ea8abd41646ef9bb2c10"
+  },
+  "maintained_selected": {
+    "kappa_decimal": "0.001672660197076918",
+    "pr": 1094,
+    "unchanged": true
+  },
+  "named_sources": {
+    "2969": {
+      "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+      "pin": {
+        "path": "data/continuation-05/final-checkpoint/pr-2969.json.gz",
+        "sha256": "66590fa734d5794fc1308818a3a18c852847b83d648b185dbad90bbe0ed09bf1"
+      },
+      "state": "closed",
+      "updated_at": "2026-10-16T15:18:21Z"
+    },
+    "2979": {
+      "head": "be191346391661f4d35fc0d1508d0a6029572576",
+      "pin": {
+        "path": "data/continuation-05/final-checkpoint/pr-2979.json.gz",
+        "sha256": "c85193ce6056528791da0cc5aaa59bb1ac30283b187bb991e8cd128effd1a9f7"
+      },
+      "state": "closed",
+      "updated_at": "2026-10-16T16:02:20Z"
+    }
+  },
+  "new_metadata_since_pivot": [
+    {
+      "author": "tekuuu",
+      "head": "4c0cf223e3e4a06099704b34202a5015f1ab1e62",
+      "pr": 3000,
+      "scope": "Exact four-flat maximal-mask tooling acceleration; unchanged generator/domain, no kappa.",
+      "title": "Tooling: 9.31x faster exact four-flat maximal-mask filtering",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/3000"
+    },
+    {
+      "author": "Arham-Tahir64",
+      "head": "ac6025235b6f1233291000d35a067198628569e9",
+      "pr": 2999,
+      "scope": "Adaptive P104 memoryless-rounding collision/restoration obstruction; retained history/source repair remain; no kappa.",
+      "title": "Prove adaptive P104 rounding collisions and retained-history bounds",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2999"
+    },
+    {
+      "author": "Arham-Tahir64",
+      "head": "3aa400ed59d19b9d6c08e22d1b75edb36a1d3e27",
+      "pr": 2998,
+      "scope": "Sharp finite S4 coordinate-cut method gap20 versus21; actual circuit optimum unresolved; no cheaper word or kappa.",
+      "title": "Research: prove a sharp S4 coordinate-cut gap for mixed targets",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2998"
+    },
+    {
+      "author": "Arham-Tahir64",
+      "head": "16e790e10cc0bc737b9cd269020d3d967d36430f",
+      "pr": 2997,
+      "scope": "Exact fixed P104 full-flag missing-path audit; changed matching/access scopes remain; no kappa.",
+      "title": "Audit missing information paths in the fixed P104 joint flags",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2997"
+    },
+    {
+      "author": "petalas",
+      "head": "4d772802fe86e5185d5468db86b36472e6c81b96",
+      "pr": 2996,
+      "scope": "Fixed-pair P104 optimistic information-flow obstruction across all intermediate flags; other contracts remain; no kappa.",
+      "title": "Certify P104 dependency obstruction for every fixed-pair flag completion",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2996"
+    },
+    {
+      "author": "Arham-Tahir64",
+      "head": "8ba0358b62edbeb16a0842473500c468d8c0759b",
+      "pr": 2995,
+      "scope": "Source-bound F0 scalar fault/restoration witness; physical gauge/native/cost obligations remain; no kappa.",
+      "title": "Certify an F0 scalar fault witness with exact dirty restoration",
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/2995"
+    }
+  ],
+  "no_external_writes": true,
+  "no_fetched_code_execution": true,
+  "no_scientific_reruns": true,
+  "priority_revision": 6,
+  "r2_overlap": "No newly identified claim duplicates the registered B-to-restore cancellation family in this bounded refresh. This is not novelty evidence or a reason for another scientific pivot.",
+  "relevant_released_claims": {
+    "RossRichardson18977418": "DONE/PR2987, unchanged from pivot; no active claim remains.",
+    "petalas18977778": "DONE/PR2993, unchanged from pivot; no active claim remains."
+  },
+  "schema_version": 1,
+  "started_utc": "2026-10-16T16:47:22.348667+00:00",
+  "strongest_identified_public_conditional_claim": {
+    "author": "Marius-Paul Dumitrean (mdumitrean)",
+    "head": "be191346391661f4d35fc0d1508d0a6029572576",
+    "kappa_decimal": "0.0017290339826465135177169999999999999999999998999999999999999999999999",
+    "pr": 2979,
+    "scope": "Producer-reported complete finite conditional release; inherited all-size/compiler/analytic dependencies and independent admission coverage remain separate."
+  },
+  "unchanged_from_pivot": {
+    "guidance_source_bytes": true,
+    "main": true,
+    "selected_result": true
+  },
+  "written_utc": "2026-10-16T16:49:26.165693+00:00"
+}

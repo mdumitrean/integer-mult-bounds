@@ -1,0 +1,127 @@
+{
+  "administrative_cpu_seconds": 1.883685202,
+  "recorded_utc": "2026-10-16T16:55:48.938123+00:00",
+  "stable": {
+    "base_work_commit": "394748784ff4ddc6a281ef8aaf2951de4e5b20e9",
+    "current_source_manifest_entries": 111,
+    "current_source_package_files": 112,
+    "distinct_prepinned_source_archives": 98,
+    "experiments": {
+      "R2-B-RESTORE": {
+        "archived_administrative_preimages": [],
+        "artifact_references_checked": 207,
+        "compared_saved_decision_fields": [
+          "attribution",
+          "baseline_word_semantic_sha256",
+          "built_semantic_sha256",
+          "candidate",
+          "candidate_id",
+          "candidate_set_sha256",
+          "candidates",
+          "canonical",
+          "cap_normals",
+          "checked_orientations",
+          "checks",
+          "coefficients",
+          "collective_cap_controls",
+          "compensation",
+          "complete",
+          "counts",
+          "credit_contents",
+          "guards",
+          "inherited_pins",
+          "local_admission",
+          "local_profile",
+          "moment_delta",
+          "n_permutations",
+          "native_physical_owner_root_outer_checked",
+          "optimizer",
+          "outcome",
+          "package_manifest",
+          "package_pins",
+          "provider",
+          "reference_moment_delta",
+          "scope",
+          "seed_use",
+          "source_acquisition",
+          "source_attribution",
+          "source_claim",
+          "source_credits",
+          "source_pin",
+          "source_scope",
+          "source_status",
+          "status",
+          "trusted_sources",
+          "unresolved",
+          "width_inventory",
+          "word"
+        ],
+        "completed_by_phase": {
+          "census": 4,
+          "controls": 6,
+          "price": 192,
+          "reference": 4
+        },
+        "confirmed": true,
+        "cpu_seconds": 77.34699228000001,
+        "longest_task_seconds": 3.018655522726476,
+        "outcomes": [
+          {
+            "count": 4,
+            "phase": "census",
+            "status": "PASS"
+          },
+          {
+            "count": 6,
+            "phase": "controls",
+            "status": "PASS"
+          },
+          {
+            "count": 192,
+            "phase": "price",
+            "status": "EXPLORATORY"
+          },
+          {
+            "count": 4,
+            "phase": "reference",
+            "status": "PASS"
+          }
+        ],
+        "peak_rss_bytes": 193822720,
+        "pool_tasks": 206,
+        "priced_profile_kinds": {
+          "identical": 4
+        },
+        "reference_controls": 4,
+        "reference_nominee_validations": 0,
+        "reference_only_nominees": [],
+        "scientific_scope": "Saved finite local decisions only; no scientific rerun, native/outer proof or kappa claim.",
+        "seeds": [
+          24097,
+          57059
+        ],
+        "source_credits_per_result": 23,
+        "status": "EXPLORATORY",
+        "wall_seconds": 10.021525653079152
+      }
+    },
+    "kind": "administrative byte and receipt audit; no scientific reruns",
+    "preserved_pre_round_files": 21187,
+    "results_bytes_excluding_audit": 176045199,
+    "retired_without_execution": [
+      {
+        "empirical_null": false,
+        "execution": "NOT_RUN",
+        "id": "R1-B-REPAIR",
+        "preregistration_sha256": "887be7cb7034ff39220e29fea64362a3cfb2a06ed0601a786512d69bf78d6207",
+        "status": "EXPLORATORY"
+      }
+    ],
+    "round_result_bytes_excluding_audit": 3398492,
+    "schema_version": 1,
+    "script_sha256": "c837f5a64b757a34b1b037d22f630ba6ad0321df7967eec772eca2fe80b2f21e",
+    "status": "PASS",
+    "total_experimental_cpu_seconds": 77.34699228000001,
+    "total_pool_tasks": 206
+  }
+}
