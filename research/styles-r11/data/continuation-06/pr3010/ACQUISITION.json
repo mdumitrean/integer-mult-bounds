@@ -1,0 +1,345 @@
+{
+  "acquired_source_bytes": 916952,
+  "author": "Ross Richardson (RossRichardson)",
+  "author_login": "RossRichardson",
+  "byte_budget": 10000000,
+  "candidate": {
+    "calls": 333,
+    "columns": [
+      "time",
+      "helper",
+      "owner_replica",
+      "child",
+      "port",
+      "offset"
+    ],
+    "dispatch_entries": 333,
+    "profile": {
+      "1": 822840,
+      "2": 235098,
+      "3": 79734,
+      "4": 35964,
+      "48": 14095,
+      "5": 6858,
+      "8": 2664
+    },
+    "roles": 135864,
+    "source_format": "Literal T37 candidate; source reports T74 by interleaving, not a separately committed T74 candidate FILL here.",
+    "validation": "UNRUN: counts and declarations only; source author receipts are retained as inert evidence."
+  },
+  "credits": [
+    "Ross Richardson/#3010/#2987",
+    "Marius-Paul Dumitrean/#2979",
+    "Yiyang Lu chronological flow/coloring",
+    "Jeremy Kothe; Dugongue; Mason Hale; Jeremy Diviney; themilkman216; Tekalign; icekylinx and all retained sources/CREDITS.md and NOTICE"
+  ],
+  "files": [
+    {
+      "bytes": 14086,
+      "git_blob": "51e08d71c3633090aeeff41ac5be005c64f800a9",
+      "local_path": "data/continuation-06/pr3010/package/CONSTRUCTION.md",
+      "path": "CONSTRUCTION.md",
+      "sha256": "bd3c2722e96212c39e1f1876ffd713347e031c8e3dad805515e07f23ed448679",
+      "source_path": "research/rank7-face-boundary-fill/CONSTRUCTION.md"
+    },
+    {
+      "bytes": 1806,
+      "git_blob": "e5c81d23cca42d7dd959afb33d2d1a1818382cd0",
+      "local_path": "data/continuation-06/pr3010/package/INDEPENDENT-RESULT.json",
+      "path": "INDEPENDENT-RESULT.json",
+      "sha256": "0b6a0ae7eaa6a04d2a6472e5f2aaba196ff5f1ed1f794d9af2d7683b29d5ddfb",
+      "source_path": "research/rank7-face-boundary-fill/INDEPENDENT-RESULT.json"
+    },
+    {
+      "bytes": 12870,
+      "git_blob": "6f040ae5963c9044862d40e92230dc19c42f8e20",
+      "local_path": "data/continuation-06/pr3010/package/INDEPENDENT.md",
+      "path": "INDEPENDENT.md",
+      "sha256": "d3b12354a27c1106f26df0d5ff49bf34ab171315962bdc617a646db896c051ab",
+      "source_path": "research/rank7-face-boundary-fill/INDEPENDENT.md"
+    },
+    {
+      "bytes": 11357,
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "local_path": "data/continuation-06/pr3010/package/LICENSE",
+      "path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_path": "research/rank7-face-boundary-fill/LICENSE"
+    },
+    {
+      "bytes": 6869,
+      "git_blob": "5056bd247f5eedefb410bf6e33305134b07fc6a2",
+      "local_path": "data/continuation-06/pr3010/package/MATCHING-PROOF.md",
+      "path": "MATCHING-PROOF.md",
+      "sha256": "22507bc521ca38d74684acbfda0fb17db7ef1a8165234ab9459499522e0d2de4",
+      "source_path": "research/rank7-face-boundary-fill/MATCHING-PROOF.md"
+    },
+    {
+      "bytes": 1127,
+      "git_blob": "5d87b2e4876d59d88714f7a77dd1928300203996",
+      "local_path": "data/continuation-06/pr3010/package/NOTICE",
+      "path": "NOTICE",
+      "sha256": "9de86ed7ee610be72c31d8d340e73657a4fc95fa55dbdc59cda82b110fd9bb70",
+      "source_path": "research/rank7-face-boundary-fill/NOTICE"
+    },
+    {
+      "bytes": 5401,
+      "git_blob": "1b5e73a95b44987777735423634a579a1495f6f2",
+      "local_path": "data/continuation-06/pr3010/package/README.md",
+      "path": "README.md",
+      "sha256": "cf7b5c83a7238e140ffa84c72b61de08ed3875a22996af889a63d65b0876beaf",
+      "source_path": "research/rank7-face-boundary-fill/README.md"
+    },
+    {
+      "bytes": 4808,
+      "git_blob": "758fc102ad4728b193acd4f3948348377762e03b",
+      "local_path": "data/continuation-06/pr3010/package/RESULT.json",
+      "path": "RESULT.json",
+      "sha256": "749afe2aff1eee58d18d1cdb4856872e4514bcad8cd6556ab5cc04b1f1acde31",
+      "source_path": "research/rank7-face-boundary-fill/RESULT.json"
+    },
+    {
+      "bytes": 20685,
+      "git_blob": "9194466ce85bf7df44d704475c146fc7c38515cf",
+      "local_path": "data/continuation-06/pr3010/package/SOURCES.json",
+      "path": "SOURCES.json",
+      "sha256": "a059bd3e3412cc5b3dd7b31478ed25f21f0101af3816fec537ab5952d0217aa9",
+      "source_path": "research/rank7-face-boundary-fill/SOURCES.json"
+    },
+    {
+      "bytes": 6106,
+      "git_blob": "70c3c9fb3810acb783259f58cccb707bdb2a1d73",
+      "local_path": "data/continuation-06/pr3010/package/TASK.json",
+      "path": "TASK.json",
+      "sha256": "1c353e771a54b95762e3eb923128cba7a5d87c1bb6737b2f44a4d50db4c3e5c7",
+      "source_path": "research/rank7-face-boundary-fill/TASK.json"
+    },
+    {
+      "bytes": 1075,
+      "git_blob": "06fe8dd3e7f3363936025cfc91641ccdf9c78ca1",
+      "local_path": "data/continuation-06/pr3010/package/VERIFY.json",
+      "path": "VERIFY.json",
+      "sha256": "3ab763f32ec95bff47d236875d48eb0ba81ba8cccc9378da33eddae20b73569a",
+      "source_path": "research/rank7-face-boundary-fill/VERIFY.json"
+    },
+    {
+      "bytes": 2177,
+      "git_blob": "e6e8b28f5d372b2663b5448ce4629e995de35abd",
+      "local_path": "data/continuation-06/pr3010/package/candidate/repair/MATCHING-CERT.json",
+      "path": "candidate/repair/MATCHING-CERT.json",
+      "sha256": "54ed4269fd23733a9c958098bdd123e3b01993327c6e453d083e0f52c3700718",
+      "source_path": "research/rank7-face-boundary-fill/candidate/repair/MATCHING-CERT.json"
+    },
+    {
+      "bytes": 610,
+      "git_blob": "bb7cfeb2c3b4ed5b07267ca10a8a873ebc55ec46",
+      "local_path": "data/continuation-06/pr3010/package/candidate/repair/MATCHING.json",
+      "path": "candidate/repair/MATCHING.json",
+      "sha256": "5ed6631f201bec3c44247e5d3c2769dabc03797e2a85f925a496f66814808709",
+      "source_path": "research/rank7-face-boundary-fill/candidate/repair/MATCHING.json"
+    },
+    {
+      "bytes": 98518,
+      "git_blob": "8bb40b6ec804b5c1b00529cf1669c074afd3fc58",
+      "local_path": "data/continuation-06/pr3010/package/candidate/repair/PAIR-GRAPH.json.gz",
+      "path": "candidate/repair/PAIR-GRAPH.json.gz",
+      "sha256": "528ae25f4ae6feda162c35e44b7e0b503430954b926c3239734cbeb9d80176f8",
+      "source_path": "research/rank7-face-boundary-fill/candidate/repair/PAIR-GRAPH.json.gz"
+    },
+    {
+      "bytes": 394,
+      "git_blob": "ffead08cc60fcb0ce2f7a636521d08e1539661fc",
+      "local_path": "data/continuation-06/pr3010/package/candidate/repair/attained/CONSTRUCTION-CHECK.json",
+      "path": "candidate/repair/attained/CONSTRUCTION-CHECK.json",
+      "sha256": "7e184b2895d274bdcee0eb960786d94ce6ec7e2b32bbee2e427e4b358cf32e11",
+      "source_path": "research/rank7-face-boundary-fill/candidate/repair/attained/CONSTRUCTION-CHECK.json"
+    },
+    {
+      "bytes": 5156,
+      "git_blob": "2c48b2e02c6add07c935982238e013e5e29157db",
+      "local_path": "data/continuation-06/pr3010/package/candidate/repair/attained/DISPATCH.json",
+      "path": "candidate/repair/attained/DISPATCH.json",
+      "sha256": "5513481a70c83767b5836b15fb7ff204d2a8f8fca83c6bcaee90a20b3d1ec6c4",
+      "source_path": "research/rank7-face-boundary-fill/candidate/repair/attained/DISPATCH.json"
+    },
+    {
+      "bytes": 660000,
+      "git_blob": "ac8204ea3f10ec763378149bee839b8d814bf13e",
+      "local_path": "data/continuation-06/pr3010/package/candidate/repair/attained/FILL.json.gz",
+      "path": "candidate/repair/attained/FILL.json.gz",
+      "sha256": "10d86b3307e78b8db89e8290d60e04230b3c86c61d26da4c47b5901f54689e4b",
+      "source_path": "research/rank7-face-boundary-fill/candidate/repair/attained/FILL.json.gz"
+    },
+    {
+      "bytes": 6165,
+      "git_blob": "0cc1c1ab7bafe7ad9600992a6129093fe51a5eaf",
+      "local_path": "data/continuation-06/pr3010/package/candidate/repair/attained/JOURNAL.json.gz",
+      "path": "candidate/repair/attained/JOURNAL.json.gz",
+      "sha256": "aafd46e45414587a7664e53f6cbbb3ee2698675e98057ab580a43ab65372110a",
+      "source_path": "research/rank7-face-boundary-fill/candidate/repair/attained/JOURNAL.json.gz"
+    },
+    {
+      "bytes": 2242,
+      "git_blob": "2a7f9f1ed2c3b17f4ae0eccd55e95968cc139f56",
+      "local_path": "data/continuation-06/pr3010/package/candidate/repair/attained/ORDER.json",
+      "path": "candidate/repair/attained/ORDER.json",
+      "sha256": "84f030a59dde4fa4635988ef0931ebae66964b3a202df79d38247fbe8a5592dc",
+      "source_path": "research/rank7-face-boundary-fill/candidate/repair/attained/ORDER.json"
+    },
+    {
+      "bytes": 333,
+      "git_blob": "9d1dc4910f505b9759953a7a69bc90b6d34f71a9",
+      "local_path": "data/continuation-06/pr3010/package/candidate/repair/attained/PATTERNS.json",
+      "path": "candidate/repair/attained/PATTERNS.json",
+      "sha256": "52ea677f18deb0db97bf0ee346cb0a6eab73f0fe18269918cb7e4d4ed6945503",
+      "source_path": "research/rank7-face-boundary-fill/candidate/repair/attained/PATTERNS.json"
+    },
+    {
+      "bytes": 72,
+      "git_blob": "db60b4ea409dfcd106f02bd5948d69b79246b663",
+      "local_path": "data/continuation-06/pr3010/package/candidate/repair/attained/PROFILE.json",
+      "path": "candidate/repair/attained/PROFILE.json",
+      "sha256": "daf0f92c4c597fbe33c6caa8d86f4fa60d27afe9584d07e6b37e77de3093a1fd",
+      "source_path": "research/rank7-face-boundary-fill/candidate/repair/attained/PROFILE.json"
+    },
+    {
+      "bytes": 1817,
+      "git_blob": "4ac474382a01674a68b43ff8c4984249892b6c25",
+      "local_path": "data/continuation-06/pr3010/package/candidate/repair/attained/PROVIDERS.json",
+      "path": "candidate/repair/attained/PROVIDERS.json",
+      "sha256": "8a96f1404917d45e4b3e4f66aae63b85ce35daf7e6649e1eb19997ef6798741d",
+      "source_path": "research/rank7-face-boundary-fill/candidate/repair/attained/PROVIDERS.json"
+    },
+    {
+      "bytes": 138,
+      "git_blob": "1eb8ace590a0ff15f6e3b29fd9c99d6e36de30ad",
+      "local_path": "data/continuation-06/pr3010/package/candidate/HANDOFF.json",
+      "path": "candidate/HANDOFF.json",
+      "sha256": "d03c2c75fb0406678a78fadff642e5c3cd3bb037b905b1b997781bf845e99353",
+      "source_path": "research/rank7-face-boundary-fill/candidate/HANDOFF.json"
+    },
+    {
+      "bytes": 378,
+      "git_blob": "48d0020768a329c0c7f50cfc6a2def6c5e8ccfef",
+      "local_path": "data/continuation-06/pr3010/package/candidate/MODEL.json",
+      "path": "candidate/MODEL.json",
+      "sha256": "94661c84356aaa4b2e81e7c05d6bc9d9e8ee727b72dff05a11408bc5acb85db3",
+      "source_path": "research/rank7-face-boundary-fill/candidate/MODEL.json"
+    },
+    {
+      "bytes": 332,
+      "git_blob": "79336ec7fe3744fdfcb84b7f81e7e99c57b53a37",
+      "local_path": "data/continuation-06/pr3010/package/candidate/PATTERNS.json",
+      "path": "candidate/PATTERNS.json",
+      "sha256": "087a00d0737385365fb609984cdc889b6fdc89c2895780a35b0ff314e2065931",
+      "source_path": "research/rank7-face-boundary-fill/candidate/PATTERNS.json"
+    },
+    {
+      "bytes": 429,
+      "git_blob": "b2fb5898b63701b23fffc5851aa2a76c09d73e68",
+      "local_path": "data/continuation-06/pr3010/package/candidate/SOLVER.json",
+      "path": "candidate/SOLVER.json",
+      "sha256": "8d06d112010930c1f322417d44949aed7b27b00c1fd3d4373a328be2bd2d17cb",
+      "source_path": "research/rank7-face-boundary-fill/candidate/SOLVER.json"
+    },
+    {
+      "bytes": 3587,
+      "git_blob": "5f4197842052437f5fb6dc41cfd8d4dc9349cc22",
+      "local_path": "data/continuation-06/pr3010/package/sources/CREDITS.md",
+      "path": "sources/CREDITS.md",
+      "sha256": "bf85777bd2d9b8e537dae2e70614759ba1a265101dd903a72fbd2cfc2869c406",
+      "source_path": "research/rank7-face-boundary-fill/sources/CREDITS.md"
+    },
+    {
+      "bytes": 2613,
+      "git_blob": "9df951052ae186bce02a6258219dae58f7cf2e80",
+      "local_path": "data/continuation-06/pr3010/package/sources/NOTICE",
+      "path": "sources/NOTICE",
+      "sha256": "b767e40e8c7e16058d1ebb8c08eef9b9bffae31cfa30512b843ae1fcbfc6f5cd",
+      "source_path": "research/rank7-face-boundary-fill/sources/NOTICE"
+    },
+    {
+      "bytes": 2789,
+      "git_blob": "d71aaccbae9232322721638cb0857a25bab4b91c",
+      "local_path": "data/continuation-06/pr3010/package/sources/PINS.json",
+      "path": "sources/PINS.json",
+      "sha256": "978b20708cabb86cc379e42ca04f45b9251d60a5241c3d70092288f42051cc68",
+      "source_path": "research/rank7-face-boundary-fill/sources/PINS.json"
+    },
+    {
+      "bytes": 7879,
+      "git_blob": "9d9b200feefa1c87cf3d77594108dfca3e6334b5",
+      "local_path": "data/continuation-06/pr3010/package/sources/PR2987-FACE-PROOF.md",
+      "path": "sources/PR2987-FACE-PROOF.md",
+      "sha256": "afe6b7b80f4685a5ce543a3da520f7ec12dcbbda213a59fe63fe21e59ca648d7",
+      "source_path": "research/rank7-face-boundary-fill/sources/PR2987-FACE-PROOF.md"
+    },
+    {
+      "bytes": 10210,
+      "git_blob": "602064c899b8c09bdf2879cf3883b0fab7542c23",
+      "local_path": "data/continuation-06/pr3010/package/sources/PR2987-HALL-PROOF.md",
+      "path": "sources/PR2987-HALL-PROOF.md",
+      "sha256": "f9b0a783d6206b2caa378b45300f5db2626b797230fec23a26c160808288fd47",
+      "source_path": "research/rank7-face-boundary-fill/sources/PR2987-HALL-PROOF.md"
+    },
+    {
+      "bytes": 24923,
+      "git_blob": "ad4fde698389d02543df632d46b54dcd93e53a97",
+      "local_path": "data/continuation-06/pr3010/package/sources/README.md",
+      "path": "sources/README.md",
+      "sha256": "d00d123fc6cb7da627a8db1b8ae95b732ef7c55f802a784059de982159548634",
+      "source_path": "research/rank7-face-boundary-fill/sources/README.md"
+    }
+  ],
+  "head": "87ca15cf005ab232ca0104ec5137014ac754f487",
+  "limits": [
+    "Selected documentation, attribution, fullcandidate/repairdata and k473modelstatus metadata acquired; package producer/checker Python deliberately not downloaded or executed.",
+    "Initial fullrepository recursive Git tree was truncated by GitHub; that incomplete inventory was rejected. Bounded exactrefpackage listings and complete candidate subtree replaced it.",
+    "An attempted metadata resave refused to overwrite PR.json.gz; immutable original exacthead capture remains retained.",
+    "No complete nativecache, scientific verification, derived T74fill or new bound is claimed."
+  ],
+  "metadata_files": {
+    "CANDIDATE-CONTENTS.json.gz": {
+      "bytes": 689,
+      "sha256": "27b6eb2964e17f45c9417d8ee3946dca341ecd0c9e5b5972b8321c792768554a"
+    },
+    "CONTENTS.json.gz": {
+      "bytes": 1666,
+      "sha256": "23319cb211db3f4bacd0f592a9abf7820f4b6ba21d80a676ad0deb8966186ced"
+    },
+    "INITIAL-FILES.json": {
+      "bytes": 3709,
+      "sha256": "e7c1df5bfc0b13a2e0806ec0133f57083745a547f31f91b40e0b2150a7501c28"
+    },
+    "PR.json.gz": {
+      "bytes": 3637,
+      "sha256": "d96bbaee69c1b30ebab69320b9af03a8353bcc533f36de39c5aeb4a135b9d139"
+    },
+    "REPAIR-TREE.json.gz": {
+      "bytes": 785,
+      "sha256": "815ad0d12a205632bda5d6a329d7c5aa8d5fa7070d3cea39192f2e7ece3b03d4"
+    },
+    "SOURCES-CONTENTS.json.gz": {
+      "bytes": 1083,
+      "sha256": "a824828787678aa312536bf662a6b154f302fc947756f17a9386884bb91a648d"
+    }
+  },
+  "package": "research/rank7-face-boundary-fill",
+  "pr": 3010,
+  "preserved_credit_files": [
+    "NOTICE",
+    "LICENSE",
+    "sources/CREDITS.md",
+    "sources/NOTICE",
+    "SOURCES.json"
+  ],
+  "recorded_utc": "2026-10-16T17:33:58.556966+00:00",
+  "repository": "RossRichardson/integer-mult-bounds",
+  "schema_version": 1,
+  "scope": "Bounded inert acquisition for a future changed-allocation census; CONTINUATION-06 experiment remains closed. No fetched code or scientific test executed.",
+  "source_manifest": {
+    "kind": "Pinned predecessor/provenance exports; candidate blobs are bound by the exact Git subtree.",
+    "path": "SOURCES.json",
+    "sha256": "a059bd3e3412cc5b3dd7b31478ed25f21f0101af3816fec537ab5952d0217aa9"
+  }
+}
