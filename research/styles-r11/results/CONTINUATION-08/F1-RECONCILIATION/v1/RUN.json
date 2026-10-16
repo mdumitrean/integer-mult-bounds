@@ -1,0 +1,880 @@
+{
+  "administrative_cpu_seconds": 6.756166196000001,
+  "checked_attempt": {
+    "attempt": "v1",
+    "baseline_columns_per_provider_per_seed": 632,
+    "completed_by_phase": {
+      "baseline": 4,
+      "census": 4,
+      "controls": 2,
+      "prices": 256
+    },
+    "cpu_seconds": 106.248710617,
+    "domain": {
+      "decision_from_saved_records": "NULL",
+      "providers": {
+        "base": {
+          "candidates": 35440,
+          "guard_predicate_counts": {
+            "exit_equality": 216,
+            "exit_inclusion": 1136,
+            "frame_inclusion": 9088
+          },
+          "identical_profile_rows": 30436,
+          "shards_per_seed": 64,
+          "status_counts": {
+            "NO_GAIN": 30896,
+            "REJECTED_GUARD": 4544
+          },
+          "strictly_costlier_rows": 460
+        },
+        "extra": {
+          "candidates": 35440,
+          "guard_predicate_counts": {
+            "exit_equality": 216,
+            "exit_inclusion": 1136,
+            "frame_inclusion": 9088
+          },
+          "identical_profile_rows": 30436,
+          "shards_per_seed": 64,
+          "status_counts": {
+            "NO_GAIN": 30896,
+            "REJECTED_GUARD": 4544
+          },
+          "strictly_costlier_rows": 460
+        }
+      },
+      "selected_pairs": 0,
+      "unresolved_rows": 0,
+      "unvalidated_paired": 0
+    },
+    "failure": {
+      "message": "round results4MB cap",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py\", line 235, in main\n    prices = launch('prices', specs)\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py\", line 202, in launch\n    storage()\n    ~~~~~~~^^\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py\", line 175, in storage\n    need(sum(p.stat().st_size for p in ROUND.rglob('*') if p.is_file()) < 4000000, 'round results4MB cap')\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py\", line 32, in need\n    raise ValueError(message)\nValueError: round results4MB cap\n",
+      "type": "ValueError"
+    },
+    "max_task_seconds": 1.603499935939908,
+    "max_worker_rss_bytes": 270761984,
+    "memory_projections": [
+      {
+        "path": "data/continuation-08/evidence-v1/BASELINE-MEMORY-PROJECTION.json",
+        "projected_peak_gib": 87.64012145996094,
+        "sha256": "837caa0d06acd2c02ffa62de04b2ce04e65b5d1ea789787d6870910f1e92ca5e"
+      },
+      {
+        "path": "data/continuation-08/evidence-v1/CENSUS-MEMORY-PROJECTION.json",
+        "projected_peak_gib": 87.76121520996094,
+        "sha256": "6d7384ceb97bcf4e629dfc913676506be3e1893d325a27bf835a11c3da86369a"
+      },
+      {
+        "path": "data/continuation-08/evidence-v1/CONTROLS-MEMORY-PROJECTION.json",
+        "projected_peak_gib": 87.51902770996094,
+        "sha256": "55e0e4f68f6c1edd078dd1726314ff0ff41f79ced3e08c9d8635877adc13c9d7"
+      },
+      {
+        "path": "data/continuation-08/evidence-v1/PREPARATION-MEMORY-PROJECTION.json",
+        "projected_peak_gib": 79.26100158691406,
+        "sha256": "07bec262ccd18a697373851264b5c1d9abd373581d2be153484a6a7d131a6b3b"
+      },
+      {
+        "path": "data/continuation-08/evidence-v1/PRICES-MEMORY-PROJECTION.json",
+        "projected_peak_gib": 94.54979705810547,
+        "sha256": "0c08a96e5fbc223f77163401aa60b0510c4209ab88c21ae04c82ac034fe3da2f"
+      }
+    ],
+    "original_status_unchanged": "ERROR",
+    "pool_status_counts": {
+      "OK": 266
+    },
+    "pool_tasks": 266,
+    "reconciled_saved_decision": "NULL",
+    "saved_control_checks_per_seed": {
+      "41117": 1508,
+      "83003": 1508
+    },
+    "scientific_rerun": false,
+    "source_archives": {
+      "historical_administrative_preimages": [],
+      "reused_earlier_archives": 113,
+      "unique_source_payloads": 116
+    },
+    "source_credits_per_result": {
+      "41117": 25,
+      "83003": 25
+    },
+    "status": "ERROR",
+    "wall_seconds": 11.549536055885255
+  },
+  "confirmed": true,
+  "decision": {
+    "kappa_claim": false,
+    "pattern_claim": false,
+    "rule": "Original F1 completed-domain zero-favorable/zero-unresolved rule; both seeds agree.",
+    "scope": "Protocol-specific finite A/B carrier-factorization NULL only."
+  },
+  "domain": {
+    "decision_from_saved_records": "NULL",
+    "providers": {
+      "base": {
+        "candidates": 35440,
+        "guard_predicate_counts": {
+          "exit_equality": 216,
+          "exit_inclusion": 1136,
+          "frame_inclusion": 9088
+        },
+        "identical_profile_rows": 30436,
+        "shards_per_seed": 64,
+        "status_counts": {
+          "NO_GAIN": 30896,
+          "REJECTED_GUARD": 4544
+        },
+        "strictly_costlier_rows": 460
+      },
+      "extra": {
+        "candidates": 35440,
+        "guard_predicate_counts": {
+          "exit_equality": 216,
+          "exit_inclusion": 1136,
+          "frame_inclusion": 9088
+        },
+        "identical_profile_rows": 30436,
+        "shards_per_seed": 64,
+        "status_counts": {
+          "NO_GAIN": 30896,
+          "REJECTED_GUARD": 4544
+        },
+        "strictly_costlier_rows": 460
+      }
+    },
+    "selected_pairs": 0,
+    "unresolved_rows": 0,
+    "unvalidated_paired": 0
+  },
+  "experiment": "F1-RECONCILIATION",
+  "independent_saved_review_sha256": "3e3195cf642562e7f9c169715d70a39222d7ac9070435dc127fbc52171bb8c9f",
+  "inputs": {
+    "implementation_pins": {
+      "bytes": 50527,
+      "path": "results/CONTINUATION-08/F1/IMPLEMENTATION-PINS-v1.json",
+      "sha256": "2c13c4ba4916bc88a4b202922104aa042335f237208860aa787bcb07f7db87fc"
+    },
+    "independent_saved_review": {
+      "bytes": 27781,
+      "path": "results/CONTINUATION-08/planning/SAVED-RESULT-REVIEW.json",
+      "sha256": "3e3195cf642562e7f9c169715d70a39222d7ac9070435dc127fbc52171bb8c9f"
+    },
+    "original_results": [
+      {
+        "bytes": 148713,
+        "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/seed-41117/RESULT.json",
+        "payload_sha256": "6a360db4369f9877f30d5190c032bcc21173c916bcc66955b834028ab907b233",
+        "sha256": "6a360db4369f9877f30d5190c032bcc21173c916bcc66955b834028ab907b233"
+      },
+      {
+        "bytes": 148713,
+        "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/seed-83003/RESULT.json",
+        "payload_sha256": "589df0b5e2f515fb2860ce24b1ec464e20f880803097daf239a1d26648e0bcd3",
+        "sha256": "589df0b5e2f515fb2860ce24b1ec464e20f880803097daf239a1d26648e0bcd3"
+      }
+    ],
+    "original_run": {
+      "bytes": 1706,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/RUN.json",
+      "sha256": "59b93314c33237ca7f5cbaf047793bf064f58c287c7c3597ce2834521912333f"
+    },
+    "preregistration": {
+      "bytes": 8742,
+      "path": "results/CONTINUATION-08/F1/PREREGISTRATION.json",
+      "sha256": "6df627ddbd9209e13717ea1b04819e262fc8e901c7da63b57fdbff5a96917c29"
+    },
+    "preserved_administrative_errors": [
+      {
+        "bytes": 815,
+        "path": "results/CONTINUATION-08/F1-RECONCILIATION/ADMIN-ERROR-20261016T190433236149Z.json",
+        "sha256": "240f8508ec51c81a86fc784ce194e0729eac49e6fc6eabaa4b2fea94fb9d76f0"
+      }
+    ],
+    "relocation": {
+      "bytes": 93806,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/RELOCATION.json",
+      "sha256": "4304a43554ed87d3f69ce3d6b51bd75a6e3067cf4ce984dfff769c1040fe4f38"
+    },
+    "storage_registration": {
+      "bytes": 1747,
+      "path": "results/CONTINUATION-08/F1/STORAGE-RECONCILIATION-v1.json",
+      "sha256": "b752989fef2613adb490022a8a8b2a675a20fbe74dd9fe51df52582a32ea666d"
+    }
+  },
+  "kind": "Post-result administrative saved-receipt reconciliation",
+  "milestone": "CONTINUATION-08",
+  "n_permutations": 0,
+  "original_attempt_status": "ERROR",
+  "original_scientific_cpu_counted_once": true,
+  "original_scientific_cpu_seconds": 106.248710617,
+  "prior_failed_administrative_cpu_seconds": 3.394180651,
+  "recorded_utc": "2026-10-16T19:05:26.318854+00:00",
+  "results": [
+    {
+      "bytes": 187723,
+      "path": "results/CONTINUATION-08/F1-RECONCILIATION/v1/seed-41117/RESULT.json",
+      "sha256": "ef6530d2a9c5b84006aabab8c108ffa1783051c1243a5f42603d1b1c83dac329"
+    },
+    {
+      "bytes": 187723,
+      "path": "results/CONTINUATION-08/F1-RECONCILIATION/v1/seed-83003/RESULT.json",
+      "sha256": "f84020bcaac38bcac8f139482cba8beca28fb79b8fab2cc3d91b20281f2b27a3"
+    }
+  ],
+  "schema_version": 1,
+  "scientific_cpu_seconds_added": 0,
+  "scientific_decision_agreement": true,
+  "scientific_rerun": false,
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43extra.json.gz",
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "author_login": "mdumitrean",
+      "bytes": 71422,
+      "commit": "be191346391661f4d35fc0d1508d0a6029572576",
+      "format": "BORROW-WORD",
+      "git_blob": "d9aa96a93fea5f7395e7783aef0bc117c0a0ae89",
+      "lineage_attribution": "Retain all original PINS and package CREDITS.md, NOTICE and SOURCES.json; PR2969/2966/2957/2942/2930/2917/2908 and all retained predecessors remain credited.",
+      "local_path": "data/continuation-05/pr2979/package/data/WORD-base.json.gz",
+      "mode": "100644",
+      "path": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+      "pin_key": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+      "pr": 2979,
+      "relative_path": "data/WORD-base.json.gz",
+      "sha256": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d",
+      "source_path": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+      "treatment": "Inert exact Git bytes; Python sources renamed .py.txt; never imported or executed.",
+      "uncompressed_sha256": "bbfe6acaea975063928f491e0fff2ce6027a572948c229bb734420a99a43d526"
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "author_login": "mdumitrean",
+      "bytes": 71419,
+      "commit": "be191346391661f4d35fc0d1508d0a6029572576",
+      "format": "BORROW-WORD",
+      "git_blob": "74f6cb64595c21f7726ae77e69437868620bdcee",
+      "lineage_attribution": "Retain all original PINS and package CREDITS.md, NOTICE and SOURCES.json; PR2969/2966/2957/2942/2930/2917/2908 and all retained predecessors remain credited.",
+      "local_path": "data/continuation-05/pr2979/package/data/WORD-extra.json.gz",
+      "mode": "100644",
+      "path": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+      "pin_key": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+      "pr": 2979,
+      "relative_path": "data/WORD-extra.json.gz",
+      "sha256": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7",
+      "source_path": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+      "treatment": "Inert exact Git bytes; Python sources renamed .py.txt; never imported or executed.",
+      "uncompressed_sha256": "06136758a53b380a09658879439032160867602fdceedd455b94d69c0ff1c5ef"
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "author_login": "jeremykothe2",
+      "bytes": 71434,
+      "commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "format": "BORROW-WORD",
+      "git_blob": "4f0483657396a7f735873e1b252482c53dfb2eb6",
+      "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-base.json.gz",
+      "pr": 3015,
+      "sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5",
+      "source": "PR3015 complete declared restore edit on PR2979; all inherited credits retained",
+      "source_path": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-base.json.gz"
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "author_login": "jeremykothe2",
+      "bytes": 71430,
+      "commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "format": "BORROW-WORD",
+      "git_blob": "81f95e21ede115e8bdb6bd522c641b37b740bdf7",
+      "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-extra.json.gz",
+      "pr": 3015,
+      "sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea",
+      "source": "PR3015 complete declared restore edit on PR2979; all inherited credits retained",
+      "source_path": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-extra.json.gz"
+    }
+  ],
+  "source_sha256": {
+    "auditor": "553269128e13727e95e06e298a625f4af058941461ee1cf8ba44defb395d6ef6",
+    "reconciler": "a91b19186aae93ee47d285f656d858d1933dd854a206eae52741f83c305ed426"
+  },
+  "status": "NULL",
+  "storage_preservation": {
+    "all_time_exact_peak_known": false,
+    "archive": {
+      "bytes": 1981552,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1-preserved.tar.xz",
+      "sha256": "493ea0da827c04e77238dc688f52ea935729fe6b8c5b656e3f8e01130b52481d"
+    },
+    "failed_close_observation": {
+      "global_bytes": 199975395,
+      "global_limit_bytes": 200000000,
+      "round_bytes": 5473292,
+      "round_limit_bytes": 4000000
+    },
+    "global_limit_held_at_recorded_measurements": true,
+    "lossless_byte_preservation": true,
+    "minimum_observed_prepack_including_registration": {
+      "global_bytes": 199977142,
+      "round_bytes": 5475039
+    },
+    "original_attempt_status": "ERROR",
+    "original_bytes": 5350529,
+    "original_files": 280,
+    "registration_sha256": "b752989fef2613adb490022a8a8b2a675a20fbe74dd9fe51df52582a32ea666d",
+    "relocation_sha256": "4304a43554ed87d3f69ce3d6b51bd75a6e3067cf4ce984dfff769c1040fe4f38",
+    "round_limit_obeyed_throughout": false
+  },
+  "successful_verification_cpu_seconds": 3.361985545
+}

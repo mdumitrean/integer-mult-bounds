@@ -1,0 +1,3850 @@
+{
+  "administrative_cpu_seconds_shared_run": 6.756166196000001,
+  "administrative_kind": "Saved-receipt reconciliation, not a new scientific run",
+  "confirmed": true,
+  "cpu_seconds": 0,
+  "decision": {
+    "kappa_claim": false,
+    "pattern_claim": false,
+    "rule": "Original F1 completed-domain zero-favorable/zero-unresolved rule; both seeds agree.",
+    "scope": "Protocol-specific finite A/B carrier-factorization NULL only."
+  },
+  "domain": {
+    "decision_from_saved_records": "NULL",
+    "providers": {
+      "base": {
+        "candidates": 35440,
+        "guard_predicate_counts": {
+          "exit_equality": 216,
+          "exit_inclusion": 1136,
+          "frame_inclusion": 9088
+        },
+        "identical_profile_rows": 30436,
+        "shards_per_seed": 64,
+        "status_counts": {
+          "NO_GAIN": 30896,
+          "REJECTED_GUARD": 4544
+        },
+        "strictly_costlier_rows": 460
+      },
+      "extra": {
+        "candidates": 35440,
+        "guard_predicate_counts": {
+          "exit_equality": 216,
+          "exit_inclusion": 1136,
+          "frame_inclusion": 9088
+        },
+        "identical_profile_rows": 30436,
+        "shards_per_seed": 64,
+        "status_counts": {
+          "NO_GAIN": 30896,
+          "REJECTED_GUARD": 4544
+        },
+        "strictly_costlier_rows": 460
+      }
+    },
+    "selected_pairs": 0,
+    "unresolved_rows": 0,
+    "unvalidated_paired": 0
+  },
+  "experiment": "F1-RECONCILIATION",
+  "implementation_pins_sha256": "2c13c4ba4916bc88a4b202922104aa042335f237208860aa787bcb07f7db87fc",
+  "inputs": {
+    "implementation_pins": {
+      "bytes": 50527,
+      "path": "results/CONTINUATION-08/F1/IMPLEMENTATION-PINS-v1.json",
+      "sha256": "2c13c4ba4916bc88a4b202922104aa042335f237208860aa787bcb07f7db87fc"
+    },
+    "independent_saved_review": {
+      "bytes": 27781,
+      "path": "results/CONTINUATION-08/planning/SAVED-RESULT-REVIEW.json",
+      "sha256": "3e3195cf642562e7f9c169715d70a39222d7ac9070435dc127fbc52171bb8c9f"
+    },
+    "original_results": [
+      {
+        "bytes": 148713,
+        "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/seed-41117/RESULT.json",
+        "payload_sha256": "6a360db4369f9877f30d5190c032bcc21173c916bcc66955b834028ab907b233",
+        "sha256": "6a360db4369f9877f30d5190c032bcc21173c916bcc66955b834028ab907b233"
+      },
+      {
+        "bytes": 148713,
+        "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/seed-83003/RESULT.json",
+        "payload_sha256": "589df0b5e2f515fb2860ce24b1ec464e20f880803097daf239a1d26648e0bcd3",
+        "sha256": "589df0b5e2f515fb2860ce24b1ec464e20f880803097daf239a1d26648e0bcd3"
+      }
+    ],
+    "original_run": {
+      "bytes": 1706,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/RUN.json",
+      "sha256": "59b93314c33237ca7f5cbaf047793bf064f58c287c7c3597ce2834521912333f"
+    },
+    "preregistration": {
+      "bytes": 8742,
+      "path": "results/CONTINUATION-08/F1/PREREGISTRATION.json",
+      "sha256": "6df627ddbd9209e13717ea1b04819e262fc8e901c7da63b57fdbff5a96917c29"
+    },
+    "preserved_administrative_errors": [
+      {
+        "bytes": 815,
+        "path": "results/CONTINUATION-08/F1-RECONCILIATION/ADMIN-ERROR-20261016T190433236149Z.json",
+        "sha256": "240f8508ec51c81a86fc784ce194e0729eac49e6fc6eabaa4b2fea94fb9d76f0"
+      }
+    ],
+    "relocation": {
+      "bytes": 93806,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/RELOCATION.json",
+      "sha256": "4304a43554ed87d3f69ce3d6b51bd75a6e3067cf4ce984dfff769c1040fe4f38"
+    },
+    "storage_registration": {
+      "bytes": 1747,
+      "path": "results/CONTINUATION-08/F1/STORAGE-RECONCILIATION-v1.json",
+      "sha256": "b752989fef2613adb490022a8a8b2a675a20fbe74dd9fe51df52582a32ea666d"
+    }
+  },
+  "milestone": "CONTINUATION-08",
+  "n_permutations": 0,
+  "original_attempt_status": "ERROR",
+  "preregistration_sha256": "6df627ddbd9209e13717ea1b04819e262fc8e901c7da63b57fdbff5a96917c29",
+  "provenance": {
+    "comparison": {
+      "allocation_unchanged_by_constructor": true,
+      "author": "Nick Petalas (petalas)",
+      "complex_endpoint": "864575601991509221499/500000000000000000000000",
+      "derivation": "Exact source outer kappa plus 10^-46 plus 10^-70; source-reported only.",
+      "fresh_admission_here": false,
+      "head": "217edac2ebfa6250536bd6df153de14901a69395",
+      "pr": 3021
+    },
+    "comparison_acquisition": {
+      "path": "data/continuation-08/pr3021/ACQUISITION.json",
+      "sha256": "29066c016ad8129e81311c160226caa93994e9730ca3bcca95f8168bc67766fb"
+    },
+    "declared_positive_fixture": {
+      "bytes": 2429,
+      "git_blob": "90894fc6592951eaa3b4e25467d3a85c36b2d988",
+      "path": "data/continuation-07/holdout3015/package/edits/EDITS.json",
+      "sha256": "c9c68660d07bfd12ed20fd8cbfe3d36301ceb2d7bb9b4ea11350cc399b19e0b1",
+      "source_path": "research/rank7-joint-endframes-restore-edit/edits/EDITS.json"
+    },
+    "inherited_source_provenance": {
+      "credit_contents": {
+        "CREDITS.md": "# Credits\n\n- **PR #2908, Jeremy Diviney**: the paired input/output extraction, its compensation rule `C*S`, the exact two-sided certificate (`structure.py`, vendored unchanged) and the closed-adapter admission chain.\n- **PR #2917, Mason Hale**: the nine paired extractions and 82-endpoint words under PR2942, the refit/compose producer model that stage 2 follows, the T74 chronology (ORDER/DISPATCH), the allocation checker, moment auditor, extension stage and adapter derivation reused here.\n- **PR #2957 / #2948 / #2966, Jeremy Kothe (jeremykothe2)**: the fourteen declared exactness-preserving gate rewrites in five classes (R-retime, A3779-cut-start-read, PM-carrier-lender-entry, B-carrier-retime, A-commuting-swap) and their pure applier (`vendor/declared_rewrites.py`, vendored unchanged); stage 3 composes exactly these rewrites onto this package's stage-2 word (`data/REWRITES-2957.json`, re-addressed with exact preimages). PR2966 composed the same rewrites onto our PR2942 words.\n- **PR #2969, Dugongue**: the PR2942 + PR2957 composition at T370 and its cap-level headline nomination, this package's comparator and moment baseline (`allocation/baseline/`). Our stage 3 composes the same fourteen rewrites, here onto the stage-2 word.\n- **PR #2918 (research/helper408-rank7-pairing), RossRichardson**: the fixed-cut rank-seven obstruction for helper408; this package's census of fresh rank-7 extractions reproduces it exactly and is consistent with it.\n- **PR #2894 / #2833, Jeremy Kothe**: the preload re-synthesis supplier, the frame accounting and inverse-reverse cleanup (`vendor/preload_move.py`), the source materializer and the inherited supplier lineage.\n- **PR #2857 / #2848, Yiyang Lu (Lyy-iiis)**: the shared-kernel words, the staged native/overlay tooling and the chronological flow model and realization (edge colouring) used to construct the allocation; PR2843 (Marius-Paul Dumitrean) is that flow model's starting point.\n- **PR #2863 / #2839, Dugongue**: the packing lineage and the PR2839 owner engine.\n- **Tekalign**: the independent owner/chronology checker (`allocation/vendor/independent_owners.py`) and admission tooling.\n- **icekylinx**: the exact free-operator auditor retained as `vendor/audit_local.py` (PR2833).\n- **themilkman216**: the observation that a cap-level allocation of these inventories needs a T whose basic counts are integral, which the allocation's degenerate-face step builds on.\n- **Gareth Davidson (bitplane), PR #1995 / #2013**: the fixed-word terminal-subspace bounds that frame stage 1's scope; earlier rank-seven helper ends on other words are in `research/complex-rank7-end-pair`, `research/k8-rank7-composition` and the PR1090/PR1104 lineage (credited there).\n- **PR #2930 / #2942, Marius-Paul Dumitrean**: the cap allocation of PR2917's words, the four normal-45 extractions under these words, the relaxation tools and the overlay/producer conventions reused here.\n- **New here (Marius-Paul Dumitrean, with substantial AI assistance from Anthropic Claude via Claude Code)**: the codimension-2 census on paired-extraction words, the joint end-frame lowering of 22 restored helpers in five groups (stage 1), the five further extractions it makes profitable (stage 2), the exact composition with PR2957's rewrites (stage 3), the producer and local verification for all three stages, the overlay stage `rank7-joint-endframes` with its rebuild guards, the adapter generalization to six width classes, the literal T74 allocation of the changed inventory, its relaxation certificates and recorded gap, and the complete fresh replay.\n",
+        "NOTICE": "research/rank7-joint-endframes\nCopyright 2026 Marius-Paul Dumitrean. Licensed under the Apache License, Version 2.0.\nPrepared with substantial AI assistance (Anthropic Claude, via Claude Code).\n\nThis package retains, byte-identical, Apache-2.0 files from: PR #2942 (Marius-Paul Dumitrean, head\na027b0f6fdb0ab2b42ba10fc31b53960166bf2bf, research/paired-extension-normal45): data/PARENT-base.json.gz and\ndata/PARENT-extra.json.gz (its data/WORD-*.json.gz), comparators/PR2942-CLAIM.json and tools/wordedit.py; PR #2917\n(Mason Hale, head 224bd5e56041c40078ff6b5fa7393733a215de5c, research/paired-helper-extension): structure.py (Jeremy\nDiviney's PR2908 two-sided certificate checker), vendor/audit_local.py (PR2833's independent exact auditor, icekylinx\nattribution), vendor/preload_move.py (Jeremy Kothe's PR2894 frame accounting and cleanup), allocation/ORDER.json,\nallocation/DISPATCH.json and allocation/vendor/ (independent_owners.py: Tekalign's independent owner checker as vendored\nby PR2839/PR2917; PLAN.json.gz, TEMPLATE.json.gz); PR #2957 (Jeremy Kothe, head b74b25f3ccc84c16e1a801d73b2f47e5ea764c78,\nresearch/paired-extension-cap-fill-swaps): vendor/declared_rewrites.py (the pure applier of the fourteen declared\nrewrites) and comparators/PR2957-CLAIM.json; PR #2966 (Jeremy Kothe, head e62d3eb9005117d82a9babcfa937ecc53237c490,\nresearch/paired-extension-normal45-rewrites): comparators/PR2966-CLAIM.json; PR #2969 (Dugongue, head\ne2ca469b08385d3d5e29a918d66dbefaf889e9f3, research/paired-swap-normal45): allocation/baseline/ (its CLAIM.json and its\nallocation ORDER.json and PROFILE.json); and PR #2930 (head 81f3b5d12977eba09e06fbff729167d59faabe90): tools/relax.py,\ntools/root.py, tools/relax_exact.py.\ndata/REWRITES-2957.json is Jeremy Kothe's PR2957 rewrite list, re-addressed to this package's stage-2 word with exact\npreimages (every entry keeps a credit field). producer.py follows PR2917's producer.py (Mason Hale) for its paired steps;\nverify.py, check_allocation.py, check_cap.py, run_registered.py and reproduce.py adapt our PR2942 versions of PR2917's and\nPR2930's; tools/audit_allocation_moment.py is PR2917's exact moment auditor with only its authenticated baseline changed (to\nthe PR2969 headline); tools/derive_adapters.py generalizes PR2917's adapter derivation (PR2908, Jeremy Diviney);\ntools/build_overlay.py follows the overlay conventions of PR2908's and PR2917's builders. construction/allocation/ retains\nthe flow model of PR2857/PR2843 (Yiyang Lu, Marius-Paul Dumitrean) as adapted for this allocation. All original notices of\nthe exported predecessor packages remain in force.\n",
+        "SOURCES.json": {
+          "adapted_sources": [
+            {
+              "change": "three declared stages: frame-only joint rank-7 end-frame lowering of 22 restored helpers (new), five paired steps by PR2917/PR2942's composition rule with per-step declared frame changes, and PR2957's vendored applier for the fourteen re-addressed rewrites; report and cleanup re-derived and compared",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "producer.py",
+              "pr": 2942,
+              "upstream_path": "research/paired-extension-normal45/producer.py"
+            },
+            {
+              "change": "all stage words replayed and audited; stage-1 validity checks; structure certificates for the five steps; 86 semantic controls across the three stages; price table as evidence",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "verify.py",
+              "pr": 2942,
+              "upstream_path": "research/paired-extension-normal45/verify.py"
+            },
+            {
+              "change": "PR2917 moment auditor with the authenticated baseline re-pinned to the PR2969 headline nomination; nothing else",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "tools/audit_allocation_moment.py",
+              "pr": 2942,
+              "upstream_path": "research/paired-extension-normal45/tools/audit_allocation_moment.py"
+            },
+            {
+              "change": "comparators pr2966 and pr2969 added; the admission control count (119 for five width classes) derived from the provider width classes (139 for six)",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "tools/derive_adapters.py",
+              "pr": 2942,
+              "upstream_path": "research/paired-extension-normal45/tools/derive_adapters.py"
+            },
+            {
+              "change": "stage rank7-joint-endframes; inherited endpoints retained or lowered to a subspace; warps may move their B positions only; the same guards in the source's rebuild chain",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "tools/build_overlay.py",
+              "pr": 2942,
+              "upstream_path": "research/paired-extension-normal45/tools/build_overlay.py"
+            },
+            {
+              "change": "new words and allocation, six width classes, 91 buffers, physical 66,813, PR2969 moment baseline",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "check_allocation.py",
+              "pr": 2942,
+              "upstream_path": "research/paired-extension-normal45/check_allocation.py"
+            },
+            {
+              "change": "caps of the parent and every stage, 2,551 patterns, literal root below the final cap with the recorded gap, exact gains over four claims",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "check_cap.py",
+              "pr": 2942,
+              "upstream_path": "research/paired-extension-normal45/check_cap.py"
+            },
+            {
+              "change": "also exports PR2942/PR2957/PR2966/PR2969; appends the rank7-joint-endframes overlay stage; 91-buffer adapters; PR2969 comparator",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "reproduce.py",
+              "pr": 2942,
+              "upstream_path": "research/paired-extension-normal45/reproduce.py"
+            },
+            {
+              "change": "new statuses, control counts, comparator and receipt bindings",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "run_registered.py",
+              "pr": 2942,
+              "upstream_path": "research/paired-extension-normal45/run_registered.py"
+            }
+          ],
+          "base_commit": "484a8adea580345a7c37d8ac772cedfd47bcde92",
+          "derived_source": {
+            "builder": "tools/build_overlay.py (stage rank7-joint-endframes) on PR2917 tools/build_extension.py output",
+            "files": 637,
+            "manifest_sha256": "751b46364742cbb947f7db07c130ff09085b38b52c520d3b47f2dadc1e21ba80",
+            "pr2917_files": 632,
+            "pr2917_manifest_sha256": "98d57c82a1c7318be3c330c3b66897844d57232f0aaeaea88fb4bebd0a1bedf1"
+          },
+          "files": [
+            {
+              "git_blob": "b1fea0c94436b236cc2b7d41a7be032811b94c81",
+              "path": "certificates/selected-result.json",
+              "sha256": "bb2eaa58647b353f88d0aec2eafb9d30df1be53589231b23e12ceef3e4bad129",
+              "usage": "provenance"
+            },
+            {
+              "git_blob": "889b95d936746df124872133ae1e7cc339adcb92",
+              "path": "docs/research/agent-task-catalog.json",
+              "sha256": "7d185cd8c2af35988d638d969748ad7b670f902606444dbfc748e4402c340df6",
+              "usage": "provenance"
+            }
+          ],
+          "new_sources": [
+            "data/WORD-base.json.gz",
+            "data/WORD-extra.json.gz",
+            "data/STAGE1-FRAME-EDITS.json",
+            "data/TRANSFORM-226.json",
+            "data/TRANSFORM-228.json",
+            "data/TRANSFORM-230.json",
+            "data/TRANSFORM-363.json",
+            "data/TRANSFORM-395.json",
+            "data/REWRITES-2957.json (Jeremy Kothe's PR2957 rewrites, re-addressed to the stage-2 word with exact preimages)",
+            "allocation/FILL.json.gz",
+            "allocation/PROFILE.json",
+            "allocation/PROVIDERS.json",
+            "allocation/SEARCH.json",
+            "certificates/RELAX-CAP.json",
+            "certificates/RELAX-STAGES.json",
+            "construction/"
+          ],
+          "retained_sources": [
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean)",
+              "bytes": 70380,
+              "git_blob": "1ca8287d6ae5eb45d87db65b369be8d09ba692b2",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "data/PARENT-base.json.gz",
+              "pr": 2942,
+              "role": "PR2942 final base provider word (86 restored endpoints): the parent of the three stages",
+              "sha256": "54ca34c749e3228d7e2df3d8dbf7aa1568c2872490166997c5962f12fd03da35",
+              "upstream_path": "research/paired-extension-normal45/data/WORD-base.json.gz"
+            },
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean)",
+              "bytes": 70378,
+              "git_blob": "c39913ce24cbce4c841eabcc9b1e5a18e4ccc754",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "data/PARENT-extra.json.gz",
+              "pr": 2942,
+              "role": "PR2942 final extra provider word: the parent of the three stages",
+              "sha256": "eded756dfe8f411c3d1f80a3ac16516f0ea5dd6f9866728b2179b157630fa7b6",
+              "upstream_path": "research/paired-extension-normal45/data/WORD-extra.json.gz"
+            },
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean)",
+              "bytes": 2677,
+              "git_blob": "53d9edee7e8355f7e5dd5b0094462330da907846",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "comparators/PR2942-CLAIM.json",
+              "pr": 2942,
+              "role": "PR2942 headline (comparison)",
+              "sha256": "011aaac80ad79f7f29dc429a672441bb6b3c21a68bbcb34c7a0d5f943c3c3c2e",
+              "upstream_path": "research/paired-extension-normal45/CLAIM.json"
+            },
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean)",
+              "bytes": 6707,
+              "git_blob": "e5893496cd6345cd91ecf3c1dd23a645ec5e0b0a",
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "package_path": "tools/wordedit.py",
+              "pr": 2942,
+              "role": "pure overlay word-edit producer (our r13 chain tool as shipped by PR2942)",
+              "sha256": "cae8ae0f5d7fb3387ec6922fe966068aae05e3a6d3586830d4361b650cfb3617",
+              "upstream_path": "research/paired-extension-normal45/tools/wordedit.py"
+            },
+            {
+              "author": "Mason Hale (mason-hale)",
+              "bytes": 2565,
+              "git_blob": "8d5bd544ee7cad4309edad3d2a256bf48b810f90",
+              "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+              "package_path": "structure.py",
+              "pr": 2917,
+              "role": "Jeremy Diviney's PR2908 exact two-sided certificate checker, unchanged by PR2917",
+              "sha256": "83f63b6d9a1a543ecfa2c98d479dbe4e7a1c3caf6fd1c3566123308efbc32e96",
+              "upstream_path": "research/paired-helper-extension/structure.py"
+            },
+            {
+              "author": "Mason Hale (mason-hale)",
+              "bytes": 29363,
+              "git_blob": "8224873d0497cf0b4c202f31b145fa273553d978",
+              "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+              "package_path": "vendor/audit_local.py",
+              "pr": 2917,
+              "role": "PR2833's independent exact auditor (icekylinx attribution) as vendored by PR2917",
+              "sha256": "a38940094f7d19cd6376aafdd4734fa68eabc9aff4c98c3c4a3e9540328b1c90",
+              "upstream_path": "research/paired-helper-extension/vendor/audit_local.py"
+            },
+            {
+              "author": "Mason Hale (mason-hale)",
+              "bytes": 7243,
+              "git_blob": "55b435035bbc439a9d55e8abd125993208cef8d9",
+              "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+              "package_path": "vendor/preload_move.py",
+              "pr": 2917,
+              "role": "Jeremy Kothe's PR2894 frame accounting (frame_report) and inverse-reverse cleanup",
+              "sha256": "c8fda4674644fcd5cbf39b6645ce148a21daa90a998b678cbe51f970b78b0044",
+              "upstream_path": "research/paired-helper-extension/vendor/preload_move.py"
+            },
+            {
+              "author": "Mason Hale (mason-hale)",
+              "bytes": 4573,
+              "git_blob": "7409c4df1092241729739596c7648bda504e6aad",
+              "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+              "package_path": "allocation/ORDER.json",
+              "pr": 2917,
+              "role": "PR2917 T74 call order (unchanged chronology)",
+              "sha256": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1",
+              "upstream_path": "research/paired-helper-extension/allocation/ORDER.json"
+            },
+            {
+              "author": "Mason Hale (mason-hale)",
+              "bytes": 10401,
+              "git_blob": "9544fee4e6ee1f202cee22bfaeaf229ee3b2515e",
+              "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+              "package_path": "allocation/DISPATCH.json",
+              "pr": 2917,
+              "role": "PR2917 provider dispatch (unchanged)",
+              "sha256": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c",
+              "upstream_path": "research/paired-helper-extension/allocation/DISPATCH.json"
+            },
+            {
+              "author": "Mason Hale (mason-hale)",
+              "bytes": 10057,
+              "git_blob": "16013201b19054f7e45398ecf10af74c9c6a9114",
+              "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+              "package_path": "allocation/vendor/independent_owners.py",
+              "pr": 2917,
+              "role": "independent owner/chronology engine (Tekalign; PR2839 lineage)",
+              "sha256": "77a848729159e271ba64f403dfd59dddb13044b17b2950fa56700f442e2fe461",
+              "upstream_path": "research/paired-helper-extension/allocation/vendor/independent_owners.py"
+            },
+            {
+              "author": "Mason Hale (mason-hale)",
+              "bytes": 29933,
+              "git_blob": "7a1db55a4d53ee99280be4f3ab7d29f7b2033adf",
+              "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+              "package_path": "allocation/vendor/PLAN.json.gz",
+              "pr": 2917,
+              "role": "parent plan for the owner engine",
+              "sha256": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e",
+              "upstream_path": "research/paired-helper-extension/allocation/vendor/PLAN.json.gz"
+            },
+            {
+              "author": "Mason Hale (mason-hale)",
+              "bytes": 1124331,
+              "git_blob": "114808c32b1799da53524bdc25cea67efb60009e",
+              "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+              "package_path": "allocation/vendor/TEMPLATE.json.gz",
+              "pr": 2917,
+              "role": "owner template for the owner engine",
+              "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+              "upstream_path": "research/paired-helper-extension/allocation/vendor/TEMPLATE.json.gz"
+            },
+            {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 4257,
+              "git_blob": "964fb2a9c773d60b2ac079f2a4b669d13cf56034",
+              "head": "b74b25f3ccc84c16e1a801d73b2f47e5ea764c78",
+              "package_path": "vendor/declared_rewrites.py",
+              "pr": 2957,
+              "role": "Jeremy Kothe's pure applier of the fourteen declared rewrites (stage 3), called with check_declared=False",
+              "sha256": "2509f1335e47543f8814b42d6bf83032b30c5899b4f7cc62a6adc03f5138ae13",
+              "upstream_path": "research/paired-extension-cap-fill-swaps/rewrite/declared_rewrites.py"
+            },
+            {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 1739,
+              "git_blob": "cff1a70ed800d732e39f9b9b968f81662930d8e6",
+              "head": "b74b25f3ccc84c16e1a801d73b2f47e5ea764c78",
+              "package_path": "comparators/PR2957-CLAIM.json",
+              "pr": 2957,
+              "role": "PR2957 headline (comparison)",
+              "sha256": "a93e6c9e94bc9bf5664b5e23506dda9647fad1930e1eede66d5ba9f3718b598a",
+              "upstream_path": "research/paired-extension-cap-fill-swaps/CLAIM.json"
+            },
+            {
+              "author": "Jeremy Kothe (jeremykothe2)",
+              "bytes": 3172,
+              "git_blob": "8f1ad730dde7535d93f6185c79e288bb9976b00d",
+              "head": "e62d3eb9005117d82a9babcfa937ecc53237c490",
+              "package_path": "comparators/PR2966-CLAIM.json",
+              "pr": 2966,
+              "role": "PR2966 headline (comparison; PR2957 rewrites on PR2942 words)",
+              "sha256": "4d4c4800bf3bcb36d09021313b2712aebd4aa0830c74dda30991daf6851c220a",
+              "upstream_path": "research/paired-extension-normal45-rewrites/CLAIM.json"
+            },
+            {
+              "author": "Dugongue",
+              "bytes": 2316,
+              "git_blob": "beee83c9261522029d99fb486befecaf5a42fd1c",
+              "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+              "package_path": "allocation/baseline/CLAIM.json",
+              "pr": 2969,
+              "role": "PR2969 headline nomination (comparator of the admission and moment baseline)",
+              "sha256": "656a4c93411b078753783513e2e71b1722a56e7b70120264a38118811982fa77",
+              "upstream_path": "research/paired-swap-normal45/CLAIM.json"
+            },
+            {
+              "author": "Dugongue",
+              "bytes": 25652,
+              "git_blob": "b1629ba9819396197b529717ef21be9056edfe41",
+              "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+              "package_path": "allocation/baseline/ORDER.json",
+              "pr": 2969,
+              "role": "PR2969 T370 order (baseline for the moment auditor)",
+              "sha256": "d559a1dcb83707724afc0310f6ef8e3a36ad6cda0a895ca6abae9d6f39a0fc76",
+              "upstream_path": "research/paired-swap-normal45/allocation/ORDER.json"
+            },
+            {
+              "author": "Dugongue",
+              "bytes": 110,
+              "git_blob": "52d24cfc6ab68ddfa52a2721f512bc84da7c8ef5",
+              "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+              "package_path": "allocation/baseline/PROFILE.json",
+              "pr": 2969,
+              "role": "PR2969 complete paid profile (baseline for the moment auditor)",
+              "sha256": "6de8ac1fd628cdd2afa5a43872da69c7dab9d7219bdc318f9db55fd8ccdb5eb2",
+              "upstream_path": "research/paired-swap-normal45/allocation/PROFILE.json"
+            },
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean)",
+              "bytes": 17680,
+              "git_blob": "97dfe35c434283ca6e83818e61aed65740522f50",
+              "head": "81f3b5d12977eba09e06fbff729167d59faabe90",
+              "package_path": "tools/relax.py",
+              "pr": 2930,
+              "role": "exact fixed-capacity relaxation (r12 lineage, as shipped by PR2930)",
+              "sha256": "0fed1c56b50a2e6d44deeeb6db0f1c7e1f71b86d1747130e1a9202216249a728",
+              "upstream_path": "research/paired-extension-cap-fill/tools/relax.py"
+            },
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean)",
+              "bytes": 5397,
+              "git_blob": "0be97756bb9d8b072c962c147d4b4d3b3122f884",
+              "head": "81f3b5d12977eba09e06fbff729167d59faabe90",
+              "package_path": "tools/relax_exact.py",
+              "pr": 2930,
+              "role": "Fractions-only basis verification",
+              "sha256": "baf1855d6095c951a90d19a0d8094bd33290519940b732e2b758c5647830f044",
+              "upstream_path": "research/paired-extension-cap-fill/tools/relax_exact.py"
+            },
+            {
+              "author": "Marius-Paul Dumitrean (mdumitrean)",
+              "bytes": 10888,
+              "git_blob": "bd6dc2eb4e5013625d17cc08461b67622bcfed69",
+              "head": "81f3b5d12977eba09e06fbff729167d59faabe90",
+              "package_path": "tools/root.py",
+              "pr": 2930,
+              "role": "exact complete-profile root bracket",
+              "sha256": "55f5aca39b5ee2fe4687ac8863e6c24569010f27a332883c069b8e14b8fe09e3",
+              "upstream_path": "research/paired-extension-cap-fill/tools/root.py"
+            }
+          ],
+          "schema_version": 1,
+          "source_boundary": "Only this new package is submitted. The parent words are PR2942s, byte-identical; exact frozen ancestor exports remain unchanged. Full replay performs no network fetch.",
+          "upstream_exports": [
+            {
+              "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+              "manifest_sha256": "797c55c560dec5b5a657296f49d918fc5db708b7bed3eba046b3358b1666e55b",
+              "package": "research/paired-swap-normal45",
+              "pr": 2969,
+              "role": "comparator CLAIM.json and moment baseline"
+            },
+            {
+              "head": "e62d3eb9005117d82a9babcfa937ecc53237c490",
+              "manifest_sha256": "9e410c244efb370e20a5f9dc366550e11bcb14ebcecf8f2cb850512e82573914",
+              "package": "research/paired-extension-normal45-rewrites",
+              "pr": 2966,
+              "role": "comparator CLAIM.json"
+            },
+            {
+              "head": "b74b25f3ccc84c16e1a801d73b2f47e5ea764c78",
+              "manifest_sha256": "9cd226a2bf7391e7fbf4a23741bb1934afafbd596aef06f2999a935cd6e44e28",
+              "package": "research/paired-extension-cap-fill-swaps",
+              "pr": 2957,
+              "role": "rewrite applier and comparator CLAIM.json"
+            },
+            {
+              "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+              "manifest_sha256": "23bd270f440c4c7ad0d106990ae391e1af799a61ef3601d00e27f1824ae8ba69",
+              "package": "research/paired-extension-normal45",
+              "pr": 2942,
+              "role": "parent words"
+            },
+            {
+              "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+              "manifest_sha256": "55c46ddf2e3edc87dfe1ba3320947466d36980d457eb37f6cd6fba341dae0192",
+              "package": "research/paired-helper-extension",
+              "pr": 2917,
+              "role": "extension stage, overlay spec source words"
+            },
+            {
+              "head": "51309592971e3b5be935599eed2a95404dc7781e",
+              "manifest_sha256": "9dba3fe371602ec023a54e26c0fd66f69eb7a74be86aab89923529083c14b36f",
+              "package": "research/two-sided-helper-extraction",
+              "pr": 2908,
+              "role": "paired stage, adapter templates"
+            },
+            {
+              "head": "18d03c447886895ef9abf888398178e0428533ca",
+              "package": "research/shared-kernel-packing",
+              "pr": 2894,
+              "role": "exported by PR2908 reproduce.py --dry-run"
+            },
+            {
+              "head": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+              "pr": 2833,
+              "role": "source materialized and authenticated by PR2894 tools/materialize_source.py"
+            }
+          ],
+          "upstream_repository": "https://github.com/CrocSwap/integer-mult-bounds"
+        }
+      },
+      "inherited_pins": {
+        "path": "data/words/PINS.json",
+        "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+      },
+      "package_manifest": {
+        "path": "data/continuation-05/pr2979/package/MANIFEST.json",
+        "sha256": "124bd80e6253256b716716abcde518fec172e6cd855377295875a0fc8dd96db2"
+      },
+      "package_pins": {
+        "contents": {
+          "certificates/RELAX-CAP.json": "b272680de5842f7fd5f442cd0aeadfd317fe6af266ddee1a1e0738a919ba856e",
+          "certificates/RELAX-STAGES.json": "0e5ec700a191b668ba3d4b6d675f5c047d264b9a5109fc55fa92961b3fcb7d68",
+          "comparators/PR2942-CLAIM.json": "011aaac80ad79f7f29dc429a672441bb6b3c21a68bbcb34c7a0d5f943c3c3c2e",
+          "comparators/PR2957-CLAIM.json": "a93e6c9e94bc9bf5664b5e23506dda9647fad1930e1eede66d5ba9f3718b598a",
+          "comparators/PR2966-CLAIM.json": "4d4c4800bf3bcb36d09021313b2712aebd4aa0830c74dda30991daf6851c220a",
+          "construction/STAGE-PRICES.json": "dfb7d06724bf95367f3fdb398f4828fc70f803d23030bc0eee0b00541457f546",
+          "data/PARENT-base.json.gz": "54ca34c749e3228d7e2df3d8dbf7aa1568c2872490166997c5962f12fd03da35",
+          "data/PARENT-extra.json.gz": "eded756dfe8f411c3d1f80a3ac16516f0ea5dd6f9866728b2179b157630fa7b6",
+          "data/REWRITES-2957.json": "a37ade675876e4f5b00b33066c84f495fccd264863b7eb5d813837b1d01c3e7d",
+          "data/STAGE1-FRAME-EDITS.json": "5fbfce004330ebc1fbac8de264614fe295f1a074811b478db4892c3bc3852cd3",
+          "data/TRANSFORM-226.json": "1732a39728c068f9d663111c7876b4e0b96088f3dd3b8e6ff824551b5a711338",
+          "data/TRANSFORM-228.json": "82346e6a5173c4822e16b2dad06ca232111b6795a340079f9aceabe0098797c0",
+          "data/TRANSFORM-230.json": "8ad70d545695b5d2246fb9e09d46abcc1e42926c1161884f69b77f978a28f46d",
+          "data/TRANSFORM-363.json": "84d2a609739eb30d4d9356fb6f04b2ff32c8823a978d7a51db1ace1d6d2352cc",
+          "data/TRANSFORM-395.json": "065aa5d7713683942bc2156b543681857e33c6e2f30f32cba47e2cbb9d1bef69",
+          "data/WORD-base.json.gz": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d",
+          "data/WORD-extra.json.gz": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7",
+          "producer.py": "d4577cee26314b36b59723cc68df9b8895b22449cc15807c95f325f555c4da3a",
+          "structure.py": "83f63b6d9a1a543ecfa2c98d479dbe4e7a1c3caf6fd1c3566123308efbc32e96",
+          "tools/audit_allocation_moment.py": "c632527ecf092f013862660dbd7f52b599a50b321a8aa88ddc45af0547e79cb5",
+          "tools/build_overlay.py": "9d98ace9bffb37aeebd05b93ed386f73e6eee169d960e4956cf14a66e6852140",
+          "tools/derive_adapters.py": "5c06828151cd230add3e328b42dda72c4a2ed1075bd2902f38ee28727870bc84",
+          "tools/relax.py": "0fed1c56b50a2e6d44deeeb6db0f1c7e1f71b86d1747130e1a9202216249a728",
+          "tools/relax_exact.py": "baf1855d6095c951a90d19a0d8094bd33290519940b732e2b758c5647830f044",
+          "tools/root.py": "55f5aca39b5ee2fe4687ac8863e6c24569010f27a332883c069b8e14b8fe09e3",
+          "tools/wordedit.py": "cae8ae0f5d7fb3387ec6922fe966068aae05e3a6d3586830d4361b650cfb3617",
+          "vendor/audit_local.py": "a38940094f7d19cd6376aafdd4734fa68eabc9aff4c98c3c4a3e9540328b1c90",
+          "vendor/declared_rewrites.py": "2509f1335e47543f8814b42d6bf83032b30c5899b4f7cc62a6adc03f5138ae13",
+          "vendor/preload_move.py": "c8fda4674644fcd5cbf39b6645ce148a21daa90a998b678cbe51f970b78b0044"
+        },
+        "path": "data/continuation-05/pr2979/package/PINS.json",
+        "sha256": "978b20708cabb86cc379e42ca04f45b9251d60a5241c3d70092288f42051cc68"
+      },
+      "source_acquisition": {
+        "head": "be191346391661f4d35fc0d1508d0a6029572576",
+        "path": "data/continuation-05/pr2979/ACQUISITION.json",
+        "pr": 2979,
+        "sha256": "e5ad48ac05e897dcc2e073d29be451cfd1493ba3077e7e2de0f9460aa11a7d71"
+      },
+      "source_attribution": [
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 57109,
+          "format": "FULL-WORD",
+          "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+          "kappa": null,
+          "local_profile": {
+            "1": 2412,
+            "2": 418,
+            "3": 418,
+            "4": 170,
+            "5": 68,
+            "8": 8
+          },
+          "path": "1094-K8PRE-FULL-WORD.json.gz",
+          "pr": 1094,
+          "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+          "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+          "width_inventory": {
+            "4": 56,
+            "5": 32,
+            "7": 30,
+            "8": 122,
+            "9": 240
+          }
+        },
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 57222,
+          "format": "FULL-WORD",
+          "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+          "kappa": "0.001672660197076918",
+          "local_profile": {
+            "1": 2412,
+            "2": 418,
+            "3": 432,
+            "4": 142,
+            "5": 82,
+            "8": 8
+          },
+          "path": "1094-K8S7-FULL-WORD.json.gz",
+          "pr": 1094,
+          "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+          "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+          "width_inventory": {
+            "4": 56,
+            "5": 32,
+            "7": 30,
+            "8": 122,
+            "9": 240
+          }
+        },
+        {
+          "author": "Marius-Paul Dumitrean (mdumitrean)",
+          "bytes": 57307,
+          "format": "FULL-WORD",
+          "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+          "kappa": "0.001675658002271934",
+          "local_profile": {
+            "1": 2358,
+            "2": 504,
+            "3": 408,
+            "4": 134,
+            "5": 80,
+            "8": 8
+          },
+          "path": "1195-FULL-WORD.json.gz",
+          "pr": 1195,
+          "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+          "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+          "width_inventory": {
+            "4": 44,
+            "5": 44,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        {
+          "author": "Marius-Paul Dumitrean (mdumitrean)",
+          "bytes": 57412,
+          "format": "FULL-WORD",
+          "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+          "kappa": "0.001676896669021299",
+          "local_profile": {
+            "1": 2339,
+            "2": 510,
+            "3": 419,
+            "4": 126,
+            "5": 82,
+            "8": 8
+          },
+          "path": "1625-extra-word-566.json.gz",
+          "pr": 1625,
+          "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+          "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+          "width_inventory": {
+            "4": 40,
+            "5": 48,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        {
+          "author": "Marius-Paul Dumitrean (mdumitrean)",
+          "bytes": 57411,
+          "format": "FULL-WORD",
+          "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+          "kappa": "0.001676896669021299",
+          "local_profile": {
+            "1": 2347,
+            "2": 502,
+            "3": 415,
+            "4": 130,
+            "5": 82,
+            "8": 8
+          },
+          "path": "1625-gauge44-word-566.json.gz",
+          "pr": 1625,
+          "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+          "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+          "width_inventory": {
+            "4": 44,
+            "5": 44,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "bytes": 57440,
+          "format": "FULL-WORD",
+          "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+          "kappa": "0.001676938111022438",
+          "local_profile": {
+            "1": 2340,
+            "2": 508,
+            "3": 420,
+            "4": 126,
+            "5": 82,
+            "8": 8
+          },
+          "path": "1672-extra-word-566-554.json.gz",
+          "pr": 1672,
+          "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+          "width_inventory": {
+            "4": 40,
+            "5": 48,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        {
+          "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+          "bytes": 57438,
+          "format": "FULL-WORD",
+          "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+          "kappa": "0.001676938111022438",
+          "local_profile": {
+            "1": 2348,
+            "2": 500,
+            "3": 416,
+            "4": 130,
+            "5": 82,
+            "8": 8
+          },
+          "path": "1672-gauge44-word-566-554.json.gz",
+          "pr": 1672,
+          "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+          "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+          "width_inventory": {
+            "4": 44,
+            "5": 44,
+            "7": 38,
+            "8": 114,
+            "9": 240
+          }
+        },
+        {
+          "author": "Philippe Van Velzen (philippeVV)",
+          "bytes": 71364,
+          "format": "BORROW-WORD",
+          "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+          "kappa": null,
+          "local_profile": {
+            "1": 2374,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 8
+          },
+          "path": "2679-BORROW-WORD-43base.json.gz",
+          "pr": 2679,
+          "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+          "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Philippe Van Velzen (philippeVV)",
+          "bytes": 71365,
+          "format": "BORROW-WORD",
+          "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+          "kappa": null,
+          "local_profile": {
+            "1": 2374,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 8
+          },
+          "path": "2679-BORROW-WORD-43extra.json.gz",
+          "pr": 2679,
+          "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+          "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 71241,
+          "format": "BORROW-WORD",
+          "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+          "kappa": "0.0017161404259974415",
+          "local_profile": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "path": "2745-BORROW-WORD-43base.json.gz",
+          "pr": 2745,
+          "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+          "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 71242,
+          "format": "BORROW-WORD",
+          "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+          "kappa": "0.0017161404259974415",
+          "local_profile": {
+            "1": 2370,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "7": 4,
+            "8": 4
+          },
+          "path": "2745-BORROW-WORD-43extra.json.gz",
+          "pr": 2745,
+          "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+          "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "DavidAriasC",
+          "bytes": 72192,
+          "format": "BORROW-WORD",
+          "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+          "kappa": "0.001717256973467002308270",
+          "local_profile": {
+            "1": 2364,
+            "2": 647,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "path": "2766-WORD-base.json.gz",
+          "pr": 2766,
+          "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+          "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "DavidAriasC",
+          "bytes": 72192,
+          "format": "BORROW-WORD",
+          "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+          "kappa": "0.001717256973467002308270",
+          "local_profile": {
+            "1": 2364,
+            "2": 647,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "path": "2766-WORD-extra.json.gz",
+          "pr": 2766,
+          "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+          "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+          "bytes": 72354,
+          "format": "BORROW-WORD",
+          "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+          "kappa": "0.001717409316335491643448",
+          "local_profile": {
+            "1": 2386,
+            "2": 642,
+            "3": 274,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "path": "retired5-WORD-base.json.gz",
+          "pr": null,
+          "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+          "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 4,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+          "bytes": 72353,
+          "format": "BORROW-WORD",
+          "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+          "kappa": "0.001717409316335491643448",
+          "local_profile": {
+            "1": 2386,
+            "2": 642,
+            "3": 274,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "path": "retired5-WORD-extra.json.gz",
+          "pr": null,
+          "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+          "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+          "width_inventory": {
+            "4": 26,
+            "5": 4,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Marius-Paul Dumitrean",
+          "bytes": 72444,
+          "format": "BORROW-WORD",
+          "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+          "kappa": "0.001717794984118634663827",
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+          "pr": 2802,
+          "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Marius-Paul Dumitrean",
+          "bytes": 72443,
+          "format": "BORROW-WORD",
+          "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+          "kappa": "0.001717794984118634663827",
+          "local_profile": {
+            "1": 2382,
+            "2": 648,
+            "3": 268,
+            "4": 128,
+            "5": 26,
+            "8": 8
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+          "pr": 2802,
+          "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 2,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Tekalign (tekuuu)",
+          "bytes": 72468,
+          "format": "BORROW-WORD",
+          "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+          "kappa": "0.001717141586348426338109",
+          "local_profile": {
+            "1": 2366,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+          "pr": 2751,
+          "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Tekalign (tekuuu)",
+          "bytes": 72468,
+          "format": "BORROW-WORD",
+          "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+          "kappa": "0.001717141586348426338109",
+          "local_profile": {
+            "1": 2366,
+            "2": 646,
+            "3": 297,
+            "4": 120,
+            "5": 26,
+            "8": 8
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+          "pr": 2751,
+          "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 26,
+            "5": 9,
+            "7": 62,
+            "8": 78,
+            "9": 240
+          }
+        },
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 70505,
+          "format": "BORROW-WORD",
+          "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+          "kappa": "0.001703552312979594",
+          "local_profile": {
+            "1": 2363,
+            "2": 632,
+            "3": 326,
+            "4": 120,
+            "5": 34,
+            "7": 4,
+            "8": 4
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+          "pr": 2462,
+          "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 33,
+            "5": 9,
+            "7": 62,
+            "8": 86,
+            "9": 240
+          }
+        },
+        {
+          "author": "Jeremy Kothe (jeremykothe2)",
+          "bytes": 70509,
+          "format": "BORROW-WORD",
+          "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+          "kappa": "0.001703552312979594",
+          "local_profile": {
+            "1": 2363,
+            "2": 632,
+            "3": 326,
+            "4": 120,
+            "5": 34,
+            "7": 4,
+            "8": 4
+          },
+          "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+          "pr": 2462,
+          "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+          "source": "in tree (package of PR #2802)",
+          "width_inventory": {
+            "4": 33,
+            "5": 9,
+            "7": 62,
+            "8": 86,
+            "9": 240
+          }
+        },
+        {
+          "author": "Marius-Paul Dumitrean (mdumitrean)",
+          "author_login": "mdumitrean",
+          "bytes": 71422,
+          "commit": "be191346391661f4d35fc0d1508d0a6029572576",
+          "format": "BORROW-WORD",
+          "git_blob": "d9aa96a93fea5f7395e7783aef0bc117c0a0ae89",
+          "lineage_attribution": "Retain all original PINS and package CREDITS.md, NOTICE and SOURCES.json; PR2969/2966/2957/2942/2930/2917/2908 and all retained predecessors remain credited.",
+          "local_path": "data/continuation-05/pr2979/package/data/WORD-base.json.gz",
+          "mode": "100644",
+          "path": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+          "pin_key": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+          "pr": 2979,
+          "relative_path": "data/WORD-base.json.gz",
+          "sha256": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d",
+          "source_path": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+          "treatment": "Inert exact Git bytes; Python sources renamed .py.txt; never imported or executed.",
+          "uncompressed_sha256": "bbfe6acaea975063928f491e0fff2ce6027a572948c229bb734420a99a43d526"
+        },
+        {
+          "author": "Marius-Paul Dumitrean (mdumitrean)",
+          "author_login": "mdumitrean",
+          "bytes": 71419,
+          "commit": "be191346391661f4d35fc0d1508d0a6029572576",
+          "format": "BORROW-WORD",
+          "git_blob": "74f6cb64595c21f7726ae77e69437868620bdcee",
+          "lineage_attribution": "Retain all original PINS and package CREDITS.md, NOTICE and SOURCES.json; PR2969/2966/2957/2942/2930/2917/2908 and all retained predecessors remain credited.",
+          "local_path": "data/continuation-05/pr2979/package/data/WORD-extra.json.gz",
+          "mode": "100644",
+          "path": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+          "pin_key": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+          "pr": 2979,
+          "relative_path": "data/WORD-extra.json.gz",
+          "sha256": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7",
+          "source_path": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+          "treatment": "Inert exact Git bytes; Python sources renamed .py.txt; never imported or executed.",
+          "uncompressed_sha256": "06136758a53b380a09658879439032160867602fdceedd455b94d69c0ff1c5ef"
+        }
+      ],
+      "source_claim": {
+        "admission": "Producer-reported pinned evidence; this local adapter does not execute or independently verify the native/owner/outer release.",
+        "kappa": "17290339826465135177169999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+        "path": "data/continuation-05/pr2979/package/CLAIM.json",
+        "sha256": "436e0d297cbdf195445d3697d496ac675e95210b79e70ce602a6a6667a4c6ce9",
+        "status": "CONDITIONAL_CANDIDATE_COMPLETE_FINITE_RELEASE"
+      },
+      "source_credits": [
+        {
+          "bytes": 3587,
+          "git_blob": "5f4197842052437f5fb6dc41cfd8d4dc9349cc22",
+          "path": "data/continuation-05/pr2979/package/CREDITS.md",
+          "sha256": "bf85777bd2d9b8e537dae2e70614759ba1a265101dd903a72fbd2cfc2869c406",
+          "source_path": "research/rank7-joint-endframes/CREDITS.md"
+        },
+        {
+          "bytes": 2613,
+          "git_blob": "9df951052ae186bce02a6258219dae58f7cf2e80",
+          "path": "data/continuation-05/pr2979/package/NOTICE",
+          "sha256": "b767e40e8c7e16058d1ebb8c08eef9b9bffae31cfa30512b843ae1fcbfc6f5cd",
+          "source_path": "research/rank7-joint-endframes/NOTICE"
+        },
+        {
+          "bytes": 17063,
+          "git_blob": "8a319a65c1196d827a5f477213a4c0940762e4af",
+          "path": "data/continuation-05/pr2979/package/SOURCES.json",
+          "sha256": "d5f3f498d4d34125bcaed14dafaceaff342223d511d1099993d5b217a147019c",
+          "source_path": "research/rank7-joint-endframes/SOURCES.json"
+        }
+      ],
+      "source_scope": "Author-reported PR2979 is pinned inert input. Only the requested finite local tier is evaluated; inherited outer/native claims are not accepted by this adapter.",
+      "trusted_sources": {
+        "research/styles-r11/pipeline/continuation/admission.py": "4feb94bb7b53d37a97233ef7a2556f9931d78f8ac6776f6d16fd458373002ec5",
+        "research/styles-r11/pipeline/wordio.py": "a9c254acdc04c3302ed0a31d9e0da39a8e3348aa20d189798e86539464fd81d4",
+        "research/t74-joint-twelve-retired7/vendor/audit_local_pr2679.py": "a38940094f7d19cd6376aafdd4734fa68eabc9aff4c98c3c4a3e9540328b1c90"
+      }
+    },
+    "release_acquisition": {
+      "path": "data/continuation-07/holdout3015/ACQUISITION.json",
+      "sha256": "d0b48e18b559fc323cdd9e12a402d8f42b48ead8c8629f61e5d062f9adf1dde7"
+    },
+    "release_claim": {
+      "bytes": 7138,
+      "git_blob": "70813f559e2878f0c5403c0b859eefe602f70abc",
+      "path": "data/continuation-07/holdout3015/package/CLAIM.json",
+      "sha256": "f9b9fbaaac794c0ce279c238a33a2f34f8c91a34d97ccdeb5ec98b7b8ba56d73",
+      "source_path": "research/rank7-joint-endframes-restore-edit/CLAIM.json"
+    },
+    "release_manifest": {
+      "bytes": 16194,
+      "git_blob": "a331a50f94b698f02092d4647c8be5385d9dd57c",
+      "path": "data/continuation-07/holdout3015/package/MANIFEST.json",
+      "sha256": "5e113822c0c36ee7dd9366578fbaf5daa108b8c51e37f4d10eda25dd6ed52cae",
+      "source_path": "research/rank7-joint-endframes-restore-edit/MANIFEST.json"
+    },
+    "release_receipt": {
+      "bytes": 2241,
+      "git_blob": "946daa0829041a1888762b078dd40a1ad11a9a91",
+      "path": "data/continuation-07/holdout3015/package/evidence/RELEASE-RECEIPT.json",
+      "sha256": "f6ddfdbbdd343cfd0a11e1d7b00cb9a8a6fbc9c7a64159b0d5abaf7de88cecf2",
+      "source_path": "research/rank7-joint-endframes-restore-edit/evidence/RELEASE-RECEIPT.json"
+    },
+    "scope": "Compact inert producer evidence; this adapter does not establish fresh native, physical or outer admission.",
+    "source_attribution": [
+      {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 57109,
+        "format": "FULL-WORD",
+        "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+        "kappa": null,
+        "local_profile": {
+          "1": 2412,
+          "2": 418,
+          "3": 418,
+          "4": 170,
+          "5": 68,
+          "8": 8
+        },
+        "path": "1094-K8PRE-FULL-WORD.json.gz",
+        "pr": 1094,
+        "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+        "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+        "width_inventory": {
+          "4": 56,
+          "5": 32,
+          "7": 30,
+          "8": 122,
+          "9": 240
+        }
+      },
+      {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 57222,
+        "format": "FULL-WORD",
+        "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+        "kappa": "0.001672660197076918",
+        "local_profile": {
+          "1": 2412,
+          "2": 418,
+          "3": 432,
+          "4": 142,
+          "5": 82,
+          "8": 8
+        },
+        "path": "1094-K8S7-FULL-WORD.json.gz",
+        "pr": 1094,
+        "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+        "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+        "width_inventory": {
+          "4": 56,
+          "5": 32,
+          "7": 30,
+          "8": 122,
+          "9": 240
+        }
+      },
+      {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "bytes": 57307,
+        "format": "FULL-WORD",
+        "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+        "kappa": "0.001675658002271934",
+        "local_profile": {
+          "1": 2358,
+          "2": 504,
+          "3": 408,
+          "4": 134,
+          "5": 80,
+          "8": 8
+        },
+        "path": "1195-FULL-WORD.json.gz",
+        "pr": 1195,
+        "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+        "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+        "width_inventory": {
+          "4": 44,
+          "5": 44,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "bytes": 57412,
+        "format": "FULL-WORD",
+        "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+        "kappa": "0.001676896669021299",
+        "local_profile": {
+          "1": 2339,
+          "2": 510,
+          "3": 419,
+          "4": 126,
+          "5": 82,
+          "8": 8
+        },
+        "path": "1625-extra-word-566.json.gz",
+        "pr": 1625,
+        "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+        "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+        "width_inventory": {
+          "4": 40,
+          "5": 48,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "bytes": 57411,
+        "format": "FULL-WORD",
+        "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+        "kappa": "0.001676896669021299",
+        "local_profile": {
+          "1": 2347,
+          "2": 502,
+          "3": 415,
+          "4": 130,
+          "5": 82,
+          "8": 8
+        },
+        "path": "1625-gauge44-word-566.json.gz",
+        "pr": 1625,
+        "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+        "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+        "width_inventory": {
+          "4": 44,
+          "5": 44,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      {
+        "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+        "bytes": 57440,
+        "format": "FULL-WORD",
+        "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+        "kappa": "0.001676938111022438",
+        "local_profile": {
+          "1": 2340,
+          "2": 508,
+          "3": 420,
+          "4": 126,
+          "5": 82,
+          "8": 8
+        },
+        "path": "1672-extra-word-566-554.json.gz",
+        "pr": 1672,
+        "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+        "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+        "width_inventory": {
+          "4": 40,
+          "5": 48,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      {
+        "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+        "bytes": 57438,
+        "format": "FULL-WORD",
+        "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+        "kappa": "0.001676938111022438",
+        "local_profile": {
+          "1": 2348,
+          "2": 500,
+          "3": 416,
+          "4": 130,
+          "5": 82,
+          "8": 8
+        },
+        "path": "1672-gauge44-word-566-554.json.gz",
+        "pr": 1672,
+        "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+        "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+        "width_inventory": {
+          "4": 44,
+          "5": 44,
+          "7": 38,
+          "8": 114,
+          "9": 240
+        }
+      },
+      {
+        "author": "Philippe Van Velzen (philippeVV)",
+        "bytes": 71364,
+        "format": "BORROW-WORD",
+        "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+        "kappa": null,
+        "local_profile": {
+          "1": 2374,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 8
+        },
+        "path": "2679-BORROW-WORD-43base.json.gz",
+        "pr": 2679,
+        "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+        "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Philippe Van Velzen (philippeVV)",
+        "bytes": 71365,
+        "format": "BORROW-WORD",
+        "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+        "kappa": null,
+        "local_profile": {
+          "1": 2374,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 8
+        },
+        "path": "2679-BORROW-WORD-43extra.json.gz",
+        "pr": 2679,
+        "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+        "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 71241,
+        "format": "BORROW-WORD",
+        "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+        "kappa": "0.0017161404259974415",
+        "local_profile": {
+          "1": 2370,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 4,
+          "8": 4
+        },
+        "path": "2745-BORROW-WORD-43base.json.gz",
+        "pr": 2745,
+        "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+        "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 71242,
+        "format": "BORROW-WORD",
+        "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+        "kappa": "0.0017161404259974415",
+        "local_profile": {
+          "1": 2370,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "7": 4,
+          "8": 4
+        },
+        "path": "2745-BORROW-WORD-43extra.json.gz",
+        "pr": 2745,
+        "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+        "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "DavidAriasC",
+        "bytes": 72192,
+        "format": "BORROW-WORD",
+        "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+        "kappa": "0.001717256973467002308270",
+        "local_profile": {
+          "1": 2364,
+          "2": 647,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "path": "2766-WORD-base.json.gz",
+        "pr": 2766,
+        "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+        "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "DavidAriasC",
+        "bytes": 72192,
+        "format": "BORROW-WORD",
+        "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+        "kappa": "0.001717256973467002308270",
+        "local_profile": {
+          "1": 2364,
+          "2": 647,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "path": "2766-WORD-extra.json.gz",
+        "pr": 2766,
+        "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+        "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+        "bytes": 72354,
+        "format": "BORROW-WORD",
+        "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+        "kappa": "0.001717409316335491643448",
+        "local_profile": {
+          "1": 2386,
+          "2": 642,
+          "3": 274,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "path": "retired5-WORD-base.json.gz",
+        "pr": null,
+        "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+        "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 4,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+        "bytes": 72353,
+        "format": "BORROW-WORD",
+        "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+        "kappa": "0.001717409316335491643448",
+        "local_profile": {
+          "1": 2386,
+          "2": 642,
+          "3": 274,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "path": "retired5-WORD-extra.json.gz",
+        "pr": null,
+        "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+        "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+        "width_inventory": {
+          "4": 26,
+          "5": 4,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Marius-Paul Dumitrean",
+        "bytes": 72444,
+        "format": "BORROW-WORD",
+        "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+        "kappa": "0.001717794984118634663827",
+        "local_profile": {
+          "1": 2382,
+          "2": 648,
+          "3": 268,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+        "pr": 2802,
+        "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 2,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Marius-Paul Dumitrean",
+        "bytes": 72443,
+        "format": "BORROW-WORD",
+        "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+        "kappa": "0.001717794984118634663827",
+        "local_profile": {
+          "1": 2382,
+          "2": 648,
+          "3": 268,
+          "4": 128,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+        "pr": 2802,
+        "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 2,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Tekalign (tekuuu)",
+        "bytes": 72468,
+        "format": "BORROW-WORD",
+        "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+        "kappa": "0.001717141586348426338109",
+        "local_profile": {
+          "1": 2366,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+        "pr": 2751,
+        "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Tekalign (tekuuu)",
+        "bytes": 72468,
+        "format": "BORROW-WORD",
+        "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+        "kappa": "0.001717141586348426338109",
+        "local_profile": {
+          "1": 2366,
+          "2": 646,
+          "3": 297,
+          "4": 120,
+          "5": 26,
+          "8": 8
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+        "pr": 2751,
+        "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 26,
+          "5": 9,
+          "7": 62,
+          "8": 78,
+          "9": 240
+        }
+      },
+      {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 70505,
+        "format": "BORROW-WORD",
+        "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+        "kappa": "0.001703552312979594",
+        "local_profile": {
+          "1": 2363,
+          "2": 632,
+          "3": 326,
+          "4": 120,
+          "5": 34,
+          "7": 4,
+          "8": 4
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+        "pr": 2462,
+        "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 33,
+          "5": 9,
+          "7": 62,
+          "8": 86,
+          "9": 240
+        }
+      },
+      {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "bytes": 70509,
+        "format": "BORROW-WORD",
+        "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+        "kappa": "0.001703552312979594",
+        "local_profile": {
+          "1": 2363,
+          "2": 632,
+          "3": 326,
+          "4": 120,
+          "5": 34,
+          "7": 4,
+          "8": 4
+        },
+        "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+        "pr": 2462,
+        "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+        "source": "in tree (package of PR #2802)",
+        "width_inventory": {
+          "4": 33,
+          "5": 9,
+          "7": 62,
+          "8": 86,
+          "9": 240
+        }
+      },
+      {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "author_login": "mdumitrean",
+        "bytes": 71422,
+        "commit": "be191346391661f4d35fc0d1508d0a6029572576",
+        "format": "BORROW-WORD",
+        "git_blob": "d9aa96a93fea5f7395e7783aef0bc117c0a0ae89",
+        "lineage_attribution": "Retain all original PINS and package CREDITS.md, NOTICE and SOURCES.json; PR2969/2966/2957/2942/2930/2917/2908 and all retained predecessors remain credited.",
+        "local_path": "data/continuation-05/pr2979/package/data/WORD-base.json.gz",
+        "mode": "100644",
+        "path": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+        "pin_key": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+        "pr": 2979,
+        "relative_path": "data/WORD-base.json.gz",
+        "sha256": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d",
+        "source_path": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+        "treatment": "Inert exact Git bytes; Python sources renamed .py.txt; never imported or executed.",
+        "uncompressed_sha256": "bbfe6acaea975063928f491e0fff2ce6027a572948c229bb734420a99a43d526"
+      },
+      {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "author_login": "mdumitrean",
+        "bytes": 71419,
+        "commit": "be191346391661f4d35fc0d1508d0a6029572576",
+        "format": "BORROW-WORD",
+        "git_blob": "74f6cb64595c21f7726ae77e69437868620bdcee",
+        "lineage_attribution": "Retain all original PINS and package CREDITS.md, NOTICE and SOURCES.json; PR2969/2966/2957/2942/2930/2917/2908 and all retained predecessors remain credited.",
+        "local_path": "data/continuation-05/pr2979/package/data/WORD-extra.json.gz",
+        "mode": "100644",
+        "path": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+        "pin_key": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+        "pr": 2979,
+        "relative_path": "data/WORD-extra.json.gz",
+        "sha256": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7",
+        "source_path": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+        "treatment": "Inert exact Git bytes; Python sources renamed .py.txt; never imported or executed.",
+        "uncompressed_sha256": "06136758a53b380a09658879439032160867602fdceedd455b94d69c0ff1c5ef"
+      },
+      {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "author_login": "jeremykothe2",
+        "bytes": 71434,
+        "commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+        "format": "BORROW-WORD",
+        "git_blob": "4f0483657396a7f735873e1b252482c53dfb2eb6",
+        "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-base.json.gz",
+        "pr": 3015,
+        "sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5",
+        "source": "PR3015 complete declared restore edit on PR2979; all inherited credits retained",
+        "source_path": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-base.json.gz"
+      },
+      {
+        "author": "Jeremy Kothe (jeremykothe2)",
+        "author_login": "jeremykothe2",
+        "bytes": 71430,
+        "commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+        "format": "BORROW-WORD",
+        "git_blob": "81f95e21ede115e8bdb6bd522c641b37b740bdf7",
+        "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-extra.json.gz",
+        "pr": 3015,
+        "sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea",
+        "source": "PR3015 complete declared restore edit on PR2979; all inherited credits retained",
+        "source_path": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-extra.json.gz"
+      }
+    ],
+    "source_credit_contents": {
+      "CREDITS.md": "# Credits\n\n- **PR #2908, Jeremy Diviney**: the paired input/output extraction, its compensation rule `C*S`, the exact two-sided certificate (`structure.py`, vendored unchanged) and the closed-adapter admission chain.\n- **PR #2917, Mason Hale**: the nine paired extractions and 82-endpoint words under PR2942, the refit/compose producer model that stage 2 follows, the T74 chronology (ORDER/DISPATCH), the allocation checker, moment auditor, extension stage and adapter derivation reused here.\n- **PR #2957 / #2948 / #2966, Jeremy Kothe (jeremykothe2)**: the fourteen declared exactness-preserving gate rewrites in five classes (R-retime, A3779-cut-start-read, PM-carrier-lender-entry, B-carrier-retime, A-commuting-swap) and their pure applier (`vendor/declared_rewrites.py`, vendored unchanged); stage 3 composes exactly these rewrites onto this package's stage-2 word (`data/REWRITES-2957.json`, re-addressed with exact preimages). PR2966 composed the same rewrites onto our PR2942 words.\n- **PR #2969, Dugongue**: the PR2942 + PR2957 composition at T370 and its cap-level headline nomination, this package's comparator and moment baseline (`allocation/baseline/`). Our stage 3 composes the same fourteen rewrites, here onto the stage-2 word.\n- **PR #2918 (research/helper408-rank7-pairing), RossRichardson**: the fixed-cut rank-seven obstruction for helper408; this package's census of fresh rank-7 extractions reproduces it exactly and is consistent with it.\n- **PR #2894 / #2833, Jeremy Kothe**: the preload re-synthesis supplier, the frame accounting and inverse-reverse cleanup (`vendor/preload_move.py`), the source materializer and the inherited supplier lineage.\n- **PR #2857 / #2848, Yiyang Lu (Lyy-iiis)**: the shared-kernel words, the staged native/overlay tooling and the chronological flow model and realization (edge colouring) used to construct the allocation; PR2843 (Marius-Paul Dumitrean) is that flow model's starting point.\n- **PR #2863 / #2839, Dugongue**: the packing lineage and the PR2839 owner engine.\n- **Tekalign**: the independent owner/chronology checker (`allocation/vendor/independent_owners.py`) and admission tooling.\n- **icekylinx**: the exact free-operator auditor retained as `vendor/audit_local.py` (PR2833).\n- **themilkman216**: the observation that a cap-level allocation of these inventories needs a T whose basic counts are integral, which the allocation's degenerate-face step builds on.\n- **Gareth Davidson (bitplane), PR #1995 / #2013**: the fixed-word terminal-subspace bounds that frame stage 1's scope; earlier rank-seven helper ends on other words are in `research/complex-rank7-end-pair`, `research/k8-rank7-composition` and the PR1090/PR1104 lineage (credited there).\n- **PR #2930 / #2942, Marius-Paul Dumitrean**: the cap allocation of PR2917's words, the four normal-45 extractions under these words, the relaxation tools and the overlay/producer conventions reused here.\n- **New here (Marius-Paul Dumitrean, with substantial AI assistance from Anthropic Claude via Claude Code)**: the codimension-2 census on paired-extraction words, the joint end-frame lowering of 22 restored helpers in five groups (stage 1), the five further extractions it makes profitable (stage 2), the exact composition with PR2957's rewrites (stage 3), the producer and local verification for all three stages, the overlay stage `rank7-joint-endframes` with its rebuild guards, the adapter generalization to six width classes, the literal T74 allocation of the changed inventory, its relaxation certificates and recorded gap, and the complete fresh replay.\n- **New here (Jeremy Kothe (jeremykothe2), with AI assistance; edit found by our Stack2979 search)**: the declared literal edit stage (`edits/`, `tools/build_edits.py`) with its independent review, the edit R1 on PR #2979's restore section, the re-derived paid profile and cap certificate. PR #2979 (mdumitrean) is the base and is credited first for everything else.\n",
+      "NOTICE": "research/rank7-joint-endframes\nCopyright 2026 Marius-Paul Dumitrean. Licensed under the Apache License, Version 2.0.\nPrepared with substantial AI assistance (Anthropic Claude, via Claude Code).\n\nThis package retains, byte-identical, Apache-2.0 files from: PR #2942 (Marius-Paul Dumitrean, head\na027b0f6fdb0ab2b42ba10fc31b53960166bf2bf, research/paired-extension-normal45): data/PARENT-base.json.gz and\ndata/PARENT-extra.json.gz (its data/WORD-*.json.gz), comparators/PR2942-CLAIM.json and tools/wordedit.py; PR #2917\n(Mason Hale, head 224bd5e56041c40078ff6b5fa7393733a215de5c, research/paired-helper-extension): structure.py (Jeremy\nDiviney's PR2908 two-sided certificate checker), vendor/audit_local.py (PR2833's independent exact auditor, icekylinx\nattribution), vendor/preload_move.py (Jeremy Kothe's PR2894 frame accounting and cleanup), allocation/ORDER.json,\nallocation/DISPATCH.json and allocation/vendor/ (independent_owners.py: Tekalign's independent owner checker as vendored\nby PR2839/PR2917; PLAN.json.gz, TEMPLATE.json.gz); PR #2957 (Jeremy Kothe, head b74b25f3ccc84c16e1a801d73b2f47e5ea764c78,\nresearch/paired-extension-cap-fill-swaps): vendor/declared_rewrites.py (the pure applier of the fourteen declared\nrewrites) and comparators/PR2957-CLAIM.json; PR #2966 (Jeremy Kothe, head e62d3eb9005117d82a9babcfa937ecc53237c490,\nresearch/paired-extension-normal45-rewrites): comparators/PR2966-CLAIM.json; PR #2969 (Dugongue, head\ne2ca469b08385d3d5e29a918d66dbefaf889e9f3, research/paired-swap-normal45): allocation/baseline/ (its CLAIM.json and its\nallocation ORDER.json and PROFILE.json); and PR #2930 (head 81f3b5d12977eba09e06fbff729167d59faabe90): tools/relax.py,\ntools/root.py, tools/relax_exact.py.\ndata/REWRITES-2957.json is Jeremy Kothe's PR2957 rewrite list, re-addressed to this package's stage-2 word with exact\npreimages (every entry keeps a credit field). producer.py follows PR2917's producer.py (Mason Hale) for its paired steps;\nverify.py, check_allocation.py, check_cap.py, run_registered.py and reproduce.py adapt our PR2942 versions of PR2917's and\nPR2930's; tools/audit_allocation_moment.py is PR2917's exact moment auditor with only its authenticated baseline changed (to\nthe PR2969 headline); tools/derive_adapters.py generalizes PR2917's adapter derivation (PR2908, Jeremy Diviney);\ntools/build_overlay.py follows the overlay conventions of PR2908's and PR2917's builders. construction/allocation/ retains\nthe flow model of PR2857/PR2843 (Yiyang Lu, Marius-Paul Dumitrean) as adapted for this allocation. All original notices of\nthe exported predecessor packages remain in force.\n\nDerived work (Apache-2.0): this package is PR #2979's (Marius-Paul Dumitrean, head be191346, research/rank7-joint-endframes) package, retained byte-identical except for the files named in README.md, plus a declared literal edit stage by Jeremy Kothe (jeremykothe2), with AI assistance: edits/ (declared_edits.py, edits_review.py, EDITS.json, FINAL-WORD-*.json.gz), tools/build_edits.py, EDIT-PINS.json, comparators/PR2979-CLAIM.json, and the edits to reproduce.py, run_registered.py, check_allocation.py, check_cap.py, allocation/PROFILE.json, allocation/PROVIDERS.json, certificates/RELAX-CAP.json, CLAIM.json, PINS.json and the release contract files (RELEASE.json, verify_release.py, verify_manifest.py). PR #2979's own evidence is kept under evidence/pr2979/.\n",
+      "SOURCES.json": {
+        "adapted_sources": [
+          {
+            "change": "three declared stages: frame-only joint rank-7 end-frame lowering of 22 restored helpers (new), five paired steps by PR2917/PR2942's composition rule with per-step declared frame changes, and PR2957's vendored applier for the fourteen re-addressed rewrites; report and cleanup re-derived and compared",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "producer.py",
+            "pr": 2942,
+            "upstream_path": "research/paired-extension-normal45/producer.py"
+          },
+          {
+            "change": "all stage words replayed and audited; stage-1 validity checks; structure certificates for the five steps; 86 semantic controls across the three stages; price table as evidence",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "verify.py",
+            "pr": 2942,
+            "upstream_path": "research/paired-extension-normal45/verify.py"
+          },
+          {
+            "change": "PR2917 moment auditor with the authenticated baseline re-pinned to the PR2969 headline nomination; nothing else",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "tools/audit_allocation_moment.py",
+            "pr": 2942,
+            "upstream_path": "research/paired-extension-normal45/tools/audit_allocation_moment.py"
+          },
+          {
+            "change": "comparators pr2966 and pr2969 added; the admission control count (119 for five width classes) derived from the provider width classes (139 for six)",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "tools/derive_adapters.py",
+            "pr": 2942,
+            "upstream_path": "research/paired-extension-normal45/tools/derive_adapters.py"
+          },
+          {
+            "change": "stage rank7-joint-endframes; inherited endpoints retained or lowered to a subspace; warps may move their B positions only; the same guards in the source's rebuild chain",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "tools/build_overlay.py",
+            "pr": 2942,
+            "upstream_path": "research/paired-extension-normal45/tools/build_overlay.py"
+          },
+          {
+            "change": "new words and allocation, six width classes, 91 buffers, physical 66,813, PR2969 moment baseline",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "check_allocation.py",
+            "pr": 2942,
+            "upstream_path": "research/paired-extension-normal45/check_allocation.py"
+          },
+          {
+            "change": "caps of the parent and every stage, 2,551 patterns, literal root below the final cap with the recorded gap, exact gains over four claims",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "check_cap.py",
+            "pr": 2942,
+            "upstream_path": "research/paired-extension-normal45/check_cap.py"
+          },
+          {
+            "change": "also exports PR2942/PR2957/PR2966/PR2969; appends the rank7-joint-endframes overlay stage; 91-buffer adapters; PR2969 comparator",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "reproduce.py",
+            "pr": 2942,
+            "upstream_path": "research/paired-extension-normal45/reproduce.py"
+          },
+          {
+            "change": "new statuses, control counts, comparator and receipt bindings",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "run_registered.py",
+            "pr": 2942,
+            "upstream_path": "research/paired-extension-normal45/run_registered.py"
+          }
+        ],
+        "base_commit": "484a8adea580345a7c37d8ac772cedfd47bcde92",
+        "derived_source": {
+          "builder": "tools/build_overlay.py (stage rank7-joint-endframes) on PR2917 tools/build_extension.py output",
+          "files": 637,
+          "manifest_sha256": "751b46364742cbb947f7db07c130ff09085b38b52c520d3b47f2dadc1e21ba80",
+          "pr2917_files": 632,
+          "pr2917_manifest_sha256": "98d57c82a1c7318be3c330c3b66897844d57232f0aaeaea88fb4bebd0a1bedf1"
+        },
+        "files": [
+          {
+            "git_blob": "b1fea0c94436b236cc2b7d41a7be032811b94c81",
+            "path": "certificates/selected-result.json",
+            "sha256": "bb2eaa58647b353f88d0aec2eafb9d30df1be53589231b23e12ceef3e4bad129",
+            "usage": "provenance"
+          },
+          {
+            "git_blob": "889b95d936746df124872133ae1e7cc339adcb92",
+            "path": "docs/research/agent-task-catalog.json",
+            "sha256": "7d185cd8c2af35988d638d969748ad7b670f902606444dbfc748e4402c340df6",
+            "usage": "provenance"
+          }
+        ],
+        "new_sources": [
+          "data/WORD-base.json.gz",
+          "data/WORD-extra.json.gz",
+          "data/STAGE1-FRAME-EDITS.json",
+          "data/TRANSFORM-226.json",
+          "data/TRANSFORM-228.json",
+          "data/TRANSFORM-230.json",
+          "data/TRANSFORM-363.json",
+          "data/TRANSFORM-395.json",
+          "data/REWRITES-2957.json (Jeremy Kothe's PR2957 rewrites, re-addressed to the stage-2 word with exact preimages)",
+          "allocation/FILL.json.gz",
+          "allocation/PROFILE.json",
+          "allocation/PROVIDERS.json",
+          "allocation/SEARCH.json",
+          "certificates/RELAX-CAP.json",
+          "certificates/RELAX-STAGES.json",
+          "construction/"
+        ],
+        "retained_sources": [
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 70380,
+            "git_blob": "1ca8287d6ae5eb45d87db65b369be8d09ba692b2",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "data/PARENT-base.json.gz",
+            "pr": 2942,
+            "role": "PR2942 final base provider word (86 restored endpoints): the parent of the three stages",
+            "sha256": "54ca34c749e3228d7e2df3d8dbf7aa1568c2872490166997c5962f12fd03da35",
+            "upstream_path": "research/paired-extension-normal45/data/WORD-base.json.gz"
+          },
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 70378,
+            "git_blob": "c39913ce24cbce4c841eabcc9b1e5a18e4ccc754",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "data/PARENT-extra.json.gz",
+            "pr": 2942,
+            "role": "PR2942 final extra provider word: the parent of the three stages",
+            "sha256": "eded756dfe8f411c3d1f80a3ac16516f0ea5dd6f9866728b2179b157630fa7b6",
+            "upstream_path": "research/paired-extension-normal45/data/WORD-extra.json.gz"
+          },
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 2677,
+            "git_blob": "53d9edee7e8355f7e5dd5b0094462330da907846",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "comparators/PR2942-CLAIM.json",
+            "pr": 2942,
+            "role": "PR2942 headline (comparison)",
+            "sha256": "011aaac80ad79f7f29dc429a672441bb6b3c21a68bbcb34c7a0d5f943c3c3c2e",
+            "upstream_path": "research/paired-extension-normal45/CLAIM.json"
+          },
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 6707,
+            "git_blob": "e5893496cd6345cd91ecf3c1dd23a645ec5e0b0a",
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "package_path": "tools/wordedit.py",
+            "pr": 2942,
+            "role": "pure overlay word-edit producer (our r13 chain tool as shipped by PR2942)",
+            "sha256": "cae8ae0f5d7fb3387ec6922fe966068aae05e3a6d3586830d4361b650cfb3617",
+            "upstream_path": "research/paired-extension-normal45/tools/wordedit.py"
+          },
+          {
+            "author": "Mason Hale (mason-hale)",
+            "bytes": 2565,
+            "git_blob": "8d5bd544ee7cad4309edad3d2a256bf48b810f90",
+            "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+            "package_path": "structure.py",
+            "pr": 2917,
+            "role": "Jeremy Diviney's PR2908 exact two-sided certificate checker, unchanged by PR2917",
+            "sha256": "83f63b6d9a1a543ecfa2c98d479dbe4e7a1c3caf6fd1c3566123308efbc32e96",
+            "upstream_path": "research/paired-helper-extension/structure.py"
+          },
+          {
+            "author": "Mason Hale (mason-hale)",
+            "bytes": 29363,
+            "git_blob": "8224873d0497cf0b4c202f31b145fa273553d978",
+            "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+            "package_path": "vendor/audit_local.py",
+            "pr": 2917,
+            "role": "PR2833's independent exact auditor (icekylinx attribution) as vendored by PR2917",
+            "sha256": "a38940094f7d19cd6376aafdd4734fa68eabc9aff4c98c3c4a3e9540328b1c90",
+            "upstream_path": "research/paired-helper-extension/vendor/audit_local.py"
+          },
+          {
+            "author": "Mason Hale (mason-hale)",
+            "bytes": 7243,
+            "git_blob": "55b435035bbc439a9d55e8abd125993208cef8d9",
+            "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+            "package_path": "vendor/preload_move.py",
+            "pr": 2917,
+            "role": "Jeremy Kothe's PR2894 frame accounting (frame_report) and inverse-reverse cleanup",
+            "sha256": "c8fda4674644fcd5cbf39b6645ce148a21daa90a998b678cbe51f970b78b0044",
+            "upstream_path": "research/paired-helper-extension/vendor/preload_move.py"
+          },
+          {
+            "author": "Mason Hale (mason-hale)",
+            "bytes": 4573,
+            "git_blob": "7409c4df1092241729739596c7648bda504e6aad",
+            "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+            "package_path": "allocation/ORDER.json",
+            "pr": 2917,
+            "role": "PR2917 T74 call order (unchanged chronology)",
+            "sha256": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1",
+            "upstream_path": "research/paired-helper-extension/allocation/ORDER.json"
+          },
+          {
+            "author": "Mason Hale (mason-hale)",
+            "bytes": 10401,
+            "git_blob": "9544fee4e6ee1f202cee22bfaeaf229ee3b2515e",
+            "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+            "package_path": "allocation/DISPATCH.json",
+            "pr": 2917,
+            "role": "PR2917 provider dispatch (unchanged)",
+            "sha256": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c",
+            "upstream_path": "research/paired-helper-extension/allocation/DISPATCH.json"
+          },
+          {
+            "author": "Mason Hale (mason-hale)",
+            "bytes": 10057,
+            "git_blob": "16013201b19054f7e45398ecf10af74c9c6a9114",
+            "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+            "package_path": "allocation/vendor/independent_owners.py",
+            "pr": 2917,
+            "role": "independent owner/chronology engine (Tekalign; PR2839 lineage)",
+            "sha256": "77a848729159e271ba64f403dfd59dddb13044b17b2950fa56700f442e2fe461",
+            "upstream_path": "research/paired-helper-extension/allocation/vendor/independent_owners.py"
+          },
+          {
+            "author": "Mason Hale (mason-hale)",
+            "bytes": 29933,
+            "git_blob": "7a1db55a4d53ee99280be4f3ab7d29f7b2033adf",
+            "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+            "package_path": "allocation/vendor/PLAN.json.gz",
+            "pr": 2917,
+            "role": "parent plan for the owner engine",
+            "sha256": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e",
+            "upstream_path": "research/paired-helper-extension/allocation/vendor/PLAN.json.gz"
+          },
+          {
+            "author": "Mason Hale (mason-hale)",
+            "bytes": 1124331,
+            "git_blob": "114808c32b1799da53524bdc25cea67efb60009e",
+            "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+            "package_path": "allocation/vendor/TEMPLATE.json.gz",
+            "pr": 2917,
+            "role": "owner template for the owner engine",
+            "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+            "upstream_path": "research/paired-helper-extension/allocation/vendor/TEMPLATE.json.gz"
+          },
+          {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 4257,
+            "git_blob": "964fb2a9c773d60b2ac079f2a4b669d13cf56034",
+            "head": "b74b25f3ccc84c16e1a801d73b2f47e5ea764c78",
+            "package_path": "vendor/declared_rewrites.py",
+            "pr": 2957,
+            "role": "Jeremy Kothe's pure applier of the fourteen declared rewrites (stage 3), called with check_declared=False",
+            "sha256": "2509f1335e47543f8814b42d6bf83032b30c5899b4f7cc62a6adc03f5138ae13",
+            "upstream_path": "research/paired-extension-cap-fill-swaps/rewrite/declared_rewrites.py"
+          },
+          {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 1739,
+            "git_blob": "cff1a70ed800d732e39f9b9b968f81662930d8e6",
+            "head": "b74b25f3ccc84c16e1a801d73b2f47e5ea764c78",
+            "package_path": "comparators/PR2957-CLAIM.json",
+            "pr": 2957,
+            "role": "PR2957 headline (comparison)",
+            "sha256": "a93e6c9e94bc9bf5664b5e23506dda9647fad1930e1eede66d5ba9f3718b598a",
+            "upstream_path": "research/paired-extension-cap-fill-swaps/CLAIM.json"
+          },
+          {
+            "author": "Jeremy Kothe (jeremykothe2)",
+            "bytes": 3172,
+            "git_blob": "8f1ad730dde7535d93f6185c79e288bb9976b00d",
+            "head": "e62d3eb9005117d82a9babcfa937ecc53237c490",
+            "package_path": "comparators/PR2966-CLAIM.json",
+            "pr": 2966,
+            "role": "PR2966 headline (comparison; PR2957 rewrites on PR2942 words)",
+            "sha256": "4d4c4800bf3bcb36d09021313b2712aebd4aa0830c74dda30991daf6851c220a",
+            "upstream_path": "research/paired-extension-normal45-rewrites/CLAIM.json"
+          },
+          {
+            "author": "Dugongue",
+            "bytes": 2316,
+            "git_blob": "beee83c9261522029d99fb486befecaf5a42fd1c",
+            "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+            "package_path": "allocation/baseline/CLAIM.json",
+            "pr": 2969,
+            "role": "PR2969 headline nomination (comparator of the admission and moment baseline)",
+            "sha256": "656a4c93411b078753783513e2e71b1722a56e7b70120264a38118811982fa77",
+            "upstream_path": "research/paired-swap-normal45/CLAIM.json"
+          },
+          {
+            "author": "Dugongue",
+            "bytes": 25652,
+            "git_blob": "b1629ba9819396197b529717ef21be9056edfe41",
+            "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+            "package_path": "allocation/baseline/ORDER.json",
+            "pr": 2969,
+            "role": "PR2969 T370 order (baseline for the moment auditor)",
+            "sha256": "d559a1dcb83707724afc0310f6ef8e3a36ad6cda0a895ca6abae9d6f39a0fc76",
+            "upstream_path": "research/paired-swap-normal45/allocation/ORDER.json"
+          },
+          {
+            "author": "Dugongue",
+            "bytes": 110,
+            "git_blob": "52d24cfc6ab68ddfa52a2721f512bc84da7c8ef5",
+            "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+            "package_path": "allocation/baseline/PROFILE.json",
+            "pr": 2969,
+            "role": "PR2969 complete paid profile (baseline for the moment auditor)",
+            "sha256": "6de8ac1fd628cdd2afa5a43872da69c7dab9d7219bdc318f9db55fd8ccdb5eb2",
+            "upstream_path": "research/paired-swap-normal45/allocation/PROFILE.json"
+          },
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 17680,
+            "git_blob": "97dfe35c434283ca6e83818e61aed65740522f50",
+            "head": "81f3b5d12977eba09e06fbff729167d59faabe90",
+            "package_path": "tools/relax.py",
+            "pr": 2930,
+            "role": "exact fixed-capacity relaxation (r12 lineage, as shipped by PR2930)",
+            "sha256": "0fed1c56b50a2e6d44deeeb6db0f1c7e1f71b86d1747130e1a9202216249a728",
+            "upstream_path": "research/paired-extension-cap-fill/tools/relax.py"
+          },
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 5397,
+            "git_blob": "0be97756bb9d8b072c962c147d4b4d3b3122f884",
+            "head": "81f3b5d12977eba09e06fbff729167d59faabe90",
+            "package_path": "tools/relax_exact.py",
+            "pr": 2930,
+            "role": "Fractions-only basis verification",
+            "sha256": "baf1855d6095c951a90d19a0d8094bd33290519940b732e2b758c5647830f044",
+            "upstream_path": "research/paired-extension-cap-fill/tools/relax_exact.py"
+          },
+          {
+            "author": "Marius-Paul Dumitrean (mdumitrean)",
+            "bytes": 10888,
+            "git_blob": "bd6dc2eb4e5013625d17cc08461b67622bcfed69",
+            "head": "81f3b5d12977eba09e06fbff729167d59faabe90",
+            "package_path": "tools/root.py",
+            "pr": 2930,
+            "role": "exact complete-profile root bracket",
+            "sha256": "55f5aca39b5ee2fe4687ac8863e6c24569010f27a332883c069b8e14b8fe09e3",
+            "upstream_path": "research/paired-extension-cap-fill/tools/root.py"
+          }
+        ],
+        "schema_version": 1,
+        "source_boundary": "Only this new package is submitted. The parent words are PR2942s, byte-identical; exact frozen ancestor exports remain unchanged. Full replay performs no network fetch.",
+        "upstream_exports": [
+          {
+            "head": "e2ca469b08385d3d5e29a918d66dbefaf889e9f3",
+            "manifest_sha256": "797c55c560dec5b5a657296f49d918fc5db708b7bed3eba046b3358b1666e55b",
+            "package": "research/paired-swap-normal45",
+            "pr": 2969,
+            "role": "comparator CLAIM.json and moment baseline"
+          },
+          {
+            "head": "e62d3eb9005117d82a9babcfa937ecc53237c490",
+            "manifest_sha256": "9e410c244efb370e20a5f9dc366550e11bcb14ebcecf8f2cb850512e82573914",
+            "package": "research/paired-extension-normal45-rewrites",
+            "pr": 2966,
+            "role": "comparator CLAIM.json"
+          },
+          {
+            "head": "b74b25f3ccc84c16e1a801d73b2f47e5ea764c78",
+            "manifest_sha256": "9cd226a2bf7391e7fbf4a23741bb1934afafbd596aef06f2999a935cd6e44e28",
+            "package": "research/paired-extension-cap-fill-swaps",
+            "pr": 2957,
+            "role": "rewrite applier and comparator CLAIM.json"
+          },
+          {
+            "head": "a027b0f6fdb0ab2b42ba10fc31b53960166bf2bf",
+            "manifest_sha256": "23bd270f440c4c7ad0d106990ae391e1af799a61ef3601d00e27f1824ae8ba69",
+            "package": "research/paired-extension-normal45",
+            "pr": 2942,
+            "role": "parent words"
+          },
+          {
+            "head": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+            "manifest_sha256": "55c46ddf2e3edc87dfe1ba3320947466d36980d457eb37f6cd6fba341dae0192",
+            "package": "research/paired-helper-extension",
+            "pr": 2917,
+            "role": "extension stage, overlay spec source words"
+          },
+          {
+            "head": "51309592971e3b5be935599eed2a95404dc7781e",
+            "manifest_sha256": "9dba3fe371602ec023a54e26c0fd66f69eb7a74be86aab89923529083c14b36f",
+            "package": "research/two-sided-helper-extraction",
+            "pr": 2908,
+            "role": "paired stage, adapter templates"
+          },
+          {
+            "head": "18d03c447886895ef9abf888398178e0428533ca",
+            "package": "research/shared-kernel-packing",
+            "pr": 2894,
+            "role": "exported by PR2908 reproduce.py --dry-run"
+          },
+          {
+            "head": "e9307b48d7d1b690939935ecef0f8e524e6d92f4",
+            "pr": 2833,
+            "role": "source materialized and authenticated by PR2894 tools/materialize_source.py"
+          }
+        ],
+        "upstream_repository": "https://github.com/CrocSwap/integer-mult-bounds"
+      }
+    },
+    "source_credit_files": [
+      {
+        "bytes": 3954,
+        "git_blob": "3b6022cd64d7753e65e1c710d91a69596e389042",
+        "path": "data/continuation-07/holdout3015/package/CREDITS.md",
+        "sha256": "bd4b09fcd2861933883cbce6ecf0e30743d5d3b4cb0cc38e258530c370c121b9",
+        "source_path": "research/rank7-joint-endframes-restore-edit/CREDITS.md"
+      },
+      {
+        "bytes": 3378,
+        "git_blob": "70a09b472e3c2d82b3e805d82ef898d3ad48e758",
+        "path": "data/continuation-07/holdout3015/package/NOTICE",
+        "sha256": "ffcc3de2243815db0e9fb8d820b4ca511fce3c7673c966e14b486f05d30ac11a",
+        "source_path": "research/rank7-joint-endframes-restore-edit/NOTICE"
+      },
+      {
+        "bytes": 17063,
+        "git_blob": "8a319a65c1196d827a5f477213a4c0940762e4af",
+        "path": "data/continuation-07/holdout3015/package/SOURCES.json",
+        "sha256": "d5f3f498d4d34125bcaed14dafaceaff342223d511d1099993d5b217a147019c",
+        "source_path": "research/rank7-joint-endframes-restore-edit/SOURCES.json"
+      }
+    ]
+  },
+  "recorded_utc": "2026-10-16T19:05:26.318854+00:00",
+  "schema_version": 1,
+  "scientific_cpu_seconds_added": 0,
+  "scientific_decision_agreement": true,
+  "scientific_rerun": false,
+  "script_sha256": {
+    "research/frame-domain-ceiling/vendor/static44/gk/gk_common.py": "e68d190fd436b2f3955decb590adb53344d5d4ea0a19d62d86df1e4b55ecd198",
+    "research/frame-domain-ceiling/vendor/static44/gk/gk_word.py": "f027a9273bcf4e0971258c160b7d3b3c196366b32a529cff6e6a0e666b03826b",
+    "research/styles-r11/pipeline/continuation/admission.py": "4feb94bb7b53d37a97233ef7a2556f9931d78f8ac6776f6d16fd458373002ec5",
+    "research/styles-r11/pipeline/continuation/admission_v2.py": "1d5f12fa4faa3a044c8bef70ba71b1020ef216ea9e5fd5f3013167edd08d952e",
+    "research/styles-r11/pipeline/continuation/checkpoint_final.py": "ff0734ac67aaf2b91a31e35299d4f0b79b179720cc3d474154896cd178a6a2b2",
+    "research/styles-r11/pipeline/continuation/checkpoint_sources.py": "4722699d1502a8dfb3a08c18bb40a2d2299b36a088f9c938d08b59e84b13bb29",
+    "research/styles-r11/pipeline/continuation/cross_call.py": "e8501092729f0e0186c33c0d99d084bcd59f07b3b28fef225ff6429112bf157d",
+    "research/styles-r11/pipeline/continuation/fill_search.py": "7175ea9b547d37be8ab2b35c5f13a7e703f01172b20f9e1938aac4c9b575ed6f",
+    "research/styles-r11/pipeline/continuation/latest_fill.py": "16ae9a6e4d451525bb6b2e5ad19c62adce2d93c620d5beaa332fd2512a199461",
+    "research/styles-r11/pipeline/continuation/outer_balance.py": "26ebd9bb64fab18a20886c751f83e361ce2f1f46679a329c10b117bd8d6797e2",
+    "research/styles-r11/pipeline/continuation/outer_transfer.py": "51a1628ec5f9cb1a5e65565763f6351c3968b9a47a23a741a7a754d302bf8024",
+    "research/styles-r11/pipeline/continuation/rewrite_search.py": "685cd2a884f58eab9855296bc298cf62bc299c36047afe08c4935e522f1dd219",
+    "research/styles-r11/pipeline/continuation/run_c1.py": "7ca165973ab0c548bce45cf4680fefe28a8876a6c8d44103152552440c98195e",
+    "research/styles-r11/pipeline/continuation/run_c2.py": "166c8da3bdde7976ec31ae74dda6ad2c557cd91c045d0de04f0db55fd57e53b9",
+    "research/styles-r11/pipeline/continuation/run_c3.py": "16105ecb49313f1c2d1fcd3101f72704ea42d46803c07846b9234bd1e55c90f3",
+    "research/styles-r11/pipeline/continuation/run_g1.py": "6b030d61f6385b1c3d744075ee17fb001631e76d3756709c5659c359484037de",
+    "research/styles-r11/pipeline/continuation/run_v1.py": "8bd5236acc08bf07f6e5c71745c08a52e87dc437c648b7b94d9c835f9d9f184a",
+    "research/styles-r11/pipeline/continuation/run_v1_v2.py": "e540781e86a31faaa40cc12dd6cdda52fa6ba5a348d32489cbc60067094be01c",
+    "research/styles-r11/pipeline/continuation/verify_continuation.py": "939465901a1e3159610cffc56ffd3315085e2b60339d520d1b011efce204341c",
+    "research/styles-r11/pipeline/continuation02/checkpoint_pr2930.py": "1ca363b3b2190f474eab1c51169366b4a1d3e4431ade7c4a517dcac691bbe0a4",
+    "research/styles-r11/pipeline/continuation02/checkpoint_sources.py": "765a7164da7c8cf7ff44538868f922d9064d727fa04d9955175e243f90517a11",
+    "research/styles-r11/pipeline/continuation02/inventory_cap.py": "8e0c261611f0422ac5d093722de703157cd6824529421b015e15ba86039b4063",
+    "research/styles-r11/pipeline/continuation02/packing_cap.py": "92c845250f7ccd5a611bcce196875ae472751ff52254d01e2167e36f19252361",
+    "research/styles-r11/pipeline/continuation02/rank7_search.py": "476d44cd8995f8fc3db82c2d70be0062220a0c349db2e095a0d88ab5437c1feb",
+    "research/styles-r11/pipeline/continuation02/run_g2.py": "331588f9122d882a30cc2d6f1d8ce412222119943d3b56000480f1c34e71900b",
+    "research/styles-r11/pipeline/continuation02/run_v3.py": "cc4bff1e0ecd1b54b060804abeb663c8e68b4bab741c2fa16408c30468a1fa1d",
+    "research/styles-r11/pipeline/continuation02/verify_round.py": "5c25e29dfacdd6835610be5c0fbfb541b1f4232fe02a71521e96b704f3aa1c99",
+    "research/styles-r11/pipeline/continuation03/acquire_pr2957.py": "30db4688a30fe3609859cd36289930d630675c5c07fc37e46f0168e8ed048697",
+    "research/styles-r11/pipeline/continuation03/audit_saved.py": "f3ea8a02aea18e1fe796faf19bbc5019bb8ac1cd5324beb4563d704a38396805",
+    "research/styles-r11/pipeline/continuation03/checkpoint_sources.py": "5b16a7b2b4a23d7367a10f3909836b959336a8eef8e80360f7b714da4ec84ed5",
+    "research/styles-r11/pipeline/continuation03/final_checkpoint.py": "b8b12f026a6f3b08310ab8dafe8bc45106d09e68184e977e4ae9933e66f22a33",
+    "research/styles-r11/pipeline/continuation03/frame_closure.py": "9e64af5bfb368b2899d2f2223df6619802303a01adb8d9dd4023d2ed83810428",
+    "research/styles-r11/pipeline/continuation03/interactions.py": "09d33bb5c701ed062fa7eb40dc49e391d43c79367895ca651297a6238da9e53c",
+    "research/styles-r11/pipeline/continuation03/pivot_checkpoint.py": "b4c381acb89d0b4327c54d141f4badb32f8d3076d3096aac49c71f98b55ae1d7",
+    "research/styles-r11/pipeline/continuation03/reconcile_metadata.py": "05017ab8ed280a20696b0b1eda103a6c829c91306927f121adfd5e51b32cd8d1",
+    "research/styles-r11/pipeline/continuation03/run_registered.py": "7806d001378aa746fc7eb16f38215408a5f319575adb4472a2558f2092ad5920",
+    "research/styles-r11/pipeline/continuation03/source2957.py": "af31db850eee52598bdff63f3ace70946ddc6d6a5936b103176e40233b3a4968",
+    "research/styles-r11/pipeline/continuation03/triangles.py": "14bd46dd6be68f9e2337a6359ebe2f79ae61423a7306932b1a2a2c7cd98207dc",
+    "research/styles-r11/pipeline/continuation04/acquire_pr2966.py": "ae282298b834720e4cac2e9d8be5808b7d3b059bf1b59bc9bf6416b5d4ec1e30",
+    "research/styles-r11/pipeline/continuation04/audit_round.py": "9ee2679a2357b77cc5707b18c4ced4039756c585ed92f84d038033c605fa7946",
+    "research/styles-r11/pipeline/continuation04/checkpoint_sources.py": "c49b8287b06379123922a5b10d8e47c1e413601fc9c41b8422898b4a9759be37",
+    "research/styles-r11/pipeline/continuation04/expansions.py": "5f358c2084cd39f669758cd42c077dbb93726ef79bc8a2055d7ea1f17f7f7442",
+    "research/styles-r11/pipeline/continuation04/expansions_other.py": "3090a36a2b6daa7dad88fa5c3da1e6b08623a881d744ca5275b15c405055adb0",
+    "research/styles-r11/pipeline/continuation04/final_checkpoint.py": "ce628f802c89a361b81ffaeff326a7144810ed1051c5ddd354ce30903cebbdf7",
+    "research/styles-r11/pipeline/continuation04/pivot_checkpoint.py": "cb619eedb86d4cd90c92e77d8cf5fd4b6ac568718c83e161a67e534927c282da",
+    "research/styles-r11/pipeline/continuation04/run_other_registered.py": "239f7d1b75624e8304d3fb31c1fb38d6d4e135f42c2f616cf9c2f96e4a106350",
+    "research/styles-r11/pipeline/continuation04/run_registered.py": "6e9c8b04c3035ee52002cf52d5c63ac6fd8ffa359cf22113af8692e3da77530b",
+    "research/styles-r11/pipeline/continuation04/source2966.py": "1f318ed5a9b590ae04970e02b042855facaab474042d63d1005d6aafd7160f82",
+    "research/styles-r11/pipeline/continuation05/acquire_pr2979.py": "a4b386af7a93ace3a14260ae8350487bf5c4055ec6d42adda309a68baf858a20",
+    "research/styles-r11/pipeline/continuation05/audit_round.py": "c837f5a64b757a34b1b037d22f630ba6ad0321df7967eec772eca2fe80b2f21e",
+    "research/styles-r11/pipeline/continuation05/checkpoint_sources.py": "7a3386be7daee36ae4328c10fba49b92a489b333936e4fc388302b9b9d51042a",
+    "research/styles-r11/pipeline/continuation05/collective_caps.py": "e39b8c242a19e8037fc4b0af8e0870ae193e1a051e6192c26a206ad1e87041e6",
+    "research/styles-r11/pipeline/continuation05/final_checkpoint.py": "79926b027632b12202c5174cc13bfd4ecdf8c5918f9d3c4a8a12c0c740ddedcb",
+    "research/styles-r11/pipeline/continuation05/pivot_checkpoint.py": "d830ed73c79d326eb2210d28823d85105b6039f6fdced7cdd7ff600ff0620f3e",
+    "research/styles-r11/pipeline/continuation05/repair.py": "56bb6ac7cd086f977e24d7fb4d4c2c148f0502b331a0bf4a460980bb2d44fabf",
+    "research/styles-r11/pipeline/continuation05/repair_r1_unexecuted.py": "43804233c9099a2c51a44fba3bcccc037cb2974bcb62e3ccaad76b9cf66d14e6",
+    "research/styles-r11/pipeline/continuation05/run_registered.py": "2dfeca0efcf67ed62550c18730b2c10846625324057730baec68fec2d13eb7af",
+    "research/styles-r11/pipeline/continuation05/source2979.py": "fb8c5f84e076ebd0514800139b9310539ca56f4808dd92889744dee067e65bbd",
+    "research/styles-r11/pipeline/continuation06/audit_round.py": "c6f93415493cde4ed64fb62e27aafe7cfacb13c7cf629101e6a9dcac9c711372",
+    "research/styles-r11/pipeline/continuation06/checkpoint_sources.py": "ba74c74b47738738d6a9168be0e0e8e02695cde67156a2d47ae15138d1e0b645",
+    "research/styles-r11/pipeline/continuation06/final_checkpoint.py": "ece691d0a7490fe3eb02a327b32aeaae1fc5e404f5e2e761ca3291e26d771afe",
+    "research/styles-r11/pipeline/continuation06/moment.py": "4ef2bbe96c24e8a6119834335e5468306a7489b558875d7874b305ef6c563190",
+    "research/styles-r11/pipeline/continuation06/run_registered.py": "ca5fd062e3cf3eda322004d75f03df3e4f01697e4c38607da898c8e33ae3a623",
+    "research/styles-r11/pipeline/continuation06/source_fill.py": "a0131e58fafe171a9dd3d3c9e4808d17d00c6805f0f64d7322dfb690c67a8696",
+    "research/styles-r11/pipeline/continuation06/topple.py": "1e70fe763c412a8f8b416a3cd5c0bded85b765ddd53f2b9d402c1d4f4eaa2660",
+    "research/styles-r11/pipeline/continuation07/release_features.py": "bb7d405581dd58dac3fffcee70f0fc623113af130177ac684f9c9a71fb410c83",
+    "research/styles-r11/pipeline/continuation07/release_features_v2.py": "3d76382dd398490affa01cb058764ca042429ae8dd837cfc5125b9fda98a2486",
+    "research/styles-r11/pipeline/continuation07/release_ml.py": "d3d1b4ade979ae9e037418bc00422cc5c914ffb90295e06017c64e37b6040bdc",
+    "research/styles-r11/pipeline/continuation07/run_holdout.py": "457a9222d1afa47eb6a1585059fa290ba8864a204b6d5acd84f59796a630bce4",
+    "research/styles-r11/pipeline/continuation07/run_ml1.py": "0717669f2f20d09ea6ef1d9c9e7a64ace1bada85d0f064258e091b422dade970",
+    "research/styles-r11/pipeline/continuation07/run_ml2.py": "a842b3794888a097deee680e0736f237944e190121c89eaf82d15989e66fbbde",
+    "research/styles-r11/pipeline/continuation07/run_ml2_v2.py": "4a758770a7be52996cdd3aab88d0898692f4802432d8930cb6ee3c97d9812706",
+    "research/styles-r11/pipeline/continuation08/carrier_factors.py": "220532f217d78cd2cf77067372c5a80ac76c6e622bf2a2275f7e610149175f69",
+    "research/styles-r11/pipeline/continuation08/run_f1.py": "2884b657c926d4801cb9c36e7c1b117516a55768385925170bcc229aa73bfb8d",
+    "research/styles-r11/pipeline/continuation08/source3015.py": "bbc8c770d8540278988e32946069ee225be6ee1d39b13780ac392587e11261af",
+    "research/styles-r11/pipeline/export_language.py": "16be8fcf0677d8b90b4dd1a1bca1a1eccc9816ff08365d9f6c8d5135fdbb122e",
+    "research/styles-r11/pipeline/fill.py": "9ca05b47016ddbbb4a6713c981932d63a6eaecdd27f3604fcfb66877f239fc4a",
+    "research/styles-r11/pipeline/growth.py": "4f29eba652ea1c7ca889f784c612a6ab11d8aefe96637d18bd32391532b8f167",
+    "research/styles-r11/pipeline/growth_cost.py": "da8443a2abc7e01da4985e04bb1cf1bb65371a2c8b16dc9d9f0247ba91692c73",
+    "research/styles-r11/pipeline/growth_m3.py": "86b19cb8e6ebb7a33e1d01226d645f76132759c233f7be2a49647962f7b48048",
+    "research/styles-r11/pipeline/growth_order.py": "bd143d57f7df7cec9fe475f9f4aa173d9e516d93099f57b16c2e609551beea99",
+    "research/styles-r11/pipeline/growth_replay.py": "c14f7807b6d4d8ad0365b6e811ddf8928745598686be0441333635069b0966d3",
+    "research/styles-r11/pipeline/heldout_data.py": "847bf478bff50cc42a42f540c9f0b22c78a970946b1e3665c682b856bbd32fcd",
+    "research/styles-r11/pipeline/matching.py": "678ce7afc686717d0f7f99a7f3f739bc074aebcfa2392ee3f97a5ae99cd64819",
+    "research/styles-r11/pipeline/measures.py": "ec7fd2264129b922f8988098d41ebc9200f742aad92a060b7b54af191fa7bf3a",
+    "research/styles-r11/pipeline/nulls.py": "a6c6b3ce9c3db775f43058c3dda3640b5fcdbb46a94eca00c012c5302f165e86",
+    "research/styles-r11/pipeline/pool.py": "59714d0b8501a4d2a0b041bbf18be089fa6a4881943a8c4db7c7605e6c5d86d8",
+    "research/styles-r11/pipeline/records.py": "e9c46e4d0de79800bf573b4de9d6baa8fa50e47821944e043f285a536e0e2feb",
+    "research/styles-r11/pipeline/resource_check.py": "f6bfce18b87ac35b837b18df17fc5c807688654f456e7173cea77f895d136297",
+    "research/styles-r11/pipeline/root.py": "b2eef8a2236e5ceb4ef92c9563b7a1e270b0719d345017cf38a9ee0784ceccd1",
+    "research/styles-r11/pipeline/run_acceleration.py": "6eb38a6cebc166c0cfedd04ea2f10d24357ad2c2d041f15a1305eae9c5a04d08",
+    "research/styles-r11/pipeline/run_m0.py": "f7a036bba54d47f52919b8c4aa9a02865df1524d9e0c0db3b81354c2a72506b9",
+    "research/styles-r11/pipeline/run_m1.py": "e6e3fefafd18aeb2d83a78a4784b4f87033fb4ecbbd8640cf2ef51effbbea58b",
+    "research/styles-r11/pipeline/run_m2.py": "b40834fbecb5cafd8ffc3342abe90208c2e973c5fa4d18144b491f48e62882f4",
+    "research/styles-r11/pipeline/run_m3.py": "effbab02a651b86bba30f76b8195d17f2053f78682070b138f65c115837a35c5",
+    "research/styles-r11/pipeline/run_m4.py": "e564d9ee9442e1bce89ea3097ff98aaf0c597765a11a88fcc23b579f312c17d9",
+    "research/styles-r11/pipeline/sandpile.py": "b12489046e2248f7075a374a7e6bb54b804e7bedac5c8204a7e50594973ac736",
+    "research/styles-r11/pipeline/string_screen.py": "781a228af57cc3e728e670356b88dfaa48a4202a2a76c0b62caec86fd8ab3901",
+    "research/styles-r11/pipeline/verify_results.py": "7aff5688a309e2c239bec1cadc29e43e5d83b78f7f3a0152d74eca14c2d8fa75",
+    "research/styles-r11/pipeline/word_alias_score.py": "b7766328ea4a58b65145786a1b38c0d6b074a24cb63d0be4ae658f35df807ad7",
+    "research/styles-r11/pipeline/word_commute_fast.py": "3a9e58e6e66642f566778304b6c765b262dc8407645724112db081e4e6cc6a1d",
+    "research/styles-r11/pipeline/word_frame_fast.py": "1985602b6390a9e468ff656e135f6c79b208f159567e72b0eeb41e604e7275c1",
+    "research/styles-r11/pipeline/word_periods.py": "c39ae26d9e4eb82b61294734c5f4acecd29c5b08333eeb39189709f680b2548d",
+    "research/styles-r11/pipeline/word_tasks.py": "5f14c4f3f389751baeeede856369db83a3b9ab93bd8e58dc520584abd940adf4",
+    "research/styles-r11/pipeline/wordio.py": "a9c254acdc04c3302ed0a31d9e0da39a8e3348aa20d189798e86539464fd81d4",
+    "research/t74-joint-twelve-retired7/independent_owners.py": "219e16a7f35c5c9e9640760c28ad49a17b546c9f32bdf57dd76c30b5dd096aa6",
+    "research/t74-joint-twelve-retired7/vendor/audit_local_pr2679.py": "a38940094f7d19cd6376aafdd4734fa68eabc9aff4c98c3c4a3e9540328b1c90",
+    "research/t74-joint-twelve-retired7/vendor/ceiling.py": "86a1432870b3b21d8454106ec9162fddc0471472d9214c590a1420f2426cedfc",
+    "research/t74-r10-hosting-leads/J-dim1/code/borrow_price.py": "8266df2e15cad08caf0635a366d41a2d8a537a66a083a1582086068371e13cbc",
+    "research/t74-r10-hosting-leads/J-dim1/code/bounds.py": "690986e69e3125723b12255cc5aa135fceec93894d589eb196ab7fa5da37e9fb",
+    "research/t74-r10-hosting-leads/J-dim1/code/word_patch.py": "9b3287f189c4f29c1a8bdb1ba01fdcfe14a57d87b50fa4f2f646fb2346ab01ce",
+    "research/t74-r10-hosting-leads/J-dim1/code/wordmodel.py": "215e678d3f3711b4291f9da5d7937cdbb0b091390bba089e6949b8c42a29f6f4",
+    "research/t74-r10-hosting-leads/deps/toolkit-rev3/compat.py": "7317d6abdbbffc435c2d072b6366096c5bf90832d9e72be8b8f7512f14b37940",
+    "research/t74-r10-hosting-leads/deps/toolkit-rev3/frames.py": "59d5f5725c50c5d6c22178e82ee79a5d7646f0133b1aa267081ec1ad228ec437",
+    "research/t74-r10-hosting-leads/deps/toolkit-rev3/paths.py": "6557d964a3c59bc326f67facc77cbc5d6bd63ec24e0845725e332f85025afe66",
+    "research/t74-r10-hosting-leads/deps/toolkit-rev3/word.py": "4a09258c3a2f6fb5d4c58156afed6ba9b670c89c8c1b25d164d61ec4c6306528"
+  },
+  "seed": 83003,
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43extra.json.gz",
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "author_login": "mdumitrean",
+      "bytes": 71422,
+      "commit": "be191346391661f4d35fc0d1508d0a6029572576",
+      "format": "BORROW-WORD",
+      "git_blob": "d9aa96a93fea5f7395e7783aef0bc117c0a0ae89",
+      "lineage_attribution": "Retain all original PINS and package CREDITS.md, NOTICE and SOURCES.json; PR2969/2966/2957/2942/2930/2917/2908 and all retained predecessors remain credited.",
+      "local_path": "data/continuation-05/pr2979/package/data/WORD-base.json.gz",
+      "mode": "100644",
+      "path": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+      "pin_key": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+      "pr": 2979,
+      "relative_path": "data/WORD-base.json.gz",
+      "sha256": "abaf67bfcb257528658c906b612f57025617592bd7889828f92b97a5f4f4300d",
+      "source_path": "research/rank7-joint-endframes/data/WORD-base.json.gz",
+      "treatment": "Inert exact Git bytes; Python sources renamed .py.txt; never imported or executed.",
+      "uncompressed_sha256": "bbfe6acaea975063928f491e0fff2ce6027a572948c229bb734420a99a43d526"
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "author_login": "mdumitrean",
+      "bytes": 71419,
+      "commit": "be191346391661f4d35fc0d1508d0a6029572576",
+      "format": "BORROW-WORD",
+      "git_blob": "74f6cb64595c21f7726ae77e69437868620bdcee",
+      "lineage_attribution": "Retain all original PINS and package CREDITS.md, NOTICE and SOURCES.json; PR2969/2966/2957/2942/2930/2917/2908 and all retained predecessors remain credited.",
+      "local_path": "data/continuation-05/pr2979/package/data/WORD-extra.json.gz",
+      "mode": "100644",
+      "path": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+      "pin_key": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+      "pr": 2979,
+      "relative_path": "data/WORD-extra.json.gz",
+      "sha256": "e0eaf64c4d5d324693d43889bce1b9e53e8da00402105c8c978fd102f208bed7",
+      "source_path": "research/rank7-joint-endframes/data/WORD-extra.json.gz",
+      "treatment": "Inert exact Git bytes; Python sources renamed .py.txt; never imported or executed.",
+      "uncompressed_sha256": "06136758a53b380a09658879439032160867602fdceedd455b94d69c0ff1c5ef"
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "author_login": "jeremykothe2",
+      "bytes": 71434,
+      "commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "format": "BORROW-WORD",
+      "git_blob": "4f0483657396a7f735873e1b252482c53dfb2eb6",
+      "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-base.json.gz",
+      "pr": 3015,
+      "sha256": "77d9be7ac47347894e034d8b67bf07ff8a5e1c317923ed5dd9257c492187dcf5",
+      "source": "PR3015 complete declared restore edit on PR2979; all inherited credits retained",
+      "source_path": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-base.json.gz"
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "author_login": "jeremykothe2",
+      "bytes": 71430,
+      "commit": "e244296debb45fe6f4da84d29e4d64fbab55fda0",
+      "format": "BORROW-WORD",
+      "git_blob": "81f95e21ede115e8bdb6bd522c641b37b740bdf7",
+      "path": "data/continuation-07/holdout3015/package/edits/FINAL-WORD-extra.json.gz",
+      "pr": 3015,
+      "sha256": "18d9c448ce892aa19f162e214760d0bd4ecb09f814b9b859dbf11f3ca637e9ea",
+      "source": "PR3015 complete declared restore edit on PR2979; all inherited credits retained",
+      "source_path": "research/rank7-joint-endframes-restore-edit/edits/FINAL-WORD-extra.json.gz"
+    }
+  ],
+  "source_experiment_cpu_seconds": 39.095854754,
+  "source_sha256": {
+    "auditor": "553269128e13727e95e06e298a625f4af058941461ee1cf8ba44defb395d6ef6",
+    "reconciler": "a91b19186aae93ee47d285f656d858d1933dd854a206eae52741f83c305ed426"
+  },
+  "status": "NULL",
+  "task_receipts": [
+    {
+      "bytes": 6953,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/controls/task-00001.json.gz",
+      "payload_sha256": "2dac04a244e8bdceb830acfda8510d65743e4bc5b04083ac2d7cdff2230fa0b6",
+      "sha256": "01e2f61ea61435954333e99c87875f83739720e4cb383cbc42f0948c91cdf20a"
+    },
+    {
+      "bytes": 2368,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/baseline/task-00002.json.gz",
+      "payload_sha256": "c95f5e9c485a20f3fd13c06bf86fff159719e83de625d9e5af11ab90dc59b804",
+      "sha256": "a77bfd793f2ec6d9c5aec21afefc711b31324fc68fc8a8381d41b1ee771a4984"
+    },
+    {
+      "bytes": 2364,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/baseline/task-00003.json.gz",
+      "payload_sha256": "2c17e3b7fa754e31156b0429d248aba997da38e3f9feba9be2acedf71307e45e",
+      "sha256": "1e234e5c201704147f5a89dab706ea5eb63e5c0b005cea1f18b977f96296dddf"
+    },
+    {
+      "bytes": 239345,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/census/task-00002.json.gz",
+      "payload_sha256": "0363c1a0a57cc76ab23eef016f1e4475ac03bdb5982ec8579dcaedd77912a4a7",
+      "sha256": "6c572a8f9391b054f20a940b157932cb71ac183232d4434f0dec3ae57797db8a"
+    },
+    {
+      "bytes": 239343,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/census/task-00003.json.gz",
+      "payload_sha256": "3c26f1b402f4e89ad52e47ad3eac584d3a4bfd9ef489ddee78f1506574c3e772",
+      "sha256": "db3aa15be20d794b201a0d8cd8ecc657c7f58427f8d1463044f4df7987655652"
+    },
+    {
+      "bytes": 15879,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00128.json.gz",
+      "payload_sha256": "0766e1d6af95d8f9cad85755a6d278a661a2824a3199fd9ab90e8fc61845b811",
+      "sha256": "4fc0a0298d95e56c8123f4169a734484c5f21177d1d9ab9cdefb66d1a5b2792f"
+    },
+    {
+      "bytes": 15334,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00129.json.gz",
+      "payload_sha256": "3314675333fefe90def6a6e158264341b55b343c885309464f2fa39f63ddd0ad",
+      "sha256": "9ad2f484fab6613645e8c7f41541c92a005de99014ef1c23b2ccb9f2b6b4dfff"
+    },
+    {
+      "bytes": 15878,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00130.json.gz",
+      "payload_sha256": "282c48e0c94ff5fa8e1a7625b1674af8c73d39aca83b229c7b2e1809a5a7f3ea",
+      "sha256": "ee19eafcb29a518d9579056d4981a906e0a773afc5f1a137a32a2d2667cd6758"
+    },
+    {
+      "bytes": 15359,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00131.json.gz",
+      "payload_sha256": "4122039977def88f784531640537c2f0dcb4388280904541cabf145043dc5167",
+      "sha256": "5f86d4c7e48ac6253c27f566e005e9eaf69082831408705a660eb487e77a6c3f"
+    },
+    {
+      "bytes": 15375,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00132.json.gz",
+      "payload_sha256": "4d8345d0db6d43c8ffc756f5bbc276c530670ff1f2e96df465e1285342bf4ada",
+      "sha256": "8886a893565661d3610a7792376268428a8bdd7a4180cf4657449bf79c61fbbe"
+    },
+    {
+      "bytes": 15593,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00133.json.gz",
+      "payload_sha256": "3439feac997aca0e4e5ab64b610368ccfc0225c6b6d39ef11a25dc636c0f0755",
+      "sha256": "8961f709ac3f86a93f0ac1ab57f04fc576edc0d7523a7c5421b50ae9dcdff6f4"
+    },
+    {
+      "bytes": 15561,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00134.json.gz",
+      "payload_sha256": "0b941352a75d05c9071ba7e097a43c7bab534e8f934d346a20263b9e1dcbb0a3",
+      "sha256": "7c2d149615e7c9d4c6aeb15fc8eb7ea4913a0269e5aa6d3bfdf982ffe9f1d998"
+    },
+    {
+      "bytes": 15739,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00135.json.gz",
+      "payload_sha256": "abbec30c73a8d69336c70857b021a72ca1ff5d7016fe2707a169fd4fae9ca7a6",
+      "sha256": "9fc3b73bdaec3d6bdc425cb8187f9ee0b3d388abecffb2c14ef737687550c4b8"
+    },
+    {
+      "bytes": 15873,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00136.json.gz",
+      "payload_sha256": "10ecf1e5974c99d7cc8289cdf22bf377e83563c592df60d3d62a57078ba1cd17",
+      "sha256": "0bf8c19b663e5ab0bcea65da5760f422e747d454ba4a8c23c5682e335510c4c3"
+    },
+    {
+      "bytes": 15343,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00137.json.gz",
+      "payload_sha256": "fec6c9b998df3d1938e30bedd214666d2ea741bac0d7abaff67147e5405e7241",
+      "sha256": "cde10e4241324c08c303a34a83d57fe8214e4afa49d25f9528a9abcc570223c2"
+    },
+    {
+      "bytes": 15869,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00138.json.gz",
+      "payload_sha256": "a00b60c1a1860d377d2209c9ff21658a61763dbeaeb05894209b5b1ff00f0d79",
+      "sha256": "6f5bd3f85f17d0b6486c2e489fb3f9168db3f868412acf731800938eca0e994f"
+    },
+    {
+      "bytes": 15332,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00139.json.gz",
+      "payload_sha256": "ea69508f31d1ebe8d7da29b71ed5e4e256dcca2e37d64697a9e68b2a23dc1572",
+      "sha256": "8dd104a4c2d75a558c621f60e081b3df3715df35fca48fb2b62711bf1598f777"
+    },
+    {
+      "bytes": 15371,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00140.json.gz",
+      "payload_sha256": "99762aa16aa6680248dd541a9aaff858d19c6d6a0e81039f669cd67340ee0f14",
+      "sha256": "d8018aa628f5ca3e927f554a90f2c24c35cc90742926f81cb8bc2f7190598630"
+    },
+    {
+      "bytes": 15600,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00141.json.gz",
+      "payload_sha256": "c759a34832931a4ed8bcacaadffc534c5d52aed48515960189384d0ee1f383a0",
+      "sha256": "95df8f0ee29fbf41ac4f46289161200f608003c55261e56a9b6fb3841287bc25"
+    },
+    {
+      "bytes": 15561,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00142.json.gz",
+      "payload_sha256": "ebcd79cb9b445d9e2d69687890bfd7932cde59b13f99095e3746be0b4766d188",
+      "sha256": "0a3d3bad2a731a1e2602d5444fc67a6b981e7f18a2a0d972dd16758fb8860a50"
+    },
+    {
+      "bytes": 15731,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00143.json.gz",
+      "payload_sha256": "eaa9a8602ca8d527840456891fff9e4a90b062f775efce849416c75d871f74ef",
+      "sha256": "8720808ce0d3d3929d7d5161dabb17cbbe6cd12456d61c75cd4a0a11b2ea4e9a"
+    },
+    {
+      "bytes": 15410,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00144.json.gz",
+      "payload_sha256": "74a8bcc570f91253852f672544cf37902f8a1052418c3082726b67c37d269c4d",
+      "sha256": "9074a4b5b6cb2ebe5d25283032186fa19c61eb6a85748af24c38e8c474d4fab4"
+    },
+    {
+      "bytes": 15101,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00145.json.gz",
+      "payload_sha256": "092c01c229188f9d5ea26502ab34ebf81e62891e5809e47238832790123c60dc",
+      "sha256": "7c6ea43d9e8c501adba1f7ca6b24fa332ce403760708db858427d87908e6cded"
+    },
+    {
+      "bytes": 15427,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00146.json.gz",
+      "payload_sha256": "cb6d293cace9544d11833e09346c14b88eba2d9816a1f4117ee2e62538400f79",
+      "sha256": "e770d869912299514c7feda578e58d7d63473a65c25b7ee4befdf3fee294a51e"
+    },
+    {
+      "bytes": 15123,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00147.json.gz",
+      "payload_sha256": "7c22fdc38021ae39682693f47f973800e177176af35e0ccc321d0f67f9e7d6cc",
+      "sha256": "983eb1e9f972481432117dc91ebe180588a3c5ad51da8a0f9ea5e2b11166961a"
+    },
+    {
+      "bytes": 14709,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00148.json.gz",
+      "payload_sha256": "a937615366ccc229011b512cfdae0d08ef3cf5e88ee575cb8a945512664234c3",
+      "sha256": "9850bd3b99d8864c38bfa5a13919cfeb4543c7b531b8a3bf8e37ea97ee2d8051"
+    },
+    {
+      "bytes": 15422,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00149.json.gz",
+      "payload_sha256": "d6ba52eb1995df8a3c11c2de07160b98ea28597274a54b8535943628f3d82a1b",
+      "sha256": "66c85657167c8cf775e2d5ff5ff6e56e9a132ba357de1c8348353898b66a593e"
+    },
+    {
+      "bytes": 15422,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00152.json.gz",
+      "payload_sha256": "6324d46e81b606fc8322f72a89f205da7f67f437af06456c8ccf14d0833a7275",
+      "sha256": "a226e26e492dc006c9e62b1d4e948d19ab03f2fc59bd8a27edd2dde1528dc908"
+    },
+    {
+      "bytes": 15410,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00154.json.gz",
+      "payload_sha256": "0a24db3d6ad215249bc3610ea53b53429050d7b60c4195646fd6bc7f094a5310",
+      "sha256": "18b1c589924cec7fd4f1f2673451025f09d27fbe3113abbff8daef1fe8d0d874"
+    },
+    {
+      "bytes": 15348,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00161.json.gz",
+      "payload_sha256": "cce3f315bf0869c872c9c9fa356fa8f292e311eef7e23a8311611a3053c6d1b0",
+      "sha256": "add5cbbe4b0da9df4c787da57b6f05df33092a3ac706e81b340a6cb08e7bee04"
+    },
+    {
+      "bytes": 15948,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00167.json.gz",
+      "payload_sha256": "d651199e4203296b0033c048b3506e83ad43588807156e672abe399d6a6b2cb9",
+      "sha256": "ecd48a41c23c32c192b5e310edcc1708a0afe0a18e1ba3619f2891f5b50d9740"
+    },
+    {
+      "bytes": 15633,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00168.json.gz",
+      "payload_sha256": "7e5f53f848ff2e31f49a1cce666ec8fd4bd676038686c4c16ee5bb5d1ada2324",
+      "sha256": "8f3f4ca9779df2a28af2c4d684c274c5f343e4e1f7f06f554698d6b1b67d9379"
+    },
+    {
+      "bytes": 14872,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00150.json.gz",
+      "payload_sha256": "6f2ce47256da47a37ac254631e3d53c75226c7d7e97bf6505fd46706935aa17f",
+      "sha256": "3d9b60590d34dee343e64032356cc518ceb18fc1511a48b5d8208f6af62d6ca6"
+    },
+    {
+      "bytes": 15597,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00151.json.gz",
+      "payload_sha256": "925353fb40f2836177565b3a3529b55026d66ebd278de7c9863738eb58c8abc9",
+      "sha256": "c1573f4b53b19b029d936e9478d61065e41a4d65203bf5336f213c371e8695c2"
+    },
+    {
+      "bytes": 15108,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00153.json.gz",
+      "payload_sha256": "de4b77b26a688cb9a5be0d0b718cf5edc3af54160d38d954343358fd6b891ab2",
+      "sha256": "bb381df70dcae55c29304ca334bba332602fa21b3284509e45673f7febeb0984"
+    },
+    {
+      "bytes": 15117,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00155.json.gz",
+      "payload_sha256": "28bb7562ba3ee38917f6bc7229a9fe692649ba1fc0c03b37d3510867967c5a77",
+      "sha256": "14422af1b014a5f157132e85cbbe8c087980062d64c75bb5612be63b3b81ddaf"
+    },
+    {
+      "bytes": 14715,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00156.json.gz",
+      "payload_sha256": "8ba6f0b18a640da6b6d0b88bd87224243b5e255fb99915f62867fc16b61dab46",
+      "sha256": "13f70f155bb21cbca76f8a531f5be29dc0d7ee783f48755759b96b3a98e29151"
+    },
+    {
+      "bytes": 15431,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00157.json.gz",
+      "payload_sha256": "a90e8ce5da7fab52814e35b6757dadc4cf79f9bceab12f8c388b0c57eb6df86e",
+      "sha256": "f349e48e903d68a220d7a84c49a652bbd465bdc9ce03dfbb95c81478c2dd5cfa"
+    },
+    {
+      "bytes": 14889,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00158.json.gz",
+      "payload_sha256": "b3ea0abacb33a2defd6bc6c3e81f09eadfe9f0ec407dd2f30ba142da93512777",
+      "sha256": "b04cd77daa63cc3973237e63faddcd8031f625d0447a8b24b052328b747a7871"
+    },
+    {
+      "bytes": 15600,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00159.json.gz",
+      "payload_sha256": "6a6552d6ba649610bdcaa0d3ed14eaf6687d457134c15febe44cb5e6887e87fc",
+      "sha256": "4df4cf399215cac7f28141cb0589274c972902eafe97e5253d52f35dcdfd2dad"
+    },
+    {
+      "bytes": 15669,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00160.json.gz",
+      "payload_sha256": "e685112ae24454c083428eb7e15a6de1c03764f3968160ee3e0ddd56a6e3bc22",
+      "sha256": "0a966bea3e6ec13e14ac62cf6660ffd065af1ba47fa596f84aa2bea96d68b9c0"
+    },
+    {
+      "bytes": 15643,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00162.json.gz",
+      "payload_sha256": "8e0d345e839a447517efdcdb8892f325233ce03b36da2716f24b95da26b6808f",
+      "sha256": "1afd98854e3eb6b28be7ee364ec6581846bf814b471e148953691114c891dcec"
+    },
+    {
+      "bytes": 15341,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00163.json.gz",
+      "payload_sha256": "2a66d0f0612cf484ae74582cceb9cc798e5cf343e9bf30f3a8dc8de2c5cbc45b",
+      "sha256": "8e6faf666f180ee37d709efdc1d9e91552b6f528dfdc515f858ceab7f81975f1"
+    },
+    {
+      "bytes": 15114,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00164.json.gz",
+      "payload_sha256": "cd71d8dc8e0d26bd030d13b0e8dfd7639ceb26b3e1ecec5d02c7dfeeff40c851",
+      "sha256": "3772e1b8dfa4a551616eaee5daac96ad221050926c5f8efffc84fdac827be6cb"
+    },
+    {
+      "bytes": 15289,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00166.json.gz",
+      "payload_sha256": "ceab2ba82ed2a8b87ab892a43304751120752ab8470c76c0ffd42dd7ac807f95",
+      "sha256": "62f2a7748802259430f3affe6c8e2d8876bc6a19177a6df5c0085835b3eeaac3"
+    },
+    {
+      "bytes": 15711,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00165.json.gz",
+      "payload_sha256": "9f27536914c1cc345c18e0bfe27e6335f8b11827a2686418f23a3c0716e600a3",
+      "sha256": "a7b8ab453785a3d949636cdf8da20ecd932838bdbb3b8c260433013b2a7d8c98"
+    },
+    {
+      "bytes": 15342,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00169.json.gz",
+      "payload_sha256": "8d2bbb62d17ddadb25e4374f5ae1a11780072138e4058a82967f527b90df9893",
+      "sha256": "9aa874846cb05118a6953a988296439675949dea4265cb684469975c1e8750a5"
+    },
+    {
+      "bytes": 15638,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00170.json.gz",
+      "payload_sha256": "b5b7b9c289dc3206114476fc5a293d418f8605e64495c609689162c5aeee9e18",
+      "sha256": "e8cbec1b8c52fed69b88169a4a7e1d0f34f43e0fd15e7e6d96b38c3d7d118dbe"
+    },
+    {
+      "bytes": 15341,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00171.json.gz",
+      "payload_sha256": "e91e48f0d54f69ef9bee688462d9732b870f7d885327fed432c0f37b3ec2b4c2",
+      "sha256": "2191d486815b4c6fabda551c0e84340e26e1f1cba096013dbb1450b437c7882f"
+    },
+    {
+      "bytes": 15120,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00172.json.gz",
+      "payload_sha256": "5ee284fd0a798fb32e7f3f0ca37d0269d1307043262cfbc889a2f0f1d01b31a0",
+      "sha256": "51fe0321636e681b8e1fc5e603d216b81659e626e7a2ce413990fe9443b64a1f"
+    },
+    {
+      "bytes": 15697,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00173.json.gz",
+      "payload_sha256": "54ff205c73580c5936fd6c5e46fec37427dde50bd5c7887a9bd40af25e489862",
+      "sha256": "61ea7aa479eb01e1d9754555c0311cf283a75847b4cc0cf88fb3db1f5bec5c2a"
+    },
+    {
+      "bytes": 15293,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00174.json.gz",
+      "payload_sha256": "15b7daeaec4e925b2ce3825f58d3e8c1df47e7b86b88ec11ff66a9592a445e88",
+      "sha256": "519bc43fa250033a357b7a522aa0fba714ac33e656b769e3511dcc310567dd1f"
+    },
+    {
+      "bytes": 15927,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00175.json.gz",
+      "payload_sha256": "2ed82d04f1d14e4d7b47a24ffb66d4ce5df176d2b9162f76c8231c3a12e0857f",
+      "sha256": "33b98058cc5d5b8a602db7fe55ffcc5c8895c58536629f897963351f6f97846a"
+    },
+    {
+      "bytes": 15310,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00176.json.gz",
+      "payload_sha256": "ecc9489e7817a813f0ed0bd4f46fc01796cf75feb33ca79526db72422281382c",
+      "sha256": "c8b6a05fd41469730efb31fabc250f950aff2e00180ee8bb689f8606508d6a20"
+    },
+    {
+      "bytes": 14896,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00177.json.gz",
+      "payload_sha256": "4c4e46cb9c2d4cf10a7ad665043eb4d9cc51ca63ee3ba170b57f3867460381c8",
+      "sha256": "845adb167c796f07c8c0df1dbaa28ade4e8091b0247618161e9889be834c2f18"
+    },
+    {
+      "bytes": 15304,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00178.json.gz",
+      "payload_sha256": "276f069ac04a004846a9a21d94ac991eac31a3dbb067c6bf518c0be8b65a389d",
+      "sha256": "f9d87c8ba0d79fafd691469ac479f5fdfcefad93830f1d6a28d2d652d12e175b"
+    },
+    {
+      "bytes": 14874,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00179.json.gz",
+      "payload_sha256": "2a9fcdc6224d6f83f740f93f9fff0794e4b944de26ff6cd681f1b5f77dd1e1b1",
+      "sha256": "586aadf7b7a2c4dc83ad62d8582ab3932df4a4bf3fe1b9a78239a16557f5e173"
+    },
+    {
+      "bytes": 14471,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00180.json.gz",
+      "payload_sha256": "be939467708aafb154e613d9c2ea9241447ce0329c5b84fe62b74f172f3d4cc2",
+      "sha256": "847f681e17f4c6dfadfa38911655cd1bfe788b66af8008720ddbf8846f1334bf"
+    },
+    {
+      "bytes": 15036,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00181.json.gz",
+      "payload_sha256": "ee2ab12017d4499e7005fdea0abed91901e56b67ac75899042ee3e802c8508e0",
+      "sha256": "c6ef0f060815ee241610019f98c67fbc4de41fb10618b5d3a6c5f97a8e9a2c10"
+    },
+    {
+      "bytes": 14648,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00182.json.gz",
+      "payload_sha256": "4bb62361ab92a456898351404a03990b85fd1d4c9b214ee7de98ed0f6a5646ee",
+      "sha256": "2577580e39040505900b271063fcd8b9c4cc303268076b40560dcb38de29dc45"
+    },
+    {
+      "bytes": 15233,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00183.json.gz",
+      "payload_sha256": "4c1c271071aec6ab7d5f6fd1614be91dd4ccc06e340c6160aa594acb6957651c",
+      "sha256": "1143b5bac8a08a0fef6de630e3d0a81f3493c0f226e65d1edfeaf826088075d9"
+    },
+    {
+      "bytes": 15307,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00184.json.gz",
+      "payload_sha256": "b5e6e4c9fdd1590da377c234520387eb550dfabfac1a2d53d743bb745c37386d",
+      "sha256": "2c12bdc13bd63d7da08581fe251f305514d19aa077604a7f4843bcd73090b2ec"
+    },
+    {
+      "bytes": 14872,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00185.json.gz",
+      "payload_sha256": "c4417b582665c7bf0b29aeaba50cea48e3039341a9302d0d951031d484dae9a3",
+      "sha256": "5a96bc25f731221b484ef5ab8dd48a6a962d83e47ae1742f20502f08a8184a88"
+    },
+    {
+      "bytes": 15297,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00186.json.gz",
+      "payload_sha256": "74ac40facc3e8671f3b05e8e4484b9e86d338d4563de1f087cf02844ea2d6785",
+      "sha256": "2a52303e4cea2eff6c5b135bfbaaa454632942356a80742df55a0434ded73e35"
+    },
+    {
+      "bytes": 14866,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00187.json.gz",
+      "payload_sha256": "2ab4650dcd1cd9a88edd55526e3f22b898aaeccd4c4694d455c3debb990e8f63",
+      "sha256": "f7f240884bf7c853f580a1f16c49513c0dc07816a8bf6bbbeecdde7f8e0e0c08"
+    },
+    {
+      "bytes": 14490,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00188.json.gz",
+      "payload_sha256": "65fb0f8344547bc41e59ca2d1095c42c1cffe5c68232c697e6284d2867ab36f0",
+      "sha256": "d053241518b22b9d96502664b26bcfce450525a301c075b0ade1a117368f2d88"
+    },
+    {
+      "bytes": 15053,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00189.json.gz",
+      "payload_sha256": "d9969012a14c89283e5e9bb7ad50f25bd1237fecade301710fd3b865712bee83",
+      "sha256": "93f632c02c6e4c6d6146c3a4e3a51832974ad48f1cc280f0588cc5484a6cc756"
+    },
+    {
+      "bytes": 14652,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00190.json.gz",
+      "payload_sha256": "702f3ad75be5114d30edd2b8b2acab037cc710b30d753c78db968d21f9c02a5d",
+      "sha256": "98d2de2f4dcce47a762fbb28cbff32e0a8f0cf6abaadc0da4384f318e3ac0233"
+    },
+    {
+      "bytes": 15253,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00191.json.gz",
+      "payload_sha256": "d4484f9ac0f87c03ce82f258b57b66395b26ee17f255e04d2b3f94eb78044388",
+      "sha256": "22d5ff74fc567a4ae5e8295f4f05fc461f84809c3923146e9330a4bdb7225f4b"
+    },
+    {
+      "bytes": 15879,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00192.json.gz",
+      "payload_sha256": "12a6edc842bfe2f2da1ca92f91e305826a35f3cc58201f663c04fa1b47ecdd1b",
+      "sha256": "2f07a2a1923de6495f7226620198357347f818910d105940c4d5c8b6194732d6"
+    },
+    {
+      "bytes": 15332,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00193.json.gz",
+      "payload_sha256": "28552cfbe03875829089cec3cd35c182984bfcb08f2fcd2547590f457470a6ec",
+      "sha256": "4a9d211674022e0438d730270537f539e8db8fb286656d9d9b4132e99c871729"
+    },
+    {
+      "bytes": 15879,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00194.json.gz",
+      "payload_sha256": "ac408275099de3ff0fc55cda59943ca478eaf0c5a7eee3be678ef8e2a4a24d98",
+      "sha256": "8f72e18279793e95cc4bc22d27f04b90054a0f3e59e6ed2587b8d9e572b682c3"
+    },
+    {
+      "bytes": 15358,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00195.json.gz",
+      "payload_sha256": "a876f68453b5b822908412962bf6889fd4172ab5fa141e1196d8ac667e37e7d2",
+      "sha256": "b7bef923ee605c4e23dac16c816115eff73364e91d10f041ff950e909a3e7711"
+    },
+    {
+      "bytes": 15376,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00196.json.gz",
+      "payload_sha256": "c231554eb08a69d0f2687a050fa0ba04b371f3c721eb506e8eb3f26cefb439fe",
+      "sha256": "3f36b382b45acc0489d0901da9c90f3087c12580ad21699de3dd045901ee207b"
+    },
+    {
+      "bytes": 15592,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00197.json.gz",
+      "payload_sha256": "1316629752b235526d651e8a4927c3207013de93f004b52581760a017424a235",
+      "sha256": "4111a3fea841bc80a71a657afb925db12a341994bd6a86a65412a3b80ee65049"
+    },
+    {
+      "bytes": 15563,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00198.json.gz",
+      "payload_sha256": "ed17a833a3cc18210aef976f9293f28b67a62258fd0e7a9d203fefeac5f30834",
+      "sha256": "95cced0a9c93f2d6fd9a373c218ba213b085b51bed1b8674b2af16bf796d1b44"
+    },
+    {
+      "bytes": 15736,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00199.json.gz",
+      "payload_sha256": "5a581b1b3b10dce5c1e7bb7c078767ac028d782da5e543bdf4c68a88f7d21bbf",
+      "sha256": "ba1fd20d100be5ce08dd6ae9ecc52dbf5d78279caaad9323d11d4b38b3a78953"
+    },
+    {
+      "bytes": 15872,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00200.json.gz",
+      "payload_sha256": "2e2d073e34f9386f56f99ee8bf9793eb7102f25317f9437560822e9c79ed4393",
+      "sha256": "02b807f3516ebaaae604d1451aa120f592b56ffa949ba55a923334805bff0a58"
+    },
+    {
+      "bytes": 15342,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00201.json.gz",
+      "payload_sha256": "788d2645276cd5fde9258207e142da436e11b0ba8ac225763012acca0a6e4388",
+      "sha256": "ccf4504b947e38d53ed78289d623a10d45ac74670de32b225f4b7f363dddaf16"
+    },
+    {
+      "bytes": 15873,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00202.json.gz",
+      "payload_sha256": "8f0b5ef77c48bb41271064b1e9cb3d89b1e45620de5d4d30f4ee9f781fb0e81b",
+      "sha256": "d97927b48d4689504986b8c93ee23d9f4c2e951703a63ea462247a0d170f77a6"
+    },
+    {
+      "bytes": 15331,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00203.json.gz",
+      "payload_sha256": "f4e70982f93b7288792507e2d4798663793e98b2db2c490236d06c6c0e7329ad",
+      "sha256": "bd1fc6b230e2319113b6f6adeb54b4636218b69b3977e271fa049000000e41e4"
+    },
+    {
+      "bytes": 15369,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00204.json.gz",
+      "payload_sha256": "a1f67fccf87cfac4435f49cc31e3edf239b5ed78dec81e0e595842844b710134",
+      "sha256": "0f771058b4f7124e2e1f7aa99ad2a0713925838b22a0dd74a22380720368ade2"
+    },
+    {
+      "bytes": 15596,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00205.json.gz",
+      "payload_sha256": "7aabee32177c29fc4bb17699f0423c5a248e5e947699bfd1e1380437600a9789",
+      "sha256": "cba5413d48ab608baf92f8e07ecfe38f10817f6ba5e0b87df1926f72554a1cd5"
+    },
+    {
+      "bytes": 15562,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00206.json.gz",
+      "payload_sha256": "8f10cd0523f184e1148e27ecf9435af5a0eadaf428cf4ada9bedc3b81b9a0966",
+      "sha256": "f3c2f3a65006d602a55c84fa2afcb14340cb6c266e6f1b5e42a25276a65075e4"
+    },
+    {
+      "bytes": 15732,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00207.json.gz",
+      "payload_sha256": "667d850adff38e59993e68b0132756fa3e80f827ac8babf014e4ce5e85ccfb83",
+      "sha256": "b012a1dd15be76a6759d3870ec42c1115f637932f4c92d1e2f7af8d2954cfdef"
+    },
+    {
+      "bytes": 15414,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00208.json.gz",
+      "payload_sha256": "221d6047ae279a3ff435acfeddbb6db375aa7aa1b78588fe860db2a4165d0238",
+      "sha256": "afe7fb56b1dc0460a2cc9eca63b37502fce835613f0c9d10e1a4db7e76bd7e0e"
+    },
+    {
+      "bytes": 15103,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00209.json.gz",
+      "payload_sha256": "1d52fe3a427beaa5ce132c7108d87bf0cd3f8417d3759fa92342c614c8f046f6",
+      "sha256": "7788bc12b46b980992fb61f7bfc77af9cf2b1b6e06b78abb4251826eeb7d3cb3"
+    },
+    {
+      "bytes": 15425,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00210.json.gz",
+      "payload_sha256": "3746fac98a68391761b7817580070498f8827c25de6c3a65e1f245950192c191",
+      "sha256": "8e0ab03cb1ae1680b0492b16a3d18868f38e5720ac7df517911fb1fc8d934759"
+    },
+    {
+      "bytes": 15127,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00211.json.gz",
+      "payload_sha256": "5f3bdff107f33cef9440418c67bcade358f459b71699074435133fd13c8da108",
+      "sha256": "d0542945e82301e1d6416be35db5290df8aef0414032fad7ec90ed20382273a8"
+    },
+    {
+      "bytes": 14709,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00212.json.gz",
+      "payload_sha256": "2356b1b1c6a1bc1798ddb1ef224703b3991c313415fd9277bceae53a3b60ac50",
+      "sha256": "50b0fdcdbe4c3dd33f036e7b0797305184067f44b6719b792b9461b1ebdcbe60"
+    },
+    {
+      "bytes": 15422,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00213.json.gz",
+      "payload_sha256": "bf30222ca4f0c571114a6015c5350d9a64c2965f3d47a286b9ccb68a74703119",
+      "sha256": "c28e68a3e3865c2817c7a7448c08f98511051c65638856005cecde85cfa6f145"
+    },
+    {
+      "bytes": 14871,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00214.json.gz",
+      "payload_sha256": "c235161dfd4ad1fc1ea05d9e6b713364866adb033b4c97f76a65e8e57c774d1b",
+      "sha256": "7d4232c60ed314409798a7ac8f03ea929a94253d9d50607df5c793b493636f5b"
+    },
+    {
+      "bytes": 15598,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00215.json.gz",
+      "payload_sha256": "a94db94cc3d5fc172585f527376032fe1a8e3fbfaf21502f4b0cfd752b1fc5dd",
+      "sha256": "bb02978ffe223f249f6be287f0ce3240d8b151d203c0212b73caacae05b110ce"
+    },
+    {
+      "bytes": 15421,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00216.json.gz",
+      "payload_sha256": "e131b62d4151b8fc02631edfbe4abf8314d61755fc654edc77c58d44e52777c6",
+      "sha256": "6a809eb903e2853ee609d7570ef43a5fc3a8aab805ed052450ce429a23a9ccae"
+    },
+    {
+      "bytes": 15109,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00217.json.gz",
+      "payload_sha256": "f47cc6b759947ce6bcce00e47e0928d926a2e89524ab0957c4d87501acdf1833",
+      "sha256": "b2fce913f94430b0ca19e74919970a62f59aaf9afa294e60a23276e0972b5d08"
+    },
+    {
+      "bytes": 15125,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00219.json.gz",
+      "payload_sha256": "a2a48bc0764073a1a2e84e3fc4bb90c90df759e6a574cefaa3af0141d1712f89",
+      "sha256": "1d5ede737d57cf4cd00d4cf9da58d441fbe184a124bf302b795d2a5b0061f5ca"
+    },
+    {
+      "bytes": 14712,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00220.json.gz",
+      "payload_sha256": "79798e8be83ee2cc4ede71bb84479effe924b3524c59b0bec0e2e3d9eb55375a",
+      "sha256": "50912b5da90f1dbcb33091aabd3602fbb98f7629f901226d006a45bb76172f87"
+    },
+    {
+      "bytes": 15430,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00221.json.gz",
+      "payload_sha256": "844a3df648e57a565143fb9dc8d89d39839f023a35ad0310b7948afcd4f18691",
+      "sha256": "4f6cd10717b1eebfcd9b268499f35ddfeaf361e9ded868c1da951f9a14c71ff3"
+    },
+    {
+      "bytes": 15591,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00223.json.gz",
+      "payload_sha256": "972639c09354678476d521b3063d0e37ccc5282400cc5d2d8850ce5f2738adc1",
+      "sha256": "8565e6259ca5211ca6b91f91cf3a196e800a02733e2b04a07506ed8dbe5c2b60"
+    },
+    {
+      "bytes": 15113,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00228.json.gz",
+      "payload_sha256": "51407445fd570f454fd70f37bc8bbea0fd17a3083f3b0e7e59fee510f6f68681",
+      "sha256": "8da8b986aa70580a12f57458bb9ca0448bc3eb72740bddd4f4941c88957f1c7b"
+    },
+    {
+      "bytes": 15411,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00218.json.gz",
+      "payload_sha256": "713674b2eeb6d0750a771b838aff40aef0642ab4ed11d5f36c9801328be32216",
+      "sha256": "715eadeb9a0e6cd716b836e6dba4c85d63c34f0df8b3abd1496c9c99e820ead5"
+    },
+    {
+      "bytes": 14889,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00222.json.gz",
+      "payload_sha256": "a2a9d6e4b28f6db3080280cb3abe2960fdfd9a8443c5358ab6d161adb3d7b1f6",
+      "sha256": "78b07c1e4ef6e32ad71e47a0f7aec22cb09980efa6bf8f701f433c6bf0de8865"
+    },
+    {
+      "bytes": 15668,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00224.json.gz",
+      "payload_sha256": "eaaa969dfbfab45e451f655dff7153082ec160b8b450d5f77ddc926eccb46a86",
+      "sha256": "e45e5882ca35332e26d21b0a5e77456ba776aee16a6a21457e062134031e8ae3"
+    },
+    {
+      "bytes": 15351,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00225.json.gz",
+      "payload_sha256": "c47bbb6d25a352202eff347fbfc4626c64821c85e217167c4bc6a0b16e383eaf",
+      "sha256": "7f3e63d96550e4c44e40daa7e8cda4914bd1cfe2f7fd4e56ce1bbb3b19d515bf"
+    },
+    {
+      "bytes": 15645,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00226.json.gz",
+      "payload_sha256": "5fa49273ca070af8712988299f16be4f379b1011ca4da87da5c7a3fd37ea7733",
+      "sha256": "7361c75977392b739849a26b79c622caf45332a86969830bfc4e5b47e2cb55ab"
+    },
+    {
+      "bytes": 15347,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00227.json.gz",
+      "payload_sha256": "bad28be37614b775b52a2b8d5e0b3f7a7704eb32869f7b683b5803593ca96105",
+      "sha256": "9abdd83063667b4ba103b52f3f37f0da7688012ed489f96340a966d6fcf22177"
+    },
+    {
+      "bytes": 15292,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00230.json.gz",
+      "payload_sha256": "2b0bee3e4d16a759816bcb74ef9b9559309b2838d54b7f995ab155c16fa3b58f",
+      "sha256": "1b0ca015d3e0e63d5c51a8b91be267225437594d7a3a376470b77569716ee6c6"
+    },
+    {
+      "bytes": 15944,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00231.json.gz",
+      "payload_sha256": "bd60056995849de751c86e6692ff651b8e58d339fe565b1860f6f78a6d96ec6c",
+      "sha256": "df45ae30883ceb280b553a9e840d50b34561f7f10a4195e23c58344a59e093f6"
+    },
+    {
+      "bytes": 15637,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00232.json.gz",
+      "payload_sha256": "9d4e804c0f1661816eee671e4bd80509850a3976e9cfed765387bef0aa00b45e",
+      "sha256": "c2f826a739542b9dabbcf351d518aa1a9fc3a086069d69fee1dbf71bea868546"
+    },
+    {
+      "bytes": 15341,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00233.json.gz",
+      "payload_sha256": "930af148e4b4063ea5a3d6218771273d7156c2915f9352f7e6e9cac907313d3b",
+      "sha256": "5e381be30fcbda90cd90dd605839730e7198d4b57779db588d30cbbbc86e2e7f"
+    },
+    {
+      "bytes": 15639,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00234.json.gz",
+      "payload_sha256": "dfb065b5b57f8142fa2728a6d3c090845a8980161601416d0f784ae6d7990ecd",
+      "sha256": "f8f6481945d4bc6a28183629c5b8947b2ba9d3aa1623729bfb6ac54cffae578a"
+    },
+    {
+      "bytes": 15339,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00235.json.gz",
+      "payload_sha256": "21dfd6df53dbde6f273a59f2d3c9c1dc4f2ce250c973039d6e9f2b88dcbc7a5a",
+      "sha256": "4bb6679a2f95c7e212034ecb517a1404e4bf7d1c2615f963ed64327098c13024"
+    },
+    {
+      "bytes": 15120,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00236.json.gz",
+      "payload_sha256": "377f3d7bf7b7774b13a3d54e0d2ba1e11c246c843d81d49c743492cb4ee43aff",
+      "sha256": "8df63a17c1e552a2a91a313acad39c61174c321c1b75116e0f4e4222c618c9e5"
+    },
+    {
+      "bytes": 15308,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00240.json.gz",
+      "payload_sha256": "4c099a058a586c458b3d200ef2076ce251dec66d328668be0dc9d59f8000e9cb",
+      "sha256": "192080180ad27d6b54e145fc9d1e753005f1911233da5686789dcda5c9de31f0"
+    },
+    {
+      "bytes": 14895,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00241.json.gz",
+      "payload_sha256": "32974a8b0f0e6c1374b7963dfdaa1f031cc78c4347b218318545e996c16631c2",
+      "sha256": "2b5a732719b4632c1cf384eb6bbb35378c04482288264b26ed9566eea5be8e16"
+    },
+    {
+      "bytes": 15303,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00242.json.gz",
+      "payload_sha256": "78fcafff1c6946ed0707a2e7e6271ef329fe1e2b92ac366201d940bdcac07121",
+      "sha256": "f11df0f20dd4a04acd83a1ca008a3cedc334e71fc64b02e02fdb0e2c4f135eea"
+    },
+    {
+      "bytes": 14876,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00243.json.gz",
+      "payload_sha256": "0e24a0835920376ac9a795b4abe5baf45881bac68713877b2b6259339bff80b3",
+      "sha256": "e11dd7f755467d3001a9d8ecd99ab51e14afb302fb71d79c53672fd59a59116e"
+    },
+    {
+      "bytes": 15039,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00245.json.gz",
+      "payload_sha256": "cfd1f79999c801804f974ca132b08fe736aacc712d45758d3820a8c9f8585096",
+      "sha256": "0213d2cb7c40231bcd421ab2c835efcff98791f9d90f66a6b1402f8fefca5372"
+    },
+    {
+      "bytes": 14644,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00246.json.gz",
+      "payload_sha256": "dfa8042012815b8cab0d2db76fc85ac43a92ab742d28d2950da2e608ee22730d",
+      "sha256": "cc08e29f320094b389654403870ea6a5e107eacd57e40be7b98dab37ea1df053"
+    },
+    {
+      "bytes": 15308,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00248.json.gz",
+      "payload_sha256": "2dcc4abd77aa273840245071f817ba4a3057e052507b4bc66eda274874b6e673",
+      "sha256": "e43ce4a434d27df8256fef39bbee5cd09caf6d6da29e4ee94abeca87622c806a"
+    },
+    {
+      "bytes": 14871,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00249.json.gz",
+      "payload_sha256": "2ef8f69230b55318f2157328ede41ec9d11977aa5b870292bb31a338d68e9933",
+      "sha256": "269e777992549bf6bd5c072dcb9b26b74111560d95a0c2a644999ad43e470565"
+    },
+    {
+      "bytes": 15299,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00250.json.gz",
+      "payload_sha256": "a8610f0906a94b474295c9b466c2cdfb4fdf11113ab5b41847e69d95da729433",
+      "sha256": "39b6186b3f298b70b937a80f5f701bbb8b452faca7bb68a96f5b10ec14c8ba08"
+    },
+    {
+      "bytes": 14489,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00252.json.gz",
+      "payload_sha256": "03ad27422b883c54e301daf431b994162c42b516f9f5fd7ecc007e7d01d90776",
+      "sha256": "3d2f9444c3a14773be3a302bf6668b1a10b12254b136541741be4a5463bc471c"
+    },
+    {
+      "bytes": 15048,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00253.json.gz",
+      "payload_sha256": "deb72819453e91f5b096e33f7dc6a150782ca84382925e28954f38a2b3c219b6",
+      "sha256": "fb8670868717359130f66a3cbb845a7500a881c2346c28d4519408a6965b45e6"
+    },
+    {
+      "bytes": 15247,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00255.json.gz",
+      "payload_sha256": "c81422b0ea5febc8bcfd13a3ad2787da68e4d48c16ddee20b6fbc11c343f0fb5",
+      "sha256": "e497777a1807a984db0bd8d8349e4f78a51456d827fd470f92833a17c55f4640"
+    },
+    {
+      "bytes": 15709,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00229.json.gz",
+      "payload_sha256": "37ed19812b13d8ce0e39b76118ebc7c1d588b1b7028693804f0cc8a4b15f9791",
+      "sha256": "7e3b0a10a1b56c23933d826afe7a845546cc3f56b609b9007ab8f0099166d3df"
+    },
+    {
+      "bytes": 15693,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00237.json.gz",
+      "payload_sha256": "9afc397b0057a97b5e83690c4d71ce42adbc8e191add6a5cc2a68c7ab1fea7f9",
+      "sha256": "19ff6b9f017a4c0ea370d2bcafe187be22fdc26035a41f831514503698b2ae66"
+    },
+    {
+      "bytes": 15292,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00238.json.gz",
+      "payload_sha256": "8454c66fc8c24e6675f3a29d159369d08eef6665102e73617e8f546bdaec59fd",
+      "sha256": "edd3c79dec20ce15c6feb61513c31a5a59d71607b5173f04e38da15ee404fb5e"
+    },
+    {
+      "bytes": 15926,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00239.json.gz",
+      "payload_sha256": "0fb0ed40a781d88f89eb9f9a159fe37fbaed19e458ac5c28cd3f853556b3f291",
+      "sha256": "d8338fde79f42cb359a2d006c5e81efc1e153eba86d737db9fa2a8731ea95a57"
+    },
+    {
+      "bytes": 14470,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00244.json.gz",
+      "payload_sha256": "7ef686a2e5a6631b556bdc0cb1bcccc2beed64fdf842e87edf4365b2eab88522",
+      "sha256": "9a9fe15f6456ac1cc10fb576e14f159f0f6a56cbb535f469e8cb377d2850ad1f"
+    },
+    {
+      "bytes": 15233,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00247.json.gz",
+      "payload_sha256": "34deaec20996767a6d917a5399c35d652fa1532630b8e61b391836f2c818e07f",
+      "sha256": "5b316efb70fb57b517e24b581f34e19d5fdccc1db77e39fb4df35855492cdc5a"
+    },
+    {
+      "bytes": 14869,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00251.json.gz",
+      "payload_sha256": "c9e58cbed730c0ac1c6d45041e320d38a2090eaa44101973f7620000dbdefb91",
+      "sha256": "da53649f4d139994440ee2f65727264dc88cc8da801380bf0d4e8a1838891283"
+    },
+    {
+      "bytes": 14657,
+      "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/prices/task-00254.json.gz",
+      "payload_sha256": "f1dbaf0106b6b8b5082fb53bb73aed97d3984718eecded9807dbfdb09dc505e9",
+      "sha256": "26a420d736e2bc1b5432d2915ad0ced12e5ebd018af2ac0818ccdca4aa780f28"
+    }
+  ],
+  "word_blob_ids": {
+    "1094-K8PRE-FULL-WORD.json.gz": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+    "1094-K8S7-FULL-WORD.json.gz": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+    "1195-FULL-WORD.json.gz": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+    "1625-extra-word-566.json.gz": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+    "1625-gauge44-word-566.json.gz": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+    "1672-extra-word-566-554.json.gz": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+    "1672-gauge44-word-566-554.json.gz": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+    "2679-BORROW-WORD-43base.json.gz": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+    "2679-BORROW-WORD-43extra.json.gz": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+    "2745-BORROW-WORD-43base.json.gz": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+    "2745-BORROW-WORD-43extra.json.gz": "583a98c65438b96529e49897c2594aac4134333c",
+    "2766-WORD-base.json.gz": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+    "2766-WORD-extra.json.gz": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+    "data/continuation-07/holdout3015/package/edits/FINAL-WORD-base.json.gz": "4f0483657396a7f735873e1b252482c53dfb2eb6",
+    "data/continuation-07/holdout3015/package/edits/FINAL-WORD-extra.json.gz": "81f95e21ede115e8bdb6bd522c641b37b740bdf7",
+    "research/rank7-joint-endframes/data/WORD-base.json.gz": "d9aa96a93fea5f7395e7783aef0bc117c0a0ae89",
+    "research/rank7-joint-endframes/data/WORD-extra.json.gz": "74f6cb64595c21f7726ae77e69437868620bdcee",
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz": "0bc4e8c167de63931e5cc208527ad684573a373c",
+    "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+    "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz": "91bd9c68f209ac29e27cac566ff7a78339788553",
+    "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+    "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+    "retired5-WORD-base.json.gz": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+    "retired5-WORD-extra.json.gz": "64f2535299938848d62e1a0ab4f5948b28b029a2"
+  }
+}

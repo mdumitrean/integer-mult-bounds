@@ -1,0 +1,16 @@
+{
+  "administrative_cpu_seconds": 3.394180651,
+  "error": "'status'",
+  "error_type": "KeyError",
+  "kind": "Administrative verification error",
+  "recorded_utc": "2026-10-16T19:04:33.235423+00:00",
+  "schema_version": 1,
+  "scientific_cpu_seconds_added": 0,
+  "scientific_rerun": false,
+  "source_sha256": {
+    "auditor": "553269128e13727e95e06e298a625f4af058941461ee1cf8ba44defb395d6ef6",
+    "reconciler": "ca628730501d35b18d507a0b53683252e6ad192aa8dc441b2da3ee6b95d951fb"
+  },
+  "status": "ERROR",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/reconcile_saved.py\", line 71, in main\n    A.need(review['status'] == 'PASS' and review['attempt_rewritten'] is False and\n           ~~~~~~^^^^^^^^^^\nKeyError: 'status'\n"
+}

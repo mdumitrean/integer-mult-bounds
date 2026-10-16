@@ -1,16 +1,57 @@
 {
+  "administrative_reconciliation_cpu_seconds": 6.756166196000001,
   "experiments": [
     {
-      "execution": "NOT_STARTED",
+      "attempts": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 106.248710617,
+          "result_files": [
+            "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/seed-41117/RESULT.json",
+            "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1/seed-83003/RESULT.json"
+          ],
+          "status": "ERROR",
+          "wall_seconds": 11.549536055885255
+        }
+      ],
+      "confirmed": true,
+      "cpu_seconds": 106.248710617,
+      "execution": "COMPLETED",
       "id": "F1-CARRIER-FACTORIZATIONS",
+      "original_attempt_execution": "INCOMPLETE_POST_PRICE_STORAGE_ERROR",
       "preregistration": "results/CONTINUATION-08/F1/PREREGISTRATION.json",
       "preregistration_sha256": "6df627ddbd9209e13717ea1b04819e262fc8e901c7da63b57fdbff5a96917c29",
-      "status": "planned"
+      "reconciliation": {
+        "administrative_cpu_seconds": 6.756166196000001,
+        "confirmed": true,
+        "result_files": [
+          "results/CONTINUATION-08/F1-RECONCILIATION/v1/seed-41117/RESULT.json",
+          "results/CONTINUATION-08/F1-RECONCILIATION/v1/seed-83003/RESULT.json"
+        ],
+        "run": "results/CONTINUATION-08/F1-RECONCILIATION/v1/RUN.json",
+        "status": "NULL"
+      },
+      "result_files": [
+        "results/CONTINUATION-08/F1-RECONCILIATION/v1/seed-41117/RESULT.json",
+        "results/CONTINUATION-08/F1-RECONCILIATION/v1/seed-83003/RESULT.json"
+      ],
+      "scope": "Exact fixed-exterior guarded A/B carrier-factor census at pinned PR3021 endpoint; original failed attempt and separate saved-receipt decision both preserved.",
+      "started_utc": "2026-10-16T18:54:14.165538+00:00",
+      "status": "NULL",
+      "updated_utc": "2026-10-16T19:06:33.910547+00:00",
+      "wall_seconds": 11.549536055885255
     }
   ],
+  "formal_pattern_promotions": 0,
   "goal_status": "ACTIVE_NOT_ACHIEVED",
+  "kappa_improvements": 0,
   "no_active_experiments": true,
+  "publication": "Authorized fork branch only; coordinator reviews before any further posting.",
   "round": "CONTINUATION-08",
+  "round_closed_utc": "2026-10-16T19:06:33.910576+00:00",
   "schema_version": 1,
-  "status": "REGISTERED_AWAITING_FROZEN_IMPLEMENTATION"
+  "scientific_cpu_seconds": 106.248710617,
+  "status": "COMPLETED_PENDING_COORDINATOR_REVIEW",
+  "stop_reason": "One complete preregistered finite family reconciled to NULL on both seeds. No domain expansion or pivot; prior lane stops remain binding.",
+  "storage_round_cap_breached_during_original_execution": true
 }

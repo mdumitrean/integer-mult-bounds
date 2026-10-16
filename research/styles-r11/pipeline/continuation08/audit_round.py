@@ -14,6 +14,7 @@ import hashlib
 import json
 from pathlib import Path
 import subprocess
+import tarfile
 import time
 
 PKG = Path(__file__).resolve().parents[2]
@@ -26,6 +27,10 @@ PROVIDERS = {'base', 'extra'}
 IGNORE = {'seed', 'cpu_seconds', 'wall_seconds', 'elapsed_seconds', 'seconds',
           'recorded_utc', 'output_dir', 'schedule'}
 CHECKED_REFS = set()
+RELOCATION_SHA = '4304a43554ed87d3f69ce3d6b51bd75a6e3067cf4ce984dfff769c1040fe4f38'
+RECONCILIATION_REGISTRATION_SHA = 'b752989fef2613adb490022a8a8b2a675a20fbe74dd9fe51df52582a32ea666d'
+_RELOCATIONS = None
+_SPANS = {}
 
 
 def need(ok, message):
@@ -38,6 +43,7 @@ def digest(raw):
 
 
 def read(path):
+    path = resolve_path(path)
     raw = path.read_bytes()
     return json.loads(gzip.decompress(raw) if path.suffix == '.gz' else raw)
 
@@ -57,11 +63,38 @@ def clean(value):
     return value
 
 
+def relocation_index():
+    global _RELOCATIONS
+    if _RELOCATIONS is None:
+        path = ROUND / FAMILY / 'RELOCATION.json'
+        need(digest(path.read_bytes()) == RELOCATION_SHA, 'frozen relocation manifest')
+        _RELOCATIONS = json.loads(path.read_bytes())['files']
+    return _RELOCATIONS
+
+
+def resolve_path(path):
+    path = Path(path).resolve()
+    if path.is_relative_to(PKG):
+        name = str(path.relative_to(PKG))
+        row = relocation_index().get(name)
+        if row is not None:
+            replacement = (PKG / row['path']).resolve()
+            need(replacement.is_relative_to(PKG), 'relocated artifact confinement')
+            return replacement
+    return path
+
+
+def physical_run(run):
+    if run == ROUND / FAMILY / 'v1':
+        return PKG / 'data/continuation-08/evidence-v1'
+    return run
+
+
 def local_path(name):
     p = Path(name)
     p = (ROOT / p if str(p).startswith('research/styles-r11/') else PKG / p).resolve()
     need(p.is_relative_to(PKG), 'artifact path confined to r11: ' + name)
-    return p
+    return resolve_path(p)
 
 
 def reference(ref):
@@ -127,7 +160,8 @@ def archives(pins, implementation):
     for name, expected in pins['sha256'].items():
         archive = reference(mapping[expected])
         need(digest(gzip.decompress(archive.read_bytes())) == expected, 'exact frozen source preimage')
-        p = local_path(name)
+        p = (ROOT / name).resolve()
+        need(p.is_relative_to(ROOT), 'trusted frozen source is repository-confined')
         if not p.exists() or digest(p.read_bytes()) != expected:
             need(name.endswith(('/audit_round.py', '/final_checkpoint.py', '/checkpoint_sources.py')),
                  'scientific source changed after freeze: ' + name)
@@ -142,7 +176,32 @@ def address_key(row):
     return (('A', 'B').index(address[0]), *address[1:])
 
 
-def saved_domain(tasks, seed_results, protocol, meta, run):
+def span(frame):
+    key = tuple(frame)
+    if key not in _SPANS:
+        need(all(type(x) is int and 0 <= x < 512 for x in key), 'saved GF2 frame coordinates')
+        values = {0}
+        for x in key:
+            values |= {y ^ x for y in values}
+        _SPANS[key] = frozenset(values)
+    return _SPANS[key]
+
+
+def guard_certificate(value):
+    predicate = value['predicate']
+    if predicate == 'frame_inclusion':
+        lower, upper = span(value['lower_frame']), span(value['upper_frame'])
+    elif predicate == 'exit_inclusion':
+        lower, upper = span(value['actual']), span(value['required'])
+    else:
+        need(predicate == 'exit_equality' and span(value['actual']) != span(value['required']),
+             'saved exit equality is a genuine subspace inequality')
+        return
+    witness = value['excluded_vector']
+    need(witness in lower and witness not in upper, 'saved exclusion vector certifies failed inclusion')
+
+
+def saved_domain(tasks, seed_results, protocol, meta, run, reconcile=False):
     census = {(s['seed'], s['provider']): v for phase, s, v, _ in tasks if phase == 'census'}
     price = {(s['seed'], s['provider'], s['shard']): v
              for phase, s, v, _ in tasks if phase == 'prices'}
@@ -182,6 +241,8 @@ def saved_domain(tasks, seed_results, protocol, meta, run):
                     if row['status'] == 'REJECTED_GUARD':
                         need(row.get('guard_failures') and row.get('profile_delta') is None,
                              'guard rejection has explicit witness')
+                        for failure in row['guard_failures']:
+                            guard_certificate(failure)
                     else:
                         need(moment is not None, 'resolved price has saved interval')
                         lo, hi = Fraction(moment['lower']), Fraction(moment['upper'])
@@ -192,7 +253,11 @@ def saved_domain(tasks, seed_results, protocol, meta, run):
                         if row['status'] == 'PASS_CANDIDATE':
                             need(hi < 0, 'favorable row certified strictly negative')
                         elif row['status'] == 'NO_GAIN':
-                            need(not row['profile_delta'] or lo >= 0, 'nonnegative row actually resolved')
+                            need(lo >= 0, 'nonnegative row actually resolved')
+                            need(bool(row['profile_delta']) != moment['exact_profile_identity'],
+                                 'exact identity flag agrees with signed profile')
+                            if not row['profile_delta']:
+                                need(lo == hi == 0, 'identical profile has exact zero moment interval')
                         else:
                             need(row['status'] == 'EXPLORATORY' and lo < 0 <= hi,
                                  'unresolved sign remains exploratory')
@@ -210,17 +275,30 @@ def saved_domain(tasks, seed_results, protocol, meta, run):
             rows.sort(key=lambda row: row['ordinal'])
             need([x['ordinal'] for x in rows] == list(range(len(candidates))), 'no domain omission or duplication')
             per_seed[seed] = rows
-            need(dict(totals) == seed_results[seed]['statistics']['counts_by_provider'][provider],
-                 'RESULT aggregate equals every saved shard')
+            if not reconcile:
+                need(dict(totals) == seed_results[seed]['statistics']['counts_by_provider'][provider],
+                     'RESULT aggregate equals every saved shard')
         need(per_seed[min(SEEDS)] == per_seed[max(SEEDS)], 'all price rows agree across seeds')
         favorable[provider] = {x['candidate_id']: x for x in per_seed[min(SEEDS)]
                                if x['status'] == 'PASS_CANDIDATE'}
         summaries[provider] = dict(candidates=len(candidates), shards_per_seed=64,
-                                  status_counts=dict(Counter(x['status'] for x in per_seed[min(SEEDS)])))
-    selection = read(run / 'SELECTION.json')
+                                  status_counts=dict(Counter(x['status'] for x in per_seed[min(SEEDS)])),
+                                  identical_profile_rows=sum(x['status'] == 'NO_GAIN' and not x['profile_delta']
+                                                             for x in per_seed[min(SEEDS)]),
+                                  strictly_costlier_rows=sum(x['status'] == 'NO_GAIN' and bool(x['profile_delta']) and
+                                                            Fraction(x['moment_delta']['lower']) > 0
+                                                            for x in per_seed[min(SEEDS)]),
+                                  guard_predicate_counts=dict(Counter(g['predicate']
+                                      for x in per_seed[min(SEEDS)] for g in x.get('guard_failures', []))))
+    selection_path = run / 'SELECTION.json'
+    selection = read(selection_path) if resolve_path(selection_path).exists() else None
     common = sorted(set(favorable['base']) & set(favorable['extra']),
                     key=lambda cid: address_key(favorable['base'][cid]))
     selected = common[:protocol['retained_pair_limit']]
+    if selection is None:
+        need(reconcile and not common and not any(favorable.values()),
+             'missing selection reconciles only with zero favorable rows')
+        selection = dict(paired_favorable=0, selected_pair_keys=[], unretained_paired_favorable=0)
     need(selection['paired_favorable'] == len(common) and
          selection['selected_pair_keys'] == [favorable['base'][x]['pair_key'] for x in selected] and
          selection['unretained_paired_favorable'] == len(common)-len(selected),
@@ -249,12 +327,13 @@ def saved_domain(tasks, seed_results, protocol, meta, run):
     total = sum(s['candidates'] for s in summaries.values())
     expected = ('EXPLORATORY' if unresolved else 'PASS' if selected else 'EXPLORATORY'
                 if any(favorable.values()) or total == 0 else 'NULL')
-    need(meta['status'] == expected, 'registered scientific disposition from saved coverage and exact signs')
+    if not reconcile:
+        need(meta['status'] == expected, 'registered scientific disposition from saved coverage and exact signs')
     return dict(providers=summaries, selected_pairs=len(selected), unvalidated_paired=len(common)-len(selected),
                 unresolved_rows=unresolved, decision_from_saved_records=expected)
 
 
-def audit_attempt(row, attempt, original):
+def audit_attempt(row, attempt, original, reconcile=False):
     version = attempt['attempt']
     run = ROUND / FAMILY / version
     meta = read(run / 'RUN.json')
@@ -325,7 +404,7 @@ def audit_attempt(row, attempt, original):
     for phase, seen in visits.items():
         need(len(seen) == meta['completed_by_phase'][phase], 'all completed receipts included once')
     projections = []
-    for path in sorted(run.glob('*MEMORY-PROJECTION.json')):
+    for path in sorted(physical_run(run).glob('*MEMORY-PROJECTION.json')):
         value = read(path)
         need(value['workers'] == min(120, int(value['ram_gib']//4)) == 61 and
              value['reserved_cores'] >= 8, 'registered RAM/core worker rule')
@@ -345,9 +424,17 @@ def audit_attempt(row, attempt, original):
     if meta['failure'] is not None:
         need(meta['status'] in {'ERROR', 'TIMEOUT'} and not meta['confirmed'], 'failed attempt preserved as failure')
         summary['failure'] = meta['failure']
-        return summary
-    need(all(v['confirmed'] and v['scientific_decision_agreement'] and v['failure'] is None
-             for v in results.values()) and meta['confirmed'], 'two-seed scientific decision agreement')
+        if not reconcile:
+            return summary
+        need(version == 'v1' and meta['failure']['type'] == 'ValueError' and
+             meta['failure']['message'] == 'round results4MB cap' and
+             statuses == Counter(OK=266), 'only the registered post-price storage error is reconcilable')
+        need(all(v['status'] == 'ERROR' and not v['confirmed'] for v in results.values()),
+             'original failed seed receipts remain unchanged')
+    else:
+        need(not reconcile, 'reconciliation is restricted to the preserved storage-error attempt')
+        need(all(v['confirmed'] and v['scientific_decision_agreement'] and v['failure'] is None
+                 for v in results.values()) and meta['confirmed'], 'two-seed scientific decision agreement')
     for phase, spec, value, _ in tasks:
         if phase in ('controls', 'baseline', 'census', 'prices'):
             need(value['status'] == 'PASS', 'all primary checks and shards completed')
@@ -356,6 +443,27 @@ def audit_attempt(row, attempt, original):
             need(finite['checked_columns'] == finite['independent_inputs'] == 632 and
                  finite['orientations'] == {'forward': 'PASS', 'dual': 'PASS'} and
                  finite['restored_cold'] == finite['zero_buffers'] == 91, 'all baseline semantic columns and buffers')
+        if phase == 'controls':
+            checks = value['checks']
+            need(len(checks) == 1508 and len({x['name'] for x in checks}) == 1508 and
+                 all(x['status'] == 'PASS' for x in checks), 'every one of1508 registered controls passes')
+            flags = value['exhaustive_small_flag_controls']
+            need(len(flags) == 7 and all(x['exhaustive_flags_examined'] == 4096 and
+                 x['includes_all_successor_terms'] for x in flags), 'all seven exhaustive4096-flag controls')
+            fixtures = value['source_positive_fixtures']
+            need({x['provider'] for x in fixtures} == PROVIDERS and len(fixtures) == 2,
+                 'both exact source R1 positive fixtures')
+            for fixture in fixtures:
+                moment = fixture['moment_delta']
+                need(fixture['candidate_id'] == 'restore.178.179.in.0.1' and
+                     fixture['matching_corner_labels'] == 2 and
+                     fixture['profile_delta'] == {'1': -2, '2': 1} and
+                     fixture['local_profile'] == {'1': 2443, '2': 707, '3': 232, '4': 108, '5': 18, '8': 8} and
+                     fixture['scalar_sections_cleanup_and_profile_equal'] and
+                     fixture['source_pin']['pr'] == 2979 and fixture['declared_source_pin']['pr'] == 3015 and
+                     moment['endpoint'] == protocol['comparison']['complex_endpoint'] and
+                     Fraction(moment['lower']) <= Fraction(moment['upper']) < 0,
+                     'exact source reconstruction, cleanup, profile and strictly negative positive fixture')
     expected = dict(controls=2, baseline=4, census=4, prices=256)
     if 'retention' in phases:
         expected['retention'] = len(phases['retention'])
@@ -363,12 +471,111 @@ def audit_attempt(row, attempt, original):
     need(meta['completed_by_phase'] == expected, 'exact registered phase coverage')
     for phase, seen in visits.items():
         need(seen == set(range(len(phases[phase]))), 'no omitted task in completed phase')
-    for seed, result in results.items():
-        need(result['statistics'] == meta['statistics'][str(seed)], 'RUN/RESULT statistics equality')
-    need(clean(results[min(SEEDS)]['statistics']) == clean(results[max(SEEDS)]['statistics']),
-         'two-seed aggregate statistics equality')
-    summary['domain'] = saved_domain(tasks, results, protocol, meta, run)
+    if not reconcile:
+        for seed, result in results.items():
+            need(result['statistics'] == meta['statistics'][str(seed)], 'RUN/RESULT statistics equality')
+        need(clean(results[min(SEEDS)]['statistics']) == clean(results[max(SEEDS)]['statistics']),
+             'two-seed aggregate statistics equality')
+    else:
+        for phase in ('controls', 'baseline'):
+            groups = {}
+            for actual_phase, spec, value, _ in tasks:
+                if actual_phase == phase:
+                    groups.setdefault(spec.get('provider', 'all'), []).append(value)
+            need(all(len(v) == 2 and clean(v[0]) == clean(v[1]) for v in groups.values()),
+                 'saved controls and baseline checks agree across seeds')
+    summary['domain'] = saved_domain(tasks, results, protocol, meta, run, reconcile=reconcile)
+    summary['saved_control_checks_per_seed'] = {str(spec['seed']): len(value['checks'])
+                                               for phase, spec, value, _ in tasks if phase == 'controls'}
+    summary['baseline_columns_per_provider_per_seed'] = 632
+    if reconcile:
+        summary['reconciled_saved_decision'] = summary['domain']['decision_from_saved_records']
+        summary['scientific_rerun'] = False
+        summary['original_status_unchanged'] = 'ERROR'
     return summary
+
+
+def audit_relocation():
+    path = ROUND / FAMILY / 'RELOCATION.json'
+    need(digest(path.read_bytes()) == RELOCATION_SHA, 'exact relocation pin')
+    value = json.loads(path.read_bytes())
+    regpath = reference(value['registration'])
+    need(digest(regpath.read_bytes()) == RECONCILIATION_REGISTRATION_SHA, 'mechanical registration pin')
+    reg = read(regpath)
+    need(reg['scientific_rerun'] is False and value['limit_breach_preserved'] is True,
+         'mechanical repair preserves actual failure')
+    files = value['files']
+    need(len(files) == 280, 'all280 original files preserved')
+    expected_members = {}
+    for logical, pin in files.items():
+        need(logical.startswith(value['logical_prefix']) and pin['path'].startswith(value['physical_prefix']),
+             'exact logical/physical relocation namespaces')
+        p = reference(pin)
+        need(pin['archive_member'] not in expected_members, 'unique archive member')
+        expected_members[pin['archive_member']] = pin
+    archive_path = reference(value['archive'])
+    seen = set()
+    with tarfile.open(archive_path, 'r:xz') as archive:
+        for member in archive:
+            need(member.isfile() and member.name in expected_members and member.name not in seen,
+                 'only unique registered ordinary files in preserved archive')
+            raw = archive.extractfile(member).read()
+            pin = expected_members[member.name]
+            need(len(raw) == pin['bytes'] and digest(raw) == pin['sha256'],
+                 'archive bytes equal exact original/relocated bytes')
+            seen.add(member.name)
+    need(seen == set(expected_members) and sum(p['bytes'] for p in files.values()) == value['original_bytes'],
+         'lossless complete original-byte preservation')
+    breach = reg['observed_storage_breach']
+    need(value['observed_prepack_round_bytes'] == breach['round_bytes'] > breach['round_limit_bytes'] and
+         value['observed_prepack_global_bytes'] == breach['global_bytes'], 'actual storage breach retained honestly')
+    return dict(relocation_sha256=RELOCATION_SHA, registration_sha256=RECONCILIATION_REGISTRATION_SHA,
+                original_files=len(files), original_bytes=value['original_bytes'], archive=value['archive'],
+                failed_close_observation=breach,
+                minimum_observed_prepack_including_registration=dict(
+                    round_bytes=breach['round_bytes']+regpath.stat().st_size,
+                    global_bytes=breach['global_bytes']+regpath.stat().st_size),
+                all_time_exact_peak_known=False, global_limit_held_at_recorded_measurements=True,
+                round_limit_obeyed_throughout=False,
+                original_attempt_status='ERROR', lossless_byte_preservation=True)
+
+
+def audit_reconciliation(row, original):
+    reg = row['reconciliation']
+    runpath = local_path(reg['run']) if isinstance(reg['run'], str) else reference(reg['run'])
+    meta = read(runpath)
+    independent = audit_attempt(row, row['attempts'][0], original, reconcile=True)
+    need(independent['reconciled_saved_decision'] == meta['status'] == reg['status'] and
+         meta['confirmed'] and reg['confirmed'], 'independent saved-domain decision agrees with reconciliation')
+    need(meta['scientific_rerun'] is False and meta['original_attempt_status'] == 'ERROR' and
+         meta['scientific_cpu_seconds_added'] == 0, 'reconciliation never reruns or relabels original science')
+    need(meta['source_sha256']['auditor'] == digest(Path(__file__).read_bytes()), 'reconciliation binds exact administrative auditor')
+    script = PKG / 'pipeline/continuation08/reconcile_saved.py'
+    need(meta['source_sha256']['reconciler'] == digest(script.read_bytes()), 'exact reconciliation implementation')
+    need(meta['domain'] == independent['domain'], 'reconciliation domain summary exactly rederived')
+    references(meta['inputs'])
+    results = {}
+    for ref in meta['results']:
+        value = read(reference(ref))
+        seed = value['seed']
+        need(seed in SEEDS and seed not in results, 'two separate reconciliation seed receipts')
+        results[seed] = value
+        credits(value, original)
+        need(value['status'] == meta['status'] and value['confirmed'] and
+             value['scientific_rerun'] is False and value['original_attempt_status'] == 'ERROR' and
+             value['scientific_cpu_seconds_added'] == 0 and value['source_sha256'] == meta['source_sha256'],
+             'reconciliation receipt scope and implementation')
+        references(value['inputs'])
+        need(value['domain'] == independent['domain'], 'both seeds bind independently checked full saved domain')
+    need(set(results) == SEEDS, 'both registered reconciliation seeds')
+    need(set(reg['result_files']) == {x['path'] for x in meta['results']},
+         'registry names both exact reconciliation receipts')
+    need(abs(reg['administrative_cpu_seconds']-meta['administrative_cpu_seconds']) < 1e-9,
+         'administrative CPU reported separately')
+    return dict(status=meta['status'], confirmed=True, run_sha256=digest(runpath.read_bytes()),
+                administrative_cpu_seconds=meta['administrative_cpu_seconds'],
+                scientific_cpu_seconds_added=0, original_attempt_status='ERROR',
+                independently_recomputed_domain=independent['domain'])
 
 
 def preserved_base():
@@ -404,8 +611,11 @@ def build_audit():
     preg = ROUND / 'F1/PREREGISTRATION.json'
     need(row['preregistration_sha256'] == digest(preg.read_bytes()), 'registry preregistration hash')
     reports = [audit_attempt(row, attempt, original) for attempt in row['attempts']]
-    need(reports[-1]['status'] == row['status'] and
-         abs(sum(x['cpu_seconds'] for x in reports)-row['cpu_seconds']) < 1e-5, 'all attempts included in registry')
+    need(abs(sum(x['cpu_seconds'] for x in reports)-row['cpu_seconds']) < 1e-5,
+         'scientific attempts accounted exactly once')
+    storage_report = audit_relocation()
+    reconciliation_report = audit_reconciliation(row, original)
+    need(row['status'] == reconciliation_report['status'], 'registry final disposition from separate reconciliation')
     need(row['cpu_seconds'] < task['round_cpu_budget_seconds'], 'round scientific CPU budget')
     acquisitions = []
     protocol = read(preg)
@@ -416,7 +626,7 @@ def build_audit():
     documents = {name: digest((ROUND/name).read_bytes()) for name in
                  ('RESULTS.md', 'HANDBACK.md', 'PREDICTIONS.json', 'EXPERIMENTS.json', 'TASK.json')}
     checkpoints = {}
-    for label in ('checkpoint', 'final-checkpoint'):
+    for label in ('checkpoint', 'final_checkpoint'):
         path = PKG / 'data/continuation-08' / label / 'RECEIPT.json'
         if not path.exists():
             need(label != 'checkpoint', 'initial source checkpoint required')
@@ -434,6 +644,7 @@ def build_audit():
     return dict(schema_version=1, status='PASS', kind='Administrative saved-byte audit; no scientific reruns',
                 script_sha256=digest(Path(__file__).read_bytes()), base_work_commit=BASE,
                 preserved_pre_round_files=preserved, experiments={FAMILY: reports},
+                storage_repair=storage_report, reconciliation=reconciliation_report,
                 total_pool_tasks=sum(x['pool_tasks'] for x in reports),
                 total_experimental_cpu_seconds=sum(x['cpu_seconds'] for x in reports),
                 acquisitions=acquisitions, source_checkpoints=checkpoints, final_documents=documents,

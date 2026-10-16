@@ -1,0 +1,196 @@
+{
+  "administrative_cpu_seconds": 5.935169125,
+  "recorded_utc": "2026-10-16T19:06:42.181807+00:00",
+  "stable": {
+    "acquisitions": [
+      {
+        "author": "petalas",
+        "files": 51,
+        "path": "data/continuation-08/pr3021/ACQUISITION.json",
+        "payload_bytes": 375409,
+        "sha256": "29066c016ad8129e81311c160226caa93994e9730ca3bcca95f8168bc67766fb"
+      },
+      {
+        "author": "Marius-Paul Dumitrean (mdumitrean)",
+        "files": 112,
+        "path": "data/continuation-05/pr2979/ACQUISITION.json",
+        "payload_bytes": 3439921,
+        "sha256": "e5ad48ac05e897dcc2e073d29be451cfd1493ba3077e7e2de0f9460aa11a7d71"
+      },
+      {
+        "author": "jeremykothe2",
+        "files": 37,
+        "path": "data/continuation-07/holdout3015/ACQUISITION.json",
+        "payload_bytes": 1841940,
+        "sha256": "d0b48e18b559fc323cdd9e12a402d8f42b48ead8c8629f61e5d062f9adf1dde7"
+      }
+    ],
+    "base_work_commit": "f9671de10c8bb72fa4b3956f734e902f47a400df",
+    "experiments": {
+      "F1-CARRIER-FACTORIZATIONS": [
+        {
+          "attempt": "v1",
+          "completed_by_phase": {
+            "baseline": 4,
+            "census": 4,
+            "controls": 2,
+            "prices": 256
+          },
+          "cpu_seconds": 106.248710617,
+          "failure": {
+            "message": "round results4MB cap",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py\", line 235, in main\n    prices = launch('prices', specs)\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py\", line 202, in launch\n    storage()\n    ~~~~~~~^^\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py\", line 175, in storage\n    need(sum(p.stat().st_size for p in ROUND.rglob('*') if p.is_file()) < 4000000, 'round results4MB cap')\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py\", line 32, in need\n    raise ValueError(message)\nValueError: round results4MB cap\n",
+            "type": "ValueError"
+          },
+          "max_task_seconds": 1.603499935939908,
+          "max_worker_rss_bytes": 270761984,
+          "memory_projections": [
+            {
+              "path": "data/continuation-08/evidence-v1/BASELINE-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 87.64012145996094,
+              "sha256": "837caa0d06acd2c02ffa62de04b2ce04e65b5d1ea789787d6870910f1e92ca5e"
+            },
+            {
+              "path": "data/continuation-08/evidence-v1/CENSUS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 87.76121520996094,
+              "sha256": "6d7384ceb97bcf4e629dfc913676506be3e1893d325a27bf835a11c3da86369a"
+            },
+            {
+              "path": "data/continuation-08/evidence-v1/CONTROLS-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 87.51902770996094,
+              "sha256": "55e0e4f68f6c1edd078dd1726314ff0ff41f79ced3e08c9d8635877adc13c9d7"
+            },
+            {
+              "path": "data/continuation-08/evidence-v1/PREPARATION-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 79.26100158691406,
+              "sha256": "07bec262ccd18a697373851264b5c1d9abd373581d2be153484a6a7d131a6b3b"
+            },
+            {
+              "path": "data/continuation-08/evidence-v1/PRICES-MEMORY-PROJECTION.json",
+              "projected_peak_gib": 94.54979705810547,
+              "sha256": "0c08a96e5fbc223f77163401aa60b0510c4209ab88c21ae04c82ac034fe3da2f"
+            }
+          ],
+          "pool_status_counts": {
+            "OK": 266
+          },
+          "pool_tasks": 266,
+          "source_archives": {
+            "historical_administrative_preimages": [],
+            "reused_earlier_archives": 113,
+            "unique_source_payloads": 116
+          },
+          "source_credits_per_result": {
+            "41117": 25,
+            "83003": 25
+          },
+          "status": "ERROR",
+          "wall_seconds": 11.549536055885255
+        }
+      ]
+    },
+    "final_documents": {
+      "EXPERIMENTS.json": "346219d1fe9b99f6cbfc23a135337b6b7cca486ce6917043926cdae79c3e27c3",
+      "HANDBACK.md": "6864c60389162c6d5e044ae6aac1f47c3c3de9ef3f8f9ba4d67785a1f3948147",
+      "PREDICTIONS.json": "8159228abba264195e61c587d4b6f50511928dc733be5de70bfd39e022c480bc",
+      "RESULTS.md": "a48058ec3714e88d36b1128d6f944062311b37361545af88d66d1f532cedb322",
+      "TASK.json": "808b1fd669ce1693cb8a5894c210f054a2b0bffc39743747da1530eca7167599"
+    },
+    "kind": "Administrative saved-byte audit; no scientific reruns",
+    "local_artifact_references_checked": 611,
+    "preserved_pre_round_files": 23837,
+    "reconciliation": {
+      "administrative_cpu_seconds": 6.756166196000001,
+      "confirmed": true,
+      "independently_recomputed_domain": {
+        "decision_from_saved_records": "NULL",
+        "providers": {
+          "base": {
+            "candidates": 35440,
+            "guard_predicate_counts": {
+              "exit_equality": 216,
+              "exit_inclusion": 1136,
+              "frame_inclusion": 9088
+            },
+            "identical_profile_rows": 30436,
+            "shards_per_seed": 64,
+            "status_counts": {
+              "NO_GAIN": 30896,
+              "REJECTED_GUARD": 4544
+            },
+            "strictly_costlier_rows": 460
+          },
+          "extra": {
+            "candidates": 35440,
+            "guard_predicate_counts": {
+              "exit_equality": 216,
+              "exit_inclusion": 1136,
+              "frame_inclusion": 9088
+            },
+            "identical_profile_rows": 30436,
+            "shards_per_seed": 64,
+            "status_counts": {
+              "NO_GAIN": 30896,
+              "REJECTED_GUARD": 4544
+            },
+            "strictly_costlier_rows": 460
+          }
+        },
+        "selected_pairs": 0,
+        "unresolved_rows": 0,
+        "unvalidated_paired": 0
+      },
+      "original_attempt_status": "ERROR",
+      "run_sha256": "93977276c933e1820139cce71f56c147c763eb06ea08ebb76a54d993040cefe5",
+      "scientific_cpu_seconds_added": 0,
+      "status": "NULL"
+    },
+    "results_bytes_excluding_audit": 197300365,
+    "round_bytes_excluding_audit": 2798262,
+    "schema_version": 1,
+    "script_sha256": "553269128e13727e95e06e298a625f4af058941461ee1cf8ba44defb395d6ef6",
+    "source_checkpoints": {
+      "checkpoint": {
+        "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+        "files": 24,
+        "priority_revision": 6,
+        "sha256": "ebac692744d2ca7592e1b599e28437defaf6e45d4815b3962d20514d5a69074d"
+      },
+      "final_checkpoint": {
+        "canonical_main": "d8e0f83f00191df62174b641e9fff055c357f641",
+        "files": 25,
+        "priority_revision": 6,
+        "sha256": "99417e857a637f259bdb5e8326ccece841b3843d3dc7c9fa6caac08f972a2a1f"
+      }
+    },
+    "status": "PASS",
+    "storage_repair": {
+      "all_time_exact_peak_known": false,
+      "archive": {
+        "bytes": 1981552,
+        "path": "results/CONTINUATION-08/F1-CARRIER-FACTORIZATIONS/v1-preserved.tar.xz",
+        "sha256": "493ea0da827c04e77238dc688f52ea935729fe6b8c5b656e3f8e01130b52481d"
+      },
+      "failed_close_observation": {
+        "global_bytes": 199975395,
+        "global_limit_bytes": 200000000,
+        "round_bytes": 5473292,
+        "round_limit_bytes": 4000000
+      },
+      "global_limit_held_at_recorded_measurements": true,
+      "lossless_byte_preservation": true,
+      "minimum_observed_prepack_including_registration": {
+        "global_bytes": 199977142,
+        "round_bytes": 5475039
+      },
+      "original_attempt_status": "ERROR",
+      "original_bytes": 5350529,
+      "original_files": 280,
+      "registration_sha256": "b752989fef2613adb490022a8a8b2a675a20fbe74dd9fe51df52582a32ea666d",
+      "relocation_sha256": "4304a43554ed87d3f69ce3d6b51bd75a6e3067cf4ce984dfff769c1040fe4f38",
+      "round_limit_obeyed_throughout": false
+    },
+    "total_experimental_cpu_seconds": 106.248710617,
+    "total_pool_tasks": 266
+  }
+}

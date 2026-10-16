@@ -1,0 +1,31 @@
+{"phase": "controls", "completed": 1, "total": 2, "status": "OK"}
+{"phase": "controls", "completed": 2, "total": 2, "status": "OK"}
+{"phase": "baseline", "completed": 1, "total": 4, "status": "OK"}
+{"phase": "baseline", "completed": 2, "total": 4, "status": "OK"}
+{"phase": "baseline", "completed": 3, "total": 4, "status": "OK"}
+{"phase": "baseline", "completed": 4, "total": 4, "status": "OK"}
+{"phase": "census", "completed": 1, "total": 4, "status": "OK"}
+{"phase": "census", "completed": 2, "total": 4, "status": "OK"}
+{"phase": "census", "completed": 3, "total": 4, "status": "OK"}
+{"phase": "census", "completed": 4, "total": 4, "status": "OK"}
+{"phase": "prices", "completed": 32, "total": 256, "status": "OK"}
+{"phase": "prices", "completed": 64, "total": 256, "status": "OK"}
+{"phase": "prices", "completed": 96, "total": 256, "status": "OK"}
+{"phase": "prices", "completed": 128, "total": 256, "status": "OK"}
+{"phase": "prices", "completed": 160, "total": 256, "status": "OK"}
+{"phase": "prices", "completed": 192, "total": 256, "status": "OK"}
+{"phase": "prices", "completed": 224, "total": 256, "status": "OK"}
+{"phase": "prices", "completed": 256, "total": 256, "status": "OK"}
+Traceback (most recent call last):
+  File "/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py", line 358, in <module>
+    main()
+    ~~~~^^
+  File "/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py", line 351, in main
+    storage()
+    ~~~~~~~^^
+  File "/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py", line 175, in storage
+    need(sum(p.stat().st_size for p in ROUND.rglob('*') if p.is_file()) < 4000000, 'round results4MB cap')
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marius/kappa/styles-r11/research/styles-r11/pipeline/continuation08/run_f1.py", line 32, in need
+    raise ValueError(message)
+ValueError: round results4MB cap
