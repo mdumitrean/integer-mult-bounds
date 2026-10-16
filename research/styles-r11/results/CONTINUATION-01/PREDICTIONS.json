@@ -1,0 +1,59 @@
+{
+  "family_outcomes": [
+    {
+      "confirmed": true,
+      "execution": "EXECUTED",
+      "id": "C1-SAME-CALL-EXCHANGE",
+      "result_files": [
+        "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-11031/RESULT.json",
+        "results/CONTINUATION-01/C1-SAME-CALL-EXCHANGE/v1/seed-29063/RESULT.json"
+      ],
+      "status": "PASS"
+    },
+    {
+      "confirmed": true,
+      "execution": "EXECUTED",
+      "id": "C2-LATEST-SAME-CALL",
+      "result_files": [
+        "results/CONTINUATION-01/C2-LATEST-SAME-CALL/v1/seed-11031/RESULT.json",
+        "results/CONTINUATION-01/C2-LATEST-SAME-CALL/v1/seed-29063/RESULT.json"
+      ],
+      "status": "NULL"
+    },
+    {
+      "confirmed": false,
+      "execution": "UNRUN",
+      "id": "G1-PAIRED-GRAMMAR",
+      "result_files": [],
+      "status": "EXPLORATORY"
+    },
+    {
+      "confirmed": true,
+      "execution": "EXECUTED",
+      "id": "V1-FILL-ADMISSION",
+      "result_files": [
+        "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-11031/RESULT.json",
+        "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-29063/RESULT.json"
+      ],
+      "status": "PASS"
+    },
+    {
+      "confirmed": true,
+      "execution": "EXECUTED",
+      "id": "C3-CROSS-CALL-EXCHANGE",
+      "result_files": [
+        "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/RESULT.json",
+        "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-29063/RESULT.json"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "new_held_out_predictions": [],
+  "original_predictions": {
+    "path": "results/PREDICTIONS.json",
+    "sha256": "093360d9e15f6bc9bf3bc5416bce22a908ab84c7e197ea35bf9565e87cb2e26a"
+  },
+  "round": "CONTINUATION-01",
+  "schema_version": 1,
+  "scope": "No additional held-out prediction was registered in this constructive continuation. C1/C2/C3 are exact constructive families with prospective pass/null criteria; their realized witnesses are not relabelled held-out predictions."
+}

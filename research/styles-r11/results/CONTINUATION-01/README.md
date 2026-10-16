@@ -14,11 +14,19 @@ The original scope restrictions persist: edits only under `research/styles-r11/`
 
 Two consecutive scientific NULL decisions stop a continuation lane for this registered round; errors, timeouts, bookkeeping and validation gates do not reset that streak. A stopped family cannot be reopened merely by changing a seed. Any later round or changed domain must state the new evidence and question before registration. The inherited hard stop is 2026-10-30T04:08:31.792839+00:00.
 
-## Open next questions
+## Questions registered at the start
 
 - Does a simultaneous same-call exchange strictly improve the #2853 literal complete profile? First step: exhaustive bounded pair census, with exact feasibility and residual-spread checks.
 - On the newer #2917 baseline, does the same exact exchange family supply a further admissible gain? Its distinct C2 registration pins the new data before candidate execution; old-family receipts remain unchanged.
 - Can such a fill-only change reuse the unchanged local supplier evidence while independently satisfying every changed complete release obligation? First step: source-bound obligation map and candidate admission.
 - Which guarded kernel or multi-step rewrite changes a complete bill after all compensation, cleanup and idle costs? First step: inspect the specified #2833/#2853 neighborhoods and register a finite constructive family.
 
-The goal remains active until a verified improvement is obtained or the applicable stopping condition is reached. Partial modules and local numerical gains are not completion.
+The constructive fill route has completed conditional finite admission in both seeds. The exact gain over the pinned PR2917 release is `3.887234612667e-11`; unchanged native evidence is source-bound reuse, with no fresh native replay. The inherited theorem hypotheses remain. See [RESULTS.md](RESULTS.md), [CLAIM.json](CLAIM.json), and [HANDBACK.md](HANDBACK.md). G1 is explicitly unrun, with no scientific outcome inferred. Search stops for coordinator review after the results-branch push.
+
+Verify the saved evidence without rerunning scientific experiments from the repository root:
+
+```sh
+.venv-styles/bin/python -I -B research/styles-r11/pipeline/continuation/verify_continuation.py
+```
+
+The scientific runners preserve immutable attempt directories and refuse to replace existing evidence. Their frozen input registrations, implementation archives and source pins are retained for a separately registered reproduction. The first V1 failure and its schema-only v2 repair both remain available.

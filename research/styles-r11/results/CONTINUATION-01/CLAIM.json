@@ -1,0 +1,1817 @@
+{
+  "baseline_commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+  "baseline_pr": 2917,
+  "candidate": {
+    "admission_status": "PENDING complete changed-obligation and explicit rational separator validation",
+    "baseline_profile": {
+      "1": 1625724,
+      "2": 426240,
+      "24": 1,
+      "3": 191980,
+      "32": 207,
+      "4": 73260,
+      "48": 26958,
+      "5": 24951,
+      "6": 167,
+      "7": 45,
+      "8": 5328
+    },
+    "canonical_indices": [
+      56,
+      25480
+    ],
+    "capacities": [
+      32,
+      32
+    ],
+    "complete_profile": {
+      "1": 1625724,
+      "2": 426240,
+      "24": 1,
+      "3": 191980,
+      "32": 207,
+      "4": 73260,
+      "48": 26958,
+      "5": 24952,
+      "6": 166,
+      "7": 44,
+      "8": 5329
+    },
+    "complete_profile_delta": {
+      "5": 1,
+      "6": -1,
+      "7": -1,
+      "8": 1
+    },
+    "exact_strict_moment_decrease": true,
+    "fill_artifact": {
+      "bytes": 1480984,
+      "path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/FILL.json.gz",
+      "sha256": "a5f58050ebf95f0c0798177bf3e0063050796241f0bc05bb7e7a3e4666586f29"
+    },
+    "indexed_direct_witness_control": true,
+    "literal_audit": {
+      "all_literal_rules_verified": true,
+      "attributions": [
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 69818,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "format": "BORROW-WORD",
+          "git_blob": "9be0aa5349dbc8c928a46089a7695e224d0e4d16",
+          "lineage_attribution": "Retain package CREDITS.md/SOURCES.json and every original data/words/PINS.json credit.",
+          "local_path": "data/continuation-01/pr2917/package/data/WORD-base.json.gz",
+          "path": "research/paired-helper-extension/data/WORD-base.json.gz",
+          "pin_key": "research/paired-helper-extension/data/WORD-base.json.gz",
+          "pr": 2917,
+          "relative_path": "data/WORD-base.json.gz",
+          "sha256": "fec3c120db1a35022944628d34b56a36f2456248c274c2eaba1a325cdc690ce8",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 69814,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "format": "BORROW-WORD",
+          "git_blob": "40b38365ea4b841101405ebd2c4fdcadcb8b9808",
+          "lineage_attribution": "Retain package CREDITS.md/SOURCES.json and every original data/words/PINS.json credit.",
+          "local_path": "data/continuation-01/pr2917/package/data/WORD-extra.json.gz",
+          "path": "research/paired-helper-extension/data/WORD-extra.json.gz",
+          "pin_key": "research/paired-helper-extension/data/WORD-extra.json.gz",
+          "pr": 2917,
+          "relative_path": "data/WORD-extra.json.gz",
+          "sha256": "e4d0c617df85bf8a824ff68310ca3373dc017c1ebf9ea733056a3ee4a784b36f",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        }
+      ],
+      "bins": 149184,
+      "calls": 666,
+      "clumping": 0.7987987987987988,
+      "fill": "continuation-pr2917",
+      "helpers_per_call": [
+        408
+      ],
+      "idle": {
+        "1": 16668,
+        "24": 1,
+        "3": 5500,
+        "32": 207,
+        "48": 26958,
+        "5": 7636,
+        "6": 166,
+        "7": 44,
+        "8": 1
+      },
+      "idle_cells": 1373292,
+      "kappa_diagnostic": 0.0017215886860701152,
+      "occupancy_by_capacity": {
+        "16": {
+          "16": 33151,
+          "9": 1
+        },
+        "32": {
+          "0": 207,
+          "24": 1,
+          "25": 43,
+          "26": 162,
+          "27": 7636,
+          "31": 16668,
+          "32": 8434,
+          "8": 1
+        },
+        "48": {
+          "0": 26958,
+          "42": 4,
+          "45": 5500,
+          "48": 690
+        },
+        "8": {
+          "8": 49728
+        }
+      },
+      "profile": {
+        "1": 1625724,
+        "2": 426240,
+        "24": 1,
+        "3": 191980,
+        "32": 207,
+        "4": 73260,
+        "48": 26958,
+        "5": 24952,
+        "6": 166,
+        "7": 44,
+        "8": 5329
+      },
+      "rank_mass": 4816512,
+      "roles": 271728,
+      "roles_per_occupied_bin": {
+        "1": 49730,
+        "2": 33148,
+        "3": 7845,
+        "4": 25021,
+        "5": 5585,
+        "6": 672,
+        "7": 18
+      },
+      "source_notes": {
+        "adapter_derivation": {
+          "actual_live": 66304,
+          "actual_replicas": 74,
+          "derived_without_claimed_exponent": true,
+          "effective_single_sided_deficit": 23680,
+          "exact_order_rule": "Replace each (s,r) in the T37 PLAN.order by (s,r),(s,r+37), in that order.",
+          "expected_mass": 4816512,
+          "geometry_claim": "CLAIM.json",
+          "inherited_template_bank_stock_excluded_from_live_denominator": true,
+          "inherited_template_native_programs_not_replayed": true,
+          "lift_factor": 2,
+          "literal_order": "allocation/ORDER.json",
+          "mass_formula": "2*(73*33152-11840) = 72*66304+64*666 = 4816512",
+          "source_deficit": 11840,
+          "source_live": 33152,
+          "source_plan": "allocation/vendor/PLAN.json.gz",
+          "source_replicas": 37,
+          "source_template": "allocation/vendor/TEMPLATE.json.gz",
+          "window_rule": "Trusted fill.windows replays unchanged per-replica events over the actual 666-call order; start < t <= stop."
+        },
+        "profile_source": "Canonical pinned words plus literal owner idle remainders"
+      },
+      "sources": [
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 1224,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "325f1960874591eeac4fa5f6d994b265f1faf719",
+          "local_path": "data/continuation-01/pr2917/package/ALLOCATION-PINS.json",
+          "path": "research/paired-helper-extension/ALLOCATION-PINS.json",
+          "pr": 2917,
+          "relative_path": "ALLOCATION-PINS.json",
+          "sha256": "7ab6a3add8b3eb285789cf36d8463335b391ec77f5d91b9a692453767b2d7f03",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 1743,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "50cc0eeeba13e48f64127544fcb17fe16bd99c30",
+          "local_path": "data/continuation-01/pr2917/package/CLAIM.json",
+          "path": "research/paired-helper-extension/CLAIM.json",
+          "pr": 2917,
+          "relative_path": "CLAIM.json",
+          "sha256": "e6c836c0178661a53a69cd91f29d83585e876f2511ff40c6b6204cd270fbdeac",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 10116,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "2704ab1525f7e0da69e3c38f898d7095b13ad533",
+          "local_path": "data/continuation-01/pr2917/package/CONSTRUCTION.md",
+          "path": "research/paired-helper-extension/CONSTRUCTION.md",
+          "pr": 2917,
+          "relative_path": "CONSTRUCTION.md",
+          "sha256": "2efe3e56f914993aa34bcac29f6127828b9f50de1142b36a60fb991f2a2b778d",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2337,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "153868a3ebcf56962716f6222f0f542a9417e502",
+          "local_path": "data/continuation-01/pr2917/package/CREDITS.md",
+          "path": "research/paired-helper-extension/CREDITS.md",
+          "pr": 2917,
+          "relative_path": "CREDITS.md",
+          "sha256": "a4e845cbd7cd430d7b53899b3148fb908c3af1924137412e44f19a9031fdc86a",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 6019,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "80da18ce560d6141e31c815498ef43f3ac086a54",
+          "local_path": "data/continuation-01/pr2917/package/MANIFEST.json",
+          "path": "research/paired-helper-extension/MANIFEST.json",
+          "pr": 2917,
+          "relative_path": "MANIFEST.json",
+          "sha256": "55c46ddf2e3edc87dfe1ba3320947466d36980d457eb37f6cd6fba341dae0192",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 1457,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "f5ce309523274d0312cfbe19fca9e6351dcb0177",
+          "local_path": "data/continuation-01/pr2917/package/PINS.json",
+          "path": "research/paired-helper-extension/PINS.json",
+          "pr": 2917,
+          "relative_path": "PINS.json",
+          "sha256": "3d49ca62f3242444db52a21b9de10f18293757842f64a2b3189ad8f4e61fad36",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 5454,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "54637f9551db018f2b90e75e990765788361b5fe",
+          "local_path": "data/continuation-01/pr2917/package/README.md",
+          "path": "research/paired-helper-extension/README.md",
+          "pr": 2917,
+          "relative_path": "README.md",
+          "sha256": "22469e9c1dae5103a5dcd804881235fe094c52197eff550065ba0b0e78b2535e",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 1881,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "1096d9b016fef4acdcbcb419e3b2bada91c6770e",
+          "local_path": "data/continuation-01/pr2917/package/SOURCES.json",
+          "path": "research/paired-helper-extension/SOURCES.json",
+          "pr": 2917,
+          "relative_path": "SOURCES.json",
+          "sha256": "23aa763c74ef9ec2378e59c7bb68d1692df77308c70157ed82aadcc2fb0b9209",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 5674,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "61624d0f6d2cff8ec69d4154573e83505338ea25",
+          "local_path": "data/continuation-01/pr2917/package/TASK.json",
+          "path": "research/paired-helper-extension/TASK.json",
+          "pr": 2917,
+          "relative_path": "TASK.json",
+          "sha256": "2b59f3a868876d184833b9329298a2a12de1c72cb6d4da43475f8bfde3191b55",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 668,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "e05c18c758302ed7675fab52b4348dede127efdc",
+          "local_path": "data/continuation-01/pr2917/package/VERIFY.json",
+          "path": "research/paired-helper-extension/VERIFY.json",
+          "pr": 2917,
+          "relative_path": "VERIFY.json",
+          "sha256": "14da2d0b8056949eac7684ba86a07be3dfa450e7e68bbd35909b072e88000005",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 10401,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "9544fee4e6ee1f202cee22bfaeaf229ee3b2515e",
+          "local_path": "data/continuation-01/pr2917/package/allocation/DISPATCH.json",
+          "path": "research/paired-helper-extension/allocation/DISPATCH.json",
+          "pr": 2917,
+          "relative_path": "allocation/DISPATCH.json",
+          "sha256": "65e435bd68e97243c003677271b88485a29d4d0fae2dff1354100404a145e74c",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 1482544,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "3e84340d0cee12ff6ecabd0cbd1d8e94423d1b56",
+          "local_path": "data/continuation-01/pr2917/package/allocation/FILL.json.gz",
+          "path": "research/paired-helper-extension/allocation/FILL.json.gz",
+          "pr": 2917,
+          "relative_path": "allocation/FILL.json.gz",
+          "sha256": "19b551af07274931b443ac42588e15df20ec0140fa69b54f3b62a4df9a54ff8e",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 4573,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "7409c4df1092241729739596c7648bda504e6aad",
+          "local_path": "data/continuation-01/pr2917/package/allocation/ORDER.json",
+          "path": "research/paired-helper-extension/allocation/ORDER.json",
+          "pr": 2917,
+          "relative_path": "allocation/ORDER.json",
+          "sha256": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 151,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "a3c711f5c3c8b69b44324c1d3b4ec4454dae3570",
+          "local_path": "data/continuation-01/pr2917/package/allocation/PROFILE.json",
+          "path": "research/paired-helper-extension/allocation/PROFILE.json",
+          "pr": 2917,
+          "relative_path": "allocation/PROFILE.json",
+          "sha256": "07ee0cfe8d88073de9b75cd3262a98f4ac428b1bdd3922b5a077dbf3436be00c",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 7684,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "1bd962152fa7f0766fbaaa93569ac21e08a7cb62",
+          "local_path": "data/continuation-01/pr2917/package/allocation/PROVIDERS.json",
+          "path": "research/paired-helper-extension/allocation/PROVIDERS.json",
+          "pr": 2917,
+          "relative_path": "allocation/PROVIDERS.json",
+          "sha256": "1fbbe45a0b70b909bf764fab7d89ec05b10c6c3dec5340a59a69b871d309c6ab",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 1867,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "e03a04b425f4a8d3ea24e40ea9e94f4fb84e1b8c",
+          "local_path": "data/continuation-01/pr2917/package/allocation/SEARCH.json",
+          "path": "research/paired-helper-extension/allocation/SEARCH.json",
+          "pr": 2917,
+          "relative_path": "allocation/SEARCH.json",
+          "sha256": "6e461e5746313dfefada9a7a07cddd363883adf39c84662cbb72edb3697f92ef",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 1737,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "4edc2cb7235c436433efc4a23d57908a802b97e1",
+          "local_path": "data/continuation-01/pr2917/package/allocation/baseline/CLAIM.json",
+          "path": "research/paired-helper-extension/allocation/baseline/CLAIM.json",
+          "pr": 2917,
+          "relative_path": "allocation/baseline/CLAIM.json",
+          "sha256": "2406680a07b43a69b0f12f8462cc43f3616f3c8cb0a46bc767541b45945cd2bf",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 4573,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "7409c4df1092241729739596c7648bda504e6aad",
+          "local_path": "data/continuation-01/pr2917/package/allocation/baseline/ORDER.json",
+          "path": "research/paired-helper-extension/allocation/baseline/ORDER.json",
+          "pr": 2917,
+          "relative_path": "allocation/baseline/ORDER.json",
+          "sha256": "519d1d5dbb997a219fcfcad34c0b03e7838bef24199784d7e964fa10090f66e1",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 104,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "916437d9e1701c027d20a006d8210d00b63dcad9",
+          "local_path": "data/continuation-01/pr2917/package/allocation/baseline/PROFILE.json",
+          "path": "research/paired-helper-extension/allocation/baseline/PROFILE.json",
+          "pr": 2917,
+          "relative_path": "allocation/baseline/PROFILE.json",
+          "sha256": "ab0840eda08fa501d444be22c7298bf38b70061b91964ad1b9dd9db388720199",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 29933,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "7a1db55a4d53ee99280be4f3ab7d29f7b2033adf",
+          "local_path": "data/continuation-01/pr2917/package/allocation/vendor/PLAN.json.gz",
+          "path": "research/paired-helper-extension/allocation/vendor/PLAN.json.gz",
+          "pr": 2917,
+          "relative_path": "allocation/vendor/PLAN.json.gz",
+          "sha256": "d566cfb87b71639d4138e1f89b543e2dd6a7772070226a2a14c799a6835bf21e",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 1124331,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "114808c32b1799da53524bdc25cea67efb60009e",
+          "local_path": "data/continuation-01/pr2917/package/allocation/vendor/TEMPLATE.json.gz",
+          "path": "research/paired-helper-extension/allocation/vendor/TEMPLATE.json.gz",
+          "pr": 2917,
+          "relative_path": "allocation/vendor/TEMPLATE.json.gz",
+          "sha256": "21297b20f1f2dc76eb9dd8124416068c3cb096bab9df17fa4da19bc68dfe082e",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 10057,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "16013201b19054f7e45398ecf10af74c9c6a9114",
+          "local_path": "data/continuation-01/pr2917/package/allocation/vendor/independent_owners.py.txt",
+          "path": "research/paired-helper-extension/allocation/vendor/independent_owners.py",
+          "pr": 2917,
+          "relative_path": "allocation/vendor/independent_owners.py",
+          "sha256": "77a848729159e271ba64f403dfd59dddb13044b17b2950fa56700f442e2fe461",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 6184,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "8f8be54df1340c92d33dc65a9f45edbf0adf4bd9",
+          "local_path": "data/continuation-01/pr2917/package/check_allocation.py.txt",
+          "path": "research/paired-helper-extension/check_allocation.py",
+          "pr": 2917,
+          "relative_path": "check_allocation.py",
+          "sha256": "7c94239afa5d6cac3ce11926077f7bb02e2239c45f6ad37f8bedd5662bd4cc7d",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 69992,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "6303cfd847033481d1e662e2a2fd467caf5f6429",
+          "local_path": "data/continuation-01/pr2917/package/data/PARENT-base.json.gz",
+          "path": "research/paired-helper-extension/data/PARENT-base.json.gz",
+          "pr": 2917,
+          "relative_path": "data/PARENT-base.json.gz",
+          "sha256": "3657ad53ebe5f156f307a903479e919f2fe812811ce5d5f15e72c3aaf68dfde3",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 69989,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "38af2b6ea76002df44de3c8045b24ce622782b9f",
+          "local_path": "data/continuation-01/pr2917/package/data/PARENT-extra.json.gz",
+          "path": "research/paired-helper-extension/data/PARENT-extra.json.gz",
+          "pr": 2917,
+          "relative_path": "data/PARENT-extra.json.gz",
+          "sha256": "b975492ff4cbec0d619cdf2da34f55ce3b20c8a541132e4339cc6c8ae3b2e487",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2881,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "897a8917195dbcc334293d6509215640a9c852ad",
+          "local_path": "data/continuation-01/pr2917/package/data/TRANSFORM-299.json",
+          "path": "research/paired-helper-extension/data/TRANSFORM-299.json",
+          "pr": 2917,
+          "relative_path": "data/TRANSFORM-299.json",
+          "sha256": "781585f68449c30f63e40ee4bf58d1fa194e4faf8cf4394505437fc15137ba34",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 3084,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "e04d29425033122f76dcd7c6658ea95a6cf27d3d",
+          "local_path": "data/continuation-01/pr2917/package/data/TRANSFORM-304.json",
+          "path": "research/paired-helper-extension/data/TRANSFORM-304.json",
+          "pr": 2917,
+          "relative_path": "data/TRANSFORM-304.json",
+          "sha256": "024515c6e47d952dfaf307fcefda9f2106049ccc28875ae620d95241fdec72ed",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2630,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "9c8490c8643214e00eebcc50f45089e4e866d1c4",
+          "local_path": "data/continuation-01/pr2917/package/data/TRANSFORM-320.json",
+          "path": "research/paired-helper-extension/data/TRANSFORM-320.json",
+          "pr": 2917,
+          "relative_path": "data/TRANSFORM-320.json",
+          "sha256": "0e4c0216221ab21c4bf48a11eab34ff6cc245014d664dc1523cfae9d437dc00d",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2812,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "7d35aab299dcd034ec9ecd67877bbe911c1a960c",
+          "local_path": "data/continuation-01/pr2917/package/data/TRANSFORM-331.json",
+          "path": "research/paired-helper-extension/data/TRANSFORM-331.json",
+          "pr": 2917,
+          "relative_path": "data/TRANSFORM-331.json",
+          "sha256": "355bcfd60ffcb672f66882e66bae1b046d1bfb979f725b411b034f811dfb68bb",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2498,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "e62dd449d7ce79fc99cd128855d324ee6b554cd8",
+          "local_path": "data/continuation-01/pr2917/package/data/TRANSFORM-412.json",
+          "path": "research/paired-helper-extension/data/TRANSFORM-412.json",
+          "pr": 2917,
+          "relative_path": "data/TRANSFORM-412.json",
+          "sha256": "54328a8436d7abed6433da5e4384a36ad95b266070479b496e0e96416a5f5a79",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2399,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "4fae6d1bb371f8407a8cd33b47dda8ccd64be7c6",
+          "local_path": "data/continuation-01/pr2917/package/data/TRANSFORM-424.json",
+          "path": "research/paired-helper-extension/data/TRANSFORM-424.json",
+          "pr": 2917,
+          "relative_path": "data/TRANSFORM-424.json",
+          "sha256": "42747fa1332af1ca0827edebfff7490ee761f84f662527f593e975a502400dbc",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2501,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "1593c52045af30bbb15063d29ec1460c79d84ef9",
+          "local_path": "data/continuation-01/pr2917/package/data/TRANSFORM-428.json",
+          "path": "research/paired-helper-extension/data/TRANSFORM-428.json",
+          "pr": 2917,
+          "relative_path": "data/TRANSFORM-428.json",
+          "sha256": "89e8fbd5a5d1d64d386cdc38f257cae18d8e7428e868f618ed1f0be5a22aba3e",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 3463,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "7c22cd7a667f9fab088174aae93768d474794061",
+          "local_path": "data/continuation-01/pr2917/package/data/TRANSFORM-499.json",
+          "path": "research/paired-helper-extension/data/TRANSFORM-499.json",
+          "pr": 2917,
+          "relative_path": "data/TRANSFORM-499.json",
+          "sha256": "f86eef40cd96b45c67755903eae6a86432e2aeb6d53812621222db7c062d88f6",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 3109,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "7c7bf4b1a18ccdce241d2e8f7d5c1149c5dd3fbe",
+          "local_path": "data/continuation-01/pr2917/package/data/TRANSFORM-511.json",
+          "path": "research/paired-helper-extension/data/TRANSFORM-511.json",
+          "pr": 2917,
+          "relative_path": "data/TRANSFORM-511.json",
+          "sha256": "48e0749f1c82594841c88923a38b0308ed777639631a4c3f2414500617f2e34b",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 69818,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "9be0aa5349dbc8c928a46089a7695e224d0e4d16",
+          "local_path": "data/continuation-01/pr2917/package/data/WORD-base.json.gz",
+          "path": "research/paired-helper-extension/data/WORD-base.json.gz",
+          "pr": 2917,
+          "relative_path": "data/WORD-base.json.gz",
+          "sha256": "fec3c120db1a35022944628d34b56a36f2456248c274c2eaba1a325cdc690ce8",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 69814,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "40b38365ea4b841101405ebd2c4fdcadcb8b9808",
+          "local_path": "data/continuation-01/pr2917/package/data/WORD-extra.json.gz",
+          "path": "research/paired-helper-extension/data/WORD-extra.json.gz",
+          "pr": 2917,
+          "relative_path": "data/WORD-extra.json.gz",
+          "sha256": "e4d0c617df85bf8a824ff68310ca3373dc017c1ebf9ea733056a3ee4a784b36f",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 5550,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "de4ab3f54e1dff11a891d52a9b50b3cfa5c24342",
+          "local_path": "data/continuation-01/pr2917/package/evidence/ADAPTER-DERIVATION.json",
+          "path": "research/paired-helper-extension/evidence/ADAPTER-DERIVATION.json",
+          "pr": 2917,
+          "relative_path": "evidence/ADAPTER-DERIVATION.json",
+          "sha256": "2e8d4ba717294738780e179d4ffc734c64d6d05a4ad3c50f60b6c64c737a1d5d",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 21884,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "4de28b893a0f1fa08e3922f7e034351e72fc164a",
+          "local_path": "data/continuation-01/pr2917/package/evidence/ADMISSION-RESULT.json",
+          "path": "research/paired-helper-extension/evidence/ADMISSION-RESULT.json",
+          "pr": 2917,
+          "relative_path": "evidence/ADMISSION-RESULT.json",
+          "sha256": "1d580dc9edcc70d01a51a18c831aa3b0fc5885b49e9c815fc7d423d3da7701ad",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2964,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "a16d9add6227cb48345b545462296b784193c522",
+          "local_path": "data/continuation-01/pr2917/package/evidence/COMPLETE-VERIFY-STAGES.json",
+          "path": "research/paired-helper-extension/evidence/COMPLETE-VERIFY-STAGES.json",
+          "pr": 2917,
+          "relative_path": "evidence/COMPLETE-VERIFY-STAGES.json",
+          "sha256": "8ee4ed4639c3b8361d19d089044a929d93632496a4a1bca53c1c971b86c75930",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 263,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "362242f58e7b1f07a0c32556f6d11b31e6b25e89",
+          "local_path": "data/continuation-01/pr2917/package/evidence/ENVIRONMENT.json",
+          "path": "research/paired-helper-extension/evidence/ENVIRONMENT.json",
+          "pr": 2917,
+          "relative_path": "evidence/ENVIRONMENT.json",
+          "sha256": "c6d3ce212bd2cd82d580158a39f6d7048c109daa1a695aa0d1eee280eb620213",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 5217,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "5b12471b63ddf0f8a894954f664c50c84e472203",
+          "local_path": "data/continuation-01/pr2917/package/evidence/EXACT-OWNER-MOMENT.json",
+          "path": "research/paired-helper-extension/evidence/EXACT-OWNER-MOMENT.json",
+          "pr": 2917,
+          "relative_path": "evidence/EXACT-OWNER-MOMENT.json",
+          "sha256": "5be25d5479f63b7dab276f50973abc9334ec1a0dd1aec26369f4e7ea467768dd",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 10399,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "c4dd0053bcff98aec0f74a3fbe90948207435516",
+          "local_path": "data/continuation-01/pr2917/package/evidence/FRESHNESS.json",
+          "path": "research/paired-helper-extension/evidence/FRESHNESS.json",
+          "pr": 2917,
+          "relative_path": "evidence/FRESHNESS.json",
+          "sha256": "8ee0019c01005eec3eac244bacc0cf1377ff3a4242c7de438f3e6210a180d3c4",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 13784,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "234436cc59fbf3a909256faba2923ad501499494",
+          "local_path": "data/continuation-01/pr2917/package/evidence/FULL-NATIVE-RECEIPT.json",
+          "path": "research/paired-helper-extension/evidence/FULL-NATIVE-RECEIPT.json",
+          "pr": 2917,
+          "relative_path": "evidence/FULL-NATIVE-RECEIPT.json",
+          "sha256": "5c1ea6f03e48673d9b56563494fff2258ee18bc8dacdeb72ba5c07e2044008ca",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2160,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "fdd8582463313d4e2f363c5aaade3603eb162252",
+          "local_path": "data/continuation-01/pr2917/package/evidence/FULL-NATIVE-RESULT.json",
+          "path": "research/paired-helper-extension/evidence/FULL-NATIVE-RESULT.json",
+          "pr": 2917,
+          "relative_path": "evidence/FULL-NATIVE-RESULT.json",
+          "sha256": "94d76ba883bdb38d44dc960d615e42da9b06074a802305e596064600392ac5ec",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2450,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "e65431524cda00b83b4e9513052e3b09f6974b49",
+          "local_path": "data/continuation-01/pr2917/package/evidence/FULL-REPLAY-RESULT.json",
+          "path": "research/paired-helper-extension/evidence/FULL-REPLAY-RESULT.json",
+          "pr": 2917,
+          "relative_path": "evidence/FULL-REPLAY-RESULT.json",
+          "sha256": "737f4e56a3b736f0fe3d1dc5868042f716591b0f0fc6fb3b0c54bc838f23e604",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 1653,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "8d91cb972348d2670aca3a8c10e657105c0a00f3",
+          "local_path": "data/continuation-01/pr2917/package/evidence/FULL-REPLAY-STAGES.json",
+          "path": "research/paired-helper-extension/evidence/FULL-REPLAY-STAGES.json",
+          "pr": 2917,
+          "relative_path": "evidence/FULL-REPLAY-STAGES.json",
+          "sha256": "a6e085252f39cb1a7b23ae49d73af36055327b19fd35e9c0ae67e33515ad311f",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 28493,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "123da3c6a7171f7a78d82adfd30fa28e6b06d0a1",
+          "local_path": "data/continuation-01/pr2917/package/evidence/LOCAL-RESULT.json",
+          "path": "research/paired-helper-extension/evidence/LOCAL-RESULT.json",
+          "pr": 2917,
+          "relative_path": "evidence/LOCAL-RESULT.json",
+          "sha256": "987cfcf4b8b76b2b8dfbc29bd40c9a93a4abac664c1bcbe6d692155845cc806c",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 328408,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "d982745448886df5aa30b393841816b2affcf4ab",
+          "local_path": "data/continuation-01/pr2917/package/evidence/PHYSICAL-INVOICE.json",
+          "path": "research/paired-helper-extension/evidence/PHYSICAL-INVOICE.json",
+          "pr": 2917,
+          "relative_path": "evidence/PHYSICAL-INVOICE.json",
+          "sha256": "f9d865732c9e6cb918be3b8924350f852610bc0d7fa6b6c2a7c3d2cdb437c1ba",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2241,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "ca705bdc3ba3d89200555d5f4d3448db81c9088e",
+          "local_path": "data/continuation-01/pr2917/package/evidence/RELEASE-RECEIPT.json",
+          "path": "research/paired-helper-extension/evidence/RELEASE-RECEIPT.json",
+          "pr": 2917,
+          "relative_path": "evidence/RELEASE-RECEIPT.json",
+          "sha256": "f7639e51fd620070767b8e2a855a0a613ae9bfd19f86a1ba023d88316193ae06",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2109,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "dc780aa8af7ea24b25b30eb985a696fc9f1c6500",
+          "local_path": "data/continuation-01/pr2917/package/evidence/RETAINED-ORIGIN.json",
+          "path": "research/paired-helper-extension/evidence/RETAINED-ORIGIN.json",
+          "pr": 2917,
+          "relative_path": "evidence/RETAINED-ORIGIN.json",
+          "sha256": "bc24de8d3d49a30cb37895b8780acbbe5255f76ccba446605ce29b721399bdf8",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 7425,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "39651b3f4d9ea81997a5724a313583362c8d1904",
+          "local_path": "data/continuation-01/pr2917/package/evidence/SEARCH.json",
+          "path": "research/paired-helper-extension/evidence/SEARCH.json",
+          "pr": 2917,
+          "relative_path": "evidence/SEARCH.json",
+          "sha256": "5cf7d543c99dbefb8ac93e5c7f4c4f1254fa110ed8279fec22f92bf545623906",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 5558,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "174ba00ca02a41858c0a6e4cd06123e997a3d3d0",
+          "local_path": "data/continuation-01/pr2917/package/evidence/SOURCE-DERIVATION.json",
+          "path": "research/paired-helper-extension/evidence/SOURCE-DERIVATION.json",
+          "pr": 2917,
+          "relative_path": "evidence/SOURCE-DERIVATION.json",
+          "sha256": "3e95bdf16abfe58d56642b7a2888bda3f770bc50aa05d1e576fb6b2920902278",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 4506,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "d01b1a93c3c1ceda4b4559631720abbe36ac06e5",
+          "local_path": "data/continuation-01/pr2917/package/producer.py.txt",
+          "path": "research/paired-helper-extension/producer.py",
+          "pr": 2917,
+          "relative_path": "producer.py",
+          "sha256": "c60546ca68a905d237401b2a255ccb60e17285b004211d523b5d8fd57b758f5a",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 8425,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "dc1eb2d8291ded21f276f8a135ad2b77fb8f1fb0",
+          "local_path": "data/continuation-01/pr2917/package/reproduce.py.txt",
+          "path": "research/paired-helper-extension/reproduce.py",
+          "pr": 2917,
+          "relative_path": "reproduce.py",
+          "sha256": "64cd79b8460b0795097099b0c4615f17bde37ee3351157f74260ab89fbee8ece",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 4272,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "d6e5dccdf4d1538f98452d1edb200e8648f14035",
+          "local_path": "data/continuation-01/pr2917/package/run_registered.py.txt",
+          "path": "research/paired-helper-extension/run_registered.py",
+          "pr": 2917,
+          "relative_path": "run_registered.py",
+          "sha256": "a9b0e0bb04e8047509b1f5b8ba2b1d329a4d7f01e13f1384742752079e9182d6",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 2565,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "8d5bd544ee7cad4309edad3d2a256bf48b810f90",
+          "local_path": "data/continuation-01/pr2917/package/structure.py.txt",
+          "path": "research/paired-helper-extension/structure.py",
+          "pr": 2917,
+          "relative_path": "structure.py",
+          "sha256": "83f63b6d9a1a543ecfa2c98d479dbe4e7a1c3caf6fd1c3566123308efbc32e96",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 5455,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "dfe0ec29e1b6cb2094c75b9097efea0f9e3a0d1d",
+          "local_path": "data/continuation-01/pr2917/package/tools/audit_allocation_moment.py.txt",
+          "path": "research/paired-helper-extension/tools/audit_allocation_moment.py",
+          "pr": 2917,
+          "relative_path": "tools/audit_allocation_moment.py",
+          "sha256": "d0b925495b0d28c107f72ec76a85e6e975db6f46396d70ae70a5719908fed28d",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 5155,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "5d4afe8bc14201bde9ea1956fc88436675343896",
+          "local_path": "data/continuation-01/pr2917/package/tools/build_extension.py.txt",
+          "path": "research/paired-helper-extension/tools/build_extension.py",
+          "pr": 2917,
+          "relative_path": "tools/build_extension.py",
+          "sha256": "24de3c08bf6fa8844ed17a426b24ae108d8d55d76ea5d1509bdef042731ea8b5",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 7539,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "67b81d6f53eede247e0c80cc1b993bd3f1f548a1",
+          "local_path": "data/continuation-01/pr2917/package/tools/derive_adapters.py.txt",
+          "path": "research/paired-helper-extension/tools/derive_adapters.py",
+          "pr": 2917,
+          "relative_path": "tools/derive_adapters.py",
+          "sha256": "5e4c47f8e91b5a29927e3a69a51512f92003fa8483707184431f84eea06c308b",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 29363,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "8224873d0497cf0b4c202f31b145fa273553d978",
+          "local_path": "data/continuation-01/pr2917/package/vendor/audit_local.py.txt",
+          "path": "research/paired-helper-extension/vendor/audit_local.py",
+          "pr": 2917,
+          "relative_path": "vendor/audit_local.py",
+          "sha256": "a38940094f7d19cd6376aafdd4734fa68eabc9aff4c98c3c4a3e9540328b1c90",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 7243,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "55b435035bbc439a9d55e8abd125993208cef8d9",
+          "local_path": "data/continuation-01/pr2917/package/vendor/preload_move.py.txt",
+          "path": "research/paired-helper-extension/vendor/preload_move.py",
+          "pr": 2917,
+          "relative_path": "vendor/preload_move.py",
+          "sha256": "c8fda4674644fcd5cbf39b6645ce148a21daa90a998b678cbe51f970b78b0044",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        },
+        {
+          "author": "Mason Hale (mason-hale)",
+          "author_login": "mason-hale",
+          "bytes": 4345,
+          "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+          "git_blob": "258c99d5c4922cfcbb146e0180e7c2bc44f9f725",
+          "local_path": "data/continuation-01/pr2917/package/verify.py.txt",
+          "path": "research/paired-helper-extension/verify.py",
+          "pr": 2917,
+          "relative_path": "verify.py",
+          "sha256": "5fb7984329ce7213294c8f76a3151f06759005456940968b4cc84712933321ee",
+          "treatment": "inert data; source text renamed .txt, never import or execute"
+        }
+      ],
+      "total_cells": 3580416,
+      "used_cells": 2207124,
+      "window_sha256": "42ab3eca979663f33f3de084ae7f8cb1808c14baf954faed42247f0fc723024b",
+      "windows": 1332
+    },
+    "maximum_idle_rank": 48,
+    "new_rows": [
+      [
+        0,
+        56,
+        6,
+        6,
+        9,
+        0
+      ],
+      [
+        62,
+        184,
+        22,
+        4,
+        0,
+        0
+      ]
+    ],
+    "old_rows": [
+      [
+        0,
+        56,
+        22,
+        4,
+        0,
+        0
+      ],
+      [
+        62,
+        184,
+        6,
+        6,
+        9,
+        0
+      ]
+    ],
+    "pair": [
+      [
+        0,
+        56
+      ],
+      [
+        62,
+        184
+      ]
+    ],
+    "physical_family_sets_may_change": true,
+    "positive_idle_child_count_nonincreasing": true,
+    "profile_artifact": {
+      "bytes": 107,
+      "path": "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/PROFILE.json",
+      "sha256": "13388fda242c98a9466ff9931b59a08a76f4f7874f80b261fb893ea5fdd67bbf"
+    },
+    "proof": "Fixed local bill; two-bin strict majorization preserves mass and lowers every p-power moment for0<p<1. Both full moments strictly increase in kappa and their roots lie in(0,1).",
+    "residuals_after": [
+      8,
+      5
+    ],
+    "residuals_before": [
+      7,
+      6
+    ],
+    "row_indices": [
+      56,
+      25480
+    ],
+    "square_gain": 4,
+    "widths": [
+      9,
+      8
+    ]
+  },
+  "compute": {
+    "combined_core_hours": 8.47969775493611,
+    "continuation_core_hours": 0.04976135758222223,
+    "continuation_cpu_seconds": 179.14088729600002,
+    "continuation_result_count": 10,
+    "max_worker_rss_gib": 0.7058296203613281,
+    "original_cpu_seconds": 30347.771030473996,
+    "pool_workers": 61,
+    "reserved_allocated_cores": 8,
+    "scope": "Measured parent/worker experiment CPU, including failed V1 v1. Excludes model inference and read-only research/source inspection."
+  },
+  "exact_root_bracket": {
+    "acceptance_margin": "260928490084121531777/5000000000000000000000000000000000000000",
+    "complex_lower": "68863547442805920291/40000000000000000000000",
+    "complex_upper": "430397171517537001819/250000000000000000000000",
+    "lower_endpoint_moment": [
+      "132607999999999999999999895628603966350912317/2000000000000000000000000000000000000000",
+      "331519999999999999999999739071509915878468223/5000000000000000000000000000000000000000"
+    ],
+    "method": "Pinned positive-tail atanh/Taylor enclosures; coefficients outward rounded to10^-40. Decimal90-digit root is proposal only.",
+    "numerical_proposal": "0.00172158868607014800727527608428997476587774741822497031760698726576828533576501992585380623",
+    "overstated_endpoint_control_rejected": true,
+    "rejection_margin": "273670382595581674767/2000000000000000000000000000000000000000",
+    "scope": "Complete-profile complex moment and fixed24-place grid only; source-bound supplier/outer checks are separate.",
+    "status": "PASS_EXACT_RATIONAL_ROOT_BRACKET",
+    "upper_endpoint_moment": [
+      "132608000000000000000000273670382595581674767/2000000000000000000000000000000000000000",
+      "82880000000000000000000171043989122238843587/1250000000000000000000000000000000000000"
+    ]
+  },
+  "final_checkpoint": {
+    "path": "data/continuation-01/final-checkpoint/RECEIPT.json",
+    "sha256": "a91985dbd1c34e55df105bc54837bcb93cecb1c510ea72ed4d56164c3c858722"
+  },
+  "fresh_native_replay": false,
+  "headline": {
+    "baseline_pr": 2917,
+    "complex_lower": "68863547442805920291/40000000000000000000000",
+    "conditional": true,
+    "improvement": "3887234612667/100000000000000000000000",
+    "improvement_decimal": "3.887234612667E-11",
+    "kappa": "17215886860701480072749999999999999999999998999999999999999999999999/10000000000000000000000000000000000000000000000000000000000000000000000",
+    "kappa_decimal": "0.0017215886860701480072749999999999999999999998999999999999999999999999"
+  },
+  "independent_human_review_claim": false,
+  "inherited_theorem_obligations": {
+    "obligations": [
+      "all-size compiler and machine realization",
+      "common labels and mutable-source access",
+      "physical hosting and routing",
+      "precision and fixed-tape contracts",
+      "exact recovery and analytic transfer",
+      "PR559 recurrence correction",
+      "PR589 bit H1-H5 and cited fine-prime/gauge-free theorems"
+    ],
+    "status": "CONDITIONAL_INHERITED"
+  },
+  "obligation_closure": {
+    "component_pending_lists": "The three pending labels in source_bound_transfer describe its intermediate component boundary. This closure map binds the later checks in the complete run; it does not edit immutable component results.",
+    "fresh exact endpoint moment bound": {
+      "evidence": {
+        "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-11031/RESULT.json",
+        "sha256": "aa37d0f8f1b55af7ed805363f94e22496b49e10cf21ffcf683308416fd3fc380"
+      },
+      "field": "statistics.admission.endpoint_admission",
+      "status": "PASS"
+    },
+    "fresh modern outer arithmetic": {
+      "evidence": {
+        "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-11031/RESULT.json",
+        "sha256": "aa37d0f8f1b55af7ed805363f94e22496b49e10cf21ffcf683308416fd3fc380"
+      },
+      "fields": [
+        "statistics.outer",
+        "statistics.independent_balance"
+      ],
+      "status": "PASS"
+    },
+    "new immutable candidate/source/release receipt binding": {
+      "evidence": {
+        "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/RELEASE-RECEIPT.json",
+        "sha256": "15b634161a9a9c58503bca2a5302796666a143e520c2b918ac43cfa241d1c39e"
+      },
+      "status": "PASS"
+    }
+  },
+  "optimality_claim": false,
+  "original_pattern_status": "Original r11 found no pattern passing all five PLAN section6 criteria. This continuation claims a concrete exact exchange witness only, not a sandpile Laplacian or a certified L-system pattern.",
+  "original_pins": {
+    "path": "data/words/PINS.json",
+    "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+  },
+  "publication": "Progress push only to mdumitrean/integer-mult-bounds research/styles-r11-results; coordinator review precedes any posting; no selected frontier change.",
+  "recorded_utc": "2026-10-16T12:13:46.203850+00:00",
+  "release_receipt": {
+    "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/RELEASE-RECEIPT.json",
+    "sha256": "15b634161a9a9c58503bca2a5302796666a143e520c2b918ac43cfa241d1c39e"
+  },
+  "round": "CONTINUATION-01",
+  "schema_version": 1,
+  "seed_results": [
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-11031/RESULT.json",
+      "sha256": "aa37d0f8f1b55af7ed805363f94e22496b49e10cf21ffcf683308416fd3fc380"
+    },
+    {
+      "path": "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-29063/RESULT.json",
+      "sha256": "5a58ebba440cce95272d4d4f27b18f5c63c3ce88f7c6c5c7799c546f6cf80ba2"
+    }
+  ],
+  "source_attribution": [
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57109,
+      "format": "FULL-WORD",
+      "git_blob": "e9d9317fb219307af444d0ab2b24d808a71eb71f",
+      "kappa": null,
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 418,
+        "4": 170,
+        "5": 68,
+        "8": 8
+      },
+      "path": "1094-K8PRE-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "8f13cb321d90c56365eab4f6d635e0397c82cddf612133ec709a06bbfba0e99d",
+      "source": "the pre-slot k8 word (toolkit README of #1186; replay archive)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 57222,
+      "format": "FULL-WORD",
+      "git_blob": "723decbca8995e916d6f4b783aa3e1ddd4eb47fe",
+      "kappa": "0.001672660197076918",
+      "local_profile": {
+        "1": 2412,
+        "2": 418,
+        "3": 432,
+        "4": 142,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1094-K8S7-FULL-WORD.json.gz",
+      "pr": 1094,
+      "sha256": "49596aa4ed4fd36cd4582fd0e8ddeb09fd80370a7d8aea1ede52a135b536d289",
+      "source": "origin/main research/community-frontier1094-audit/selected-replay.tar.gz -> candidate/strict/global/base/providers/gauge44/FULL-WORD.json.gz (selected seven-slot k8 word, T16)",
+      "width_inventory": {
+        "4": 56,
+        "5": 32,
+        "7": 30,
+        "8": 122,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57307,
+      "format": "FULL-WORD",
+      "git_blob": "acd41ebe42bbf56cb5f759d95544e685cd16148d",
+      "kappa": "0.001675658002271934",
+      "local_profile": {
+        "1": 2358,
+        "2": 504,
+        "3": 408,
+        "4": 134,
+        "5": 80,
+        "8": 8
+      },
+      "path": "1195-FULL-WORD.json.gz",
+      "pr": 1195,
+      "sha256": "34d1254654f2e7e6383e67b74e6fe30e8cbea07a56eb47208afbab01e0243224",
+      "source": "fork branch k8-source-holder-fusions-merge 99a8a424 research/k8-source-holder-fusions/FULL-WORD.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57412,
+      "format": "FULL-WORD",
+      "git_blob": "ac08516e3b7aee54f05c88d90964a015fb177cd7",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2339,
+        "2": 510,
+        "3": 419,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-extra-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "17cc6c177c89eb264514e1efb3685ab9a621f3952a8f393a6a5eb28cf77e2884",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean)",
+      "bytes": 57411,
+      "format": "FULL-WORD",
+      "git_blob": "ecf75c274c41efdf4894e2748bc4d071a16c87a9",
+      "kappa": "0.001676896669021299",
+      "local_profile": {
+        "1": 2347,
+        "2": 502,
+        "3": 415,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1625-gauge44-word-566.json.gz",
+      "pr": 1625,
+      "sha256": "0740b6f33927b9e60c9a7f35e7fcb2fd9ac6e2d3982112428b302a6966a18c73",
+      "source": "fork branch t74-pivot566-kernel c7cac078 research/t74-pivot566-kernel/inputs/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57440,
+      "format": "FULL-WORD",
+      "git_blob": "e86142b352466f54a3da38c96a6e1484145c3b5c",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2340,
+        "2": 508,
+        "3": 420,
+        "4": 126,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-extra-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "cd417b904408c221d9840d08faff8af040cc4207f9804284f2f5375d21298a62",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/extra-word-566.json.gz",
+      "width_inventory": {
+        "4": 40,
+        "5": 48,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (LeverRank); on PR #1625 words; PR #1319/#1297 lineage (Rohan Arun)",
+      "bytes": 57438,
+      "format": "FULL-WORD",
+      "git_blob": "76c01583a0286cddb0f71e0cb13077e4317104f6",
+      "kappa": "0.001676938111022438",
+      "local_profile": {
+        "1": 2348,
+        "2": 500,
+        "3": 416,
+        "4": 130,
+        "5": 82,
+        "8": 8
+      },
+      "path": "1672-gauge44-word-566-554.json.gz",
+      "pr": 1672,
+      "sha256": "eeb6a236ed0ea8873b8800947d0cd19c36a6fcfdf857fc42913cb45cd984f219",
+      "source": "PR #1672 head b8ab040d research/gmx-t74-k554-signed-001/new/gauge44-word-566.json.gz",
+      "width_inventory": {
+        "4": 44,
+        "5": 44,
+        "7": 38,
+        "8": 114,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71364,
+      "format": "BORROW-WORD",
+      "git_blob": "86dbe40322dd7e0182cd3c4f8a78e0b690a55779",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43base.json.gz",
+      "pr": 2679,
+      "sha256": "b85e6c60f0ba84464d1a60b54d01d2086126f3b909e8e67ea41ccf5e22d61178",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Philippe Van Velzen (philippeVV)",
+      "bytes": 71365,
+      "format": "BORROW-WORD",
+      "git_blob": "697af5b352f5076f01f3eb1d6cbed7251fb7c524",
+      "kappa": null,
+      "local_profile": {
+        "1": 2374,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 8
+      },
+      "path": "2679-BORROW-WORD-43extra.json.gz",
+      "pr": 2679,
+      "sha256": "62d74e9fa845dc669544a732cb2e49a6263679b99e3aef85f4f212cc8aada4fc",
+      "source": "PR #2679 head 2e2cf565 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71241,
+      "format": "BORROW-WORD",
+      "git_blob": "33524d8f778046e0ca28e09b9cec8c0faecbd59a",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43base.json.gz",
+      "pr": 2745,
+      "sha256": "f7db6024ba59dcac885af2c0f05b022d04af09dcc6d3c54b38de13a58c3448c8",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 71242,
+      "format": "BORROW-WORD",
+      "git_blob": "583a98c65438b96529e49897c2594aac4134333c",
+      "kappa": "0.0017161404259974415",
+      "local_profile": {
+        "1": 2370,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "7": 4,
+        "8": 4
+      },
+      "path": "2745-BORROW-WORD-43extra.json.gz",
+      "pr": 2745,
+      "sha256": "97fa489f7f088d01dc3bf916d1a42fbd5d7e3a760e166cbbecb7f21056b7e623",
+      "source": "PR #2745 head 4f485de0 research/gmx-t74-borrow43-handoff/new/borrow/words/BORROW-WORD-43extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "9a49a9096504bf59e7037b7da398a54c4608f81e",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-base.json.gz",
+      "pr": 2766,
+      "sha256": "80e309cc16d0a86a0854d32f4f43e0d856768ea3cf5b6437061b427997ae4790",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "DavidAriasC",
+      "bytes": 72192,
+      "format": "BORROW-WORD",
+      "git_blob": "a3fdc91b1b1452866e0ea2f3dfb6af728717b709",
+      "kappa": "0.001717256973467002308270",
+      "local_profile": {
+        "1": 2364,
+        "2": 647,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "2766-WORD-extra.json.gz",
+      "pr": 2766,
+      "sha256": "88e55acb7e274c62fbb0deab7f420d85fde3c2a471735222f0b5d039bc34e2e6",
+      "source": "PR #2766 head e6df920c research/complex-routing-leaf-fusion/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72354,
+      "format": "BORROW-WORD",
+      "git_blob": "074ccaf759d6d92985c641db69c81a5308d98dd1",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-base.json.gz",
+      "pr": null,
+      "sha256": "a4f4c149731fda76873a6c68870c6b7372c32bae4617a15435d58745ed29629b",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-base.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean (mdumitrean); unpublished intermediate of #2802",
+      "bytes": 72353,
+      "format": "BORROW-WORD",
+      "git_blob": "64f2535299938848d62e1a0ab4f5948b28b029a2",
+      "kappa": "0.001717409316335491643448",
+      "local_profile": {
+        "1": 2386,
+        "2": 642,
+        "3": 274,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "retired5-WORD-extra.json.gz",
+      "pr": null,
+      "sha256": "4fb7e28a5c4166c7c81ec8448df35674a8546f86a55c932cefde6c63ee5c2cf8",
+      "source": "fork branch t74-joint-twelve-retired5 b295183e research/t74-joint-twelve-retired5/inputs/WORD-extra.json.gz",
+      "width_inventory": {
+        "4": 26,
+        "5": 4,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72444,
+      "format": "BORROW-WORD",
+      "git_blob": "91bd9c68f209ac29e27cac566ff7a78339788553",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-base.json.gz",
+      "pr": 2802,
+      "sha256": "dca8becca633ffc5e998985631bcbcab1123b27ca7f10ac6a96b1ec21ce69a66",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Marius-Paul Dumitrean",
+      "bytes": 72443,
+      "format": "BORROW-WORD",
+      "git_blob": "6c4a9a4395cfd407b435833908f783db4b3c6a4b",
+      "kappa": "0.001717794984118634663827",
+      "local_profile": {
+        "1": 2382,
+        "2": 648,
+        "3": 268,
+        "4": 128,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD-extra.json.gz",
+      "pr": 2802,
+      "sha256": "6bcb3c2c73eaf7558ddc6ef6b484334f8d96b9d2b227e265483b657de00f4bb7",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 2,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f1fc67a6eaf4bcc5dfa852b448aa2659070fa5f8",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-base.json.gz",
+      "pr": 2751,
+      "sha256": "ae8b6b4d62a9da29331062fae1bd68b0341edf83152f5a5ef50c5109ba578f9a",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Tekalign (tekuuu)",
+      "bytes": 72468,
+      "format": "BORROW-WORD",
+      "git_blob": "f06e80c4dddb9741d0051cb85a57d356e673f687",
+      "kappa": "0.001717141586348426338109",
+      "local_profile": {
+        "1": 2366,
+        "2": 646,
+        "3": 297,
+        "4": 120,
+        "5": 26,
+        "8": 8
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/WORD2751-extra.json.gz",
+      "pr": 2751,
+      "sha256": "1bb44a73d5841afb954b49ae94dba2e0c536b1eea9436ae5d89de87d8a04e127",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 26,
+        "5": 9,
+        "7": 62,
+        "8": 78,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70505,
+      "format": "BORROW-WORD",
+      "git_blob": "0bc4e8c167de63931e5cc208527ad684573a373c",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-base.json.gz",
+      "pr": 2462,
+      "sha256": "3506c84203f126900326ff4d22aaceda819734e5f96fa4622d43fbb78b946ece",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Jeremy Kothe (jeremykothe2)",
+      "bytes": 70509,
+      "format": "BORROW-WORD",
+      "git_blob": "33f39e6826d181f4e0aead30b427e8de3c107a9a",
+      "kappa": "0.001703552312979594",
+      "local_profile": {
+        "1": 2363,
+        "2": 632,
+        "3": 326,
+        "4": 120,
+        "5": 34,
+        "7": 4,
+        "8": 4
+      },
+      "path": "research/t74-joint-twelve-retired7/inputs/POSITIVE2462-extra.json.gz",
+      "pr": 2462,
+      "sha256": "ec7103c196b32de7af79a6f43952cbe998c085a00f1a8e740f5556c774589099",
+      "source": "in tree (package of PR #2802)",
+      "width_inventory": {
+        "4": 33,
+        "5": 9,
+        "7": 62,
+        "8": 86,
+        "9": 240
+      }
+    },
+    {
+      "author": "Mason Hale (mason-hale)",
+      "author_login": "mason-hale",
+      "bytes": 69818,
+      "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+      "format": "BORROW-WORD",
+      "git_blob": "9be0aa5349dbc8c928a46089a7695e224d0e4d16",
+      "lineage_attribution": "Retain package CREDITS.md/SOURCES.json and every original data/words/PINS.json credit.",
+      "local_path": "data/continuation-01/pr2917/package/data/WORD-base.json.gz",
+      "path": "research/paired-helper-extension/data/WORD-base.json.gz",
+      "pin_key": "research/paired-helper-extension/data/WORD-base.json.gz",
+      "pr": 2917,
+      "relative_path": "data/WORD-base.json.gz",
+      "sha256": "fec3c120db1a35022944628d34b56a36f2456248c274c2eaba1a325cdc690ce8",
+      "treatment": "inert data; source text renamed .txt, never import or execute"
+    },
+    {
+      "author": "Mason Hale (mason-hale)",
+      "author_login": "mason-hale",
+      "bytes": 69814,
+      "commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+      "format": "BORROW-WORD",
+      "git_blob": "40b38365ea4b841101405ebd2c4fdcadcb8b9808",
+      "lineage_attribution": "Retain package CREDITS.md/SOURCES.json and every original data/words/PINS.json credit.",
+      "local_path": "data/continuation-01/pr2917/package/data/WORD-extra.json.gz",
+      "path": "research/paired-helper-extension/data/WORD-extra.json.gz",
+      "pin_key": "research/paired-helper-extension/data/WORD-extra.json.gz",
+      "pr": 2917,
+      "relative_path": "data/WORD-extra.json.gz",
+      "sha256": "e4d0c617df85bf8a824ff68310ca3373dc017c1ebf9ea733056a3ee4a784b36f",
+      "treatment": "inert data; source text renamed .txt, never import or execute"
+    }
+  ],
+  "source_manifest": {
+    "path": "data/continuation-01/pr2917/MANIFEST.json",
+    "sha256": "2efa79d1a44d46ca51b9d35a1392fec87514776585f66d372e20d7ccbbcee764"
+  },
+  "source_reuse_scope": "All changed literal ownership, charts, stock/prefix/finite inequalities and endpoint/outer arithmetic checked freshly. Unchanged native cache and retained outer mechanism evidence is authenticated through pinned prior receipts, not replayed here.",
+  "status": "PASS_CONDITIONAL_FINITE_FILL_IMPROVEMENT",
+  "unchanged_native_evidence": {
+    "baseline_commit": "224bd5e56041c40078ff6b5fa7393733a215de5c",
+    "baseline_pr": 2917,
+    "inherited_scope": "Conditional finite supplier/outer certificate. Inherited all-size/compiler/theorem hypotheses remain. No selected frontier change, optimality or independent-human-review claim. Both changed native chains are fresh; unchanged retained parent/native evidence is explicitly authenticated and reused.",
+    "integrated_package_manifest_sha256": "bf852fb4ecfa28dddfb8cc6fe7bf53019b3932114e01cba3e026b63ef2b1babd",
+    "integrated_source_manifest_sha256": "98d57c82a1c7318be3c330c3b66897844d57232f0aaeaea88fb4bebd0a1bedf1",
+    "native_receipt_sha256": "5c1ea6f03e48673d9b56563494fff2258ee18bc8dacdeb72ba5c07e2044008ca",
+    "physical_invoice_sha256": "f9d865732c9e6cb918be3b8924350f852610bc0d7fa6b6c2a7c3d2cdb437c1ba",
+    "release_receipt_sha256": "f7639e51fd620070767b8e2a855a0a613ae9bfd19f86a1ba023d88316193ae06",
+    "scope": "Fresh hash/link checks of previously published evidence; no native cache or prior executable is replayed here.",
+    "status": "PASS_SOURCE_BOUND_PRIOR_RELEASE_BINDING",
+    "unchanged_native_providers": {
+      "extra": {
+        "actual_cache_bytes_replayed_here": false,
+        "complete_native_files": {
+          "STEPS.json": "bd823ceef46b5ae18bd462f267610e921cd20e51c25f36c511fc82c8b35f9622",
+          "local/CANONICAL-WORD.json.gz": "ae06445d45f4482bc8e796350fa3d2057efdb02f2c6c1f0018e844d35e6a7155",
+          "local/CLIFFORD-RECIPES.json": "ff27bef98de1ee45bda0f3b13e892a197223b249e7df55e2f7ac5137e81b290d",
+          "local/CLIFFORD-REVIEW.json": "164498fc3ae2e63e01d270f4730eacd66dd28ebfe9cebb0233b085a515dfdca4",
+          "local/FULL-WORD.json.gz": "e4d0c617df85bf8a824ff68310ca3373dc017c1ebf9ea733056a3ee4a784b36f",
+          "local/INDEPENDENT-LOCAL-REPLAY.json": "a28c61fa107cb671881e5784dd3600f5803ac9bb74f7f771686b98dfe69c1d4c",
+          "local/LOCAL-CHECKS.json": "267fcd623066776956ed1e2483b7d98dde9fc44c5984f752d1042807d8937e90",
+          "local/LOCAL-PROGRAMS.json.gz": "f9ebe471ab44de612c55fb05c78f81d6ef26bba2dff96115331ca5f54d21767f",
+          "local/RESIDUAL-ADAPTERS.json": "3dabb2399852c6ee81b0f350682f41bd3a2d9497f1ffbcad0f8cd50f71fac834",
+          "local/SCALAR-FRAME-AUDIT.json": "667d637807fe479c1721ef1f1dcfccd001c79594ba814f2db0cff716984a291d",
+          "local/WARP-RECIPE-CHECKS.json": "e6eafe0ad31b7ae2eac010bfeabf3e549b910f23c837676cc8698b0f33c5daf6",
+          "local/WRAPPER-CHECKS.json": "b1b66e6a7e134fb26b0b7799dfe5388b327bd207fd402ed9b0cbfc420c824d40"
+        },
+        "word_sha256": "e4d0c617df85bf8a824ff68310ca3373dc017c1ebf9ea733056a3ee4a784b36f"
+      },
+      "gauge44": {
+        "actual_cache_bytes_replayed_here": false,
+        "complete_native_files": {
+          "STEPS.json": "75bfe165f201b78e79881850783f985c88d0247222244efa4e316dd5bf239448",
+          "local/CANONICAL-WORD.json.gz": "22e6021b025d1dd59afe7cbbe9803daa36309e8270f0969a4829c0654206c9c1",
+          "local/CLIFFORD-RECIPES.json": "3c7e400bcf9cf93af2b4c511c8136ac4d9286e9d3cd3c819e95e88c7f5433eaf",
+          "local/CLIFFORD-REVIEW.json": "cd815d6eca0a587e97018b9d41f6c0e8c06d0b951ea25e0496b89a930f1df964",
+          "local/FULL-WORD.json.gz": "fec3c120db1a35022944628d34b56a36f2456248c274c2eaba1a325cdc690ce8",
+          "local/INDEPENDENT-LOCAL-REPLAY.json": "7ac75285a6f3f7b4e454b7af04c4cc7252089f5ccc53ad87ec17db72fd529f16",
+          "local/LOCAL-CHECKS.json": "267fcd623066776956ed1e2483b7d98dde9fc44c5984f752d1042807d8937e90",
+          "local/LOCAL-PROGRAMS.json.gz": "f9ebe471ab44de612c55fb05c78f81d6ef26bba2dff96115331ca5f54d21767f",
+          "local/RESIDUAL-ADAPTERS.json": "e880bcc7ec4c8f3f3abde5bfc18ce3e9fc9926ccb5afcf18d11aa54fdf6721bb",
+          "local/SCALAR-FRAME-AUDIT.json": "ccc816649290e9b9e94f489b69bb2d23bb9267bc2055b63e44810cacb11d0e42",
+          "local/WARP-RECIPE-CHECKS.json": "c1a9216a8c5d0e7f6674207a315b9c9900a5fb8736dfad0ca0030d548972930b",
+          "local/WRAPPER-CHECKS.json": "b1b66e6a7e134fb26b0b7799dfe5388b327bd207fd402ed9b0cbfc420c824d40"
+        },
+        "word_sha256": "fec3c120db1a35022944628d34b56a36f2456248c274c2eaba1a325cdc690ce8"
+      }
+    }
+  }
+}

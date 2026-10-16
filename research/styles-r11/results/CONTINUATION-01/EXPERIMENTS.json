@@ -1,4 +1,20 @@
 {
+  "claim": {
+    "path": "results/CONTINUATION-01/CLAIM.json",
+    "sha256": "f95c78e334fcebd1b2eb81379a7bda0e05e9efe5c2bf1a7127f88ca7bcdead44"
+  },
+  "completed_utc": "2026-10-16T12:13:46.203850+00:00",
+  "compute": {
+    "combined_core_hours": 8.47969775493611,
+    "continuation_core_hours": 0.04976135758222223,
+    "continuation_cpu_seconds": 179.14088729600002,
+    "continuation_result_count": 10,
+    "max_worker_rss_gib": 0.7058296203613281,
+    "original_cpu_seconds": 30347.771030473996,
+    "pool_workers": 61,
+    "reserved_allocated_cores": 8,
+    "scope": "Measured parent/worker experiment CPU, including failed V1 v1. Excludes model inference and read-only research/source inspection."
+  },
   "experiments": [
     {
       "candidate_identity_agreement": true,
@@ -33,28 +49,81 @@
       "updated_utc": "2026-10-16T11:51:06.759685+00:00"
     },
     {
+      "confirmed": false,
+      "cpu_seconds": 0,
+      "execution": "UNRUN",
       "id": "G1-PAIRED-GRAMMAR",
+      "implementation_clarification": "results/CONTINUATION-01/G1/IMPLEMENTATION-CLARIFICATION.json",
       "lane": "constructive-word",
       "preregistration": "results/CONTINUATION-01/G1/PREREGISTRATION.json",
-      "status": "planned"
+      "reason": "The requested either-route constructive objective was achieved conditionally by C3/V1. Stop for coordinator hand-back; no G1 outcome or null is inferred.",
+      "result_files": [],
+      "status": "EXPLORATORY",
+      "updated_utc": "2026-10-16T12:13:46.203850+00:00"
     },
     {
+      "amendment": "results/CONTINUATION-01/V1/AMENDMENT-v2.json",
+      "attempt_history": [
+        {
+          "attempt": "v1",
+          "cpu_seconds": 28.210885176,
+          "release_receipt": "results/CONTINUATION-01/V1-FILL-ADMISSION/v1/RELEASE-RECEIPT.json",
+          "release_sha256": "9e8499e2272b74e8814abab264da8566cb1de9d213ee83ea717656a57101409d",
+          "result_files": [
+            "results/CONTINUATION-01/V1-FILL-ADMISSION/v1/seed-11031/RESULT.json",
+            "results/CONTINUATION-01/V1-FILL-ADMISSION/v1/seed-29063/RESULT.json"
+          ],
+          "status": "ERROR"
+        }
+      ],
+      "candidate_identity_agreement": true,
+      "confirmed": true,
+      "cpu_seconds": 29.305780155000004,
+      "family_cpu_seconds": 57.516665331000006,
       "id": "V1-FILL-ADMISSION",
       "lane": "validation",
       "preregistration": "results/CONTINUATION-01/V1/PREREGISTRATION.json",
-      "status": "planned"
+      "result_files": [
+        "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-11031/RESULT.json",
+        "results/CONTINUATION-01/V1-FILL-ADMISSION/v2/seed-29063/RESULT.json"
+      ],
+      "started_utc": "2026-10-16T12:09:10.608441+00:00",
+      "status": "PASS",
+      "updated_utc": "2026-10-16T12:09:25.199907+00:00"
     },
     {
+      "candidate_identity_agreement": true,
+      "confirmed": true,
+      "consecutive_confirmed_nulls": 0,
+      "count_agreement": true,
+      "cpu_seconds": 35.459886814,
       "id": "C3-CROSS-CALL-EXCHANGE",
       "lane": "constructive-fill",
+      "lane_stopped": false,
       "preregistration": "results/CONTINUATION-01/C3/PREREGISTRATION.json",
-      "status": "planned"
+      "result_files": [
+        "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-11031/RESULT.json",
+        "results/CONTINUATION-01/C3-CROSS-CALL-EXCHANGE/v1/seed-29063/RESULT.json"
+      ],
+      "started_utc": "2026-10-16T12:05:40.955938+00:00",
+      "status": "PASS",
+      "updated_utc": "2026-10-16T12:05:49.518176+00:00"
     }
   ],
+  "lane_status": {
+    "constructive-fill": {
+      "consecutive_confirmed_nulls": 0,
+      "latest_experiment": "C3-CROSS-CALL-EXCHANGE",
+      "rule": "C2 is the prior confirmed NULL; a confirmed C3 NULL is the second and stops this lane. Incomplete work does not reset the streak.",
+      "stopped": false
+    }
+  },
+  "no_active_experiments": true,
   "original_registry": {
     "path": "EXPERIMENTS.json",
     "sha256": "3e531028d956a8340194fb516d866633e0c6ad3f7a12418f4640d3a6168bcf1d"
   },
   "round": "CONTINUATION-01",
-  "schema_version": 1
+  "schema_version": 1,
+  "status": "COMPLETE_FOR_CONDITIONAL_FINITE_HAND_BACK"
 }

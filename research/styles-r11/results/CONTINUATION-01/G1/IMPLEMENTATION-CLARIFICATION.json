@@ -1,0 +1,76 @@
+{
+  "admission_retention_cap": 16,
+  "algebraic_certificate": {
+    "identities": [
+      "S e_h=v",
+      "u S=e_h^T",
+      "M v=y",
+      "alpha M=u",
+      "alpha y=1",
+      "T y=e_h",
+      "e_h^T T=alpha",
+      "C v=0"
+    ],
+    "implication": "T*M*S has row h and column h equal to the corresponding identity row/column. Full compensation is rederived as C*S; cleanup and the canonical local profile are regenerated. This finite free-operator identity does not certify native Clifford/phase or complete supplier/outer obligations."
+  },
+  "canonical_domain": {
+    "dyadic_gate_guard": "All synthesized scalar coefficients must be dyadic; scale coefficients must be invertible dyadic units. Non-dyadic canonical pairs or unavailable dyadic unit pivots are explicit finite-protocol rejections.",
+    "frame_cap_guard": "In downward_cap mode, cap only synthesized output support at the selected hyperplane and propagate the maximal downward meet backward through the literal chain, preserving centre/cut and warp pins and the prelude, while enclosing exact attained forward floors.",
+    "grouping": "Hyperplanes with identical eligible output-coordinate sets share one exact nullspace solve. Every seed/provider/mode must cover exactly the unique normals 1..511 and every expected group exactly once before a NULL is possible.",
+    "hyperplanes": "All normals 1 through 511 in the 9-dimensional binary frame space, each in literal and downward_cap modes for both gauge44 and extra providers and both seeds.",
+    "nullspace_basis": "Sort constraint keys and variable register IDs lexicographically. Choose the smallest remaining variable as pivot, normalize its coefficient to +1; enumerate free columns ascending, set one free coordinate to 1 and the others to 0, then substitute pivots in descending order using exact rational arithmetic.",
+    "pair_normalization": "Enumerate canonical alpha/y basis pairs with nonzero alpha*y and divide alpha by that exact pairing, so alpha*y=1. Derive u=alpha*M and v=M^-1*y exactly.",
+    "pair_order": "Ascending (support(alpha)+support(y), support(u)+support(v), exact lexicographic alpha vector, exact lexicographic y vector, canonical basis indices). A vector key is the ascending tuple (register,numerator,denominator). Retain the first 8 nonzero canonical pairs per output-coordinate group.",
+    "pivot_order": "Eligible H intersect R helper coordinates except 408, ordered by ascending literal terminal-frame rank then register ID. Retain the first 16 pivots for every retained pair.",
+    "seed_effect": "Seeds 11031 and 29063 alter task traversal only. Exact bases, pair/pivot selection and resulting semantic hashes/invoices must agree across both seeds.",
+    "truncation": "Record full nonzero basis-pair and eligible-pivot counts, retained counts and all truncation. A bounded NULL makes no claim about other bases, linear combinations, pivot choices or global saturation."
+  },
+  "controls": {
+    "baseline": "Independently audit both final provider words, forward and dual, all 632 live input columns.",
+    "gate": "All four seed/provider control tasks must pass before any screen task launches. A failed or incomplete control produces ERROR/TIMEOUT, never a scientific NULL.",
+    "negative": [
+      "Flip the sign of the final output addition of the first published transform; exact paired identities must reject it.",
+      "Omit one compensation gate from the first literal stage, regenerate its profile/cleanup and require the independent all-column semantic audit to reject it.",
+      "Set the new terminal helper frame to the empty frame; literal frame replay must reject it before a stale profile can supply the reason.",
+      "Undercharge the private-buffer count and physical stock by one; the exact buffer/stock binding must reject it."
+    ],
+    "positive": "Replay all nine published inert transform records in their published order from each PARENT word; require equality with the full decoded final WORD. Independently audit the first literal paired stage as well."
+  },
+  "created_utc": "2026-10-16T12:07:04.251659+00:00",
+  "experiment": "G1-PAIRED-GRAMMAR",
+  "implementation_sha256": {
+    "research/styles-r11/pipeline/continuation/admission.py": "4feb94bb7b53d37a97233ef7a2556f9931d78f8ac6776f6d16fd458373002ec5",
+    "research/styles-r11/pipeline/continuation/latest_fill.py": "16ae9a6e4d451525bb6b2e5ad19c62adce2d93c620d5beaa332fd2512a199461",
+    "research/styles-r11/pipeline/continuation/rewrite_search.py": "685cd2a884f58eab9855296bc298cf62bc299c36047afe08c4935e522f1dd219",
+    "research/styles-r11/pipeline/continuation/run_g1.py": "6b030d61f6385b1c3d744075ee17fb001631e76d3756709c5659c359484037de"
+  },
+  "imports": "Standard library plus existing trusted records.py, pool.py, latest_fill.py, admission.py and hash-pinned wordio.py. The independent semantic auditor is the existing trusted source-pinned PR2679 auditor used by admission.py. No fetched PR executable text is imported or executed.",
+  "nominee_retention": {
+    "compact_inventory": "Persist every compact nominal direction, including provider, group, normal, pair, pivot, profile/width invoice, source attribution and semantic word hash. No search candidate is silently discarded by the artifact retention cap.",
+    "decision": "Any nominal direction, including unretained/unmatched candidates or locally validated candidates with pending complete allocation/native/physical/supplier/outer admission, leaves G1 EXPLORATORY. Exact complete fill and fresh native/outer admission require a separately registered follow-up. The runner cannot emit PASS merely from local identities.",
+    "matched_identity": "Intersect all four seed/provider inventories by (helper, normal, mode, canonical basis indices); require complete same-provider inventories and hashes to agree across seeds.",
+    "retained_artifacts": "Persist immutable full WORD, TRANSFORM and CERTIFICATE gzip JSON files for each retained seed/provider nominee. Preserve total, unmatched and truncated matched counts explicitly.",
+    "retention_order": "Sort matched identities lexicographically by helper, normal, mode and canonical basis indices; reconstruct and independently audit both provider words for the first 16 identities on both seeds."
+  },
+  "pre_execution_statement": "No G1 candidate, calibration control, benchmark or experimental computation has been run. Source inspection and AST parsing only preceded this clarification.",
+  "preregistration_sha256": "ee5b48683b1d42a3feb453b40709ec22c2f031df335964c41f57c67029c0025b",
+  "protection_interpretation": {
+    "excluded_helper": "408 is excluded as a new extraction pivot. All emitted output frames have rank 8; the active external rank-7 helper408 lead is excluded.",
+    "input_H": "Live helper coordinates excluding removed helpers, all 82 restored endpoints, start_extra entrances, initial_corrections sources and every register touched in the frozen A prelude. Input shears are inserted immediately after that unchanged prelude at zero frame.",
+    "output_R": "Live non-target coordinates whose literal terminal frame, or attained forward-floor terminal frame in downward_cap mode, lies in the selected rank-8 hyperplane, excluding all 82 previously restored coordinates. An entrance or correction-source coordinate may be used on output if frame eligible; its input interface and source identity remain unchanged.",
+    "preserved_fields": "Entrances, removed helpers, correction-source identities, target/centre cut interfaces, warp records, prelude and all existing endpoint frames remain unchanged. Only A/B/restore scalar gates or downward frame edits, helper_final addition, compensation, report and derived cleanup may change."
+  },
+  "resource_failure_handling": {
+    "errors": "ExactBudgetExceeded, unexpected algebraic/canonical assertion failures, key/index errors, infrastructure failures, missing tasks, coverage failures and storage limits propagate to ERROR/TIMEOUT. They are never individual negative candidates or scientific NULLs.",
+    "exact_rational_bits_cap": 4096,
+    "expected_rejections": "Only explicit CandidateRejected dyadic synthesis or legal frame-cap guards count as bounded scientific rejections.",
+    "matrix_terms_cap": 2000000,
+    "provenance": "Full original r11 PINS and latest pinned #2917 word provenance are initialized before large preparation so preparation errors retain source attribution.",
+    "storage": "Compact checkpoint budget is min(100000000, 200000000 - initial existing results bytes - 20000000). The reserve covers final receipts, source archives and at most 16 matched full nominee pairs per seed. Total result-tree bytes, including full nominee artifacts, are checked before receipts and again at finalization against the strict 200000000-byte cap.",
+    "timeouts": "300 seconds per pool task and 14400 CPU seconds for the entire two-seed family, including measured parent preparation/orchestration; no solver calls."
+  },
+  "schema_version": 1,
+  "scope": "Operational definitions and storage/error handling fixed before execution; original registered scientific pass/null bars, seeds and resources are unchanged.",
+  "source_attribution": "Paired extraction mathematics: Jeremy Diviney PR2908 and Mason Hale PR2917, retaining package CREDITS.md/SOURCES.json, Jeremy Kothe compensation/cleanup lineage, and every original data/words/PINS.json credit.",
+  "state": "FROZEN"
+}
