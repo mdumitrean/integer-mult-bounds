@@ -1,10 +1,19 @@
 {
+  "closed_utc": "2026-10-16T23:59:46.868181+00:00",
   "experiments": [
     {
       "id": "policy-safety",
-      "status": "planned"
+      "result": {
+        "bytes": 2978,
+        "path": "results/RESOURCE-SCALING-13/policy-safety/RESULT.json",
+        "sha256": "b9a3562aba5f1c1baf351f32e4d694a7b7ff927b524fee3718a1567827aaaba2"
+      },
+      "status": "PASS",
+      "tests": 17
     },
     {
+      "confirmed": true,
+      "cpu_seconds": 9570.840936433,
       "id": "scaling",
       "implementation_pins": {
         "bytes": 3036,
@@ -16,10 +25,40 @@
         "path": "results/RESOURCE-SCALING-13/PREREGISTRATION.json",
         "sha256": "6ab17d58406505a500adfada36b041257290ff33c30cafe26023f3c7e14e9f73"
       },
-      "status": "planned"
+      "result_files": [
+        {
+          "bytes": 5648,
+          "path": "results/RESOURCE-SCALING-13/v1/seed-73001-workers-61/RESULT.json",
+          "sha256": "8a3c25cd296e98ed408feca8055c543f0788b77ede4deb14a0433985ab3570e7"
+        },
+        {
+          "bytes": 5678,
+          "path": "results/RESOURCE-SCALING-13/v1/seed-73001-workers-120/RESULT.json",
+          "sha256": "b93d2d793b0e17a1c877c036fd0e86065129695d223006f897a84feadbc338bf"
+        },
+        {
+          "bytes": 5654,
+          "path": "results/RESOURCE-SCALING-13/v1/seed-146003-workers-120/RESULT.json",
+          "sha256": "61cdd06d301fc36802c559956d7bd012f4634c586f5878bad924eb45444509c6"
+        },
+        {
+          "bytes": 5653,
+          "path": "results/RESOURCE-SCALING-13/v1/seed-146003-workers-61/RESULT.json",
+          "sha256": "7a64e777279c363a0920476b05542a228a6ef7d411bf24f10b4fc9d55dd26851"
+        }
+      ],
+      "run": {
+        "bytes": 2231,
+        "path": "results/RESOURCE-SCALING-13/v1/RUN.json",
+        "sha256": "1ce44e8ce524dad2fc6e586548c634ace47dce5247241a8cd410928f468151f2"
+      },
+      "status": "PASS",
+      "wall_seconds": 122.20426428131759
     }
   ],
   "no_active_experiments": true,
   "schema_version": 1,
-  "scientific_outcomes": false
+  "scientific_outcomes": false,
+  "started_utc": "2026-10-16T23:56:04.844230+00:00",
+  "status": "COMPLETED"
 }

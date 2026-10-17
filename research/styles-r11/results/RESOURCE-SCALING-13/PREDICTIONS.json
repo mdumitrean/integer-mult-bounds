@@ -1,0 +1,40 @@
+{
+  "experiment": "RESOURCE-SCALING-13",
+  "no_new_kappa_claim": true,
+  "observed": [
+    {
+      "checksums_equal": true,
+      "elapsed_speedup_120_vs_61": 1.418986090033677,
+      "seed": 73001,
+      "throughput_ratio_120_vs_61": 1.4189860900336768,
+      "worker_order": [
+        61,
+        120
+      ]
+    },
+    {
+      "checksums_equal": true,
+      "elapsed_speedup_120_vs_61": 1.4717099426538822,
+      "seed": 146003,
+      "throughput_ratio_120_vs_61": 1.4717099426538822,
+      "worker_order": [
+        120,
+        61
+      ]
+    }
+  ],
+  "outcome": "PASS",
+  "pre_registered_rule": "At least1.15 throughput ratio in both seeds with identical outputs",
+  "recommendation": "Use up to120 workers for newly registered compatible coarse workloads when measured admission permits; retain per-workload resource estimates.",
+  "scientific_outcomes": false,
+  "scientific_predictions": [],
+  "source_attribution": {
+    "original_entries": 21,
+    "original_pins": {
+      "bytes": 15544,
+      "path": "data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    "scope": "Infrastructure-only synthetic benchmark; no source word is processed. All original credits remain bound."
+  }
+}

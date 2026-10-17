@@ -1,0 +1,24 @@
+{
+  "policy": "measured-rss-v1",
+  "workers": 61,
+  "maximum_admitted_workers": 120,
+  "allocated_cores": 128,
+  "reserved_cores": 8,
+  "estimated_worker_rss_gib": 1.5,
+  "reservation_factor": 1.2,
+  "reserved_per_worker_gib": 1.7999999999999998,
+  "worker_rss_cap_gib": 4,
+  "headroom_gib": 16.0,
+  "parent_current_rss_gib": 0.0579681396484375,
+  "memory": {
+    "total_bytes": 265384337408,
+    "available_bytes": 256578232320,
+    "host_available_bytes": 256578232320,
+    "cgroup_limits": []
+  },
+  "projected_increment_gib": 109.79999999999998,
+  "projected_process_rss_sum_gib": 109.85796813964842,
+  "formula": "new workers * 1.20 * max(measured worker RSS, parent RSS) <= available memory - 16 GiB",
+  "shared_pages": "Full worker RSS is reserved; fork sharing is not required for admission.",
+  "authority": "User requested use of measured memory headroom on 2026-10-16; 120-worker and per-worker caps retained."
+}

@@ -1,0 +1,59 @@
+{
+  "checks": {
+    "actual_pool_imports": 0,
+    "adapter_sha256": "24f7e2df124307c263ee711ef7006bcaf350ba9a48ce057b3a9e72761fe134cb",
+    "checks_sha256": "be2d896245b5403c4f6bc3fd8c6e077ff5b5ab96a2b08cb691a2398883a58011",
+    "errors": [],
+    "failures": [],
+    "original_pool_sha256": "59714d0b8501a4d2a0b041bbf18be089fa6a4881943a8c4db7c7605e6c5d86d8",
+    "resource_snapshots": "All synthetic; no scientific workload is imported or run.",
+    "seconds": 0.010837883688509464,
+    "skipped": 0,
+    "status": "PASS",
+    "subtests": 27,
+    "test_names": [
+      "__main__.SafetyTests.test_120_workers_are_admitted_from_measured_memory",
+      "__main__.SafetyTests.test_cgroup_remaining_memory_limits_host_available",
+      "__main__.SafetyTests.test_cpu_affinity_and_quota_bound_workers",
+      "__main__.SafetyTests.test_estimates_and_process_caps_must_be_finite_positive",
+      "__main__.SafetyTests.test_explicit_worker_request_is_bounded",
+      "__main__.SafetyTests.test_finite_positive_cpu_budget_is_mandatory_for_live_guard",
+      "__main__.SafetyTests.test_live_worker_rss_cap_aborts_and_restores_hooks",
+      "__main__.SafetyTests.test_low_available_memory_downsizes_and_rejects_oversubscription",
+      "__main__.SafetyTests.test_low_memory_aborts_without_retries_and_restores_hooks",
+      "__main__.SafetyTests.test_nested_policy_and_non_main_thread_are_rejected",
+      "__main__.SafetyTests.test_parent_rss_and_worker_cap_are_independent_reservation_inputs",
+      "__main__.SafetyTests.test_private_pool_name_and_cached_identity_are_bound",
+      "__main__.SafetyTests.test_private_pool_source_hash_rejected_before_import",
+      "__main__.SafetyTests.test_success_uses_original_entrypoint_and_restores_hooks",
+      "__main__.SafetyTests.test_task_count_caps_processes_and_does_not_hide_invalid_worker_request",
+      "__main__.SafetyTests.test_telemetry_open_failure_restores_active_latch",
+      "__main__.SafetyTests.test_worker_exception_restores_hooks"
+    ],
+    "tests": 17,
+    "worker_launches": 0
+  },
+  "cpu_seconds": null,
+  "decision": "All17 tests and27 subtests passed before real launch.",
+  "experiment": "policy-safety",
+  "measurement_scope": "Deterministic mocked safety controls; CPU and RSS not instrumented, no workers launched.",
+  "n_permutations": 0,
+  "null_summary": {
+    "applicable": false
+  },
+  "peak_rss_bytes": null,
+  "preregistration_sha256": "6ab17d58406505a500adfada36b041257290ff33c30cafe26023f3c7e14e9f73",
+  "script_sha256": "be2d896245b5403c4f6bc3fd8c6e077ff5b5ab96a2b08cb691a2398883a58011",
+  "seed": null,
+  "source_attribution": {
+    "original_pins": {
+      "bytes": 15544,
+      "path": "data/words/PINS.json",
+      "sha256": "4d62f7caf94a102ebb83feb3beca6ebeb1ab9637901ff51cc84e5beeb15d2a65"
+    },
+    "scope": "Synthetic features only; no lineage words processed; all21 source credits remain bound by PINS."
+  },
+  "status": "PASS",
+  "wall_seconds": 0.010837883688509464,
+  "word_blob_ids": []
+}
