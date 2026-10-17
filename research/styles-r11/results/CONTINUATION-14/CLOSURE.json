@@ -1,0 +1,79 @@
+{
+  "administrative_audit_cpu_seconds": 17.727673317,
+  "ai_assistance": "Substantial OpenAI Codex assistance.",
+  "artifacts": [
+    {
+      "bytes": 7375,
+      "path": "results/CONTINUATION-14/RESULTS.md",
+      "sha256": "50d8fafba9b5680015c3e73e160bed9cd741017c6a2f9d0e2d226e41129d784d"
+    },
+    {
+      "bytes": 4252,
+      "path": "results/CONTINUATION-14/HANDBACK.md",
+      "sha256": "46639763582772372a18b522f96664f169646e101bae179fb19230687a7b2765"
+    },
+    {
+      "bytes": 19557,
+      "path": "results/CONTINUATION-14/PREDICTIONS.json",
+      "sha256": "b25bd6750aa784b343332b02a2d1527d373cb65ec69de8476e0794be7a266926"
+    },
+    {
+      "bytes": 1133,
+      "path": "results/CONTINUATION-14/EXPERIMENTS.json",
+      "sha256": "187d826977de01bcd3400fe91911fa58440002d9dac891eb2c437e0c299617d3"
+    },
+    {
+      "bytes": 8337,
+      "path": "results/CONTINUATION-14/AUDIT.json",
+      "sha256": "442a48e483c445f212871b6ab8048331f35da26d202c70f0aa50d496d19cb783"
+    },
+    {
+      "bytes": 13225,
+      "path": "results/CONTINUATION-14/S3/PREREGISTRATION.json",
+      "sha256": "e2d2151c96a13f9970da9e0f90975295a77ebf21db0114ba9c038b95a7e9376e"
+    },
+    {
+      "bytes": 100391,
+      "path": "data/continuation-14/IMPLEMENTATION-PINS-v1.json",
+      "sha256": "be876de4ca85fe341957da57f3a26571856dd50d9089d89494b64f2c6bc20deb"
+    },
+    {
+      "bytes": 139803,
+      "path": "data/continuation-14/s3-v1/RUN.json",
+      "sha256": "d177026dde5c167cfa52f005822fbeedc092414485bc9d0b6d05b542258f1028"
+    },
+    {
+      "bytes": 5324,
+      "path": "data/continuation-14/final-checkpoint/REVIEW.json",
+      "sha256": "c20c0775772071702878deb48ed843b614ae3e3bbf1d66ab6e3fb64c8976b279"
+    }
+  ],
+  "closure_reserve_bytes": 10000,
+  "commits": {
+    "preregistration": "e0fe42c3f",
+    "scientific_evidence": "62df0a03f"
+  },
+  "confirmed": true,
+  "github_delivery": {
+    "authorized_branch": "research/styles-r11-results",
+    "authorized_remote": "https://github.com/mdumitrean/integer-mult-bounds.git",
+    "coordinator_review_before_posting": true,
+    "prs_comments_discussions": false
+  },
+  "kappa_claim": false,
+  "no_active_experiments": true,
+  "pattern_claim": false,
+  "preclosure_storage_bytes": {
+    "global_results": 199793999,
+    "round_data": 18033961,
+    "round_results": 139133
+  },
+  "recorded_utc": "2026-10-17T00:28:03.663086+00:00",
+  "schema_version": 1,
+  "scientific_cpu_seconds": 856.115048001,
+  "scientific_status": "NULL",
+  "scientific_wall_seconds": 48.94570964388549,
+  "scope": "Original PLAN lane stops and pattern criteria remain unchanged. This is the current round hand-back; historical frozen reports remain intact.",
+  "status": "COMPLETE",
+  "stop_reason": "Completed paired finite-domain outcome; registered stop applied before hard cutoff. No outcome-driven extension."
+}
